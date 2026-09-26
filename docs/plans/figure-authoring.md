@@ -293,13 +293,13 @@ them all and run `--check`.
    oxynitride the dielectric's label note is left empty (`note: ""`).
 7. **Drawn (S9b).** 141–149 and 154–163 are in the repository; their geometry is in the
    series header ("The levels above the second capacitor"), and 150–153 did not change.
-   Full slices are cut at 128 u for 141–149 ("inside the oxide under metal 2") and at 180 u
+   Full slices are cut at 128 u for 141–149 ("inside the oxide under metal 2") and at 190 u
    for 154–163 ("inside the oxide under metal 3"); the via-3 close-ups (146–148) use the
    plug on the plate, `[176, 240]`, 4.2×, `-946` (226 u, the metal-3 aluminium), and MM4E
    (155) the S10 window `[76, 176]`, `-670`. A pasted block trips the "caption repeats the
    paragraph" lint only once it is in the page: rebuild after pasting. For S11 (passivation,
    164–170): the metal-5 top is at 403 u over the field, the metal-5 shapes are x 10–94 and
-   from x 160, and the NCAPOX6 surface between them is at 340 u; a full slice cut inside the
+   from x 174, and the NCAPOX6 surface between them is at 340 u; a full slice cut inside the
    NILD6 oxide over the second plate (between about 319 and 330 u) stays short.
 
 ## 4. Build

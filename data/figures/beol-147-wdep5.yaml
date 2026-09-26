@@ -22,8 +22,9 @@ caption: >-
   far thicker in proportion than it is. Since a conformal film closes a hole from its walls, the
   page reads one film as filling both kinds of via; the deeper hole on the metal-3 line, outside
   this view, is filled in the same way. Over metal 3 the PDK's via 3 is 0.20 µm wide and
-  0.39 µm deep;[^pdk-periph][^pdk-04] this shallower hole over a plate is drawn a little less
-  deep than it is wide. The oxides, the aluminium–copper of metal 3 and, in the lower panel,
+  0.39 µm deep;[^pdk-periph][^pdk-04] how much shallower the hole over a plate is depends on
+  plate and dielectric thicknesses that are not public, and it is drawn a little less deep
+  than it is wide. The oxides, the aluminium–copper of metal 3 and, in the lower panel,
   the liner, the plate, the dielectric and the metal cap are drawn but not labelled. Not to
   scale.
 arrow:
@@ -36,7 +37,7 @@ panels:
     hide_labels: [ncap5, nild5, m3bot, m3al, sub, padox, isonit, fomres, liner, fox, gox, lvores, thinox, poly, rpmres, polyn, rrpmres, polyp, urpmres, nit, capox, p1mres, iox, ntmres, tipn, halo, hvntmres, hvtip, ldntmres, spnit, npcres, spox, psdres, nsdres, nsd, psg, ncap, licres, ctliner, sil, wfill, li, li1mres, lint, nild2, ctm1res, mcliner, mcw, m1bot, m1al, m1cap, mm1res, nild3, ncap3, vimres, v1liner, v1w, m2bot, m2al, m2cap, mm2res, nild4, ncap4, vim2res, v2liner, v2w, capmres, mm3res, vim3res]
     labels:
       m3cap: {title: "Metal cap film", note: "TiW or Ti/TiN — see the overview"}
-      capild: {title: "Capacitor dielectric", note: ""}
+      capild: {title: "Capacitor dielectric", note: "not public: material, thickness", basis: public}
   - state_after: "147"
     title: "After: tungsten over the whole top"
     hide_layers: [pwell, nchi]

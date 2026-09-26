@@ -26,8 +26,9 @@ caption: >-
   The hole on the metal-3 line, outside this view, is lined in the same way down to its floor
   on the cap. Over metal 3 the PDK's via 3 is 0.20 µm wide and 0.39 µm
   deep;[^pdk-periph][^pdk-04] over a plate it is shallower by the plate and the dielectric
-  (0.1–0.2 µm on the page's reading), and this hole is drawn a little less deep than it is
-  wide. The oxides and the aluminium–copper of metal 3 are drawn but not labelled, nor, in the
+  (0.1–0.2 µm on the page's reading), which leaves it about as deep as it is wide, or up to
+  about one and a half times deeper, on those figures; this hole is drawn a little less deep
+  than it is wide. The oxides and the aluminium–copper of metal 3 are drawn but not labelled, nor, in the
   lower panel, are the plate, the dielectric and the metal cap. Not to scale.
 arrow:
   title: "TIN5, step 146"
@@ -39,7 +40,7 @@ panels:
     hide_labels: [ncap5, nild5, m3bot, m3al, sub, padox, isonit, fomres, liner, fox, gox, lvores, thinox, poly, rpmres, polyn, rrpmres, polyp, urpmres, nit, capox, p1mres, iox, ntmres, tipn, halo, hvntmres, hvtip, ldntmres, spnit, npcres, spox, psdres, nsdres, nsd, psg, ncap, licres, ctliner, sil, wfill, li, li1mres, lint, nild2, ctm1res, mcliner, mcw, m1bot, m1al, m1cap, mm1res, nild3, ncap3, vimres, v1liner, v1w, m2bot, m2al, m2cap, mm2res, nild4, ncap4, vim2res, v2liner, v2w, capmres, mm3res, vim3res]
     labels:
       m3cap: {title: "Metal cap film", note: "TiW or Ti/TiN — see the overview"}
-      capild: {title: "Capacitor dielectric", note: ""}
+      capild: {title: "Capacitor dielectric", note: "not public: material, thickness", basis: public}
   - state_after: "146"
     title: "After: a TiN liner over the whole top"
     hide_layers: [pwell, nchi]

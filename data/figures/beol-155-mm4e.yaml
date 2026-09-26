@@ -16,9 +16,10 @@ caption: >-
   A close-up of the left edge of the second capacitor and the right-hand edge of a metal-4
   wiring line; the lower part of the slice is cut off, and the drawing starts inside the oxide
   under metal 4. Before, the metal-4 resist over the line and over the capacitor; after, the
-  etch has broken through the dielectric outside the resist (a fluorine-containing step, on the
-  page's account, since chlorine makes little progress on it) and then removed the whole
-  metal-4 stack in chlorine, stopping on the cap oxide, and the resist has been stripped (the
+  etch has broken through the dielectric outside the resist and, on the TiW reading of the
+  cap, the cap with it (a fluorine-containing step, on the page's account, since chlorine makes
+  little progress on the dielectric; a TiN cap would clear in the chlorine that follows), and
+  chlorine has then removed the rest of the metal-4 stack, stopping on the cap oxide, and the resist has been stripped (the
   page treats the passivation, strip and clean as part of this step). On this drawing the etch
   thus also clears the thin dielectric left on the blanket metal 4 between the two shapes;
   beneath the resist nothing is etched, so the dielectric stays on the metal around the top
@@ -36,7 +37,7 @@ panels:
     hide_layers: [pwell, nchi]
     labels:
       m4cap: {title: "Metal cap film", note: ""}
-      capild2: {title: "Capacitor dielectric", note: ""}
+      capild2: {title: "Capacitor dielectric", note: "not public; read here as a silicon-based film"}
     hide_labels: [m4al, m4bot, ncap5, nild5, v3liner, v3w, capild, capm, m3bot, m3al, m3cap, ncap4, v2w, nild4, v2liner, m2al, m2cap, sub, padox, isonit, fomres, liner, fox, gox, lvores, thinox, poly, rpmres, polyn, rrpmres, polyp, urpmres, nit, capox, p1mres, iox, ntmres, tipn, halo, hvntmres, hvtip, ldntmres, spnit, npcres, spox, psdres, nsdres, nsd, psg, ncap, licres, ctliner, sil, wfill, li, li1mres, lint, nild2, ctm1res, mcliner, mcw, m1bot, m1al, m1cap, mm1res, nild3, ncap3, vimres, v1liner, v1w, m2bot, mm2res, vim2res, capmres, mm3res, vim3res, cap2mres]
   - state_after: "155"
     title: "After: a second capacitor with its own bottom plate"

@@ -31,9 +31,9 @@ widths in both themes, four built pages shot. Nothing left but review.
     4 u; top 403 u. Notes: bottom "Ti or TiW — see the overview", cap "read here as TiW — see
     the overview" (the 161 page reads the cap as TiW on the S8P exclusion of "top metal
     layers"). MM5 resist 40 u (the 162 page: thicker than at the lower levels); shapes x 10–94
-    and from x 160, a 66 u space (drawn about as deep as wide; the page's minimum space is
-    about 0.8:1).
-* **Cuts.** Full slices: 128 u for 141–149 ("inside the oxide under metal 2"), 180 u for
+    and from x 174, an 80 u space (drawn about 0.8:1 deep-to-wide, the proportion of the
+    page's minimum space; the plate via is enclosed by 16 u).
+* **Cuts.** Full slices: 128 u for 141–149 ("inside the oxide under metal 2"), 190 u for
   154–163 ("inside the oxide under metal 3"). Close-ups: 146–148 on the via-3 plug on the plate,
   `[176, 240]`, 4.2×, −946 (226 u, inside the metal-3 aluminium under the capacitor); 155 at the
   S10 window `[76, 176]`, 2.68×, −670 (250 u).
@@ -90,8 +90,8 @@ widths in both themes, four built pages shot. Nothing left but review.
 * At full-slice scale the 3 u capacitor dielectric is a hairline, invisible at 400 px; 145 and
   160 rely on the caption for the cleared dielectric on the line (the close-up 155 shows it).
 * In the close-ups the liner, the plate and the metal cap share the one barrier colour (the
-  conventions); a stroke separates them, but in the dark theme they read as one pale block.
-* A label override with `note: ""` still prints the basis tag ("inferred").
+  conventions); a stroke separates them, but the liner and the plate read as one block in
+  both themes (the dark theme only makes it the brightest thing in the figure).
 * The tungsten dip over the hole (147) is a V notch; the caption says it is not to scale.
 
 ## Checks
@@ -117,3 +117,36 @@ follows any of the 19 leads), prose after the caption.
   The 145, 155 and 160 captions say what the drawing does.
 * **155, arithmetic (minor):** "consistent with 0.72–0.80 µm of Al–Cu at 3.4–3.8 µΩ·cm" —
   3.8 µΩ·cm at 47 mΩ/sq gives 0.81 µm (3.4 gives 0.72). Not changed.
+
+## Review round (review file rd-figures-s9b, "approve with fixes")
+
+* M1: MM5 shapes moved to x 10–94 and from x 174 (series); the 163 caption now states the drawn
+  space as about 0.8 times as deep as it is wide, the proportion of a minimum space. 162 and
+  163 rebuilt; series header and the S11 note in `figure-authoring.md` updated.
+* M2: 155 caption follows the page body: the fluorine-containing breakthrough takes the
+  dielectric and, on the TiW reading, the cap with it (a TiN cap clears in the chlorine that
+  follows); chlorine removes the rest of the stack.
+* L2: the dielectric label carries a note again: 155 "not public; read here as a silicon-based
+  film" (the 155 page's words); 146–148 "not public: material, thickness", basis `public`
+  (their pages do not name the film), so the tag no longer reads as if the film were inferred.
+* L3: 146 states the plate hole's proportion on the page's figures (about as deep as wide, up
+  to about one and a half times deeper) against the drawn one; 147 and 148, whose pages give no
+  plate or dielectric thickness, say the true depth is not public.
+* L4: the 154–163 full slices are cut at 190 u (inside NCAPOX4, 2 u above the NILD4 boundary)
+  instead of 180 u, so no boundary line runs just above the zigzag; 154 hides the upper-panel
+  aluminium label (the label column otherwise ran 14 u below the drawing; declared).
+* Rebuilt 146–148 and 154–163, re-pasted the changed blocks (insert-only against main),
+  re-shot all 13 at both widths in both themes.
+
+## For the owner
+
+* **L1, a distinct colour for the MiM plates** (owner decision; tokens not changed here). The
+  reviewer's proposal: a new material token `mim-plate` ("MiM capacitor plate (TiW)",
+  light #403090, dark #a090c0, no pattern; 0 confusable pairs in their palette check), used by
+  the two plate ops and the MiM `etch_materials` lists in `series-beol.yaml`; it would change
+  135–140, 146–148 and 150–163, which would all need rebuilding and re-shooting.
+
+## For the readability batch (added in review)
+
+* 155, arithmetic: "consistent with 0.72–0.80 µm of Al–Cu at 3.4–3.8 µΩ·cm" should read
+  "0.72–0.81 µm" (3.8e-6 Ω·cm ÷ 0.047 Ω = 0.81 µm). Page text, not changed here.

@@ -93,7 +93,8 @@
 # * Metal 5 (161-163): 5 + 53 + 5 u, half as thick again as metal 4 (1.26 um against
 #   0.845 um), deposited conformally into the open vias (lining them, closing them, a dimple
 #   of about 4 u over each); top at 403 u over the field. MM5 resist 40 u (the pages call it
-#   thicker); shapes x 10-94 and 160 on, a 66 u space.
+#   thicker); shapes x 10-94 and 174 on, an 80 u space (about 0.8:1 deep-to-wide, the
+#   proportion of a minimum space on the pages); the plate via is enclosed by 16 u.
 # Series labels carry no numbers; step numbers and level codes (VIM2, NILD4) are free.
 base: series-metal1.yaml
 templates:
@@ -506,5 +507,5 @@ ops:
       etch_step: "163"
       mask_code: "MM5"
       resist_id: mm5res
-      resist_where: [[10, 94], [160, 268]]
+      resist_where: [[10, 94], [174, 268]]
       resist_t: 40
