@@ -43,7 +43,7 @@ Running: rd-steps-014-034; the queue is resumed in order as the 5-hour window al
 
 | Branch / worktree | Task | Model | State |
 |---|---|---|---|
-| `topic/rd-figures-s9b` | W1c series S9 second and third groups (141–149, 154–163) from the beol templates | Opus | writing |
+| `topic/rd-figures-s11` | W1c series S11 passivation and pad (164–170) + a prober block-chain for 171 | Opus | writing |
 
 Quota: on 2026-09-27 the owner chose to continue past the 75-point share at ONE agent at a time (one
 Opus writer batch, then its review, then the next) until the reset on 2026-10-01 10:00 UTC. Resume order after the reset (one Opus writer per batch, Opus review, four agents at most):
