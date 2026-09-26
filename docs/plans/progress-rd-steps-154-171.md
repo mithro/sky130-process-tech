@@ -144,3 +144,30 @@ page. No edit of any kind inside an in-force `{dropdown}`.
 * `check_preserved --allow-regrouped`: ADDED outside the glance only the declared `pdk-04`, "The
   lines are", "It", "NILD3", the labels and "Specific"; every `number_order` change REGROUPED, read.
   `--strict-words` LOST: `strength`×2 (and `which`). cov: three flags, all pairing noise. inv: OK.
+
+### 157 CMPM4 — done (base `f6daf15a`)
+
+* Lead (base 144): two paragraphs (93, 51) split before "As at CMPM …" (142 form). First sentence 10.
+* Post-figure paragraph: the rules sentence (65 words) → "The PDK's metal-4 rules are written around
+  this polish:" and two bullets split at its semicolon (142 form); each bullet keeps its own marker.
+* R-CATEGORY (142 form): classification sentence alone; the CMPM/CMPM3 pointer as a paragraph; "Two
+  things are specific to this instance." → colon and two bullets. The second bullet dropped its
+  opening "And," and, being 46 words, was split before "with no plug polish": "… sputtered into it
+  (inference). There is no plug polish afterwards …" (declared: "There is", the repeated
+  "(inference)"; word `with` lost). The leading "On our reading of the via-4 rules and the fill reading
+  …" stays on the first half, the second half carries the base's "(inference)".
+* Why: planarity, capacitor and pattern-density items split with a continuation paragraph (142
+  form). Via-4 depth item split at ", and the aluminium deposition …" (word `and` lost): the trailing
+  "(inference, on the fill reading at WTIAL5)" stays with the second sentence, which holds the fill
+  reading ("the aluminium deposition that follows fills the hole directly"); the first sentence is the
+  etch requirement 142 states unhedged ("must clear the full dielectric … while stopping on the
+  shallower plates").
+* How: scope sentence italic; the Recipe item split after the Nanz and Camilletti sentence
+  (continuation paragraph).
+* R-TOOLS: Mirra (three lines); defect inspection "Strength: medium." → "*Tool exists:* medium." (142
+  form); the post-CMP clean item has no grade and is unchanged. R-RELATED (142 labels). R-OPENQ
+  labels on five bullets. Glance box (142 form).
+* `check_preserved --allow-regrouped`: ADDED outside the glance only the declared "(inference)",
+  "There is", "Two things … :" colon, labels; every `number_order` change REGROUPED, read.
+  `--strict-words` LOST: `strength`×2 (and `with`, `and`, `And`). cov: one flag (quick-facts pairing
+  noise). inv: OK.
