@@ -94,7 +94,7 @@ the borderless-contact schemes of the era:
   line.
 
   Where the contact is misaligned or the line is narrow,
-  it must not dig into the oxide beside the line. An oxide etch stops on
+  the etch must not dig into the oxide beside the line. An oxide etch stops on
   nitride with the {term}`selectivity` that the fluorocarbon-film mechanism
   gives (Schaepkens et al.[^schaepkens-1999]); the nitride is then
   opened with a short, separate etch.
