@@ -57,13 +57,13 @@ Boolean operations.
 The rules are shared with `psdm` under "Defines
 opening for N+/P+ implants":[^pdk-periph]
 
-| Rule | Constrains | Value (µm) |
+| Rule | Constrains | Value |
 |---|---|---:|
-| nsd.1 | width | 0.380 |
-| nsd.2 | space | 0.380 |
-| nsd.5a, nsd.5b | enclosure of diffusion and of tap | 0.125 |
+| nsd.1 | width | 0.380 µm |
+| nsd.2 | space | 0.380 µm |
+| nsd.5a, nsd.5b | enclosure of diffusion and of tap | 0.125 µm |
 | nsd.6 | enclosure at a diff/tap butting edge | zero |
-| nsd.7 | to diffusion or tap of the opposite implant | 0.130 |
+| nsd.7 | to diffusion or tap of the opposite implant | 0.130 µm |
 | nsd.8 | no overlap with opposite-doping diffusion or tap | — |
 | nsd.9 | "Diff and tap must be enclosed by their corresponding implant layers" | — |
 | nsd.10a | minimum area | 0.265 µm² |

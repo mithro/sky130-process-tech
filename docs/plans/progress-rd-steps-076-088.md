@@ -59,7 +59,8 @@ generated index-links block and `## References` are **excluded**. Before = `main
   20-word parenthetical and reorder its numbers); 083 the tilted-extension lead (51, restored in the fix
   round); 086 the test-tile values with the full extraction hedge repeated (50, fix round); 087 the first
   Resources bullet (46, restored in the fix round); 087
-  "The surface under the resist is, on our reading of the flow, …" (47; the same reason).
+  "The surface under the resist is, on our reading of the flow, …" (47; the hedge governs the whole
+  sentence).
 * First sentence over 25 words: 082 (27), 086 (26); no seam that step 7 allows.
 * Leads over 120 words, as in the base: 079 (136; base 135), 080 (121; base 122), 083 (128; base 125),
   088 (157; base 154). Two paragraphs each, except 088, which takes three (§4.1 note ¹).
@@ -481,11 +482,12 @@ None was fixed here; each is recorded as found.
   the rest keeps `[^pdk-06]`) and at its dash: "… purposes.[^pdk-06] That is evidence that the reticle
   is derived … not copied from it.[^pdk-06]" ("That is" added, step 7; `[^pdk-06]` **repeated** on the
   first half because the base's single marker covered the whole sentence — masks-b H1 — declared).
-* **R-TABLE.** The ten psd rules → `Rule | Constrains | Value (µm)`, one row per rule in the base order,
-  `[^pdk-periph]` on the lead-in "… give:[^pdk-periph]". The two area rows keep their own unit, "0.255 µm²"
-  and "0.265 µm²", joined by a non-breaking space (as on 018) so the unit does not wrap away from the
-  number at 1280 px or 400 px — a first try with the unit in the header lost a `²` token in
-  `check_preserved` and was not kept; psd.6's "zero enclosure at a diff/tap butting edge" → "enclosure at a
+* **R-TABLE.** The ten psd rules → `Rule | Constrains | Value`, one row per rule in the base order,
+  `[^pdk-periph]` on the lead-in "… give:[^pdk-periph]". The rows differ in unit (µm and µm²), so, by
+  the coordinator's unit ruling from the review, the header names no unit and every value cell carries
+  its own, joined by a non-breaking space (as on 018); the first version, "Value (µm)" with two µm²
+  cells, was changed in the fix round;
+  psd.6's "zero enclosure at a diff/tap butting edge" → "enclosure at a
   diff/tap butting edge | zero"; psd.8 and psd.9 have no value (`—`), psd.9's quotation is in its cell
   unchanged. LOST `number_order` checked by hand against the base: psd.1 0.380, psd.2 0.380, psd.5a
   0.125, psd.5b 0.125, psd.6 zero, psd.7 0.130, psd.8 —, psd.9 —, psd.10b 0.255 µm², psd.11 0.265 µm².
@@ -517,7 +519,7 @@ None was fixed here; each is recorded as found.
 * **Preservation** (`--allow-regrouped` only): ADDED markers `hook-2003`, `pdk-06` (repeats),
   `pdk-periph`, `skw-01` (glance); numbers 0.125, 0.380, 1, 2, 5×2, ⁺ (glance); refs `step-082`,
   `step-083` (glance); hedges "inference", "likely", "not public", "our reading" (glance). LOST
-  `number_order` for the psd table, checked above. WORDS LOST: "by"×2, "m"×2 (table: "µm" moved to the header), "leaving" ("It
+  `number_order` for the psd table, checked above. WORDS LOST: "by"×2, "leaving" ("It
   leaves"), "page" ("Mask page:" → "Mask:"), "strength"×3.
 * **Marker coverage.** 11 flags, all read: the table's lead-in; split halves whose base marker
   belonged to the other clause (mask table/layers, the category bullets, Develop/studies); the
@@ -728,7 +730,8 @@ None was fixed here; each is recorded as found.
   layers, their add/drop purposes, `[^pdk-06]` and the "so the reticle is derived …" reading stay one
   sentence, as in the base).
 * **R-TABLE.** The nsd rules → `Rule | Constrains | Value (µm)` in the base order, as on 081;
-  `[^pdk-periph]` on the lead-in "… opening for N+/P+ implants":[^pdk-periph]" (the base colon kept).
+  `[^pdk-periph]` on the lead-in "… opening for N+/P+ implants":[^pdk-periph]" (the base colon kept). Header "Value" with the unit in every value cell (the review's unit ruling, applied in the fix
+  round; first version "Value (µm)").
   nsd.5a and nsd.5b stay in one row because the base gives them one clause and one value ("enclosure
   of diffusion and of tap by 0.125 µm (nsd.5a, nsd.5b)"); nsd.7's cell is the base's own words ("to
   diffusion or tap of the opposite implant", no "spacing" added); nsd.8 and nsd.9 have no value
@@ -760,7 +763,7 @@ None was fixed here; each is recorded as found.
   0.200 µm `[^pdk-periph]`; tool line with both grades; Not public from Open questions 1.
 * **Preservation** (`--allow-regrouped` only): ADDED markers `pdk-periph`, `skw-01`, numbers 0.200,
   0.380, 1, 2, 6, ⁺, ref `step-086`, hedges "inference", "likely", "not public" — the glance box.
-  LOST `number_order` for the nsd table, checked above. WORDS LOST: "by", "m", "page" ("Mask page:"
+  LOST `number_order` for the nsd table, checked above. WORDS LOST: "by", "page" ("Mask page:"
   → "Mask:"), "strength"×3.
 * **Marker coverage.** 12 flags, all read: split halves whose base marker belonged to the other clause
   (mask table/layers, the two category bullets, the NMOS item, the poly-heads item); glance and label

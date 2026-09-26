@@ -60,14 +60,14 @@ not copied from it.[^pdk-06]
 The rules (shared with `nsdm` under the heading
 "Defines opening for N+/P+ implants") give:[^pdk-periph]
 
-| Rule | Constrains | Value (µm) |
+| Rule | Constrains | Value |
 |---|---|---:|
-| psd.1 | width | 0.380 |
-| psd.2 | space | 0.380 |
-| psd.5a | enclosure of diffusion | 0.125 |
-| psd.5b | enclosure of tap | 0.125 |
+| psd.1 | width | 0.380 µm |
+| psd.2 | space | 0.380 µm |
+| psd.5a | enclosure of diffusion | 0.125 µm |
+| psd.5b | enclosure of tap | 0.125 µm |
 | psd.6 | enclosure at a diff/tap butting edge | zero |
-| psd.7 | spacing to diffusion or tap of the opposite implant | 0.130 |
+| psd.7 | spacing to diffusion or tap of the opposite implant | 0.130 µm |
 | psd.8 | no overlap with diffusion or tap of the opposite doping | — |
 | psd.9 | the requirement that "Diff and tap must be enclosed by their corresponding implant layers" | — |
 | psd.10b | minimum area | 0.255 µm² |
