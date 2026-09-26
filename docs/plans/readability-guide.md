@@ -2277,10 +2277,14 @@ reverted, not declared away. If the tool reports one anyway, list the note and i
 the progress file and revert it before moving on.
 
 A `number_order` LOST is failed by default. `--allow-regrouped` downgrades that LOST to a warning
-once its four conditions hold (see the tool's own docstring on `check_regrouped`) — the
+once its conditions hold (see the tool's own docstring on `check_regrouped`) — the
 deliberate result of R-TABLE, R-DERIVATION or R-LIST turning one dense prose unit's numbers into
 several smaller units (a table's rows, a numbered list's steps) — and prints each LOST unit's
-source text next to the ADDED units that cover it. Read that printout, confirm by hand that every
+source text next to the ADDED units that cover it. Since 2026-09-27 (review rd-steps-118-134 D4) it
+also reports dash or parenthetical material moved, unchanged, to directly after its sentence
+(R-SENTENCE step 1) as `REGROUPED … moved within its block`: the same numbers in the same paragraph,
+list item or table-plus-lead-in, only split and reordered. A swap inside one sentence, a move between
+paragraphs and reordered one-number rows still fail. Read that printout, confirm by hand that every
 regrouping — and any "respectively" pairing — is the same digits, and put the printout, or your
 own confirmation of it, in the progress file. **Any other loss is a bug in your edit.**
 
@@ -2316,8 +2320,10 @@ gate 074 needed.
 shows that only as extra WORDS ADDED, which never fails. Before committing a page, check that (a) no
 two consecutive non-blank lines outside tables and fences are identical, and (b) no sentence or run
 of eight or more words occurs more often than in the base outside the glance box, unless it is a
-declared repeat (review rd-steps-118-134 D5; a failing check in `check_preserved.py` or a separate
-`check_dups` is a coordinator task).
+declared repeat (review rd-steps-118-134 D5). Since 2026-09-27 `check_preserved.py` fails on both
+(`DUPLICATED line` / `DUPLICATED sentence`), counted outside tables, fences and footnote definitions and
+only where the base page had fewer copies; a declared repeat that trips it is put in the progress file
+with the printout.
 
 **4c. Two informational WARN lines**, printed once per page (not part of the before/after diff):
 a `WARN glance number/marker ... does not recur in the body below` means an "At a glance" bullet
