@@ -868,8 +868,10 @@ None was fixed here; each is recorded as found.
   exists:*, *Runs this step:* with the Iridia reason. Benches: head with both quotations, *Tool
   exists:*, *Runs this step:* the DNS/FSI SC-2 "(inference)". AIT: *Tool exists:* medium. Three tools,
   no recap table.
-* **Resources.** The 46-word first bullet split at the semicolon after `[^skw-01][^fujimura-1994]`
-  ("CF₄, listed on the Iridia and Mattson ashers, … would, we infer, be omitted here; …").
+* **Resources.** The 46-word first bullet is **left as in the base** (review L3): a split at the
+  semicolon after `[^skw-01][^fujimura-1994]` left the last resource of the semicolon list, "arsenic-tolerant
+  exhaust scrubbing", hanging off the CF₄ sentence, and its link text cannot be recapitalised to stand
+  alone.
 * **R-RELATED.** "The oxide the strip must preserve" → `Same module:`; "Companion strip … the other
   high-dose strip" → `Same category:` (PDIS, P1IS are Resist strip / clean steps); "the earlier
   pre-anneal strip of the well module: PWDEIS before RTAI" split off unlabelled (RTAI is an anneal, so
@@ -885,7 +887,8 @@ None was fixed here; each is recorded as found.
 * **Marker coverage.** 13 flags, all read: the asher bullets (marker on the lead-in); split halves whose
   base marker belonged to the other clause (crust quotation/"At an arsenic dose", "Downstream …"
   lead/quotation, CF₄); glance and label lines.
-* **Caps**: para > 100 3 → 0; item > 60 2 → 0; sentence > 45 8 → 1 (the surface sentence, above).
+* **Caps**: para > 100 3 → 0; item > 60 2 → 0; sentence > 45 8 → 2 (the surface sentence and the
+  Resources bullet, above).
 
 ### 088 RTAD — done
 
