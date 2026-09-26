@@ -58,8 +58,7 @@ generated index-links block and `## References` are **excluded**. Before = `main
 * Sentences: 076 "The film must coat the foot of a gate line …" (46; the only further split would move a
   20-word parenthetical and reorder its numbers); 083 the tilted-extension lead (51, restored in the fix
   round); 086 the test-tile values with the full extraction hedge repeated (50, fix round); 087 the first
-  Resources bullet (46, restored in the fix round); 079 "The order relative to the source/drain implants
-  is deliberate on our reading …" (51; every split would put the doping clause outside its hedge); 087
+  Resources bullet (46, restored in the fix round); 087
   "The surface under the resist is, on our reading of the flow, …" (47; the same reason).
 * First sentence over 25 words: 082 (27), 086 (26); no seam that step 7 allows.
 * Leads over 120 words, as in the base: 079 (136; base 135), 080 (121; base 122), 083 (128; base 125),
@@ -369,8 +368,8 @@ None was fixed here; each is recorded as found.
 * **Why.** Paragraph 1 (134 w) split before "Tang et al. built"; the `licon1` sentence split at its
   semicolon ("If the nitride cap were still under it, …"); Tang split at the semicolon after its
   markers. The 51-word "The order relative to the source/drain implants is deliberate on our reading
-  (…): the opened poly is doped …" is **left whole**: every split point would put the doping clause
-  outside the "on our reading" that governs it. "Two failure modes make the recipe demanding." →
+  (…): the opened poly is doped …" split at its colon with the leading hedge repeated: "… (inference from
+  the PDK rules, NPCM). On that reading, the opened poly is doped …" (review L8, the 083 form). "Two failure modes make the recipe demanding." →
   colon and two bullets bolded in place ("Incomplete clearing", "Over-etching" were already bold
   run-ins in the base); the npc.4 inference and the two studies stay as the paragraph after the list
   (R-LIST step 4), the studies split at ", and Tuda" (each keeps its marker).
@@ -413,7 +412,7 @@ None was fixed here; each is recorded as found.
 * **Marker coverage.** 19 flags, all read: split halves whose base marker belonged to the other
   clause (cap/stop/licon1, `licon1`/0.17 µm hole, Tang/abstracts, Joubert/Tuda, Kastenmeier/Staffa,
   TEL quotation/"Because …", asher/wet bench/"We infer no HF"); glance and label lines.
-* **Caps**: para > 100 4 → 0; item > 60 2 → 0; sentence > 45 10 → 1 (the
+* **Caps**: para > 100 4 → 0; item > 60 2 → 0; sentence > 45 10 → 0 (the
   51-word "order … on our reading" sentence, above).
 
 ### 080 SPOX — done

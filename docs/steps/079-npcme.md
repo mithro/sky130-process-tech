@@ -99,8 +99,8 @@ describe a nitride cap over poly removed at contact sites, and the
 papers' full text was not checked.
 
 The order relative to the source/drain implants is deliberate on our
-reading (inference from the PDK rules, {ref}`NPCM <step-078>`): the
-opened poly is doped by {ref}`PSDI <step-082>` inside `psdm` and by
+reading (inference from the PDK rules, {ref}`NPCM <step-078>`). On that
+reading, the opened poly is doped by {ref}`PSDI <step-082>` inside `psdm` and by
 {ref}`NSDI <step-086>` inside `nsdm`, which gives the p-type precision
 resistors heavily doped contact heads and gives n⁺ interconnect heads
 an extra n⁺ dose. A bare-poly surface also receives the
