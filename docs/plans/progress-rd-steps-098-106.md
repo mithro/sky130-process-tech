@@ -277,8 +277,52 @@ page.
   grades and what each covers; Not public from Open questions 1.
 * **Preservation.** ADDED: glance (`pdk-04`, `pdk-08`, `skw-01`, 0.1, 12.8, metal 1's 1, quotes, `li1`,
   `metal-1`, hedges) and the repeated `[^pdk-04]`. LOST: the R-REPEAT copies and the rule-table
-  number order (both above). WORDS LOST besides those: "strength" (R-TOOLS label), "with", "an", "as",
-  "and" (list joins).
+  number order (both above). WORDS LOST besides those: "strength" (R-TOOLS label), "wide" (li.7's
+  "0.290 µm wide" → the row "resistor form width | 0.290 µm"), "with", "an", "as", "and" (list joins).
 * **Marker coverage.** 20 flags read: list bullets and table rows under their lead-in marker, halves
   of split sentences each keeping their own markers, glance lines, the tool head. None lost.
 * **Caps after:** 0 / 0 / 0 / 0. Item leads over 30: "Origins" (40), stack-diagram question (37).
+
+### 102 LI1M — done (model: 093)
+
+* **Lead.** The 57-word second sentence split at its semicolon ("… wiring level. Everything else is
+  etched away …"). Lead 97 words, one paragraph; first sentence 8 words.
+* **R-H3.** `### What the public record shows` after the figure caption (186-word PDK passage, ending in
+  the hedged OPC inference), as on 093.
+* **R-TABLE.** The 81-word rule enumeration → `Rule | Constrains | Value`, eight rows in the base order;
+  the end marker `[^pdk-periph]` on the lead-in "… and give:" (R-TABLE step 3). Units in each cell
+  (µm, µm² and the unitless ratio 10 differ, batch ruling). li.1a and li.3a restore the elided
+  "width" / "spacing" from their parent rules. `LOST number_order` hand-checked (rule-table form, as
+  093): li.1 0.170 µm; li.1a 0.140 µm; li.2 10; li.3 0.170 µm; li.3a 0.140 µm; li.5 0.080 µm; li.6
+  0.0561 µm²; li.7 0.290 µm — same values, same order. At 400 px the Value cells wrap between number
+  and unit (no number is broken; no horizontal scroll). The mask-table sentence split at its
+  semicolon (two separately cited facts); the minimum-CD sentence split at ", and the "other
+  criteria" table", its elided verb restored ("carries").
+* **R-CATEGORY.** Classification sentence (33 words) ends at "which makes the task easier."; the colon's
+  explanation is the one remaining sentence (a paragraph, no label). "What is specific …" is its own
+  label (step 3); the 54-word substrate sentence split at its colon and at ", but the nitrogen"
+  ("But the nitrogen …" — a sentence, not a paragraph, opening on the split's own conjunction).
+* **Why.** Density, Enclosure of plugs, Proximity correction and Resist over TiN each split at their
+  semicolon into a lead ≤ 30 words and a continuation. On Density `[^pdk-periph]`, which in the base
+  sat mid-sentence after li.1a/li.3a, is repeated on the li.1/li.3 half so the 0.17/0.34 µm rule
+  figures keep their citation (declared ADDED).
+* **How.** Scope sentence italic. Exposure (116 words): split at its semicolon and before "We infer a
+  **DUV (KrF) exposure …**" — lead (i-line excluded), continuation (248 nm and ITRS), continuation
+  (the inference with "not public — SkyWater lists both", Brunner). k₁ arithmetic not shown as
+  operations on the page, so no R-DERIVATION; values checked: 0.17 × 0.6 / 0.365 = 0.279; 0.17 ×
+  0.6–0.7 / 0.248 = 0.41–0.48.
+* **R-TOOLS.** As 093, word for word apart from the step code and "0.17 µm and 0.14 µm rules":
+  DUV stepper/scanner three-line; Tracks *Tool exists:*; Overlay/CD *Tool exists:* + *Runs this
+  step:*.
+* **R-RELATED.** Previous / Next split; "The contacts the pattern must cover …; the contacts that will
+  land on it …" → `Depends on:` and `Feeds:`; the other DUV layers → `Same category:`; "Mask page:" →
+  `Mask:` (WORDS LOST "page", as 093).
+* **R-OPENQ.** "Exposure tool and resist" (093's), "Add/drop values", "Barrier or ARC layer".
+* **R-GLANCE.** As 093: li.1/li.3 0.170 µm `[^pdk-periph]`, the "Li1 proximity correction" 0.25 µm
+  `[^pdk-03]`; tool line with both grades named.
+* **Preservation.** ADDED: glance and the repeated `[^pdk-periph]`. LOST: the rule-table number order
+  (above). WORDS LOST: "strength"×3 (R-TOOLS labels), "page", "of" (li.2's "ratio of 10" → the Value
+  cell).
+* **Marker coverage.** 9 flags read: table rows under the lead-in marker, the split criteria sentence
+  (each half keeps its `[^pdk-03]`), glance and tool head. None lost.
+* **Caps after:** 0 / 0 / 0 / 0.
