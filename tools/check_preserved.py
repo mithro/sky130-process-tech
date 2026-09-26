@@ -452,7 +452,9 @@ def extract_numbers(text: str) -> Counter:
     return Counter(_number_tokens_ordered(text))
 
 
-def extract_number_order(text: str) -> tuple[Counter, dict[tuple[str, ...], list[str]]]:
+def extract_number_order(
+    text: str,
+) -> tuple[Counter, dict[tuple[str, ...], list[str]], list[list[tuple[str, ...]]]]:
     """Counter of ordered numeric-token tuples, one per "unit" (a table
     row, a list item, or a rough sentence) that carries two or more
     numbers; and, alongside it, up to three short samples of the source
@@ -485,9 +487,27 @@ def extract_number_order(text: str) -> tuple[Counter, dict[tuple[str, ...], list
     tuples: list[tuple[str, ...]] = []
     samples: dict[tuple[str, ...], list[str]] = {}
     paragraph: list[str] = []
+    # Third result (review rd-steps-118-134 D4, and batch-8 guide problem
+    # 3): the page's "blocks" -- a paragraph, a list item, or a table
+    # together with the paragraph that leads into it -- each as the list
+    # of its units' ordered numeric tokens (units below the 2-number
+    # threshold included). check_regrouped uses them to recognise dash or
+    # parenthetical material moved, unchanged, to directly after its
+    # sentence: same numbers in the same block, only their order changed.
+    blocks: list[list[tuple[str, ...]]] = []
+    current_block: list[tuple[str, ...]] = []
+    last_kind = [""]
+
+    def end_block(kind: str) -> None:
+        nonlocal current_block
+        if current_block:
+            blocks.append(current_block)
+        current_block = []
+        last_kind[0] = kind
 
     def add_unit(unit_text: str) -> None:
         nums = _number_tokens_ordered(unit_text)
+        current_block.append(tuple(nums))
         if len(nums) >= 2:
             key = tuple(nums)
             tuples.append(key)
@@ -515,6 +535,7 @@ def extract_number_order(text: str) -> tuple[Counter, dict[tuple[str, ...], list
         para = " ".join(paragraph)
         paragraph.clear()
         add_prose(para)
+        end_block("paragraph")
 
     lines = text.split("\n")
     i = 0
@@ -525,6 +546,7 @@ def extract_number_order(text: str) -> tuple[Counter, dict[tuple[str, ...], list
         if hm:
             flush_paragraph()
             add_unit(hm.group(1))
+            end_block("heading")
             i += 1
             continue
         fm = _FENCE_RE.match(stripped)
@@ -532,12 +554,20 @@ def extract_number_order(text: str) -> tuple[Counter, dict[tuple[str, ...], list
             flush_paragraph()
             if fm.group(1):
                 add_prose(fm.group(1))
+            end_block("fence")
             i += 1
             continue
         if _TABLE_ROW_RE.match(stripped):
             flush_paragraph()
-            add_unit(line)
-            i += 1
+            # A table and the paragraph that leads into it form one block:
+            # take that paragraph back (it was just closed) so a lead-in
+            # number moved into a cell, or out of one, is "within the block".
+            if last_kind[0] == "paragraph" and blocks:
+                current_block = blocks.pop() + current_block
+            while i < len(lines) and _TABLE_ROW_RE.match(lines[i].strip()):
+                add_unit(lines[i])
+                i += 1
+            end_block("table")
             continue
         if _LIST_ITEM_RE.match(stripped):
             flush_paragraph()
@@ -552,6 +582,7 @@ def extract_number_order(text: str) -> tuple[Counter, dict[tuple[str, ...], list
                 item_lines.append(lines[i])
                 i += 1
             add_prose(" ".join(item_lines))
+            end_block("item")
             continue
         if not stripped:
             flush_paragraph()
@@ -560,7 +591,8 @@ def extract_number_order(text: str) -> tuple[Counter, dict[tuple[str, ...], list
         paragraph.append(line)
         i += 1
     flush_paragraph()
-    return Counter(tuples), samples
+    end_block("end")
+    return Counter(tuples), samples, blocks
 
 
 def extract_quotes(text: str, page_label: str = "") -> tuple[Counter, list[str]]:
@@ -730,7 +762,7 @@ def extract_all(
     masked_for_numbers = IDENT_RE.sub(_ident_sub, masked)
     numbers_stream_text = _LEADING_LIST_MARKER_RE.sub(" ", masked_for_numbers)
     numbers = extract_numbers(numbers_stream_text)
-    number_order, number_order_samples = extract_number_order(masked_for_numbers)
+    number_order, number_order_samples, number_blocks = extract_number_order(masked_for_numbers)
     footnotes = Counter(f"[^{label}]: {text}" for label, text in defs.items())
     # The page's numeric tokens, left to right, ignoring all unit
     # boundaries (review C3, rd-overview finding 3): used only by
@@ -742,6 +774,7 @@ def extract_all(
     # the same fully-masked text as `numbers`/`number_order`, so widths
     # and identifiers never enter it.
     stream = _number_tokens_ordered(numbers_stream_text)
+    order_context = {"stream": stream, "blocks": number_blocks}
 
     return {
         "markers": markers,
@@ -753,7 +786,7 @@ def extract_all(
         "hedges": hedges,
         "number_order": number_order,
         "identifiers": identifiers,
-    }, number_order_samples, stream, quote_warnings
+    }, number_order_samples, order_context, quote_warnings
 
 
 # ---------------------------------------------------------------------------
@@ -1012,6 +1045,63 @@ def _contiguous(t: tuple[str, ...], stream: list[str]) -> bool:
     return any(tuple(stream[k : k + n]) == t for k in range(len(stream) - n + 1))
 
 
+def _moved_within_block(
+    t: tuple[str, ...],
+    src_blocks: list[list[tuple[str, ...]]],
+    dst_blocks: list[list[tuple[str, ...]]],
+) -> bool:
+    """Whether the unit tuple ``t`` of a ``src_blocks`` block reappears in
+    ``dst_blocks`` as a block with exactly the same numbers (as a
+    multiset) in which no single unit carries ``t``'s numbers -- i.e. the
+    numbers stayed together in their paragraph, list item or table but
+    the unit was split and its parts reordered (dash or parenthetical
+    material moved to directly after its sentence, R-SENTENCE step 1).
+
+    Three guards keep real swaps out. A transposition inside one
+    sentence is not excused: the new sentence is then one unit with the
+    same multiset as ``t``. A swap between blocks is not excused, because
+    the block multisets then differ. And a one-number-per-row regroup
+    whose rows changed order (the stream check's own swap case) is not
+    excused either: every destination unit with two or more numbers must
+    keep them in ``t``'s order (an in-order subsequence of ``t``) or be a
+    unit the source block already had, and at least one such multi-number
+    unit must exist -- moved dash material always leaves one.
+
+    Seen from the other side (``t`` is a fragment the split produced,
+    reported as ADDED), the same move shows as a destination unit that
+    holds ``t``'s numbers in order among others: accepted on the same
+    block-multiset condition.
+    """
+    t_multiset = Counter(t)
+
+    def in_order(part: tuple[str, ...], whole: tuple[str, ...]) -> bool:
+        k = 0
+        for n in part:
+            k = next((j for j in range(k, len(whole)) if whole[j] == n), -1) + 1
+            if k == 0:
+                return False
+        return True
+
+    for src in src_blocks:
+        if t not in src:
+            continue
+        src_multiset = Counter(n for unit in src for n in unit)
+        src_units = set(src)
+        for dst in dst_blocks:
+            if Counter(n for unit in dst for n in unit) != src_multiset:
+                continue
+            if any(Counter(unit) == t_multiset for unit in dst):
+                continue
+            # t was the whole unit: its parts are now separate units, each in order
+            multi = [unit for unit in dst if len(unit) >= 2 and unit not in src_units]
+            if multi and all(in_order(unit, t) for unit in multi):
+                return True
+            # t is a fragment: some unit holds all of t's numbers, in order, among others
+            if any(len(unit) > len(t) and in_order(t, unit) for unit in dst):
+                return True
+    return False
+
+
 def check_regrouped(
     lost_no: Counter,
     added_no: Counter,
@@ -1019,6 +1109,8 @@ def check_regrouped(
     new_stream: list[str],
     old_samples: dict[tuple[str, ...], list[str]],
     new_samples: dict[tuple[str, ...], list[str]],
+    old_blocks: list[list[tuple[str, ...]]] | None = None,
+    new_blocks: list[list[tuple[str, ...]]] | None = None,
 ) -> tuple[Counter, Counter, list[str]]:
     """``--allow-regrouped`` (review T1, redesigned per review C3 for
     rd-overview finding 3): reclassify a ``number_order`` LOST tuple as an
@@ -1062,9 +1154,19 @@ def check_regrouped(
     lines: list[str] = []
     still_lost: Counter = Counter()
     still_added: Counter = Counter()
+    # Second condition (review rd-steps-118-134 D4; batch-8 guide problem
+    # 3): the same numbers, in the same block, in a different order, with
+    # the unit split -- moved dash or parenthetical material. Still an
+    # informational line the reviewer re-pairs by hand.
+    old_blocks = old_blocks or []
+    new_blocks = new_blocks or []
     for t, c in lost_no.items():
         if _contiguous(t, new_stream):
             lines.append(f"REGROUPED (--allow-regrouped) number_order, was: {t}")
+            for sample in old_samples.get(t, [])[:1]:
+                lines.append(f"    was: {sample!r}")
+        elif _moved_within_block(t, old_blocks, new_blocks):
+            lines.append(f"REGROUPED (--allow-regrouped) number_order, moved within its block, was: {t}")
             for sample in old_samples.get(t, [])[:1]:
                 lines.append(f"    was: {sample!r}")
         else:
@@ -1072,6 +1174,10 @@ def check_regrouped(
     for t, c in added_no.items():
         if _contiguous(t, old_stream):
             lines.append(f"REGROUPED (--allow-regrouped) number_order, now: {t}")
+            for sample in new_samples.get(t, [])[:1]:
+                lines.append(f"    now: {sample!r}")
+        elif _moved_within_block(t, new_blocks, old_blocks):
+            lines.append(f"REGROUPED (--allow-regrouped) number_order, moved within its block, now: {t}")
             for sample in new_samples.get(t, [])[:1]:
                 lines.append(f"    now: {sample!r}")
         else:
@@ -1169,8 +1275,8 @@ def diff_page(
 ) -> list[tuple[bool, str]]:
     """Return (is_failure, message) pairs; does not print anything."""
     results: list[tuple[bool, str]] = []
-    old, old_samples, old_stream, old_quote_warnings = extract_all(old_text, f"{page_path} (before)")
-    new, new_samples, new_stream, new_quote_warnings = extract_all(new_text, f"{page_path} (after)")
+    old, old_samples, old_ctx, old_quote_warnings = extract_all(old_text, f"{page_path} (before)")
+    new, new_samples, new_ctx, new_quote_warnings = extract_all(new_text, f"{page_path} (after)")
     for w in old_quote_warnings + new_quote_warnings:
         results.append((False, w))
     dedup_halves = check_deduplicated(old_text, new_text, page_path) if allow_deduplicated else {}
@@ -1180,7 +1286,8 @@ def diff_page(
         limit = _DISPLAY_LIMIT.get(cat, 100)
         if cat == "number_order" and allow_regrouped and (lost or added):
             lost, added, extra = check_regrouped(
-                lost, added, old_stream, new_stream, old_samples, new_samples,
+                lost, added, old_ctx["stream"], new_ctx["stream"], old_samples, new_samples,
+                old_ctx["blocks"], new_ctx["blocks"],
             )
             for line in extra:
                 results.append((False, line))
@@ -1451,6 +1558,49 @@ def selftest() -> int:
         "table, is also accepted under --allow-regrouped",
         _regroup_singleton_old,
         "# P\n\n* Tier A: 2\n* Tier B: 3\n* Tier C: 4[^a]\n"
+        "\n[^a]: Source. <https://example.com/a>\n",
+        True,
+        allow_regrouped=True,
+    )
+
+    # -- moved within a block (review rd-steps-118-134 D4) ----------------
+    _moved_old = (
+        "# P\n\nThe etch clears 0.17 µm -- about 0.08 µm over 0.5 µm at 10 degrees -- "
+        "in 40 s.[^a]\n\n[^a]: Source. <https://example.com/a>\n"
+    )
+    _moved_new = (
+        "# P\n\nThe etch clears 0.17 µm in 40 s.[^a] That is about 0.08 µm over "
+        "0.5 µm at 10 degrees.\n\n[^a]: Source. <https://example.com/a>\n"
+    )
+    case(
+        "dash material moved to directly after its sentence, same paragraph, is "
+        "accepted under --allow-regrouped",
+        _moved_old, _moved_new, True, allow_regrouped=True,
+    )
+    case(
+        "the same move still fails without --allow-regrouped",
+        _moved_old, _moved_new, False,
+    )
+    case(
+        "a transposition inside one sentence is still caught with --allow-regrouped",
+        "# P\n\nThe ratio is 6 of 171 wafers.[^a]\n\n[^a]: Source. <https://example.com/a>\n",
+        "# P\n\nThe ratio is 171 of 6 wafers.[^a]\n\n[^a]: Source. <https://example.com/a>\n",
+        False,
+        allow_regrouped=True,
+    )
+    case(
+        "dash material moved into a different paragraph is still caught",
+        _moved_old + "\nAnother paragraph, 900 °C.\n",
+        "# P\n\nThe etch clears 0.17 µm in 40 s.[^a]\n\nAnother paragraph, 900 °C. "
+        "That is about 0.08 µm over 0.5 µm at 10 degrees.\n\n[^a]: Source. <https://example.com/a>\n",
+        False,
+        allow_regrouped=True,
+    )
+    case(
+        "a lead-in number moved into the table it introduces is accepted under --allow-regrouped",
+        "# P\n\nThree tiers, 9 masks in all:[^a]\n\n| Tier | Masks |\n|---|---|\n| A | 2 |\n| B | 3 |\n| C | 4 |\n"
+        "\n[^a]: Source. <https://example.com/a>\n",
+        "# P\n\nThree tiers:[^a]\n\n| Tier | Masks |\n|---|---|\n| A | 2 |\n| B | 3 |\n| C | 4 |\n| All | 9 |\n"
         "\n[^a]: Source. <https://example.com/a>\n",
         True,
         allow_regrouped=True,
