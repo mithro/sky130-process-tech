@@ -131,3 +131,38 @@ per page.
   per-contact reading parenthetical, no seam that keeps the hedge with the numbers), Etch-stop
   integrity (45; two sentences, the second's "it" needs the first), Endpoint (36), Strip and clean
   (40). No paragraph, item or sentence over the §1 caps.
+
+### 109 TIN2 — done
+
+* **R-H3:** none (the post-figure passage is this reference's reading of the hole and an
+  industry-typical thickness; no title fits).
+* **Lead:** base 156 words → three paragraphs (§4.1 note ¹: two would leave one over 100), split at
+  "The liner is described" and "The film is not"; first sentence cut at its colon to 8 words
+  ("… of the metal contact. It is a thin titanium nitride film …"). The 25-word IMP parenthetical
+  became its own sentence: "This is ionised-metal-plasma physical vapour deposition, …
+  bias.[^rossnagel-1998]" (subject and verb added, marker unchanged).
+* **R-CATEGORY:** classification cut at the em dash (11 words), the category-page sentence after it;
+  the family-of-liners sentence (lists other steps) and "What is specific …" (its own label) stay as
+  paragraphs, no bullets; "In this reference it" → "`TIN2`" (the paragraph now opens after a
+  sentence whose subject is the category page).
+* **R-PARA/R-SENTENCE:** post-figure: "— so this is a TiN-on-TiN contact" → ". So this is …" in the
+  same paragraph as the hedged reading it follows from; "The liner thickness is not public; …"
+  starts a second paragraph. Why/Barrier: lead + continuation at "Wittmer reviewed". Why/Coverage:
+  lead ends at "about 2:1", the rest a continuation (the lead block would otherwise have to carry
+  "That is the point of IMP"); split at "in 1998;". How: Cluster tool split at the semicolon; IMP
+  TiN deposition: lead, then the chamber paragraph (split at "titanium; a bias"), then the collimation
+  paragraph.
+* **R-TOOLS:** AMAT item in three lines; *SkyWater says:* is the quotation of `[^skw-01]`. Novellus
+  bullet has no grade; unchanged.
+* **R-OPENQ, R-RELATED, R-HEDGE, R-GLANCE:** four labels; Previous / Next split; bullets relabelled
+  and reordered to the R-RELATED order (Depends on, Feeds, Same category); italic scope lead-in.
+  Glance numbers: none published for the liner, the hole bottom 0.09 µm with `[^pdk-03]` (the quoted
+  name of that value is not in this page's body, so the glance does not quote it).
+* **check_preserved (`--allow-regrouped --strict-words`):** ADDED markers `pdk-03`, `skw-01`,
+  number `0.09`, quotes "Imp TiN"×2, hedges "likely", "not public" — all glance; identifier `TIN2`
+  (noun restored). LOST word "strength" (R-TOOLS). No number regrouped.
+* **Coverage flags read:** glance lines; "The liner is described here as IMP TiN." (this reference's
+  description, no marker in the base either; `[^rossnagel-1998]` stays on the definition); the "So"
+  sentence; the Rossnagel/Hamaguchi split (each half keeps its own markers).
+* **Left over the caps:** lead 160 words in three paragraphs (base 156; "It is", "This is" added).
+  Nothing else over the §1 caps.
