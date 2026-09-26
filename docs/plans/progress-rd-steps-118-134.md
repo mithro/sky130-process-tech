@@ -140,3 +140,50 @@ per page.
   artefacts in parentheticals; glance lines. None lost a marker or hedge.
 * **Left over the caps:** none. Item leads over 30 words: Strip and clean (40), poisoned via (47,
   two sentences; the second cannot open a continuation).
+
+### 120 TIN3 — done
+
+* **Kept verbatim** (the S9a figure agent's note): the lead's "coating the oxide sidewalls and the
+  titanium–tungsten floor" (unhedged, while the post-figure bullets give the floor as TiW or TiN) —
+  see Content problems. Both stack descriptions keep their wording.
+* **Lead:** base 196 words → three paragraphs (§4.1 note ¹), split at "The liner is described" and
+  "The film is"; first sentence cut at its colon to 9 words ("… of the via-1 plug. It is a thin
+  titanium nitride film …"). The 22-word IMP parenthetical became its own sentence, "This is
+  ionised-metal-plasma physical vapour deposition, … bias.[^rossnagel-1998]" (the 109 form). The
+  film-roles sentence split at its semicolon ("It is removed from the field …").
+* **R-H3:** none (as 109: the passage mixes the public geometry with this reference's readings).
+* **R-LIST:** "differs … in the floor and the geometry" → two plain bullets. Floor: the dash material
+  (the two stacks) becomes the continuation "On the 2013 Cypress description …, the floor is 300 Å …"
+  ("the floor is" added); "and on the second reading the liner meets a film of its own material" →
+  its own sentence, **`[^cyp-qtp-123907]` repeated** on it (the claim rests on the 2014 report;
+  declared). Hole: split at the dash, "It is shallower …" (subject and verb added). The
+  "min. etch and fill capability" sentence stays as prose after the list.
+* **R-CATEGORY:** classification cut at its semicolon (12 words), the category-page sentence after it;
+  the liner-family sentence (lists other steps) as a paragraph, "it" → "`TIN3`" (the paragraph now
+  follows a sentence whose last subject is TIN2); "What is specific …" (its own label) split at ",
+  which makes" → ". This makes …" in the same paragraph.
+* **R-PARA (Why):** Nucleation: continuation at "Srinivas et al.". Barrier: lead ends at the first
+  semicolon ("them" in the continuation keeps its antecedent directly above). Coverage: lead ends at
+  the markers of "directional". Resistance: split at the colon before "Kwok et al.".
+* **How:** italic scope lead-in. Sputter pre-clean (46 words, dash pair plus two parentheticals): the
+  dash material becomes "These are the titanium- and tungsten-fluoride and oxide residue on the cap
+  floor (industry practice[^txt-05])." — the trailing "(industry practice[^txt-05])" scoped the whole
+  sentence, so it is **repeated** on the new sentence (R-SENTENCE step 5; declared ADDED marker
+  `txt-05`); Boumerzoug is the continuation. IMP TiN: split at the semicolon; continuation from "A
+  wafer bias".
+* **R-TOOLS:** AMAT item in the 109 form; the platform-model and chamber-use sentence stays whole
+  under *Runs this step:* (one sentence grading two things at one strength). Novellus bullet has no
+  grade; unchanged.
+* **R-OPENQ, R-RELATED, R-HEDGE, R-GLANCE:** four labels; Previous / Next split, Depends on, Feeds
+  (TIAL12), Same category (the other liners); glance in the 109 form, "the floor" left unnamed.
+* **check_preserved (`--allow-regrouped --strict-words`):** ADDED markers `txt-05` and
+  `cyp-qtp-123907` (the two repeats above); every other ADDED line is the glance box (markers
+  `pdk-04`, `pdk-periph`, `skw-01`; numbers 0.15, 0.27; quotes "Imp TiN"×2; hedges "likely", "not
+  public"; identifiers `metal-1`, `via-1`) or `TIN3` (noun restored). REGROUPED: the floor/hole
+  sentence's numbers, same order. LOST word "strength" (R-TOOLS).
+* **Coverage flags read:** the floor lead ("rather than … a TiN-on-refractory-cap interface"; its
+  support is the stack sentence directly after it, as in the base's dash order), the hole split, the
+  "This makes" sentence (the Cypress markers support the thickness clause they follow), the residue
+  sentence (the cap markers belong to "thin the cap"). None lost a marker or hedge.
+* **Left over the caps:** lead 200 words in three paragraphs (base 196; "It is", "This is" added).
+  Item leads over 30 words: Resistance (33), IMP TiN (35, an attribution dash pair).
