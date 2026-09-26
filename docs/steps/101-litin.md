@@ -10,9 +10,28 @@
 | **Previous step** | {ref}`WCMPLI <step-100>` |
 | **Next step** | {ref}`LI1M <step-102>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** deposits the local interconnect itself — a blanket film of
+  titanium nitride, sputtered (on our reading) — which the next two
+  steps pattern into the `li1` layer.
+* **Why:** a wiring level below metal 1 lets a cell connect its
+  transistors without consuming metal-1 tracks.
+* **Public numbers:** `li` 0.1 µm thick;[^pdk-04] "Local interconnect"
+  sheet resistance 12.8 Ω/sq.[^pdk-08]
+* **Likely SkyWater tool:** Applied Materials PVD, "ESC TiN" chamber —
+  **strong** (the vendor and a conventional TiN chamber);
+  **inferences** (the platform and the assignment to the ESC
+  chamber).[^skw-01]
+* **Not public:** the deposition conditions, whether a titanium
+  adhesion layer precedes the TiN, and whether the film is IMP or
+  conventionally sputtered (→ Open questions).
+:::
+
 ## What this step is
 
-`LITIN` deposits the {term}`local interconnect` itself: a blanket film of
+`LITIN` deposits the {term}`local interconnect` itself. It is a blanket film of
 titanium nitride, about 0.1 µm thick, sputtered (on our reading) onto
 the polished surface of {ref}`WCMPLI <step-100>` — planar {term}`cap oxide`
 studded with
@@ -32,45 +51,59 @@ the public basis for that description follows.
 Before, the polished surface with its three tungsten plugs; after, the titanium-nitride film of the local interconnect over it. The PDK's stack diagram gives li a thickness of 0.1 µm,[^pdk-04] and the film is not drawn to scale. That it is sputtered is the page's reading; whether a titanium adhesion layer precedes it is not public, and none is drawn. The film is drawn in the same colour as the contact liner: the figures draw titanium and titanium nitride alike. The glass, the silicide discs at the bottom of the holes, the contact liner and the transistors' films (the spacers, the caps, the gate oxides, the gate film, the re-oxidation oxide and the spacer oxide), the doped regions and the field oxide (the oxide-filled trench in the middle) are drawn but not labelled, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. In the lower panel the plugs are not labelled. Not to scale.
 :::
 
-The public record on this film is better than for most of the flow.
-The PDK's stack diagram labels the conductor `li` with a thickness of
-0.1 µm and places it between the "PSG" dielectric and the "LINT"
-nitride;[^pdk-04] the assumptions table gives "LI1 thickness for
-antenna ratio calculations" as 0.1 µm;[^pdk-03] the extraction
-tables give "Local interconnect" a {term}`sheet resistance` of
-12 800 mΩ/sq (12.8 Ω/sq);[^pdk-08] the layer list describes `li1`
-(67:20) as "Local interconnect" and `licon1` and `mcon` as the
-contacts to and from it;[^pdk-06] SkyWater's PDK README summarises
-the process as having "1 level of local interconnect";[^pdk-10] an
-Efabless lecture on the PDK gives the local interconnect as
-"Titanium Nitride (TiN)" at 0.1 µm;[^ann-16] and SkyWater's press
-release on the first open-source shuttle counts "the local
-interconnect" among the features SKY130 "offers … as
-standard".[^ann-11] The arithmetic closes: 12.8 Ω/sq × 0.1 µm gives
+### What the public record shows
+
+The public record on this film is better than for most of the flow:
+
+* the PDK's stack diagram labels the conductor `li` with a thickness of
+  0.1 µm and places it between the "PSG" dielectric and the "LINT"
+  nitride;[^pdk-04]
+* the assumptions table gives "LI1 thickness for
+  antenna ratio calculations" as 0.1 µm;[^pdk-03]
+* the extraction
+  tables give "Local interconnect" a {term}`sheet resistance` of
+  12 800 mΩ/sq (12.8 Ω/sq);[^pdk-08]
+* the layer list describes `li1`
+  (67:20) as "Local interconnect" and `licon1` and `mcon` as the
+  contacts to and from it;[^pdk-06]
+* SkyWater's PDK README summarises
+  the process as having "1 level of local interconnect";[^pdk-10]
+* an
+  Efabless lecture on the PDK gives the local interconnect as
+  "Titanium Nitride (TiN)" at 0.1 µm;[^ann-16]
+* SkyWater's press
+  release on the first open-source shuttle counts "the local
+  interconnect" among the features SKY130 "offers … as
+  standard".[^ann-11]
+
+The arithmetic closes: 12.8 Ω/sq × 0.1 µm gives
 a resistivity of about 128 µΩ·cm, several times the roughly
 39 µΩ·cm Wikipedia quotes for bulk TiN[^wiki-tin] and squarely in
 the range of reactively sputtered TiN films (Sundgren's
 review[^sundgren-1985]). SkyWater's capability list includes "ESC
-TiN" and "Imp TiN" chambers on its AMAT {term}`PVD` tool[^skw-01] and
-its filings name Honeywell Electronic Materials (2021 S-1 and fiscal
-2023 10-K) and JX Metals (fiscal 2023 10-K) as sputter-target
-suppliers.[^sec-01][^sec-02]
+TiN" and "Imp TiN" chambers on its AMAT {term}`PVD` tool.[^skw-01] Its
+sputter-target suppliers are named under Resources
+required.[^sec-01][^sec-02]
 
 ## Step category
 
 `LITIN` is a {ref}`Thin-film deposition <category-deposition>` step of
 the *PVD* type — {term}`reactive sputtering` of titanium in argon–nitrogen
-(inferred; SkyWater's public list has PVD TiN chambers and no {term}`CVD`
-TiN[^skw-01]) — and the only step in the flow whose sputtered
+(inferred).
+
+SkyWater's public list has PVD TiN chambers and no {term}`CVD`
+TiN.[^skw-01] `LITIN` is the only step in the flow whose sputtered
 *titanium nitride* is a wiring level in its own right rather than a
 liner, barrier or cap; the aluminium levels above it are sputtered
 wiring too. The category
 page describes the technique and TiN's other roles (barrier, {term}`ARC`,
 the underlayer on which Blech discovered the critical-length
-effect[^blech-1976]). What is specific to this instance is that the
-film's *sheet resistance* is a circuit parameter: at 12.8 Ω/sq[^pdk-08]
+effect[^blech-1976]).
+
+What is specific to this instance is that the
+film's *sheet resistance* is a circuit parameter. At 12.8 Ω/sq[^pdk-08]
 it is a hundred times metal 1's 125 mΩ/sq[^pdk-08] but four times
-better than the unsilicided poly (48.2 Ω/sq[^pdk-08]), which is
+better than the unsilicided poly (48.2 Ω/sq[^pdk-08]). This is
 exactly what makes it useful for the short connections inside a
 standard cell or an SRAM bit cell that would otherwise cost a metal-1
 track. Thickness uniformity, resistivity (set by stoichiometry and
@@ -87,43 +120,58 @@ reasons:
   local interconnect level using titanium nitride" at IEDM 1985 and
   in *IEEE TED* 1987,[^tang-1985][^tang-1987] using the TiN that
   forms on top of a titanium {term}`salicide` during its nitrogen anneal as
-  a patternable conductor; the corresponding TI patents by Haken and
+  a patternable conductor.
+
+  The corresponding TI patents by Haken and
   Holloway and by Holloway et al. claim the structure and the
   patterning process.[^pat-li-ti-haken][^pat-li-ti-holloway] Mann et
   al. at IBM reviewed {term}`silicides <silicide>` and local interconnections
   together,[^mann-1995] and White et al. described a damascene-stud
-  local interconnect.[^white-1992] SKY130's version, on our reading,
+  local interconnect.[^white-1992]
+
+  SKY130's version, on our reading,
   differs from TI's in that the TiN is a *deposited* film on a
   polished dielectric rather than the by-product of a salicide —
   consistent with the contact-only silicide of {ref}`CSIL <step-098>`.
 * **Routing density.** A wiring level below metal 1 that can run
   over gates and along diffusions lets a cell connect its
-  transistors without consuming metal-1 tracks; the PDK's rules
-  allow 0.17 µm lines and spaces (li.1, li.3) and 0.14 µm inside
-  certain RF cells (li.1a, li.3a),[^pdk-periph] with an area minimum
-  of 0.0561 µm² (li.6) and a resistor form (li.7) 0.290 µm wide.[^pdk-periph]
-  A `li1` resistor is in fact a PDK device — the physical-criteria
+  transistors without consuming metal-1 tracks.
+
+  The PDK's rules allow:[^pdk-periph]
+
+  | Rule | Constrains | Value |
+  |---|---|---:|
+  | li.1, li.3 | lines and spaces | 0.17 µm |
+  | li.1a, li.3a | lines and spaces inside certain RF cells[^pdk-periph] | 0.14 µm |
+  | li.6 | area minimum | 0.0561 µm² |
+  | li.7 | resistor form width | 0.290 µm |
+
+  A `li1` resistor is in fact a PDK device, which
+  only a film with a well-controlled, moderately high sheet
+  resistance can provide. The physical-criteria
   table carries a "Li resistor width (to drop one Licon w/o
   dogbones)" of 0.29 µm (`LIRESCD`)[^pdk-03] and the periphery rules
-  a minimum LI-resistor width of 0.290 µm (li.7)[^pdk-periph] — which
-  only a film with a well-controlled, moderately high sheet
-  resistance can provide.
+  a minimum LI-resistor width of 0.290 µm (li.7).[^pdk-periph]
 * **Why TiN and not a metal.** TiN is refractory, so the levels
   above it can be processed at the 400–450 °C of the tungsten and
-  oxide depositions without {term}`hillocks <hillock>` or interdiffusion; it does not
+  oxide depositions without {term}`hillocks <hillock>` or interdiffusion.
+
+  TiN does not
   react with the tungsten plugs it lands on; it adheres to oxide;
   and it can be etched in chlorine or fluorine plasmas with
-  {term}`selectivity` to oxide ({ref}`LI1ME <step-103>`). Its resistivity —
+  {term}`selectivity` to oxide ({ref}`LI1ME <step-103>`).
+
+  TiN's resistivity is high for a wire but acceptable for
+  runs of a few micrometres. The resistivity is
   set by nitrogen stoichiometry, density and grain structure
   (Sundgren;[^sundgren-1985] the reactive-sputtering model of Berg
   and Nyberg;[^berg-2005] the microstructural evolution Petrov et
-  al. review[^petrov-2003]) — is high for a wire but acceptable for
-  runs of a few micrometres, and the li.2 rule ("Max ratio of length
+  al. review[^petrov-2003]). The li.2 rule ("Max ratio of length
   to width of LI without licon or mcon", 10)[^pdk-periph] is, we
   infer, partly an antenna and partly a resistance constraint.
 * **What it lands on.** The film must cover the tungsten plugs
   completely (licon.4, li.5[^pdk-periph]) and step down into
-  whatever recess the polish left; a conventional (non-IMP) sputter
+  whatever recess the polish left. A conventional (non-IMP) sputter
   suffices on a planar surface, which is why an "ESC TiN"
   chamber[^skw-01] rather than an {term}`IMP` chamber is, we infer, the
   natural choice here.
@@ -134,19 +182,20 @@ layouts of the PDK would not fit.
 
 ## How it is typically performed
 
-An industry-generic reactively sputtered TiN film for a 200 mm,
-130 nm-era fab (SKY130's recipe is not public):
+*An industry-generic reactively sputtered TiN film for a 200 mm,
+130 nm-era fab (SKY130's recipe is not public):*
 
 1. **Degas and pre-clean.** {term}`Degas <degas>` on the {term}`cluster tool` to drive
    water from the polished oxide; a light argon sputter pre-clean to
-   remove the tungsten oxide from the plug tops (Boumerzoug et al.
+   remove the tungsten oxide from the plug tops. Boumerzoug et al.
    describe the effect of titanium oxide on TiN on {term}`via`
-   resistance,[^boumerzoug-1997] the analogous problem).
+   resistance,[^boumerzoug-1997] the analogous problem.
 2. **Reactive sputtering.** DC magnetron sputtering from a titanium
    target in Ar/N₂ at a few mTorr, with the nitrogen flow held in
-   the nitrided ("poisoned") target regime for stoichiometric TiN —
-   the hysteresis Berg and Nyberg model[^berg-2005] is managed by
-   flow or partial-pressure control; wafer temperature of the order
+   the nitrided ("poisoned") target regime for stoichiometric TiN.
+
+   The hysteresis Berg and Nyberg model[^berg-2005] is managed by
+   flow or partial-pressure control. Wafer temperature of the order
    of 200–350 °C on an {term}`electrostatic chuck` ("ESC TiN"[^skw-01]) for
    density and low resistivity (industry-typical[^txt-09][^sundgren-1985]).
    Thornton's zone model[^thornton-1974][^ohring-2002] predicts the
@@ -170,15 +219,17 @@ An industry-generic reactively sputtered TiN film for a 200 mm,
 
 ## Machines likely used at SkyWater
 
-* **Applied Materials PVD, "ESC TiN" chamber.** SkyWater lists
-  "AMAT PVD Metal" with "ESC TiN" and "Imp TiN".[^skw-01] Strength:
-  **strong** for the vendor and for a conventional TiN chamber; the
-  platform (Endura-class) and the assignment of `LITIN` to the {term}`ESC`
-  chamber rather than the IMP chamber are **inferences** from the
-  film's role and the planar surface.
-* **Sputter targets.** SkyWater's filings name Honeywell Electronic
-  Materials (2021 S-1 and fiscal 2023 10-K) and JX Metals (fiscal 2023 10-K)
-  as sputter-target suppliers.[^sec-01][^sec-02] Strength: strong for the
+* **Applied Materials PVD, "ESC TiN" chamber**
+  - *SkyWater says:* lists
+    "AMAT PVD Metal" with "ESC TiN" and "Imp TiN".[^skw-01]
+  - *Tool exists:*
+    **strong** for the vendor and for a conventional TiN chamber.
+  - *Runs this step:* the
+    platform (Endura-class) and the assignment of `LITIN` to the {term}`ESC`
+    chamber rather than the IMP chamber are **inferences** from the
+    film's role and the planar surface.
+* **Sputter targets.** Suppliers are named under Resources
+  required.[^sec-01][^sec-02] Strength: strong for the
   suppliers; the specific target is not named.
 
 ## Resources required
@@ -197,12 +248,13 @@ An industry-generic reactively sputtered TiN film for a 200 mm,
 ## Related steps and cross-references
 
 * Previous: {ref}`WCMPLI <step-100>` (the polished plug surface).
-  Next: {ref}`LI1M <step-102>` (the {term}`LI` mask), {ref}`LI1ME <step-103>`
+* Next: {ref}`LI1M <step-102>` (the {term}`LI` mask), {ref}`LI1ME <step-103>`
   (the TiN etch), {ref}`LINIT <step-104>` (the nitride cap over it).
-* The plugs it lands on: {ref}`WDEP <step-099>`; the contacts to it
-  from above: {ref}`CTM1 <step-107>`, {ref}`CTME <step-108>`.
-* The liner TiN of the same module: {ref}`TI/TIN1 <step-097>`;
-  later TiN liners: {ref}`TIN2 <step-109>`.
+* Depends on: the plugs it lands on, {ref}`WDEP <step-099>`.
+* Feeds: the contacts to it
+  from above, {ref}`CTM1 <step-107>`, {ref}`CTME <step-108>`.
+* Same category: the liner TiN of the same module, {ref}`TI/TIN1 <step-097>`;
+  later TiN liners, {ref}`TIN2 <step-109>`.
 * Why the poly is not silicided, and so why LI matters:
   {ref}`P1I <step-050>`, {ref}`CSIL <step-098>`.
 * Category page: {ref}`Thin-film deposition <category-deposition>`.
@@ -274,19 +326,21 @@ See {ref}`patents-by-module` for the full, grouped list (families still in force
 
 ## Open questions
 
-* The deposition conditions (pressure, nitrogen fraction,
+* **Deposition conditions.** The deposition conditions (pressure, nitrogen fraction,
   temperature, bias), whether a titanium adhesion layer precedes the
   TiN, and whether the film is IMP or conventionally sputtered are
   not public.
-* The stack diagram gives the `li` bottom at 0.9361 µm and a level of
+* **Stack-diagram label.** The stack diagram gives the `li` bottom at 0.9361 µm and a level of
   1.0111 µm only 0.075 µm higher, against the 0.1 µm that its
   conductor label and the assumptions table give for
-  `li`.[^pdk-04][^pdk-03] The 1.0111 µm leader line runs to the top of
+  `li`.[^pdk-04][^pdk-03]
+
+  The 1.0111 µm leader line runs to the top of
   the LINT on the glass beside `li`, which the drawing (marked "not to
-  scale") puts at the same height as the `li` top; we read the label
+  scale") puts at the same height as the `li` top.[^pdk-04] We read the label
   as that LINT top (0.9361 + 0.075 µm), which fits every other label
   (our reading of the drawing).[^pdk-04]
-* Whether the 12.8 Ω/sq figure is the as-deposited value or the
+* **As-deposited value.** Whether the 12.8 Ω/sq figure is the as-deposited value or the
   value after the nitride cap and later anneals is not stated.
 
 <!-- footnotes -->

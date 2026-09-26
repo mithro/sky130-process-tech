@@ -159,8 +159,8 @@ page.
 ### 100 WCMPLI — done
 
 * **Lead.** First sentence 31 → 22 words: the dash pair becomes commas; "leaving tungsten only inside
-  the contact holes" → "It leaves tungsten only …" ("It" = `WCMPLI`, the subject; WORDS LOST
-  "leaving"). Base 108 words in one paragraph → two (61 + 46) at the seam before "The surface that
+  the contact holes" → "It leaves tungsten only …" ("It" = `WCMPLI`, the subject; "leaving" survives in
+  the glance, so the tool does not list it). Base 108 words in one paragraph → two (61 + 46) at the seam before "The surface that
   results"; its 46-word sentence split at the semicolon. "(industry-typical)" untouched.
 * **R-SENTENCE.** Post-figure 58-word sentence split at its colon ("… are in the rules. The local
   interconnect must …"); both `[^pdk-periph]` stay on their rules. No H3 (the passage is 60 words).
@@ -206,9 +206,79 @@ page.
 * **R-GLANCE.** Public numbers: "none for the polish" and li.5's 0.080 µm `[^pdk-periph]`; tool line
   with both grades named; Not public from Open questions 1 and 3.
 * **Preservation.** ADDED: glance (`pdk-periph`, `skw-01`, 0.080, li.5's 5, hedges) and the nested list
-  labels. LOST: the R-REPEAT quotations above. WORDS LOST: "strength"×2 (R-TOOLS labels), "leaving",
-  and the R-REPEAT words.
+  labels. LOST: the R-REPEAT quotations above. WORDS LOST: "strength"×2 (R-TOOLS labels) and the
+  R-REPEAT words.
 * **Marker coverage.** 7 flags read: glance lines, the pointer, the category bullets (no markers in
   the base), the Kaanta/Kaufman halves (each keeps its own marker), the tool head, the parenthetical
   sentence. None lost.
 * **Caps after:** 0 paragraphs, 0 items, 1 sentence (the kept cap-oxide sentence, 65), 0 cells.
+
+### 101 LITIN — done
+
+* **Lead.** First sentence 34 → 6 words: split at its colon ("… itself. It is a blanket film of titanium
+  nitride, about 0.1 µm thick, sputtered (on our reading) …" — "It" = the local interconnect; the
+  hedge stays with "sputtered"). Lead 99 words, one paragraph.
+* **R-H3.** `### What the public record shows` after the figure caption, over the 213-word evidence
+  passage (PDK, README, lecture, press release, then the resistivity arithmetic and SkyWater's list).
+  The passage does not continue a sentence of the lead.
+* **R-LIST.** The 124-word seven-source sentence → the opening sentence ends in a colon; seven plain
+  bullets, each with its own marker, in order (semicolons kept, the final "and" dropped). The
+  single-operation arithmetic (12.8 Ω/sq × 0.1 µm ≈ 128 µΩ·cm) stays inline as its own sentence
+  (R-DERIVATION step 6); checked: 12.8 Ω × 0.1 µm = 1.28 µΩ·m = 128 µΩ·cm.
+* **R-REPEAT — applied (declared), two copies.** The supplier sentence "SkyWater's filings name
+  Honeywell Electronic Materials (2021 S-1 and fiscal 2023 10-K) and JX Metals (fiscal 2023 10-K) as
+  sputter-target suppliers[^sec-01][^sec-02]" stood three times (base `101-litin.md:55–57` in the
+  public-record passage, `:179–181` under Machines likely used, `:186–188` under Resources required).
+  Home: `## Resources required` (`:186–188`), unchanged. The public-record copy ("… tool[^skw-01] and its
+  filings name … suppliers.[^sec-01][^sec-02]") → "… tool.[^skw-01] Its sputter-target suppliers are
+  named under Resources required.[^sec-01][^sec-02]" (9-word pointer, markers kept). The Machines copy
+  → "**Sputter targets.** Suppliers are named under Resources required.[^sec-01][^sec-02] Strength:
+  strong for the suppliers; the specific target is not named." — the 097 model's wording; the grade
+  stays. `LOST numbers: 2021×2, 2023×4, 10×4` (the 10-K), `LOST identifiers: S-1×2` and the WORDS LOST
+  "honeywell", "electronic", "jx", "metals", "fiscal", "filings", "name" are exactly the two deleted
+  copies; hand-verified against the surviving Resources copy.
+* **R-CATEGORY.** Classification sentence alone (19 words, ends at "(inferred)"); the 13-word
+  parenthetical's reason becomes "SkyWater's public list has PVD TiN chambers and no CVD TiN.[^skw-01]"
+  opening the next paragraph; "and the only step …" → "`LITIN` is the only step …" (its base
+  subject, so no pronoun after the SkyWater sentence). "What is specific …" is its own label (step 3):
+  the 65-word sentence split at its colon and at ", which is exactly" → "This is exactly what makes it
+  useful …" ("This" = the comparison the base "which" pointed at; "it" = the film, as in the base).
+* **R-TABLE** (Why, "Routing density"). The four-rule enumeration → `Rule | Constrains | Value`, one row
+  per rule pair, units in each cell (µm and µm² differ, batch ruling). The base's end marker
+  `[^pdk-periph]` is on the lead-in "The PDK's rules allow:"; its mid-sentence marker stays on the
+  li.1a/li.3a row it followed. Row 2 restores the elided "lines and spaces" (base "0.14 µm inside
+  certain RF cells"); row 4 uses "width", the next sentence's word for li.7. `LOST number_order`
+  hand-checked (rule-table form, as 093): li.1/li.3 0.17 µm; li.1a/li.3a 0.14 µm; li.6 0.0561 µm²;
+  li.7 0.290 µm — same values, same order. The resistor sentence's dash material (the two
+  table citations with their markers) becomes its own sentence after "A `li1` resistor is in fact a PDK
+  device, which only a film … can provide." (the main clause had no marker of its own).
+* **Why, other items.** "Origins": split at the semicolon; lead 40 words (its only earlier seam,
+  ", using the TiN", would leave "using …" without the Tang markers that support it — over the 30-word
+  item-lead target, listed); continuation 1 the patents, Mann and White; continuation 2 "SKY130's
+  version, on our reading …". "Why TiN and not a metal": the four-clause property sentence split at
+  its first semicolon (lead + "TiN does not react …" — noun back for "it"); the resistivity sentence's
+  dash material becomes "The resistivity is set by …" after "TiN's resistivity is high …" (noun back
+  for "Its"; its attribution parenthetical kept whole); ", and the li.2 rule" → "The li.2 rule …" with
+  its "we infer". "What it lands on" split at its semicolon.
+* **How.** Scope sentence italic. Degas: the 17-word Boumerzoug parenthetical becomes its own sentence
+  (brackets dropped, no word changed). Reactive sputtering: split at the closing dash and the
+  semicolon; the industry-typical tag stays on the temperature sentence it closed.
+* **R-TOOLS.** AMAT PVD: three sub-bullets, the platform-and-assignment sentence kept whole under
+  *Runs this step:* (two things, one grade, ruling D5). Sputter targets: supplier bullet, R-REPEAT only.
+* **R-RELATED.** Previous / Next split; "The plugs it lands on …; the contacts to it from above …" named
+  two relationships → `Depends on:` and `Feeds:`; the TiN films → `Same category:`; "Why the poly is
+  not silicided …" keeps its own gloss as label (as 098).
+* **R-OPENQ.** "Deposition conditions", "Stack-diagram label", "As-deposited value" (no numbers in the
+  labels). The 90-word stack-diagram item: the observation with its markers as the lead (37 words, no
+  seam without losing the contrast — listed), then a continuation; the 55-word reading sentence split
+  at its semicolon, and `[^pdk-04]`, which closed the whole base sentence, is repeated on the
+  drawing-description half (declared ADDED). (0.9361 + 0.075 = 1.0111 checked.)
+* **R-GLANCE.** Public numbers `li` 0.1 µm `[^pdk-04]` and 12.8 Ω/sq `[^pdk-08]`; tool line names both
+  grades and what each covers; Not public from Open questions 1.
+* **Preservation.** ADDED: glance (`pdk-04`, `pdk-08`, `skw-01`, 0.1, 12.8, metal 1's 1, quotes, `li1`,
+  `metal-1`, hedges) and the repeated `[^pdk-04]`. LOST: the R-REPEAT copies and the rule-table
+  number order (both above). WORDS LOST besides those: "strength" (R-TOOLS label), "with", "an", "as",
+  "and" (list joins).
+* **Marker coverage.** 20 flags read: list bullets and table rows under their lead-in marker, halves
+  of split sentences each keeping their own markers, glance lines, the tool head. None lost.
+* **Caps after:** 0 / 0 / 0 / 0. Item leads over 30: "Origins" (40), stack-diagram question (37).
