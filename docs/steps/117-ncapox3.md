@@ -10,6 +10,22 @@
 | **Previous step** | {ref}`CMPM <step-116>` |
 | **Next step** | {ref}`VIM <step-118>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** deposits a thin plasma oxide on the polished
+  {ref}`NILD3 <step-115>` that seals its surface and, we infer, brings
+  the dielectric above metal 1 to its final thickness.
+* **Why:** a polish alone does not give a via level what it needs.
+* **Public numbers:** via-1 height through NILD3 0.27 µm;[^pdk-04] the
+  cap's own thickness is not public.
+* **Likely SkyWater tool:** PECVD TEOS "C2 and Producer" — **strong**
+  for the capability; the assignment of the cap oxide to the TEOS
+  process is an **inference**.[^skw-01]
+* **Not public:** the cap's precursor, thickness and deposition
+  conditions, and whether "NILD3_C" is this cap (→ Open questions).
+:::
+
 ## What this step is
 
 `NCAPOX3` deposits a *cap oxide* on the polished inter-level
@@ -21,7 +37,9 @@ plasma oxide deposited over it seals that surface and, we infer from
 the PDK's finished via-1 height and the polish's thickness variation
 (see below), brings the dielectric above metal 1 to its final
 thickness before the via-1 mask
-({ref}`VIM <step-118>`) is printed. The finished number is public:
+({ref}`VIM <step-118>`) is printed.
+
+The finished number is public:
 the PDK's stack diagram gives the via-1 height through NILD3 as
 0.27 µm.[^pdk-04] The cap's own thickness is not. A similar cap is
 described at {ref}`NCAPOX <step-091>` over the
@@ -42,7 +60,7 @@ K=4.5" it draws a "NILD3_C" of permittivity 3.5 and thickness
 0.030 µm,[^pdk-04] and the same pairing recurs as NILD4/NILD4_C at the
 next level.[^pdk-04] The thinness and the placement are consistent
 with this {term}`cap oxide`, as they are with a {term}`liner` under the
-{term}`gap fill` ({ref}`NILD3 <step-115>`); the "_C" suffix is
+{term}`gap fill` ({ref}`NILD3 <step-115>`) (inference). The "_C" suffix is
 suggestive but the diagram does not say what it stands for, and a
 permittivity of 3.5 is lower than a plain plasma oxide's (inference;
 see *Open questions*).
@@ -52,11 +70,17 @@ see *Open questions*).
 `NCAPOX3` is a {ref}`Thin-film deposition <category-deposition>` step
 of the *{term}`PECVD` oxide* class (PECVD on our reading: the
 aluminium beneath rules out furnace oxides) — the category page's
-PECVD section — and the simplest deposition in the module: a blanket,
+PECVD section.
+
+It is the simplest deposition in the module: a blanket,
 thin, low-temperature oxide on a flat surface with no gap to fill and
-no stop to respect. Its relatives are the other cap oxides
+no stop to respect.
+
+Its relatives are the other cap oxides
 ({ref}`NCAPOX <step-091>`, {ref}`NCAPOX4 <step-128>` and above) and
-the dielectric thickness-setting layers generally. What is specific
+the dielectric thickness-setting layers generally.
+
+What is specific
 to this instance is that it sits directly under the via-1 lithography
 and etch, so its thickness uniformity and its surface are what those
 steps see.
@@ -68,7 +92,9 @@ A polish alone does not give a {term}`via` level what it needs:
 * **Thickness control.** The polish of {ref}`CMPM <step-116>` is
   stopped by removal amount and varies with {term}`pattern density` and
   across the wafer — the variation Boning et al. and Chang et al.
-  characterised for ILD {term}`CMP`.[^boning-1994][^chang-1995] Polishing to
+  characterised for ILD {term}`CMP`.[^boning-1994][^chang-1995]
+
+  Polishing to
   a thickness *below* the target and adding a cap of well-controlled
   thickness is the standard way to tighten the final dielectric
   thickness (industry practice[^txt-05]), which in turn tightens the
@@ -78,7 +104,9 @@ A polish alone does not give a {term}`via` level what it needs:
 * **Sealing the polished surface.** Oxide CMP leaves micro-scratches
   and embedded slurry particles — Devriendt et al. relate those
   defects to the {term}`post-CMP clean`[^devriendt-1998] — and a hydrated,
-  hydroxyl-rich surface layer;[^moon-2016] a fresh plasma oxide buries
+  hydroxyl-rich surface layer.[^moon-2016]
+
+  A fresh plasma oxide buries
   them under a dense film so that they do not seed via-etch defects
   or resist adhesion failures, and so that the polished surface's
   water is not released into the via later (the "via poisoning" of
@@ -99,8 +127,8 @@ via-1 chain yield would follow.
 
 ## How it is typically performed
 
-An industry-generic cap-oxide deposition for a 200 mm, 130 nm-era fab
-(SKY130's recipe is not public):
+*An industry-generic cap-oxide deposition for a 200 mm, 130 nm-era fab
+(SKY130's recipe is not public):*
 
 1. **Chamber.** A single-wafer or twin-chamber PECVD reactor at
    350–400 °C (industry-typical[^txt-05][^raupp-1992]), the temperature
@@ -113,12 +141,14 @@ An industry-generic cap-oxide deposition for a 200 mm, 130 nm-era fab
 2. **Precursor.** {term}`TEOS`/O₂ plasma oxide — Raupp, Cale and Hey analyse
    its kinetics and {term}`step coverage`[^raupp-1992] — or SiH₄/N₂O plasma
    oxide, whose properties depend on RF power as Chapple-Sokol,
-   Tierney and Batey measured;[^chapple-sokol-1989] on a flat polished
+   Tierney and Batey measured.[^chapple-sokol-1989]
+
+   On a flat polished
    surface conformality does not matter and either works. The
    Cypress reports for Fab 4 processes (S8, and the 0.18 µm R7FT-3R
    derivative) list a "1000A TEOS" film under the nitride in the
    passivation,[^cyp-qtp-123907][^cyp-qtp-014807] which shows a PECVD
-   TEOS oxide of cap-like thickness in the same flow; we infer, not
+   TEOS oxide of cap-like thickness in the same flow. We infer, not
    from any public statement about this step, that the cap oxide is
    of the same kind.
 3. **Thickness.** Not public; a cap of the order of 0.05–0.15 µm is
@@ -128,7 +158,9 @@ An industry-generic cap-oxide deposition for a 200 mm, 130 nm-era fab
    0.030 µm "NILD3_C" of the diagram[^pdk-04] is this film, it is
    thinner than that.
 4. **Film properties.** Density and hydrogen content matter more
-   than for a gap fill: hydrogen evolution from a plasma oxide on
+   than for a gap fill.
+
+   Hydrogen evolution from a plasma oxide on
    later heating changes its stress, as Mani and Saif
    showed,[^mani-2007] and a porous or wet cap defeats its purpose.
    The classic {term}`LPCVD` TEOS route[^adams-1979][^becker-1987] gives a
@@ -153,11 +185,14 @@ An industry-generic cap-oxide deposition for a 200 mm, 130 nm-era fab
 
 ## Machines likely used at SkyWater
 
-* **PECVD TEOS "C2 and Producer" with "low temp options".**[^skw-01]
-  Strength: **strong** for the capability; the assignment of the cap
-  oxide to the TEOS process (rather than the silane "C1" oxide) is an
-  **inference** from practice and from the TEOS oxide in the Cypress
-  passivation description.[^cyp-qtp-123907] "C2" is, on our reading,
+* **PECVD TEOS "C2 and Producer" with "low temp options"**[^skw-01]
+  - *Tool exists:* **strong** for the capability.
+  - *Runs this step:* the assignment of the cap
+    oxide to the TEOS process (rather than the silane "C1" oxide) is an
+    **inference** from practice and from the TEOS oxide in the Cypress
+    passivation description.[^cyp-qtp-123907]
+
+  "C2" is, on our reading,
   a Novellus Concept Two and "Producer" an Applied Materials Producer;
   neither model is stated.
 * **PECVD silane oxide "C1"**[^skw-01] as the alternative (medium).
@@ -174,12 +209,13 @@ An industry-generic cap-oxide deposition for a 200 mm, 130 nm-era fab
 
 ## Related steps and cross-references
 
-* Previous: {ref}`CMPM <step-116>` (the polish it seals). Next:
+* Previous: {ref}`CMPM <step-116>` (the polish it seals).
+* Next:
   {ref}`VIM <step-118>` (the via-1 mask printed on it), then
   {ref}`VIME <step-119>`.
-* The dielectric it completes: {ref}`NILD3 <step-115>`; the metal
-  beneath: {ref}`MM1E <step-114>`.
-* The other cap oxides: {ref}`NCAPOX <step-091>`,
+* Depends on: the dielectric it completes, {ref}`NILD3 <step-115>`; the metal
+  beneath, {ref}`MM1E <step-114>`.
+* Same category: the other cap oxides, {ref}`NCAPOX <step-091>`,
   {ref}`NCAPOX4 <step-128>`, {ref}`NCAPOX5 <step-143>`,
   {ref}`NCAPOX6 <step-158>`.
 * Category page: {ref}`Thin-film deposition <category-deposition>`.
@@ -239,14 +275,14 @@ An industry-generic cap-oxide deposition for a 200 mm, 130 nm-era fab
 
 ## Open questions
 
-* The cap's precursor (TEOS or silane), thickness and deposition
+* **Precursor, thickness and conditions.** The cap's precursor (TEOS or silane), thickness and deposition
   conditions are not public.
-* Whether the PDK's "NILD3_C" (k 3.5, 0.030 µm)[^pdk-04] is this cap,
+* **Whether NILD3_C is this cap.** Whether the PDK's "NILD3_C" (k 3.5, 0.030 µm)[^pdk-04] is this cap,
   a liner under the fill, or neither is not public; its permittivity
   does not match a plain plasma oxide.
-* How the 0.27 µm via-1 height[^pdk-04] is divided between the
+* **How the via-1 height is divided.** How the 0.27 µm via-1 height[^pdk-04] is divided between the
   polished {ref}`NILD3 <step-115>` and this cap is not public.
-* Whether "C2" denotes a Novellus Concept Two is an inference from
+* **Novellus Concept Two.** Whether "C2" denotes a Novellus Concept Two is an inference from
   the vendor's product names.[^novellus-history]
 
 <!-- footnotes -->

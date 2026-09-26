@@ -415,3 +415,32 @@ per page.
   Endpoint and Stine splits (markers with their clauses). None lost a marker or hedge.
 * **Left over the caps:** item leads — Planarity (40 words, one sentence), Pattern-density (42, kept
   whole for its attribution). Nothing over the §1 caps.
+
+### 117 NCAPOX3 — done
+
+* **R-H3:** none (post-figure passage 90 words).
+* **Lead:** base 142 words → two paragraphs at "The finished number is public".
+* **R-SENTENCE:** the post-figure sentence (53 words) split at its semicolon. Its trailing "(inference;
+  see *Open questions*)" scopes the whole sentence, including "the thinness and the placement are
+  consistent with this cap oxide, as they are with a liner", so the first half now ends "(inference)."
+  too (R-SENTENCE step 5; batch-7b ruling D5: the half takes the part of the hedge that applies —
+  "see Open questions" stays on the second). Declared ADDED hedge.
+* **R-CATEGORY:** classification ends at the closing em dash (25 words, its "(PECVD on our reading
+  …)" kept); "and the simplest deposition in the module" → "It is the simplest deposition …" (the one
+  sentence about this step, second paragraph, no label); the relatives sentence (lists other steps)
+  and "What is specific …" (its own label) as paragraphs.
+* **R-PARA/R-SENTENCE (Why, How):** Thickness control lead + continuation at "Polishing to";
+  Sealing split at "surface layer;" (the continuation's "them" follows its antecedents directly);
+  Precursor split at "measured;" and "same flow;" ("We infer, not from any public statement …" keeps
+  its hedge whole); Film properties lead ends at its colon.
+* **R-TOOLS:** TEOS item in grade lines; the "C2"/"Producer" reading (its own sentence, "on our
+  reading") stays as the continuation after the grades. The silane "C1" bullet has no "Strength:";
+  unchanged.
+* **R-OPENQ, R-RELATED, R-HEDGE, R-GLANCE:** four labels; Previous / Next split, Depends on, Same
+  category; italic scope lead-in. The glance keeps "we infer" on the final-thickness role.
+* **check_preserved (`--allow-regrouped --strict-words`):** ADDED hedge "inference" once for the
+  divided hedge above; everything else ADDED is the glance box. LOST word "strength".
+* **Coverage flags read:** the colon and semicolon splits (markers with their clauses); glance lines.
+  None lost a marker or hedge.
+* **Left over the caps:** Precursor item lead (33 words, one sentence with an attribution dash pair).
+  Nothing over the §1 caps.
