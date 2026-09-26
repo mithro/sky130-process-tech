@@ -56,7 +56,9 @@ generated index-links block and `## References` are **excluded**. Before = `main
 * Item: 082 "It does not dope the PMOS gate" (63 w lead block; its only seam is before "So SKY130
   avoids …", which may not open a continuation paragraph).
 * Sentences: 076 "The film must coat the foot of a gate line …" (46; the only further split would move a
-  20-word parenthetical and reorder its numbers); 079 "The order relative to the source/drain implants
+  20-word parenthetical and reorder its numbers); 083 the tilted-extension lead (51, restored in the fix
+  round); 086 the test-tile values with the full extraction hedge repeated (50, fix round); 087 the first
+  Resources bullet (46, restored in the fix round); 079 "The order relative to the source/drain implants
   is deliberate on our reading …" (51; every split would put the doping clause outside its hedge); 087
   "The surface under the resist is, on our reading of the flow, …" (47; the same reason).
 * First sentence over 25 words: 082 (27), 086 (26); no seam that step 7 allows.
@@ -606,8 +608,8 @@ None was fixed here; each is recorded as found.
   has a single "P+ Implant, PSDM".[^pdk-05]" (the marker stays on the mask-list fact; "described in
   this reference" stays on the reading). The 61-word "On that reading, …" sentence split twice: the
   region list after the dash became "Those are the PMOS source/drains, … opened by the nitride cut."
-  ("Those are" added, step 7), and "and differs from the first only in …" became "On that reading, it
-  differs from the first only in …" — the leading hedge **repeated** so the second sentence keeps it
+  ("Those are" added, step 7), and "and differs from the first only in …" became "On that reading,
+  `2PSDI` differs from the first only in …" (the noun rather than "it" after a list; review L7) — the leading hedge **repeated** so the second sentence keeps it
   (R-SENTENCE step 5), and "Nothing public says which." still follows it directly. Two paragraphs,
   split before "On that reading" (the reading / what follows from it). 128 words (base 125, over 120
   already); first sentence 22.
@@ -618,8 +620,8 @@ None was fixed here; each is recorded as found.
 * **R-CATEGORY.** Classification sentence (15 w) alone; the rest (the two-implants-one-mask pattern,
   which lists other steps, and "This is the only source/drain implant …") as one second paragraph, so
   that "This" keeps its sentence before it.
-* **Why items.** Profile-shaping pair (143 w): lead split at its semicolon ("… the contact needs. Or two
-  boron energies do the same."; a sentence, not a paragraph, opens "Or"); continuation 1 = Ogura, split
+* **Why items.** Profile-shaping pair (143 w): lead kept whole as in the base ("… the contact needs; or two
+  boron energies do the same.", 41 words; review L7 found the "Or" sentence clumsy); continuation 1 = Ogura, split
   at ", and on the n-type side" (each half keeps its markers); continuation 2 = Bourdelle/Wang and
   Josse, split at the semicolon, then "On this reading …". PMOS extension (180 w): lead = the
   cross-section sentence; continuation 1 = the Lin sentence (kept whole: its only split would move
@@ -640,10 +642,9 @@ None was fixed here; each is recorded as found.
 * **R-HEDGE.** The scope sentence ("An industry-generic description …; the two main readings differ in
   tool and geometry:") as the italic lead-in, word for word.
 * **How items.** Deep-junction (88 w): lead split at its semicolon; continuation from "The amorphous
-  layer …". Tilted extension (110 w, a 93-word sentence): lead = the dose/tilt clause to "every
-  orientation are reached."; continuation = "On a single-wafer medium-current tool with an
-  electrostatic chuck and electron shower." (a fragment, the style of these recipe items), "The tilt is
-  limited by the resist height.", "We read the PDK's thinner resist budget … though the PDK does not say
+  layer …". Tilted extension (110 w, a 93-word sentence): lead = the dose/tilt sentence to "… electron shower." as in the
+  base (51 words without the label, **listed**; review L7: split off, the tool phrase read as a
+  fragment opening a paragraph); continuation = "The tilt is limited by the resist height.", "We read the PDK's thinner resist budget … though the PDK does not say
   so." (split at its two semicolons; "we read" stays on its clause), then Adachi.
 * **R-TOOLS.** GSD and 8250: *SkyWater says:* the quotation (no subject in the base), *Tool exists:*,
   *Runs this step:*; the Eaton 8250HT sentence (a vendor description) is the continuation. Two tools.
@@ -667,7 +668,9 @@ None was fixed here; each is recorded as found.
   base marker belonged to the other clause (mask list/description, Ogura/Lee, shadowing/"would more
   naturally run", deep-junction/amorphous layer, the tilted-extension pieces); the region list (a
   description of the first implant's regions, not a hedged claim); glance, grade and label lines.
-* **Caps**: para > 100 2 → 0; item > 60 5 → 0; sentence > 45 6 → 0.
+* **Caps**: para > 100 2 → 0; item > 60 5 → 0; sentence > 45 6 → 1 (the tilted-extension lead, above;
+  `caps.py` also flags the profile-pair and device-specific leads at 48 and 47, but 7 and 3 of those words
+  are the bold label — guide problem 5 — so the sentences themselves are 41 and 44).
 
 ### 084 PDIS — done
 
