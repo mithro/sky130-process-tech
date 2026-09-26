@@ -348,3 +348,40 @@ per page.
   clearing and class bullets carry their own or the lead-in's markers. None lost a marker or hedge.
 * **Left over the caps:** Metrology item lead (35 words, a list of methods in one sentence). Nothing
   over the §1 caps.
+
+### 115 NILD3 — done
+
+* **R-H3:** none (the post-figure passage is this reference's reading of two PDK hints; no title
+  fits, and it is now a list).
+* **Lead:** base 168 words → three paragraphs (description | the PDK's name and labels | the level
+  arithmetic). The line dimensions in the dash pair become their own sentence after the main one:
+  "The lines are 0.36 µm tall,[^pdk-04] as close as 0.14 µm apart.[^pdk-periph]" (subject and verb
+  added). The level sentence split at ", so": "… 2.0061 µm.[^pdk-04] So the finished dielectric … is on
+  our reading about 0.63 µm …" — the hedge sits in the second half and stays there; the first half is
+  what the diagram labels. Arithmetic checked: 2.0061 − 1.3761 = 0.63; 0.63 − 0.36 = 0.27.
+* **R-LIST:** "Two public hints shape our reading of the film:" → two bullets, their opening words bolded
+  in place (R-LIST step 3); "(inference)" and "on our reading" stay in their own bullets. Step
+  category: the two routes as plain bullets. Why/Mechanical: "The oxide must not crack, must not …,
+  and must not …" → "The oxide:" and three "must not" sub-bullets (every word kept but "and").
+* **R-CATEGORY:** classification (11 words); the relatives sentence (lists other steps) as a
+  paragraph; "What is specific to this instance is the gap." (its own label) then "It is 0.14 µm wide,
+  …" (subject and verb added; 46 words otherwise); the category-page sentence with its list.
+* **R-PARA/R-SENTENCE:** Why: Insulation lead + continuation (the source's "deposition/" line break,
+  rendered "deposition/ sputter", joined); Capacitance and Overburden split at their semicolons.
+  How: Liner and HDP items lead + continuation.
+* **R-TOOLS:** HDP item: *SkyWater says:* holds the two SkyWater statements (`[^skw-01]`, and the
+  maintenance page `[^skw-07]`); this reference's gloss "— the 2.6:1 gap here is well inside it —" is
+  separable at its dashes, so it goes to the continuation after the grades, with its noun back ("well
+  inside that capability"; R-TOOLS: a continuation does not open on a bare pronoun), followed by the
+  model sentence. TEOS item in grade lines. The silane-oxide bullet has no "Strength:"; unchanged.
+* **R-REPEAT:** the HDP quotation also appears under How (step 2); **not applied** — that copy adds
+  "a maintenance-page photograph" (ruling D1).
+* **R-OPENQ, R-RELATED, R-HEDGE, R-GLANCE:** four labels; Previous / Next split, Depends on (the
+  dielectric below), the two remaining bullets merged under Same category; italic scope lead-in.
+* **check_preserved (`--allow-regrouped --strict-words`):** every ADDED line is the glance box (PDK
+  labels 4.5, 3.5, 0.030 µm, 0.27 µm with `[^pdk-04]`; `skw-01`; ref `step-116`; hedges). LOST words
+  "strength"×2.
+* **Coverage flags read:** the line-dimension and level splits (markers moved with their clauses);
+  "must not crack;" (no marker in the base either). None lost a marker or hedge.
+* **Left over the caps:** lead 169 words in three paragraphs (base 168). Item leads: Liner (35 words,
+  two parentheticals), HDP gap fill (40). Nothing over the §1 caps.
