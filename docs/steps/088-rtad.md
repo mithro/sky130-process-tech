@@ -31,7 +31,9 @@
 `RTAD` is the source/drain activation anneal. The three heavy implants
 of the module — {ref}`PSDI <step-082>`, {ref}`2PSDI <step-083>` and
 {ref}`NSDI <step-086>` — have left the source/drain silicon amorphised
-and its dopant electrically inactive. This step heats the wafer so that
+and its dopant electrically inactive.
+
+`RTAD` heats the wafer so that
 the amorphous layers regrow, the dopant moves onto lattice sites, the
 end-of-range damage is dissolved as far as it can be, and the
 junctions reach their designed depth and no further. It does so in an

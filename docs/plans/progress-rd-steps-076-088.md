@@ -61,7 +61,7 @@ generated index-links block and `## References` are **excluded**. Before = `main
   "The surface under the resist is, on our reading of the flow, …" (47; the same reason).
 * First sentence over 25 words: 082 (27), 086 (26); no seam that step 7 allows.
 * Leads over 120 words, as in the base: 079 (136; base 135), 080 (121; base 122), 083 (128; base 125),
-  088 (157; base 154). Two paragraphs each; no third was needed.
+  088 (157; base 154). Two paragraphs each, except 088, which takes three (§4.1 note ¹).
 * Lead-sentence of an item over 30 words with a continuation paragraph: 077 "Spacer profile" (the bold
   label is the sentence's subject), 082 "It does not dope the PMOS gate" (above). No item has sub-bullets
   under a lead of more than 30 words.
@@ -898,7 +898,9 @@ None was fixed here; each is recorded as found.
   … and the junctions reach their designed depth and no further. It does so in an inert ambient for
   seconds at around 1000 °C on the industry-typical recipe described below; SKY130's own conditions
   are not public. The designed depth is the PDK's 0.1 µm for "N+ or P+ S/D (XJ)".[^pdk-03]" — the
-  paragraph break after it (review L5; a first draft broke one sentence earlier) ("It does so" and "The designed depth is" added, step 7; the
+  paragraph break after it (review L5; a first draft broke one sentence earlier). That paragraph measured
+  107 words, so the base's 154-word lead takes three paragraphs (§4.1 note ¹): a second break before
+  the heating sentence, whose "this step" became "`RTAD`" so that no paragraph opens on "This" ("It does so" and "The designed depth is" added, step 7; the
   industry-typical hedge and "not public" stay with the 1000 °C clause they governed; the marker stays
   with the 0.1 µm). "This reference describes it" → "This reference describes `RTAD`" (R-PARA step 5,
   since the sentence before it is now about the depth). Two paragraphs; 157 words (base 154, over 120
