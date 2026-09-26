@@ -301,6 +301,12 @@ them all and run `--check`.
    164–170): the metal-5 top is at 403 u over the field, the metal-5 shapes are x 10–94 and
    from x 174, and the NCAPOX6 surface between them is at 340 u; a full slice cut inside the
    NILD6 oxide over the second plate (between about 319 and 330 u) stays short.
+8. **Drawn (S11).** `series-passivation.yaml` continues from `series-beol.yaml` with `base:`
+   and plain ops for 164–170; the figures cut at 325 u. TOPOX is 5 u and TOPNIT 27 u, on the
+   metal-5 scale (63 u for 1.26 µm). The `nsm` ring lies at the die edge, outside the slice,
+   so 165 draws the resist over everything and 166 only its strip; the left-hand metal-5
+   shape stands for a pad at 168–169. Step 171 is a `chain` (`tool-171-hpetest`), the model
+   for the machine block-chains.
 
 ## 4. Build
 
