@@ -695,3 +695,57 @@ per page.
 * **Coverage flags read:** the list items, the specific-to bullets (hedge on the thick-metal bullet
   only, as in the base), the Why splits, glance lines. None lost a marker or hedge.
 * **Left over the caps:** none.
+
+### 134 WTIAL3 — done
+
+* **Kept verbatim** (the S9a figure agent's note): the bottom layer as "Ti or TiW" (the page does not
+  discuss a Ti/TiN bottom on the TiN reading) — see Content problems. Every sentence weighing the
+  TiW and TiN caps keeps its wording; only paragraph breaks, list structure and splits at existing
+  seams.
+* **Lead:** base 127 words → two paragraphs at "The stack is blanket" (59 and 67 words); the 70-word
+  blanket sentence split at its colon ("… in the flow. Before MM3 and MM3E pattern it …") and at ", so
+  that the `capm` plate" → ". So the `capm` plate …" ("that" lost; the ", so" form).
+* **R-H3:** `### What the public record shows` over the post-figure passage (the two Cypress reports and
+  the PDK's diagram, extraction, assumptions, CD and mask tables; it ends in the page's hedged reading
+  and the metal-3 rules), and `### Competing readings` over the **On the cap.** and **On the bottom
+  layer.** passages, which weigh the TiW and TiN caps and the Ti and TiW bottom layers (the 112 form;
+  both bold run-ins stay as paragraph labels).
+* **Post-figure (330 words, one paragraph):** the Cypress sentence split at its semicolon; the
+  three-metal-process sentence as its own paragraph; "The PDK matches both in its own way." → "… way:"
+  and five plain bullets (diagram, extraction with the resistivity sentence, antenna thicknesses, CD
+  table, mask table), each with its own marker — **`[^pdk-03]` repeated** on the antenna-thickness
+  bullet, which in the base shared one marker with the CD clause at the end of the semicolon chain
+  (both are the same *Criteria & Assumptions* page; declared). The resistivity is a single operation
+  (0.8 µm × 47 mΩ/sq ≈ 3.8 µΩ·cm, checked) and stays inline. "On our reading, then, …; whether its
+  bottom layer …" split at the semicolon (the second half carries its own "is not public … inference").
+  The rules sentence as its own paragraph. The base's one `number_order` LOST, ('2013','64','3',
+  '-0.5','7 650','0.765','3 600','1','2','2014','3','0.5','22 050','2.2'), is the Cypress sentence
+  split at its semicolon: the same numbers in the same order across two sentences; hand-checked
+  (150 + 7 200 + 300 = 7 650 Å; 500 + 21 250 + 300 = 22 050 Å).
+* **On the cap / On the bottom layer:** the cap passage in three paragraphs (the two reports | the
+  PDK-thickness argument and its counter-check | the page's choice), its first sentence-pair split at
+  the semicolon; arithmetic checked (0.845 − 0.8 µm = 450 Å = 150 Å Ti + 300 Å TiW; 150 + 250 + 90 +
+  500 = 990 Å; 0.85/0.765 ≈ 1.11, "about a tenth"). The bottom-layer sentence split at its colon.
+* **R-CATEGORY:** classification cut at its semicolon (12 words); the TIAL6/TIAL12 pointer as a
+  paragraph; "What is specific to this instance is thickness." (its own label) with the thickness
+  sentence (split at its semicolon), and a second paragraph from "The film's hillocks …" to the
+  capacitor-electrode sentence (the only split that keeps the paragraph under 100 words without
+  opening a paragraph on "And").
+* **R-PARA (Why):** Low resistance: split at ", and at 0.3 µm" ("and" lost) and at "the context;".
+  Inductors: split at "schemes;". EM, Hillocks, TiW, MiM: split at their semicolons.
+* **How:** italic scope lead-in (with its two markers). Al–Cu: split at both semicolons. Cap: lead
+  ends at the Cypress markers; the 2014 alternative and the MiM-surface inference are the continuation.
+* **R-TOOLS:** AMAT item in three lines (as 123). The metal-etcher bullet has no grade; unchanged.
+* **R-OPENQ, R-RELATED, R-HEDGE, R-GLANCE:** six labels; Previous / Next split, Depends on (the plugs),
+  Feeds (NILD5, VIM3E), Same category (the thin stacks and the upper thick metals); glance names no cap
+  or bottom film ("which refractory film the cap is" under Not public).
+* **check_preserved (`--allow-regrouped --strict-words`):** ADDED marker `pdk-03` (the repeat above);
+  every other ADDED line is the glance box (markers `pdk-04`, `pdk-08`, `pdk-periph`, `skw-01`; numbers
+  0.300, 0.845, 47, `1`, `3`; hedges; `m3`×2, `met3`, `metal-3`) or an Open-questions label
+  (`Metal-3`, `S8TM`). LOST words "that" (above), "strength" (R-TOOLS).
+* **Coverage flags read:** the PDK list items (markers per item; the repeat above), the Cypress and cap
+  splits (each marker with its report), the bottom-layer split, the Why splits, glance lines. None lost
+  a marker or hedge.
+* **Left over the caps:** lead 126 words in two paragraphs (base 127). Nothing over the §1 caps. Item
+  leads over 30 words: Low resistance (22 after the split), EM (37), Hillocks (38), TiW (41) — each one
+  sentence.

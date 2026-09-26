@@ -10,6 +10,23 @@
 | **Previous step** | {ref}`WCMP4 <step-133>` |
 | **Next step** | {ref}`CAPILD <step-135>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** deposits the metal-3 film stack — the first thick metal of
+  the flow — which stays blanket while the MiM capacitor is built on it.
+* **Why:** metal 3 is the flow's first coarse-pitch, low-resistance
+  level, and its cap is the MiM capacitor's bottom-electrode surface.
+* **Public numbers:** `met3` 0.845 µm on the PDK's stack
+  diagram;[^pdk-04] 47 mΩ/sq sheet resistance;[^pdk-08] 0.300 µm width
+  and space (m3.1, m3.2).[^pdk-periph]
+* **Likely SkyWater tool:** AMAT PVD Metal — **strong** (the vendor and
+  the films); **inferences** (the platform model and the choice of Ti
+  or TiW as bottom layer).[^skw-01]
+* **Not public:** whether the bottom layer is Ti or TiW, which
+  refractory film the cap is, and the deposition conditions (→ Open
+  questions).
+:::
 ## What this step is
 
 `WTIAL3` deposits the metal-3 film stack — the first *thick* metal
@@ -17,13 +34,15 @@ of the flow. Onto the polished cap oxide and tungsten via-2 plugs left
 by {ref}`WCMP4 <step-133>` a sputtering cluster tool lays down, in one
 vacuum sequence on our reading, a thin refractory bottom layer, a
 much thicker aluminium–copper alloy than at metals 1 and 2, and a
-refractory cap. The stack is blanket and stays blanket for
-longer than any other metal in the flow: before {ref}`MM3 <step-139>`
+refractory cap.
+
+The stack is blanket and stays blanket for
+longer than any other metal in the flow. Before {ref}`MM3 <step-139>`
 and {ref}`MM3E <step-140>` pattern it into the `met3` layer (GDS
 70:20, "Metal 3"[^pdk-06]), the MiM capacitor module of
 {ref}`CAPILD <step-135>`, {ref}`CAPTIW1 <step-136>`,
 {ref}`CAPM <step-137>` and {ref}`CAPME <step-138>` is built on top of
-it, so that the `capm` plate — "MiM capacitor plate over
+it. So the `capm` plate — "MiM capacitor plate over
 metal 3"[^pdk-06] — sits on this stack's cap and the patterned
 metal 3 becomes the capacitor's bottom electrode.
 
@@ -35,49 +54,66 @@ metal 3 becomes the capacitor's bottom electrode.
 Before, the flush via-2 plug in the dielectric over the metal-2 lines; after, the metal-3 stack over the whole wafer: a thin bottom film, a thicker aluminium–copper alloy and a thin cap. It stays a blanket through the MiM capacitor steps that follow and is patterned at MM3 and MM3E (steps 139 and 140). Which refractory films the bottom and the cap are is not public: the page describes the bottom as Ti or TiW and the cap as TiW or TiN (on the TiN reading, 90 Å of titanium under 500 Å of TiN, as its deposition sequence gives it), both inferences, and the overview of the metal cap sets out the evidence; the figure does not choose, and draws both in the colour the figure conventions use for every Ti, TiN and TiW film. The 2013 Cypress report gives "Metal 3: 150A Ti / 7200A Al -0.5%Cu / 300A TiW"[^cyp-qtp-113005] and the 2014 one, for another technology, "Metal 3: 500A TiW/21,250A Al 0.5% Cu/300A TiW";[^cyp-qtp-123907] in both, metal 3 is the top level, and applying them here is the page's inference. The PDK's stack diagram gives metal 3 as 0.845 µm against 0.36 µm for metal 2;[^pdk-04] metal 3 is drawn half as thick again as metal 2, thicker but not in that proportion, and the 2 µm thick-metal option[^pdk-03] is not drawn. The lower part of the slice is cut off: the drawing starts inside the inter-level oxide under metal 1. The metal-2 and metal-1 lines, the plugs and their liners and the oxides are drawn but not labelled, except the cap oxide in the upper panel. Not to scale.
 :::
 
+### What the public record shows
+
 The public description of the stack is again the Cypress
 qualification reports, and here they show two versions. The 2013
 report for a 64 K nvSRAM family on "S8TNV-5R" technology gives
 "Metal 3: 150A Ti / 7200A Al -0.5%Cu / 300A TiW", a 7 650 Å
 (0.765 µm) stack against the 3 600 Å of its metals 1 and
-2;[^cyp-qtp-113005] the 2014 metal-stack-change report gives, for the
+2.[^cyp-qtp-113005] The 2014 metal-stack-change report gives, for the
 S8DI technology, "Metal 3: 500A TiW/21,250A Al 0.5% Cu/300A TiW", a
 22 050 Å (2.2 µm) stack with a TiW rather than a Ti bottom layer, and
 notes that the S8P change excluded "top metal layers".[^cyp-qtp-123907]
+
 Both reports describe three-metal processes — S8TNV-5R ("3
 Metal")[^cyp-qtp-113005] and S8DI ("1P3M")[^cyp-qtp-123907] — in
 which metal 3 is the top metal; applying their metal-3 descriptions to
 SKY130's intermediate metal 3, under two further metals, is our
-inference. The PDK matches both in its own way. Its stack diagram labels `met3`
-0.845 µm[^pdk-04] and its extraction tables give metals 3 and 4
-47 mΩ/sq against 125 mΩ/sq for metals 1 and 2;[^pdk-08] 0.8 µm of
-aluminium alloy at 47 mΩ/sq implies a resistivity of about
-3.8 µΩ·cm, the expected range for sputtered Al–0.5%Cu (typical
-industry value;[^txt-02] our arithmetic). Its assumptions table lists
-a "Metal 3 thickness for antenna ratio calculations" of 0.85 µm for
-"S8T* other than S8TM*", 0.8 µm for the SP8T, S8P and S8Q flows, and
-2 µm for the "S8TM* flow"; its minimum-CD table gives "Metal 3-PLM"
-0.3 µm, "Metal 3-TLM" 0.36 µm and "Metal 3-S8TM" 0.8 µm, with a
-matching "Via 2-S8TM" of 0.8 µm;[^pdk-03] and its mask table lists
-the `MM3` mask three times, flagging only the PLM variant for
-SKY130.[^pdk-05] On our reading, then, the flow described here
+inference. The PDK matches both in its own way:
+
+* its stack diagram labels `met3`
+  0.845 µm;[^pdk-04]
+* its extraction tables give metals 3 and 4
+  47 mΩ/sq against 125 mΩ/sq for metals 1 and 2.[^pdk-08] 0.8 µm of
+  aluminium alloy at 47 mΩ/sq implies a resistivity of about
+  3.8 µΩ·cm, the expected range for sputtered Al–0.5%Cu (typical
+  industry value;[^txt-02] our arithmetic);
+* its assumptions table lists
+  a "Metal 3 thickness for antenna ratio calculations" of 0.85 µm for
+  "S8T* other than S8TM*", 0.8 µm for the SP8T, S8P and S8Q flows, and
+  2 µm for the "S8TM* flow";[^pdk-03]
+* its minimum-CD table gives "Metal 3-PLM"
+  0.3 µm, "Metal 3-TLM" 0.36 µm and "Metal 3-S8TM" 0.8 µm, with a
+  matching "Via 2-S8TM" of 0.8 µm;[^pdk-03]
+* its mask table lists
+  the `MM3` mask three times, flagging only the PLM variant for
+  SKY130.[^pdk-05]
+
+On our reading, then, the flow described here
 deposits a metal 3 of about 0.8 µm, and a 2 µm "S8TM" thick-metal
-option exists whose via 2 and metal 3 differ; whether its bottom layer
+option exists whose via 2 and metal 3 differ. Whether its bottom layer
 matches the TiW-bottomed top metal of the 2014 S8DI report — a
 different technology, and its **top** metal, not an intermediate level —
 is not public, and any such match would be an
-inference. The metal-3 rules are coarser than the levels
+inference.
+
+The metal-3 rules are coarser than the levels
 below: 0.300 µm width and space (m3.1, m3.2), 0.240 µm² minimum area
 (m3.6), and 0.065 µm enclosure of via 2 (m3.4).[^pdk-periph]
+
+### Competing readings
 
 **On the cap.** Which refractory film caps this stack is not public,
 and the same two reports point different ways. The 2013 S8TNV-5R
 description gives a 300 Å TiW cap at every level, and the R7FT-3R
-report the same at its thick metal 3;[^cyp-qtp-113005][^cyp-qtp-014807]
-the 2014 report records the S8P metal stack as qualified for a change
+report the same at its thick metal 3.[^cyp-qtp-113005][^cyp-qtp-014807]
+The 2014 report records the S8P metal stack as qualified for a change
 "from Ti/AlCu/TiW to Ti/TiN/ALCu/Ti/TiN, excluding top metal
 layers",[^cyp-qtp-123907] and in a five-metal S8P flow metal 3 is not a
-top metal layer — a via connects it to metal 4.[^pdk-periph] Against
+top metal layer — a via connects it to metal 4.[^pdk-periph]
+
+Against
 that, the PDK's 0.845 µm for `met3` exceeds its 0.8 µm antenna
 thickness by exactly the 450 Å of titanium plus TiW that clad the
 Cypress stacks, where the 2014 stack's cladding is 990 Å (our
@@ -85,7 +121,9 @@ arithmetic).[^pdk-03][^pdk-04] That argument has its own counter-check:
 the same table's 0.85 µm for "S8T\* other than S8TM\*" exceeds the whole
 7 650 Å of the 2013 report's S8TNV-5R metal 3 by about a tenth (our
 arithmetic), so its antenna entries are not uniformly derived from film
-thicknesses.[^pdk-03][^cyp-qtp-113005] This reference describes the cap as
+thicknesses.[^pdk-03][^cyp-qtp-113005]
+
+This reference describes the cap as
 "TiW or TiN" and writes its recipes for the TiW case; the whole of the
 evidence, the counter-checks and the statements that depend on the
 choice are set out under {ref}`overview-metal-cap`. This module is
@@ -94,7 +132,7 @@ capacitor's bottom-electrode surface
 ({ref}`CAPILD <step-135>`, {ref}`CAPME <step-138>`).
 
 **On the bottom layer.** The public evidence allows a TiW bottom
-layer as well as a Ti one: the S8DI thick metal 3 of the 2014 report
+layer as well as a Ti one. The S8DI thick metal 3 of the 2014 report
 is "500A TiW/…/300A TiW",[^cyp-qtp-123907] and an older Fab 4 process
 used "TiW, AlCu, TiW" at 500/6 000/300 Å,[^cyp-qtp-030204] while the
 S8TNV report's 150 Å Ti bottom layer[^cyp-qtp-113005] points to
@@ -107,13 +145,19 @@ taken here as evidence either way. We describe the bottom layer as
 ## Step category
 
 `WTIAL3` is a {ref}`Thin-film deposition <category-deposition>` step
-of the *PVD, multi-layer metal* class; {ref}`TIAL6 <step-112>` sets
+of the *PVD, multi-layer metal* class.
+
+{ref}`TIAL6 <step-112>` sets
 out the sputtering of Ti, Al–Cu and Ti:W films and the reasons for
-each layer, and {ref}`TIAL12 <step-123>` what a via level adds. What
+each layer, and {ref}`TIAL12 <step-123>` what a via level adds.
+
+What
 is specific to this instance is thickness. Sputtering 0.72 µm of
 aluminium alloy takes more than twice as long as the 0.32 µm of the
 lower levels (and a 2 µm thick-metal option[^pdk-03] longer still),
-heats the wafer more, grows larger grains, and stores more stress; the film's
+heats the wafer more, grows larger grains, and stores more stress.
+
+The film's
 hillocks, its wafer bow and its later etch ({ref}`MM3E <step-140>`)
 all scale with it. And the stack must serve as a capacitor electrode:
 its cap is the surface on which {ref}`CAPILD <step-135>` deposits
@@ -128,25 +172,29 @@ its own:
 
 * **Low resistance for power and long signals.** At 47 mΩ/sq[^pdk-08]
   a metal-3 wire has less than two-fifths the resistance per square
-  of a metal-1 or metal-2 wire, and at 0.3 µm width and space
+  of a metal-1 or metal-2 wire.
+
+  At 0.3 µm width and space
   (m3.1, m3.2[^pdk-periph]) it is meant for block-level routing,
   clocks and power. Bohr's 1995 argument that interconnect limits
   performance,[^bohr-1995] Stamper, Fuselier and Tian's account of
   wiring RC at the sub-0.25 µm generation[^stamper-1998] and the ITRS
   2001 interconnect chapter's treatment of aluminium
-  metallisation[^itrs-02] are the context; thick, wide upper metals
+  metallisation[^itrs-02] are the context. Thick, wide upper metals
   are how an aluminium back end keeps global wires fast.
 * **Thick metal for inductors and RF.** A 2 µm top-side metal is the
   classic route to a high-quality-factor spiral inductor on silicon,
   as Chu et al. showed for thick top metal with different passivation
-  schemes;[^chu-2001] the PDK's "inductor-capable" option[^pdk-02]
+  schemes.[^chu-2001] The PDK's "inductor-capable" option[^pdk-02]
   and its thick-metal thickness entries[^pdk-03] are, on our reading,
   the SKY130 form of that trade.
 * **Electromigration in wide, thick lines.** Copper doping,[^ames-1970]
   the (111) texture a refractory underlayer promotes,[^knorr-1996][^kamoshida-1997]
   and the tungsten vias that bound each segment — the short-length
   effect Filippi, Biery and Wood demonstrated[^filippi-1993] after
-  Blech's critical length[^blech-1976] — all apply; Nix and Arzt
+  Blech's critical length[^blech-1976] — all apply.
+
+  Nix and Arzt
   describe void nucleation and growth in such lines,[^nix-1992] and
   May, and Martin and McPherson, the via electromigration of
   Ti:W/Al–Cu multilayer metallisation.[^may-1991][^martin-1989]
@@ -154,7 +202,9 @@ its own:
   aluminium films — Chaudhari's analysis[^chaudhari-1974] — and its
   dependence on film thickness and heat treatment, which Zlatanović
   and Davinić measured,[^zlatanovic-1990] make a thick Al–Cu film more
-  prone to hillocks than a thin one; the refractory cap suppresses them and
+  prone to hillocks than a thin one.
+
+  The refractory cap suppresses them and
   serves as the anti-reflective surface for {ref}`MM3 <step-139>`, the
   role Rocke and Schneegans documented.[^rocke-1988] Stress-induced
   voiding, described by Yue, Funsten and Taylor,[^yue-1985] and the
@@ -165,10 +215,12 @@ its own:
   measured by Olowolafe et al.,[^olowolafe-1985] Hartsough's
   resistivity data for sputtered TiW[^hartsough-1979] and Georgiou,
   Baker and Eshraghi's deposition-condition study[^georgiou-1991] are
-  the public basis for a TiW-based sandwich; Armstrong evaluated the
+  the public basis for a TiW-based sandwich.
+
+  Armstrong evaluated the
   electromigration of the TiW + Al/Cu system.[^armstrong-1991]
 * **The MiM bottom electrode.** The stack's cap becomes the bottom
-  plate of the `cap_mim` device the PDK offers at 2 fF/µm²;[^pdk-07]
+  plate of the `cap_mim` device the PDK offers at 2 fF/µm².[^pdk-07]
   Greenwood and Prasad describe the alternative of a TiN-only bottom
   plate for a MiM capacitor integrated in an aluminium back
   end,[^greenwood-2007] which shows what the plate material must
@@ -179,10 +231,10 @@ capacitor, and the via-2 plugs would end in air.
 
 ## How it is typically performed
 
-An industry-generic thick Ti(W)/Al–Cu/TiW deposition for a 200 mm,
+*An industry-generic thick Ti(W)/Al–Cu/TiW deposition for a 200 mm,
 130 nm-era fab (SKY130's recipe is not public beyond the layer
 thicknesses in the Cypress reports[^cyp-qtp-113005][^cyp-qtp-123907]);
-the film-by-film account is at {ref}`TIAL6 <step-112>`.
+the film-by-film account is at {ref}`TIAL6 <step-112>`.*
 
 1. **Cluster tool.** A multi-chamber PVD platform — SkyWater's "AMAT
    PVD Metal" with "Sputter etch, degas"[^skw-01] — so that degas,
@@ -197,15 +249,19 @@ the film-by-film account is at {ref}`TIAL6 <step-112>`.
    Ti target.[^pat-tiw-hitachi]
 4. **Al–0.5%Cu, 7 200 Å (or 21 250 Å).** Sputtered from an
    Al–Cu target (the Cypress reports give the film as Al-0.5%Cu) at a wafer temperature of roughly 150–300 °C
-   (industry-typical[^txt-02]); a thick film is usually deposited in
+   (industry-typical[^txt-02]).
+
+   A thick film is usually deposited in
    several passes or with a cooled pedestal so that the wafer does
    not drift into the hillock and copper-precipitation regime (industry
-   practice[^txt-05]); grain size and texture follow the
+   practice[^txt-05]). Grain size and texture follow the
    structure-zone relations.[^thornton-1974][^ohring-2002]
    Thicknesses per the Cypress reports.[^cyp-qtp-113005][^cyp-qtp-123907]
 5. **Cap, 300 Å.** On the TiW reading, from a Ti:W
    target[^pat-tiw-hitachi] in argon; thickness per the Cypress
-   reports.[^cyp-qtp-113005][^cyp-qtp-123907] On the 2014 stack it is
+   reports.[^cyp-qtp-113005][^cyp-qtp-123907]
+
+   On the 2014 stack it is
    90 Å of titanium and 500 Å of reactively sputtered TiN
    instead[^cyp-qtp-123907] (*On the cap*, above).
    Its surface must be smooth and clean enough to carry the MiM
@@ -227,12 +283,15 @@ the film-by-film account is at {ref}`TIAL6 <step-112>`.
 
 ## Machines likely used at SkyWater
 
-* **AMAT PVD Metal platform.** SkyWater lists "AMAT PVD Metal" with
-  "Sputter etch, degas", "Aluminum both pure and Cu doped", "TiW",
-  "ESC TiN", "Imp TiN", "Collimated Ti", "WN", "Cobalt",
-  "Niobium".[^skw-01] Strength: **strong** for the vendor and for the
-  films; the platform model (Endura[^amat-endura]) and the choice of
-  Ti or TiW as bottom layer are **inferences**.
+* **AMAT PVD Metal platform**
+  - *SkyWater says:* lists "AMAT PVD Metal" with
+    "Sputter etch, degas", "Aluminum both pure and Cu doped", "TiW",
+    "ESC TiN", "Imp TiN", "Collimated Ti", "WN", "Cobalt",
+    "Niobium".[^skw-01]
+  - *Tool exists:* **strong** for the vendor and for the
+    films.
+  - *Runs this step:* the platform model (Endura[^amat-endura]) and the choice of
+    Ti or TiW as bottom layer are **inferences**.
 * **Metal etchers "Lam 9600, Al, TiW, TiN, Pt" and "Lam 2300 Versys,
   Al, TiW, TiN, Nb, Pt"**[^skw-01] name aluminium, TiW and TiN among the
   materials they etch, so either candidate stack is etchable in the fab
@@ -256,16 +315,17 @@ the film-by-film account is at {ref}`TIAL6 <step-112>`.
 ## Related steps and cross-references
 
 * Previous: {ref}`WCMP4 <step-133>` (the plugs and oxide it lands
-  on). Next: {ref}`CAPILD <step-135>` (the MiM dielectric deposited on
+  on).
+* Next: {ref}`CAPILD <step-135>` (the MiM dielectric deposited on
   this stack), then {ref}`CAPTIW1 <step-136>`, {ref}`CAPM <step-137>`,
   {ref}`CAPME <step-138>`, and only then the metal-3 mask and etch,
   {ref}`MM3 <step-139>` and {ref}`MM3E <step-140>`.
-* The plugs it contacts: {ref}`TIN4 <step-131>`, {ref}`WDEP4 <step-132>`.
-* The dielectric that will surround the lines: {ref}`NILD5 <step-141>`;
-  the via etch that stops on the cap: {ref}`VIM3E <step-145>`.
-* The thin stacks below, where the films are explained in full:
+* Depends on: the plugs it contacts, {ref}`TIN4 <step-131>`, {ref}`WDEP4 <step-132>`.
+* Feeds: the dielectric that will surround the lines, {ref}`NILD5 <step-141>`;
+  the via etch that stops on the cap, {ref}`VIM3E <step-145>`.
+* Same category: the thin stacks below, where the films are explained in full,
   {ref}`TIAL6 <step-112>`, {ref}`TIAL12 <step-123>`; the upper thick
-  metals: {ref}`WTIAL4 <step-149>`, {ref}`WTIAL5 <step-161>`.
+  metals, {ref}`WTIAL4 <step-149>`, {ref}`WTIAL5 <step-161>`.
 * Category page: {ref}`Thin-film deposition <category-deposition>`.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
@@ -354,27 +414,27 @@ the film-by-film account is at {ref}`TIAL6 <step-112>`.
 
 ## Open questions
 
-* Whether the metal-3 bottom layer is Ti or TiW is not public; the
+* **Bottom layer.** Whether the metal-3 bottom layer is Ti or TiW is not public; the
   S8TNV report gives Ti,[^cyp-qtp-113005] and a TiW bottom layer is
   our inference from the S8DI and RAM42HA stack
   descriptions.[^cyp-qtp-123907][^cyp-qtp-030204]
-* Whether the cap is TiW or the Ti/TiN of the stack qualified for S8P
+* **Cap film.** Whether the cap is TiW or the Ti/TiN of the stack qualified for S8P
   in February 2014 "excluding top metal layers" is not public, and
   neither is which levels of a five-metal S8P flow that exclusion
   covers;[^cyp-qtp-123907] see {ref}`overview-metal-cap`. The answer
   changes what {ref}`CAPME <step-138>` can stop on and what
   {ref}`VIM3E <step-145>` lands on.
-* Whether the SKY130 metal 3 is the 0.765 µm Ti/AlCu/TiW stack of the
+* **Metal-3 thickness.** Whether the SKY130 metal 3 is the 0.765 µm Ti/AlCu/TiW stack of the
   S8TNV report,[^cyp-qtp-113005] the 0.845 µm of the PDK's
   diagram,[^pdk-04] or the 0.8–0.85 µm of its assumptions
   table[^pdk-03] — and how the difference arises — is not public.
-* Whether the 2 µm "S8TM" option[^pdk-03] is offered in SKY130 as
+* **The S8TM option.** Whether the 2 µm "S8TM" option[^pdk-03] is offered in SKY130 as
   published is not clear: the mask table does not flag the S8TM
   variants of `MM3` and `VIM2`,[^pdk-05] and the 2014 report's 2.2 µm
   metal 3 belongs to the S8DI technology.[^cyp-qtp-123907]
-* Deposition temperatures, pressures, powers and whether the thick
+* **Deposition conditions.** Deposition temperatures, pressures, powers and whether the thick
   Al–Cu is deposited in one pass or several are not public.
-* What the MiM dielectric of {ref}`CAPILD <step-135>` requires of
+* **What the MiM dielectric requires.** What the MiM dielectric of {ref}`CAPILD <step-135>` requires of
   this stack's cap — and whether the cap is treated before it — is
   not public.
 
