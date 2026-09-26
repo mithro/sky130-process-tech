@@ -16,7 +16,9 @@
 * **Does:** deposits a thin plasma oxide on the polished
   {ref}`NILD4 <step-126>` that seals its surface and, we infer, brings
   the dielectric above metal 2 to its final thickness.
-* **Why:** a polish alone does not give a via level what it needs.
+* **Why:** a polish alone does not give a via level what it needs:
+  thickness control, a sealed surface, a known surface for lithography
+  and mechanical protection.
 * **Public numbers:** via-2 height through NILD4 0.42 µm;[^pdk-04] the
   cap's own thickness is not public.
 * **Likely SkyWater tool:** PECVD TEOS "C2 and Producer" — **strong**
@@ -25,6 +27,7 @@
 * **Not public:** the cap's precursor, thickness and deposition
   conditions, and whether "NILD4_C" is this cap (→ Open questions).
 :::
+
 ## What this step is
 
 `NCAPOX4` deposits a *cap oxide* on the polished inter-level
