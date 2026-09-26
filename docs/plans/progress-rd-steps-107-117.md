@@ -89,3 +89,45 @@ per page.
   PDK-thickness parenthetical sentence stays next to the thickness it qualifies).
 * Tiles: desktop 01–03 and phone 02–03 read; the rule table fits at 400 px (units wrap below the
   number in the Value column, the known batch-7b D4 case; no number breaks).
+
+### 108 CTME — done
+
+* **R-H3:** none. The post-figure passage mixes the public dimensions with this reference's readings
+  (landing on LINT, the zero-enclosure edge case — "inference"), so none of the four titles is
+  true of it; it is structured with R-LIST and R-PARA instead.
+* **R-LIST:** the public dimensions as three bullets after "those of the mask:"; `[^pdk-03]`
+  repeated on the "min. etch and fill capability" bullet, whose value the base supported with the
+  same marker at the end of the sentence (declared). Step category: "two properties that mark it
+  out" as two plain bullets (no verbatim 2–4-word label exists). Metrology: the three test-tile
+  structures as sub-bullets, `[^raw-data-testtile-pads]` on the lead-in "has:"; the "respectively"
+  pairing "6384 and 6992" kept in one bullet.
+* **R-CATEGORY:** classification sentence ends at the closing em dash (28 words); "with two
+  properties" → "It has two properties" (subject and verb added by the split).
+* **R-PARA/R-SENTENCE:** lead: ", producing" → ". It produces" ("It" = the plasma). Post-figure:
+  "The depth is about 0.34 µm on our reading of the stack diagram.[^pdk-04] The diagram puts …" —
+  the hedge scopes only the depth; the which-clause describes the diagram (marker repeated, declared).
+  "— so the etch is" → ". So the etch is" (the "So" sentence the guide allows at a ", so"/"— so"
+  split; it stays in the same paragraph as the hedged reading it follows from). "(inference); the
+  etch" → "(inference). The etch" (the hedge is attached to the first clause). Contact area: split
+  at ", and the taper" — "on our reading" sits in the second clause, which keeps it. Etch-stop:
+  split at the semicolon; "If it under-etches" stays in the lead block with its antecedent. Main
+  oxide etch: split at the second semicolon and at ", and can under some conditions" → "It can …"
+  ("It" = the rate). Endpoint: the Wodecki dash material becomes its own sentence. Strip and clean:
+  the 14-word solvent parenthetical becomes its own parenthetical sentence directly after the
+  sentence it qualifies, marker unchanged after "Batch Rotational".
+* **R-TOOLS:** first bullet in the 094 form (statement head, quotation, gloss paragraph, *Runs this
+  step:* **weak**); strip/clean item *Tool exists:* strong. Lam Exelan bullet has no grade; unchanged.
+* **R-OPENQ, R-RELATED, R-HEDGE, R-GLANCE:** four labels; Previous / Next split, Depends on, Same
+  category; italic scope lead-in; the glance tool line in the 094-review form ("none named … **weak**
+  (assignment to the contact etch)").
+* **check_preserved (`--allow-regrouped --strict-words`):** ADDED markers `pdk-03`×2 (one repeat,
+  one glance), `pdk-04` (repeat), `pdk-periph`, `skw-01` (glance); ADDED numbers, quote, ref
+  `step-105`, hedges "likely", "not public" — all glance. LOST words: "producing" (→ "produces"),
+  "strength"×2 (R-TOOLS), "with" (→ "has").
+* **Coverage flags read:** list items and table-like bullets whose marker is on a sibling or the
+  lead-in; the lead's first half has no `[^pdk-06]` (that marker supports the `mcon` quotation in
+  the second); the hedge scopes discussed above. No claim lost a marker or hedge.
+* **Left over the caps:** item lead blocks over 30 words — Contact area (38; one sentence with the
+  per-contact reading parenthetical, no seam that keeps the hedge with the numbers), Etch-stop
+  integrity (45; two sentences, the second's "it" needs the first), Endpoint (36), Strip and clean
+  (40). No paragraph, item or sentence over the §1 caps.

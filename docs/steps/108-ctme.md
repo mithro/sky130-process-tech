@@ -10,13 +10,31 @@
 | **Previous step** | {ref}`CTM1 <step-107>` |
 | **Next step** | {ref}`TIN2 <step-109>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** etches the metal-contact holes through the
+  {ref}`NILD2 <step-105>` oxide down to the titanium nitride local
+  interconnect.
+* **Why:** the contact hole sets the resistance and the reliability of
+  every connection between a device and the metal system.
+* **Public numbers:** a 0.170 µm square (ct.1) on a 0.190 µm space
+  (ct.2);[^pdk-periph] a "Standard contact bottom CD" of
+  0.09 µm.[^pdk-03]
+* **Likely SkyWater tool:** none named — no dielectric etcher is on
+  SkyWater's public list; the three listed poly/silicon etchers are
+  **weak** (assignment to the contact etch).[^skw-01]
+* **Not public:** the etch chemistry, chamber, endpoint scheme and
+  over-etch, and which etcher runs the step (→ Open questions).
+:::
+
 ## What this step is
 
 `CTME` etches the metal-contact holes. Through the resist openings of
 {ref}`CTM1 <step-107>` a fluorocarbon plasma cuts the
 {ref}`NILD2 <step-105>` oxide — planarised at {ref}`CMPL <step-106>`
-(on our reading) — down to the titanium nitride {term}`local interconnect`,
-producing the holes that {ref}`TIN2 <step-109>` will line and
+(on our reading) — down to the titanium nitride {term}`local interconnect`.
+It produces the holes that {ref}`TIN2 <step-109>` will line and
 {ref}`WDEP2 <step-110>` will fill to make the `mcon` plug, "Contact
 from local interconnect to metal1".[^pdk-06] The resist is stripped
 afterwards; this reference treats the strip and post-etch clean as
@@ -30,23 +48,33 @@ part of this step.
 A close-up of the right-hand metal contact, over the local-contact plug beside the gate; the lower part of the slice is cut off. Before, the contact resist; after, the hole etched through the inter-level oxide and the LI nitride cap to the titanium nitride of the local interconnect, and the resist stripped, which the page treats as part of this step. That the etch first stops on the nitride cap and then opens it is the page's reading of the stack diagram. The hole is drawn tapered, the bottom about half the top, as the pages read the PDK's 0.09 µm "Standard contact bottom CD"[^pdk-03] against the 0.170 µm drawn square (ct.1);[^pdk-periph] the wall angle is not public. The hole is drawn much shallower than it is: on the page's reading of the stack diagram it is about 0.34 µm deep,[^pdk-04] about twice its width. The left-hand hole is etched in the same way, outside this view. The local interconnect, the local-contact plug and its liner, the glass and the cap oxide below are drawn but not labelled. Not to scale.
 :::
 
-The public dimensions are those of the mask: a 0.170 µm square
-(ct.1) on a 0.190 µm space (ct.2),[^pdk-periph] a "min. etch and fill
-capability for mcon" of 0.14 µm, and a "Standard contact bottom CD"
-of 0.09 µm in the PDK's laser-fuse table.[^pdk-03] The depth is
-about 0.34 µm on our reading of the stack diagram, which puts the
+The public dimensions are those of the mask:
+
+* a 0.170 µm square
+  (ct.1) on a 0.190 µm space (ct.2);[^pdk-periph]
+* a "min. etch and fill
+  capability for mcon" of 0.14 µm;[^pdk-03]
+* a "Standard contact bottom CD"
+  of 0.09 µm in the PDK's laser-fuse table.[^pdk-03]
+
+The depth is
+about 0.34 µm on our reading of the stack diagram.[^pdk-04] The diagram puts the
 bottom of `li` at 0.9361 µm and the bottom of `met1` at 1.3761 µm,
 with 0.1 µm of `li`, 0.075 µm of LINT and 0.265 µm of NILD2 between
-them.[^pdk-04] What the etch lands on is,
+them.[^pdk-04]
+
+What the etch lands on is,
 on our reading, not bare TiN but the "LINT" nitride cap of 0.075 µm
 (k 7.3) that the diagram draws over the local interconnect[^pdk-04]
-and that {ref}`LINIT <step-104>` deposits — so the etch is an oxide
+and that {ref}`LINIT <step-104>` deposits. So the etch is an oxide
 etch that must first stop on nitride, then open the nitride to reach
-the 0.10 µm `li`,[^pdk-04] without punching through it. Where an
+the 0.10 µm `li`,[^pdk-04] without punching through it.
+
+Where an
 `mcon` sits with zero enclosure at the edge of an `li` line
 (ct.4),[^pdk-periph] part of the hole floor is the
 {ref}`LINIT <step-104>` nitride and the {ref}`NILD2 <step-105>` oxide
-that fills the space beside the line (inference); the etch must not
+that fills the space beside the line (inference). The etch must not
 trench there, since a further 0.10 µm[^pdk-04] would take it past the
 bottom of `li` into the {ref}`PSG <step-089>` or
 {ref}`NCAPOX <step-091>` pre-metal dielectric.
@@ -56,12 +84,18 @@ bottom of `li` into the {ref}`PSG <step-089>` or
 `CTME` is an {ref}`Etch <category-etch>` step of the *dielectric,
 fluorocarbon* class — the same chemistry family as the trench and
 local-contact etches ({ref}`LICM1E <step-094>`) and the {term}`via` etches
-above ({ref}`VIME <step-119>`) — with two properties that mark it
-out: it is a high-aspect-ratio hole rather than a line, so
-{term}`ARDE` and polymer build-up at the bottom govern the recipe;
-and its etch stop is a nitride-capped metal, so the {term}`selectivity`
-that matters is oxide-to-nitride and then nitride-to-TiN, not
-oxide-to-silicon. The category page's summary of fluorocarbon oxide
+above ({ref}`VIME <step-119>`).
+
+It has two properties that mark it
+out:
+
+* it is a high-aspect-ratio hole rather than a line, so
+  {term}`ARDE` and polymer build-up at the bottom govern the recipe;
+* its etch stop is a nitride-capped metal, so the {term}`selectivity`
+  that matters is oxide-to-nitride and then nitride-to-TiN, not
+  oxide-to-silicon.
+
+The category page's summary of fluorocarbon oxide
 etching — fluorine removes oxide only under ion bombardment while the
 carbon forms a polymer that protects nitride and silicon — is the
 mechanism at work.[^flamm-1981][^winters-1992]
@@ -74,10 +108,12 @@ connection between a device and the metal system:
 * **Contact area.** The PDK's extraction tables give an `mcon`
   152 000 mΩ — 152 Ω — against 15 000 mΩ for a `licon` and 4 500 mΩ
   for a `via` (per-contact reading of the PDK's "Resistivity
-  (mohms/sq)" column; see {ref}`CTM1 <step-107>`).[^pdk-08] A
+  (mohms/sq)" column; see {ref}`CTM1 <step-107>`).[^pdk-08]
+
+  A
   W-to-TiN interface of 0.09 µm bottom
   {term}`CD`[^pdk-03] has little more than a quarter of the drawn area of the
-  0.17 µm top, and the taper the etch leaves, together with the
+  0.17 µm top. The taper the etch leaves, together with the
   interfacial layer the {term}`liner` forms, is on our reading why the number
   is so high. Ohmic contact to TiN is a metal–metal contact, so the
   dominant term is interfacial rather than a Schottky barrier
@@ -86,8 +122,10 @@ connection between a device and the metal system:
 * **Etch-stop integrity.** If the etch breaks through the 0.10 µm
   `li`[^pdk-04] the tungsten plug reaches whatever is below — the
   {term}`PSG` over a gate or the {term}`silicide` — and the local-interconnect scheme
-  fails; if it under-etches, nitride or polymer remains at the bottom
-  and the contact is open or resistive. The etch must therefore have
+  fails. If it under-etches, nitride or polymer remains at the bottom
+  and the contact is open or resistive.
+
+  The etch must therefore have
   an oxide-to-nitride selectivity high enough to stop on 0.075 µm of
   nitride[^pdk-04] with margin for the oxide thickness variation that
   {ref}`CMPL <step-106>` leaves, then a controlled nitride
@@ -112,8 +150,8 @@ stripped without effect and metal 1 would sit on unbroken oxide.
 
 ## How it is typically performed
 
-An industry-generic contact etch for a 200 mm, 130 nm-era fab
-(SKY130's recipe is not public):
+*An industry-generic contact etch for a 200 mm, 130 nm-era fab
+(SKY130's recipe is not public):*
 
 1. **Chamber.** A single-wafer dielectric etcher — a medium-density
    capacitively coupled or a high-density inductively coupled
@@ -126,26 +164,32 @@ An industry-generic contact etch for a 200 mm, 130 nm-era fab
    it through the resist holes.
 3. **Main oxide etch.** A polymerising fluorocarbon — C₄F₈ or C₂F₆ or
    CHF₃ with Ar, and a little O₂ or CO to tune the fluorine-to-carbon
-   ratio — at a few tens of mTorr and high bias. Fluorine etches oxide
+   ratio — at a few tens of mTorr and high bias.
+
+   Fluorine etches oxide
    as SiF₄ only where ions strike; the carbon-rich film that forms on
    nitride slows the etch there, which is the source of
-   selectivity;[^flamm-1981][^winters-1992][^schaepkens-1999] Perry et
+   selectivity.[^flamm-1981][^winters-1992][^schaepkens-1999] Perry et
    al. give etch rates and selectivities for a high-density C₂F₆ oxide
    etch,[^perry-2001] and Oehrlein et al. the CF₄/CHF₃ high-density
-   behaviour on oxide and silicon.[^oehrlein-1994b] In a 0.17 µm hole
+   behaviour on oxide and silicon.[^oehrlein-1994b]
+
+   In a 0.17 µm hole
    the flux of neutrals and ions to the floor is throttled by the
    hole itself — Coburn and Winters' conductance
    argument[^coburn-1989] — so the rate falls with depth
-   ({term}`ARDE`), and can under some conditions run the other way,
+   ({term}`ARDE`). It can under some conditions run the other way,
    the "inverse RIE lag" Doemling et al. observed.[^doemling-1996]
    Gottscho, Jurgensen and Vitkavage review the whole family of
    aspect-ratio and loading effects.[^gottscho-1992]
 4. **Endpoint and over-etch.** Contact layers expose a small fraction
    of the wafer (the {term}`loading effect` is small and the emission
    signal weak), which is why endpoint on such layers needs
-   specialised detection — Wodecki describes a low-open-area
-   multilayer dielectric endpoint method[^wodecki-1999] — or is run
-   by time with a monitor. The {term}`over-etch` clears the deepest holes
+   specialised detection or is run
+   by time with a monitor.
+
+   Wodecki describes a low-open-area
+   multilayer dielectric endpoint method.[^wodecki-1999] The {term}`over-etch` clears the deepest holes
    while the nitride cap protects the `li`.
 5. **Nitride breakthrough.** A short, less polymerising step (CF₄ or
    CHF₃/O₂) removes the LINT nitride from the hole floor (on our
@@ -154,20 +198,26 @@ An industry-generic contact etch for a 200 mm, 130 nm-era fab
    chemistry.[^kastenmeier-1996] The bottom CD is set here.
 6. **Strip and clean.** Oxygen plasma {term}`ash` — GaSonics, Mattson
    or Iridia class in SkyWater's list[^skw-01] — followed by a solvent
-   or semi-aqueous clean (SkyWater lists "EKS265, EKC270 solvents"
-   under "Batch Rotational"[^skw-01]; EKC265/EKC270-type amine
-   solvents) to remove the fluorocarbon
+   or semi-aqueous clean to remove the fluorocarbon
    polymer from the sidewalls and the metal-oxide residue from the
-   TiN floor without attacking the TiN. No HF is used (inference:
+   TiN floor without attacking the TiN.
+
+   (SkyWater lists "EKS265, EKC270 solvents"
+   under "Batch Rotational"[^skw-01]; EKC265/EKC270-type amine
+   solvents.) No HF is used (inference:
    it would widen the hole and etch the exposed oxide).
 7. **Metrology.** Top and bottom CD by {term}`CD-SEM`, depth and
    profile by cross-section SEM on monitors, contact-chain resistance
-   at {term}`e-test`; the 152 Ω `mcon` of the PDK[^pdk-08] is the kind
+   at {term}`e-test`.
+
+   The 152 Ω `mcon` of the PDK[^pdk-08] is the kind
    of number such chains give. The published SKY130 {term}`test tile`
-   has an "M1-LI1 contacts: mcon = 0.17 um" string of 3600 contacts,
-   "M1-LI1-N+" and "M1-LI1-P+" contact strings of 6384 and 6992, and
-   "M1-LI contact Kelvin" structures drawn with ".05 LI enclosure" and
-   "-.01 LI enclosure".[^raw-data-testtile-pads]
+   has:[^raw-data-testtile-pads]
+
+   - an "M1-LI1 contacts: mcon = 0.17 um" string of 3600 contacts;
+   - "M1-LI1-N+" and "M1-LI1-P+" contact strings of 6384 and 6992;
+   - "M1-LI contact Kelvin" structures drawn with ".05 LI enclosure" and
+     "-.01 LI enclosure".
 
 ## Machines typically used
 
@@ -184,10 +234,14 @@ An industry-generic contact etch for a 200 mm, 130 nm-era fab
 * **No dielectric etcher is named on SkyWater's public list.** The
   list gives, under poly/silicon etch, "AMAT DPSII, HBR, Cl2, NF3,
   CF4, CHF3, O2", "Lam 9400 TCP, poly/nitride, HBr, CF4, SF6, O2" and
-  "Lam 4400, HBr, Cl2, C2F6, CF4, SF6, O2".[^skw-01] All three carry
-  fluorine-bearing gases that can etch oxide; strength: **weak** for
-  assignment of any of them to the contact etch (the DPS II line is
-  labelled "gate, trench, W/WN"[^skw-01]).
+  "Lam 4400, HBr, Cl2, C2F6, CF4, SF6, O2".[^skw-01]
+
+  All three carry
+  fluorine-bearing gases that can etch oxide.
+
+  - *Runs this step:* **weak** for
+    assignment of any of them to the contact etch (the DPS II line is
+    labelled "gate, trench, W/WN"[^skw-01]).
 * **Lam Exelan.** No public source places an Exelan at SkyWater; it
   appears here only as the era's typical dielectric etcher, a line
   Lam's own 10-K lists,[^lam-10k][^lam-exelan] its dual-frequency
@@ -195,8 +249,9 @@ An industry-generic contact etch for a 200 mm, 130 nm-era fab
   launch.
 * **Strip and clean — GaSonics PEP, Iridia, Mattson Aspen II; Akrion
   Gamma wet bench; batch rotational tools with "EKS265, EKC270
-  solvents"; SEZ 223 / Da Vinci.**[^skw-01] Strength: strong for
-  existence.
+  solvents"; SEZ 223 / Da Vinci**[^skw-01]
+  - *Tool exists:* strong for
+    existence.
 
 ## Resources required
 
@@ -215,14 +270,15 @@ An industry-generic contact etch for a 200 mm, 130 nm-era fab
 
 ## Related steps and cross-references
 
-* Previous: {ref}`CTM1 <step-107>` (the mask). Next:
+* Previous: {ref}`CTM1 <step-107>` (the mask).
+* Next:
   {ref}`TIN2 <step-109>` (the liner), then {ref}`WDEP2 <step-110>`
   and {ref}`WCMP2 <step-111>`.
-* The films it cuts: {ref}`NILD2 <step-105>` (oxide, planarised at
+* Depends on: the films it cuts, {ref}`NILD2 <step-105>` (oxide, planarised at
   {ref}`CMPL <step-106>`) and {ref}`LINIT <step-104>` (the nitride
-  cap); the layer it stops on: {ref}`LI1M <step-102>` /
+  cap); the layer it stops on, {ref}`LI1M <step-102>` /
   {ref}`LI1ME <step-103>`.
-* The analogous hole etches: {ref}`LICM1E <step-094>` below,
+* Same category: the analogous hole etches, {ref}`LICM1E <step-094>` below,
   {ref}`VIME <step-119>` above.
 * Category page: {ref}`Etch <category-etch>`.
 
@@ -294,16 +350,16 @@ An industry-generic contact etch for a 200 mm, 130 nm-era fab
 
 ## Open questions
 
-* The etch chemistry, chamber, endpoint scheme and over-etch of
+* **Etch recipe and profile.** The etch chemistry, chamber, endpoint scheme and over-etch of
   `CTME`, and the resulting profile, are not public; the 0.09 µm
   "Standard contact bottom CD"[^pdk-03] is read here as the finished
   bottom size.
-* Whether the etch stops on the LINT nitride and opens it in a
+* **Separate nitride step.** Whether the etch stops on the LINT nitride and opens it in a
   separate step, or etches oxide and nitride in one recipe, is
   inferred from the stack diagram.[^pdk-04]
-* Which etcher runs the step is not public; SkyWater's list names no
+* **Which etcher.** Which etcher runs the step is not public; SkyWater's list names no
   dedicated dielectric etcher.[^skw-01]
-* This page treats the resist strip and post-etch clean as part of
+* **Resist strip and post-etch clean.** This page treats the resist strip and post-etch clean as part of
   the etch step.
 
 <!-- footnotes -->
