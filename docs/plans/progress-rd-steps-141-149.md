@@ -246,6 +246,36 @@ Base `f333b98f`. Caps before: 3 paragraphs, 3 items, 9 sentences over; after 0/0
   the lead list, the plate-floor split. WORDS LOST: `strength`×2, `with`. No DUPLICATED line.
 * `cov`: 7 flags, all read (pairing noise; hedges on the neighbouring sentence as above).
 
+### 146 TIN5 — done
+
+Base `d04fe7bd`. Caps before: 3 paragraphs, 3 items, 5 sentences over; after 0/0/0. Lead 237 words
+(base 233, one paragraph) in three paragraphs (91, 62, 84), split at "The liner is described here" and
+"The film is" (131 form); first sentence 8 words (base 85).
+
+* Lead: "…plug: a thin titanium nitride film …" → "…plug. It is a thin titanium nitride film …" (131
+  form); "the floors, which are of two kinds:" → "the floors. The floors are of two kinds:" (restored
+  noun; WORDS LOST `which`); the 21-word parenthetical's second half became the sentence "The PDK's
+  `cap_mim` cross-section draws vias from metal 4 landing on both.[^pdk-07]" ("both" = the two kinds of
+  floor of the sentence before), "(TiW, as assumed at CAPTIW1)" kept in place; the 18-word IMP
+  parenthetical → "This is ionised-metal-plasma …" (131 form); "…for the plug; it is removed …" split
+  at the semicolon.
+* Post-figure paragraph (110 words) split at the semicolon before "A via over a capacitor …"; its
+  "(on our reading 0.1–0.2 µm, …)" stays in that sentence.
+* Step category: classification sentence alone; "TIN2 sets out …" kept whole; "It is the last of the
+  five liner depositions" → "`TIN5` is the last …" (restored noun, since "It" would now follow the
+  TIN2/TIN3 sentence), split at the semicolon before "Via 4 above it"; "What is specific …" with the
+  plate sentence as its own paragraph (R-CATEGORY step 3).
+* Why: coverage item and via-resistance item split before their study sentences (continuations).
+* How: italic scope sentence; step 3 split at the semicolon, the Boumerzoug sentence a continuation
+  (62-word item otherwise).
+* R-TOOLS: AMAT PVD three-line item (131 form); INOVA bullet unchanged.
+* R-RELATED: Previous · Next · Depends on · Feeds · Same category · Category page. R-OPENQ: four
+  labels.
+* R-GLANCE: Why condenses the lead's three roles; numbers `pdk-periph`, `pdk-04`, and "no liner
+  thickness is published for SKY130" (lead: "Its thickness is not public").
+* `check_preserved --allow-regrouped`: ADDED = glance only; REGROUPED: the floor sentence split.
+  WORDS LOST: `strength`, `which`. No DUPLICATED line. `cov`: 4 flags, pairing noise.
+
 ## Content problems for the owner (not fixed; text kept verbatim)
 
 * From the S9b figure notes: on the stop-on-dielectric reading of CAPME, the MiM dielectric stays on
