@@ -16,7 +16,7 @@ they appear only in our English translation, marked as ours.
 | Question | Answer | Sources |
 |---|---|---|
 | The foundry | Grace Semiconductor Manufacturing Corporation (GSMC), Shanghai, formed in 2000; merged with Hua Hong NEC (HHNEC) into HHGrace in 2011 | Wikipedia, Hua Hong, US Commerce Department |
-| The fab | the former Grace fab at 1399 Zuchongzhi Road, Zhangjiang, called "GFab1" in 2013 and HH FAB3 from 2017; 8-inch (200 mm) | US Commerce Department, Hua Hong |
+| The fab | the former Grace fab at 1399 Zuchongzhi Road, Zhangjiang, called "GFab1" in 2013 and HH FAB3 from 2017; 8-inch (200 mm) | US Commerce Department, Hua Hong (our reading) |
 | Names in Cypress's reports | "Fab 5", "Fab5 GSMC", "GSMC-Fab 5", then "HHGrace Fab 3"; also "HHGrace Fab1" for a former HHNEC fab | Cypress's reports |
 | Processes moved | S4AD-5 (0.35 µm SONOS) from 2006; C8 (0.13 µm logic) from 2006; RAM42 and the 0.09 µm SRAM R95LD-3R later | Cypress's reports, EE Times |
 | S8 there | S8DIN-5R from March 2010; then S8TMC-5R, S8P12-10P, S8PF-10R, S8SPF-10P, S8PR2-10R | Cypress's reports |
@@ -133,15 +133,15 @@ the Fab 4 S8 reports.
 |---|---|---|---|
 | Metal layers | 3 (S8TNV-5R) | 3 (S8DIN-5R) | 5 |
 | Metal 1 | 100 Å Ti / 3200 Å Al–Cu / 300 Å TiW | 150 Å Ti / 250 Å TiN / 3200 Å Al–Cu / 90 Å Ti / 500 Å TiN | 150 Å Ti / 250 Å TiN / 3200 Å Al–Cu / 90 Å Ti / 500 Å TiN |
-| Metals 3 and 4 | — | — | 6500 Å Al–Cu in the same Ti/TiN sandwich |
+| Metal 3 | 150 Å Ti / 7200 Å Al–Cu / 300 Å TiW (top) | 500 Å TiW / 21,250 Å Al–Cu / 300 Å TiW (top) | 6500 Å Al–Cu in the same Ti/TiN sandwich, as is metal 4 |
 | Metal 5 | — | — | 190 Å Ti / 450 Å TiN / 10000 Å Al–Cu / 90 Å Ti / 200 Å TiN |
-| Gate oxides | 110 Å and 32 Å | not printed | 32 Å and 110 Å |
-| Passivation | 7000 ± 2000 Å nitride | not printed | "NFUSOX / 1K oxide / 6k Nitride" |
+| Gate oxides | 110 Å and 32 Å | 110 Å and 32 Å | 32 Å and 110 Å |
+| Passivation | 7000 ± 2000 Å nitride | 1000 Å TEOS / 9000 Å nitride | "NFUSOX / 1K oxide / 6k Nitride" |
 
 Each column copies one Cypress report.[^qtp-113005][^qtp-123907][^qtp-142304] What they show:
 
-* **The same oxides.** The HHGrace report prints "SiO2 / 32A/110A", the two gate oxides of the Fab 4
-  S8 report (Cypress's reports).[^qtp-142304][^qtp-113005]
+* **The same oxides.** The HHGrace report prints "SiO2 / 32A/110A", the two gate oxides of both Fab 4
+  S8 reports (Cypress's reports).[^qtp-142304][^qtp-113005][^qtp-123907]
 * **The same first metal, from 2013.** Fab 4 changed its S8 metals "from Ti/AlCu/TiW to
   Ti/TiN/AlCu/Ti/TiN" in 2013–2014, and the new Fab 4 metal 1 is film for film the HHGrace one (Cypress's
   reports).[^qtp-123907][^qtp-142304] The overview page describes the Fab 4 change ({ref}`overview-index`).
@@ -155,8 +155,9 @@ Each column copies one Cypress report.[^qtp-113005][^qtp-123907][^qtp-142304] Wh
   three-metal S8 versions; SkyWater's `s8pfhd` is also a five-metal stack (see {ref}`history-s8-lineage`).
   The HHGrace metal 3 to 5 thicknesses cannot be compared with a Fab 4 five-metal report here, because
   no such report is in the evidence (our reading).[^qtp-142304][^qtp-113005]
-* **Different passivation.** HHGrace prints "NFUSOX / 1K oxide / 6k Nitride"; the 2013 Fab 4 S8 report
-  prints "7000 +/- 2000A Nitride" (Cypress's reports).[^qtp-142304][^qtp-113005]
+* **Different passivation.** HHGrace prints "NFUSOX / 1K oxide / 6k Nitride"; the Fab 4 S8 reports
+  print "7000 +/- 2000A Nitride" (2013) and "1000A TEOS/9000A Si3N4" (2014) (Cypress's
+  reports).[^qtp-142304][^qtp-113005][^qtp-123907]
 
 No public source found gives design rules, device lists or electrical parameters for the Shanghai S8, and
 none says whether the SKY130 PDK describes it. The SKY130 PDK comes from the Minnesota fab.

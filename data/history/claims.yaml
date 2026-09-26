@@ -2096,10 +2096,11 @@ claims:
   anchor: The same oxides.
   grade: attributed
   attribution: Cypress's reports
-  footnotes: [qtp-142304, qtp-113005]
+  footnotes: [qtp-142304, qtp-113005, qtp-123907]
   sources:
   - {id: grc-qtp-142304, origin: cypress}
   - {id: qtp-113005, origin: cypress}
+  - {id: grc-qtp-123907, origin: cypress}
 - id: grace-same-metal1-2013
   page: docs/history/grace.md
   anchor: The same first metal, from 2013.
@@ -2143,10 +2144,11 @@ claims:
   anchor: Different passivation.
   grade: attributed
   attribution: Cypress's reports
-  footnotes: [qtp-142304, qtp-113005]
+  footnotes: [qtp-142304, qtp-113005, qtp-123907]
   sources:
   - {id: grc-qtp-142304, origin: cypress}
   - {id: qtp-113005, origin: cypress}
+  - {id: grc-qtp-123907, origin: cypress}
 - id: grace-hhnec-sonos-2007
   page: docs/history/grace.md
   anchor: EE Times reported in April 2007

@@ -156,6 +156,12 @@ records:
     location: p.3, Technology/Fab Process Description (S8DIN-5R at Fab 4)
   - text: Fab 4, CMI-Minnesota
     location: p.3, Name/Location of Die Fab (prime) Facility
+  - text: 'Metal 3: 500A TiW/21,250A Al 0.5% Cu/300A TiW'
+    location: p.3, Technology/Fab Process Description
+  - text: 1000A TEOS/9000A Si3N4
+    location: p.3, Passivation Type and Thickness
+  - text: SiO2 / 110A & SiO2 / 32A
+    location: p.3, Gate Oxide Material/Thickness (MOS)
   - text: 'QTP 123907: METAL STACK CHANGE, S8DIN TECHNOLOGY, FAB 4 CMI'
     location: Document History Page, document title
   claims:
