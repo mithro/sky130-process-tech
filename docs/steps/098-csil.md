@@ -191,12 +191,12 @@ fab (SKY130's recipe is not public):*
 * **Temperature and time.** A soak of tens of seconds at 600–750 °C
   to form C49 TiSi₂ under the TiN, with or without a second soak at
   800–900 °C for the C54 transformation — typical industry values
-  for a Ti/TiN contact silicide (Osburn[^osburn-1993]).
+  for a Ti/TiN contact silicide (Osburn[^osburn-1993]). Because there
+  is no strip between them, the two soaks can be one recipe.
 
   Yoo, Atanos
   and Whitworth describe TiSi₂ formation and anneal in a
-  susceptor-based low-pressure {term}`RTP` system.[^yoo-1999] Because there
-  is no strip between them, the two soaks can be one recipe.
+  susceptor-based low-pressure {term}`RTP` system.[^yoo-1999]
 * **Sequence.** Load from the {term}`PVD` platform without a wet step;
   purge; low-temperature stabilisation; ramp; soak; ramp-down;
   unload to the tungsten deposition. {term}`Queue time <queue time>` between liner and
