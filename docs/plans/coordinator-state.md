@@ -43,7 +43,7 @@ Running (2026-09-27): rd-steps-154-171, one agent at a time; step batches throug
 
 | Branch / worktree | Task | Model | State |
 |---|---|---|---|
-| `topic/rd-steps-154-171` | W2 batch 12: step pages 154–171 (metal 4 etch to final test; the last step batch) | Opus | writing |
+| `topic/rd-steps-154-171` | W2 batch 12: step pages 154–171 (metal 4 etch to final test; the last step batch) | Opus | written (20 commits); Opus review running |
 
 Quota: on 2026-09-27 the owner chose to continue past the 75-point share at ONE agent at a time (one
 Opus writer batch, then its review, then the next) until the reset on 2026-10-01 10:00 UTC. Resume order after the reset (one Opus writer per batch, Opus review, four agents at most):
