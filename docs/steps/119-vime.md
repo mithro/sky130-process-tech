@@ -27,6 +27,7 @@
   over-etch, the cap consumed, and which refractory film the cap is
   (→ Open questions).
 :::
+
 ## What this step is
 
 `VIME` etches the via-1 holes. Through the 0.15 µm resist openings of
