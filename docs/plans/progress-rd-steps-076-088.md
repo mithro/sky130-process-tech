@@ -651,3 +651,67 @@ pages: 066, 068, 072. One commit per page.
   (mask table/layers, the two category bullets, the NMOS item, the poly-heads item); glance and label
   lines.
 * **Caps**: para > 100 2 → 0; item > 60 1 → 0; sentence > 45 5 → 0.
+
+### 086 NSDI — done
+
+* **Lead.** The 54-word first sentence split at its dash: "… and all the other N⁺ diffusions of the
+  process.[^pdk-07] These are the n⁺ taps …, the N⁺ diffusion resistors and the n-side of the P-well
+  diodes.[^pdk-07]" ("These are" added; `[^pdk-07]` **repeated** on the first half because the base's
+  single marker covered the whole sentence — masks-b H1, declared). The 48-word second sentence split at
+  ", so that" ("So the heavy junction stands …", a sentence; "(on our reading)" stays on the SPOX
+  clause it governs). Two paragraphs, split before "`NSDI` goes through" ("It" → "`NSDI`", R-PARA step
+  5). 114 words as in the base. **First sentence 26 words, left**: no further seam.
+* **R-H3.** `### What the public record shows` after the figure caption, over the 197-word PDK and
+  test-tile paragraph.
+* **R-LIST.** "What the PDK says about the result is the same as for the P⁺ junction:" → three plain
+  bullets, each with its own marker as in the base (the joining "and" dropped).
+* **R-SENTENCE (test tile).** The 64-word sentence split at its dash: "… 116.7 Ω per square, contacts
+  included (our extraction from the published
+  measurements).[^raw-data-passives][^raw-data-testtile-pads] They are inside those limits and, like the
+  nominal values, lower for the high-voltage structure (our extraction from the published measurements;
+  the files record no temperature, date or wafer).[^raw-data-passives][^raw-data-testtile-pads]". The
+  trailing extraction hedge covered the values, so it is **repeated** on the first half with both markers
+  (R-SENTENCE step 5, the batch-4 form on 053/055/056; declared); "They are" added.
+* **R-CATEGORY.** Classification sentence (≈ 30 w) alone; "Its partner is PSDI" → "`NSDI`'s partner"
+  opens the second paragraph (R-PARA step 5), and the "What distinguishes it …" sentence (its own
+  label) follows, split at its semicolon ("What distinguishes it from the boron side is the ion: …").
+* **Why.** The 56-word depth/offset sentence split at ", and its offset" ("Its offset from the gate …").
+  The arsenic paragraph (168 w): the four studies after "its activation is limited by clustering:"
+  became plain bullets (a list of studies; each keeps its marker; the joining "and" dropped); the
+  Rousseau bullet split at its dash ("… *injects interstitials*.[^rousseau-1994] So an over-active
+  arsenic layer …", `[^rousseau-1994]` **repeated** on the finding, which in the base shared the one
+  marker; declared). "Adding a lighter phosphorus component …" and the SkyWater sentence follow as a
+  paragraph. "Two things this implant does *not* do, on the reading used throughout this reference" →
+  colon and two bullets (the hedge on the lead-in covers both); the gate bullet split after its dash
+  clause: "… would do no harm. That is one reason the capped-gate reading is hard to test from the NMOS
+  side." ("which is" → "That is", step 7; "although" kept in its clause). The closing sentence opens
+  "`NSDI` *does* dope" ("It" → "`NSDI`").
+* **R-HEDGE.** Italic lead-in, word for word.
+* **How items.** Energy and dose (74 w): lead split at its semicolon; the Wikipedia sentence split after
+  the quotation's marker ("The layer regrows by solid-phase epitaxy …", each half keeps its markers).
+  Tilt (63 w): lead "0°, per the PDK's … entry.[^pdk-03]"; continuation from "The amorphisation …".
+  Wafer handling (79 w): lead = the cooling sentence; continuation = "Charging control by plasma flood
+  gun is critical … wafer:" with the three studies as nested plain bullets (the dash became the colon).
+* **R-TOOLS.** GSD: *SkyWater says:* the two quotations (no subject in the base), *Tool exists:*
+  **strong** …, *Runs this step:* the **inference** with the 8250 quotation it rests on; the Axcelis
+  press-release sentence is the continuation. One tool.
+* **R-RELATED.** Previous/Next split; "Complementary implant", "The extensions it joins … the halos
+  around them" → one `Same module:` bullet (PSDI, 2PSDI, ASTI, HVASTI, LDASTI, BHI, LDBHI all carry
+  this module's Phase cell); "The offset … the screen … the poly heads it dopes" → `Depends on:`; "The
+  n⁺ gate it does not need to dope" (P1I) unlabelled.
+* **R-OPENQ.** Labels "Species, energy and dose", "SONOS cell source/drain", "Shielding of the capped
+  gates", "Which implanter"; text unchanged.
+* **R-GLANCE.** Does/Why from the lead and Why; Public numbers S/D XJ 0.1 µm and 0° `[^pdk-03]`,
+  `RSN` 120 Ω/sq with its limits `[^pdk-07]`; tool line with both grades; Not public from Open
+  questions 1.
+* **Preservation** (`--allow-regrouped` only): ADDED markers `pdk-07` (repeat), `raw-data-passives`,
+  `raw-data-testtile-pads` (repeats), `rousseau-1994` (repeat), `pdk-03`, a second `pdk-07`, `skw-01`
+  (glance); numbers 0, 0.1, 108–132, 120, ⁺×2, quotes "High current", "N+ or P+ S/D (XJ)" (glance);
+  hedges "our extraction" (the repeat above), "inference", "likely", "not public" (glance). REGROUPED:
+  the lead, the PDK list, the "Two things" list, the tilt item (same digits, same order). WORDS LOST:
+  "and"×2 (list joins), "it"×2 and "its" (the nouns put back), "strength".
+* **Marker coverage.** 31 flags, all read: list lead-ins and items whose base marker belonged to
+  another item (the PDK list, the four studies, the flood-gun studies); split halves whose base
+  marker belonged to the other clause (depth/offset, screen oxide/amorphisation, tilt/amorphisation);
+  the repeated markers above; glance and label lines.
+* **Caps**: para > 100 4 → 0; item > 60 4 → 0; sentence > 45 9 → 0. First sentence 26 w (above).

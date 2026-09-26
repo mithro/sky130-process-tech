@@ -10,16 +10,33 @@
 | **Previous step** | {ref}`NSDM <step-085>` |
 | **Next step** | {ref}`NSDIS <step-087>` |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** implants the heavy n-type deep source and drain of every
+  NMOS and the other N⁺ diffusions, self-aligned to the spacers.
+* **Why:** the deep N⁺ junction carries the NMOS current from the
+  contact to the extension with the lowest possible series resistance.
+* **Public numbers:** "N+ or P+ S/D (XJ)" 0.1 µm; "High current" angle
+  0°;[^pdk-03] `RSN` 120 Ω/sq (limits 108–132).[^pdk-07]
+* **Likely SkyWater tool:** Axcelis GSD high-dose implanter — strong
+  (tools, species); inference (assignment).[^skw-01]
+* **Not public:** the species (arsenic alone or with phosphorus), energy
+  and dose (→ Open questions).
+:::
+
 ## What this step is
 
 `NSDI` is the heavy n-type implant that forms the deep source and
 drain of every NMOS transistor and all the other N⁺ diffusions of the
-process — the n⁺ taps to the N-wells, the NPN emitter and collector
+process.[^pdk-07] These are the n⁺ taps to the N-wells, the NPN emitter and collector
 contacts, the PNP base contacts, the N⁺ diffusion resistors and the
-n-side of the P-well diodes.[^pdk-07] It goes through the resist
+n-side of the P-well diodes.[^pdk-07]
+
+`NSDI` goes through the resist
 windows of {ref}`NSDM <step-085>`, through the thin
 {ref}`SPOX <step-080>` oxide (on our reading), and is self-aligned to
-the nitride spacers, so that the heavy junction stands a spacer-width
+the nitride spacers. So the heavy junction stands a spacer-width
 off the gate edge and joins the shallow arsenic {term}`extension`
 implanted before the spacer ({ref}`ASTI <step-065>`,
 {ref}`HVASTI <step-069>`, {ref}`LDASTI <step-072>`). The resist is
@@ -34,22 +51,33 @@ stripped at {ref}`NSDIS <step-087>` and the dopant activated at
 A close-up of the 1.8 V NMOS gate edge, as for the tip module, inside the NSDM window. Before, the tip and the halo under the spacer; after, the deep N⁺ source/drain, drawn from the outer foot of the spacer oxide outwards: self-aligned to the spacer, the deep junction lies one spacer width from the gate edge and meets the tip, which is left under the spacer. It is drawn deeper than the tip and the halo; the PDK gives the junction 0.1 µm (XJ) after the anneal,[^pdk-03] which is not drawn to scale. The arrows are drawn vertical, with no tilt, as the PDK's "High current" implant angle of 0° gives;[^pdk-03] the species (arsenic alone or with phosphorus), energy and dose are not public. Outside this view the same implant makes the deep junction over the whole 5 V area, which has no gate in this slice. The colours mark the type of the doping, and the hatching where the halo implant is, not their profiles. The caps, the re-oxidation oxide, the gate oxide and the spacer oxide are drawn but not labelled, nor are the spacer nitride and the silicon in the upper panel, and the liner oxide is drawn faded; the P-well and the NCHI channel implant made earlier are not drawn. Not to scale.
 :::
 
+### What the public record shows
+
 Unlike the p-type side, the n-type side is described in this
 reference with a single implant. What the PDK says about the result
-is the same as for the P⁺ junction: an "N+ or P+ S/D (XJ)" vertical
-feature of 0.1 µm and a vertical space of 0.06 µm,[^pdk-03] a
-high-current implant angle of 0°,[^pdk-03] and an N-diffusion sheet
-resistance of 120 000 mΩ/sq (120 Ω/sq), lower than the 197 Ω/sq of
-P-diffusion.[^pdk-08] The device page's e-test table gives `RSN` as
+is the same as for the P⁺ junction:
+
+* an "N+ or P+ S/D (XJ)" vertical
+  feature of 0.1 µm and a vertical space of 0.06 µm;[^pdk-03]
+* a high-current implant angle of 0°;[^pdk-03]
+* an N-diffusion sheet
+  resistance of 120 000 mΩ/sq (120 Ω/sq), lower than the 197 Ω/sq of
+  P-diffusion.[^pdk-08]
+
+The device page's e-test table gives `RSN` as
 120 Ω/sq (limits 108–132) and the high-voltage N⁺ diffusion `RSNH` as
 114 Ω/sq (102–126).[^pdk-07] Two-terminal sweeps of the test tile's
 25-square "n+ resistor" structures, published in the SKY130 raw-data
 repository, give 122.5 Ω and 120.6 Ω per square, and the "n+ high
-voltage resistor" 116.7 Ω per square, contacts included — inside those
+voltage resistor" 116.7 Ω per square, contacts included (our extraction
+from the published measurements).[^raw-data-passives][^raw-data-testtile-pads]
+They are inside those
 limits and, like the nominal values, lower for the high-voltage
 structure (our extraction from the published measurements; the files
 record no temperature, date or
-wafer).[^raw-data-passives][^raw-data-testtile-pads] The NMOS
+wafer).[^raw-data-passives][^raw-data-testtile-pads]
+
+The NMOS
 cross-section shows "N+" source/drain beside "N−"
 extensions.[^pdk-07] Species, energy and dose are not
 public: the "N+" name, the tool list and the sheet resistance are
@@ -62,9 +90,11 @@ rest.
 *source/drain* class — high dose (of the order of 10¹⁵ cm⁻²,
 industry-typical[^txt-01]), tens of keV, from a high-current tool,
 self-aligned to a spacer, amorphising the surface
-({ref}`category-implant`). Its partner is {ref}`PSDI <step-082>`.
+({ref}`category-implant`).
+
+`NSDI`'s partner is {ref}`PSDI <step-082>`.
 What distinguishes it from the arsenic tip implant
-({ref}`ASTI <step-065>`) is dose, depth and alignment; what
+({ref}`ASTI <step-065>`) is dose, depth and alignment. What
 distinguishes it from the boron side is the ion: arsenic is heavy,
 amorphises the silicon at a lower dose, diffuses slowly, and
 deactivates by clustering rather than by precipitation alone.
@@ -76,7 +106,7 @@ the extension with the lowest possible series resistance — the term
 that Ng and Lynch showed limits scaling[^ng-1986] — and provides the
 degenerately doped surface that a contact or silicide needs. Its
 depth (the PDK's 0.1 µm[^pdk-03]) keeps the contact etch and
-silicidation ({ref}`CSIL <step-098>`) out of the junction, and its
+silicidation ({ref}`CSIL <step-098>`) out of the junction. Its
 offset from the gate, set by the spacer of
 {ref}`SPNIT <step-076>`/{ref}`SPE <step-077>`, keeps that depth from
 degrading short-channel control, which is the whole point of the LDD
@@ -86,16 +116,22 @@ al.[^tsang-1982]
 The choice of arsenic, and the question of whether phosphorus is
 added, is a well-documented trade. Arsenic gives an abrupt, shallow,
 highly active junction, but its activation is limited by clustering:
-Nobili et al. identified precipitation as the reason for electrically
-inactive arsenic,[^nobili-1983] Angelucci et al. measured arsenic
-precipitation and diffusivity together,[^angelucci-1985] Luning et al.
-the kinetics of high-concentration deactivation at moderate
-temperatures,[^luning-1992] and Rousseau, Griffin and Plummer showed
-that arsenic deactivation *injects interstitials* — so an over-active
-arsenic layer that relaxes during a later thermal step enhances the
-diffusion of everything around it,[^rousseau-1994] with consequences
-for bipolar devices[^rousseau-1996] that matter to the NPN whose
-emitter this implant makes. Adding a lighter phosphorus component
+
+* Nobili et al. identified precipitation as the reason for electrically
+  inactive arsenic;[^nobili-1983]
+* Angelucci et al. measured arsenic
+  precipitation and diffusivity together;[^angelucci-1985]
+* Luning et al.
+  the kinetics of high-concentration deactivation at moderate
+  temperatures;[^luning-1992]
+* Rousseau, Griffin and Plummer showed
+  that arsenic deactivation *injects interstitials*.[^rousseau-1994] So an over-active
+  arsenic layer that relaxes during a later thermal step enhances the
+  diffusion of everything around it,[^rousseau-1994] with consequences
+  for bipolar devices[^rousseau-1996] that matter to the NPN whose
+  emitter this implant makes.
+
+Adding a lighter phosphorus component
 grades the junction and lowers its resistance: Lee and Lee's As/P
 double-implanted source/drain for 0.25 µm technology[^lee-1999-edl]
 and Augendre et al.'s As/P co-implantation for gate and source/drain
@@ -104,13 +140,18 @@ cost. Whether SKY130 uses arsenic alone or with phosphorus is not
 public; both are on SkyWater's implanter species lists.[^skw-01]
 
 Two things this implant does *not* do, on the reading used
-throughout this reference: it does not dope the gates, which are
-capped ("poly cap after SPE" 0.2 µm[^pdk-03]) and were doped n⁺ at
-{ref}`P1I <step-050>` — although, since the gates are n⁺ already, an
-N⁺ source/drain reaching them would do no harm, which is one reason
-the capped-gate reading is hard to test from the NMOS side; and it
-does not dope the precision resistors, which rpm.6 keeps 0.200 µm
-clear of `nsdm`.[^pdk-periph] It *does* dope, on the
+throughout this reference:
+
+* It does not dope the gates, which are
+  capped ("poly cap after SPE" 0.2 µm[^pdk-03]) and were doped n⁺ at
+  {ref}`P1I <step-050>` — although, since the gates are n⁺ already, an
+  N⁺ source/drain reaching them would do no harm. That is one reason
+  the capped-gate reading is hard to test from the NMOS side.
+* It
+  does not dope the precision resistors, which rpm.6 keeps 0.200 µm
+  clear of `nsdm`.[^pdk-periph]
+
+`NSDI` *does* dope, on the
 {ref}`NPCM <step-078>` reading, the n⁺ poly contact heads exposed by
 the {term}`nitride cut` inside `nsdm`.
 
@@ -119,24 +160,28 @@ contacts and no NPN.
 
 ## How it is typically performed
 
-An industry-generic N⁺ source/drain implant for a 200 mm, 130 nm-era
-fab (SKY130's recipe is not public):
+*An industry-generic N⁺ source/drain implant for a 200 mm, 130 nm-era
+fab (SKY130's recipe is not public):*
 
 * **Species and source.** Arsenic (⁷⁵As⁺) from arsine gas,[^wiki-ash3]
   optionally followed by phosphorus (³¹P⁺) from phosphine[^wiki-ph3]
   under the same resist. Both gases are highly toxic and are
   delivered from sub-atmospheric cylinders in monitored gas cabinets.
 * **Energy and dose.** Tens of keV and a few 10¹⁵ cm⁻² for arsenic
-  (industry-typical[^txt-01][^txt-02]); the screen oxide of
+  (industry-typical[^txt-01][^txt-02]).
+
+  The screen oxide of
   {ref}`SPOX <step-080>` takes part of the range. Arsenic at these
   doses amorphises the silicon — above roughly 10¹⁴–10¹⁵ cm⁻² "the
   amount of crystallographic damage can be enough to completely
-  amorphize the surface"[^wiki-implant] — and the layer regrows by
+  amorphize the surface".[^wiki-implant] The layer regrows by
   solid-phase epitaxy during the anneal, at a rate that depends on
   orientation[^csepregi-1978] and on the arsenic concentration
   itself.[^jeon-1989]
 * **Tilt.** 0°, per the PDK's "High current" implant-angle
-  entry;[^pdk-03] the amorphisation makes channelling a smaller
+  entry.[^pdk-03]
+
+  The amorphisation makes channelling a smaller
   concern than for boron, and zero tilt avoids the shadowing beside
   roughly 0.4 µm-tall (0.18 µm poly plus the ~0.2 µm cap[^pdk-03]) capped gates that Krieger et al. analysed for tilted
   arsenic source/drain implants.[^krieger-1989] On a spinning-disc
@@ -144,14 +189,20 @@ fab (SKY130's recipe is not public):
   disc.[^jones-1996]
 * **Wafer handling.** Batch spinning-disc end station with wafer
   cooling; the beam power at several mA (typical) heats the resist
-  (Smith,[^smith-1983] Romig et al.[^romig-1996]). Charging control
+  (Smith,[^smith-1983] Romig et al.[^romig-1996]).
+
+  Charging control
   by {term}`plasma flood gun` is critical for an arsenic implant on a
-  resist-covered wafer — Lukaszek, Reno and Bammi measured the
-  influence of resist on charging during high-current arsenic
-  implants,[^lukaszek-1996] Current et al. the current–voltage
-  characteristics of charging control during high-current As⁺
-  implantation,[^current-1998] and Mehta et al. the negative-charging
-  side of flood-gun operation.[^mehta-1996]
+  resist-covered wafer:
+
+  - Lukaszek, Reno and Bammi measured the
+    influence of resist on charging during high-current arsenic
+    implants;[^lukaszek-1996]
+  - Current et al. the current–voltage
+    characteristics of charging control during high-current As⁺
+    implantation;[^current-1998]
+  - Mehta et al. the negative-charging
+    side of flood-gun operation.[^mehta-1996]
 * **Dose loss.** A fraction of a shallow arsenic implant is lost to
   the surface during the anneal; Farhane et al. quantified the loss
   in nitrogen anneals[^farhane-2003] and Shibahara et al. its
@@ -173,13 +224,17 @@ fab (SKY130's recipe is not public):
 
 ## Machines likely used at SkyWater
 
-* **Axcelis GSD high-dose implanter.** "Axcelis GSD Hi dose B11, BF2,
-  P, As 2-180kev, 5e12 to 5e16, tilt/twist" and "Axcelis GSD High
-  current/energy B11, BF2, P, As, 10-3000kev, 1e11 to 5e15,
-  tilt/twist".[^skw-01] Strength: **strong** for the tools and their
-  species (both list P and As); the assignment of `NSDI` to the "Hi
-  dose" tool is an **inference** from the dose required, which lies
-  beyond the medium-current 8250's "1e11 to 1e14".[^skw-01] Axcelis
+* **Axcelis GSD high-dose implanter**
+  - *SkyWater says:* "Axcelis GSD Hi dose B11, BF2, P, As 2-180kev,
+    5e12 to 5e16, tilt/twist" and "Axcelis GSD High current/energy B11,
+    BF2, P, As, 10-3000kev, 1e11 to 5e15, tilt/twist".[^skw-01]
+  - *Tool exists:* **strong** for the tools and their species (both list
+    P and As).
+  - *Runs this step:* the assignment of `NSDI` to the "Hi dose" tool is
+    an **inference** from the dose required, which lies beyond the
+    medium-current 8250's "1e11 to 1e14".[^skw-01]
+
+  Axcelis
   describes the GSD family as "the industry benchmark for the longest
   manufactured and supported batch ion implanter".[^axcelis-gsd]
 
@@ -197,16 +252,17 @@ fab (SKY130's recipe is not public):
 
 ## Related steps and cross-references
 
-* Previous: {ref}`NSDM <step-085>` (the mask). Next:
-  {ref}`NSDIS <step-087>` (strip), then {ref}`RTAD <step-088>`
+* Previous: {ref}`NSDM <step-085>` (the mask).
+* Next: {ref}`NSDIS <step-087>` (strip), then {ref}`RTAD <step-088>`
   (activation) and later {ref}`RTAD2 <step-092>`.
-* Complementary implant: {ref}`PSDI <step-082>`/{ref}`2PSDI <step-083>`.
-* The extensions it joins: {ref}`ASTI <step-065>`,
-  {ref}`HVASTI <step-069>`, {ref}`LDASTI <step-072>`; the halos
-  around them: {ref}`BHI <step-066>`, {ref}`LDBHI <step-073>`.
-* The offset it is aligned to: {ref}`SPNIT <step-076>`,
-  {ref}`SPE <step-077>`; the screen it passes through:
-  {ref}`SPOX <step-080>`; the poly heads it dopes:
+* Same module: the complementary implant,
+  {ref}`PSDI <step-082>`/{ref}`2PSDI <step-083>`; the extensions it
+  joins, {ref}`ASTI <step-065>`, {ref}`HVASTI <step-069>`,
+  {ref}`LDASTI <step-072>`; the halos around them, {ref}`BHI <step-066>`,
+  {ref}`LDBHI <step-073>`.
+* Depends on: the offset it is aligned to, {ref}`SPNIT <step-076>`,
+  {ref}`SPE <step-077>`; the screen it passes through,
+  {ref}`SPOX <step-080>`; the poly heads it dopes,
   {ref}`NPCME <step-079>`.
 * The n⁺ gate it does not need to dope: {ref}`P1I <step-050>`.
 * Category page: {ref}`Ion implantation <category-implant>`.
@@ -280,14 +336,14 @@ fab (SKY130's recipe is not public):
 
 ## Open questions
 
-* Species (arsenic alone or with phosphorus), energy and dose are
+* **Species, energy and dose.** Species (arsenic alone or with phosphorus), energy and dose are
   not public; the values given are industry-typical.
-* Whether the SONOS cell source/drain is made by this implant is
+* **SONOS cell source/drain.** Whether the SONOS cell source/drain is made by this implant is
   inferred from the cell being an NMOS device.
-* Whether the capped gates are entirely shielded is inferred; for
+* **Shielding of the capped gates.** Whether the capped gates are entirely shielded is inferred; for
   the n⁺ gates it makes no electrical difference and is therefore
   not testable from the NMOS side.
-* Which implanter runs the step is inferred from dose capability.
+* **Which implanter.** Which implanter runs the step is inferred from dose capability.
 
 <!-- footnotes -->
 
