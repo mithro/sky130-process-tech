@@ -467,3 +467,33 @@ per page.
 * **Coverage flags read:** list items (markers on their own clauses), the endpoint split (above), the
   recipe split, glance lines. No marker lost.
 * **Left over the caps:** none.
+
+### 128 NCAPOX4 — done
+
+* **R-H3:** none (post-figure passage 110 words of this reference's readings, as 117).
+* **Lead:** base 125 words → two paragraphs at "The finished number is public" (the 117 seam; 86 and 39
+  words).
+* **Post-figure:** two paragraphs at "What differs from NCAPOX3". The suffix sentence (46 words) split
+  at its semicolon; its trailing "(inference; see *Open questions*)" scoped the whole sentence, so the
+  first half now ends "(inference; {ref}`NILD4 <step-126>`)." — the 117 form after its review (R-SENTENCE
+  step 5; the half takes the part of the hedge that applies; declared ADDED hedge). The aspect-ratio
+  sentence split at "— so" → ". So the thickness …".
+* **R-CATEGORY:** classification ends at "PECVD section." (19 words); "— and, like NCAPOX3, the simplest
+  deposition" → "It is, like NCAPOX3, the simplest deposition …" (subject and verb added; a paragraph, no
+  label); "What is specific to this instance is that X, and that Y" (50 words) → "… is that:" and two
+  plain bullets ("and that" dropped; the batch-8 ruling).
+* **R-PARA (Why):** Thickness control: continuation at "Polishing to"; Sealing: split at
+  "surface layer;" (the continuation's "them" follows its antecedents directly, as 117).
+* **How:** italic scope lead-in. Chamber: lead ends at the first semicolon. Precursor: split at
+  "measured;" and "same flow;" ("We infer, not from any public statement …" keeps its hedge whole; the
+  117 form). Film properties: lead ends at its colon.
+* **R-TOOLS:** the 117 form (TEOS item in grade lines; the "C2"/"Producer" reading after the grades;
+  the silane "C1" bullet has no "Strength:", unchanged).
+* **R-OPENQ, R-RELATED, R-HEDGE, R-GLANCE:** four labels; the 117 Related form; glance in the 117 form
+  (keeps "we infer" on the final-thickness role).
+* **check_preserved (`--allow-regrouped --strict-words`):** ADDED hedge "inference" (the divided hedge
+  above); everything else ADDED is the glance box (markers `pdk-04`, `skw-01`; numbers 0.42, `2`; quotes
+  "C2", "C2 and Producer", "NILD4_C"; ref `step-126`; hedges; identifiers). LOST word "strength".
+* **Coverage flags read:** the list items under "is that:", the colon and semicolon splits (markers
+  with their clauses), glance lines. None lost a marker or hedge.
+* **Left over the caps:** none.
