@@ -43,7 +43,7 @@ Running: rd-steps-014-034; the queue is resumed in order as the 5-hour window al
 
 | Branch / worktree | Task | Model | State |
 |---|---|---|---|
-| (none — paused for quota until 2026-10-01 10:00 UTC) | | | |
+| `topic/rd-steps-089-097` | W2 batch 7a (pre-metal dielectric and contact, first half) — Opus writer; half-size to fit the last quota headroom (share ≈66/75 on a fresh reading) | Opus | writing |
 
 Quota pause: the project's share of the weekly quota is about 63 of the 75-point cap (2026-09-26). No new
 agent is launched until the reset on 2026-10-01 10:00 UTC; the mask batch finishes, gets its Opus review
