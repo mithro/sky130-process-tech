@@ -691,3 +691,61 @@ verbatim (content problem 5).
 * `check_preserved --allow-regrouped`: ADDED outside the glance only "Its", "This is", "That", the
   labels; every `number_order` change REGROUPED, read. `--strict-words` LOST: `strength` (and
   `whose`, `which`, `and`). cov: three flags, pairing noise. inv: OK.
+
+### 171 HPETEST — done (base `509864aa`)
+
+In-force note (US 7,679,384) and its pointer: untouched; nothing from it in the glance box.
+
+* Lead (98 words, first sentence 50): split at its colon (zero words; first sentence 7).
+* R-H3: the three bold run-ins that introduce multi-paragraph passages → `### What the PDK says is
+  tested`, `### Where the structures are`, `### A published test tile` (R-H3 step 4); four H3s on the
+  page counting none in How.
+* PDK passage: the MOSFET quotation its own sentence (declared repeated `pdk-07`); the 1.8 V NMOS
+  example → "…, for example:[^pdk-07]" and its two figures as bullets (the second keeps the base's
+  gapped "a nominal 3.510 mA …"); the passive-device dash list → a two-column `Parameter | Nominal
+  (limits)` table (R-TABLE; every cell in base words and order, `WN`'s "0.157 µm for a drawn 0.14 µm N+
+  line" kept whole in its value cell); the NPN/poly/SONOS sentence closed at "star cells".[^pdk-07]
+  (declared repeat) and the SRAM sentence after it.
+* Structures passage: the 65-word sentence split at its semicolon and at ", and they allow larger via
+  sizes" (declared repeated `pdk-periph`); the "therefore" reading as a paragraph, the in-force note
+  directly after it as before.
+* Test-tile passage: three paragraphs, no sentence changed.
+* R-CATEGORY: classification sentence alone; the category-page sentence a paragraph (split at ",
+  and the category page's account"); "What is specific to SKY130 is that the specifications are
+  public: …" split at its colon and kept with its elaboration (D4).
+* Why: process-control item's colon enumeration → five sub-bullets (each study keeps its marker), the
+  SPC sentence a continuation.
+* How: scope sentence italic. The pad-list paragraph split at its semicolon (declared repeated
+  `raw-data-testtile-pads`). High-voltage passage: the 65-word drain-extended sentence → "… the median
+  resistance … is, against the RDS nominals:[^raw-data-hv-mosfets][^pdk-07]" and a `Structures | Median
+  resistance | RDS nominal` table with the base's hedge "(Our extraction from the published
+  measurements.)" as a sentence directly under it (R-TABLE step 5); `number_order` LOST line re-paired
+  by hand: ten 0.925 µm ("L=0.7") → 469 Ω against 458.5 Ω at W/L 20/0.7; eight 2.425 µm ("L=2.2") →
+  695 Ω against 703.8 Ω at W/L 20/2.2 — the base's "respectively" pairing, same digits. The "(none
+  matches the 20 V native NMOS …)" gloss a parenthetical sentence after its sentence (LOST line
+  ('23', '20', '2', '30', '1.0', '22') re-paired: 23, 22 in the sentence, the rest in the gloss). The
+  60-word VTXPN42H sentence split at ", so that" ("So its extrapolated threshold …") and at its
+  semicolon, with "(our extraction from the published measurements)" and its markers repeated on
+  each of the three sentences (declared ×2, R-SENTENCE step 5 — the base hedge covered all of it).
+  The files sentence split at ", and the drain is swept" ("so they" → "so the files", restored noun).
+  Low-voltage passage: the 22-word geometry gloss a parenthetical sentence after its sentence (LOST
+  line re-paired: same geometries, now after "all except the 0.42/1 µm `nfet_01v8`"); the threshold
+  sentence split at ", and the two 7/0.15 µm devices" → "The two 7/0.15 µm devices give …" (declared
+  "The", "give"); the 86-word sentence split at its semicolons, its 16-word gloss "(Two of them at
+  0.029 V, …)" a parenthetical sentence; the pfet_01v8_lvt colon list and the drain-current colon list
+  as bullets (R-LIST; lead-in markers per R-LIST step 1; the "respectively" pair 1.28/0.94 mA against
+  1.347/1.003 mA kept in one bullet as in the base); the mismatch sentence split at its colon. Base
+  hedges stay on the sentences that carried them ("All 18 …", "The fifth …").
+* R-TOOLS (HP 4062UX three lines; sort equipment two). R-RELATED (Previous · Next: "this is the last
+  step of the flow" · Same module · Depends on · the SMAT bullet unlabelled, no label being true of it ·
+  Category page). R-OPENQ labels on eight bullets; the group-codes gloss a parenthetical sentence with
+  `raw-data-testtile-pads` (declared); the threshold-definition bullet → the question as lead, the
+  three constant-current offsets as sub-bullets under "… gives thresholds:[^raw-data-lv-mosfets][^pdk-07]"
+  and the base hedge "(Our extraction from the published measurements.)" directly under them. The
+  15-word "(the largest at 0.42/8 µm, where …)" stays inline in its sub-bullet, the figure it
+  qualifies (listed for the reviewer).
+* Glance box.
+* `check_preserved --allow-regrouped`: the three LOST lines are above; ADDED outside the glance only
+  the declared markers and hedges, "The", "give", the H3s, table headers and labels; everything else
+  REGROUPED, read. `--strict-words` LOST: `strength`×2, `they` (and `and`×8). cov: flags are pairing
+  noise (list items against their base sentence; the moved hedge under the list). inv: OK.

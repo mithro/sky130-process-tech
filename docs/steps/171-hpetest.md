@@ -10,9 +10,28 @@
 | **Previous step** | {ref}`ALLY <step-170>` |
 | **Next step** | — |
 
+:::{admonition} At a glance
+:class: at-a-glance
+
+* **Does:** probes the finished, annealed wafers; a parametric tester
+  measures test structures to decide whether each wafer was built to
+  specification.
+* **Why:** the wafer is accepted, held or scrapped on its e-test results
+  against the limits, and each parameter is a sensor for particular
+  steps.
+* **Public numbers:** the PDK's e-test specifications, for example
+  `VTXNL` 0.541 V (limits 0.515–0.567 V) for a 7/8 µm
+  `nfet_01v8`.[^pdk-07]
+* **Likely SkyWater tool:** HP 4062UX — **strong** (the only parametric
+  tester named); that `HPETEST` runs on it is an **inference**.[^skw-01]
+* **Not public:** the test plan — structures, sites, sampling and
+  disposition rules — and how the e-test modules are placed in the
+  frame (→ Open questions).
+:::
+
 ## What this step is
 
-`HPETEST` is the end of the flow: the finished, annealed wafers
+`HPETEST` is the end of the flow. The finished, annealed wafers
 ({ref}`ALLY <step-170>`) are placed on a prober, needles are lowered
 onto the pads opened at {ref}`PDME <step-169>`, and a parametric tester
 measures test structures — transistors, resistors, capacitors, diodes,
@@ -31,36 +50,52 @@ PDK, SkyWater's capability list and industry practice.
 Electrical test as this page describes it: the finished, annealed wafer goes onto a prober whose needles land on the pads opened at PDME, a parametric tester measures the test structures, and the results are compared with limits to accept, hold or scrap the wafer. The prober, the probe card, the tester and the disposition are drawn as industry practice; the only parametric tester SkyWater names is an HP 4062UX, and that this step runs on it is an inference.[^skw-01] The PDK publishes nominal values with lower and upper spec limits, which the page reads as that kind of limit.[^pdk-07] Which structures are tested, at how many sites and under which disposition rules is not public.
 :::
 
-**What the PDK says is tested.** The SKY130 device documentation
+### What the PDK says is tested
+
+The SKY130 device documentation
 publishes the e-test specifications directly. For each MOSFET it states
 that "Major model output parameters are shown below and compared against
-the EDR (e-test) specs": for the 1.8 V NMOS `nfet_01v8`, for example,
-the threshold voltage of a 7/8 µm device (`VTXNL`) has an EDR nominal of
-0.541 V with limits 0.515–0.567 V, and the drain current of a
-7/0.15 µm device (`IDSNS15`) a nominal 3.510 mA with limits
-3.039–3.981 mA.[^pdk-07] Tables with nominal, lower and upper spec limits
-(NOM, LSL, USL) follow for the passive devices — N+ diffusion
-{term}`sheet resistance` `RSN` 120 Ω/sq (108–132), local-interconnect sheet resistance
-`RSLI` 12.8 Ω/sq (9.2–17.0), metal-3 sheet resistance `RSM3` 0.047 Ω/sq
-(0.038–0.056), electrical line widths such as `WN` 0.157 µm for a drawn
-0.14 µm N+ line, and the {term}`MiM capacitor`'s `CMIMA` 2 fF/µm² (1.8–2.2); the
+the EDR (e-test) specs".[^pdk-07] For the 1.8 V NMOS `nfet_01v8`, for example:[^pdk-07]
+
+* the threshold voltage of a 7/8 µm device (`VTXNL`) has an EDR nominal of
+  0.541 V with limits 0.515–0.567 V;
+* the drain current of a
+  7/0.15 µm device (`IDSNS15`) a nominal 3.510 mA with limits
+  3.039–3.981 mA.
+
+Tables with nominal, lower and upper spec limits
+(NOM, LSL, USL) follow for the passive devices:[^pdk-07]
+
+| Parameter | Nominal (limits) |
+|---|---|
+| N+ diffusion {term}`sheet resistance` `RSN` | 120 Ω/sq (108–132) |
+| local-interconnect sheet resistance `RSLI` | 12.8 Ω/sq (9.2–17.0) |
+| metal-3 sheet resistance `RSM3` | 0.047 Ω/sq (0.038–0.056) |
+| electrical line widths such as `WN` | 0.157 µm for a drawn 0.14 µm N+ line |
+| the {term}`MiM capacitor`'s `CMIMA` | 2 fF/µm² (1.8–2.2) |
+
+The
 page says of the NPN transistors "E-test specs for the NPN devices are
 shown in the table below", of the precision poly resistors that "several
 fixed-value resistors are measured at e-test", and of the SONOS memory
 that "E-test parameters are summarized below for both original and star
-cells"; the SRAM cell "is
+cells".[^pdk-07] The SRAM cell "is
 monitored at e-test through the use of 'pinned out' devices within the
 specific arrays".[^pdk-07]
 
-**Where the structures are.** The layer table defines `areaid.mt`
+### Where the structures are
+
+The layer table defines `areaid.mt`
 (81:10), "Location of e-test modules within the frame", and `areaid.et`
-(81:101), "e-test module identifier";[^pdk-06] the periphery rules state
+(81:101), "e-test module identifier".[^pdk-06] The periphery rules state
 that "Die must not overlap areaid.mt" — waived for test chips and
 exempted for a few named cells[^pdk-periph] — and that drawn compatible, mask
 and waffle-drop layers are allowed "only inside areaid:mt (i.e., etest
-modules)", inside the seal ring or in the frame, and they allow larger
+modules)", inside the seal ring or in the frame.[^pdk-periph] They allow larger
 via sizes inside `areaid.mt` (for example 0.200 µm and 0.800 µm via3
-squares, via3.1a).[^pdk-periph] The e-test modules are therefore placed
+squares, via3.1a).[^pdk-periph]
+
+The e-test modules are therefore placed
 in the frame outside the product dice (our reading of the rules) — the
 {term}`scribe line` arrangement a TSMC patent that may still be in force
 describes, in the collapsed note below.
@@ -70,7 +105,9 @@ The TSMC patent describes "a plurality of testlines in the scribe line
 area between adjacent wafer dies".[^pat-testline-tsmc]
 :::
 
-**A published test tile.** A separate structure set is public. Google's
+### A published test tile
+
+A separate structure set is public. Google's
 raw-data repository for the PDK states that its data were "collected
 under contract by CoolCAD Electronics LLC using the manufacturing test
 tile created by SkyWater",[^raw-data-readme] and that "each of the
@@ -79,7 +116,9 @@ which "consists of a grid of probe points".[^raw-data-testtile-prop]
 Its README is headed "SkyWater 130nm Proprietary Manufacturing Test
 Tile" and states
 that "The schematics and layout of the circuits connected to these
-probe points are **not** currently available".[^raw-data-testtile-prop] Its pad documentation, released in
+probe points are **not** currently available".[^raw-data-testtile-prop]
+
+Its pad documentation, released in
 the same repository under Apache 2.0, lists 273 numbered test modules, 271 of them assigned to four "Die Row" groups, each wired to a line of up to twelve pads
 (`Pin 01`–`Pin 12`), and the photographed tile also carries a
 "Lithographic Calibration Region" and "Alignment
@@ -87,6 +126,7 @@ Marks".[^raw-data-testtile-pads][^raw-data-testtile-prop] The repository
 does not say where on the reticle the two copies sit, nor whether its
 modules are the e-test modules that `areaid.mt` marks in the frame, so
 this page does not treat the tile as SkyWater's production e-test set.
+
 The repository also documents an open replacement tile by Google, NIST
 and the University of Michigan, whose "first test version … was
 included in the MPW-5 run"; it was built with the OpenFASoC and
@@ -96,11 +136,14 @@ Pads".[^raw-data-testtile-open]
 ## Step category
 
 `HPETEST` is the only step of the
-{ref}`Electrical test / metrology <category-test>` category in the flow,
-and the category page's account of the process control monitor
+{ref}`Electrical test / metrology <category-test>` category in the flow.
+
+The category page's account of the process control monitor
 ({term}`PCM`), van der Pauw and {term}`Kelvin structures <Kelvin structure>` and transistor
-parameter extraction applies to it directly. What is specific to SKY130
-is that the specifications are public: the PDK's device page gives, for
+parameter extraction applies to it directly.
+
+What is specific to SKY130
+is that the specifications are public. The PDK's device page gives, for
 dozens of devices, the e-test parameter names, test-structure
 geometries, nominal values and limits, and places them beside the SPICE
 model corners (TT, FF, SS, FS, SF) they are compared with.[^pdk-07] The
@@ -114,14 +157,20 @@ test pads.
   that kind of limit. Parametric test is performed at "a few locations
   on each wafer" to verify that fabrication succeeded.[^wiki-test]
 * **Process control.** Each parameter is a sensor for particular steps:
-  well and diffusion sheet resistances for the implants and anneals,
-  electrical line widths for lithography and etch
-  (Buehler, Grant and Thurber's bridge and van der Pauw
-  structures[^buehler-1978][^vdp-1958]), contact and via resistance for the
-  plug modules (Proctor, Linholm and Mazer[^proctor-1983]), threshold
-  voltage for the gate stack and channel implants (extraction methods
-  reviewed by Ortiz-Conde et al.[^ortiz-conde-2002]), and comb/serpentine
-  structures for shorts and opens (Sayah and Buehler[^sayah-1988]). The
+
+  - well and diffusion sheet resistances for the implants and anneals;
+  - electrical line widths for lithography and etch
+    (Buehler, Grant and Thurber's bridge and van der Pauw
+    structures[^buehler-1978][^vdp-1958]);
+  - contact and via resistance for the
+    plug modules (Proctor, Linholm and Mazer[^proctor-1983]);
+  - threshold
+    voltage for the gate stack and channel implants (extraction methods
+    reviewed by Ortiz-Conde et al.[^ortiz-conde-2002]);
+  - comb/serpentine
+    structures for shorts and opens (Sayah and Buehler[^sayah-1988]).
+
+  The
   results feed {term}`SPC` charts and correlation with tool history.
 * **The PDK's models.** Compact models are fitted to and checked against
   parametric data (Cheng and Hu describe the BSIM3 extraction[^cheng-1999]);
@@ -139,8 +188,8 @@ test pads.
 
 ## How it is typically performed
 
-An industry-generic wafer acceptance test for a 200 mm, 130 nm-era CMOS
-fab (SKY130's test plan is not public beyond the parameters above):
+*An industry-generic wafer acceptance test for a 200 mm, 130 nm-era CMOS
+fab (SKY130's test plan is not public beyond the parameters above):*
 
 1. **Tester and prober.** A parametric tester — source-measure units, a
    capacitance meter and a switching matrix under test-plan software,
@@ -169,12 +218,13 @@ fab (SKY130's test plan is not public beyond the parameters above):
 The test tile's pad list is a public example of such a structure set
 with its connections written out. Resistors and lines are wired for
 four-terminal measurement ("Force 1", "Force 2", "Sense 1", "Sense 2"
-on "M1 sheet resistance and electrical linewidth"); there are van der
+on "M1 sheet resistance and electrical linewidth").[^raw-data-testtile-pads] There are van der
 Pauw squares ("10x10 Van der P."), Kelvin contacts, contact strings
 ("contact string (6384 contacts; 0.88 sq/ct RSN)"), via chains ("s8p
 via3 (0.2x0.2) contact chain (16500 contacts)"), serpentine/comb pairs,
 MOS, finger and MiM capacitors, and transistors at several widths,
 lengths and source/drain extents (`sa`, `sb`).[^raw-data-testtile-pads]
+
 The data measured on the tile "was collected under contract by CoolCAD
 Electronics LLC using the manufacturing test tile created by SkyWater"
 to help validate the PDK,[^raw-data-readme] and are stored as IC-CAP
@@ -188,65 +238,100 @@ although the PDK states neither the bias conditions nor the extraction
 methods behind them. For the 5 V NMOS, whose nominal VTXNLH at W/L 7/8
 is 0.811 V,[^pdk-07] two 7/8 µm test-tile devices give 0.79 V and
 0.82 V by maximum-transconductance extrapolation of the drain current at
-V_DS = 0.1 V, less half that drain bias. For the 16 V {term}`drain-extended <DEMOS>` NMOS at 20 µm
+V_DS = 0.1 V, less half that drain bias.
+
+For the 16 V {term}`drain-extended <DEMOS>` NMOS at 20 µm
 width, the median resistance at V_GS = 5 V and V_DS = 0.1 V (from the
-I_D–V_D sweeps) is 469 Ω
-for ten 0.925 µm ("L=0.7") structures and 695 Ω for eight 2.425 µm
-("L=2.2") structures, against RDS nominals of 458.5 Ω and 703.8 Ω at
-W/L 20/0.7 and 20/2.2 (our extraction from the published
-measurements).[^raw-data-hv-mosfets][^pdk-07] The PDK lists 24 e-test
+I_D–V_D sweeps) is, against the RDS nominals:[^raw-data-hv-mosfets][^pdk-07]
+
+| Structures | Median resistance | RDS nominal |
+|---|---:|---|
+| ten 0.925 µm ("L=0.7") | 469 Ω | 458.5 Ω at W/L 20/0.7 |
+| eight 2.425 µm ("L=2.2") | 695 Ω | 703.8 Ω at W/L 20/2.2 |
+
+(Our extraction from the published
+measurements.)
+
+The PDK lists 24 e-test
 threshold parameters for the 5 V, 16 V and 20 V NMOS and PMOS and the
-native, zero-Vt and ESD NMOS. Of the 23 for which the tile has a matching structure
-(none matches the 20 V native NMOS, VTXN20VHV1L, at 2 × 30/1.0 µm), 22
+native, zero-Vt and ESD NMOS. Of the 23 for which the tile has a matching structure,
+22
 have every working test-tile structure inside the published
-minimum–maximum limits. The exception, VTXPN42H, is a single
+minimum–maximum limits. (None matches the 20 V native NMOS, VTXN20VHV1L, at 2 × 30/1.0 µm.)
+
+The exception, VTXPN42H, is a single
 0.42/20 µm PMOS whose linear-region sweep (at most 0.23 µA at
-V_DS = −0.1 V) rises irregularly, so that its extrapolated threshold
+V_DS = −0.1 V) rises irregularly (our extraction from the published
+measurements).[^raw-data-hv-mosfets] So its extrapolated threshold
 depends on how the transconductance is smoothed (magnitudes of
-0.86–1.55 V against limits of 0.87–1.00 V); one 0.42/0.5 µm NMOS
+0.86–1.55 V against limits of 0.87–1.00 V) (our extraction from the published
+measurements).[^raw-data-hv-mosfets][^pdk-07] One 0.42/0.5 µm NMOS
 structure carries no current at all (our extraction from the published
-measurements).[^raw-data-hv-mosfets][^pdk-07] The files record the sweeps,
+measurements).[^raw-data-hv-mosfets][^pdk-07]
+
+The files record the sweeps,
 compliance and instrument channels but no temperature, measurement
-date, wafer or die, and the drain is swept to at most 5 V (10 V on the
-symmetric 16 V structures), so they do not bear on breakdown or the
+date, wafer or die.[^raw-data-hv-mosfets] The drain is swept to at most 5 V (10 V on the
+symmetric 16 V structures), so the files do not bear on breakdown or the
 10.5–20 V ratings.[^raw-data-hv-mosfets]
 
 The files for the five 1.8 V transistor types include, in one module
-per type, the geometries of the PDK's e-test thresholds and currents
-(7/8, 7/0.15, 0.42/8 or 0.42/1 and 0.42/0.15 µm; 7/0.35 and 0.42/0.35 µm
-in place of the short devices for the low-Vt PMOS), all except the
+per type, the geometries of the PDK's e-test thresholds and currents,
+all except the
 0.42/1 µm `nfet_01v8`.[^raw-data-lv-mosfets][^raw-data-testtile-pads][^pdk-07]
+(7/8, 7/0.15, 0.42/8 or 0.42/1 and 0.42/0.15 µm; 7/0.35 and 0.42/0.35 µm
+in place of the short devices for the low-Vt PMOS.)
+
 By the same extrapolation at |V_DS| = 0.1 V, less half the drain bias,
 the 7/8 µm `nfet_01v8` gives 0.534 V against the VTXNL nominal of
-0.541 V and the two 7/0.15 µm devices 0.707 V and 0.719 V against the
-VTXNS15 nominal of 0.700 V (limits 0.661–0.739 V). Of the 19 e-test
+0.541 V. The two 7/0.15 µm devices give 0.707 V and 0.719 V against the
+VTXNS15 nominal of 0.700 V (limits 0.661–0.739 V).
+
+Of the 19 e-test
 thresholds matched in these modules, 16 of
-the 18 with a usable printed nominal lie within 0.03 V of it (two of
+the 18 with a usable printed nominal lie within 0.03 V of it. (Two of
 them at 0.029 V, so the count depends on how the transconductance is
-differentiated); the
+differentiated.)
+
+The
 exceptions are two low-Vt PMOS values, 0.668 V against 0.630 V at
-0.42/8 µm and 0.636 V against 0.533 V at 7/0.35 µm; that 7/0.35 µm
+0.42/8 µm and 0.636 V against 0.533 V at 7/0.35 µm. That 7/0.35 µm
 sweep rises irregularly, and a second 7/0.35 µm structure in another
 module, with a smooth sweep, gives 0.536 V. All 18 with usable
 printed limits lie inside them (our extraction from the published
-measurements).[^raw-data-lv-mosfets][^pdk-07] Two entries of the
-PDK's `pfet_01v8_lvt` table cannot be used as printed: the VTCPSN35L
-nominal reads −8.505 V, beside model and limit values between −0.316 V
-and −0.693 V, and the VTCPN42L limits read −1.042 V to −0.845 V, which
-exclude that parameter's own nominal of −0.630 V.[^pdk-07] Taking the
+measurements).[^raw-data-lv-mosfets][^pdk-07]
+
+Two entries of the
+PDK's `pfet_01v8_lvt` table cannot be used as printed:[^pdk-07]
+
+* the VTCPSN35L
+  nominal reads −8.505 V, beside model and limit values between −0.316 V
+  and −0.693 V;
+* the VTCPN42L limits read −1.042 V to −0.845 V, which
+  exclude that parameter's own nominal of −0.630 V.
+
+Taking the
 drain current at |V_GS| = |V_DS| = 1.8 V (the PDK does not state the
 bias), four of the five e-test currents lie inside their limits and
-within 7 % of nominal: 3.40 mA for the 7/0.15 µm `nfet_01v8` (IDSNS15
-3.510 mA), 1.28 mA and 0.94 mA for the 7/0.15 µm `pfet_01v8` and
-`pfet_01v8_hvt` (1.347 mA and 1.003 mA) and 1.24 mA for the 7/0.35 µm
-`pfet_01v8_lvt` (1.22 mA), from the same irregular sweep; the smooth
+within 7 % of nominal:
+
+* 3.40 mA for the 7/0.15 µm `nfet_01v8` (IDSNS15
+  3.510 mA);
+* 1.28 mA and 0.94 mA for the 7/0.15 µm `pfet_01v8` and
+  `pfet_01v8_hvt` (1.347 mA and 1.003 mA);
+* 1.24 mA for the 7/0.35 µm
+  `pfet_01v8_lvt` (1.22 mA), from the same irregular sweep.
+
+The smooth
 7/0.35 µm structure in module 8426 with a 2.5 µm source/drain extent
 carries 1.11 mA, also inside the limits. The fifth, the 7/0.15 µm `nfet_01v8_lvt` of
 that module, carries 3.30 mA, below the 3.527 mA lower limit of
 IDSNS15L, while twelve 7/0.15 µm low-Vt NMOS structures in two other
 modules carry 3.67–4.13 mA, inside it (our extraction from the
-published measurements).[^raw-data-lv-mosfets][^pdk-07] The tile's
-"fet mismatch" modules are not used for these comparisons: their
+published measurements).[^raw-data-lv-mosfets][^pdk-07]
+
+The tile's
+"fet mismatch" modules are not used for these comparisons. Their
 thresholds agree with the other modules to within about 0.05 V, but their drain currents per
 drawn width are about two to four times as high, and neither the files
 nor the pad list explain the
@@ -275,17 +360,22 @@ poly resistors at {ref}`PRI <step-053>`, the deep N-well and the NPN at
 
 ## Machines likely used at SkyWater
 
-* **HP 4062UX.** SkyWater lists "HP 4062UX" as its parametric
-  tester, with "DC, capacitance, pulse generator, frequency counter" and
-  "automatic data upload, SPC, analysis, disposition".[^skw-01] Strength: **strong** — it is the only parametric
-  tester named, and a dealer listing describes the 4062UX as a
-  Keysight/Agilent parametric test system.[^brltest-4062] That `HPETEST`
-  runs on it is an **inference**.
+* **HP 4062UX**
+  - *SkyWater says:* lists "HP 4062UX" as its parametric
+    tester, with "DC, capacitance, pulse generator, frequency counter" and
+    "automatic data upload, SPC, analysis, disposition".[^skw-01]
+  - *Tool exists:* **strong** — it is the only parametric
+    tester named, and a dealer listing describes the 4062UX as a
+    Keysight/Agilent parametric test system.[^brltest-4062]
+  - *Runs this step:* that `HPETEST`
+    runs on it is an **inference**.
 * **Sort and reliability equipment** — "Advantest T5365P", "Verigy V3308,
   V4108", "Credence Duo", "Credence LT", "Fuse GSI M325", "Verigy 93000",
   "Camtek Falcon (outgoing QA)"; "Qualitau" in the reliability
-  lab.[^skw-01] Strength: strong for existence; these serve
-  functional sort and reliability rather than e-test (inference).
+  lab.[^skw-01]
+  - *Tool exists:* strong for existence.
+  - *Runs this step:* these serve
+    functional sort and reliability rather than e-test (inference).
 * **Probers.** No production wafer prober is named; SkyWater lists an
   "Engineering manual Probe Station" under parametric test and a "Summit
   200 Prober/Tester" and "PMC200 Cryo Probe" in its reliability
@@ -304,9 +394,10 @@ poly resistors at {ref}`PRI <step-053>`, the deep N-well and the NPN at
 ## Related steps and cross-references
 
 * Previous: {ref}`ALLY <step-170>` (the anneal whose effect the transistor
-  parameters include). This is the last step of the flow.
-* The pads probed: {ref}`PDM <step-168>`, {ref}`PDME <step-169>`.
-* Examples of steps whose results are measured here: the MiM capacitor
+  parameters include).
+* Next: this is the last step of the flow.
+* Same module: the pads probed, {ref}`PDM <step-168>`, {ref}`PDME <step-169>`.
+* Depends on: examples of steps whose results are measured here, the MiM capacitor
   ({ref}`CAPILD <step-135>`, `CMIMA`), metal 3 ({ref}`MM3E <step-140>`,
   `RSM3`), the local interconnect ({ref}`LI1ME <step-103>`, `RSLI`).
 * The first step of the flow: {ref}`SMAT <step-001>`.
@@ -396,47 +487,54 @@ Status and expiry are estimates from public records and are not legal advice.
 
 ## Open questions
 
-* The test plan — which structures, how many sites per wafer, the
+* **Test plan.** The test plan — which structures, how many sites per wafer, the
   sampling across a lot and the disposition rules — is not public beyond
   the PDK's parameter tables.[^pdk-07]
-* What "EDR" stands for in the PDK's "EDR (e-test)" columns is not
+* **Meaning of EDR.** What "EDR" stands for in the PDK's "EDR (e-test)" columns is not
   explained on the page.
-* Whether `HPETEST` runs on the HP 4062UX SkyWater lists[^skw-01] is not
+* **Tester, prober and probe cards.** Whether `HPETEST` runs on the HP 4062UX SkyWater lists[^skw-01] is not
   stated; the prober and probe-card types are not public.
-* How the e-test modules are distributed in the frame (positions,
+* **Placement of the e-test modules.** How the e-test modules are distributed in the frame (positions,
   number per reticle field) is not public. The raw-data repository says
   that two copies of its manufacturing test tile are on each Google MPW
   run but not where,[^raw-data-testtile-prop] and its pad list carries
   the note "PLACE IN CENTER, CORNER OF RETICLE" under one
   module;[^raw-data-testtile-pads] neither says how the tile relates to
   the `areaid.mt` modules.
-* The pad list's `Group` codes (1–8, 10, `Z`, `s8tet`, and a stray
-  `3791956` on module 8404; blank for 156 of the 273 modules) are not
+* **Group codes and schematics.** The pad list's `Group` codes are not
   explained, and the schematics and layout of the tile's structures are
-  not public.[^raw-data-testtile-pads][^raw-data-testtile-prop]
-* The published transistor I–V data have limited current resolution: the
+  not public.[^raw-data-testtile-pads][^raw-data-testtile-prop] (1–8, 10, `Z`, `s8tet`, and a stray
+  `3791956` on module 8404; blank for 156 of the 273 modules.[^raw-data-testtile-pads])
+* **Current resolution.** The published transistor I–V data have limited current resolution: the
   `sky130_plot_gm.ipynb` analysis notebook in the repository notes that
   "the data gets noisy below 2nA"
   and that the data "cannot be used to predict the subthreshold slope
   (digital leakage)".[^raw-data-notebooks] The resolution of the fab's
   own e-test is not public.
-* The PDK's e-test drain currents for the 5 V transistors, IDSNS50H
+* **5 V drain currents.** The PDK's e-test drain currents for the 5 V transistors, IDSNS50H
   12.1 mA and IDSPS50H 6.83 mA, are listed at W/L 7/0.50 without a
   bias;[^pdk-07] 7/0.5 µm test-tile devices carry 4.43 mA and 2.44 mA at
   |V_GS| = |V_DS| = 5 V, and 20/0.5 µm devices 11.6 mA and 6.71 mA (our
   extraction from the published measurements).[^raw-data-hv-mosfets]
   Whether the published values refer to another bias or another width
   is not stated.
-* How the e-test thresholds are defined is not published. On the
+* **Threshold definition.** How the e-test thresholds are defined is not published.
+
+  On the
   test-tile data for the 1.8 V transistors, maximum-transconductance
   extrapolation comes within about 0.03 V of most nominals, whereas a
-  constant-current criterion of 100 nA × W/L gives thresholds
-  0.05–0.08 V lower for the NMOS types, 0.02–0.11 V lower for the
-  standard and high-Vt PMOS (the largest at 0.42/8 µm, where the
-  criterion current is near the data's noise floor) and 0.22–0.33 V lower for the low-Vt PMOS
-  (0.14 V for the smooth 7/0.35 µm structure of module 8426; our
+  constant-current criterion of 100 nA × W/L gives thresholds:[^raw-data-lv-mosfets][^pdk-07]
+
+  - 0.05–0.08 V lower for the NMOS types;
+  - 0.02–0.11 V lower for the
+    standard and high-Vt PMOS (the largest at 0.42/8 µm, where the
+    criterion current is near the data's noise floor);
+  - 0.22–0.33 V lower for the low-Vt PMOS
+    (0.14 V for the smooth 7/0.35 µm structure of module 8426).
+
+  (Our
   extraction from the published
-  measurements).[^raw-data-lv-mosfets][^pdk-07] The PDK's parameter
+  measurements.) The PDK's parameter
   names mix `VTX…` and, for the low-Vt PMOS, `VTC…` without explaining
   either.[^pdk-07]
 
