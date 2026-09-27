@@ -213,7 +213,7 @@ Surfscan AIT".[^tencor-defectdata-1997]
 
 SkyWater's *Facilities & Capabilities* page names no wafer defect
 inspection tool. The nearest entries are "Reticle storage/handler/defect
-inspection" under "Photo Metrology", which as written concerns reticles,
+inspection" under "Photo Metrology", which as written concerns {term}`reticles <reticle>`,
 "Camtek Falcon (outgoing QA)" under "Sort", and the "FEI Dual Beam
 FIB/SEM" and "Hitachi S-4800" of the "Physical Analysis"
 group.[^skw-01] No step page assigns any of these to a SKY130 step.
@@ -286,7 +286,7 @@ A live LinkedIn repost of the same
 *Defect Technician 2* text, found 2026-09-19, restored the citation on
 all four, replacing the dead `JOB-01` entry (inventory key `JOB-06`;
 see the inventory). The grades otherwise fall on the starting-material page,
-the other resist strips after implants, the tunnel mask and the CMP
+the other resist strips after implants, the tunnel mask and the {term}`CMP`
 steps; {ref}`CMPNIT <step-012>` grades the posting although its
 "Machines typically used" section names thickness metrology and a
 profiler rather than inspection. None of the other pages in the list
@@ -370,9 +370,9 @@ plans and defect limits are not public.
 * **Pads.** {ref}`PDME <step-169>` names automated pad inspection before
   test.
 * **Electrical defect monitors.** Optical inspection is complemented by
-  electrical structures: the public SKY130 test tile documented on the
+  electrical structures: the public SKY130 {term}`test tile` documented on the
   {ref}`HPETEST <step-171>` page includes comb and serpentine structures
-  on diffusion, poly, local interconnect and metals 1–5, the kind of
+  on diffusion, poly, {term}`local interconnect` and metals 1–5, the kind of
   test site Stapper's defect models are related to.[^stapper-1983]
 
 ## Related pages
@@ -388,7 +388,7 @@ plans and defect limits are not public.
   gauges run on the same monitor wafers.
   {ref}`machine-cross-section-sem-profilers` — sectioning and review of
   defects in physical analysis. {ref}`machine-parametric-tester` — the
-  electrical defect structures measured at e-test.
+  electrical defect structures measured at {term}`e-test`.
 * **Materials.** {ref}`material-substrates` — test, monitor and
   particle-counting wafers and their standards.
 * **Indexes.** {ref}`machines-index` — all machine classes, SkyWater's
