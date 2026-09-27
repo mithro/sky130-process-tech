@@ -62,7 +62,7 @@ inside `psdm` from the PDK's device pages:[^pdk-07]
 * PNP emitters and collectors and NPN bases
 * the P+ diffusion resistor
 * p-type diodes
-* the precision poly resistors
+* the precision {term}`poly resistors <poly resistor>`
 
 The PDK's
 resistance table gives "P-diffusion" 197000 in a column headed
@@ -88,7 +88,7 @@ The PDK's mask generation table, Table F2b, marks the `PSDM` column `C`
   HV PMOS ESD transistor
 
 The table marks `-`, "Layer not created for the
-device", in 35 rows, among them every NMOS, SONOS and varactor row and
+device", in 35 rows, among them every NMOS, {term}`SONOS` and varactor row and
 most of the n-type diodes.[^pdk-06] On our reading the created shapes
 follow the
 p-type devices, as the drawn-layer rules do; the table does not say what
@@ -118,7 +118,7 @@ such operation.
 
 Rule x.9 allows "Shapes on maskAdd or maskDrop layers
 ("serifs")" in the core only, and x.15a confines "Drawn compatible, mask,
-and waffle-drop layers" to test modules, seal ring and frame, with an
+and waffle-drop layers" to test modules, {term}`seal ring` and frame, with an
 exception that names only "FOM/P1M/Metal waffle drop" (flag
 P).[^pdk-periph] A design inside the die therefore draws `psdm` (our
 reading of x.15a). Table 7 of [*Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) gives a
@@ -241,7 +241,7 @@ run's columns in the tab ({ref}`masks-mpw-reticle-sets`).[^steps-sheet]
 
 The {ref}`PSDM <step-081>` page puts the 0.380 µm
 width and space at {math}`k_1 = 0.38 \times 0.6 / 0.365 \approx 0.62` on
-an i-line stepper of NA 0.6, quotes ASML's statement that older exposure
+an i-line {term}`stepper` of {term}`NA` 0.6, quotes ASML's statement that older exposure
 tools "migrate to the lithography of choice for less critical
 layers",[^asml-30] and infers an i-line level. The
 {ref}`i-line stepper <machine-i-line-stepper>` page lists it there. At
@@ -263,7 +263,7 @@ for large features, but increases rapidly when the critical dimension
 (CD) is less than 0.5 (lambda) /NA for line-space patterns".[^wong-1998]
 At 365 nm that threshold is about 0.38 µm at NA 0.48 and 0.30 µm at
 NA 0.60 (our arithmetic). So the 0.38 µm periphery features lie at or
-above it and would print a plate CD error at about its own size, while
+above it and would print a plate {term}`CD` error at about its own size, while
 0.29 µm core features, if the 0.29 checks apply, would magnify it
 (inference).
 
@@ -295,8 +295,8 @@ consumables are on the
 ### Resist edges
 
 Ions scattered out of a resist edge implant the
-silicon near it. Hook et al. measured the lateral straggle and
-mask-proximity effect,[^hook-2003] Sheu et al. modelled the well-edge
+silicon near it. Hook et al. measured the lateral {term}`straggle` and
+{term}`mask-proximity effect`,[^hook-2003] Sheu et al. modelled the well-edge
 version[^sheu-2006] and Drennan, Kniffin and Locascio set out its
 meaning for analogue layout.[^drennan-2006] The step page reads the
 0.125–0.130 µm enclosure and spacing rules as reflecting such effects;
@@ -304,7 +304,7 @@ the PDK does not state their purpose.
 
 Table 3f gives "High current"
 implants an angle of 0° (`HCIMPA`),[^pdk-03] and Krieger et al. found
-that the LDD oxide sidewall spacer shadows an n+ source/drain implant at
+that the {term}`LDD` oxide sidewall spacer shadows an n+ source/drain implant at
 the commonly used 7° tilt and recommended 0° (our comparison: the PDK's
 0° fits that advice).[^krieger-1989] The step pages leave the angle of
 {ref}`2PSDI <step-083>` open.
@@ -317,7 +317,7 @@ for the resistor and licon.9 rules.[^pdk-periph] Where `psdm` and `nsdm`
 butt at a diffusion/tap edge the enclosure is 0.000 µm (psd.6), so the
 `PSDM` and `NSDM` plates meet there and their placement errors add (our
 reading). ASML specifies
-"≤ 40 nm" single-machine overlay for the /275D
+"≤ 40 nm" single-machine {term}`overlay` for the /275D
 stepper[^asml-pas5500-275d] (our comparison; how SkyWater budgets the
 margin is not public).
 
@@ -325,7 +325,7 @@ margin is not public).
 
 On the step pages' readings the pattern is
 transferred into the silicon, and into the poly heads opened by the
-nitride cut, as dopant by {ref}`PSDI <step-082>` on the
+{term}`nitride cut`, as dopant by {ref}`PSDI <step-082>` on the
 {ref}`high-current implanter <machine-high-current-implanter>` class and
 by {ref}`2PSDI <step-083>` on the high-current or
 {ref}`medium-current <machine-medium-current-implanter>` class, through

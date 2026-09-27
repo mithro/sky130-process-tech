@@ -42,7 +42,7 @@ shape.
 
 The periphery rules give the function of the `capm` rule set as
 "Defines MIM capacitor".[^pdk-periph] They publish twelve rules for it — minimum
-width, spacings, enclosures, a maximum aspect ratio, a rectangles-only
+width, spacings, enclosures, a maximum {term}`aspect ratio`, a rectangles-only
 rule, a no-straddle rule and a maximum area — every one with the value
 "N/A".[^pdk-periph] The PDK's *Error Messages* page describes "many
 of the automated DRC rules that are checked by SkyWater as part of the
@@ -220,7 +220,7 @@ is the heading of the run's columns in the tab
   ({ref}`masks-mpw-reticle-sets`).
 * **Mask type.** The sheet's "Sheet4" tab gives no type for
   `CAPM`.[^steps-sheet] The {ref}`CAPM <step-137>` page reads the plate
-  as a binary chrome-on-glass mask without OPC; that is not on public
+  as a binary chrome-on-glass mask without {term}`OPC`; that is not on public
   record. 4× is the ITRS 2001 mask magnification for the 130 nm
   generation.[^itrs-03]
 * **MPW-4.** The sheet's MPW-4 plate is from the set `5CS8018AC`; the
@@ -233,7 +233,7 @@ is the heading of the run's columns in the tab
 
 The {ref}`CAPM <step-137>` page gives
 {math}`k_1 = 0.84 \times 0.6 / 0.365 \approx 1.4` on an i-line lens of
-NA 0.6, "far above the resolution limit", and infers an i-line level
+{term}`NA` 0.6, "far above the resolution limit", and infers an i-line level
 from the rules and from ASML's statement that older systems "migrate to
 the lithography of choice for less critical layers".[^asml-30] The
 {ref}`i-line stepper <machine-i-line-stepper>` page lists it there.
@@ -246,7 +246,7 @@ Wong et al. found that the mask error
 factor "is unity for large features, but increases rapidly when the
 critical dimension (CD) is less than 0.5 (lambda) /NA for line-space
 patterns".[^wong-1998] At 365 nm and NA 0.6 that is about 0.30 µm (our
-arithmetic), far below the 0.84 µm space, so plate CD errors would print
+arithmetic), far below the 0.84 µm space, so plate {term}`CD` errors would print
 at their own size (inference).
 
 At 4× a 2 µm plate is 8 µm on the reticle
@@ -301,7 +301,7 @@ transferred by {ref}`CAPME <step-138>`, an etch of the plate film on the
 on, or a little way into, the capacitor dielectric, with the resist strip
 treated as part of that step. Whether the dielectric is also cut is
 left open there. Top-plate-first constructions of this kind appear in
-the Newport Fab and Freescale patents, and a damascene bottom plate in
+the Newport Fab and Freescale patents, and a {term}`damascene` bottom plate in
 IBM's.[^pat-mim-newportfab][^pat-mim-freescale][^pat-mim-ibm] Ng et al.
 review MiM integration in Al–Cu and copper back ends.[^ng-2005]
 

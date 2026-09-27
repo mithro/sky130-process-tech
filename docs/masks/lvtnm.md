@@ -57,7 +57,7 @@ The {ref}`LVTNM <step-014>` page takes
 the word "block", and the fact that one layer serves NMOS and PMOS of
 opposite channel type, as grounds for favouring a reticle that covers
 the drawn `lvtn` regions while {ref}`LVTNI <step-015>` implants the rest.
-The {ref}`LVTNI <step-015>` page sets out the counter-doping alternative
+The {ref}`LVTNI <step-015>` page sets out the {term}`counter-doping` alternative
 and cites a Round Rock patent that obtains low-Vt devices with a
 "counter-doped channel region".[^pat-vt-rrr] Neither page settles it.
 
@@ -71,7 +71,7 @@ The PDK's mask generation table, Table F2b, marks the `LVTNM` column
 * the low-Vt NMOS
   core device
 * the low-Vt, high-Vt and HV varactors
-* the four SONOS
+* the four {term}`SONOS`
   rows
 * the 5 V and 3 V native NMOS
 * all five UHV 5/20 V drain-extended
@@ -119,7 +119,7 @@ than copied.
 
 Rule x.9 allows "Shapes on maskAdd or maskDrop layers
 ("serifs")" in the core only, and x.15a confines mask layers to test
-modules, seal ring and frame, with an exception that names only
+modules, {term}`seal ring` and frame, with an exception that names only
 "FOM/P1M/Metal waffle drop" (flag P).[^pdk-periph] A design inside the
 die therefore draws `lvtn` (our reading of x.15a, which does not say
 what applies in the core).
@@ -252,7 +252,7 @@ sheet's; the reticle set is the heading of the run's columns in the tab
 ### Exposure class
 
 The {ref}`LVTNM <step-014>` page puts the 0.380 µm
-width and space at {math}`k_1 \approx 0.62` on an i-line lens of NA 0.6
+width and space at {math}`k_1 \approx 0.62` on an i-line lens of {term}`NA` 0.6
 and infers an i-line level. The
 {ref}`i-line stepper <machine-i-line-stepper>` page lists it there.
 SkyWater lists "ASML I-line stepper" and "ASML I-line scanner" among its
@@ -268,7 +268,7 @@ for large features, but increases rapidly when the critical dimension
 (CD) is less than 0.5 (lambda) /NA for line-space patterns".[^wong-1998]
 At 365 nm that threshold is about 0.38 µm at NA 0.48 and 0.30 µm at
 NA 0.60 (our arithmetic), so the smallest `LVTNM` features lie at or
-just above it, and a CD error on the plate would print at about its own
+just above it, and a {term}`CD` error on the plate would print at about its own
 size (inference). The rules that matter more are placement rules (below).
 
 ### Resist and tone
@@ -283,7 +283,7 @@ what SRIM computes.[^ziegler-2010]
 
 Ross et al. stabilised three i-line
 resists for implant with a flood electron beam, which reduced
-post-implant shrinkage and CD variation and eliminated popping during
+post-implant shrinkage and CD variation and eliminated {term}`popping` during
 removal.[^ross-1996] SkyWater's resist, its thickness and any hardening
 are not public. The consumables are on the
 {ref}`lithography materials <material-lithography-materials>` page.
@@ -313,9 +313,9 @@ to the trench pattern of {ref}`FOM <step-004>` and notes that the
 0.180 µm enclosure of a gate by `lvtn` (lvtn.4b) couples this level to
 the poly mask printed much later.[^pdk-periph] Both register to the
 same active pattern on the step pages' readings ({ref}`mask-p1m`), so
-the enclosure must absorb the overlay of both against it. ASML
+the enclosure must absorb the {term}`overlay` of both against it. ASML
 specifies "≤ 40 nm" single-machine overlay for the /275D
-stepper[^asml-pas5500-275d] (our comparison; how SkyWater budgets the
+{term}`stepper`[^asml-pas5500-275d] (our comparison; how SkyWater budgets the
 margin is not public).
 
 ### Pattern transfer

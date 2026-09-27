@@ -68,7 +68,7 @@ P-wells.[^pdk-hv] It does not describe the 20 V devices, and the step
 page applies the statement to them by analogy.
 
 Which device the lighter P-well serves is an open question on the step
-pages, which read it as the drift region of the 20 V PMOS and, less
+pages, which read it as the {term}`drift region` of the 20 V PMOS and, less
 certainly, the body of the 20 V NMOS.
 
 The PDK's mask generation table,
@@ -198,8 +198,8 @@ run's columns in the tab ({ref}`masks-mpw-reticle-sets`).[^steps-sheet]
 ### Exposure class
 
 The {ref}`PWDEM <step-030>` page reads the layer's
-features as micrometre-scale, with overlay requirements set by the
-drift-region length rather than by a sub-micrometre CD, and infers an
+features as micrometre-scale, with {term}`overlay` requirements set by the
+drift-region length rather than by a sub-micrometre {term}`CD`, and infers an
 i-line level. The {ref}`i-line stepper <machine-i-line-stepper>` page
 lists it there. SkyWater lists "ASML I-line stepper" and "ASML I-line
 scanner" among its tools but assigns no layer to them.[^skw-01]
@@ -207,7 +207,7 @@ scanner" among its tools but assigns no layer to them.[^skw-01]
 Taking
 Table 2's 0.84 µm as the smallest feature, Wong et al.'s threshold for a
 rising mask error factor, 0.5 λ/NA for lines and spaces,[^wong-1998] is
-about 0.38 µm at 365 nm and NA 0.48 (our arithmetic), well below it.
+about 0.38 µm at 365 nm and {term}`NA` 0.48 (our arithmetic), well below it.
 
 ### Resist and tone
 
@@ -328,7 +328,7 @@ spacing for `pwde` itself.
   the pattern.
 * **Materials.** {ref}`material-lithography-materials` — resists, developer and
   reticles.
-* **Masks.** {ref}`mask-pwbm` — the P-well block mask whose regions this mask
+* **Masks.** {ref}`mask-pwbm` — the P-well {term}`block mask` whose regions this mask
   partly re-dopes. {ref}`mask-dnm` — the deep N-well mask whose tubs enclose `pwde`.
 * **Indexes.** {ref}`masks-index` — every mask's PDK entry, plates and renders,
   including the partial plate record of the two P-well masks.

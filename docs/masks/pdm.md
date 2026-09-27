@@ -3,7 +3,7 @@
 
 The pad mask is the last {term}`reticle` of SKY130's step list. On the
 {ref}`PDM <step-168>` page's reading, the resist printed through it at
-step 168 is opened over every bond pad, probe pad and test pad, and the
+step 168 is opened over every {term}`bond pad`, probe pad and test pad, and the
 {ref}`PDME <step-169>` etch cuts the passivation nitride and the oxide
 beneath it down to the metal-5 pad.
 
@@ -88,7 +88,7 @@ length cut from each side the bevel is 7.0 µm long, the pad.12 minimum
 periphery rules give no enclosure of `pad` by metal 5, holds for those
 rules; the Error Messages page gives one.[^pdk-periph][^pdk-errors]
 
-**Test pads and the scribe.** The same page checks e-test pads in the
+**Test pads and the scribe.** The same page checks {term}`e-test` pads in the
 frame:[^pdk-errors]
 
 * "Etest pad Width and Length is either 67.00 um or 35.00um"
@@ -194,7 +194,7 @@ layer and used only inside S8 RF pad", and rule x.15b exempts "cpmm.dg
 inside cellnames "PadPLfp", "padPLhp", "padPLstg" and "padPLwlbi" (for the
 SKY130di-5r-gsmc flow)" from x.15a.[^pdk-06][^pdk-periph] Rule x.15a
 confines "Drawn compatible, mask, and waffle-drop layers" to test
-modules, seal ring and frame (flag P), so a design inside the die draws
+modules, {term}`seal ring` and frame (flag P), so a design inside the die draws
 `pad` (our reading of x.15a). Rule m4.13, for copper flows, excludes
 "met4 overlapping pdm areas" from a density check.[^pdk-periph]
 
@@ -318,7 +318,7 @@ sheet's; the reticle set is the heading of the run's columns in the tab
 
 The {ref}`PDM <step-168>` page gives
 {math}`k_1 = 1.27 \times 0.6 / 0.365 \approx 2.1` on an i-line tool with
-an assumed NA of 0.6, "well above any resolution limit", and infers an
+an assumed {term}`NA` of 0.6, "well above any resolution limit", and infers an
 i-line exposure, quoting ASML's statement that older systems "migrate to
 the lithography of choice for less critical layers".[^asml-30] The
 {ref}`i-line stepper <machine-i-line-stepper>` page lists it there.
@@ -331,7 +331,7 @@ Wong et al. found that the mask error
 factor "is unity for large features, but increases rapidly when the
 critical dimension (CD) is less than 0.5 (lambda) /NA for line-space
 patterns".[^wong-1998] At 365 nm and NA 0.6 that is about 0.30 µm (our
-arithmetic), far below the 1.27 µm space, so plate CD errors would print
+arithmetic), far below the 1.27 µm space, so plate {term}`CD` errors would print
 at their own size (inference).
 
 Table 4 of [*Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) gives
@@ -355,7 +355,7 @@ The {ref}`PDM <step-168>` page reads a positive DNQ/novolac
 i-line resist, the chemistry of Dammel's text,[^dammel-1993] coated over
 a transparent nitride-over-oxide stack of the order of 0.6–1 µm on
 reflective aluminium and the 1.26 µm metal-5 topography,[^pdk-04] with
-its thickness chosen against the swing curve Brunner
+its thickness chosen against the {term}`swing curve` Brunner
 analysed.[^brunner-1991] With the resist opened where `pad` is drawn,
 the plate would be dark-field (inference). The page also notes that this is
 the only mask printed after the passivation nitride, so rework strips
@@ -367,7 +367,7 @@ consumables are on the
 
 The 2.7 µm enclosure of the opening by metal 5 in the GPIO
 cell, which the Error Messages page makes a check (pad.4/4a), is, on the
-{ref}`PDM <step-168>` page's reading, a loose overlay budget for an
+{ref}`PDM <step-168>` page's reading, a loose {term}`overlay` budget for an
 alignment to the metal-5 pattern.[^pdk-errors][^pdk-io-gpiov2]
 
 ### Pattern transfer
@@ -379,7 +379,7 @@ nitride and oxide that stops on the metal-5 pad, on the
 with the resist strip and pad clean treated as part of that step. That
 page cites a Micron and a TSMC patent on removing fluorine residues from
 bond pads,[^pat-pad-fluorine-micron][^pat-pad-fluorine-tsmc] and Danzl
-and McLaurin on removing a TiW anti-reflective cap from aluminium bond
+and McLaurin on removing a TiW {term}`anti-reflective cap` from aluminium bond
 pads,[^danzl-1997] and leaves open whether SKY130's pads carry such a
 cap.
 

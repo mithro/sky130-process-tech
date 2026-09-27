@@ -37,7 +37,7 @@ Designers do not draw this mask; they draw its thick-oxide counterpart
 `hvi`. The public record describes the plate from both sides: the
 step page reads it as everything outside `hvi`, while, on our reading,
 the PDK's mask generation table and one public derivation from the drawn
-tape-out data describe its data as the thick-oxide and SONOS regions.
+tape-out data describe its data as the thick-oxide and {term}`SONOS` regions.
 
 The mask divides the wafer between the two gate oxides. The PDK gives
 the thick one: "All high voltage devices use 110A gate oxide thickness
@@ -85,7 +85,7 @@ same plate could carry those regions as its opaque part (inference).
 
 The SONOS rows matter for the resist. Rule hvi.4, "Hvi must not overlap
 tunm", keeps the memory windows outside `hvi`,[^pdk-periph] so a plate
-that was only NOT `hvi` would open the resist over the ONO islands. The
+that was only NOT `hvi` would open the resist over the {term}`ONO` islands. The
 {ref}`LVOM <step-044>` page leaves open how the mask treats the islands
 and infers from a Cypress patent that may still be in force that the
 resist protects them; the patent's wording is in the collapsed note
@@ -119,7 +119,7 @@ hvi", `Hdiff` as "Diffusion AND Hvi", `HV_nwell` as "(nwell AND hvi) OR
 (nwell overlapping areaid.hl)" — but no layer for the plate.[^pdk-06]
 
 Rule x.15a confines "Drawn compatible, mask, and waffle-drop layers" to
-test modules, the seal ring and the frame, with the exception
+test modules, the {term}`seal ring` and the frame, with the exception
 "FOM/P1M/Metal waffle drop are allowed inside the die" (flag
 P),[^pdk-periph] so a design inside the die draws `hvi`, not `clvom`
 (our reading of x.15a).
@@ -246,7 +246,7 @@ The {ref}`LVOM <step-044>` page infers an i-line
 exposure from the 0.6 µm `hvi` rule; the
 {ref}`i-line stepper <machine-i-line-stepper>` page lists it there.
 SkyWater lists "ASML I-line stepper" and "ASML I-line scanner" among its
-tools but assigns no layer to them.[^skw-01] At NA 0.48, the low end of
+tools but assigns no layer to them.[^skw-01] At {term}`NA` 0.48, the low end of
 ASML's PAS 5500/275D,[^asml-pas5500-275d] the 0.600 µm width has
 {math}`k_1 \approx 0.79` (our arithmetic). Wong et al.'s mask error
 factor, which "increases rapidly when the critical dimension (CD) is less
@@ -275,8 +275,8 @@ there are hvdifftap.21, "Diff or tap cannot straddle Hvi", and the
 0.180 µm enclosure of HV diffusion by `hvi` and spacing of other
 diffusion from it (hvdifftap.22 and hvdifftap.23).[^pdk-periph] We read
 the 0.180 µm as the placement margin within which this mask's edge must
-fall (inference). ASML specifies "≤ 40 nm" single-machine overlay for the
-/275D stepper[^asml-pas5500-275d] (our comparison; SkyWater's budget is
+fall (inference). ASML specifies "≤ 40 nm" single-machine {term}`overlay` for the
+/275D {term}`stepper`[^asml-pas5500-275d] (our comparison; SkyWater's budget is
 not public).
 
 ### Pattern transfer
@@ -298,7 +298,7 @@ their wording is in the collapsed note below this paragraph. The
 trench-isolation edges and at the mask boundary as a known problem of
 such an etch. In a dual-gate-oxide process with shallow trench
 isolation, Kim et al. found "severe GOX thinning" from 320 Å in the
-active area to 79 Å at the STI top edge, with a dent profile, and
+active area to 79 Å at the {term}`STI` top edge, with a dent profile, and
 prevented it mainly by a thick sidewall oxide with nitride
 pullback.[^kim-2002] Lee et al. characterised the thinning at the STI
 edge in the dual-gate-oxide process.[^lee-1999-icvc]

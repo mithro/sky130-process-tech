@@ -79,7 +79,7 @@ pages' readings the liner and tungsten plug take the etched hole, not this resis
 mask"), with no `drawing`, `mask add`, `mask drop` or `waffle drop`
 purpose; the drawn layer is `mcon` at 67:44.[^pdk-06] With no add or
 drop purpose, rule x.9's "serifs" have no `ctm1` layer to sit on, and
-rule x.15a confines mask layers to test modules, seal ring and frame,
+rule x.15a confines mask layers to test modules, {term}`seal ring` and frame,
 with the exception that "FOM/P1M/Metal waffle drop are allowed inside the
 die" (flag P, periphery only).[^pdk-periph] A design inside the die
 therefore draws `mcon` (our reading of x.9 and x.15a).
@@ -176,7 +176,7 @@ sheet's; the reticle set is the heading of the run's columns in the tab
   ({ref}`masks-mpw-reticle-sets`).[^steps-sheet]
 * **Mask type.** The sheet's "Sheet4" tab gives no type for
   `CTM1`.[^steps-sheet] The {ref}`CTM1 <step-107>` page reads the plate as
-  an {term}`attenuated phase-shift mask <attenuated PSM>` with OPC; that
+  an {term}`attenuated phase-shift mask <attenuated PSM>` with {term}`OPC`; that
   is not on public record. 4× is the ITRS 2001 mask magnification for the
   130 nm generation.[^itrs-03]
 * **MPW-4.** The sheet's MPW-4 plate is from the set `5CS8018AC`; the
@@ -189,7 +189,7 @@ sheet's; the reticle set is the heading of the run's columns in the tab
 
 The {ref}`CTM1 <step-107>` page gives
 {math}`k_1 = 0.17 \times 0.70 / 0.248 \approx 0.48` for the hole on a
-KrF lens of NA 0.7, "comfortable for lines but not for isolated holes,
+KrF lens of {term}`NA` 0.7, "comfortable for lines but not for isolated holes,
 whose depth of focus is much smaller", and infers a 248 nm level from
 the rule and from ITRS 2001.[^itrs-03]
 
@@ -219,7 +219,7 @@ focus-latitude techniques:
 Wong et al. found the mask error factor rising "rapidly
 when the critical dimension (CD) is less than […] 0.75 (lambda) /NA for
 contacts".[^wong-1998] At 248 nm and NA 0.7 that is about 0.27 µm (our
-arithmetic), above the 0.17 µm `mcon`, so plate CD errors would print
+arithmetic), above the 0.17 µm `mcon`, so plate {term}`CD` errors would print
 magnified (inference). Kim et al. found the factor rising near the
 resolution limit and larger for dense than for isolated
 contacts.[^kim-1999]
@@ -370,7 +370,7 @@ with the flag warning that neither is the final size.
   and etch categories.
 * **Machines.** {ref}`machine-duv-krf-stepper` — the exposure class the step page
   assigns. {ref}`machine-plasma-etcher-dielectric` — the etch class that transfers
-  the pattern. {ref}`machine-cd-sem-overlay-metrology` — hole CD and overlay
+  the pattern. {ref}`machine-cd-sem-overlay-metrology` — hole CD and {term}`overlay`
   measurement.
 * **Materials.** {ref}`material-lithography-materials` — resists, anti-reflective
   coatings, developer and reticles.

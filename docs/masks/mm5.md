@@ -4,7 +4,7 @@
 The metal-5 mask is the {term}`reticle` that draws SKY130's top metal.
 On the {ref}`MM5 <step-162>` page's reading, the resist printed through
 it at step 162 stays wherever `met5` is drawn — the top-level supply
-grid and wide buses, the bond pads that the pad mask later
+grid and wide buses, the {term}`bond pads <bond pad>` that the pad mask later
 opens, inductor turns and the landings of every via 4.
 
 | | MM5 — Metal 5 |
@@ -64,7 +64,7 @@ that width: "S8PIR/PF WM5_Kelvin (Width = 1.6um/ Length = 223.6um)", "s8pir/pf M
 (w=1.6) serp / comb over field" and "top:met5 width:1.600 space:1.600",
 among other structures.[^raw-data-testtile-pads]
 
-The extraction table gives metal 5 a sheet resistance of 29 in a column
+The extraction table gives metal 5 a {term}`sheet resistance` of 29 in a column
 headed "Resistivity (mohms/sq)", against 47 for metals 3 and 4, and via 4
 380,[^pdk-08] and the stack diagram draws `metal5` 1.26 µm
 thick.[^pdk-04] Table C3 of the *Layers Reference* defines "top_metal" as
@@ -125,7 +125,7 @@ rests on those names and descriptions, as on the
 drawn layer to the plate.
 
 Rule x.15a confines "Drawn compatible, mask,
-and waffle-drop layers" to test modules, seal ring and frame, "Exception:
+and waffle-drop layers" to test modules, {term}`seal ring` and frame, "Exception:
 FOM/P1M/Metal waffle drop are allowed inside the die" (flag P),[^pdk-periph]
 so a die may carry `cmm5` waffle-drop shapes as well as `met5` (our
 reading). With no add or drop purpose, rule x.9's "serifs" have no
@@ -250,7 +250,7 @@ is the heading of the run's columns in the tab
   * a "Percent Clear" of 58.56
   * a
     "Level" of 14
-  * a CD specification for patterns it names "Scribe
+  * a {term}`CD` specification for patterns it names "Scribe
     Frame Array / Plot / X" and "Scribe Frame Array / Plot / Y", nominal
     6.52 with tolerances of 0.08 either way, measured at means of 6.5163
     (X) and 6.5388 (Y), in no stated unit
@@ -280,7 +280,7 @@ is the heading of the run's columns in the tab
 ### Exposure class
 
 The {ref}`MM5 <step-162>` page gives
-{math}`k_1 = 1.6 \times 0.6 / 0.365 \approx 2.6` on an i-line lens of NA
+{math}`k_1 = 1.6 \times 0.6 / 0.365 \approx 2.6` on an i-line lens of {term}`NA`
 0.6, and about 1.3 for the 0.8 µm of other flows, "far from any
 resolution limit", and infers an i-line level, quoting ASML's statement
 that older systems "migrate to the lithography of choice for less
@@ -317,7 +317,7 @@ On a reflective metal
 the swing ratio scales with the square root of the substrate
 reflectivity, as Brunner showed,[^brunner-1991] and Rocke and Schneegans
 used titanium nitride on aluminium as an anti-reflection
-layer.[^rocke-1988] The step page reads a BARC or dyed resist as a
+layer.[^rocke-1988] The step page reads a {term}`BARC` or dyed resist as a
 latitude choice at these sizes. None of this is published for SKY130. The
 consumables are on the
 {ref}`lithography materials <material-lithography-materials>` page.
@@ -334,8 +334,8 @@ alignment to the via-4 pattern as the registration that matters.
 On the step pages' readings the resist pattern is
 transferred by {ref}`MM5E <step-163>`, a chlorine etch of the metal stack
 on the {ref}`metal plasma etcher <machine-plasma-etcher-metal>` class that
-stops on the {ref}`NCAPOX6 <step-158>` cap oxide. On the step pages' readings passivation, resist
-strip and clean are treated as part of that step. The level's pattern density
+stops on the {ref}`NCAPOX6 <step-158>` {term}`cap oxide`. On the step pages' readings passivation, resist
+strip and clean are treated as part of that step. The level's {term}`pattern density`
 is low over much of a die on that page's reading; Chang et al. studied
 the corrosion and passivation-swelling defects of an ultra-low
 pattern-density thick-metal etch.[^chang-2004]
@@ -443,7 +443,7 @@ them.
   etch categories.
 * **Machines.** {ref}`machine-i-line-stepper` — the exposure class the step page
   assigns. {ref}`machine-plasma-etcher-metal` — the etch class that transfers the
-  pattern. {ref}`machine-cd-sem-overlay-metrology` — line CD and overlay
+  pattern. {ref}`machine-cd-sem-overlay-metrology` — line CD and {term}`overlay`
   measurement.
 * **Materials.** {ref}`material-lithography-materials` — resists, anti-reflective
   coatings, developer and reticles.

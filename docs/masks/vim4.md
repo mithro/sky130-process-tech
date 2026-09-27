@@ -53,7 +53,7 @@ of the stacked capacitor labels `CAP2M`, "Via4", "M5 (plate 1)" and
 
 `masks.csv` has a second entry that could be taken for this level,
 "Pad Via, `VIPDM`", which is not marked as used in SKY130 and whose
-minimum CD, `VIPDMCD` 1.2 / `VIPDMCDSP` 1.27, does not match the via-4
+minimum {term}`CD`, `VIPDMCD` 1.2 / `VIPDMCDSP` 1.27, does not match the via-4
 rules.[^pdk-05][^pdk-03][^pdk-periph] The {ref}`VIM4 <step-159>` page therefore describes the `VIM4`
 level. The process-steps sheet records
 no `VIPDM` plate on any MPW run, and the renders site's `VIPDM` render
@@ -78,7 +78,7 @@ names and descriptions, as on the {ref}`masks index <masks-index>`, and
 the PDK publishes no operation from `via4` to the plate.
 
 Rule x.15a
-confines mask layers to test modules, seal ring and frame, and its
+confines mask layers to test modules, {term}`seal ring` and frame, and its
 exception names only "FOM/P1M/Metal waffle drop" (flag P, periphery
 only).[^pdk-periph] So a design inside the die draws `via4` (our reading
 of x.15a, which does not say what applies in the core). One row of rule
@@ -193,7 +193,7 @@ makes; the sheet does not say so.
 
 On geometry alone the level would print on an
 i-line tool: the {ref}`VIM4 <step-159>` page gives
-{math}`k_1 \approx 1.3` at 365 nm and NA 0.6. The
+{math}`k_1 \approx 1.3` at 365 nm and {term}`NA` 0.6. The
 step page nevertheless reads it as a KrF level, because a reticle made
 for 248 nm points to a 248 nm tool, and gives {math}`k_1 \approx 2.3` on
 a lens of NA 0.70. The {ref}`KrF stepper <machine-duv-krf-stepper>` page
@@ -241,13 +241,13 @@ Neither is published. The consumables are on the
 Metal 4 must enclose the via by 0.190 µm (via4.4) and
 metal 5 by 0.310 µm (m5.3).[^pdk-periph] If via 4 is a KrF level and
 metal 5 an i-line level, as the machine pages read them, the metal-5
-overlay to via 4 is a matched overlay between classes
+{term}`overlay` to via 4 is a matched overlay between classes
 ({ref}`machine-i-line-stepper`).
 
 ### Pattern transfer
 
 On the step pages' readings the holes are etched
-at {ref}`VIM4E <step-160>` through the cap oxide and inter-metal oxide,
+at {ref}`VIM4E <step-160>` through the {term}`cap oxide` and inter-metal oxide,
 on the {ref}`dielectric plasma etcher <machine-plasma-etcher-dielectric>`
 class, down to the metal-4 cap and the `cap2m` plates. On the step pages' readings the resist is
 stripped within that step. The next step, {ref}`WTIAL5 <step-161>`,
