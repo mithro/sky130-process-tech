@@ -312,14 +312,14 @@ SKY130 conditions of their own. SKY130's tungsten recipes and
 thicknesses are not public.
 
 * **A liner first.** On the step pages' reading, every fill lands on
-  titanium nitride deposited in the PVD tool before it. This is because WF₆ and its
+  titanium nitride deposited in the PVD tool before it. ({ref}`TI/TIN1 <step-097>`, followed by the
+  {ref}`CSIL <step-098>` anneal, and {ref}`TIN2 <step-109>` to
+  {ref}`TIN5 <step-146>` immediately before each via fill.) This is because WF₆ and its
   HF attack silicon, titanium and oxide and tungsten adheres poorly to
   oxide (category page;[^wiki-wf6] the {ref}`WDEP <step-099>` page
   describes the barrier role).
 
-  ({ref}`TI/TIN1 <step-097>`, followed by the
-  {ref}`CSIL <step-098>` anneal, and {ref}`TIN2 <step-109>` to
-  {ref}`TIN5 <step-146>` immediately before each via fill.) Saito et al.'s failure through a porous
+  Saito et al.'s failure through a porous
   glue layer shows what the liner prevents.[^saito-1993]
 * **Holes from 6:1 down to about 2:1.** The {ref}`WDEP4 <step-132>` page
   puts the local-interconnect contact of {ref}`WDEP <step-099>` at about
