@@ -49,26 +49,37 @@ layers (the glossary sense covers them); slash compounds such as "TCP/ICP", "PSG
 After the first application a `--check` re-run proposed 7 more links: links deferred by the
 3-per-paragraph cap came back on a second run, because the cap counted only the links added in the
 current run. Existing `{term}` roles in a paragraph now count toward its cap (self-test 34b).
-Effect on this pass: 1 090 → 1 048 links (paragraphs, often long lists, that already carried three
+Effect on this pass: 1 090 → 1 048 links (before the adjacency guard) (paragraphs, often long lists, that already carried three
 hand-written links get no more). A re-run now proposes 0.
 
-## Counts (links added)
+## Counts (links added, final, after the adjacency guard)
 
 | Directory | Pages changed | Links |
 |---|---:|---:|
-| docs/steps | 120 of 171 | 447 |
-| docs/machines | 29 of 30 | 202 |
-| docs/masks | 36 of 36 | 283 |
+| docs/steps | 119 of 171 | 435 |
+| docs/machines | 29 of 30 | 201 |
+| docs/masks | 36 of 36 | 282 |
 | docs/materials | 12 of 12 | 81 |
 | docs/categories | 7 of 10 | 16 |
 | docs/overview | 1 of 1 | 5 |
 | docs/history | 6 of 8 | 14 |
-| **Total** | **211** | **1 048** |
+| **Total** | **210** | **1 034** |
+
+## Adjacency guard (coordinator request, after the first report)
+
+A candidate with only whitespace between it and a role (`{ref}`, `{term}`, `{doc}`, `{math}`) or a
+markdown link, on either side, is deferred to the term's next free-standing use (commit `dc705aeb`,
+self-test 31c, both sides). Re-applied from main's page text (`git checkout a03f0de9 -- <dirs>`,
+then the tool on the same page set). It rejected 17 of the 1 048 links (14 `cap oxide` after or
+before an `NCAPOX` ref, `ARC` after `TUNARCE`, `block mask` before `PWBM`, `nitride cut` before `NPCM`,
+`pre-metal dielectric` after `NCAPOX`, `over-etch` before `VIM2E`); 3 moved to a later free-standing
+use (steps 122, 125, 164), 14 were dropped: 1 048 → 1 034. A second run adds 0. Tiles of steps 122
+and 164 opened at desktop and 400 px (every affected page lost at most one link).
 
 ## Verification
 
 * `tmp/verify_insert_only.py a03f0de9` (worktree, git-ignored): line counts unchanged on every
-  file; 1 009 changed lines, 1 048 roles added, 0 failing lines — every changed line equals its base
+  file; 995 changed lines, 1 034 roles added, 0 failing lines (re-run after the guard) — every changed line equals its base
   once the added roles are unwrapped, and every base role is still present.
 * `check_preserved.py --base a03f0de9 --allow-regrouped` on 20 sampled pages (6 steps, 4 machines,
   4 masks, 2 materials, 2 categories, overview, history): only `ADDED refs` (plus the informational
@@ -93,9 +104,7 @@ hand-written links get no more). A re-run now proposes 0.
 
 ## Odd, not fixed
 
-* Where a new term link sits directly after a `{ref}` or another term (step 122 "NCAPOX3 cap
-  oxide", step 080 "LPCVD TEOS"), the two links render side by side and read like one link. The
-  same pattern already existed in hand-written text ("cap oxide POC" on step 080). Presentation
-  only; a tool guard against adjacency could be added if the owner minds.
+* Adjacent links: fixed for script-added links by the adjacency guard. Hand-written adjacent pairs
+  already in the base (e.g. "cap oxide POC" on step 080) are left as they are.
 * Some paragraphs are long bulleted lists without blank lines, so the paragraph cap treats the
   whole list as one paragraph; with hand links counted, such lists get few new links.
