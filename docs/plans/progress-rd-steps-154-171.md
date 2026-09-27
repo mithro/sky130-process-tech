@@ -913,3 +913,8 @@ positives above; every WORDS LOST word is named in its page entry.
   punctuation: "(Inference from … top metal;[^cyp-qtp-123907] the whole of that evidence is set out
   under overview-metal-cap.)" — a hedge parenthetical sentence of about 46 words directly after the
   reading it qualifies (R-SENTENCE step 7).
+* **L8 (159):** the parenthetical "(The rules also allow a 0.800 µm square via 3 inside `areaid.mt`,
+  via3.1a.[^pdk-periph])" moves, unchanged, to close its paragraph after "(our arithmetic).", so it no
+  longer interrupts the area argument. `number_order` LOST line ('4', '0.200', '3', '1', '1',
+  '0.800', '3', '1', '4', '213', '380', '4', '1.8') re-paired by hand: same digits, the 0.800 µm
+  aside now after the 213 mΩ / 380 mΩ / 1.8 sentence.
