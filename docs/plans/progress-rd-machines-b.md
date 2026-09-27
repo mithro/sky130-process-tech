@@ -844,13 +844,13 @@ the branch tip; intro and quick-facts counts from `tmp/tools/caps.py` (same `cle
 * **List items left (3):** the grading bullets under `### SKY130 steps assigned` on
   post-cmp-cleaner, starting-material and wet-bench, which this phase leaves unchanged.
 * **Sentences left (39):** counting each quotation as one word, as §1 says, 33 of them are within
-  45 words. The other 6 are four grading bullets or generated runs (post-cmp-cleaner,
-  wet-bench ×2, and the generated wet-bench run), two measure5 artefacts (a sentence ending
-  "…etch."/"…torch." fused with the next on plasma-etcher-metal and vertical-furnace-anneal, guide
-  problem 1; a Related-pages bullet on single-wafer-spin-processor, reviewer checklist item 12),
-  and a 62-word sentence inside an in-force note on starting-material, which measure5 counts and
-  this pass may not edit. The sheet-resistance "nearest entries" sentence (57 by measure5, 45 by
-  §1) is left whole on purpose (page 8).
+  45 words (one of these is a sentence inside an in-force note on starting-material, which
+  measure5 counts and this pass may not edit). The other 6 are two grading bullets
+  (post-cmp-cleaner, wet-bench) and the generated wet-bench run, which this phase leaves
+  unchanged, and three measure5 artefacts: a sentence ending "…etch." or "…torch." fused with the
+  next on plasma-etcher-metal and vertical-furnace-anneal (guide problem 1), and a Related-pages
+  bullet on single-wafer-spin-processor (reviewer checklist item 12). The sheet-resistance
+  "nearest entries" sentence (57 by measure5, 45 by §1) is left whole on purpose (page 8).
 * **Table cells (85):** the new models and entries tables add cells whose length is their
   quotations; the quick-facts cells over 25 are the numeric and quotation-only cells listed per
   page. No cell was shortened by dropping a hedge, a number or a quotation.
