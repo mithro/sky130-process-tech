@@ -366,6 +366,61 @@ lithography bullet's first clause (the base marker belonged to the SEZ note clau
 
 Content problems for the owner: none found.
 
+### 6. `docs/machines/pvd-cluster-tool.md` — done
+
+Rules applied: R-INTRO, R-MODELS, R-ENTRIES, R-QUICKFACTS, R-PARA, R-SENTENCE, R-LIST, R-RELATED,
+R-CAPTION.
+
+* **R-INTRO.** 143 → 37 words: the first sentence. The next two ("Several single-wafer chambers —
+  … — sit around robots …"; "Within the class the chambers differ … ({term}`IMP`).") moved unchanged
+  to the end of the first H2's lead, as its own paragraph. Pointer → `{seealso}`. Deleted template
+  sentence: "This page describes the class in general, lists representative 200 mm-era models, and
+  then says what SkyWater has published about its own tool of this class and which SKY130 steps
+  this reference assigns to it."
+* **R-MODELS.** Four bullets → 10 rows + three remarks (the litigation sentence, **Varian.**,
+  **Other vendors.**). Year cells: Endura "April 1990", Endura HP 1993 and VHP 1994 ("the Endura HP
+  and VHP of 1993 and 1994", respectively — digits checked), HP Metal options "from December 1996",
+  300 mm INOVA xT 2000 ("of 2000"): each the page's own year for the model. `—` for the Liner/Barrier
+  system ("by 2000" is a shipment count's date, kept in Published figures), Vectra IMP, Endura SL,
+  SIP chamber, INOVA. The Endura's "today" description moved into its row (same bullet, no digits).
+* **R-ENTRIES.** The "Read term by term" list → 6 rows grouped as the page groups them ("two
+  titanium nitride processes" one row; "tungsten nitride, cobalt, niobium and silicon dioxide" one
+  row). Status "our reading" on the ESC/Imp row only (the page's hedge sits on that reading); `—`
+  elsewhere. "The page does not expand "ESC" or "Imp"." stays as prose under the table.
+* **R-QUICKFACTS.** Cells over cap 7 → 7 by count, three improved. What it does: the second
+  Wikipedia quotation ("Sputtering is used extensively …") moved verbatim to open the first H2
+  (21 words, one quotation, marker kept on both). SkyWater-listed tool: 11 → 1 quotation — the ten
+  sub-entries are written unquoted (DEDUPLICATED as quotations; the blockquote keeps them) so that
+  the cell keeps its `{term}` link on ESC. Left: Sources, Platform, Films, Bottom coverage, 200 mm
+  era — each a run of quotations and numbers found only there (Platform's two quotations are
+  longer than the body's copies, so they are not the same strings).
+* **R-PARA / R-SENTENCE / R-LIST.** "What makes a machine a production PVD cluster tool … :" and
+  the staged-vacuum patent's four features became lists (the patent's single marker on its
+  lead-in). The Vectra IMP sentence (three quotations separated by semicolons) became four
+  sentences, the marker on each; the liner-system, Rossnagel–Hopwood, Nishimura, HCM, Cypress and
+  top-plate sentences split at their semicolons or at ', and "The sequential …"'. "In its
+  description" → "In the patent's description" (new paragraph). Items over 60 → lead +
+  continuation.
+* **R-RELATED**, **R-CAPTION** as page 1.
+
+Caps (measure5): paragraphs > 100 11 → 0; list items > 60 5 → 0; sentences > 45 16 → 1 (Varian's
+patent sentence, 51 words, 34 of them inside its two quotations); table cells > 25 5 → 6 (four
+quick-facts cells, the INOVA row, the ESC/Imp row).
+
+Preservation. DEDUPLICATED: number 200 (quick facts). **LOST quote 'TiN' / ADDED quote 'ESC
+TiN'**: the old cell wrote `"{term}`ESC` TiN"`, which the tool reads as the quotation "TiN"; the
+entries table writes "ESC TiN" as the blockquote does. ADDED quotes: "AMAT PVD Metal" (the
+entries-table caption). The table's other Entry quotations replace the cell's quoted copies one for
+one. ADDED identifier `SiO2` (the unquoted cell list). ADDED markers: `amat-1997` ×3 (Endura, HP,
+VHP rows of one clause), `amat-ism-2000` ×5 (the Vectra split ×3, the liner-system split, the
+Vectra IMP row), `rossnagel-1993` (split), `skw-01` (the grade prose "They grade …"),
+`wiki-sputter` (the What-it-does split). Template losses: `about`, `SKY130`. Strict words: the
+template sentence; "Read term by term" (now the table). Marker coverage: 32 flags, all read — list
+items (marker on lead-in), model cells, table headers, and split halves whose own clause carries a
+hedge ("not public", "(inference)") or a cited source.
+
+Content problems for the owner: none found.
+
 ## Guide problems
 
 1. **`measure5.py` fuses a sentence ending in "…ch."** Its abbreviation guard `(?<!ch\.)` (meant
