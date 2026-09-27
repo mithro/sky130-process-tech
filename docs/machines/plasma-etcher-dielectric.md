@@ -16,7 +16,7 @@ what does not.
 | Selectivity | Set by a steady-state fluorocarbon film: under 1.5 nm on oxide, about 1–4 nm on nitride and about 2–7 nm on silicon in Schaepkens et al.'s inductive plasmas;[^schaepkens-1999] SiO₂-to-Si selectivity of about 15 in CHF₃ against about 5 in CF₄ in Oehrlein et al.'s ECR study.[^oehrlein-1994b] |
 | Endpoint | Optical emission; for nitride "a strong peak at 387 nm indicates that CN is present in the plasma";[^pat-endpoint-tel] contact layers need detection of films with "low exposure area (less than 3%)".[^wodecki-1999] |
 | 200 mm era | Applied's MxP chambers from 1993, the eMxP+ (mid-1997) and IPS Centura (April 1997);[^amat-1997] Lam's Rainbow 4520[^wodecki-1999] and the "200 mm Alliance-based Exelan High Performance" of 2001.[^lam-exelan] |
-| SkyWater-listed tool | None among the production etchers; the step pages weigh the three "Poly/Silicon Etch" tools instead;[^skw-01] see *What SkyWater lists* |
+| SkyWater-listed tool | None among the production etchers; the contact, via and nitride-seal etch pages weigh the three "Poly/Silicon Etch" tools instead;[^skw-01] see *What SkyWater lists* |
 | SKY130 steps | 12 steps, plus 1 where the class is an alternative; see {ref}`SKY130 steps assigned to this class <machine-plasma-etcher-dielectric-steps>` |
 
 :::{seealso}
