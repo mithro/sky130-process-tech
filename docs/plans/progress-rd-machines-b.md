@@ -462,6 +462,48 @@ describes …" (the base markers sat before that clause).
 
 Content problems for the owner: none found.
 
+### 8. `docs/machines/sheet-resistance-metrology.md` — done
+
+Rules applied: R-INTRO, R-MODELS, R-PARA, R-SENTENCE, R-RELATED, R-CAPTION. No "term by term"
+passage (SkyWater lists no tool of the class). R-QUICKFACTS skipped (below). The generated
+46-step dropdown under `### SKY130 steps assigned` is untouched.
+
+* **R-INTRO.** 135 → 22 words: "An implanter reports the dose … Two instrument families do this in
+  line." The three sentences that describe the families (four-point probe, thermal-wave monitor,
+  eddy-current gauges) moved unchanged to open the first H2, directly before "Both families measure
+  a proxy." (70 words). Pointer → `{seealso}`. Deleted template sentence: "This page describes the
+  classes, lists representative 200 mm-era models, and then says what SkyWater has published and
+  which SKY130 steps this reference assigns to the class."
+* **R-MODELS.** Three bullets → 7 rows. Year cells: RS75 series 1995 ("the RS75 series of 1995"),
+  Therma-Probe 1985 ("introduced in 1985", unquoted), BX-10 2000 (the year after its name). `—`
+  for the Therma-Probe 500 (its date is inside the quotation "introduced in July of 1996", which is
+  not cut), RS-100 ("described on a 2002 capture" kept in Published figures), the OmniMap family
+  and NC110.
+* **R-QUICKFACTS.** Not applied: the seven over-cap cells are quotations and figures that are not
+  in the body as the same strings (What it does, Modulated reflectance, Dose range, Speed,
+  Requirement at 130 nm) or dates and names only (200 mm era, 26 words), and the Dose-range, Speed
+  and 200 mm cells hold several numbers in one number-order unit.
+* **R-PARA / R-SENTENCE.** H3 bodies split at source seams; sentences split at semicolons (Smits,
+  the Therma-Wave patents) and at " and described" ("They described a double-implant technique
+  …", marker repeated). Two integration items → lead + continuation; the e-test sentence split at
+  its semicolon and at ", and the public test tile" (the "on this reference's reading" stays in its
+  own clause). Left unsplit: "The nearest entries are the implanters, …" (57 words by measure5,
+  about 45 counting each quotation as one word): its trailing "(our reading)" would have to be
+  repeated on the implanters' half, which states SkyWater's own dose ranges.
+* **R-RELATED**, **R-CAPTION** as page 1.
+
+Caps (measure5): paragraphs > 100 3 → 0; list items > 60 3 → 0; sentences > 45 8 → 1 (above);
+table cells > 25 6 → 6 (quick facts, untouched).
+
+Preservation. DEDUPLICATED: number 200 (the template sentence's "200 mm-era"). ADDED markers:
+`smith-1986` (split), `tencor-rs75-1995` (the RS75 row; the OmniMap row keeps the base's).
+REGROUPED: the models bullets → rows, same digits in the same order. Template loss: `SKY130`.
+Strict words: the template sentence; "including" (the RS75 row), "introduced" (the Therma-Probe
+Year cell). Marker coverage: 8 flags, all read — model cells, the e-test halves (the base marker
+belonged to Perloff's finding), the Related-pages bullet (no markers in the base either).
+
+Content problems for the owner: none found.
+
 ## Guide problems
 
 1. **`measure5.py` fuses a sentence ending in "…ch."** Its abbreviation guard `(?<!ch\.)` (meant

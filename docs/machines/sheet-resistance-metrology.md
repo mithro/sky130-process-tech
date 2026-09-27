@@ -2,18 +2,7 @@
 # Sheet-resistance and dose metrology
 
 An implanter reports the dose it believes it delivered; a fab checks it
-on wafers. Two instrument families do this in line. A four-point probe
-presses a row of needles onto a doped layer or a metal film and measures
-its sheet resistance, from which dose, activation, junction or film
-thickness can be followed. A thermal-wave (modulated-reflectance) monitor
-heats a spot with a modulated laser and reads the change of reflectance,
-which depends on the implant damage and so on the dose, without contact
-and before any anneal. Non-contact eddy-current gauges measure metal and
-highly conductive films. This page describes the classes, lists
-representative 200 mm-era models, and then says what SkyWater has
-published and which SKY130 steps this reference assigns to the class.
-Implant dose control in general is on the
-{ref}`implant category page <category-implant>`.
+on wafers. Two instrument families do this in line.
 
 | | Sheet-resistance and dose metrology |
 |---|---|
@@ -27,7 +16,21 @@ Implant dose control in general is on the
 | SkyWater-listed tool | None named |
 | SKY130 steps | 48 steps; see {ref}`SKY130 steps assigned to this class <machine-sheet-resistance-metrology-steps>` |
 
+:::{seealso}
+Implant dose control in general is on the
+{ref}`implant category page <category-implant>`.
+:::
+
 ## What the machine class is and how it works
+
+A four-point probe
+presses a row of needles onto a doped layer or a metal film and measures
+its sheet resistance, from which dose, activation, junction or film
+thickness can be followed. A thermal-wave (modulated-reflectance) monitor
+heats a spot with a modulated laser and reads the change of reflectance,
+which depends on the implant damage and so on the dose, without contact
+and before any anneal. Non-contact eddy-current gauges measure metal and
+highly conductive films.
 
 Both families measure a proxy. Sheet resistance depends on the
 carriers in a layer, and so on activation as well as dose (industry
@@ -46,14 +49,18 @@ through the outer pair and the potential measured across the inner
 pair.[^valdes-1954] A four-point probe "is used to avoid contact resistance,
 which can often have the same magnitude as the sheet
 resistance",[^wiki-rs] the four-terminal principle behind Kelvin
-measurements in general.[^wiki-4t] Smits evaluated the correction factors
+measurements in general.[^wiki-4t]
+
+Smits evaluated the correction factors
 for rectangular and circular samples, noting that "Diffused surface layers can be
-treated as two-dimensional structures";[^smits-1958] for equally spaced
+treated as two-dimensional structures".[^smits-1958] For equally spaced
 probes on a sheet large compared with the spacing, his analysis gives
 {math}`R_s = (\pi/\ln 2)\,V/I \approx 4.532\,V/I`, and smaller samples
 need his tabulated corrections.[^smits-1958] SEMI MF84 is the
 standard in-line four-point-probe test method for silicon
-wafers.[^semi-mf84] Perloff, Wahl and Conragan automated the measurement for
+wafers.[^semi-mf84]
+
+Perloff, Wahl and Conragan automated the measurement for
 doping-uniformity maps and showed that "the four-point probe and van der
 Pauw resistors may be used interchangeably for doping uniformity
 measurements";[^perloff-1977] van der Pauw's theorem underlies the second
@@ -65,7 +72,7 @@ scan modes".[^pat-rsmap-prometrix]
 For implant monitoring, sheet resistance is read on monitor wafers
 annealed after the implant, the test-wafer practice Therma-Wave
 describes.[^tw-implant] Smith, Johnson and Keenan extended
-the direct method down to 2 × 10¹¹ cm⁻² and described a double-implant
+the direct method down to 2 × 10¹¹ cm⁻².[^smith-1986] They described a double-implant
 technique in which "an initial implant" creates a measurable layer and
 the second implant's dose is followed by "the change in the sheet
 resistance due to the implant damage created by the second implant into
@@ -78,18 +85,22 @@ through the native oxide.[^hillard-2004]
 The thermal-wave monitor comes from Therma-Wave. A modulated pump beam
 heats a spot periodically, and "the change in reflectivity at the sample
 surface which is a function of the changing surface temperature" is read
-by a probe beam;[^pat-thermalwave-thermawave] Rosencwaig et al. showed that
+by a probe beam.[^pat-thermalwave-thermawave] Rosencwaig et al. showed that
 thermal waves can be detected "in a noncontact and highly sensitive
 manner, through the dependence of sample optical reflectance on
-temperature".[^rosencwaig-1985] In a semiconductor the pump also creates a
+temperature".[^rosencwaig-1985]
+
+In a semiconductor the pump also creates a
 periodic electron–hole plasma, which "affects the index of refraction of
 the sample", so the modulated reflectance carries information on "ion
-dopant concentrations, residue deposits and defects";[^pat-plasmawave-thermawave]
+dopant concentrations, residue deposits and defects".[^pat-plasmawave-thermawave]
 Opsal and Rosencwaig proposed depth profiling with "the critically damped
 plasma wave".[^opsal-1985] Smith, Rosencwaig and Willenborg applied the
 method to implant monitoring in 1985, "directly on the patterned product
 integrated circuit wafers as well as on the usual test
-wafers".[^smith-1985] Therma-Wave described its limits: the
+wafers".[^smith-1985]
+
+Therma-Wave described its limits: the
 technique "can be used to monitor changes in ion beam energy, but its
 sensitivity varies for different penetration depth of ions in silicon",
 and "It is also sensitive to channeling and various scanning
@@ -123,21 +134,18 @@ practice; {ref}`HPETEST <step-171>`).
 
 ## Representative 200 mm-era models
 
-* **Prometrix, then Tencor and KLA-Tencor.** The OmniMap four-point-probe
-  mappers, "Based on the four-point probe technology pioneered by the
-  Prometrix division", including the RS75 series of 1995 with its
-  temperature-compensated RS75/tc model;[^tencor-rs75-1995] the OmniMap
-  NC110, which "Measures resistivity directly on product wafers" and gives
-  data on "aluminum and tungsten metallization schemes such as
-  Ti/TiN/Al/TiN, TiN/W";[^tencor-resistivity-1997] and the RS-100, described on a 2002 capture,
-  "the tool of choice in the metals, CMP, and diffusion
-  modules".[^kla-rs100]
-* **Therma-Wave.** The Therma-Probe, introduced in 1985,[^tw-history] and
-  the Therma-Probe 500, "introduced in July of 1996", of which Therma-Wave
-  reported that "By April 1998, more than 360 Therma-Probe systems had been
-  installed".[^tw-tp-2000][^tw-products-1997]
-* **Boxer Cross.** The BX-10 optical junction and implant monitor
-  (2000).[^sing-2000]
+:::{table} Representative sheet-resistance and dose monitors (figures as each source gives them)
+
+| Vendor | Model | Year | Published figures |
+|---|---|---:|---|
+| Prometrix, then Tencor and KLA-Tencor | OmniMap four-point-probe mappers | — | "Based on the four-point probe technology pioneered by the Prometrix division"[^tencor-rs75-1995] |
+| Prometrix, then Tencor and KLA-Tencor | RS75 series, with its temperature-compensated RS75/tc model[^tencor-rs75-1995] | 1995 | — |
+| Prometrix, then Tencor and KLA-Tencor | OmniMap NC110 | — | "Measures resistivity directly on product wafers" and gives data on "aluminum and tungsten metallization schemes such as Ti/TiN/Al/TiN, TiN/W"[^tencor-resistivity-1997] |
+| Prometrix, then Tencor and KLA-Tencor | RS-100 | — | described on a 2002 capture, "the tool of choice in the metals, CMP, and diffusion modules"[^kla-rs100] |
+| Therma-Wave | Therma-Probe[^tw-history] | 1985 | — |
+| Therma-Wave | Therma-Probe 500 | — | "introduced in July of 1996", of which Therma-Wave reported that "By April 1998, more than 360 Therma-Probe systems had been installed"[^tw-tp-2000][^tw-products-1997] |
+| Boxer Cross | BX-10 optical junction and implant monitor[^sing-2000] | 2000 | — |
+:::
 
 ## At SkyWater
 
@@ -225,7 +233,9 @@ e-test sheet resistances are quoted on the {ref}`HPETEST <step-171>` page.
   {ref}`DEPI <step-038>`, {ref}`NCHI <step-045>`, {ref}`ASTI <step-065>`,
   {ref}`BHI <step-066>`, {ref}`HVASTI <step-069>`, {ref}`LDASTI <step-072>`,
   {ref}`LDBHI <step-073>`) name thermal-wave monitoring, alone or with a
-  four-point probe; Therma-Wave presented the method for "low dose
+  four-point probe.
+
+  Therma-Wave presented the method for "low dose
   (E11-E12 ions/cm2)" implants that set threshold voltages.[^tw-implant]
   Because the signal "is also sensitive to channeling", a change of beam
   angle on the tilted implants of this group (as their step pages describe)
@@ -253,32 +263,32 @@ e-test sheet resistances are quoted on the {ref}`HPETEST <step-171>` page.
   resistivity the sheet resistance gives the thickness,
   {math}`t = \rho/R_s`,[^wiki-rs] which is why KLA-Tencor aimed the RS-100
   at "the metals, CMP, and diffusion modules".[^kla-rs100]
-* **Monitors and e-test.** In-line monitors run on blanket wafers; the
+* **Monitors and e-test.** In-line monitors run on blanket wafers.
+
+  The
   sheet resistances the PDK tabulates (for example N⁺ diffusion, local
   interconnect and metal 3) are, on this reference's reading, measured on
-  test structures of the finished wafer, and the public test tile described on the
+  test structures of the finished wafer. The public test tile described on the
   {ref}`HPETEST <step-171>` page carries van der Pauw and four-terminal
   structures, the two kinds Perloff et al. found interchangeable for
   uniformity measurements.[^perloff-1977]
 
 ## Related pages
 
-* {ref}`category-implant` — dose control and the implant steps.
-* {ref}`category-anneal` — activation and silicide anneals.
-* {ref}`category-test` — sheet resistance, van der Pauw structures and
+* **Category.** {ref}`category-implant` — dose control and the implant steps.
+  {ref}`category-anneal` — activation and silicide anneals.
+  {ref}`category-test` — sheet resistance, van der Pauw structures and
   e-test.
-* {ref}`machine-medium-current-implanter`,
+* **Machines.** {ref}`machine-medium-current-implanter`,
   {ref}`machine-high-current-implanter` and
   {ref}`machine-high-energy-implanter` — the implanters whose dose is
-  monitored.
-* {ref}`machine-film-thickness-metrology` — the other gauges run on metal
-  monitor wafers.
-* {ref}`machine-parametric-tester` — the sheet resistances measured on test structures at
+  monitored. {ref}`machine-film-thickness-metrology` — the other gauges run on metal
+  monitor wafers. {ref}`machine-parametric-tester` — the sheet resistances measured on test structures at
   e-test.
-* {ref}`machines-index` — all machine classes, SkyWater's listed tools
-  and the step assignments.
-* {ref}`material-substrates` — monitor and test wafers, their grades
+* **Materials.** {ref}`material-substrates` — monitor and test wafers, their grades
   and reuse.
+* **Indexes.** {ref}`machines-index` — all machine classes, SkyWater's listed tools
+  and the step assignments.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
 ### Related patents, papers and filings
