@@ -843,14 +843,15 @@ the branch tip; intro and quick-facts counts from `tmp/tools/caps.py` (same `cle
 
 * **List items left (3):** the grading bullets under `### SKY130 steps assigned` on
   post-cmp-cleaner, starting-material and wet-bench, which this phase leaves unchanged.
-* **Sentences left (39):** counting each quotation as one word, as §1 says, 33 of them are within
+* **Sentences left (39; 36 with main's fixed `measure5.py`, f0b2bc2e — see the review round):** counting each quotation as one word, as §1 says, 33 of them are within
   45 words (one of these is a sentence inside an in-force note on starting-material, which
   measure5 counts and this pass may not edit). The other 6 are two grading bullets
   (post-cmp-cleaner, wet-bench) and the generated wet-bench run, which this phase leaves
   unchanged, and three measure5 artefacts: a sentence ending "…etch." or "…torch." fused with the
   next on plasma-etcher-metal and vertical-furnace-anneal (guide problem 1), and a Related-pages
   bullet on single-wafer-spin-processor (reviewer checklist item 12). The sheet-resistance
-  "nearest entries" sentence (57 by measure5, 45 by §1) is left whole on purpose (page 8).
+  "nearest entries" sentence (57 by measure5) is 47 by §1, not 45 as first written here; it was
+  split in the review round (M4).
 * **Table cells (85):** the new models and entries tables add cells whose length is their
   quotations; the quick-facts cells over 25 are the numeric and quotation-only cells listed per
   page. No cell was shortened by dropping a hedge, a number or a quotation.
@@ -871,6 +872,51 @@ changed on any page. No line of page content starts with a stray `>`.
 ## State
 
 All fifteen pages done, one commit each; nothing left in this batch.
+
+## Review round 1 (2026-09-27)
+
+Review `tmp/reviews/rd-machines-b.md`: approve with fixes (0 High, 4 Medium, 12 Low). One commit per
+page, the guide rulings in their own commit.
+
+* **M1** — quotation marks restored on SkyWater's entry strings in the quick facts: the
+  SkyWater-listed cells of metal, silicon, pvd, single-wafer and oxidation are back to their base
+  text; silicon's "Predictive Endpoint" and nitridation's "slot plane antenna (SPA) plasma source"
+  are quoted again.
+* **M2** — dielectric SkyWater-listed cell: "the contact, via and nitride-seal etch pages" restored.
+* **M3** — tungsten "A liner first": the step-link parenthetical directly after "…before it.", then
+  "This is because …" in the same paragraph (the item's lead is 64 words by measure5, four of them
+  step links; kept as one paragraph as the review asks), Saito as the continuation.
+* **M4** — sheet-resistance "nearest entries" sentence split in the reviewer's words; the second
+  half keeps "(our reading)" and repeats `[^skw-01]`.
+* **L1** sheet-resistance: the RS75 row folded back into the OmniMap row, "including the RS75 series
+  of 1995 with its temperature-compensated RS75/tc model" (the base words; Year stays `—` for the
+  family). **L2** single-wafer: "**SEZ.** SEZ had its headquarters in Villach, Austria." **L3**
+  silicon: the DPS II Entry cell adds its dashed line "gate, trench, W/WN". **L4** silicon: "introduced
+  by Applied's 1999 press release". **L5** post-cmp: Model "6DS-SP", "cleaning stations on the
+  polisher" in Published figures. **L6** dielectric: the What-it-does cell's `[^schaepkens-1999]` is
+  kept and declared (the base's single end marker covered the whole cell; the source supports the
+  paraphrase). **L7** wet-bench: `[^sst-akrion-scp-2007]` on the E200 Model cell. **L8** — see
+  content problems below. **L9** pvd: "In Wikipedia's words:" before the bare quotation. **L10**
+  starting-material: the "Steps." label dropped. **L11** anneal: the moved sentence keeps its scope,
+  "In a 130 nm flow an anneal furnace is the batch alternative …". **L12** counts corrected above.
+
+Declared additions from the fixes: silicon ADDED quotes (the three entries in the restored
+quick-facts cell, and "gate, trench, W/WN" in the Entry cell, restating the blockquote) with their
+identifiers, and number `1999` (L4); pvd ADDED quotes (the ten sub-entries in the restored cell,
+restating the blockquote and entries table) and identifier `SiO2`; anneal ADDED number `130` (L11);
+sheet-resistance ADDED `skw-01` (M4); wet-bench ADDED `sst-akrion-scp-2007` (L7). The earlier pvd
+LOST quote `TiN` and the silicon/metal/single-wafer/oxidation DEDUPLICATED entry quotations are gone
+with M1.
+
+Checks after the round: `check_preserved --base 79de86aa --allow-regrouped --allow-deduplicated
+--strict-words` on the 13 touched pages shows only the losses and additions named above and in the
+page entries; `check_machines` 30/0, `check_refs` 264/0, `check_inforce` 0 problems,
+`gen_step_tables` and `gen_index_links --check` 0 differ; `-W` build clean. Tiles re-shot at 1280
+and 400 px for dielectric, pvd and sheet-resistance and read.
+
+**Content problem for the owner (L8):** sheet-resistance's BX-10 row gives Year 2000 from the page's
+"(2000)"; the only source is Sing, Borden and Bechtler's IIT 2000 paper, so the year may be the
+paper's rather than the tool's introduction.
 
 ## Guide problems
 
