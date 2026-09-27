@@ -42,7 +42,7 @@ boron, to diffuse further than is intended".[^wiki-furnace]
 What remains
 for the furnace are anneals where a long time is harmless or wanted:
 low-temperature sinters and alloys, densification, and anneals whose
-extra diffusion a flow can tolerate. An anneal furnace is the batch alternative
+extra diffusion a flow can tolerate. In a 130 nm flow an anneal furnace is the batch alternative
 to rapid thermal annealing for higher-temperature anneals.
 
 ### Inert anneals: nitrogen and argon
