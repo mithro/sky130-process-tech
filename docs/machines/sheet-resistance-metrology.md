@@ -138,8 +138,7 @@ practice; {ref}`HPETEST <step-171>`).
 
 | Vendor | Model | Year | Published figures |
 |---|---|---:|---|
-| Prometrix, then Tencor and KLA-Tencor | OmniMap four-point-probe mappers | — | "Based on the four-point probe technology pioneered by the Prometrix division"[^tencor-rs75-1995] |
-| Prometrix, then Tencor and KLA-Tencor | RS75 series, with its temperature-compensated RS75/tc model[^tencor-rs75-1995] | 1995 | — |
+| Prometrix, then Tencor and KLA-Tencor | OmniMap four-point-probe mappers | — | "Based on the four-point probe technology pioneered by the Prometrix division", including the RS75 series of 1995 with its temperature-compensated RS75/tc model[^tencor-rs75-1995] |
 | Prometrix, then Tencor and KLA-Tencor | OmniMap NC110 | — | "Measures resistivity directly on product wafers" and gives data on "aluminum and tungsten metallization schemes such as Ti/TiN/Al/TiN, TiN/W"[^tencor-resistivity-1997] |
 | Prometrix, then Tencor and KLA-Tencor | RS-100 | — | described on a 2002 capture, "the tool of choice in the metals, CMP, and diffusion modules"[^kla-rs100] |
 | Therma-Wave | Therma-Probe[^tw-history] | 1985 | — |
@@ -155,8 +154,8 @@ SkyWater's *Facilities & Capabilities* page names no four-point probe,
 thermal-wave monitor or other sheet-resistance gauge.[^skw-01] The
 nearest entries are the implanters, whose lines give dose ranges ("1e11
 to 1e14" on the "Axcelis 8250 Mid current" entry, "5e12 to 5e16" on the
-"Axcelis GSD Hi dose" entry) but no metrology, and the parametric tester
-"HP 4062UX" under "Wafer Sort/Test", which measures structures at
+"Axcelis GSD Hi dose" entry) but no metrology.[^skw-01] The parametric tester
+"HP 4062UX" under "Wafer Sort/Test" measures structures at
 electrical test rather than monitor wafers in line (our
 reading).[^skw-01] No job posting or profile quoted on the step pages
 names a sheet-resistance or thermal-wave tool.
