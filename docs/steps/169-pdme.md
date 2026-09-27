@@ -63,7 +63,7 @@ TiW-capped Al–Cu stack ({ref}`WTIAL5 <step-161>`). (Inference from the
 300 Å TiW caps of the S8 stacks in a Cypress report[^cyp-qtp-113005]
 and from Cypress's 2014 report, which moved the lower levels to Ti/TiN
 caps but qualified the S8P change "excluding top metal layers" and kept
-"300A TiW" on the S8DI top metal.[^cyp-qtp-123907]) (The whole of that
+"300A TiW" on the S8DI top metal;[^cyp-qtp-123907] the whole of that
 evidence is set out under {ref}`overview-metal-cap`.)
 
 If so, the etch or

@@ -909,3 +909,7 @@ positives above; every WORDS LOST word is named in its page entry.
 * **L1 (164):** the fuse-mask link loses its `Mask:` label (it is a step link, not this step's mask)
   and returns to its base wording, unlabelled, after `Same category:` and before `Category page:`
   (ruling D5).
+* **L5 (169):** the two consecutive parenthetical sentences are one again, in the base's words and
+  punctuation: "(Inference from … top metal;[^cyp-qtp-123907] the whole of that evidence is set out
+  under overview-metal-cap.)" — a hedge parenthetical sentence of about 46 words directly after the
+  reading it qualifies (R-SENTENCE step 7).
