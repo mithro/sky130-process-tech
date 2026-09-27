@@ -13,7 +13,7 @@ with each other and with S8. The page is generated from `data/history/qtp.yaml` 
   "Si2N4", "TeOs"). Where two reports on one process disagree, both appear.
 * **Our arithmetic.** The "Layer total" column adds up the films of one metal layer. It is not printed in
   the reports.
-* **What is missing.** The reports give no inter-metal dielectric thicknesses, no via or contact
+* **What is missing.** The reports give no {term}`inter-metal dielectric` thicknesses, no via or contact
   materials and no well or implant data, so the stack cannot be drawn to scale from them.
 * **Reissues.** Some reports are reissues with the process block replaced by "Proprietary"; those are
   left out here. See {ref}`history-fabs` for how reissues rename sites.
@@ -492,7 +492,7 @@ Each table gives one report's metal layers and passivation, with its design rule
 
 ### QTP 021507: Fab2, S4AD-5 (SONOS), R42D-5 derivative w/ 6 additional mask
 
-*Failsafe Device Family & Options S4AD-5 SONOS Technology, Fab 2.* Design rule: CMOS, Single Poly, Double Metal, 0.5 m (the µ is not printed in the report). Earliest dated history row: April 01 (QTP 010702).[^qtp-021507]
+*Failsafe Device Family & Options S4AD-5 {term}`SONOS` Technology, Fab 2.* Design rule: CMOS, Single Poly, Double Metal, 0.5 m (the µ is not printed in the report). Earliest dated history row: April 01 (QTP 010702).[^qtp-021507]
 
 | Layer | Films as printed | Layer total (our arithmetic) |
 |---|---|---|

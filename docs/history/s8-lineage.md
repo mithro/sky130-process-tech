@@ -32,7 +32,7 @@ logic process was qualified in January 2005, and L8C-3R is a "Technology Derivat
 S8's first metal layer is C8's, film for film: "100A Ti / 3200A Al -0.5%Cu / 300A TiW" against "100A
 Ti/3,200A Al 0.5% Cu /300A TiW" (Cypress's reports).[^pin-152804][^qtp-043004][^qtp-053301][^qtp-113005]
 
-**2. SONOS.** Cypress's earlier SONOS process, S4AD-5, had been in production since 2001. Cypress wrote in
+**2. SONOS.** Cypress's earlier {term}`SONOS` process, S4AD-5, had been in production since 2001. Cypress wrote in
 2008 that its SONOS module can be added "into a logic process flow or an SRAM process flow with the
 addition of three to five masking layers" (Cypress's reports).[^eflash-brief][^qtp-021507][^chipest-2008]
 
