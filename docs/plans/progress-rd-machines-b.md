@@ -654,6 +654,44 @@ quotations.
 
 Content problems for the owner: none found.
 
+### 12. `docs/machines/vertical-furnace-anneal.md` — done
+
+Rules applied: R-INTRO, R-MODELS, R-PARA, R-SENTENCE, R-RELATED, R-CAPTION. Skipped R-ENTRIES:
+the gloss is two clauses over three entries ("argon and nitrogen anneals up to 1150 °C, and an
+alloy …"); a table would repeat the three quotations, their numbers included. Skipped
+R-QUICKFACTS: every over-cap cell is quotations and figures in one number-order unit, or found
+only in the quick facts (Ambients' two quotations are in the body, but removing them drops 5 and
+10 from the cell's number order).
+
+* **R-INTRO.** 134 → 63 words: the first sentence and "In a 130 nm flow its main task is the
+  hydrogen alloy — … interface." (the second sentence split at "— and it is"). "It is the batch
+  alternative to rapid thermal annealing for higher-temperature anneals" moved to the end of the
+  first H2's lead, subject restored ("An anneal furnace is …"). Pointer → `{seealso}`. Deleted
+  template sentence: "This page describes the class in general, lists representative 200 mm-era
+  models, and then says what SkyWater has published about its own furnaces and which SKY130 steps
+  this reference assigns to the class."
+* **R-MODELS.** Four bullets → 7 rows; the category-page remark stays. All Year cells `—`: the page
+  gives no model year ("sold on to Tetreon Technologies in 2004" is a sale, kept in Published
+  figures). Vendor "SVG Thermco, later Aviza Technology" as the page groups it.
+* **R-PARA / R-SENTENCE.** Long H3 bodies split at source seams. The Wikipedia sentence (87 words
+  by measure5) split after "the high-temperature anneals" with the neutral lead-in "In its words,"
+  before the lower-case quotation (R-SENTENCE step 7). Splits at semicolons (Ohashi, the well
+  anneal, forming gas / Illinois, Lyding / Kizilyalli, three integration items) and at ", and a slow
+  ramp".
+* **R-RELATED**, **R-CAPTION** as page 1.
+
+Caps (measure5): paragraphs > 100 6 → 0; list items > 60 1 → 0; sentences > 45 10 → 3 (Ohashi 58,
+over only by its quotations; a false 70-word flag, measure5 fusing "…oxygen and torch." with the
+next sentence, guide problem 1; the untouched grading bullet); table cells > 25 5 → 5 (quick facts).
+
+Preservation. DEDUPLICATED: number 200 (template sentence). ADDED markers: `ohashi-2007`,
+`wiki-furnace` (splits). REGROUPED: the models bullets → rows. Template losses: `about`, `SKY130`.
+Strict words: the template sentence only. Marker coverage: 10 flags, all read — model cells, halves
+whose base marker sat on the other clause ("A slow ramp …" is the category page's; "A well anneal
+is …" carries no source in the base either), and hedge words that stay inside their quotations.
+
+Content problems for the owner: none found.
+
 ## Guide problems
 
 1. **`measure5.py` fuses a sentence ending in "…ch."** Its abbreviation guard `(?<!ch\.)` (meant
