@@ -43,7 +43,7 @@ Running (2026-09-27): rd-machines-b, one agent at a time. W2 complete (all 171 s
 
 | Branch / worktree | Task | Model | State |
 |---|---|---|---|
-| `topic/rd-machines-b` | W3: machine pages 16–30 (plasma-etcher-dielectric … wet-bench) | Opus | writing |
+| `topic/rd-machines-b` | W3: machine pages 16–30 (plasma-etcher-dielectric … wet-bench) | Opus | written (18 commits, tip 8251edaa); Opus review running |
 
 Quota: on 2026-09-27 the owner chose to continue past the 75-point share at ONE agent at a time (one
 Opus writer batch, then its review, then the next) until the reset on 2026-10-01 10:00 UTC. Resume order after the reset (one Opus writer per batch, Opus review, four agents at most):
