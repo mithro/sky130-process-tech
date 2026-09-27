@@ -279,7 +279,7 @@ Status and expiry are estimates from public records and are not legal advice.
   layer is deposited on the nitride before {ref}`FOM <step-004>` (some
   fabs do, to control reflectivity at 248 nm) is unknown.
 * **Tube sharing.** Whether SkyWater's nitride tube is a dedicated one
-  or shared with the ONO and spacer nitrides is not public.
+  or shared with the {term}`ONO` and spacer nitrides is not public.
 
 <!-- footnotes -->
 

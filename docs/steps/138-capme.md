@@ -37,7 +37,7 @@
 the resist islands of {ref}`CAPM <step-137>` a plasma removes the
 blanket plate film of {ref}`CAPTIW1 <step-136>`, TiW as assumed
 there, of the order of 0.1 µm on our reading of the PDK's top-plate
-sheet resistance. The plasma stops on, or a little way into, the thin
+{term}`sheet resistance`. The plasma stops on, or a little way into, the thin
 capacitor dielectric of {ref}`CAPILD <step-135>`,
 leaving TiW only where the layout draws `capm`, "MiM capacitor plate
 over metal 3".[^pdk-06] The resist is then stripped; this reference
@@ -72,7 +72,7 @@ exposed to plasma.
 
 The etch therefore has to remove a refractory
 metal with very high {term}`selectivity` to a very thin dielectric and to
-stop within a few nanometres. For a TiW plate on an oxynitride, as assumed here (see
+stop within a few nanometres. For a TiW plate on an {term}`oxynitride`, as assumed here (see
 {ref}`CAPTIW1 <step-136>` and {ref}`CAPILD <step-135>`), that is a
 fluorine-etchable metal over a fluorine-etchable dielectric. A Texas Instruments patent that may still
 be in force states the target for exactly this operation — the
@@ -84,7 +84,7 @@ The other two patents take the alternative, in which the
 dielectric is patterned with the plate. The Philips patent etches its
 ~3000 Å TiN top electrode and the insulator in a multi-rate etch,
 slowing near the TiN/insulator interface and stopping close to the TiN
-ARC on the bottom electrode.[^pat-mim-philips] The Newport Fab process
+{term}`ARC` on the bottom electrode.[^pat-mim-philips] The Newport Fab process
 etches the TiN top plate and the nitride dielectric together and then
 protects the stack's sidewall with an oxide spacer.[^pat-mim-newportfab]
 
@@ -110,7 +110,7 @@ Against the literal reading stands the selectivity available, so far as
 it is published. For a TiW plate the only figure this reference has
 found is Liu and Kuo's: etching TiW in CF₄-based plasmas they report
 that "an etch selectivity of greater than 2 was achieved under the low
-ion bombardment condition" against plasma-enhanced CVD silicon
+ion bombardment condition" against plasma-enhanced {term}`CVD` silicon
 nitride.[^liu-2007-tiw] That is a floor they reached, not a maximum they
 measured, and the abstract gives no upper figure.
 
@@ -215,7 +215,7 @@ entry.
 
 What is specific
 to this instance within the flow is the stop. The other refractory
-etches (the TiN local interconnect of {ref}`LI1ME <step-103>`, the
+etches (the TiN {term}`local interconnect` of {ref}`LI1ME <step-103>`, the
 caps opened at the start of every aluminium etch) land on thick
 oxide or continue into aluminium; this one must land on a film thinner
 than its own {term}`over-etch` would normally consume.
@@ -225,7 +225,7 @@ than its own {term}`over-etch` would normally consume.
 * **It makes the plates.** The etch turns the `capm` resist image into
   discrete top electrodes; their area, with the dielectric's
   thickness, is the capacitance the PDK models as 2 fF/µm² plus
-  0.19 fF/µm of periphery.[^pdk-07] The etch bias — how much the
+  0.19 fF/µm of periphery.[^pdk-07] The {term}`etch bias` — how much the
   plate shrinks or grows relative to the drawn shape — is folded
   into those two numbers.
 * **It must not open the dielectric.** Outside the plates the
@@ -274,7 +274,7 @@ end (SKY130's recipe is not public):*
    — with helium backside cooling and optical-emission
    {term}`endpoint`; SkyWater's metal etchers are both qualified for
    "TiW".[^skw-01]
-2. **BARC open** (if a BARC was used at {ref}`CAPM <step-137>`): a
+2. **BARC open** (if a {term}`BARC` was used at {ref}`CAPM <step-137>`): a
    short O₂/N₂ step.
 3. **Main etch.** A halogen chemistry at moderate bias. It is Cl₂ (or BCl₃) with a small
    fluorine-bearing addition such as CF₄, CHF₃ or SF₆, in argon.

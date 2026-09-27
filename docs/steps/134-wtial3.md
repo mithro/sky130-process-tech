@@ -14,11 +14,11 @@
 :class: at-a-glance
 
 * **Does:** deposits the metal-3 film stack — the first thick metal of
-  the flow — which stays blanket while the MiM capacitor is built on it.
+  the flow — which stays blanket while the {term}`MiM capacitor` is built on it.
 * **Why:** metal 3 is the flow's first coarse-pitch, low-resistance
   level, and its cap is the MiM capacitor's bottom-electrode surface.
 * **Public numbers:** `met3` 0.845 µm on the PDK's stack
-  diagram;[^pdk-04] 47 mΩ/sq sheet resistance;[^pdk-08] 0.300 µm width
+  diagram;[^pdk-04] 47 mΩ/sq {term}`sheet resistance`;[^pdk-08] 0.300 µm width
   and space (m3.1, m3.2).[^pdk-periph]
 * **Likely SkyWater tool:** AMAT PVD Metal — **strong** (the vendor and
   the films); **inferences** (the platform model and the choice of Ti
@@ -31,8 +31,8 @@
 ## What this step is
 
 `WTIAL3` deposits the metal-3 film stack — the first *thick* metal
-of the flow. Onto the polished cap oxide and tungsten via-2 plugs left
-by {ref}`WCMP4 <step-133>` a sputtering cluster tool lays down, in one
+of the flow. Onto the polished {term}`cap oxide` and tungsten via-2 plugs left
+by {ref}`WCMP4 <step-133>` a sputtering {term}`cluster tool` lays down, in one
 vacuum sequence on our reading, a thin refractory bottom layer, a
 much thicker aluminium–copper alloy than at metals 1 and 2, and a
 refractory cap.
@@ -146,7 +146,7 @@ taken here as evidence either way. We describe the bottom layer as
 ## Step category
 
 `WTIAL3` is a {ref}`Thin-film deposition <category-deposition>` step
-of the *PVD, multi-layer metal* class.
+of the *{term}`PVD`, multi-layer metal* class.
 
 {ref}`TIAL6 <step-112>` sets
 out the sputtering of Ti, Al–Cu and Ti:W films and the reasons for
@@ -159,7 +159,7 @@ lower levels (and a 2 µm thick-metal option[^pdk-03] longer still),
 heats the wafer more, grows larger grains, and stores more stress.
 
 The film's
-hillocks, its wafer bow and its later etch ({ref}`MM3E <step-140>`)
+{term}`hillocks <hillock>`, its wafer bow and its later etch ({ref}`MM3E <step-140>`)
 all scale with it. And the stack must serve as a capacitor electrode:
 its cap is the surface on which {ref}`CAPILD <step-135>` deposits
 the MiM dielectric, so its roughness and its chemistry set the
@@ -197,7 +197,7 @@ its own:
 
   Nix and Arzt
   describe void nucleation and growth in such lines,[^nix-1992] and
-  May, and Martin and McPherson, the via electromigration of
+  May, and Martin and McPherson, the via {term}`electromigration` of
   Ti:W/Al–Cu multilayer metallisation.[^may-1991][^martin-1989]
 * **Hillocks and stress in a thick film.** Hillock growth in
   aluminium films — Chaudhari's analysis[^chaudhari-1974] — and its
@@ -238,7 +238,7 @@ thicknesses in the Cypress reports[^cyp-qtp-113005][^cyp-qtp-123907]);
 the film-by-film account is at {ref}`TIAL6 <step-112>`.*
 
 1. **Cluster tool.** A multi-chamber PVD platform — SkyWater's "AMAT
-   PVD Metal" with "Sputter etch, degas"[^skw-01] — so that degas,
+   PVD Metal" with "Sputter etch, degas"[^skw-01] — so that {term}`degas`,
    pre-clean and the depositions happen without an air break; the
    Endura is the 200 mm-era Applied Materials platform.[^amat-endura]
 2. **Degas and pre-clean.** A vacuum bake, then a light argon sputter

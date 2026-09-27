@@ -20,8 +20,8 @@
   {ref}`NTSD <step-167>` line a path down into the dielectric stack at
   the die edge (inference).
 * **Public numbers:** the ring at least 3 µm wide (nsm.1) and at least
-  1 µm clear of diffusion, poly, local interconnect and metal except the
-  seal ring's own diffusion rings
+  1 µm clear of diffusion, poly, {term}`local interconnect` and metal except the
+  {term}`seal ring`'s own diffusion rings
   (nsm.3);[^pdk-periph] none published for the depth.
 * **Likely SkyWater tool:** none named — no dielectric etcher is on
   SkyWater's public list; the three listed poly/silicon etchers are
@@ -77,7 +77,7 @@ list used in this reference does not say how deep `NSME` goes; we
 describe two readings (inference):
 
 * **A deep seal etch.** The opening is cut through the inter-level
-  oxides — and possibly the LINIT nitride and PSG — towards the silicon
+  oxides — and possibly the LINIT nitride and {term}`PSG` — towards the silicon
   of the seal ring, so that the passivation nitride deposited next forms
   a continuous wall from the top of the die down into the dielectric
   stack.
@@ -179,7 +179,7 @@ public):*
    in a high-density C₂F₆ plasma[^perry-2001] — the ratio that decides
    whether the resist of {ref}`NSM <step-165>` survives a deep etch. A
    TSMC fuse-window patent etches through a passivation and several
-   inter-metal dielectrics in two steps, the second with "a high
+   {term}`inter-metal dielectrics <inter-metal dielectric>` in two steps, the second with "a high
    selectivity to the silicon nitride etch stop layer".[^pat-fusewin-tsmc]
 3. **Nitride layers.** If the etch is to pass the LINIT nitride, a less
    polymerising, more oxygen- or fluorine-rich step breaks through it.

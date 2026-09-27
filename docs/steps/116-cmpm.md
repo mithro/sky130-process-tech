@@ -18,7 +18,7 @@
 * **Why:** without it the topography accumulates; by metal 2 the steps
   would exceed the depth of focus of a 248 nm exposure.
 * **Public numbers:** via-1 height 0.27 µm;[^pdk-04] minimum oxide
-  pattern density 0.7 (m1.pd.1) in 700 µm windows.[^pdk-periph]
+  {term}`pattern density` 0.7 (m1.pd.1) in 700 µm windows.[^pdk-periph]
 * **Likely SkyWater tool:** Applied Materials Mirra CMP — **strong**
   (the tool and its oxide polish); assignment to this step is an
   **inference**.[^skw-01]

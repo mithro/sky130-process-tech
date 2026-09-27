@@ -92,7 +92,7 @@ Cypress reports.[^pdk-04][^cyp-qtp-123907])
 ## Step category
 
 `NFUSOX` is a {ref}`Thin-film deposition <category-deposition>` step
-of the *{term}`PECVD` oxide* class, like the cap oxides
+of the *{term}`PECVD` oxide* class, like the {term}`cap oxides <cap oxide>`
 {ref}`NCAPOX3 <step-117>` to {ref}`NCAPOX6 <step-158>`.
 
 Two things set

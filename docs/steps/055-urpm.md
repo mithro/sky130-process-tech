@@ -110,7 +110,7 @@ model, sit on different parts of the steep resistance-versus-doping
 curve.[^seto-1975] So they need separate, individually controlled
 doses.
 
-Lane and Wrixon's published design space for implanted LPCVD
+Lane and Wrixon's published design space for implanted {term}`LPCVD`
 poly — sheet resistances from 40 to 2400 Ω/sq within a ±500 ppm/°C
 temperature coefficient, for films 50–600 nm thick — puts 2000 Ω/sq at
 the high end of what an ordinary implanted-poly resistor process

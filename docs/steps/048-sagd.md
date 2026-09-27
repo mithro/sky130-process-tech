@@ -75,7 +75,7 @@ leave nothing for a resistor mask to protect.
 * **A polycide gate** (poly under tungsten {term}`silicide`, used by DRAM
   makers to cut gate resistance).
 * **A stacked-amorphous-silicon gate**, in which two thin a-Si layers are
-  deposited with an interface between them to block boron penetration
+  deposited with an interface between them to block {term}`boron penetration`
   through the gate oxide.
 
 This reference describes
@@ -90,7 +90,7 @@ the gate as unsilicided (inference, as on {ref}`P1I <step-050>`).
 `SAGD` is a {ref}`Thin-film deposition <category-deposition>` step — a
 furnace LPCVD deposition like {ref}`ISONIT <step-003>`;
 {ref}`GATENIT <step-058>` reads the gate nitride as either furnace
-LPCVD or PECVD and does not choose between them.[^skw-01]
+LPCVD or {term}`PECVD` and does not choose between them.[^skw-01]
 
 The category
 page explains the general
@@ -163,7 +163,7 @@ it.
 
 * **Pre-clean.** The wafer arrives with fresh gate oxide, so only a
   light clean (or none) is used; a dilute-HF step is excluded because
-  it would thin the ~4 nm oxide.[^pdk-model-nfet01v8] Queue time
+  it would thin the ~4 nm oxide.[^pdk-model-nfet01v8] {term}`Queue time <queue time>`
   between gate oxidation and deposition is limited to keep the oxide
   surface clean.
 * **Chemistry.** Silane pyrolysis, SiH₄ → Si + 2 H₂, in a hot-wall

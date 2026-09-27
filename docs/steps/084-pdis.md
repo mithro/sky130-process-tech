@@ -20,7 +20,7 @@
 * **Public numbers:** none published for SKY130.
 * **Likely SkyWater tool:** GaSonics PEP, Iridia and Mattson Aspen II
   ashers — strong (existence); inference (assignment).[^skw-01]
-* **Not public:** the ash recipe and wet sequence, and how much
+* **Not public:** the {term}`ash` recipe and wet sequence, and how much
   {ref}`SPOX <step-080>` oxide loss is budgeted (→ Open questions).
 :::
 
@@ -114,7 +114,7 @@ fab (SKY130's recipe is not public):*
    environment"[^pat-strip-mosel] — until the crust is gone, so that
    the bulk cannot pop under it. Then a hotter step to remove the
    bulk quickly. The nitrogen addition that Fujimura et al. studied
-   raises the ash rate,[^fujimura-1990] and forming gas or water
+   raises the ash rate,[^fujimura-1990] and {term}`forming gas` or water
    vapour in the plasma penetrates the crust.[^fujimura-1994]
    Downstream configuration is used because "monatomic oxygen is
    electrically neutral" and the remote plasma "prevents damage to
@@ -130,7 +130,7 @@ fab (SKY130's recipe is not public):*
    options are what a crust step needs. The CF₄ additions available
    on two of the tools attack oxide and would, we infer, be omitted
    here.
-2. **Wet strip and clean.** SPM (H₂SO₄:H₂O₂, "3 parts of concentrated
+2. **Wet strip and clean.** {term}`SPM` (H₂SO₄:H₂O₂, "3 parts of concentrated
    sulfuric acid and 1 part of 30 wt. % hydrogen peroxide solution"
    is typical[^wiki-piranha]) to dissolve residual organics and the
    ash's residue, then SC-1 for particles and, optionally, SC-2 for

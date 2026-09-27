@@ -19,7 +19,7 @@
   out of the p-type ones.
 * **Public numbers:** width and space 0.380 µm (nsd.1, nsd.2); 0.200 µm
   clear of `rpm` (rpm.6).[^pdk-periph]
-* **Likely SkyWater tool:** ASML i-line stepper or scanner — strong
+* **Likely SkyWater tool:** ASML i-line {term}`stepper` or scanner — strong
   (existence); inference (assignment of `NSDM` to i-line).[^skw-01]
 * **Not public:** the resist, thickness, exposure tool and hardening
   step, inferred from the design rules and general practice
@@ -51,7 +51,7 @@ The PDK's mask table lists "N+ Implant, NSDM" as used in
 SKY130.[^pdk-05] The drawn layer is `nsdm` (GDS 93:44, "N+
 source/drain implant") and the generated mask layer `cnsdm` (30:0,
 "N+ Implant mask") with "mask add" (29:21) and "mask drop" (29:22)
-purposes,[^pdk-06] so the reticle is derived from the drawn layer by
+purposes,[^pdk-06] so the {term}`reticle` is derived from the drawn layer by
 Boolean operations.
 
 The rules are shared with `psdm` under "Defines
@@ -104,7 +104,7 @@ regions inside `nsdm` are:
   NMOS and the ESD NMOS, whose cross-sections show "N+" source/drain
   beside the "N−" extensions.[^pdk-07] The drain-extended NMOS
   source must be enclosed by `nsdm` (a `de_nFet_source` rule);[^pdk-periph]
-* the **SONOS memory cells**, which are NMOS transistors with an ONO
+* the **SONOS memory cells**, which are NMOS transistors with an {term}`ONO`
   gate stack ({ref}`ONO <step-040>`) and whose source/drain are made
   here (inference from the device being an n-channel FET[^pdk-07]);
 * the **n⁺ taps** (`tap`, "type equal to the well/substrate
@@ -114,7 +114,7 @@ regions inside `nsdm` are:
   **base contact of the PNP**, whose cross-sections show "N+" regions
   labelled E, C and B respectively;[^pdk-07]
 * the **N⁺ diffusion resistor** (`res_generic_nd`, "N+
-  diffusion"),[^pdk-07] with a sheet resistance of 120 000 mΩ/sq
+  diffusion"),[^pdk-07] with a {term}`sheet resistance` of 120 000 mΩ/sq
   (120 Ω/sq) in the extraction tables;[^pdk-08]
 * the **P-well-to-n⁺ diodes** (`diode_pw2nd_*`);[^pdk-07]
 * the poly contact heads outside resistors, which — on the reading of
@@ -126,7 +126,7 @@ regions inside `nsdm` are:
 Kept *out* are the PMOS source/drains, p⁺ taps, PNP emitters and
 collectors and P⁺ resistors (nsd.8), and the capped gates, which on
 our reading receive nothing from either source/drain implant. The
-enclosure and spacing values reflect the lateral straggle and
+enclosure and spacing values reflect the lateral {term}`straggle` and
 {term}`mask-proximity effects <mask-proximity effect>` measured by Hook et al.[^hook-2003] and
 modelled by Sheu et al.,[^sheu-2006] whose implications for analogue
 layout Drennan, Kniffin and Locascio describe.[^drennan-2006]
@@ -139,7 +139,7 @@ resistor or diode could be made without doping the p-type devices.
 *An industry-generic high-dose implant-block lithography sequence for
 a 200 mm, 130 nm-era fab (SKY130's is not public):*
 
-1. **Surface preparation.** Dehydration bake and HMDS prime; the
+1. **Surface preparation.** Dehydration bake and {term}`HMDS` prime; the
    surface is the {ref}`SPOX <step-080>` oxide, slightly thinned by
    the {ref}`PDIS <step-084>` clean.[^txt-02]
 2. **Resist coat.** A single-layer positive resist of about 1 µm —
@@ -153,15 +153,15 @@ a 200 mm, 130 nm-era fab (SKY130's is not public):*
    Romig et al.,[^romig-1996] and Lukaszek, Reno and Bammi (for an
    arsenic implant specifically)[^lukaszek-1996] describe.
 3. **Exposure.** At 0.380 µm minimum feature and space,[^pdk-periph]
-   an i-line stepper at NA 0.6 gives k₁ ≈ 0.62, comfortably above
+   an i-line stepper at {term}`NA` 0.6 gives k₁ ≈ 0.62, comfortably above
    the "0.4 for production" limit;[^wiki-litho] we infer an
    **i-line** exposure, as for `PSDM`. ASML describes older exposure
    tools that "migrate to the lithography of choice for less critical
    layers".[^asml-30]
-4. **Alignment.** To the active/STI pattern (0.125 µm diffusion
+4. **Alignment.** To the active/{term}`STI` pattern (0.125 µm diffusion
    enclosure) and, for the butting edges and the resistor rule, to
    poly and to the `PSDM` pattern; Levinson's book has a chapter on
-   overlay.[^levinson-2005]
+   {term}`overlay`.[^levinson-2005]
 5. **Develop** in 2.38 % (0.26 N) TMAH,[^txt-02] rinse, dry; hard bake or UV
    cure against the implant, the outgassing of thick resist under
    implantation having been measured by Lee et al.[^lee-1996] and
@@ -209,7 +209,7 @@ a 200 mm, 130 nm-era fab (SKY130's is not public):*
 * Same module: the complementary mask, {ref}`PSDM <step-081>`; the
   extensions the N⁺ junction joins, {ref}`ASTI <step-065>`,
   {ref}`HVASTI <step-069>`, {ref}`LDASTI <step-072>`.
-* Structures it dopes: NMOS source/drain (including SONOS cells),
+* Structures it dopes: NMOS source/drain (including {term}`SONOS` cells),
   n⁺ taps, NPN emitter/collector contacts, PNP base contacts, N⁺
   diffusion resistors, n-diodes, and n⁺ poly heads opened at
   {ref}`NPCM <step-078>`.

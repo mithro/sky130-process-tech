@@ -111,7 +111,7 @@ By maximum-transconductance extrapolation at V_DS = 0.1 V, less half
 the drain bias, we extract 0.432 V for `nfet_01v8_lvt` against 0.534 V
 for `nfet_01v8` at 7/8 µm, and 0.612 V against 0.707 V at 7/0.15 µm.
 These are differences of 0.102 V and 0.095 V, against 0.101 V and
-0.089 V between the PDK's e-test nominals.
+0.089 V between the PDK's {term}`e-test` nominals.
 
 For two 7/0.15 µm structures with the same
 source/drain extent (2.5 µm) the low-Vt device carries 3.84 mA against
@@ -179,7 +179,7 @@ below are typical or taken from contemporaneous patents.*
   sputtered resist off the silicon; its thickness is the patent figure
   in the collapsed note below this list.
 * **Charge control and wafer cooling.** Electron shower and cooled
-  electrostatic chuck — both features SkyWater lists for its
+  {term}`electrostatic chuck` — both features SkyWater lists for its
   medium-current tool ("ESC chuck, E shower").[^skw-01]
 * **Anneal.** None here; activation waits for {ref}`RTAI <step-034>`,
   after all well implants.

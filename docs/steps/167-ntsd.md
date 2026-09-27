@@ -82,7 +82,7 @@ not explain the film.
 the *PECVD nitride* class — the film the category page describes as
 "the final scratch- and moisture-resistant passivation".
 
-{ref}`LINIT <step-104>`, over the local interconnect, is the flow's
+{ref}`LINIT <step-104>`, over the {term}`local interconnect`, is the flow's
 other nitride on conductors (a plasma nitride on the reading of that
 page), 0.075 µm thick.[^pdk-04] This one is several times thicker,
 is deposited over the tallest topography in the flow (1.26 µm metal-5
@@ -131,7 +131,7 @@ touches.
   Kuiper review the films' composition and properties.[^habraken-1994]
 * **Sealing the die edge (inference).** Deposited into the `nsm`
   opening, the nitride can form a wall through the dielectric stack at
-  the seal ring, the construction a GlobalFoundries edge-seal patent
+  the {term}`seal ring`, the construction a GlobalFoundries edge-seal patent
   that may still be in force describes (collapsed note below this list).
   That SKY130's nitride does
   this is our reading of the `nsm` rules and seal-ring layout
@@ -174,7 +174,7 @@ aluminium top metal for a 200 mm, 130 nm-era fab (SKY130's recipe is not
 public):*
 
 1. **Surface.** The wafer comes from the {ref}`NSME <step-166>` strip
-   and clean; a short {term}`queue time` and, often, a degas or N₂
+   and clean; a short {term}`queue time` and, often, a {term}`degas` or N₂
    plasma before deposition (industry practice[^txt-05]).
 2. **Chamber and temperature.** A single-wafer or multi-station PECVD
    reactor at roughly 300–400 °C (industry-typical for films on
@@ -245,7 +245,7 @@ public):*
 
   Reading "C1" as a Novellus Concept One is an
   inference from the vendor's product names.[^novellus-history]
-* **Aviza furnace nitrides** (LPCVD, BTBAS)[^skw-01] are excluded on
+* **Aviza furnace nitrides** ({term}`LPCVD`, BTBAS)[^skw-01] are excluded on
   thermal grounds for a wafer carrying aluminium (inference).
 
 ## Resources required

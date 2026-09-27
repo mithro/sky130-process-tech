@@ -167,7 +167,7 @@ polisher, which is what this step needs.
   category page) and **pad conditioners** (diamond discs).[^wiki-cmp]
 * **{ref}`DI water <material-ultrapure-water>`** in large volumes; **dilute NH₄OH** (category page) or a
   **surfactant**, as the recipe outline above gives for this
-  ceria-capable polish, possibly **dilute HF**, for the post-CMP clean;
+  ceria-capable polish, possibly **dilute HF**, for the {term}`post-CMP clean`;
   **PVA brushes**.
 * **Carrier-head consumables** — membranes, retaining rings.
 * **Slurry supply and {ref}`waste treatment <material-hardware-consumables>`** — CMP is one of the largest

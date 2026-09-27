@@ -128,7 +128,7 @@ conditions in SKY130 are not public.
   density affects threshold voltage, subthreshold slope and 1/f noise of
   every transistor the PDK models.
 * **Repairing back-end plasma damage.** Every plasma step since the
-  gates were formed — contact, via and metal etches, HDP and PECVD
+  gates were formed — contact, via and metal etches, HDP and {term}`PECVD`
   depositions, the passivation etches — can charge gate oxides through
   the interconnect.
 
@@ -216,7 +216,7 @@ an aluminium back end (SKY130's recipe is not public):*
 * **Sequence.** Load; nitrogen purge; ramp; hydrogen-bearing gas at
   temperature; soak; purge; controlled ramp-down to limit thermal-stress
   cycling of the metal; unload.
-* **Single-wafer alternative.** A forming-gas anneal in an RTP chamber
+* **Single-wafer alternative.** A forming-gas anneal in an {term}`RTP` chamber
   is possible but uncommon for the final sinter; SkyWater's Heatpulse
   8808 lists "NH3, Ar, N2, O2" but not H₂ or forming gas,[^skw-01] which argues
   for the furnace here (inference).

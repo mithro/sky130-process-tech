@@ -78,7 +78,7 @@ plate voltages of 0–5.0 V.[^pdk-07] Its e-test table sets the `CMIMP` limits
 at 0.11–0.27 fF/µm.[^pdk-07]
 
 Measured values are public as well. The SKY130 raw-data repository
-publishes capacitance–voltage sweeps of the test tile's "CAPM on M3"
+publishes capacitance–voltage sweeps of the {term}`test tile`'s "CAPM on M3"
 capacitors, whose areas and perimeters the pad list
 gives.[^raw-data-testtile-pads][^raw-data-passives] Fitted over
 −3.3 V to +3.3 V, the 11-plate, 17 600 µm² capacitor measures 33.26 pF
@@ -184,7 +184,7 @@ generation.[^kar-roy-1999][^babcock-2001][^ng-2003]
   conductor,[^pdk-07] SKY130's.
 
   IBM's patent reaches a planar bottom plate by
-  damascene and CMP instead.[^pat-mim-ibm] The price is that
+  {term}`damascene` and {term}`CMP` instead.[^pat-mim-ibm] The price is that
   the metal-3 etch must later cut through the dielectric wherever it
   remains ({ref}`MM3E <step-140>`).
 * **Oxynitride rather than oxide or nitride.** PECVD silicon nitride
@@ -235,7 +235,7 @@ back end (SKY130's recipe is not public):*
    Some flows pre-treat the electrode in an NH₃ or N₂
    plasma — the Philips patent claims an ammonia-plasma treatment of
    the bottom electrode to reduce its oxidation[^pat-mim-philips] —
-   and the queue time from PVD to deposition is limited (industry
+   and the {term}`queue time` from PVD to deposition is limited (industry
    practice[^txt-05]).
 2. **Chamber and temperature.** A single-wafer or multi-station PECVD
    reactor at 300–400 °C (industry-typical for films on

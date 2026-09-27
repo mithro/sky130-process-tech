@@ -201,7 +201,7 @@ preferred.[^pat-03]
   - *SkyWater says:* lists "industry standard HF/SC1/SC2"; "dilute HF-last
     with IPA dry".[^skw-01]
   - *Tool exists:* strong for existence — a pre-gate clean with
-    HF-last is exactly the option listed.
+    {term}`HF-last` is exactly the option listed.
   - *Runs this step:* inference.
 * **FSI Mercury / SEZ 223 / Da Vinci**
   - *SkyWater says:* lists "HF/SC1/SC2 rotational" and "HF, DSP+HF,

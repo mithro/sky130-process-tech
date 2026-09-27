@@ -100,7 +100,7 @@ A polish alone does not give a via level what it needs;
 the via-3 numbers:
 
 * **Thickness control.** The {ref}`CMPM3 <step-142>` polish is stopped
-  by removal amount and varies with pattern density — the variation
+  by removal amount and varies with {term}`pattern density` — the variation
   Boning et al. and Chang et al. characterised.[^boning-1994][^chang-1995]
 
   Polishing slightly below target and adding a cap of well-controlled
@@ -113,14 +113,14 @@ the via-3 numbers:
   thickness restores a minimum distance between the plate and metal 4
   (inference from the construction; the estimate of the remaining
   oxide is at {ref}`CMPM3 <step-142>`).
-* **Sealing the polished surface.** Oxide CMP leaves micro-scratches,
+* **Sealing the polished surface.** Oxide {term}`CMP` leaves micro-scratches,
   embedded particles — Devriendt et al. relate them to the post-CMP
   clean[^devriendt-1998] — and a hydroxyl-rich surface layer.[^moon-2016]
   A fresh plasma oxide buries them so that they do not seed via-etch
   defects or release water into the vias, the outgassing that
   poisons tungsten nucleation.[^kobayakawa-1991]
 * **A known surface for lithography.** The {ref}`VIM3 <step-144>`
-  resist and BARC are tuned to a reproducible oxide thickness over
+  resist and {term}`BARC` are tuned to a reproducible oxide thickness over
   reflective metal and TiW plates; the swing-curve reflectivity
   depends on it.[^brunner-1991]
 
@@ -157,7 +157,7 @@ some capacitor plates would be thinner than intended.
    that polished NILD5 plus cap reaches the 0.39 µm via-3 height[^pdk-04].
 4. **Film properties.** A dense, low-hydrogen film; hydrogen evolution
    from plasma oxide on later heating changes its stress,[^mani-2007]
-   and a wet cap defeats its purpose. LPCVD TEOS[^adams-1979][^becker-1987]
+   and a wet cap defeats its purpose. {term}`LPCVD` TEOS[^adams-1979][^becker-1987]
    would give a denser film but at 650–750 °C, far above the aluminium
    limit (inference from the temperature).
 5. **Plasma exposure.** The deposition plasma reaches a wafer whose

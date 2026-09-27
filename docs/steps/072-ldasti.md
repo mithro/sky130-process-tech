@@ -15,7 +15,7 @@
 
 * **Does:** implants a lightly doped arsenic tip into the SONOS memory
   transistors through the `LDNTM` windows, self-aligned to the gate.
-* **Why:** a lightly doped, graded junction keeps the peak field low at
+* **Why:** a lightly doped, {term}`graded junction` keeps the peak field low at
   the cell's programme, erase and inhibit voltages.
 * **Public numbers:** none published for SKY130; the PDK's "N Tip (As)"
   row gives the species.[^pdk-03]

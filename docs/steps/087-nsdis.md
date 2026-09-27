@@ -17,11 +17,11 @@
   implant and cleans the wafer for the {ref}`RTAD <step-088>` anneal.
 * **Why:** anything it leaves behind — organic residue, implanter
   metals, arsenic-bearing crust (the species we infer) — goes into the
-  RTA with the wafer.
+  {term}`RTA` with the wafer.
 * **Public numbers:** none published for SKY130.
 * **Likely SkyWater tool:** GaSonics PEP, Iridia and Mattson Aspen II
   ashers — strong (existence); inference (assignment).[^skw-01]
-* **Not public:** the ash recipe and wet sequence, whether the clean
+* **Not public:** the {term}`ash` recipe and wet sequence, whether the clean
   includes SC-2 or an HF step, and how much oxide survives
   (→ Open questions).
 :::
@@ -68,7 +68,7 @@ needed to cap the anneal.
 *post-high-dose-implant* type, the twin of {ref}`PDIS <step-084>`.
 
 The
-category page explains the crust and the popping it causes when the
+category page explains the crust and the {term}`popping` it causes when the
 wafer is heated quickly ("build[s] up pressure beneath the
 implant-hardened surface layer"[^pat-strip-mosel]). At an arsenic dose
 of 10¹⁵ cm⁻² the crust is at its worst.
@@ -88,7 +88,7 @@ Two things must be true before {ref}`RTAD <step-088>`:
   be entirely gone.** Organic residue carbonises in the anneal and
   becomes an un-removable defect. A popped flake of crust on a
   source/drain region masks nothing at this point but becomes a particle
-  under the sacrificial PSG ({ref}`PSG <step-089>`) and the polish that
+  under the sacrificial {term}`PSG` ({ref}`PSG <step-089>`) and the polish that
   follows.
 * **The wafer must be clean of metals:** the implanter's
   beam-line and disc sputter metal onto the resist and the exposed
@@ -126,7 +126,7 @@ a 200 mm, 130 nm-era fab (SKY130's recipe is not public):*
    nitrogen/hydrogen plasma in a low-temperature (<220° C.)
    environment"[^pat-strip-mosel] — takes the crust off without
    popping, then a hotter step removes the bulk. Nitrogen raises
-   the ash rate,[^fujimura-1990] and forming gas or water vapour
+   the ash rate,[^fujimura-1990] and {term}`forming gas` or water vapour
    penetrates the crust.[^fujimura-1994] Chan, Chiu and Tao describe
    an ashing sequence designed around the "carbonized
    crust".[^pat-strip-tsmc] The downstream configuration keeps ions
@@ -143,7 +143,7 @@ a 200 mm, 130 nm-era fab (SKY130's recipe is not public):*
    The CF₄ options would, we infer, be left out to
    spare the oxide.
 2. **Wet strip and clean.**
-   - SPM (H₂SO₄:H₂O₂, typically "3 parts of
+   - {term}`SPM` (H₂SO₄:H₂O₂, typically "3 parts of
      concentrated sulfuric acid and 1 part of 30 wt. % hydrogen
      peroxide solution"[^wiki-piranha]) to remove the last organics
      and ash residue;

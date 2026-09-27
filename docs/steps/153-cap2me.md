@@ -21,7 +21,7 @@
   electrodes, whose area, with the dielectric thickness, sets the
   capacitance the PDK models.
 * **Public numbers:** `CMIM2A` 2 fF/µm² and `CMIM2P` 0.19 fF/µm; the
-  plate's 5.8 Ω/sq MiM2 top-plate sheet resistance.[^pdk-07]
+  plate's 5.8 Ω/sq MiM2 top-plate {term}`sheet resistance`.[^pdk-07]
 * **Likely SkyWater tool:** Lam 9600 or Lam 2300 Versys — **strong**
   for the tools and for TiW as a qualified material; which runs this
   step is not public.[^skw-01]
@@ -108,7 +108,7 @@ As at {ref}`CAPME <step-138>`, we describe the
 stop-on-dielectric version, on the published selectivities set out
 there and because, if the metal-4
 cap is the same TiW as the plate, a through-etch would have no
-selective stop (inference). The selectivities are "greater than 2" for TiW against PECVD nitride in a CF₄-based
+selective stop (inference). The selectivities are "greater than 2" for TiW against {term}`PECVD` nitride in a CF₄-based
 plasma, a floor rather than a measured maximum,[^liu-2007-tiw] against
 the much higher figures of the Texas Instruments patent for a different
 film, dielectric and chemistry (collapsed note above), which are not
@@ -133,7 +133,7 @@ the two capacitor-plate etches of the flow, with {ref}`CAPME <step-138>`.
   titanium–tungsten films etch by reactive-ion etching in CF₄-based
   plasmas, CF₄/Cl₂ among them.[^liu-2007-tiw]
 * Chlorine discharges also etch
-  tungsten, as Fischl and Hess showed for tungsten and tungsten silicide
+  tungsten, as Fischl and Hess showed for tungsten and tungsten {term}`silicide`
   in chlorine-containing plasmas.[^fischl-1987]
 * A mostly chlorine or
   bromine flow with a small fluorocarbon addition is, on
@@ -158,7 +158,7 @@ where metal 4 is patterned after this etch.)
 * **It makes the plates.** The etch turns the `cap2m` resist image
   into discrete top electrodes whose area, with the dielectric
   thickness, sets the `CMIM2A` 2 fF/µm² and `CMIM2P` 0.19 fF/µm the PDK
-  models;[^pdk-07] the etch bias is folded into those two numbers.
+  models;[^pdk-07] the {term}`etch bias` is folded into those two numbers.
 * **It must not open the dielectric.** Outside the plates the
   dielectric is all that separates the plasma from the metal-4 cap,
   which fluorine etches whether it is TiW (as WF₆ and TiF₄) or TiN (as
@@ -204,7 +204,7 @@ same sequence.*
    or Applied Materials' DPS reactor[^pat-dps-amat] — with helium
    backside cooling and optical-emission {term}`endpoint`; SkyWater's
    two metal etchers are both listed for "TiW".[^skw-01]
-2. **BARC open** (if a BARC was used at {ref}`CAP2M <step-152>`): a
+2. **BARC open** (if a {term}`BARC` was used at {ref}`CAP2M <step-152>`): a
    short O₂/N₂ step.
 3. **Main etch.** A chlorine- or bromine-based chemistry with a small
    fluorocarbon addition in a noble-gas carrier (industry practice;

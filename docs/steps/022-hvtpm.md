@@ -139,14 +139,14 @@ high-Vt varactor would not exist, and low-leakage standard-cell
 libraries built on them could not be offered.
 
 The varactor shows what the high-Vt implants change. The device page's
-e-test table gives the high-Vt option, at the same size, about twice
+{term}`e-test` table gives the high-Vt option, at the same size, about twice
 the minimum capacitance of the low-Vt one (`VC2_CMIN_5_5` 4.197 pF
 against `VC_CMIN_5_5` 2.058 pF) and almost the same maximum (20.37 pF
 against 20.26 pF). We read the parameter names, because the table's
 descriptions do not match them.[^pdk-07]
 
 Published
-capacitance–voltage sweeps of the test tile's two options, which the
+capacitance–voltage sweeps of the {term}`test tile`'s two options, which the
 pad list maps to `cap_var_lvt` and `cap_var_hvt`, show the same
 pattern. For 98 devices of 5 × 5 µm, 4.60 pF against 2.41 pF at −1.8 V, on the
 low-capacitance side, and 21.04 pF against 21.14 pF at 1.8 V into

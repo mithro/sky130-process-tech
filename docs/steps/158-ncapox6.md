@@ -91,7 +91,7 @@ A polish alone does not give a via level what it needs;
 via-4 numbers:
 
 * **Thickness control.** The {ref}`CMPM4 <step-157>` polish is stopped by
-  removal amount and varies with pattern density — the variation Boning
+  removal amount and varies with {term}`pattern density` — the variation Boning
   et al. and Chang et al. characterised.[^boning-1994][^chang-1995]
 
   Polishing slightly below target and adding a cap of well-controlled
@@ -104,13 +104,13 @@ via-4 numbers:
   restores a minimum distance between the plate and metal 5. (Inference
   from the construction; the estimate of the remaining oxide is at
   {ref}`CMPM4 <step-157>`.)
-* **Sealing the polished surface.** Oxide CMP leaves micro-scratches and
+* **Sealing the polished surface.** Oxide {term}`CMP` leaves micro-scratches and
   embedded particles — Devriendt et al. relate them to the post-CMP
   clean[^devriendt-1998] — and a hydroxyl-rich surface layer;[^moon-2016]
   a fresh plasma oxide buries them.
 
   Water released from a dielectric is
-  as harmful to an aluminium via fill as to a tungsten one. Kobayakawa et
+  as harmful to an {term}`aluminium via fill` as to a tungsten one. Kobayakawa et
   al. studied outgassing from spin-on-glass planarising films,[^kobayakawa-1991]
   and Taguchi, Maeda and Aoyama improved the filling of vias by
   high-pressure aluminium reflow by controlling water outgassing from the
@@ -154,7 +154,7 @@ plates would be thinner than intended.
    that polished NILD6 plus cap reaches the 0.505 µm via-4 height.[^pdk-04]
 4. **Film properties.** A dense, low-hydrogen film; hydrogen evolution
    from plasma oxide on later heating changes its stress,[^mani-2007] and
-   a wet cap defeats its purpose. LPCVD TEOS would give a denser film
+   a wet cap defeats its purpose. {term}`LPCVD` TEOS would give a denser film
    but at 650–750 °C, the industry-typical LPCVD TEOS window (textbook
    value[^txt-05]), far above the aluminium limit. (Adams and Capio and Becker et al. characterise the
    process.[^adams-1979][^becker-1987])

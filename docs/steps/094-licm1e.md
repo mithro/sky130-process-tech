@@ -43,7 +43,7 @@ taper — the PDK's "Licon1 etch angle" is 10°[^pdk-03] — and the
 drawn 0.17 µm opening maps to a "Standard Licon bottom CD" of
 0.08 µm on the wafer.[^pdk-03] The two numbers are not stated to
 belong to the same depth. They do not reconcile at the full
-0.5 µm of ILD: a 10° sidewall over 0.5 µm would close the hole by
+0.5 µm of {term}`ILD`: a 10° sidewall over 0.5 µm would close the hole by
 about 0.18 µm, while the published 0.17 → 0.08 µm narrowing over
 0.5 µm is about 5° (our arithmetic).
 

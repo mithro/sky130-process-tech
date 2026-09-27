@@ -78,7 +78,7 @@ cannot:
    carbon. Growing a thermal oxide consumes the damaged layer (46 % of
    the grown oxide thickness lies below the original
    surface[^wiki-thox]) and buries it in a clean, stoichiometric
-   SiO₂/Si interface. A 0.13 µm STI paper describes liner oxidation as
+   SiO₂/Si interface. A 0.13 µm {term}`STI` paper describes liner oxidation as
    included "to control the STI corner rounding to reduce the junction
    leakage and fix the damaged induced during STI plasma dry
    etch".[^thung-2016]

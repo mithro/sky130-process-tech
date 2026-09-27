@@ -110,7 +110,7 @@ insulator. The fill has to be:
 The filled trench also affects the transistors beside it mechanically:
 Bianchi, Bouche and Roux-dit-Buisson model the "mobility variations"
 that trench-isolation-induced stress causes "on complex MOSFET
-geometries".[^bianchi-2002] The published SKY130 test tile includes
+geometries".[^bianchi-2002] The published SKY130 {term}`test tile` includes
 transistors that differ only in how far the source/drain diffusion
 extends from the gate (`sa` = `sb`, from 2.5 µm down to
 0.265 µm).[^raw-data-testtile-pads] As that extent shortens, the drain
@@ -140,7 +140,7 @@ cannot be excluded.
 *An industry-generic HDP-CVD {term}`STI` fill for a 200 mm, 130 nm-era fab:*
 
 1. **Chamber.** Inductively coupled high-density plasma reactor with an
-   RF-biased electrostatic chuck; wafer temperature of a few hundred
+   RF-biased {term}`electrostatic chuck`; wafer temperature of a few hundred
    °C set by backside helium and plasma heating.[^txt-05] In a
    high-density plasma "the ion density can be high enough that
    significant sputtering of the deposited film occurs; this sputtering
@@ -199,7 +199,7 @@ profile refers to "a Novellus high density plasma tool".[^skw-07]
 
 * **Novellus (now Lam) HDP-CVD**
   - *SkyWater says:* names "Lam/Novellus High Density Plasma
-    (HDP)" with sputter etch,[^skw-01] and the technician profile
+    (HDP)" with {term}`sputter etch`,[^skw-01] and the technician profile
     names "a Novellus high density plasma tool".[^skw-07]
   - *Tool exists:* strong (two SkyWater statements).
   - *Runs this step:* the model (SPEED is the Novellus HDP product
@@ -219,7 +219,7 @@ profile refers to "a Novellus high density plasma tool".[^skw-07]
   the Novellus release refers to the "enlarged remote plasma source"
   that "allows more wafers to be processed between plasma
   cleans".[^lam-speed]
-* {ref}`Chamber consumables <material-hardware-consumables>` — ceramic dome, gas ring, ESC.
+* {ref}`Chamber consumables <material-hardware-consumables>` — ceramic dome, gas ring, {term}`ESC`.
 * SkyWater's filings name Air Products and Praxair (2021 S-1) and Linde and
   Airgas (fiscal 2023 10-K) as gas suppliers[^sec-01][^sec-02] without tying
   them to a step.
@@ -233,7 +233,7 @@ profile refers to "a Novellus high density plasma tool".[^skw-07]
   "waffles" from {ref}`FOM <step-004>`.
 * Feeds: the resulting field oxide appears as FOX in the PDK stack and
   is the surface under field poly at {ref}`P1M <step-061>` and under
-  local interconnect at {ref}`LI1M <step-102>`.
+  {term}`local interconnect` at {ref}`LI1M <step-102>`.
 * Same category: other gap-fill oxides — {ref}`PSG <step-089>`,
   {ref}`NILD2 <step-105>`, {ref}`NILD3 <step-115>`.
 * Category page: {ref}`Thin-film deposition <category-deposition>`.

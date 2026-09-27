@@ -64,11 +64,11 @@ is the same as for the P⁺ junction:
   resistance of 120 000 mΩ/sq (120 Ω/sq), lower than the 197 Ω/sq of
   P-diffusion.[^pdk-08]
 
-The device page's e-test table gives `RSN` as
+The device page's {term}`e-test` table gives `RSN` as
 120 Ω/sq (limits 108–132) and the high-voltage N⁺ diffusion `RSNH` as
 114 Ω/sq (102–126).[^pdk-07]
 
-Two-terminal sweeps of the test tile's
+Two-terminal sweeps of the {term}`test tile`'s
 25-square "n+ resistor" structures, published in the SKY130 raw-data
 repository, give 122.5 Ω and 120.6 Ω per square, and the "n+ high
 voltage resistor" 116.7 Ω per square, contacts included (our extraction
@@ -83,7 +83,7 @@ wafer).[^raw-data-passives][^raw-data-testtile-pads]
 The NMOS
 cross-section shows "N+" source/drain beside "N−"
 extensions.[^pdk-07] Species, energy and dose are not
-public: the "N+" name, the tool list and the sheet resistance are
+public: the "N+" name, the tool list and the {term}`sheet resistance` are
 what the public record offers, and industry practice supplies the
 rest.
 
@@ -107,12 +107,12 @@ deactivates by clustering rather than by precipitation alone.
 The deep N⁺ junction carries the NMOS current from the contact to
 the extension with the lowest possible series resistance — the term
 that Ng and Lynch showed limits scaling[^ng-1986] — and provides the
-degenerately doped surface that a contact or silicide needs. Its
+degenerately doped surface that a contact or {term}`silicide` needs. Its
 depth (the PDK's 0.1 µm[^pdk-03]) keeps the contact etch and
 silicidation ({ref}`CSIL <step-098>`) out of the junction. Its
 offset from the gate, set by the spacer of
 {ref}`SPNIT <step-076>`/{ref}`SPE <step-077>`, keeps that depth from
-degrading short-channel control, which is the whole point of the LDD
+degrading short-channel control, which is the whole point of the {term}`LDD`
 structure of Ogura et al.[^ogura-1980] and the spacer of Tsang et
 al.[^tsang-1982]
 
@@ -173,19 +173,19 @@ fab (SKY130's recipe is not public):*
 * **Energy and dose.** Tens of keV and a few 10¹⁵ cm⁻² for arsenic
   (industry-typical[^txt-01][^txt-02]).
 
-  The screen oxide of
+  The {term}`screen oxide` of
   {ref}`SPOX <step-080>` takes part of the range. Arsenic at these
   doses amorphises the silicon — above roughly 10¹⁴–10¹⁵ cm⁻² "the
   amount of crystallographic damage can be enough to completely
   amorphize the surface".[^wiki-implant] The layer regrows by
-  solid-phase epitaxy during the anneal, at a rate that depends on
+  {term}`solid-phase epitaxy` during the anneal, at a rate that depends on
   orientation[^csepregi-1978] and on the arsenic concentration
   itself.[^jeon-1989]
 * **Tilt.** 0°, per the PDK's "High current" implant-angle
   entry.[^pdk-03]
 
-  The amorphisation makes channelling a smaller
-  concern than for boron, and zero tilt avoids the shadowing beside
+  The amorphisation makes {term}`channelling` a smaller
+  concern than for boron, and zero tilt avoids the {term}`shadowing` beside
   roughly 0.4 µm-tall (0.18 µm poly plus the ~0.2 µm cap[^pdk-03]) capped gates that Krieger et al. analysed for tilted
   arsenic source/drain implants.[^krieger-1989] On a spinning-disc
   batch tool the effective angle still varies across the
@@ -261,7 +261,7 @@ fab (SKY130's recipe is not public):*
 * Same module: the complementary implant,
   {ref}`PSDI <step-082>`/{ref}`2PSDI <step-083>`; the extensions it
   joins, {ref}`ASTI <step-065>`, {ref}`HVASTI <step-069>`,
-  {ref}`LDASTI <step-072>`; the halos around them, {ref}`BHI <step-066>`,
+  {ref}`LDASTI <step-072>`; the {term}`halos <halo>` around them, {ref}`BHI <step-066>`,
   {ref}`LDBHI <step-073>`.
 * Depends on: the offset it is aligned to, {ref}`SPNIT <step-076>`,
   {ref}`SPE <step-077>`; the screen it passes through,
@@ -341,7 +341,7 @@ fab (SKY130's recipe is not public):*
 
 * **Species, energy and dose.** Species (arsenic alone or with phosphorus), energy and dose are
   not public; the values given are industry-typical.
-* **SONOS cell source/drain.** Whether the SONOS cell source/drain is made by this implant is
+* **SONOS cell source/drain.** Whether the {term}`SONOS` cell source/drain is made by this implant is
   inferred from the cell being an NMOS device.
 * **Shielding of the capped gates.** Whether the capped gates are entirely shielded is inferred; for
   the n⁺ gates it makes no electrical difference and is therefore

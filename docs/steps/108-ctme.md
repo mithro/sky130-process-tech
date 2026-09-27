@@ -77,7 +77,7 @@ Where an
 that fills the space beside the line (inference). The etch must not
 trench there, since a further 0.10 µm[^pdk-04] would take it past the
 bottom of `li` into the {ref}`PSG <step-089>` or
-{ref}`NCAPOX <step-091>` pre-metal dielectric.
+{ref}`NCAPOX <step-091>` {term}`pre-metal dielectric`.
 
 ## Step category
 

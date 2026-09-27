@@ -32,7 +32,7 @@
 `SPNIT` deposits a blanket, conformal silicon nitride film over the
 whole wafer. The film runs over the capped gate lines and resistor bodies, down
 their sidewalls and across the source/drain silicon whose tips and
-halos were activated at {ref}`TIPRTAD <step-075>`.
+{term}`halos <halo>` were activated at {ref}`TIPRTAD <step-075>`.
 
 The film is not a
 device layer in itself: the next step, {ref}`SPE <step-077>`, etches
@@ -87,7 +87,7 @@ recipe input.
 ## Step category
 
 `SPNIT` is a {ref}`Thin-film deposition <category-deposition>` step —
-a CVD silicon nitride, like {ref}`ISONIT <step-003>` and
+a {term}`CVD` silicon nitride, like {ref}`ISONIT <step-003>` and
 {ref}`GATENIT <step-058>` before it and {ref}`LINIT <step-104>`
 after.
 
@@ -102,14 +102,14 @@ PDK's 0.2 µm "poly cap after SPE", which is the post-{ref}`SPE
 (poly.2)[^pdk-periph] without seaming.
 
 The second
-distinguishing property is thermal budget: the wafer now carries
+distinguishing property is {term}`thermal budget`: the wafer now carries
 annealed arsenic tips and boron halos, and a hot furnace deposition
 would move them.
 
 ## Why this step exists
 
 The sidewall spacer is the device that makes a lightly doped drain
-possible. Ogura et al. introduced the LDD transistor in 1980 to move
+possible. Ogura et al. introduced the {term}`LDD` transistor in 1980 to move
 the peak drain field away from the gate edge and so limit hot-carrier
 damage.[^ogura-1980] Tsang et al. showed in 1982 how to build it
 with an oxide sidewall spacer formed by conformal deposition and
@@ -130,7 +130,7 @@ Nitride rather than oxide is the usual choice at this node for
 several reasons that the literature sets out:
 
 * **Etch selectivity.** A nitride spacer can be etched back with high
-  selectivity to the oxide under it, so the source/drain silicon is
+  {term}`selectivity` to the oxide under it, so the source/drain silicon is
   not trenched and the gate cap survives.[^regis-1997] Goss and
   Thornburg describe the integration of a nitride spacer into a
   0.35 µm CMOS technology and the process challenges that came with
@@ -187,7 +187,7 @@ fab (SKY130's recipe is not public):*
   nearly perfectly conformal and under tensile stress of order 1 GPa
   (typical industry value, category page[^wiki-sin][^txt-02]), and
   deposits on both wafer faces. Temple-Boyer et al. measured the
-  stress of LPCVD SiNₓ from silane and ammonia across deposition
+  stress of {term}`LPCVD` SiNₓ from silane and ammonia across deposition
   temperature, pressure and gas ratio and obtained ≈600 MPa for their
   lowest-stress Si₃N₄ condition.[^temple-boyer-1998]
 
@@ -214,7 +214,7 @@ fab (SKY130's recipe is not public):*
   hydrogen content and stress set by the plasma conditions;[^smith-1990][^claassen-1985]
   the film's stress can drift irreversibly with later heating.[^hughey-2003]
   Conformality is poorer than LPCVD, which makes the spacer width
-  depend on {term}`pattern density`; PECVD spacers are therefore less usual
+  depend on {term}`pattern density`; {term}`PECVD` spacers are therefore less usual
   at this node, though not unknown.
 * **Thickness.** Not public.
 

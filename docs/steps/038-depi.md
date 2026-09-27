@@ -205,7 +205,7 @@ themselves.
 
   If the species is
   arsenic, its slow diffusion keeps the layer shallow through the ONO
-  and gate-oxide thermal budget, which Cypress notes must be kept low
+  and gate-oxide {term}`thermal budget`, which Cypress notes must be kept low
   after the stack is formed.[^cyp-25]
 * **Monitoring.** Thermal-wave measurement on product; the cell
   threshold itself is monitored at e-test (the `VTE`/`VTP` parameters

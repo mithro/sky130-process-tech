@@ -13,7 +13,7 @@
 :::{admonition} At a glance
 :class: at-a-glance
 
-* **Does:** etches the via-1 holes through the cap oxide and the
+* **Does:** etches the via-1 holes through the {term}`cap oxide` and the
   {ref}`NILD3 <step-115>` oxide down to the top of the metal-1 lines.
 * **Why:** the via hole sets the resistance and reliability of every
   connection between metal 1 and metal 2.
@@ -23,8 +23,8 @@
 * **Likely SkyWater tool:** none named — no dielectric etcher is on
   SkyWater's public list; the three listed poly/silicon etchers are
   **weak** (assignment to the via etch).[^skw-01]
-* **Not public:** the etch chemistry, chamber, endpoint scheme and
-  over-etch, the cap consumed, and which refractory film the cap is
+* **Not public:** the etch chemistry, chamber, {term}`endpoint` scheme and
+  {term}`over-etch`, the cap consumed, and which refractory film the cap is
   (→ Open questions).
 :::
 
@@ -106,8 +106,8 @@ between metal 1 and metal 2, and the etch decides four things:
   the landing: a narrower, shallower hole ending on a metal cap rather
   than a wider one ending on 0.10 µm of TiN.[^pdk-04] Fluorocarbon
   polymer or oxide left on the floor raises the number; Bui et al.
-  showed that the anti-reflective cap a tungsten-plug via lands on
-  also sets its electromigration performance.[^bui-1994]
+  showed that the {term}`anti-reflective cap` a tungsten-plug via lands on
+  also sets its {term}`electromigration` performance.[^bui-1994]
 * **Not punching through.** The cap is 300 Å of TiW on the 2013
   stack, 500 Å of TiN on the 2014 one.[^cyp-qtp-113005][^cyp-qtp-123907]
 
@@ -173,7 +173,7 @@ recipe is not public); the shared physics is set out at
    hole the conductance of the hole throttles the neutral and ion
    flux to the floor (Coburn and Winters[^coburn-1989]), so the rate
    falls with depth ({term}`ARDE`) or, under some conditions, rises
-   (Doemling et al.'s inverse RIE lag[^doemling-1996]). Gottscho,
+   (Doemling et al.'s inverse {term}`RIE` lag[^doemling-1996]). Gottscho,
    Jurgensen and Vitkavage review the family of effects.[^gottscho-1992]
    The 0.27 µm depth[^pdk-04] is modest, but the {term}`loading effect`
    between isolated vias and dense arrays is not.
@@ -204,7 +204,7 @@ recipe is not public); the shared physics is set out at
    it would widen the via and attack the fluoride-bearing floor).
 6. **Queue time.** Because an open via can absorb moisture from the
    air, the time between clean and {ref}`TIN3 <step-120>` is limited,
-   and a degas precedes the liner (industry practice;[^txt-05] the
+   and a {term}`degas` precedes the liner (industry practice;[^txt-05] the
    poisoned-via literature above is the reason[^kobayakawa-1991]).
 7. **Metrology.** Top and bottom CD by {term}`CD-SEM`, profile and
    cap loss by cross-section SEM on monitors, via-chain resistance at

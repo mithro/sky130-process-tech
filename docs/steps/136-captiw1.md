@@ -154,7 +154,7 @@ rather than on metal:
     reviewed and Ghate et al. established;[^nicolet-1978][^ghate-1978]
   - it etches in fluorine plasmas (tungsten as WF₆ in SF₆,[^turban-1989]
     TiW in CF₄-based mixtures[^liu-2007-tiw]) and in hydrogen peroxide, which
-    Danzl and McLaurin used to strip a TiW anti-reflective cap from
+    Danzl and McLaurin used to strip a TiW {term}`anti-reflective cap` from
     aluminium pads;[^danzl-1997]
   - the fab's metal etchers are
     listed for it ("Lam 9600, Al, TiW, TiN, Pt"[^skw-01]).
@@ -193,7 +193,7 @@ rather than on metal:
   resistance limits the capacitor's {term}`quality factor` at RF.
 
   The PDK's
-  maximum MiM capacitor aspect ratio of 20[^pdk-03] and its
+  maximum MiM capacitor {term}`aspect ratio` of 20[^pdk-03] and its
   `CAPMCD` of 2 µm[^pdk-03] bound the plate geometry the model has
   been fitted for (inference), and Ng et al. review MiM integration
   in Al–Cu and Cu back ends.[^ng-2005]

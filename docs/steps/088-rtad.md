@@ -45,9 +45,9 @@ S/D (XJ)".[^pdk-03]
 This reference describes `RTAD`,
 like {ref}`RTAI <step-034>` and {ref}`TIPRTAD <step-075>`, as a rapid
 thermal anneal, and the public evidence for that is good (below). It
-is the third RTA described in this reference; the next,
+is the third {term}`RTA` described in this reference; the next,
 {ref}`RTAD2 <step-092>`, is a second source/drain anneal
-placed after the sacrificial PSG, the polish and the {term}`cap oxide`.
+placed after the sacrificial {term}`PSG`, the polish and the {term}`cap oxide`.
 
 :::{figure} /_static/figures/sd-088-rtad.svg
 :alt: One enlarged cross-section of one transistor edge. A capped gate with a nitride block and a thin oxide on its sidewall stands on a thin oxide. In the silicon a deep doped region runs from the left edge of the view to the outer foot of the sidewall films, and a shallow doped layer and a hatched region continue under them to the gate edge. The drawing is the same as the state before the step.
@@ -60,7 +60,7 @@ A close-up of the 1.8 V NMOS gate edge at the source/drain anneal, the finished 
 On the reading of the {ref}`NPCM <step-078>` page, the anneal is also
 the thermal step that finishes the doping of the poly heads opened at
 {ref}`NPCME <step-079>`. It re-anneals the
-extensions and halos that {ref}`TIPRTAD <step-075>` activated, and
+extensions and {term}`halos <halo>` that {ref}`TIPRTAD <step-075>` activated, and
 sets the final position of every front-end junction relative to the
 gate edge. After it, the front end is electrically complete; what
 follows is dielectric, contact and interconnect.
@@ -88,7 +88,7 @@ developed.
 ## Why this step exists
 
 Implanted dopant does nothing until the lattice is repaired.
-Amorphised layers regrow by solid-phase epitaxy from about 500 °C,
+Amorphised layers regrow by {term}`solid-phase epitaxy` from about 500 °C,
 at a rate that depends on orientation[^csepregi-1978] and, for
 arsenic, on concentration,[^jeon-1989] incorporating the dopant
 substitutionally up to and beyond its solubility. Partially damaged
@@ -116,8 +116,8 @@ temperature and time a compromise, as the category page explains:
   Agarwal et al. comparing lamp-based and hot-walled spike
   anneals,[^agarwal-1998] and Agarwal reviewing ultra-shallow
   junction formation with conventional implantation and RTA.[^agarwal-2000]
-  Fiory's review covers the RTP developments of the 130 nm
-  era,[^fiory-2002] and Gerritsen the spike anneal as reduced-budget
+  Fiory's review covers the {term}`RTP` developments of the 130 nm
+  era,[^fiory-2002] and Gerritsen the {term}`spike anneal` as reduced-budget
   RTP.[^gerritsen-2000]
 * **Activation and deactivation.** Above the solid solubility the
   dopant clusters or precipitates and becomes inactive — Nobili et al.
@@ -171,7 +171,7 @@ and diode in the PDK depends on it.
   choices.[^txt-05][^txt-10]
 
   ITRS 2001 sets the junction depth,
-  abruptness and sheet resistance that the anneal must meet
+  abruptness and {term}`sheet resistance` that the anneal must meet
   together.[^itrs-01] Ramp rates of "1 – 180°C per second" are the
   range of the AG Associates Heatpulse 8800-class tools.[^ag-8800]
 * **Sequence.** Pre-anneal clean (at {ref}`NSDIS <step-087>`); load;

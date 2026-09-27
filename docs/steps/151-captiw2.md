@@ -52,7 +52,7 @@ its material.[^pdk-07] This reference describes the plate as sputtered TiW.
 (Inference: TiW is on SkyWater's PVD film list[^skw-01] and caps the
 aluminium stacks on the 2013 Cypress description of this fab, though
 not on the stack qualified in 2013–2014
-({ref}`overview-metal-cap`), and the PDK's sheet resistance fits about
+({ref}`overview-metal-cap`), and the PDK's {term}`sheet resistance` fits about
 0.1 µm of it, as set out below.) The step is the second-level repeat of
 {ref}`CAPTIW1 <step-136>`.
 

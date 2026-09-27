@@ -155,7 +155,7 @@ caps.
 * **Thickness.** Of the order of 0.2–0.3 µm on the reading above;
   not public.
 * **Sequence.**
-  1. Post-CMP clean (at {ref}`CMPP <step-090>`) with a
+  1. {term}`Post-CMP clean <post-CMP clean>` (at {ref}`CMPP <step-090>`) with a
      dilute-HF touch to remove slurry residue and a {term}`degas`.
   2. Deposition,
      typically in a single-wafer chamber with an in-situ NF₃ clean

@@ -69,7 +69,7 @@ cut ({ref}`NPCM <step-078>`/{ref}`NPCME <step-079>`) after the spacer
 etch ({ref}`SPE <step-077>`) and before the source/drain masks.
 
 The
-PDK's e-test table gives the poly sheet-resistance parameter as "poly
+PDK's {term}`e-test` table gives the poly sheet-resistance parameter as "poly
 sheet resistance, with NGNIT",[^pdk-07] a second public sign that the
 production poly is measured with a nitride on it.
 
@@ -327,7 +327,7 @@ resistor ends would be defined by the contact etch alone.
 * **The "poly cap after SPE" entry.** The meaning of the PDK's "poly cap after SPE" (0.2 µm) entry is our
   reading; the table does not define it.
 * **Later doping of the gate.** Whether the gate is ever doped through or around the cap by later
-  implants is not public; with a 0.2 µm cap[^pdk-03] and no nitride cut
+  implants is not public; with a 0.2 µm cap[^pdk-03] and no {term}`nitride cut`
   over gates (npc.4)[^pdk-periph] we read the gates as keeping the n⁺
   doping of {ref}`P1I <step-050>` on both NMOS and PMOS.
 

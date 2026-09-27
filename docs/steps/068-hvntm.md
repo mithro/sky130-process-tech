@@ -105,7 +105,7 @@ step of the *implant-block* type, with a twist.
   would shadow the gate edges it is meant to reach.
 * Thin resist is easier to image but must still stop the implant everywhere
   else. At the tens of keV of an LDD-type arsenic implant
-  (typical),[^txt-04] 0.3 µm of resist is ample (the projected range of
+  (typical),[^txt-04] 0.3 µm of resist is ample (the {term}`projected range` of
   arsenic at such energies is a few tens of nanometres in resist-like
   materials).[^txt-01]
 

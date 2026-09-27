@@ -361,7 +361,7 @@ Status and expiry are estimates from public records and are not legal advice.
   pre-oxidation clean sit — in this step or in {ref}`ONO <step-040>` —
   is not stated publicly; this page treats them as part of this step.
 * **Chemistry details.** The HF dilution, etch time, over-etch and
-  final surface state (HF-last or chemical oxide) are not public.
+  final surface state ({term}`HF-last` or chemical oxide) are not public.
 
 <!-- footnotes -->
 

@@ -69,14 +69,14 @@ implant travels.
 ## Step category
 
 `SPOX` is a {ref}`Thin-film deposition <category-deposition>` step: a
-CVD oxide of the same family as the {term}`cap oxide` {ref}`POC <step-059>`
+{term}`CVD` oxide of the same family as the {term}`cap oxide` {ref}`POC <step-059>`
 and the later {ref}`NCAPOX <step-091>`.
 
 What is specific to it is
 that it is an *implant screen and spacer extension* rather than an
 insulator. Its thickness enters the range and lateral placement of
 the P⁺ and N⁺ source/drain implants, so uniformity and conformality
-matter as they would for a gate-adjacent film. Its thermal budget
+matter as they would for a gate-adjacent film. Its {term}`thermal budget`
 must be low because the tips are already annealed.
 
 ## Why this step exists
@@ -106,11 +106,11 @@ does not say which SKY130 had in mind:
 
   For BF₂, Wang et al. showed that fluorine
   from implantation through oxide changes boron's enhanced diffusion
-  during a high-temperature RTA.[^wang-1997] The screen's thickness is
+  during a high-temperature {term}`RTA`.[^wang-1997] The screen's thickness is
   therefore a design input to the junction depth.
 * **Protecting the opened poly.** The bare poly in the nitride cut
   windows is covered before the implant resists are coated and
-  stripped, so the resist chemistry and the ash never touch doped
+  stripped, so the resist chemistry and the {term}`ash` never touch doped
   poly. The poly heads receive their source/drain doping through
   a defined oxide.
 * **A cap for the anneal.** During {ref}`RTAD <step-088>` a surface
@@ -145,7 +145,7 @@ nitride alone.
   Becker et al. characterise the film and
   its conformality,[^becker-1987] and Adams and Capio the reduced-
   pressure silane–oxygen alternative at roughly 400–450 °C.[^adams-1979]
-  LPCVD TEOS is the most conformal of the three and the usual choice
+  {term}`LPCVD` {term}`TEOS` is the most conformal of the three and the usual choice
   for a spacer or {term}`liner`, but it spends minutes at a temperature where
   the arsenic tips and boron halos diffuse — a real cost after
   {ref}`TIPRTAD <step-075>`.
@@ -195,7 +195,7 @@ nitride alone.
   furnace processes.[^skw-01]
   - *Tool exists:* strong for existence.
 * Which of the three deposits the spacer oxide is not public; the
-  thermal-budget argument favours a PECVD film (inference).
+  thermal-budget argument favours a {term}`PECVD` film (inference).
 
 ## Resources required
 

@@ -21,7 +21,7 @@
 * **Likely SkyWater tool:** GaSonics PEP, Iridia and Mattson Aspen II
   ashers — strong (existence); inference (assignment).[^skw-01]
 * **Not public:** the ash recipe, the wet sequence before the anneal and
-  the queue time (→ Open questions).
+  the {term}`queue time` (→ Open questions).
 :::
 
 ## What this step is
@@ -255,7 +255,7 @@ Two reasons, one ordinary and one specific to its position:
 ## Open questions
 
 * **Ash recipe and wet sequence.** The ash recipe and the exact wet sequence
-  — in particular whether SC-2 or an HF-last step precedes the anneal, and
+  — in particular whether SC-2 or an {term}`HF-last` step precedes the anneal, and
   whether the screen oxide is deliberately kept — are not public.
 * **Which asher and wet bench.** Which asher and which wet bench run this
   strip is not stated publicly.

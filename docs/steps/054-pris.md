@@ -20,7 +20,7 @@
 * **Public numbers:** none published for SKY130.
 * **Likely SkyWater tool:** GaSonics PEP, Iridia or Mattson Aspen II
   asher — strong (existence); inference (assignment).[^skw-01]
-* **Not public:** the ash and wet recipes, and which asher runs the
+* **Not public:** the {term}`ash` and wet recipes, and which asher runs the
   strip (→ Open questions).
 :::
 

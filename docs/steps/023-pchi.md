@@ -82,7 +82,7 @@ speed-critical.[^itrs-04][^wei-1998] The PDK's inverter-delay tables for
 that is traded for it.
 
 The published test-tile measurements include both devices at the PDK's
-e-test geometries. By maximum-transconductance extrapolation at
+{term}`e-test` geometries. By maximum-transconductance extrapolation at
 V_DS = −0.1 V, less half the drain bias, we extract threshold magnitudes
 of 1.124 V for `pfet_01v8_hvt` against 1.065 V for `pfet_01v8` at
 7/8 µm (+0.059 V) and 0.917 V against 0.798 V at 7/0.15 µm
@@ -108,7 +108,7 @@ confirmation, that `PCHI` and `PNCHI` divide these roles between them.
 
 The high-Vt varactor shows the two implants from another side.
 {ref}`HVTPM <step-022>` sets the published capacitance–voltage sweeps
-of the test tile's two varactor options, which the pad list maps to
+of the {term}`test tile`'s two varactor options, which the pad list maps to
 `cap_var_lvt` and `cap_var_hvt`, beside each other.
 
 For 98 devices of
@@ -150,7 +150,7 @@ do not show how `PCHI` and `PNCHI` divide it (inference).
 * **Screen oxide.** The pad oxide randomises the beam and traps recoils;
   the thickness the Cypress {term}`SONOS` patent gives it — that patent
   may still be in force — is in the collapsed note below this list.
-* **Charge control.** Electron shower on a cooled electrostatic chuck
+* **Charge control.** Electron shower on a cooled {term}`electrostatic chuck`
   (SkyWater lists "ESC chuck, E shower").[^skw-01]
 * **Anneal.** None until {ref}`RTAI <step-034>`.
 * **Monitoring.** Thermal-wave on product; {term}`sheet resistance` on monitors

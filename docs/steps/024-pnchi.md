@@ -119,7 +119,7 @@ the two devices at 7/8 µm (0.352 V against 0.341 V) but not at
 published measurements, by maximum-transconductance extrapolation at
 V_DS = −0.1 V.[^raw-data-lv-mosfets]
 
-The PDK's e-test nominals show the
+The PDK's {term}`e-test` nominals show the
 same doubling at W = 7 µm (0.107 V against 0.057 V) and a smaller rise
 at W = 0.42 µm (0.114 V against 0.082 V).[^pdk-07] A
 nearly unchanged long-channel body effect suggests that the extra

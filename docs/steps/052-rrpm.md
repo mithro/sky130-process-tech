@@ -77,7 +77,7 @@ The published measurements of the marked
 structures read 0.49–0.54 kΩ (0.69 µm, half a square) and 0.97 kΩ
 (0.33 µm, one square) (our extraction from the published measurements,
 from the slope of the sweep within
-±0.1 V).[^raw-data-passives] They are inside the limits of the PDK's e-test
+±0.1 V).[^raw-data-passives] They are inside the limits of the PDK's {term}`e-test`
 table for its 0.69 µm half-square and 0.35 µm one-square
 resistors.[^pdk-07] The tile's 0.33 µm structure is drawn narrower
 than the narrowest supported fixed width (rpm.1b, 0.350 µm) and at the
@@ -101,7 +101,7 @@ shift; a continuous field of resist with holes in it cannot).
 ## Why this step exists
 
 The two flavours of precision resistor in SKY130 are p-type films
-with sheet resistances of 300 Ω/sq and 2000 Ω/sq[^pdk-07][^pdk-08]
+with {term}`sheet resistances <sheet resistance>` of 300 Ω/sq and 2000 Ω/sq[^pdk-07][^pdk-08]
 inside a poly layer that is otherwise n⁺ at 48.2 Ω/sq.[^pdk-08]
 
 The
@@ -130,7 +130,7 @@ O'Dwyer and Kennedy compared the matching of different
 poly resistor films in a CMOS process.[^odwyer-2009] Tsang et al.
 show how sensitive a high-value poly resistor bank is to its
 surroundings by a different route: hydrogen diffusing through eroded
-corners of the LPCVD nitride that caps the poly passivates
+corners of the {term}`LPCVD` nitride that caps the poly passivates
 grain-boundary traps and lowers the resistance across the
 bank.[^tsang-2014]
 

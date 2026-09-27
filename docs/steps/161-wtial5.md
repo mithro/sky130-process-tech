@@ -33,7 +33,7 @@
 
 `WTIAL5` deposits the metal-5 film stack — the top metal of SKY130,
 which carries power, wide buses, inductors and the {term}`bond pads <bond pad>`. Onto the
-cap oxide of {ref}`NCAPOX6 <step-158>`, and into the open via-4 holes
+{term}`cap oxide` of {ref}`NCAPOX6 <step-158>`, and into the open via-4 holes
 just etched at {ref}`VIM4E <step-160>`, a sputtering {term}`cluster tool` lays
 down, in one vacuum sequence on our reading, a refractory underlayer, a
 thick aluminium–copper alloy and a titanium–tungsten cap.
@@ -76,7 +76,7 @@ About
 1.2 µm of Al–Cu at 28.5 mΩ/sq implies a resistivity of about
 3.4 µΩ·cm, within the range expected for sputtered Al–0.5%Cu (typical
 industry value;[^txt-02] our arithmetic). A 2 µm film at the
-same sheet resistance would imply 5.7 µΩ·cm, too high for the alloy (our arithmetic). The
+same {term}`sheet resistance` would imply 5.7 µΩ·cm, too high for the alloy (our arithmetic). The
 arithmetic agrees with that reading (inference). The metal-5 design
 rules are coarse: 1.600 µm width and space (m5.1, m5.2), a 4.000 µm²
 minimum area (m5.4, whose probe-pad exemption excludes
@@ -103,7 +103,7 @@ That top metal is a 2.2 µm stack, of the thickness class of the PDK's
 
 This
 reference describes metal 5 as a Ti or TiW underlayer, some 1.2 µm of
-Al–Cu and a TiW cap. (Inference: the S8P line above, SkyWater's PVD film
+Al–Cu and a TiW cap. (Inference: the S8P line above, SkyWater's {term}`PVD` film
 list, which includes "Aluminum both pure and Cu doped", "TiW" and
 "Collimated Ti",[^skw-01] and the fit of the PDK's thickness and sheet
 resistance to such a stack.) Which levels of a five-metal S8P flow
@@ -127,7 +127,7 @@ and reasoning (all inference):
 
   Skelly and
   Gruenke found that 1.3 µm-wide, straight-walled vias 1 µm deep were
-  planarised (100 % step coverage) by bias sputtering under conditions
+  planarised (100 % {term}`step coverage`) by bias sputtering under conditions
   that gave only 60 % coverage in 2.8 µm vias, while unbiased
   deposition gave 20 %.[^skelly-1986] Their result is not a simple
   function of aspect ratio, and neither of their geometries is via 4's,

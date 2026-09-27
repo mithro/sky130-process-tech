@@ -68,7 +68,7 @@ remains.
 ## Step category
 
 `CMPL` is a {ref}`Chemical-mechanical planarisation <category-cmp>`
-step of the *oxide (ILD)* type, the class the category page
+step of the *oxide ({term}`ILD`)* type, the class the category page
 characterises by fixed removal, a silica/KOH or NH₄OH slurry at pH
 10–11 and pattern-density non-uniformity as the main failure mode.
 

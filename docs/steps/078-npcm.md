@@ -20,15 +20,15 @@
   opened where the local-interconnect contacts will land on poly.
 * **Public numbers:** `npc` minimum width and space 0.270 µm (npc.1,
   npc.2); 0.090 µm spacing to a gate (npc.4).[^pdk-periph]
-* **Likely SkyWater tool:** ASML DUV stepper or scanner — strong
+* **Likely SkyWater tool:** ASML {term}`DUV` {term}`stepper` or scanner — strong
   (existence); inference (assignment of `NPCM` to DUV).[^skw-01]
-* **Not public:** the exposure tool, resist and BARC, inferred from the
+* **Not public:** the exposure tool, resist and {term}`BARC`, inferred from the
   design rules, not stated (→ Open questions).
 :::
 
 ## What this step is
 
-`NPCM` is the lithography step for the *nitride poly cut*. It is the
+`NPCM` is the lithography step for the *nitride {term}`poly cut`*. It is the
 resist pattern that tells {ref}`NPCME <step-079>` where to remove the
 nitride that (on our reading) has covered the poly since
 {ref}`GATENIT <step-058>`.
@@ -91,9 +91,9 @@ own dimensions are relaxed (0.27 µm) but whose *placement* is not.
 
 The 0.090 µm "spacing, no overlap" to a gate (npc.4)[^pdk-periph]
 means that an opening printed 0.09 µm out of position over a poly line
-would expose the gate edge to the nitride etch. So the layer's overlay
+would expose the gate edge to the nitride etch. So the layer's {term}`overlay`
 to poly ({ref}`P1M <step-061>`) is its critical parameter, not its
-CD.
+{term}`CD`.
 
 ## Why this step exists
 
@@ -107,7 +107,7 @@ being a separate mask rather than part of the contact etch:
 
 * **Poly contacts through a nitride cap.** The local-interconnect
   contact `licon1` (66:44, "Contact to local interconnect"[^pdk-06])
-  is etched at {ref}`LICM1E <step-094>` through the PSG and any cap
+  is etched at {ref}`LICM1E <step-094>` through the {term}`PSG` and any cap
   oxide.
 
   If the nitride under the contact were still present, the
@@ -117,7 +117,7 @@ being a separate mask rather than part of the contact etch:
   first, with a dedicated mask, lets the contact etch stop on oxide
   and poly alike.
 
-  Local interconnect of the era was also built from
+  {term}`Local interconnect <local interconnect>` of the era was also built from
   titanium nitride: Tang et al. patterned the TiN layer that forms during
   self-aligned silicidation into connections between gates and
   junctions.[^tang-1985][^tang-1987] Their abstracts do not describe a
@@ -149,7 +149,7 @@ being a separate mask rather than part of the contact etch:
   doped by the source/drain implants.
 
 The layer also affects the resistor bank uniformity that Tsang et al.
-studied for high-value poly resistors, since the cut defines where the
+studied for high-value {term}`poly resistors <poly resistor>`, since the cut defines where the
 resistor ends begin.[^tsang-2014] Without `NPCM` the poly could not be
 contacted at all.
 
@@ -160,7 +160,7 @@ contacted at all.
 
 1. **Surface preparation.** The wafer is topographic: roughly 0.4 µm-tall (0.18 µm poly plus the ~0.2 µm cap[^pdk-03])
    capped poly lines with nitride spacers on a planar oxide. A
-   dehydration bake and HMDS prime on the track.[^txt-02]
+   dehydration bake and {term}`HMDS` prime on the track.[^txt-02]
 2. **Resist and BARC.** A 0.27 µm opening over reflective, stepped
    topography calls for a bottom anti-reflective coating and a DUV
    resist of the order of 0.5–0.7 µm (industry-typical for a
@@ -171,7 +171,7 @@ contacted at all.
    implant-layer value rather than this layer's. The resist need only
    withstand a short nitride etch.
 3. **Exposure.** At 0.27 µm minimum feature and space, an i-line
-   stepper of NA 0.6 would work at k₁ = 0.27 × 0.6 / 0.365 ≈ 0.44,
+   stepper of {term}`NA` 0.6 would work at k₁ = 0.27 × 0.6 / 0.365 ≈ 0.44,
    close to the "0.4 for production" limit.[^wiki-litho]
 
    A 248 nm
@@ -303,7 +303,7 @@ contacted at all.
 * **Exposure tool and resist.** The exposure tool (i-line or DUV, stepper or scanner), resist and
   BARC used for `NPCM` are inferred from the design rules, not
   stated.
-* **Reticle generated from `npc`.** Whether the reticle is generated from `npc` with additions for
+* **Reticle generated from `npc`.** Whether the {term}`reticle` is generated from `npc` with additions for
   resistor heads and other structures, or copies the drawn layer, is
   not public; the `cnpc` mask layer exists,[^pdk-06] which shows only
   that it is generated.

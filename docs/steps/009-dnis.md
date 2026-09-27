@@ -32,7 +32,7 @@ go into the liner-oxidation furnace at {ref}`LINOX <step-010>`. It is
 the first of the many *implant strip* steps in this reference, which
 pairs almost every implant mask with a strip step. The deep N-well is
 associated with the high-voltage device family on the evidence of the
-PDK's isolated 20 V NMOS and a Cypress SONOS patent (see
+PDK's isolated 20 V NMOS and a Cypress {term}`SONOS` patent (see
 {ref}`DNM <step-007>`).
 
 :::{figure} /_static/figures/iso-009-dnis.svg

@@ -21,7 +21,7 @@
 * **Public numbers:** width and space 0.380 µm (psd.1, psd.2);
   enclosure of diffusion and of tap 0.125 µm (psd.5a,
   psd.5b).[^pdk-periph]
-* **Likely SkyWater tool:** ASML i-line stepper or scanner — strong
+* **Likely SkyWater tool:** ASML i-line {term}`stepper` or scanner — strong
   (existence); inference (assignment of `PSDM` to i-line).[^skw-01]
 * **Not public:** the resist, thickness, exposure tool and hardening
   step, inferred from the design rules and general practice
@@ -32,7 +32,7 @@
 
 `PSDM` is the P⁺ source/drain implant mask. It coats the wafer — now
 carrying spacers, the {term}`nitride cut` and the fresh {ref}`SPOX <step-080>`
-oxide — with photoresist, exposes it through the P⁺ implant reticle
+oxide — with photoresist, exposes it through the P⁺ implant {term}`reticle`
 and develops it. It leaves resist windows over every region that is to
 receive the heavy p-type implants of {ref}`PSDI <step-082>` and
 {ref}`2PSDI <step-083>` (on our reading). The resist is stripped at
@@ -135,7 +135,7 @@ Ions scattered laterally from the resist edge shift the threshold of
 transistors placed near it,[^hook-2003] which is why the layer carries
 enclosure and spacing rules of 0.125–0.130 µm rather than zero. Hook
 et al. measured the lateral
-straggle and {term}`mask-proximity effect` at IBM,[^hook-2003] Sheu et al.
+{term}`straggle` and {term}`mask-proximity effect` at IBM,[^hook-2003] Sheu et al.
 built a compact model of the well-edge version,[^sheu-2006] and
 Drennan, Kniffin and Locascio explained what it means for analogue
 layout.[^drennan-2006]
@@ -148,8 +148,8 @@ diode could be made without also doping the NMOS.
 *An industry-generic high-dose implant-block lithography sequence for
 a 200 mm, 130 nm-era fab (SKY130's is not public):*
 
-1. **Surface preparation.** Dehydration bake and HMDS prime on the
-   track; the surface is the fresh CVD oxide of
+1. **Surface preparation.** Dehydration bake and {term}`HMDS` prime on the
+   track; the surface is the fresh {term}`CVD` oxide of
    {ref}`SPOX <step-080>`, which primes well.[^txt-02]
 2. **Resist coat.** A single-layer positive resist of the order of
    1 µm: the PDK's nominal "Photoresist thickness" is 1.14 µm,[^pdk-03]
@@ -165,15 +165,15 @@ a 200 mm, 130 nm-era fab (SKY130's is not public):*
    Romig et al.'s study of resist burning in a high-current
    implanter,[^romig-1996] describe what goes wrong when it does not.
 3. **Exposure.** At 0.380 µm minimum width and space,[^pdk-periph] an
-   i-line stepper at NA 0.6 works at k₁ = 0.38 × 0.6 / 0.365 ≈ 0.62,
+   i-line stepper at {term}`NA` 0.6 works at k₁ = 0.38 × 0.6 / 0.365 ≈ 0.62,
    well above the "0.4 for production" limit.[^wiki-litho] ASML
    describes older exposure tools that "migrate to the lithography of
    choice for less critical layers".[^asml-30] We infer an
    **i-line** exposure, as for the earlier implant-block masks.
-4. **Alignment.** To the active/STI pattern for the 0.125 µm
+4. **Alignment.** To the active/{term}`STI` pattern for the 0.125 µm
    diffusion enclosure and to poly for the resistor and licon.9
    rules;[^pdk-periph] Levinson's book has a chapter on
-   overlay.[^levinson-2005]
+   {term}`overlay`.[^levinson-2005]
 5. **Develop** in 2.38 % (0.26 N) TMAH,[^txt-02] rinse, dry; then a hard bake
    or UV cure to harden the resist against the implant and reduce
    outgassing. Lee et al. measured thick-resist outgassing during

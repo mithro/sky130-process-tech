@@ -22,7 +22,7 @@
 * **Public numbers:** via-2 height through NILD4 0.42 µm;[^pdk-04] the
   cap's own thickness is not public.
 * **Likely SkyWater tool:** PECVD TEOS "C2 and Producer" — **strong**
-  for the capability; the assignment of the cap oxide to the TEOS
+  for the capability; the assignment of the {term}`cap oxide` to the TEOS
   process is an **inference**.[^skw-01]
 * **Not public:** the cap's precursor, thickness and deposition
   conditions, and whether "NILD4_C" is this cap (→ Open questions).
@@ -59,7 +59,7 @@ The stack diagram again offers a hint. Beside "NILD4 K=4.2" it draws
 a "NILD4_C" of permittivity 3.5 and thickness 0.030 µm,[^pdk-04]
 the same pairing as NILD3/NILD3_C one level down. The suffix, the
 thinness and the placement are consistent with this cap oxide, as
-they are with a liner under the gap fill (inference; {ref}`NILD4 <step-126>`).
+they are with a liner under the {term}`gap fill` (inference; {ref}`NILD4 <step-126>`).
 The diagram does not say which, and a permittivity of 3.5 is lower
 than a plain plasma oxide's (inference; see *Open questions*).
 
@@ -96,19 +96,19 @@ A polish alone does not give a via level what it needs;
 with the via-2 numbers:
 
 * **Thickness control.** The {ref}`CMPM2 <step-127>` polish is stopped
-  by removal amount and varies with pattern density and across the
+  by removal amount and varies with {term}`pattern density` and across the
   wafer — the variation Boning et al. and Chang et al. characterised
-  for ILD CMP.[^boning-1994][^chang-1995]
+  for {term}`ILD` {term}`CMP`.[^boning-1994][^chang-1995]
 
   Polishing to a thickness
   *below* the target and adding a cap of well-controlled thickness
   tightens the final 0.42 µm[^pdk-04] (industry practice[^txt-05]),
-  which in turn tightens the over-etch {ref}`VIM2E <step-130>` needs
+  which in turn tightens the {term}`over-etch` {ref}`VIM2E <step-130>` needs
   to reach every metal-2 cap without punching through it
   ({ref}`overview-metal-cap`).
 * **Sealing the polished surface.** Oxide CMP leaves micro-scratches
   and embedded slurry particles — Devriendt et al. relate them to
-  the post-CMP clean[^devriendt-1998] — and a hydrated, hydroxyl-rich
+  the {term}`post-CMP clean`[^devriendt-1998] — and a hydrated, hydroxyl-rich
   surface layer.[^moon-2016]
 
   A fresh plasma oxide buries them so that
@@ -117,7 +117,7 @@ with the via-2 numbers:
   outgassing that poisons tungsten nucleation, which Kobayakawa et
   al. traced to planarising dielectrics.[^kobayakawa-1991]
 * **A known surface for lithography.** The {ref}`VIM2 <step-129>`
-  resist and BARC are tuned to a reproducible oxide surface and
+  resist and {term}`BARC` are tuned to a reproducible oxide surface and
   thickness; the swing-curve reflectivity of a resist on oxide over
   metal depends on the oxide's thickness,[^brunner-1991] so a fixed
   cap gives a fixed exposure latitude.
@@ -165,7 +165,7 @@ surface whose thickness and condition varied with the polish.
 
    Hydrogen evolution from a plasma oxide on later
    heating changes its stress,[^mani-2007] and a porous or wet cap
-   defeats its purpose. The LPCVD TEOS route[^adams-1979][^becker-1987]
+   defeats its purpose. The {term}`LPCVD` TEOS route[^adams-1979][^becker-1987]
    gives a denser film but at 650–750 °C, far above the aluminium
    limit, so it is not an option here (inference from the
    temperature).

@@ -56,7 +56,7 @@ diagram draws a "glass cut" through "TOPNIT K=7.5" (0.54 µm over the
 metal) and "TOPOX K=3.9" (0.09 µm) down to `metal5`.[^pdk-04]
 Cypress reports for the R7FT-3R technology and the S8DI and S8TNV-5R
 variants at the same fab give 7000–9000 Å of nitride, over 1000 Å of
-TEOS oxide where an oxide is given.[^cyp-qtp-014807][^cyp-qtp-123907][^cyp-qtp-113005]
+{term}`TEOS` oxide where an oxide is given.[^cyp-qtp-014807][^cyp-qtp-123907][^cyp-qtp-113005]
 
 Under the oxide lies the top of the metal-5 stack. The PDK does not give its films. This reference reads it, with the lower levels, as a
 TiW-capped Al–Cu stack ({ref}`WTIAL5 <step-161>`). (Inference from the
@@ -114,7 +114,7 @@ around every pad.
 * **Removing a refractory cap (if present).** A TiW or TiN
   {term}`anti-reflective cap` on aluminium is not a good bond surface. Danzl
   and McLaurin describe using concentrated hydrogen peroxide to remove a
-  TiW ARC from aluminium bond pads,[^danzl-1997] and TiW is also etched
+  TiW {term}`ARC` from aluminium {term}`bond pads <bond pad>`,[^danzl-1997] and TiW is also etched
   in fluorine-containing plasmas, as Liu and Kuo showed for CF₄-based
   mixtures and Turban et al. for tungsten in SF₆.[^liu-2007-tiw][^turban-1989]
 * **A clean passivation edge.** The nitride and oxide must be cut
@@ -138,7 +138,7 @@ around every pad.
 an aluminium top metal (SKY130's recipe is not public):*
 
 1. **Chamber.** A single-wafer plasma etcher with fluorine chemistry —
-   a nitride-capable {term}`TCP` or ICP etcher, or a capacitively
+   a nitride-capable {term}`TCP` or {term}`ICP` etcher, or a capacitively
    coupled dielectric etcher ({ref}`category-etch`); helium backside
    cooling to protect the resist.
 2. **Nitride etch.** CF₄/O₂ (with N₂ or CHF₃) or SF₆-based chemistry.
@@ -146,7 +146,7 @@ an aluminium top metal (SKY130's recipe is not public):*
    Kastenmeier et al. measured nitride and oxide rates in CF₄/O₂/N₂ in a
    downstream reactor and, separately,
    "highly selective" nitride etching over silicon and silicon
-   dioxide — again in a remote discharge, and the wrong selectivity pair
+   dioxide — again in a remote discharge, and the wrong {term}`selectivity` pair
    for a pad etch that must stop on
    metal.[^kastenmeier-1996][^kastenmeier-1999] (Small N₂ additions raise the nitride rate
    sevenfold while leaving the oxide rate unchanged.[^kastenmeier-1996])

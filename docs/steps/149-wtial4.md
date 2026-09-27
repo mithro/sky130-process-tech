@@ -31,7 +31,7 @@
 ## What this step is
 
 `WTIAL4` deposits the metal-4 film stack — the construction described
-for metal 3 at {ref}`WTIAL3 <step-134>`. Onto the polished cap oxide
+for metal 3 at {ref}`WTIAL3 <step-134>`. Onto the polished {term}`cap oxide`
 and tungsten via-3 plugs left by {ref}`WCMP5 <step-148>` a sputtering
 {term}`cluster tool` lays down, in one vacuum sequence on our reading, a thin
 refractory bottom layer, a thick aluminium–copper alloy and a
@@ -110,7 +110,7 @@ as "top metal layers" is not public, so whether metal 4 carries the
 TiW cap this page describes or the later TiN-clad stack is unresolved.
 The evidence, including a thickness argument that favours a two-film
 cladding here, is set out under {ref}`overview-metal-cap`. SkyWater's
-PVD film list ("Aluminum both pure and Cu doped", "TiW", "ESC TiN",
+{term}`PVD` film list ("Aluminum both pure and Cu doped", "TiW", "ESC TiN",
 "Imp TiN", "Collimated Ti"[^skw-01]) allows either.
 
 The 0.845 µm and
@@ -189,7 +189,7 @@ are those of metals 1–3:
   The refractory cap suppresses hillocks and serves as the
   anti-reflective surface, the role Rocke and Schneegans documented for
   a titanium-nitride cap on aluminium and which a Ti:W cap plays in the
-  same way (inference).[^rocke-1988] Stress-induced voiding (Yue, Funsten and
+  same way (inference).[^rocke-1988] {term}`Stress-induced voiding <stress-induced voiding>` (Yue, Funsten and
   Taylor[^yue-1985]) and wafer bow (Stoney's relation[^stoney-1909])
   accumulate with a fourth aluminium level on the wafer.
 * **The second MiM bottom electrode.** The PDK gives the metal-4

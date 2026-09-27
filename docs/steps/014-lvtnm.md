@@ -135,7 +135,7 @@ polarities with lower thresholds than their standard counterparts. At
 1.065 V for `pfet_01v8` (maximum-transconductance extrapolation at
 |V_DS| = 0.1 V, less half the drain bias; our extraction from the
 published measurements). The PMOS shift is thus about four times the
-NMOS shift, as between the PDK's e-test nominals (0.399 V and
+NMOS shift, as between the PDK's {term}`e-test` nominals (0.399 V and
 0.101 V).[^raw-data-lv-mosfets][^pdk-07] Measured thresholds do not
 show whether the reticle covers or opens the drawn regions, nor how
 many implants produce the two shifts.

@@ -64,15 +64,15 @@ current" implants an angle of 0°, against 7° for the tip implant and
 40° with a 23° twist for the high-voltage tip.[^pdk-03]
 
 **Sheet resistance.** The
-extraction tables give P-diffusion a sheet resistance of
+extraction tables give P-diffusion a {term}`sheet resistance` of
 197 000 mΩ/sq, that is 197 Ω/sq, against 120 Ω/sq for
-N-diffusion.[^pdk-08] The device page's e-test table gives the P⁺
+N-diffusion.[^pdk-08] The device page's {term}`e-test` table gives the P⁺
 diffusion sheet resistance `RSP` as 197 Ω/sq (limits 166–228) and the
 high-voltage P⁺ diffusion `RSPH` as 191 Ω/sq (160–228).[^pdk-07]
 
 **Measured on the test tile.** The
 SKY130 raw-data repository publishes two-terminal sweeps of two
-25.05-square "p+ resistor" structures on the test tile, one of which
+25.05-square "p+ resistor" structures on the {term}`test tile`, one of which
 the pad list's pin labels call "hv p+ res".[^raw-data-passives][^raw-data-testtile-pads]
 They measure 211.7 Ω and
 205.5 Ω per square, contacts included — inside those limits and, like
@@ -115,11 +115,11 @@ The deep source/drain does three things the extension cannot:
 * It provides the heavily doped surface that a contact needs for a low
   specific contact resistance.
 * It is deep enough (the PDK's 0.1 µm[^pdk-03]) that the contact etch
-  and any silicide ({ref}`CSIL <step-098>`) do not punch through it.
+  and any {term}`silicide` ({ref}`CSIL <step-098>`) do not punch through it.
 
 Placing
 the deep source/drain a spacer-width from the gate is what keeps its depth from
-degrading short-channel control — the whole purpose of the LDD
+degrading short-channel control — the whole purpose of the {term}`LDD`
 scheme of Ogura et al.[^ogura-1980] and the spacer of Tsang et
 al.[^tsang-1982]
 
@@ -131,7 +131,7 @@ Beyond the PMOS, the same implant makes:
 * the P⁺ diffusion resistor;[^pdk-07]
 * the p-side of the p-diffusion-to-N-well diodes;[^pdk-07]
 * on the reading of the {ref}`NPCM <step-078>` page, the contact heads
-  of the precision poly resistors, which rpm.4 requires to lie inside
+  of the precision {term}`poly resistors <poly resistor>`, which rpm.4 requires to lie inside
   `psdm`.[^pdk-periph]
 
 The 0.34 µm
@@ -149,7 +149,7 @@ this reference, are worth stating:
   and the gate poly was doped n-type at {ref}`P1I <step-050>`. So
   SKY130 avoids the boron-penetration problem of p⁺ gates that
   Pfiester et al. described[^pfiester-1990] at the cost of a
-  single-work-function (buried-channel PMOS) design.
+  single-work-function ({term}`buried-channel PMOS`) design.
 
   The work-function
   dependence on poly doping that Lifshitz measured[^lifshitz-1985] is
@@ -174,7 +174,7 @@ fab (SKY130's recipe is not public):*
   implanter reaches a shallower profile, and its heavier mass
   amorphises the surface, which suppresses {term}`channelling` and
   lets solid-phase regrowth give high activation. The fluorine it
-  brings alters boron's transient enhanced diffusion during the RTA,
+  brings alters boron's transient enhanced diffusion during the {term}`RTA`,
   as Wang et al. showed for BF₂ implanted through
   oxide.[^wang-1997]
 
@@ -199,8 +199,8 @@ fab (SKY130's recipe is not public):*
 
   A zero-tilt implant beside a roughly 0.4 µm-tall (0.18 µm poly plus
   the ~0.2 µm cap[^pdk-03]) capped gate with spacers
-  avoids the shadowing of tilted source/drain implants that Krieger
-  et al. analysed.[^krieger-1989] It needs the screen oxide and
+  avoids the {term}`shadowing` of tilted source/drain implants that Krieger
+  et al. analysed.[^krieger-1989] It needs the {term}`screen oxide` and
   the self-amorphisation of BF₂ (or a pre-amorphisation) to control
   channelling. On a batch spinning-disc implanter the effective
   angle varies across the disc, as Jones and Sinclair
@@ -372,7 +372,7 @@ fab (SKY130's recipe is not public):*
 
   - by {ref}`2PSDI <step-083>` (a lighter or tilted component under the
     same resist);
-  - by lateral straggle and diffusion of this implant
+  - by lateral {term}`straggle` and diffusion of this implant
     under the spacer during {ref}`RTAD <step-088>`;
   - or by a step not separately named.
 

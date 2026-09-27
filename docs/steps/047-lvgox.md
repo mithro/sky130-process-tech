@@ -63,7 +63,7 @@ operation",[^pdk-07] so we read them as built on this oxide.
 
 The
 SKY130 raw-data repository publishes capacitance–voltage sweeps of the
-test tile's `cap_var_lvt` and `cap_var_hvt` structures, five sizes of
+{term}`test tile`'s `cap_var_lvt` and `cap_var_hvt` structures, five sizes of
 each from one 40 × 40 µm device to 462 devices of 5 × 0.5 µm, whose
 dimensions the pad list gives.[^raw-data-testtile-pads][^raw-data-passives]
 
@@ -186,7 +186,7 @@ incorporate "approximately 4-10 wt % nitrogen".[^pat-03]
 
 1. **Load.** Straight from the pre-gate clean ({ref}`GOXETCH <step-046>`)
    into a vertical furnace under nitrogen, or into a single-wafer {term}`RTP`
-   chamber; queue time is limited.
+   chamber; {term}`queue time` is limited.
 2. **Oxidation.** Dry O₂ at 750–900 °C to about 4 nm (industry-typical
    range),[^txt-01] often with a dilute-oxygen or reduced-pressure
    ambient to slow the growth to a controllable rate in the thin

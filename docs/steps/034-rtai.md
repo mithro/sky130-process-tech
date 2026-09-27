@@ -17,7 +17,7 @@
   ten dopant implants of the well and channel module before gate
   oxidation.
 * **Why:** implanted dopant is inactive until the lattice is repaired,
-  and the retrograde well and channel profiles need a short anneal to
+  and the {term}`retrograde well` and channel profiles need a short anneal to
   stay retrograde.
 * **Public numbers:** none published for SKY130 (the anneal recipe is
   not public — see Open questions).
@@ -25,7 +25,7 @@
   (tool); inference (assignment); Aviza furnace — weak inference as an
   alternative.[^skw-01]
 * **Not public:** the anneal temperature, time and ambient, and
-  whether it is a single RTA or an RTA plus a furnace step (→ Open
+  whether it is a single {term}`RTA` or an RTA plus a furnace step (→ Open
   questions).
 :::
 

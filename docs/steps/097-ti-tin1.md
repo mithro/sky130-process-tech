@@ -216,7 +216,7 @@ attacked by fluorine.
   - *Runs this step:* the platform (Endura is the AMAT 200 mm PVD
     cluster of the era[^amat-endura]) is an **inference**, as is the
     assignment of this step to the IMP TiN and collimated Ti chambers,
-    from those chamber types and the contact's aspect ratio.
+    from those chamber types and the contact's {term}`aspect ratio`.
 
   Whether the
   titanium is deposited by IMP or by collimation

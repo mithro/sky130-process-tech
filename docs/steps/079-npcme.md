@@ -22,7 +22,7 @@
   "poly cap after SPE".[^pdk-03]
 * **Likely SkyWater tool:** Lam 9400 TCP — strong (tool, "nitride"
   label); inference (assignment).[^skw-01]
-* **Not public:** the chemistry, endpoint and over-etch, and how much of
+* **Not public:** the chemistry, endpoint and {term}`over-etch`, and how much of
   the adjacent spacer the cut is allowed to remove (→ Open questions).
 :::
 
@@ -69,21 +69,21 @@ The structures being opened are of two kinds:
 fluorine-chemistry* class, masked, with a hard stop on polysilicon.
 
 `NPCME`'s nearest relatives are the spacer etch {ref}`SPE <step-077>` (same
-films, no mask, stops on oxide) and the STI hard-mask etch
+films, no mask, stops on oxide) and the {term}`STI` hard-mask etch
 {ref}`STINITE <step-005>` (masked nitride etch that continues into
 silicon).
 
 What is specific here is the stop: a nitride-over-oxide
 stack must be cleared *completely* — a residue of nitride under a
 contact is an open circuit — without etching the doped poly beneath.
-The selectivity that makes a fluorocarbon etch stop on oxide is
+The {term}`selectivity` that makes a fluorocarbon etch stop on oxide is
 of little help, because the last film before the poly is nitride.
 
 ## Why this step exists
 
 Everything a poly line will ever connect to passes through this
 opening. The local-interconnect contact `licon1` is etched later
-({ref}`LICM1E <step-094>`) through the sacrificial PSG and {term}`cap oxide`
+({ref}`LICM1E <step-094>`) through the sacrificial {term}`PSG` and {term}`cap oxide`
 ({ref}`PSG <step-089>`, {ref}`NCAPOX <step-091>`). If the nitride cap
 were still under it, the contact etch would have to change chemistry
 at the bottom of a 0.17 µm hole[^pdk-periph] and would stop unevenly
@@ -123,7 +123,7 @@ The npc.4 gate margin of
 lateral effects away from the gate edge. Joubert and Bell compared
 oxide-hard-mask and resist-mask gate etching, which is the same
 resist-on-cap-on-poly system seen from the other side.[^joubert-1997]
-Tuda, Shintani and Tanimura describe removing oxide hard masks and
+Tuda, Shintani and Tanimura describe removing oxide {term}`hard masks <hard mask>` and
 residues from poly gates selectively.[^tuda-2004]
 
 Without `NPCME` the poly would remain capped and un-contactable; the
@@ -136,8 +136,8 @@ bottom of every poly contact.
 *An industry-generic nitride/oxide cut etch for a 200 mm, 130 nm-era
 fab (SKY130's recipe is not public):*
 
-1. **Chamber.** Single-wafer fluorocarbon etcher (TCP/ICP or
-   medium-density RIE) with optical emission endpoint and helium
+1. **Chamber.** Single-wafer fluorocarbon etcher ({term}`TCP`/{term}`ICP` or
+   medium-density {term}`RIE`) with optical emission endpoint and helium
    backside cooling ({ref}`category-etch`).
 2. **BARC open.** If an organic BARC was used at {ref}`NPCM <step-078>`
    (inferred there), a short O₂/N₂ or CF₄/O₂ step opens it in the
@@ -186,9 +186,9 @@ fab (SKY130's recipe is not public):*
    Jurgensen and Vitkavage analysed.[^gottscho-1992]
 7. **Strip and clean.** In-situ O₂ plasma or a downstream asher
    (SkyWater lists GaSonics PEP, Iridia and Mattson Aspen II[^skw-01])
-   for the resist, then SPM/SC-1 on a wet bench.[^wiki-rca] We infer
+   for the resist, then {term}`SPM`/SC-1 on a wet bench.[^wiki-rca] We infer
    no HF, because the thin oxide over the source/drain is still needed
-   as the implant screen and the PSG/CMP module has not yet begun.
+   as the implant screen and the PSG/{term}`CMP` module has not yet begun.
 8. **Metrology.** Cross-section SEM of cut windows on monitors for
    residual nitride and spacer erosion; poly loss on test pads; after
    {ref}`LICM1E <step-094>` and {ref}`category-test`, poly contact

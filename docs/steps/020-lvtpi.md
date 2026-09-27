@@ -106,7 +106,7 @@ public.[^pdk-errors]
 
 In the published test-tile measurements the standard PMOS has a
 threshold magnitude of 1.065 V at 7/8 µm and 0.798 V at 7/0.15 µm,
-within 0.02 V of the PDK's e-test nominals of −1.050 V and
+within 0.02 V of the PDK's {term}`e-test` nominals of −1.050 V and
 −0.781 V.[^raw-data-lv-mosfets][^pdk-07] This is by
 maximum-transconductance extrapolation at V_DS = −0.1 V, less half
 the drain bias (our extraction from the published measurements). The

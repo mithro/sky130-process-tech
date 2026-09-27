@@ -19,9 +19,9 @@
 * **Why:** the plate area is the capacitance; this mask, and the etch
   that follows, fix that area on the wafer.
 * **Public numbers:** `CAPMCD` 2 µm, `CAPMCDSP` 0.84 µm and a maximum
-  aspect ratio of 20;[^pdk-03] 2 fF/µm² of area plus 0.19 fF/µm of
+  {term}`aspect ratio` of 20;[^pdk-03] 2 fF/µm² of area plus 0.19 fF/µm of
   periphery.[^pdk-07]
-* **Likely SkyWater tool:** ASML I-line stepper or I-line scanner —
+* **Likely SkyWater tool:** ASML I-line {term}`stepper` or I-line scanner —
   **strong** for existence; **inference** for the assignment of `CAPM`
   to i-line.[^skw-01]
 * **Not public:** the exposure tool, resist and reflectivity scheme,
@@ -147,7 +147,7 @@ model form[^pdk-07]).
   PDK's description of the construction,[^pdk-07] SKY130's.
 
   IBM's and
-  Freescale's patents reach a planar bottom plate by damascene or by
+  Freescale's patents reach a planar bottom plate by {term}`damascene` or by
   CMP of the dielectric beneath a dedicated electrode
   instead.[^pat-mim-ibm][^pat-mim-freescale] The alternative —
   etching the bottom metal first and depositing the dielectric and
@@ -262,7 +262,7 @@ refractory film for a 200 mm, 130 nm-era fab (SKY130's is not public):*
   {ref}`nitrogen <material-process-gases>`.[^txt-02]
 * **The CAPM {term}`reticle`**, generated from the drawn `capm` layer
   (89:44)[^pdk-06] — on our reading a binary chrome-on-glass mask
-  without OPC.
+  without {term}`OPC`.
 * **Mercury-lamp consumables** for the i-line tool.
 
 ## Related steps and cross-references

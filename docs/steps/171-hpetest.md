@@ -76,8 +76,8 @@ Tables with nominal, lower and upper spec limits
 
 The
 page says of the NPN transistors "E-test specs for the NPN devices are
-shown in the table below", of the precision poly resistors that "several
-fixed-value resistors are measured at e-test", and of the SONOS memory
+shown in the table below", of the precision {term}`poly resistors <poly resistor>` that "several
+fixed-value resistors are measured at e-test", and of the {term}`SONOS` memory
 that "E-test parameters are summarized below for both original and star
 cells".[^pdk-07] The SRAM cell "is
 monitored at e-test through the use of 'pinned out' devices within the
@@ -91,7 +91,7 @@ The layer table defines `areaid.mt`
 that "Die must not overlap areaid.mt" — waived for test chips and
 exempted for a few named cells[^pdk-periph] — and that drawn compatible, mask
 and waffle-drop layers are allowed "only inside areaid:mt (i.e., etest
-modules)", inside the seal ring or in the frame.[^pdk-periph] They allow larger
+modules)", inside the {term}`seal ring` or in the frame.[^pdk-periph] They allow larger
 via sizes inside `areaid.mt` (for example 0.200 µm and 0.800 µm via3
 squares, via3.1a).[^pdk-periph]
 
@@ -123,7 +123,7 @@ the same repository under Apache 2.0, lists 273 numbered test modules, 271 of th
 (`Pin 01`–`Pin 12`), and the photographed tile also carries a
 "Lithographic Calibration Region" and "Alignment
 Marks".[^raw-data-testtile-pads][^raw-data-testtile-prop] The repository
-does not say where on the reticle the two copies sit, nor whether its
+does not say where on the {term}`reticle` the two copies sit, nor whether its
 modules are the e-test modules that `areaid.mt` marks in the frame, so
 this page does not treat the tile as SkyWater's production e-test set.
 
@@ -215,7 +215,7 @@ fab (SKY130's test plan is not public beyond the parameters above):*
 5. **Data.** Results are stored per wafer, site and structure, compared
    with limits and control limits, and released to disposition and SPC.
 
-The test tile's pad list is a public example of such a structure set
+The {term}`test tile`'s pad list is a public example of such a structure set
 with its connections written out. Resistors and lines are wired for
 four-terminal measurement ("Force 1", "Force 2", "Sense 1", "Sense 2"
 on "M1 sheet resistance and electrical linewidth").[^raw-data-testtile-pads] There are van der
@@ -402,7 +402,7 @@ poly resistors at {ref}`PRI <step-053>`, the deep N-well and the NPN at
 * Same module: the pads probed, {ref}`PDM <step-168>`, {ref}`PDME <step-169>`.
 * Depends on: examples of steps whose results are measured here, the MiM capacitor
   ({ref}`CAPILD <step-135>`, `CMIMA`), metal 3 ({ref}`MM3E <step-140>`,
-  `RSM3`), the local interconnect ({ref}`LI1ME <step-103>`, `RSLI`).
+  `RSM3`), the {term}`local interconnect` ({ref}`LI1ME <step-103>`, `RSLI`).
 * The first step of the flow: {ref}`SMAT <step-001>`.
 * Category page: {ref}`Electrical test / metrology <category-test>`.
 

@@ -103,7 +103,7 @@ have since refined.[^ashuah-2009]
 
 The same sensitivity is why the PDK, at the time its documentation was
 written, gave the P− resistor's electrical specifications as
-"TBD".[^pdk-07] Chen et al. show that the voltage coefficient of a
+"TBD".[^pdk-07] Chen et al. show that the {term}`voltage coefficient` of a
 lightly doped poly resistor is large and can be improved by
 stress,[^chen-2000] and Tsang et al. analyse the variation of
 high-value resistor banks.[^tsang-2014] Both are consequences of the

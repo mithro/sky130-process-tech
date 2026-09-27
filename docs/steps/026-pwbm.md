@@ -86,7 +86,7 @@ of a {term}`test tile` structure that the pad list names `n20zvtvhv1`
 `s8defet_ccgx_hvn_nw_dnw_native_sti_2p0_nopw_L5p0_W60`), whose only body
 connection in the pad list is `Psub`.[^raw-data-testtile-pads] The repository
 files it under `nfet_20v0_nvt`, but its geometry is that of the PDK's
-`nfet_20v0_zvt` e-test structure ("2\* 30/5.5") rather than the
+`nfet_20v0_zvt` {term}`e-test` structure ("2\* 30/5.5") rather than the
 "2\* 30/1.0" listed for `nfet_20v0_nvt`.[^pdk-07]
 
 Five instances give a

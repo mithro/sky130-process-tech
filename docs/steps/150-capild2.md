@@ -201,7 +201,7 @@ difference in thickness or permittivity between this film and
   arithmetic from the identical `CMIMA` and `CMIM2A`[^pdk-07]).
 
   The
-  test tile has such a pair — "CAPM-M3 and CAP2M-M4 capacitors, stacked
+  {term}`test tile` has such a pair — "CAPM-M3 and CAP2M-M4 capacitors, stacked
   on top of each other and connected together", 11 pairs of 40 × 40 µm
   plates[^raw-data-testtile-pads] — and its published measurement,
   68.78 pF, is 0.3–0.4 % more than the sum of the separately measured
@@ -243,7 +243,7 @@ difference in thickness or permittivity between this film and
   later cut through whatever dielectric remains ({ref}`MM4E <step-155>`).
 * **Oxynitride, oxide or nitride.** PECVD silicon nitride gives the most
   capacitance per thickness, but Van Huylenbroeck et al. found that
-  PECVD-nitride MiMs show trap-induced dispersion while PECVD ONO
+  PECVD-nitride MiMs show trap-induced dispersion while PECVD {term}`ONO`
   stacks do not.[^van-huylenbroeck-2002]
 
   Ng, Chew and
