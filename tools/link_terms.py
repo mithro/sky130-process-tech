@@ -417,8 +417,12 @@ def variants_for(term: str) -> list[tuple[str, str]]:
     return [(f, term) for f in out]
 
 
-LEFT_BOUND = r"(?<![A-Za-z0-9_])"
-RIGHT_BOUND = r"(?![A-Za-z0-9_])"
+# A hyphen counts as a word character here: an occurrence inside a compound
+# ("post-CMP cleaner", "dual-damascene", "low-Vt", "pre-LI") is not linked,
+# so the term's first *free-standing* use gets the link instead (final-pass
+# report on 2026-09-27: 89 of 1 241 candidates sat against a hyphen).
+LEFT_BOUND = r"(?<![A-Za-z0-9_-])"
+RIGHT_BOUND = r"(?![A-Za-z0-9_-])"
 
 
 def build_pattern(terms: list[str]) -> tuple[re.Pattern, dict[str, str]]:
@@ -951,9 +955,17 @@ def selftest() -> int:
     out = linked_of("The fab lists a TCP 9600(SE) etcher on site.\n", ["TCP"])
     if out:
         fail(f"TCP-before-model-number context guard failed: {out}")
-    out = linked_of("The chamber is a TCP-type high-density source.\n", ["TCP"])
+    out = linked_of("The chamber is a TCP high-density source.\n", ["TCP"])
     if out != [("TCP", "TCP")]:
         fail(f"plain TCP use was wrongly rejected: {out}")
+    # 31b. An occurrence inside a hyphenated compound is not a first use:
+    # the hyphen is a word character at both bounds (final pass, 2026-09-27).
+    out = linked_of("The chamber is a TCP-type source; a TCP coil drives it.\n", ["TCP"])
+    if out != [("TCP", "TCP")] or "TCP-type" not in "The chamber is a TCP-type source":
+        fail(f"hyphenated compound should be skipped for the free-standing use: {out}")
+    out = linked_of("The chamber is a TCP-type source.\n", ["TCP"])
+    if out != []:
+        fail(f"a term only inside a hyphenated compound must not be linked: {out}")
 
     # 32. M1 CONTEXT_SKIP: "overlay" as a verb is rejected; the noun use
     # still links (and the term is still tried again at its next
