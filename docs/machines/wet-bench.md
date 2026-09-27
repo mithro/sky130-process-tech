@@ -2,30 +2,28 @@
 # Wet bench and spray processor
 
 A wet bench is the batch tool a fab uses to clean, etch and strip wafers
-in liquid chemicals: a line of tanks — sulphuric–peroxide, the RCA
-cleans, dilute HF and buffered oxide etch, hot phosphoric acid —
-through which a robot carries cassettes or bare wafer batches, ending
-in a rinse and a dryer. A spray processor does the same chemistry in a
+in liquid chemicals. A spray processor does the same chemistry in a
 closed chamber, spinning a batch of wafers in a rotor while nozzles
 spray the liquids onto them. Between them these tools run the
 pre-furnace cleans, the nitride strip, the wet oxide etches and the
-cleans that follow most strips and etches. This page describes the
-class in general, lists representative 200 mm-era models, and then says
-what SkyWater has published about its own tools of this class and which
-SKY130 steps this reference assigns to it. The chemistry of wet
-cleaning and etching is on the {ref}`strip <category-strip>` and
-{ref}`etch <category-etch>` category pages.
+cleans that follow most strips and etches.
 
 | | Wet bench and spray processor |
 |---|---|
-| What it does | Batch wet cleaning, etching and stripping. The RCA clean, "a standard set of wafer cleaning steps which need to be performed before high-temperature processing steps", is its core sequence;[^wiki-rca] Kern traces its implementation "from simple immersion to centrifugal spraying, megasonic techniques, and enclosed system processing".[^kern-1990] |
+| What it does | Batch wet cleaning, etching and stripping. The RCA clean, "a standard set of wafer cleaning steps which need to be performed before high-temperature processing steps", is its core sequence.[^wiki-rca] |
 | Chemistries | SPM ("A typical mixture is 3 parts of concentrated sulfuric acid and 1 part of 30 wt. % hydrogen peroxide");[^wiki-piranha] SC-1 and SC-2 "at 75 or 80 °C";[^wiki-rca] HF and BOE (6:1 BOE etches thermal oxide "at approximately 2 nanometres per second at 25 degrees Celsius");[^wiki-boe] hot phosphoric acid; solvents. |
 | Hot phosphoric bath | "Refluxed boiling phosphoric acid at 180°C" etches nitride at 100 Å/min against 0–25 Å/min for deposited oxide;[^vgh-1967] water spiking and partial bath replacement keep the selectivity stable over the bath's life.[^liu-2007] |
 | Wafer handling | Immersion benches move batches between tanks — SCREEN's WS-820C "for 200 mm wafers with carrier transfer processing" or WS-820L "with carrierless transfer processing", with "up to 13 baths";[^screen-ws820] a centrifugal spray processor holds cassettes "in a rotor within the process chamber" facing spray manifolds.[^pat-spray-semitool] |
-| Drying | Spin or IPA-vapour drying — SkyWater lists "spin or IPA dry" on its Akrion bench;[^skw-01] Kern noted "Improvements in wafer drying by use of isopropanol vapor";[^kern-1990] Marangoni drying was published as "A new extremely clean drying process".[^leenaars-1990] |
+| Drying | Spin or IPA-vapour drying — SkyWater lists "spin or IPA dry" on its Akrion bench;[^skw-01] Kern noted "Improvements in wafer drying by use of isopropanol vapor".[^kern-1990] |
 | 200 mm era | Akrion GAMA (150–300 mm)[^akrion-gama-series] and E200 benches;[^sst-akrion-scp-2007] SCREEN (DNS) WS-820 wet stations;[^screen-ws820] the FSI (now TEL) MERCURY batch spray system for "75mm – 200mm wafers", with "over 1,000 systems installed".[^tel-mercury-2018] |
 | SkyWater-listed tool | "Akrion Gamma Batch Wet Bench" ("Sulfuric, SC1, phosphoric, BOE, spin or IPA dry"), "Batch Rotational" ("EKS265, EKC270 solvents, CO2 injected DI"); under "Pre-cleaning", "DNS wet bench industry standard HF/SC1/SC2" ("dilute HF-last with IPA dry") and "FSI Mercury industry standard HF/SC1/SC2 rotational"[^skw-01] |
 | SKY130 steps | 4 steps, plus 36 where it runs a clean or strip; see {ref}`SKY130 steps assigned to this class <machine-wet-bench-steps>` |
+
+:::{seealso}
+The chemistry of wet
+cleaning and etching is on the {ref}`strip <category-strip>` and
+{ref}`etch <category-etch>` category pages.
+:::
 
 ## What the machine class is and how it works
 
@@ -34,7 +32,12 @@ is isotropic and can be very selective, and it cleans without the
 damage of a plasma. Kern's review of 1990 records that wafer-cleaning
 chemistry "has remained essentially unchanged in the past 25 years and
 is based on hot alkaline and acidic hydrogen peroxide solutions", while
-the equipment changed around it.[^kern-1990] What makes a machine a
+the equipment changed around it.[^kern-1990] Kern traces the RCA clean's implementation "from simple immersion to centrifugal spraying, megasonic techniques, and enclosed system processing".[^kern-1990]
+
+A wet bench is a line of tanks — sulphuric–peroxide, the RCA
+cleans, dilute HF and buffered oxide etch, hot phosphoric acid —
+through which a robot carries cassettes or bare wafer batches, ending
+in a rinse and a dryer. What makes a machine a
 *wet bench* or *spray processor* is the engineering of that equipment:
 chemical baths or spray delivery held at controlled concentration and
 temperature, transfer between chemicals without contamination, rinsing,
@@ -47,13 +50,16 @@ An automated bench is a row of process tanks, rinse tanks and a dryer
 served by robots. SCREEN's WS-series stations can be configured "freely,
 depending on the application", with "up to 13 baths" and "up to six
 transfer robots", "strict chemical management" and "clean drying
-units".[^screen-ws820] Akrion describes its GAMA series as a "Batch
+units".[^screen-ws820]
+
+Akrion describes its GAMA series as a "Batch
 immersion process solution for all FEOL and BEOL semiconductor
 applications" with "Concentration control and dilute
-chemistry";[^akrion-gama-series] a GAMA bench at a Canadian research
+chemistry".[^akrion-gama-series] A GAMA bench at a Canadian research
 centre offers "Dry-in/dry-out automated SMIF pod input/output
 operation", "Real time particle monitoring in chemical tanks" and "Real
 time chemical analysis and concentration adjustments".[^akrion-gama]
+
 Akrion's E200 bench, as described in 2007, offered configurations "for RCA cleans,
 nitride etch, and photoresist strip applications", with rinse tanks
 "designed for DI water savings" and dryers that allow "rinsing and
@@ -70,9 +76,11 @@ A centrifugal spray processor puts the batch in a closed chamber
 instead of moving it between tanks. In a Semitool patent, wafers "are
 contained within cassettes … loaded into a rotor" driven by a motor
 behind the chamber, and arrays of spray nozzles "are adapted to spray
-fluids towards the rotor"; the patent spreads the flow over more,
+fluids towards the rotor".[^pat-spray-semitool] The patent spreads the flow over more,
 smaller nozzles "to reduce consumption of liquid process
-chemicals".[^pat-spray-semitool] Tokyo Electron, which later took over
+chemicals".[^pat-spray-semitool]
+
+Tokyo Electron, which later took over
 FSI's MERCURY line, describes its batch spray systems as tools that
 replace "dated ashers, wet bench stations and peripheral rinsing/drying
 equipment with a single tool that etches, strips and cleans in one safe,
@@ -89,14 +97,18 @@ concentrations of HF and HF₂⁻, and a more stable etch rate".[^wiki-boe]
 Nitride also etches in HF, at a rate Deckert found "linear in both [HF]
 and [HF₂⁻], but independent of [F⁻]",[^deckert-1978] and Knotter and
 Denteneer's mechanism explains "etch selectivity between these two
-materials".[^knotter-2001] In hot phosphoric acid,
+materials".[^knotter-2001]
+
+In hot phosphoric acid,
 van Gelder and Hauser found that "An increase in water content increases
 the etch rate of silicon nitride and decreases the etch rate of silicon
 dioxide", and used a refluxed boiling bath to hold the water
-content;[^vgh-1967] in production, Liu et al. controlled it with "a
+content.[^vgh-1967] In production, Liu et al. controlled it with "a
 water concentration monitor and a water spiking apparatus", replaced
 part of the bath after each lot to reduce dissolved silicon, and added
-sulphuric acid to shorten conditioning.[^liu-2007] Room-temperature
+sulphuric acid to shorten conditioning.[^liu-2007]
+
+Room-temperature
 cleaning sequences have been developed to cut the chemical load of the
 hot RCA steps: Ohmi's five-step clean reduced chemical and ultrapure
 water use to "less than 1% and 5%, respectively".[^ohmi-1996]
@@ -108,7 +120,9 @@ in 1990 that "Improvements in wafer drying by use of isopropanol vapor
 or by 'slow-pull' out of hot deionized water are being
 investigated";[^kern-1990] Leenaars, Huethorst and van Oekel published
 Marangoni drying the same year as "A new extremely clean drying
-process".[^leenaars-1990] Drying also affects corrosion: Wai and Ling traced corrosion of Al–Cu lines to
+process".[^leenaars-1990]
+
+Drying also affects corrosion: Wai and Ling traced corrosion of Al–Cu lines to
 moisture left after a wet polymer clean and prevented it by lengthening
 "isopropyl-alcohol (IPA) purge time by 10 secs and wafers lift up time
 by 18 secs" in the Marangoni step.[^wai-2017] Rinse water can also leave
@@ -134,26 +148,26 @@ related solvent N-methyl-2-pyrrolidone.[^wiki-nmp]
 
 ## Representative 200 mm-era models
 
-* **Akrion.** The GAMA automated wet station, "suitable for various
-  cleaning, etching, and stripping applications",[^akrion-gama-series]
-  installed as a "GAMA wet processor B" at a research
-  centre,[^akrion-gama] and the E200 modular linear wet bench; Akrion
-  bought most of the assets of SCP Global Technologies, "a manufacturer
-  of batch-immersion tools", in 2006.[^sst-akrion-scp-2007]
-* **SCREEN (formerly Dainippon Screen, DNS).** The WS-620C for 150 mm,
-  WS-820C and WS-820L for 200 mm wafers, with an optional "low-pressure
-  drying unit … to reduce watermarks".[^screen-ws820]
-* **FSI International / Tokyo Electron.** The MERCURY batch spray
-  cleaning system, "Supporting 75mm – 200mm wafers" and "only recently
-  retired as the industry moved towards 300mm and single-wafer cleaning"
-  when TEL returned it to production in 2018; TEL handed the line to
-  another supplier in 2024.[^tel-mercury-2018]
-* **Semitool.** Centrifugal spray processors, as described in its
-  patent.[^pat-spray-semitool]
-* **Other vendors.** The step pages also name SCP
-  ({ref}`PRIS <step-054>`) and Santa Clara Plastics
-  ({ref}`NS19 <step-013>`) benches; no separate vendor
-  description was retrieved for this page.
+:::{table} Representative wet benches and spray processors (figures as each source gives them)
+
+| Vendor | Model | Year | Published figures |
+|---|---|---:|---|
+| Akrion | GAMA automated wet station | — | "suitable for various cleaning, etching, and stripping applications",[^akrion-gama-series] installed as a "GAMA wet processor B" at a research centre[^akrion-gama] |
+| Akrion | E200 modular linear wet bench | — | — |
+| SCREEN (formerly Dainippon Screen, DNS) | WS-620C | — | for 150 mm[^screen-ws820] |
+| SCREEN (formerly Dainippon Screen, DNS) | WS-820C and WS-820L | — | for 200 mm wafers, with an optional "low-pressure drying unit … to reduce watermarks"[^screen-ws820] |
+| FSI International / Tokyo Electron | MERCURY batch spray cleaning system | — | "Supporting 75mm – 200mm wafers" and "only recently retired as the industry moved towards 300mm and single-wafer cleaning" when TEL returned it to production in 2018; TEL handed the line to another supplier in 2024[^tel-mercury-2018] |
+| Semitool | centrifugal spray processors | — | as described in its patent[^pat-spray-semitool] |
+:::
+
+Akrion
+bought most of the assets of SCP Global Technologies, "a manufacturer
+of batch-immersion tools", in 2006.[^sst-akrion-scp-2007]
+
+**Other vendors.** The step pages also name SCP
+({ref}`PRIS <step-054>`) and Santa Clara Plastics
+({ref}`NS19 <step-013>`) benches; no separate vendor
+description was retrieved for this page.
 
 ## At SkyWater
 
@@ -175,17 +189,24 @@ and under "Pre-cleaning", in the "Furnaces/Diffusion/Pre-Clean" group of
 > "dilute HF-last with IPA dry"
 > "FSI Mercury industry standard HF/SC1/SC2 rotational"
 
-Read term by term: the Akrion bench is the only entry with sulphuric
-acid, phosphoric acid and BOE; the DNS bench and the FSI Mercury are the
-only entries with SC-2; the Batch Rotational tool is a solvent tool with
-CO₂-injected rinse water; and the "Single Wafer" entry that follows the
-Batch Rotational, "SEZ223, Davinci, HF, DSP+HF, titration controlled",
-is a {ref}`single-wafer spin processor <machine-single-wafer-spin-processor>`, a separate class.[^skw-01] SkyWater
+Read term by term:[^skw-01]
+
+* the Akrion bench is the only entry with sulphuric
+  acid, phosphoric acid and BOE;
+* the DNS bench and the FSI Mercury are the
+  only entries with SC-2;
+* the Batch Rotational tool is a solvent tool with
+  CO₂-injected rinse water;
+* the "Single Wafer" entry that follows the
+  Batch Rotational, "SEZ223, Davinci, HF, DSP+HF, titration controlled",
+  is a {ref}`single-wafer spin processor <machine-single-wafer-spin-processor>`, a separate class.
+
+SkyWater
 gives no model, tank count or vendor for the Batch Rotational tool. We
 read "Akrion Gamma" as Akrion's GAMA wet station,[^akrion-gama-series]
 "DNS" as Dainippon Screen, now SCREEN,[^screen-ws820] and "rotational"
 on the FSI Mercury as a rotating batch spray chamber of the kind the
-Semitool patent describes;[^pat-spray-semitool] TEL describes the
+Semitool patent describes.[^pat-spray-semitool] TEL describes the
 MERCURY only as a "batch spray cleaning system".[^tel-mercury-2018]
 These are inferences from the names. The step pages write the solvents
 EKC265/EKC270; whether SkyWater's "EKS265" is the same product is not
@@ -271,9 +292,11 @@ not public.
 * **Wet oxide etches over thin films.** {ref}`TUNME <step-039>` removes
   the oxide from the tunnel windows (the pad oxide, on that page's
   inference) and {ref}`GOXETCH <step-046>` strips the exposed thick gate
-  oxide, both with BOE — the etchant a Cypress embedded-SONOS patent
+  oxide, both with BOE.
+
+  BOE is the etchant a Cypress embedded-SONOS patent
   that may still be in force names for the two operations, with its
-  alternatives, in the collapsed note below this list; the
+  alternatives, in the collapsed note below this list. The
   {ref}`SACETCH <step-095>` page reads its etch, by inference, as a
   dilute-HF dip. At these thicknesses the slow, well-controlled rates of
   dilute HF matter.[^kikuyama-1994][^wiki-boe]
@@ -281,7 +304,7 @@ not public.
   ({ref}`BOX <step-002>`, {ref}`LINOX <step-010>` and the pre-anneal
   cleans of several implant strips) assign the clean to the DNS or FSI
   tools because SC-2, which removes metallic contamination, is listed
-  only for them;[^skw-01][^wiki-rca] the DNS entry's "dilute HF-last with
+  only for them.[^skw-01][^wiki-rca] The DNS entry's "dilute HF-last with
   IPA dry" is the option the {ref}`GOXETCH <step-046>`
   page matches to its HF-last pre-gate clean.[^skw-01]
 * **Cleans after implant strips.** The implant-strip pages follow the
@@ -305,19 +328,16 @@ oxide.[^pat-04]
 
 ## Related pages
 
-* {ref}`category-strip` — wet strip and clean chemistry and the nitride
-  strip.
-* {ref}`category-etch` — wet etching of oxides and nitride.
-* {ref}`machine-downstream-plasma-asher` — the ash that precedes most
+* **Category.** {ref}`category-strip` — wet strip and clean chemistry and the nitride
+  strip. {ref}`category-etch` — wet etching of oxides and nitride.
+* **Machines.** {ref}`machine-downstream-plasma-asher` — the ash that precedes most
   wet strips.
-* {ref}`machines-index` — all machine classes, including the
-  single-wafer spin processor, SkyWater's listed tools and the step
-  assignments.
-* {ref}`materials-index` — wet chemicals and ultrapure water.
-* {ref}`material-wet-chemicals` — the acids, peroxide cleans and solvents,
-  their grades and SkyWater's listed chemistries.
-* {ref}`material-ultrapure-water` — rinse water, its standards and
+* **Materials.** {ref}`material-wet-chemicals` — the acids, peroxide cleans and solvents,
+  their grades and SkyWater's listed chemistries. {ref}`material-ultrapure-water` — rinse water, its standards and
   quality.
+* **Indexes.** {ref}`machines-index` — all machine classes, including the
+  single-wafer spin processor, SkyWater's listed tools and the step
+  assignments. {ref}`materials-index` — wet chemicals and ultrapure water.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
 ### Related patents, papers and filings

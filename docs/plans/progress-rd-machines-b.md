@@ -777,6 +777,55 @@ before "and SkyWater lists").
 
 Content problems for the owner: none found.
 
+### 15. `docs/machines/wet-bench.md` — done
+
+Rules applied: R-INTRO, R-MODELS, R-QUICKFACTS, R-PARA, R-SENTENCE, R-LIST, R-RELATED, R-CAPTION.
+R-ENTRIES as a list rather than a table: the "Read term by term" glosses name what sets entries
+apart ("the only entry with …", "the only entries with SC-2") rather than what each entry names,
+so each clause stays whole as a list item under "Read term by term:". The two in-force notes are
+untouched, each still directly after its paragraph or list.
+
+* **R-INTRO.** 153 → 69 words. The guide's own R-INTRO example for this page ("Keep lines 4–11")
+  would keep 104 words, over the 70 cap; the cap was applied (guide problem 3). The first sentence
+  (53 words) split at its colon: "A wet bench is the batch tool … in liquid chemicals." stays with
+  the spray-processor and "Between them …" sentences; "A wet bench is a line of tanks — … — …
+  ending in a rinse and a dryer." (subject and verb added at the split) moved into the first H2,
+  before "What makes a machine a wet bench …". Pointer → `{seealso}`. Deleted template sentence:
+  "This page describes the class in general, lists representative 200 mm-era models, and then says
+  what SkyWater has published about its own tools of this class and which SKY130 steps this
+  reference assigns to it."
+* **R-MODELS.** Five bullets → 6 rows + two remarks (the SCP purchase; **Other vendors.**). All Year
+  cells `—`: "in 2006" is a purchase, "in 2018" / "in 2024" are TEL's return to production and
+  hand-over (kept in Published figures), and no row has a model year. SCREEN's single end marker
+  repeated on its first row. The E200 row has no marker, as in the base bullet.
+* **R-QUICKFACTS.** Cells over cap 7 → 7 by count. What it does 45 → 29 words (Kern's sentence moved
+  to the first H2, "its implementation" → "the RCA clean's implementation"); Drying 3 → 2 quotations
+  (the Marangoni clause DEDUPLICATED; body `### Rinsing, drying and static charge`). Left:
+  Chemistries, Hot phosphoric bath, Wafer handling, 200 mm era (quotations and figures only here,
+  several in one number-order unit), SkyWater-listed tool (eight quotations, all in the
+  blockquotes; rewriting it without them would drop the identifiers EKS265, EKC270, CO2, SC1 inside
+  them, which the tool counts).
+* **R-PARA / R-SENTENCE / R-LIST.** H3 bodies split at source seams; splits at semicolons (GAMA,
+  Semitool, van Gelder / Liu, the pre-furnace bullet) and the "We read … ; TEL describes …"
+  sentence. The TUNME/GOXETCH bullet's dash material (the in-force pointer) became its own sentence
+  "BOE is the etchant a Cypress embedded-SONOS patent that may still be in force names …", its
+  words unchanged. The MKS pointer paragraph stays directly above its note.
+* **R-RELATED**, **R-CAPTION** as page 1.
+
+Caps (measure5): paragraphs > 100 7 → 0; list items > 60 2 → 1 (the untouched grading bullet);
+sentences > 45 12 → 3 (the E200 sentence 57, over only by its quotations; the generated run and the
+grading bullet); table cells > 25 7 → 7 (six quick-facts cells, the MERCURY row).
+
+Preservation. DEDUPLICATED: marker `leenaars-1990`, number 200 (template sentence), quote "A new
+extremely clean drying process". ADDED markers: `pat-spray-semitool` (split), `screen-ws820` (the
+WS-620C row). REGROUPED: the models bullets → rows. Template losses: `about`, `SKY130`. Strict
+words: the template sentence; the Marangoni clause of the Drying cell. Marker coverage: 12 flags,
+all read — model cells, the four "Read term by term" items (marker on the lead-in), and the
+TUNME/GOXETCH halves, which carry their own hedges ("on that page's inference", "may still be in
+force", "by inference").
+
+Content problems for the owner: none found.
+
 ## Guide problems
 
 1. **`measure5.py` fuses a sentence ending in "…ch."** Its abbreviation guard `(?<!ch\.)` (meant
@@ -785,4 +834,22 @@ Content problems for the owner: none found.
    "sentence" that is two). Every etch page is affected; a `\bch\.` guard would fix it. The scripts
    are under `docs/plans/readability/`, so this is a coordinator item.
 2. **§1 says a quotation counts as one word, the scripts count every word in it.** Cells made of
-   two quotations (2300 Exelan row) are reported over 25 words by `measure5.py`.
+   two quotations (2300 Exelan row) are reported over 25 words by `measure5.py`, and most of the
+   batch's remaining "sentences > 45" are over only by the words inside their quotations.
+3. **The R-INTRO worked example contradicts the §1 cap.** R-INTRO's example for `wet-bench.md` says
+   to keep lines 4–11 of the intro, which is 104 words; §1 caps the intro at 70. This batch applied
+   the cap. The example should be reworded (keep the first sentences up to 70 words; move the rest
+   into the first H2).
+4. **R-QUICKFACTS against `check_preserved.py` for numeric cells.** `--allow-deduplicated` covers
+   quotes, markers and numbers only. Deleting a quick-facts clause that holds a hedge word ("about",
+   "approximately"), an identifier ("1150C", "EKS265") or two or more numbers of the cell's
+   number-order unit gives an undeclarable LOST even when the body keeps the words. That is why
+   most figure-heavy quick-facts cells in this batch stay over 20 words. Either the dedup check
+   should cover hedges, identifiers and number order in the same three conditions, or the guide
+   should say that such cells are left as they are.
+5. **The dedup check fails when the same edit also moves text into the body.** On
+   plasma-etcher-metal (`lam-9600se-stripper-1998`, `9600`), plasma-nitridation-chamber (`130`) and
+   tungsten-cvd (`200`) a genuine quick-facts or template deletion was reported as LOST because a
+   sentence moved from the intro or the quick facts into the body in the same edit changed the body
+   count. Condition (b) ("body count unchanged") could compare against the base body plus the text
+   moved out of the summary.
