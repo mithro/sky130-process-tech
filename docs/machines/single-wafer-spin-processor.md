@@ -259,13 +259,13 @@ table):
 How the step pages grade the SkyWater tools for each step ("Machines
 likely used at SkyWater"), as collected on the machines index:
 
-* **"Single Wafer", "SEZ223, Davinci, HF, DSP+HF, titration controlled"** — *inference (SEZ 223):* {ref}`BFR <step-060>`; *medium:* {ref}`SACETCH <step-095>`; *strong for existence:* {ref}`NS19 <step-013>`, {ref}`TUNME <step-039>`, {ref}`GOXETCH <step-046>`, {ref}`CTME <step-108>`, {ref}`VIME <step-119>`, {ref}`VIM2E <step-130>`, {ref}`VIM3E <step-145>`; *named as the post-CMP clean; no brush scrubber named:* {ref}`CMPNIT <step-012>`, {ref}`CMPP <step-090>`, {ref}`WCMPLI <step-100>`, {ref}`CMPL <step-106>`, {ref}`WCMP2 <step-111>`, {ref}`CMPM <step-116>`, {ref}`WCMP3 <step-122>`, {ref}`CMPM2 <step-127>`, {ref}`WCMP4 <step-133>`, {ref}`CMPM3 <step-142>`, {ref}`WCMP5 <step-148>`, {ref}`CMPM4 <step-157>`
+* **"Single Wafer", "SEZ223, Davinci, HF, DSP+HF, titration controlled"** — *inference (SEZ 223):* {ref}`BFR <step-060>`; *medium:* {ref}`SACETCH <step-095>`; *strong for existence:* {ref}`NS19 <step-013>`, {ref}`TUNME <step-039>`, {ref}`GOXETCH <step-046>`, {ref}`CTME <step-108>`, {ref}`VIME <step-119>`, {ref}`VIM2E <step-130>`, {ref}`VIM3E <step-145>`; *named as the {term}`post-CMP clean`; no brush scrubber named:* {ref}`CMPNIT <step-012>`, {ref}`CMPP <step-090>`, {ref}`WCMPLI <step-100>`, {ref}`CMPL <step-106>`, {ref}`WCMP2 <step-111>`, {ref}`CMPM <step-116>`, {ref}`WCMP3 <step-122>`, {ref}`CMPM2 <step-127>`, {ref}`WCMP4 <step-133>`, {ref}`CMPM3 <step-142>`, {ref}`WCMP5 <step-148>`, {ref}`CMPM4 <step-157>`
 
 Two step pages grade the assignment itself rather than only the tool's
 existence: {ref}`BFR <step-060>` (an inference, resting on the SEZ press
 release and the used-equipment listing naming film removal and backside
 applications for the 223[^sez-223-pr][^sez-223-moov]) and
-{ref}`SACETCH <step-095>` ("medium for a contact-hole clean"). The CMP pages name the SEZ tools for the
+{ref}`SACETCH <step-095>` ("medium for a contact-hole clean"). The {term}`CMP` pages name the SEZ tools for the
 post-CMP clean because SkyWater names no brush scrubber; that clean is
 described on the {ref}`post-CMP cleaner page
 <machine-post-cmp-cleaner>`.
@@ -328,7 +328,7 @@ public.
   single-wafer clean for post-etch residue.
 
   DSP+ was published as a
-  replacement for SPM on post-etch residues,[^lee-2012-dsp] and SEZ's
+  replacement for {term}`SPM` on post-etch residues,[^lee-2012-dsp] and SEZ's
   residue work used an aluminium stack etched on a Lam TCP 9600, a model
   SkyWater also lists;[^sez-polymer-1999][^skw-01] neither source
   concerns SKY130.
@@ -343,7 +343,7 @@ public.
   (our reading).
 * **The pre-anneal clean.** {ref}`PWDEIS <step-033>` offers a
   spray or single-wafer processor as an alternative to the batch bench
-  for its RCA clean; the SC-2 of that clean is listed only on the DNS and
+  for its {term}`RCA clean`; the SC-2 of that clean is listed only on the DNS and
   FSI tools ({ref}`machine-wet-bench`).[^skw-01]
 * **Charging.** The deionised-water rinse of a spin tool can charge the
   surface of an oxide-covered wafer, depending on radius, time and spin
@@ -352,7 +352,7 @@ public.
 ## Related pages
 
 * **Category.** {ref}`category-etch` — wet etching and the single-wafer spin etcher
-  for backside film removal. {ref}`category-strip` — wet strip and clean chemistry.
+  for {term}`backside film removal`. {ref}`category-strip` — wet strip and clean chemistry.
 * **Machines.** {ref}`machine-wet-bench` — the batch benches and spray processors that
   share the HF and clean steps. {ref}`machine-post-cmp-cleaner` — the post-CMP clean that the CMP pages
   assign to this class's listed tools.

@@ -148,7 +148,7 @@ The polishers of the period used four arrangements.
 
 A stop-layer or metal polish can detect the change of material; an
 oxide polish without a stop cannot, and Wikipedia notes that "a lack of
-end points requires blind polishing".[^wiki-cmp] Optical endpoint looks
+end points requires blind polishing".[^wiki-cmp] Optical {term}`endpoint` looks
 at the wafer through the rotating table: IBM's patent puts "a window
 embedded within the polishing table", with a reflectance measurement in
 which "a prescribed change in the in-situ reflectance corresponds to a
@@ -170,7 +170,7 @@ factor".[^stine-1998]
 A polisher also makes defects. Kwon, Ramachandran and Park review
 scratching in CMP, its dependence on process conditions and consumables,
 and the use of filtration and water jet spraying to reduce
-it.[^kwon-2013] In a tungsten damascene sequence, "μ-scratches" in the
+it.[^kwon-2013] In a tungsten {term}`damascene` sequence, "μ-scratches" in the
 oxide "are filled with tungsten during the CMP process" and "can short
 the intended patterned circuitry".[^ollendorf-2004] Ollendorf, Cabral
 and Fuller removed the metal from them with a plasma clean after the
@@ -316,12 +316,12 @@ The slurries, pads and cleaning chemicals are listed in the
 {ref}`category page <category-cmp>`; what is specific to the polisher is
 summarised here. None of the SkyWater sources describes the fab's
 slurry distribution or waste treatment. Slurries, pads, conditioners,
-carrier parts and post-CMP clean chemistry are described on the
+carrier parts and {term}`post-CMP clean` chemistry are described on the
 {ref}`CMP consumables <material-cmp-consumables>` page. Ultrapure water,
 its standards and its quality parameters are described on the
 {ref}`ultrapure water <material-ultrapure-water>` page.
 
-* **Slurries.** Silica or ceria slurries for oxide and STI, and
+* **Slurries.** Silica or ceria slurries for oxide and {term}`STI`, and
   oxidiser-bearing slurries for tungsten ({ref}`category-cmp`), such as
   the composition of an oxidiser and a catalyst "having multiple oxidation
   states" in a Cabot patent;[^pat-cmp-cabot] the AVANTI 472 pumped up to
@@ -350,12 +350,12 @@ page and the step pages.
 
   * **Trench fill** — {ref}`CMPNIT <step-012>` polishes it to the
     nitride.
-  * **Oxide** — {ref}`CMPP <step-090>` the PSG over the poly (on a
+  * **Oxide** — {ref}`CMPP <step-090>` the {term}`PSG` over the poly (on a
     nitride-cap stop, in that page's reading); {ref}`CMPL <step-106>`
     and {ref}`CMPM <step-116>` to {ref}`CMPM4 <step-157>` the
     inter-level oxides to a remaining thickness.
   * **Tungsten** — {ref}`WCMPLI <step-100>` and {ref}`WCMP2 <step-111>`
-    to {ref}`WCMP5 <step-148>` the overburden ({ref}`category-cmp`).
+    to {ref}`WCMP5 <step-148>` the {term}`overburden` ({ref}`category-cmp`).
 
   SkyWater's list covers all three film types.[^skw-01]
 * **Stopping without a stop layer.** On the step pages' readings the

@@ -36,7 +36,7 @@ deposition suppresses the etch.[^oehrlein-1994b]
 What makes a machine a
 *dielectric* etcher is therefore a source that delivers a high ion
 energy with a controlled fluorocarbon radical supply, stable wall
-conditions, and endpoint detection sensitive enough for small open
+conditions, and {term}`endpoint` detection sensitive enough for small open
 areas. In the 200 mm, 130 nm era a dielectric etcher was most often a
 capacitively coupled reactor — magnetically enhanced or dual-frequency
 — rather than the inductive sources of silicon and metal etch.
@@ -76,7 +76,7 @@ Applied launched the Dielectric Etch IPS Centura in April 1997 as its
 "most advanced, high-density plasma system for etching dielectric
 films".[^amat-1997] Perry et al. mapped such a regime in an inductive
 C₂F₆ plasma, with ion energies of 50–160 eV, oxide etch rates of
-0–150 Å/s and selectivity to resist of 1 to 6.[^perry-2001]
+0–150 Å/s and {term}`selectivity` to resist of 1 to 6.[^perry-2001]
 
 ### Fluorocarbon films and selectivity
 
@@ -154,7 +154,7 @@ Nitride clears with a CN emission signal: in a Tokyo Electron and
 National Semiconductor patent, "a strong peak at 387 nm indicates that
 CN is present in the plasma, usually indicating that nitride is being
 etched".[^pat-endpoint-tel] In the patent, a double endpoint stops the etch at both interfaces of a
-TEOS/nitride/TEOS spacer.[^pat-endpoint-tel] Contact and via layers
+{term}`TEOS`/nitride/TEOS spacer.[^pat-endpoint-tel] Contact and via layers
 expose so little of the wafer that the emission change is small.[^wodecki-1999]
 Wodecki reports an add-on endpoint system on "a Lam Research
 Corporation 200 mm Rainbow 4520 dielectric etch system" that "reliably
@@ -277,7 +277,7 @@ abatement are described on the
 page.
 
 * **Fluorocarbon gases.** CF₄, CHF₃ and C₂F₆, with Ar, O₂ and,
-  for nitride over-etch, CH₃F.[^regis-1997][^allwin-rainbow-4500] CHF₃
+  for nitride {term}`over-etch`, CH₃F.[^regis-1997][^allwin-rainbow-4500] CHF₃
   "is used in the semiconductor industry in plasma etching of silicon
   oxide and silicon nitride".[^wiki-chf3]
 
@@ -297,7 +297,7 @@ page.
   coatings/layers of materials such as quartz" and in-situ
   self-cleaning.[^pat-merie-amat]
 * **Monitor wafers.** Blanket oxide and nitride wafers for rate and
-  selectivity, and patterned wafers for hole profile and bottom CD, as
+  selectivity, and patterned wafers for hole profile and bottom {term}`CD`, as
   the contact and via pages describe ({ref}`CTME <step-108>`).
 
 ## Process-integration notes for SKY130
@@ -337,7 +337,7 @@ SKY130 conditions of their own. SKY130's etch recipes are not public.
   poly/silicon etcher, and the step pages record which tool runs the contact and via etches as an open
   question.[^skw-01]
 * **Strip and clean afterwards.** The fluorocarbon polymer left on hole
-  walls is removed by an ash and a solvent or wet clean; the
+  walls is removed by an {term}`ash` and a solvent or wet clean; the
   {ref}`CTME <step-108>` page names the listed ashers and the "EKS265,
   EKC270 solvents" tool.[^skw-01]
 

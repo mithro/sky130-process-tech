@@ -3,8 +3,8 @@
 
 After every mask step a sample of wafers is measured before the pattern
 is etched or implanted. A critical-dimension scanning electron
-microscope (CD-SEM) measures the width of lines and holes in the
-developed resist, and an optical overlay tool measures how far the new
+microscope ({term}`CD-SEM`) measures the width of lines and holes in the
+developed resist, and an optical {term}`overlay` tool measures how far the new
 pattern sits from the level beneath it. The same CD-SEMs measure the
 etched features again after etch.
 
@@ -21,7 +21,7 @@ etched features again after etch.
 | SKY130 steps | Overlay at all 36 mask steps and CD-SEM at 54 steps; see {ref}`SKY130 steps assigned to this class <machine-cd-sem-overlay-metrology-steps>` |
 
 :::{seealso}
-CD and overlay control in general are on the {ref}`category page <category-lithography>`.
+{term}`CD` and overlay control in general are on the {ref}`category page <category-lithography>`.
 :::
 
 ## What the machine class is and how it works
@@ -241,7 +241,7 @@ entry below.
 SkyWater gives no tool counts, and does not say whether
 "Overlay down to single digit nm" is a measurement or an exposure
 capability, nor which tools the APC line connects. No step page assigns
-the S-4800, the reticle inspection or the APC entry to a SKY130 step.
+the S-4800, the {term}`reticle` inspection or the APC entry to a SKY130 step.
 
 ### Strength of the evidence
 
@@ -312,7 +312,7 @@ sampling plans are not public.
 
 * **Overlay at every level, CD where it matters.** The step pages name
   overlay metrology at all 36 masks and a CD-SEM at every mask and at the
-  isolation-nitride, trench, tunnel-mask ARC, gate, local-interconnect,
+  isolation-nitride, trench, tunnel-mask {term}`ARC`, gate, local-interconnect,
   contact, via, metal and capacitor etches.
 
   For scale, ITRS 2001 put the
@@ -330,7 +330,7 @@ sampling plans are not public.
   APC "feed forward and backwards" without saying where it is
   applied.[^skw-01]
 * **Planarised levels.** On this reference's readings SKY130 polishes
-  its trench fill, pre-metal dielectric, tungsten plugs and inter-level
+  its trench fill, {term}`pre-metal dielectric`, tungsten plugs and inter-level
   oxides ({ref}`category-cmp`), and Plambeck, Knoll and Lord note that
   "planarized metrology targets can cause overlay measurements to be
   inaccurate as well as imprecise"; the coherence-probe option of the
@@ -338,7 +338,7 @@ sampling plans are not public.
   layers".[^plambeck-1995][^kla-5200xp]
 * **After develop and after etch.** Measuring the gate at
   {ref}`P1M <step-061>` and again after {ref}`P1ME <step-062>` gives the
-  etch bias the category page describes; how well the two agree depends on
+  {term}`etch bias` the category page describes; how well the two agree depends on
   the CD algorithm.[^solecky-2002]
 * **Many reticle sets.** The process-steps sheet heads each MPW run's
   columns with its own identifier, which the public renders site calls

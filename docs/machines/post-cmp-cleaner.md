@@ -28,7 +28,7 @@ The chemistry of the
 ## What the machine class is and how it works
 
 Polishing leaves abrasive particles pressed into the surface[^zhang-busnaina-1999]
-and slurry chemicals and, after a metal polish, metal on it. Zhang, Raghavan and Weling called CMP "inherently a
+and slurry chemicals and, after a metal polish, metal on it. Zhang, Raghavan and Weling called {term}`CMP` "inherently a
 dirty process", classed its defects as "particulate, metallic, organic,
 and others", and reviewed "General approaches that can be used for
 removing contaminants after CMP".[^zhang-raghavan-1999] The cleaner's
@@ -303,8 +303,8 @@ chemistries are not public.
   tools, or an unlisted scrubber is not public (open question).
 * **Before the next lithography and deposition.** A polish is followed by
   a liner or cap deposition or a mask (on the step pages' readings,
-  {ref}`WCMPLI <step-100>` is followed by the TiN local interconnect and
-  {ref}`CMPM <step-116>` by the cap oxide). Particles left on the back after CMP can defocus the next
+  {ref}`WCMPLI <step-100>` is followed by the TiN {term}`local interconnect` and
+  {ref}`CMPM <step-116>` by the {term}`cap oxide`). Particles left on the back after CMP can defocus the next
   exposure on a vacuum chuck.[^kinoshita-sez]
 
 ## Related pages
