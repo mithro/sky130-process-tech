@@ -1,7 +1,7 @@
 (mask-onom)=
 # ONOM — ONO Mask
 
-The {term}`ONO` mask is the second {term}`reticle` of SKY130's {term}`SONOS`
+The ONO mask is the second {term}`reticle` of SKY130's {term}`SONOS`
 memory module. On the {ref}`ONOM <step-041>` page's reading, the resist
 printed through it at step 41 leaves islands over the memory transistors,
 and {ref}`ONOME <step-042>` etches the oxide–nitride–oxide stack grown at
@@ -39,8 +39,8 @@ of MPW-5 only.
 
 The mask defines where the charge-trapping stack survives. On the step
 pages' readings the {ref}`ONO <step-040>` step coats the whole wafer
-with a {term}`tunnel oxide`, a nitride or {term}`oxynitride` trapping layer and a
-{term}`blocking oxide`. On the step
+with a tunnel oxide, a nitride or oxynitride trapping layer and a
+blocking oxide. On the step
 pages' readings the {ref}`ONOM <step-041>` resist keeps that stack
 only as islands over the memory transistors, each enclosing a tunnel
 window opened at {ref}`TUNM <step-035>` (inference on the step page).
@@ -114,7 +114,7 @@ window, and the masks index records the pairing with `tunm` as an
 inference; the PDK publishes neither the operation nor the oversize.
 
 Rule x.15a confines "Drawn compatible, mask, and waffle-drop layers" to
-test modules, the {term}`seal ring` and the frame, with the exception
+test modules, the seal ring and the frame, with the exception
 "FOM/P1M/Metal waffle drop are allowed inside the die" (flag
 P).[^pdk-periph] So a design inside the die cannot use the `conom`
 drawing purpose to shape the islands (our reading of x.15a).
@@ -223,7 +223,7 @@ page lists it there. SkyWater lists "ASML I-line stepper" and "ASML
 I-line scanner" among its tools but assigns no layer to them.[^skw-01]
 
 Table 2's `ONOMCD` of 0.41 would put the smallest island at
-{math}`k_1 \approx 0.54` at {term}`NA` 0.48, the low end of ASML's
+{math}`k_1 \approx 0.54` at NA 0.48, the low end of ASML's
 PAS 5500/275D[^asml-pas5500-275d] (our arithmetic). Wong et al.'s
 mask error factor, which "increases rapidly when the critical dimension
 (CD) is less than 0.5 (lambda) /NA for line-space
@@ -234,12 +234,12 @@ that NA (our arithmetic).
 
 The {ref}`ONOM <step-041>` page reads a positive i-line
 resist of about 1 µm, the PDK's generic "Photoresist thickness" being
-1.14 µm,[^pdk-03] with etch {term}`selectivity` rather than implant stopping
+1.14 µm,[^pdk-03] with etch selectivity rather than implant stopping
 setting the thickness, and leaves open whether an anti-reflective coating
 is used. What the Cypress integration patent, which may still be in
 force, uses is in the collapsed note below this paragraph. The surface
 under the resist is the blocking oxide of the stack. SkyWater's resist
-and any {term}`ARC` are not public; the consumables are on the
+and any ARC are not public; the consumables are on the
 {ref}`lithography materials <material-lithography-materials>` page.
 
 :::{dropdown} From a patent shown as in force (US 8,093,128; estimated expiry 2028-10-22) — open to read
@@ -251,11 +251,11 @@ stack.[^pat-03]
 ### Overlay and alignment
 
 The {ref}`ONOM <step-041>` page infers that the critical
-{term}`overlay` of this mask is to the tunnel mask rather than to active, which
+overlay of this mask is to the tunnel mask rather than to active, which
 is unusual in the flow, and that overlay would be measured to the `TUNM`
 layer. The PDK publishes no enclosure of the window by the island, so
 the overlay budget is not public; ASML specifies "≤ 40 nm" single-machine
-overlay for the /275D {term}`stepper`.[^asml-pas5500-275d] Starikov analysed the
+overlay for the /275D stepper.[^asml-pas5500-275d] Starikov analysed the
 accuracy of overlay measurements,[^starikov-1992] and van Haren et al.
 show how alignment-mark placement accuracy limits layer-to-layer
 overlay.[^van-haren-2019]

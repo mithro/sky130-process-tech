@@ -236,7 +236,7 @@ oxidation or clean must remove.
   NH₄F:HF), 85 % phosphoric acid, nitric acid, ammonium hydroxide and
   hydrogen peroxide for post-etch cleans, isopropanol for drying.
 * **{ref}`Chamber parts <material-hardware-consumables>`**: silicon or quartz focus rings, ceramic (Al₂O₃,
-  Y₂O₃-coated) liners, {term}`electrostatic chucks <electrostatic chuck>`, showerheads, and endpoint
+  Y₂O₃-coated) liners, electrostatic chucks, showerheads, and endpoint
   windows, all consumed on a scheduled preventive-maintenance basis.
 * **Photoresist and hard-mask films** as the pattern carrier
   ({ref}`category-lithography`, {ref}`category-deposition`).

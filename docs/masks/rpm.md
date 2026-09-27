@@ -61,7 +61,7 @@ The extraction table, in a column headed
 319.8 Ω/sq, 2000 Ω/sq and 48.2 Ω/sq (our conversion).[^pdk-08]
 
 The {ref}`RPM <step-049>` page reads the mask from the doping these
-figures imply. The generic {term}`poly resistor` is "N+ doped gate
+figures imply. The generic poly resistor is "N+ doped gate
 poly",[^pdk-07] while both precision flavours are p-type, so the step
 page infers that:
 
@@ -85,7 +85,7 @@ The PDK's mask generation table, Table F2b, marks the `RPM` column:[^pdk-06]
   `xhrpoly_*_*`)
 * `-` ("Layer not created for the device") in 40 rows —
   among them the "n+ poly resistor" and every transistor, varactor and
-  {term}`SONOS` row
+  SONOS row
 * `+` ("Layer allowed to overlap") in the other
   39
 
@@ -96,7 +96,7 @@ The table has no row for the 2000 Ω/sq resistor and no
 What the mask does not define is
 the resistor's outline: on the step pages' readings the body is cut from
 the poly at {ref}`P1M <step-061>`, and its ends are opened through the
-{term}`nitride cut` of {ref}`NPCM <step-078>` and contacted by the slot contacts
+nitride cut of {ref}`NPCM <step-078>` and contacted by the slot contacts
 of {ref}`LICM1 <step-093>`.
 
 ## Drawn layers and derivation
@@ -113,7 +113,7 @@ on the step page's reading above; the PDK publishes no operation that
 turns either layer into the plate.
 
 Rule x.15a confines "Drawn compatible,
-mask, and waffle-drop layers" to test modules, the {term}`seal ring` and the
+mask, and waffle-drop layers" to test modules, the seal ring and the
 frame, with the exception "FOM/P1M/Metal waffle drop are allowed inside
 the die" (flag P).[^pdk-periph] So a design inside the die draws `rpm`,
 not `crpm` (our reading of x.15a).
@@ -236,10 +236,10 @@ layers on one platform. The {ref}`i-line stepper <machine-i-line-stepper>`
 page lists it there. SkyWater lists "ASML I-line stepper" and "ASML
 I-line scanner" among its tools but assigns no layer to them.[^skw-01]
 
-At {term}`NA` 0.48, the low end of ASML's PAS 5500/275D,[^asml-pas5500-275d] the
+At NA 0.48, the low end of ASML's PAS 5500/275D,[^asml-pas5500-275d] the
 0.84 µm space has {math}`k_1 \approx 1.1` (our arithmetic). Wong et
 al.'s mask error factor "is unity for large features",[^wong-1998] so a
-{term}`CD` error on this plate would print at about its own size (inference).
+CD error on this plate would print at about its own size (inference).
 
 ### Resist and tone
 
@@ -264,7 +264,7 @@ Hook et al. found that ions scattered out of the edge
 of an implant resist are implanted in the silicon near the mask edge,
 with threshold shifts "of up to 100 mV … over a lateral distance on the
 order of a micrometer".[^hook-2003] The {ref}`P1I <step-050>` page cites
-the study for {term}`shadowing` at the edges of the `RPM` islands if the implant
+the study for shadowing at the edges of the `RPM` islands if the implant
 were tilted. The PDK does not say what the 0.200 µm of rpm.3 and rpm.7
 allow for (below).
 
@@ -273,10 +273,10 @@ allow for (below).
 The poly has not been patterned, so the
 {ref}`RPM <step-049>` page infers alignment to the trench marks of
 {ref}`FOM <step-004>`. It reads the 0.200 µm enclosure of the precision
-resistor by `rpm` (rpm.3) as the {term}`overlay` budget between this layer and
+resistor by `rpm` (rpm.3) as the overlay budget between this layer and
 {ref}`P1M <step-061>`, both registered to the same reference.[^pdk-periph]
 ASML specifies "≤ 40 nm" single-machine overlay for the /275D
-{term}`stepper`[^asml-pas5500-275d] (our comparison; SkyWater's budget is not
+stepper[^asml-pas5500-275d] (our comparison; SkyWater's budget is not
 public). A line that crossed the `rpm` edge would be doped n⁺ on one side
 and p on the other, which the step page gives as the reason for rpm.8,
 "poly must not straddle rpm".
@@ -290,7 +290,7 @@ by {ref}`P1I <step-050>`, on the
 the resist is removed at {ref}`P1IS <step-051>` on the
 {ref}`downstream plasma asher <machine-downstream-plasma-asher>` and
 {ref}`wet bench <machine-wet-bench>` classes. The PDK gives the result
-only as {term}`sheet resistances <sheet resistance>` — 48.2 Ω/sq for "Poly", 319.8 Ω/sq for the
+only as sheet resistances — 48.2 Ω/sq for "Poly", 319.8 Ω/sq for the
 "XHR poly resistor" and 2000 Ω/sq for the "UHR poly resistor"[^pdk-08] —
 which the step pages read as the gate-implanted film and the two
 protected, later-implanted bodies.

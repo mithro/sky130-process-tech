@@ -4,7 +4,7 @@
 A coat/develop track is the automated wafer-processing line that sits
 beside every exposure tool. It primes the wafer, spins on the
 anti-reflective coating and the resist, bakes them, hands the wafer to
-the {term}`stepper` or scanner, takes it back for the post-exposure bake, and
+the stepper or scanner, takes it back for the post-exposure bake, and
 develops, rinses and dries the pattern.[^wiki-litho]
 
 | | Coat/develop track |
@@ -48,7 +48,7 @@ develop.[^wiki-litho][^fujiwara-2006]
 ### Prime and anti-reflective coating
 
 Before coating, the wafer is dehydrated and primed: an adhesion promoter
-such as "hexamethyldisilazane", {term}`HMDS`, reacts with the surface oxide "to
+such as "hexamethyldisilazane", HMDS, reacts with the surface oxide "to
 form tri-methylated silicon-dioxide, a highly water repellent layer",
 which "prevents the aqueous developer from penetrating between the
 photoresist layer and the wafer's surface".[^wiki-litho]
@@ -122,7 +122,7 @@ tension "has to be lowered, by adding a surfactant, to avoid 'pullback'
 of the developer during puddling".[^perera-1989] Temperature matters
 here too: Eto, Ito and Homma measured the wafer edge "approximately
 1.3 °C lower than that of the central area after 60 s" of puddle
-development, and a DNQ/novolac resist {term}`CD` changing "at a rate of
+development, and a DNQ/novolac resist CD changing "at a rate of
 approximately 5 nm/°C".[^eto-2007] The wafer is then rinsed with water
 and spun dry.
 
@@ -308,12 +308,12 @@ for HV tip implants (0.3 µm) in the design assumptions.[^pdk-03]
   contribute about 1 nm (our arithmetic); for the chemically amplified
   KrF levels the post-exposure bake is the more sensitive
   step.[^wiki-litho][^smith-mack-2001]
-* **Rework.** In a fab of this kind a wafer whose CD or {term}`overlay` fails
+* **Rework.** In a fab of this kind a wafer whose CD or overlay fails
   after develop is stripped and re-coated rather than etched (industry
   practice; {ref}`category-lithography`), so the
   track also runs rework lots.
 * **Resist kept through several steps.** The {ref}`TUNM <step-035>`
-  resist serves an {term}`ARC` etch, two implants and a wet etch
+  resist serves an ARC etch, two implants and a wet etch
   ({ref}`masks-index`, *Patterns*; {ref}`TUNARCE <step-036>`), so its
   coat and bakes must survive all four (our reading).
 
@@ -326,7 +326,7 @@ for HV tip implants (0.3 µm) in the design assumptions.[^pdk-03]
   linked to. {ref}`machine-cd-sem-overlay-metrology` — the CD and
   overlay measurements after develop, and the rework they trigger.
 * **Materials.** {ref}`material-lithography-materials` — resists,
-  coatings, developer, solvents, {term}`reticles <reticle>` and light-source consumables.
+  coatings, developer, solvents, reticles and light-source consumables.
   {ref}`material-ultrapure-water` — the develop rinse water, its
   standards and quality.
 * **Indexes.** {ref}`machines-index` — all machine classes, SkyWater's

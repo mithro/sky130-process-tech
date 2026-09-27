@@ -1,10 +1,10 @@
 (machine-pecvd)=
 # PECVD (and SACVD)
 
-A {term}`PECVD` system is the single-wafer or multi-station reactor a fab uses
-to deposit silicon oxide, silicon nitride and {term}`oxynitride` at a few
+A PECVD system is the single-wafer or multi-station reactor a fab uses
+to deposit silicon oxide, silicon nitride and oxynitride at a few
 hundred degrees Celsius, low enough for a wafer that already carries
-{term}`silicide`, tungsten or aluminium. A radio-frequency discharge between the
+silicide, tungsten or aluminium. A radio-frequency discharge between the
 wafer pedestal and a gas showerhead breaks up the precursors so that the
 film grows without the heat an LPCVD furnace needs.
 
@@ -28,12 +28,12 @@ dielectrics is on the {ref}`LPCVD furnace page
 
 ## What the machine class is and how it works
 
-Sub-atmospheric {term}`CVD`
-({term}`SACVD`), which grows oxide from {term}`TEOS` and ozone without a plasma, is
+Sub-atmospheric CVD
+(SACVD), which grows oxide from TEOS and ozone without a plasma, is
 built on the same single-wafer platforms and is grouped with PECVD here
 because a step page offers it as an option.
 
-A plasma supplies the energy that heat supplies in {term}`LPCVD`. In a
+A plasma supplies the energy that heat supplies in LPCVD. In a
 low-pressure discharge "the electrons can be maintained at very high
 equivalent temperatures – tens of thousands of kelvins, equivalent to
 several electronvolts average energy—while the neutral atoms remain at
@@ -44,7 +44,7 @@ degrees while silane, TEOS, ammonia or nitrous oxide react above it.
 The
 plasma also bombards the growing film with ions, and the balance between
 neutral radicals and ions sets the film's density, hydrogen content,
-stress and {term}`step coverage`. What makes a machine a production PECVD tool
+stress and step coverage. What makes a machine a production PECVD tool
 is control of that balance across a 200 mm wafer, wafer after wafer:
 
 * uniform gas delivery;
@@ -149,7 +149,7 @@ allowing the simultaneous processing of six wafers".[^amat-producer-2001]
   whole range from oxide to nitride "by adjusting the N2O/NH3 gas flow
   ratio", and found "the mechanical stress in the oxynitrides is lower
   than in plasma nitride".[^denisse-1986]
-* **Doped oxide.** Applied offered a PECVD TEOS {term}`PSG` "for PMD
+* **Doped oxide.** Applied offered a PECVD TEOS PSG "for PMD
   applications, demonstrating outstanding gettering properties, which
   prevent device damage".[^amat-pecvd-psg-2002]
 
@@ -343,7 +343,7 @@ table):
 How the step pages grade the SkyWater tools for each step ("Machines
 likely used at SkyWater"), as collected on the machines index:
 
-* **"PECVD TEOS, C2 and Producer"** — *inference:* {ref}`NCAPOX <step-091>`, {ref}`NCAPOX3 <step-117>`, {ref}`NCAPOX4 <step-128>`, {ref}`NCAPOX5 <step-143>`, {ref}`NCAPOX6 <step-158>`, {ref}`NFUSOX <step-164>`; *medium (as the whole film):* {ref}`NILD2 <step-105>`; *medium (as the liner or {term}`overburden`):* {ref}`NILD3 <step-115>`, {ref}`NILD4 <step-126>`, {ref}`NILD5 <step-141>`, {ref}`NILD6 <step-156>`; *not public which of the candidates:* {ref}`POC <step-059>`; *weak:* {ref}`SPOX <step-080>`, {ref}`PSG <step-089>`, {ref}`CAPILD <step-135>`, {ref}`CAPILD2 <step-150>`
+* **"PECVD TEOS, C2 and Producer"** — *inference:* {ref}`NCAPOX <step-091>`, {ref}`NCAPOX3 <step-117>`, {ref}`NCAPOX4 <step-128>`, {ref}`NCAPOX5 <step-143>`, {ref}`NCAPOX6 <step-158>`, {ref}`NFUSOX <step-164>`; *medium (as the whole film):* {ref}`NILD2 <step-105>`; *medium (as the liner or overburden):* {ref}`NILD3 <step-115>`, {ref}`NILD4 <step-126>`, {ref}`NILD5 <step-141>`, {ref}`NILD6 <step-156>`; *not public which of the candidates:* {ref}`POC <step-059>`; *weak:* {ref}`SPOX <step-080>`, {ref}`PSG <step-089>`, {ref}`CAPILD <step-135>`, {ref}`CAPILD2 <step-150>`
 * **"PECVD silane oxide/nitride/oxynitride, C1", "PECVD nitride C1"** — *inference:* {ref}`LINIT <step-104>`, {ref}`CAPILD <step-135>`, {ref}`CAPILD2 <step-150>`, {ref}`NTSD <step-167>`; *medium:* {ref}`NCAPOX <step-091>`, {ref}`NCAPOX3 <step-117>`, {ref}`NCAPOX4 <step-128>`, {ref}`NCAPOX5 <step-143>`, {ref}`NCAPOX6 <step-158>`, {ref}`NFUSOX <step-164>`; *not public which of the candidates:* {ref}`GATENIT <step-058>`, {ref}`POC <step-059>`; *strong for existence:* {ref}`SPOX <step-080>`; *weak:* {ref}`SPNIT <step-076>`, {ref}`NILD2 <step-105>`, {ref}`NILD3 <step-115>`, {ref}`NILD4 <step-126>`, {ref}`NILD5 <step-141>`, {ref}`NILD6 <step-156>`
 * **The furnace entries instead** — "Furnaces are all made by Aviza"
   with its LPCVD processes: *inference:* {ref}`GATENIT <step-058>`,
@@ -365,7 +365,7 @@ passivation nitride of Cypress's Bloomington reports.[^cyp-qtp-014807]
 The "C1" entries are the inference where the film is a nitride or, on
 this reference's reading, an oxynitride, since "oxynitride" appears only
 in the "C1" entry.[^skw-01] On the inter-level oxides the pages give the
-{term}`gap fill` to the HDP entry and grade the PECVD entries for a liner or
+gap fill to the HDP entry and grade the PECVD entries for a liner or
 overburden, and on {ref}`PSG <step-089>` the TEOS entry is weak because
 SkyWater lists no doped PECVD oxide.[^skw-01]
 
@@ -427,7 +427,7 @@ pressures, thicknesses and chemistries are not public.
   thin nitride at 400 °C.[^amat-sin-wp]
 * **Poor conformality decides the ILD split.** Plasma oxide "is not
   conformal".[^adams-1981-pecvd] So the inter-level oxide pages
-  ({ref}`NILD2 <step-105>` to {ref}`NILD6 <step-156>`) infer {term}`HDP-CVD`
+  ({ref}`NILD2 <step-105>` to {ref}`NILD6 <step-156>`) infer HDP-CVD
   for the gaps between metal lines and grade PECVD TEOS for a liner or
   overburden, or, on {ref}`NILD2 <step-105>`, where the gap is 1:1, for
   the whole film.
@@ -453,7 +453,7 @@ pressures, thicknesses and chemistries are not public.
   (inference, from the "range of R.I. options" of the "C1"
   entry[^skw-01]).
 
-  PECVD nitride {term}`MiM capacitors <MiM capacitor>` of the period reached
+  PECVD nitride MiM capacitors of the period reached
   "capacitance densities of 1.0 to 2.0 fF/μm²" in a 0.25 µm
   flow.[^kar-roy-1999] Nitride ones show "significant degradation in
   capacitor linearity as the frequency is reduced".[^babcock-2001] The
@@ -476,17 +476,17 @@ pressures, thicknesses and chemistries are not public.
   the alternative to the furnace.
 * **PSG.** The {ref}`PSG <step-089>` page names a PECVD or SACVD TEOS
   system for a doped oxide as the second option after HDP-CVD; Applied
-  sold both routes for {term}`pre-metal dielectrics <pre-metal dielectric>`,[^amat-pecvd-psg-2002][^amat-sacvd-2000]
+  sold both routes for pre-metal dielectrics,[^amat-pecvd-psg-2002][^amat-sacvd-2000]
   but SkyWater's list has no doped PECVD or SACVD process.[^skw-01]
 * **Charging over metal.** Every back-end PECVD film is deposited over
-  metal lines connected to gates; {term}`plasma charging` during dielectric
+  metal lines connected to gates; plasma charging during dielectric
   deposition is the mechanism Cheung describes.[^cheung-2000]
 
 ## Related pages
 
 * **Category.** {ref}`category-deposition` — PECVD film chemistry and
   the deposition steps of SKY130. {ref}`category-cmp` — the polish that
-  precedes the {term}`cap oxides <cap oxide>`.
+  precedes the cap oxides.
 * **Machines.** {ref}`machine-hdp-cvd` — the gap-fill class that shares
   the inter-level oxide steps. {ref}`machine-vertical-furnace-lpcvd` —
   the batch alternative for the front-end nitrides and oxides.

@@ -61,7 +61,7 @@ The PDK's mask generation table, Table F2b, marks the `DNM` column `C`
 
 * the isolated P-well resistor
 * the HV varactor
-* two {term}`SONOS` FET rows
+* two SONOS FET rows
 * the 5/16 V drain-extended PMOS
 * the five 5/20 V drain-extended device rows
 * eight diode rows (seven
@@ -105,7 +105,7 @@ operation that turns the drawn layer into the mask.[^pdk-06]
 Rule
 x.15a restricts where a designer may draw mask layers: "Drawn
 compatible, mask, and waffle-drop layers are allowed only inside
-areaid:mt (i.e., etest modules)", the {term}`seal ring` or the frame, with the
+areaid:mt (i.e., etest modules)", the seal ring or the frame, with the
 exception that "FOM/P1M/Metal waffle drop are allowed inside the
 die" (flag P, periphery only).[^pdk-periph] Since `DNM` is not among the
 exceptions, a design inside the die draws `dnwell`, and the `cdnm` layer
@@ -201,15 +201,15 @@ i-line level with a KrF tool as the alternative, an inference from the
 and {ref}`KrF stepper <machine-duv-krf-stepper>` pages carry the same
 assignment. SkyWater lists "ASML I-line stepper" and "ASML I-line
 scanner" among its tools but assigns no layer to them.[^skw-01] The
-geometry leaves a wide margin: an i-line {term}`stepper` such as ASML's
-PAS 5500/275D runs at {term}`NA` 0.48–0.60,[^asml-pas5500-275d] at which a
+geometry leaves a wide margin: an i-line stepper such as ASML's
+PAS 5500/275D runs at NA 0.48–0.60,[^asml-pas5500-275d] at which a
 3 µm feature has {math}`k_1 = 3.0 \times 0.48 / 0.365 \approx 3.9`
 (our arithmetic).
 
 ### Mask errors
 
 Wong et al. found that the mask error factor — how much
-a {term}`CD` error on the plate is magnified on the wafer — "is unity for large
+a CD error on the plate is magnified on the wafer — "is unity for large
 features, but increases rapidly when the critical dimension (CD) is
 less than 0.5 (lambda) /NA for line-space patterns".[^wong-1998] Wong et al. found that
 dark-field spaces are more sensitive than light-field lines.[^wong-1998]
@@ -233,7 +233,7 @@ Thick resist under MeV ions outgasses: Lee et
 al. measured the chamber-pressure rise and dose shift it causes, for
 resists up to 4.5 µm thick.[^lee-1996] Ross et al. stabilised three
 i-line resists for implant with a flood electron beam, which reduced
-post-implant shrinkage and CD variation and eliminated {term}`popping` during
+post-implant shrinkage and CD variation and eliminated popping during
 removal.[^ross-1996] Tsukamoto et al. review high-energy implantation
 for ULSI.[^tsukamoto-1991]
 
@@ -249,7 +249,7 @@ The {ref}`DNM <step-007>` page reads the mask as aligned to
 the trenches etched at {ref}`STIE <step-006>`. The enclosures that
 depend on its placement are 0.400 µm of N-well around the deep
 N-well (nwell.5) and 1.030 µm of deep N-well around an N-well hole
-(nwell.6).[^pdk-periph] They are large against the "≤ 40 nm" single-machine {term}`overlay`
+(nwell.6).[^pdk-periph] They are large against the "≤ 40 nm" single-machine overlay
 ASML specifies for the /275D stepper[^asml-pas5500-275d] (our
 comparison; the enclosures must also absorb the lateral spread of the
 implant, which is not published, so the overlay share of them is not

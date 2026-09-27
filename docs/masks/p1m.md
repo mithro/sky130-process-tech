@@ -4,7 +4,7 @@
 The poly mask is the {term}`reticle` that draws every polysilicon shape
 of SKY130 in one exposure. On the {ref}`P1M <step-061>` page's reading,
 the resist printed through it at step 61 stays wherever poly is to
-remain — every transistor gate, poly interconnect, {term}`poly resistor` body and
+remain — every transistor gate, poly interconnect, poly resistor body and
 {term}`SONOS` gate — and the {ref}`P1ME <step-062>` etch removes the gate
 stack everywhere else.
 
@@ -82,7 +82,7 @@ Two things the mask does not define are worth separating from it:
   {ref}`URPM <step-055>`), on the step pages' readings
 
 On the same
-readings, the tip and {term}`halo` implants take the etched poly, and the
+readings, the tip and halo implants take the etched poly, and the
 source/drain implants the spacers formed on it, as their edge, not this
 resist.
 
@@ -103,7 +103,7 @@ layers:[^pdk-periph]
 * rule x.9: "Shapes on maskAdd or maskDrop layers (“serifs”) are
   allowed in core only"
 * rule x.15a, which confines mask and
-  waffle-drop layers to test modules, {term}`seal ring` and frame, makes one
+  waffle-drop layers to test modules, seal ring and frame, makes one
   exception: "FOM/P1M/Metal waffle drop are allowed inside the
   die" (flag P, periphery only)
 
@@ -193,11 +193,11 @@ the reticle set is the heading of the run's columns in the tab
 ### Exposure class
 
 The {ref}`P1M <step-061>` page puts the 0.150 µm
-line at {math}`k_1 \approx 0.36–0.42` on a KrF lens of {term}`NA` 0.6–0.7 and at
+line at {math}`k_1 \approx 0.36–0.42` on a KrF lens of NA 0.6–0.7 and at
 {math}`k_1 \approx 0.25–0.29` at the i-line, and infers a 248 nm level.
 The {ref}`KrF stepper <machine-duv-krf-stepper>` page lists it there.
 ASML's PAS 5500/750E, introduced in 2000, "achieves 130 nm resolution
-while using standard 248 nm light" with {term}`overlay` "less than
+while using standard 248 nm light" with overlay "less than
 30 nm".[^asml-750e] SkyWater lists "ASML DUV stepper" and "ASML DUV
 scanner" but assigns no layer to them.[^skw-01]
 
@@ -257,7 +257,7 @@ the coat and develop on the
 
 ### Overlay and alignment
 
-The step page infers that `P1M` aligns to the {term}`STI` marks of
+The step page infers that `P1M` aligns to the STI marks of
 {ref}`FOM <step-004>`. The placement margins against active are
 0.130 beyond diffusion (poly.8) and 0.250 of diffusion beyond poly
 (poly.7), with poly on field kept 0.075 µm from diffusion

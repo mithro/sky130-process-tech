@@ -19,7 +19,7 @@ fab: a strip follows nearly every masked implant and etch.
 
 :::{seealso}
 The
-chemistry of ashing and of the {term}`implant crust` is on the
+chemistry of ashing and of the implant crust is on the
 {ref}`strip category page <category-strip>`.
 :::
 
@@ -42,7 +42,7 @@ charged species, although "a large portion of the active species is
 lost to recombination", which heating the wafer partly
 offsets.[^wiki-ash] What makes a machine a *downstream* asher is that
 separation, together with wafer heating, gas chemistry for residues and
-crusts, and an optical {term}`endpoint`. Lam's microwave stripper for a metal
+crusts, and an optical endpoint. Lam's microwave stripper for a metal
 etcher put the benefit in one phrase: its "down-stream plasma source"
 eliminates "the potential for charge-induced damage of thin gate
 oxides".[^lam-9600se-stripper-1998]
@@ -83,7 +83,7 @@ wafer is heated by lamps or a platen: the L3510 lists "programmable
 lamp and platen heating",[^gasonics-l3510] the Aura 1000 "Closed loop
 temperature control with RTP technology",[^gasonics-aura] and Stanford's
 Aura "Wafers heated by lamps".[^snf-aura] Higher temperature raises the
-rate, but on implanted resist it risks {term}`popping` the crust; Tseng, Chao
+rate, but on implanted resist it risks popping the crust; Tseng, Chao
 and Tsai strip "The implant-hardened surface … at a lower temperature
 (<220° C.) to prevent popping problem" and the bulk "at a higher
 temperature (>220° C.)".[^pat-strip-mosel]
@@ -104,7 +104,7 @@ change in resist outgassing to amorphisation above a critical dose,
 which he put at 4.5 × 10¹⁴ cm⁻² for a 150 kV phosphorus source/drain
 implant.[^horsky-1998] Water
 vapour protects the gate oxide from the resist's sodium: an O₂ + H₂O
-downstream {term}`ash` left sodium in the oxide "nearly the same as that in the
+downstream ash left sodium in the oxide "nearly the same as that in the
 SiO₂ layer as grown", most effectively at 40–60 % H₂O.[^fujimura-1994]
 
 **Fluorine additions.** Fluorine additions attack the substrate as well as the resist. TSMC's patent uses
@@ -192,7 +192,7 @@ Strip (an inference from the name); it names no vendor for the
 Iridia. A trade report lists the "PEP Iridia" among the GaSonics lines
 Novellus kept,[^sst-novellus-spec-2006] so we read the PEP and Iridia
 entries as GaSonics tools, possibly of one family; that is an inference.
-We read "H2>N2" as hydrogen in nitrogen ({term}`forming gas`); SkyWater does not
+We read "H2>N2" as hydrogen in nitrogen (forming gas); SkyWater does not
 expand it. The "RF microwave" wording matches a used PEP Iridia module
 that carries both generator types,[^semistar-iridia] but SkyWater gives
 no configuration.
@@ -296,7 +296,7 @@ SKY130 conditions of their own. SKY130's strip recipes are not public.
   integrated downstream chamber.[^lam-9600se-stripper-1998][^amat-300-etch-2000]
 * **The organic ARC option.** The {ref}`TUNARCE <step-036>` page names
   a timed, isotropic ash as the alternative to a plasma etch for opening
-  a thin organic {term}`ARC`, and grades the ashers weak for it.
+  a thin organic ARC, and grades the ashers weak for it.
 * **Charging and sodium.** Downstream operation avoids charge damage to
   thin gate oxides,[^lam-9600se-stripper-1998] and water-vapour ashing
   keeps sodium from the resist out of them.[^fujimura-1994]

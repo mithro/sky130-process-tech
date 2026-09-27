@@ -18,7 +18,7 @@ and the small vias.
 | SKY130 steps | 14 steps, plus 4 where the class is an alternative; see {ref}`SKY130 steps assigned to this class <machine-duv-krf-stepper-steps>` |
 
 :::{seealso}
-The optics, resists, masks and {term}`overlay` of
+The optics, resists, masks and overlay of
 lithography in general are on the
 {ref}`category page <category-lithography>`, and the i-line tools that
 print the other levels on the
@@ -27,7 +27,7 @@ print the other levels on the
 
 ## What the machine class is and how it works
 
-It images a {term}`reticle` onto chemically amplified resist
+It images a reticle onto chemically amplified resist
 with 248 nm light from a krypton fluoride excimer laser, through a lens
 of high numerical aperture, either a whole field at a time (a
 {term}`stepper`) or through a scanned slit (a step-and-scan system, or
@@ -57,7 +57,7 @@ degree of coherence".[^das-2002]
 exposure tool: ASML specifies "20-m remote capability" for the beam
 delivery.[^asml-pas5500-350c] The laser's bandwidth adds to the lens
 aberrations: Lalovic et al. measured "a positive relationship" between
-wavefront aberration and laser bandwidth on a 0.6 {term}`NA` stepper and
+wavefront aberration and laser bandwidth on a 0.6 NA stepper and
 scanner.[^lalovic-2001]
 
 **Laser power over time.** Kato's chronology records Cymer's first
@@ -99,7 +99,7 @@ techniques are needed ({ref}`category-lithography`), and Lin showed
 phase shifting feasible to 0.18 µm at {math}`k_1 = 0.35`, 248 nm and NA
 0.5.[^lin-1993]
 
-ASML specifies the /750F's {term}`CD` through focus: CD
+ASML specifies the /750F's CD through focus: CD
 uniformity "≤ 10 nm" at best focus and "≤ 15 nm" "Over 0.4-µm defocus"
 for 0.13 µm lines and spaces.[^asml-pas5500-750f]
 
@@ -146,7 +146,7 @@ overlay "better than 0.18μm" in 1989.[^tanimoto-1989]
 "ATHENA dual-wavelength, high-order alignment" to widen "alignment
 process latitude on today's most advanced process layers such as
 tungsten CMP",[^asml-750e] and Laidler et al. evaluated it on shallow
-trench isolation, tungsten {term}`CMP` and copper dual-damascene
+trench isolation, tungsten CMP and copper dual-damascene
 levels.[^laidler-2002] The Nikon NSR-S204B lists "Laser Step Alignment
 (LSA)" and "Field Image Alignment (FIA)".[^nikon-s204b]
 
@@ -283,13 +283,13 @@ scanner as the tool or one of two options (identical to the
 How the step pages grade the SkyWater tools for each step ("Machines
 likely used at SkyWater"), as collected on the machines index:
 
-* **"ASML DUV stepper", "ASML DUV scanner"** — *inference:* {ref}`FOM <step-004>`, {ref}`P1M <step-061>`, {ref}`NPCM <step-078>`, {ref}`LICM1 <step-093>`, {ref}`LI1M <step-102>`, {ref}`CTM1 <step-107>`, {ref}`MM1 <step-113>`, {ref}`VIM <step-118>`, {ref}`MM2 <step-124>`, {ref}`VIM2 <step-129>`, {ref}`VIM3 <step-144>`, {ref}`VIM4 <step-159>`; *not public which class (i-line or {term}`DUV`):* {ref}`MM3 <step-139>`, {ref}`MM4 <step-154>`
+* **"ASML DUV stepper", "ASML DUV scanner"** — *inference:* {ref}`FOM <step-004>`, {ref}`P1M <step-061>`, {ref}`NPCM <step-078>`, {ref}`LICM1 <step-093>`, {ref}`LI1M <step-102>`, {ref}`CTM1 <step-107>`, {ref}`MM1 <step-113>`, {ref}`VIM <step-118>`, {ref}`MM2 <step-124>`, {ref}`VIM2 <step-129>`, {ref}`VIM3 <step-144>`, {ref}`VIM4 <step-159>`; *not public which class (i-line or DUV):* {ref}`MM3 <step-139>`, {ref}`MM4 <step-154>`
 * **"ASML 193nm single stage scanner – 90nm CD", "ASML 193nm twin stage scanner – sub 65nm CD"** — *not evidence for the 130 nm gate (a later addition):* {ref}`P1M <step-061>`
 
 The inferences rest on the design rules and on one mask-type record, not
 on any SkyWater statement. In Table 2 of the PDK's [*Criteria &
 Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) the minimum features of these masks are 0.14–0.2 µm for
-active, gate spacing, {term}`local interconnect`, contact, metals 1–2 and vias
+active, gate spacing, local interconnect, contact, metals 1–2 and vias
 1–3 ({ref}`masks-index`),[^pdk-03] which the step pages find too small
 for production i-line imaging.
 
@@ -399,7 +399,7 @@ settings and resists per layer are not public.
   contact, local-interconnect, contact, metal-1, via-1 and metal-2
   masks, all assigned to this class. {ref}`mask-fom` — the per-mask
   page for the field-oxide mask, assigned to this class.
-  {ref}`mask-npcm` — the per-mask page for the nitride {term}`poly cut` mask,
+  {ref}`mask-npcm` — the per-mask page for the nitride poly cut mask,
   assigned to this class with i-line as the alternative.
   {ref}`mask-vim2` and {ref}`mask-vim3` — per-mask pages for the via-2
   and via-3 masks, both assigned to this class, whose recorded mask

@@ -20,7 +20,7 @@
   opened where the local-interconnect contacts will land on poly.
 * **Public numbers:** `npc` minimum width and space 0.270 µm (npc.1,
   npc.2); 0.090 µm spacing to a gate (npc.4).[^pdk-periph]
-* **Likely SkyWater tool:** ASML {term}`DUV` {term}`stepper` or scanner — strong
+* **Likely SkyWater tool:** ASML {term}`DUV` stepper or scanner — strong
   (existence); inference (assignment of `NPCM` to DUV).[^skw-01]
 * **Not public:** the exposure tool, resist and {term}`BARC`, inferred from the
   design rules, not stated (→ Open questions).
@@ -171,7 +171,7 @@ contacted at all.
    implant-layer value rather than this layer's. The resist need only
    withstand a short nitride etch.
 3. **Exposure.** At 0.27 µm minimum feature and space, an i-line
-   stepper of {term}`NA` 0.6 would work at k₁ = 0.27 × 0.6 / 0.365 ≈ 0.44,
+   {term}`stepper` of {term}`NA` 0.6 would work at k₁ = 0.27 × 0.6 / 0.365 ≈ 0.44,
    close to the "0.4 for production" limit.[^wiki-litho]
 
    A 248 nm

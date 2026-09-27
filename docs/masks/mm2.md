@@ -50,7 +50,7 @@ shows metal 2 joined to metal 1 by "Via" and to metal 3 by
 The mask's
 smallest island is 0.0676 µm² (m2.6) and its smallest hole 0.140 µm²
 (m2.7).[^pdk-periph] The PDK's extraction table gives metal 2 the same
-{term}`sheet resistance` as metal 1, 125 in a column headed "Resistivity
+sheet resistance as metal 1, 125 in a column headed "Resistivity
 (mohms/sq)".[^pdk-08]
 
 The PDK's mask generation table, Table F2b, marks the `MM2` column `C`
@@ -66,9 +66,9 @@ function line of the via-2 rules names a "SKY130DI\*" flow in which via 2
 connects "met2/capm to met3".[^pdk-periph]
 
 We read the `C` marks for the
-fuse and the {term}`MiM capacitor` as belonging to flows other than the one this
+fuse and the MiM capacitor as belonging to flows other than the one this
 reference follows, whose `CAPM` capacitor the
-{ref}`masks index <masks-index>` places on metal 3 from the {term}`test tile`'s
+{ref}`masks index <masks-index>` places on metal 3 from the test tile's
 pad documentation. The PDK does not say which flow a `C` refers to.
 
 The mask does not define the metal stack it patterns, which
@@ -89,7 +89,7 @@ the {ref}`masks index <masks-index>`, and the PDK publishes no operation
 from `met2` to the plate.
 
 Rule x.15a confines "Drawn compatible, mask,
-and waffle-drop layers" to test modules, {term}`seal ring` and frame, "Exception:
+and waffle-drop layers" to test modules, seal ring and frame, "Exception:
 FOM/P1M/Metal waffle drop are allowed inside the die" (flag P, periphery
 only),[^pdk-periph] so a die may carry `cmm2` waffle-drop shapes as well
 as `met2` (our reading). With no add or drop purpose, rule x.9's
@@ -97,7 +97,7 @@ as `met2` (our reading). With no add or drop purpose, rule x.9's
 
 The rule set's first entry,
 flagged RC, flags a 700 × 700 window "covered by cmm2 waffleDrop" when the
-metal {term}`pattern density` of the same window is below a limit.[^pdk-periph] The limit falls
+metal pattern density of the same window is below a limit.[^pdk-periph] The limit falls
 from 70 % for a fully covered window to 30 % for one 30–40 %
 covered.[^pdk-periph] The PDK does not say whether a waffle-drop shape
 places fill or keeps it out; the {ref}`MM2 <step-124>` page reads the
@@ -109,7 +109,7 @@ Rule x.1a puts the "mask data for p1m, met1, via, met2" on a grid of
 (x.1b), both printed with the unit "mm".[^pdk-periph] Reading the unit
 as µm, a 1 nm wafer grid is a 4 nm grid on a 4× plate (our arithmetic).
 Samuels, Maurer and Farrell examined "how fine a grid size is needed in
-the manufacture of the mask" once {term}`OPC` is applied.[^samuels-1995] The PDK
+the manufacture of the mask" once OPC is applied.[^samuels-1995] The PDK
 does not say why the metal-2 data need the finer grid.
 
 Rule nsm.3 lists
@@ -189,7 +189,7 @@ is the heading of the run's columns in the tab
   * the type as "4X Beam Final"
   * a "Percent Clear" of 56.64
   * a "Level" of 4
-  * a {term}`CD` specification for patterns it names "Scribe FA DI X / LINE / X"
+  * a CD specification for patterns it names "Scribe FA DI X / LINE / X"
     and "Scribe FA DI Y / LINE / Y", nominal 0.568 with tolerances of 0.02 either way, measured at means
     of 0.5497 (X) and 0.5588 (Y), in no stated unit
 
@@ -217,7 +217,7 @@ is the heading of the run's columns in the tab
 ### Exposure class
 
 The {ref}`MM2 <step-124>` page gives
-{math}`k_1 = 0.14 \times 0.70 / 0.248 \approx 0.40` on a KrF lens of {term}`NA`
+{math}`k_1 = 0.14 \times 0.70 / 0.248 \approx 0.40` on a KrF lens of NA
 0.70 and 0.45 at NA 0.80, and infers a 248 nm level from the rules and
 from ITRS 2001.[^itrs-03] ITRS 2001 lists "248 nm + PSM" and "193 nm" as the exposure
 options for the 130 nm node and says that "only 248 nm lithography has a
@@ -294,7 +294,7 @@ open which layer's targets it uses.
 
 On the step pages' readings the resist pattern is
 transferred by {ref}`MM2E <step-125>`, a chlorine etch of the whole
-metal stack that stops on the via-1 {term}`cap oxide` and the via plugs, on the
+metal stack that stops on the via-1 cap oxide and the via plugs, on the
 {ref}`metal plasma etcher <machine-plasma-etcher-metal>` class. On the step pages' readings
 passivation, resist strip and clean are treated as part of that step.
 
@@ -399,7 +399,7 @@ from m2.1 and m2.2).
   {ref}`category-cmp` — the mask step, etch and polish categories.
 * **Machines.** {ref}`machine-duv-krf-stepper` — the exposure class the step page
   assigns. {ref}`machine-plasma-etcher-metal` — the etch class that transfers the
-  pattern. {ref}`machine-cd-sem-overlay-metrology` — line CD and {term}`overlay`
+  pattern. {ref}`machine-cd-sem-overlay-metrology` — line CD and overlay
   measurement.
 * **Materials.** {ref}`material-lithography-materials` — resists, anti-reflective
   coatings, developer and reticles.
@@ -480,7 +480,7 @@ from m2.1 and m2.2).
 * The plate's type, tone and CD specification, the resist and
   anti-reflective scheme, and the exposure tool are not public; the KrF
   reading rests on the 0.140 µm rules.
-* Table F2b's `C` marks for the {term}`metal fuse` and the MiM capacitor in the
+* Table F2b's `C` marks for the metal fuse and the MiM capacitor in the
   `MM2` column are not tied to a flow, and the x.11 row for met2 gives
   only "N/A".[^pdk-06][^pdk-periph]
 * The plate-case label's fields are not defined, and the label is not

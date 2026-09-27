@@ -2,8 +2,8 @@
 # Precursors
 
 Precursors are the gases and vapours whose atoms become a deposited
-film: silane, dichlorosilane, {term}`TEOS` and BTBAS for silicon, oxide and
-nitride; ammonia for the nitrogen of nitride and {term}`oxynitride`; silicon
+film: silane, dichlorosilane, TEOS and BTBAS for silicon, oxide and
+nitride; ammonia for the nitrogen of nitride and oxynitride; silicon
 tetrafluoride for fluorinated oxide; ozone as an oxidant for TEOS; and
 tungsten hexafluoride for the tungsten plugs. They are reactive by
 design, and several are pyrophoric, toxic or corrosive. This page
@@ -45,7 +45,7 @@ Silane "has one dominant application, as a precursor to elemental
 silicon, particularly in the semiconductor industry".[^wiki-silane] In a
 furnace it gives amorphous or polycrystalline silicon, whose structure
 Kamins related to deposition temperature;[^kamins-1980] with oxygen or
-N₂O it gives oxide in HDP and {term}`PECVD`
+N₂O it gives oxide in HDP and PECVD
 tools,[^adams-1981-pecvd][^nguyen-1999] and with ammonia it gives
 nitride: Denisse et al. covered "the entire range of compositions from
 silicon oxide to silicon nitride" from SiH₄, N₂O and
@@ -70,9 +70,9 @@ heated exhaust lines and traps (industry practice).
 
 ### Ammonia
 
-Ammonia is the nitrogen source of {term}`LPCVD`, BTBAS and PECVD nitride and, with
+Ammonia is the nitrogen source of LPCVD, BTBAS and PECVD nitride and, with
 N₂O, of PECVD oxynitride, whose growth and composition Denisse et al.
-studied.[^denisse-1986] It also nitrides oxide in an {term}`RTA` tool and
+studied.[^denisse-1986] It also nitrides oxide in an RTA tool and
 appears as an asher gas. Ammonia "is regulated in the US as a
 non-flammable gas, but it meets the definition of a material that is
 toxic by inhalation";[^wiki-ammonia] NIOSH gives an IDLH of "300 ppm" and
@@ -130,7 +130,7 @@ tungsten hexafluoride".[^mcconica-1986] Kleijn et al. modelled transport
 in a single-wafer reactor.[^kleijn-1991] The by-product is a hazard: "HF
 vapor is very aggressive and etches away most materials".[^wiki-wf6]
 
-{term}`Nucleation layers <nucleation layer>` may use diborane, "a highly toxic, colorless, and
+Nucleation layers may use diborane, "a highly toxic, colorless, and
 pyrophoric gas",[^wiki-diborane] which NIOSH notes is "Usually shipped in
 pressurized cylinders diluted with hydrogen, argon, nitrogen, or
 helium";[^niosh-diborane] Novellus's pulsed nucleation patent forms the
@@ -228,7 +228,7 @@ listed below by key; the steps are those whose *Resources required* section
 names one of them (the union of the rows' *Steps* cells). The oxygen,
 N₂O, argon and helium that accompany the precursors belong to the
 {ref}`process gases <material-process-gases>` page, and the phosphorus
-sources of {term}`PSG` to the {ref}`dopant sources <material-dopant-sources>`
+sources of PSG to the {ref}`dopant sources <material-dopant-sources>`
 page.
 
 Materials index rows covered:
@@ -253,7 +253,7 @@ Steps:
 
 The steps fall into groups, as the index rows describe them:
 
-* **Furnace films.** Dichlorosilane and ammonia for the isolation, {term}`ONO` and
+* **Furnace films.** Dichlorosilane and ammonia for the isolation, ONO and
   (on one reading) gate-cap and spacer nitrides at
   {ref}`ISONIT <step-003>`, {ref}`ONO <step-040>`,
   {ref}`GATENIT <step-058>` and {ref}`SPNIT <step-076>`; silane for the
@@ -265,7 +265,7 @@ The steps fall into groups, as the index rows describe them:
     {ref}`NILD2 <step-105>` to {ref}`NILD6 <step-156>`), with SiF₄ as the
     fluorinated option at {ref}`NILD3 <step-115>` and
     {ref}`NILD4 <step-126>`.
-  * TEOS or silane for the {term}`cap oxides <cap oxide>`, spacer
+  * TEOS or silane for the cap oxides, spacer
     oxide and fuse oxide.
   * Silane and ammonia for the nitrides and the
     capacitor oxynitride at {ref}`CAPILD <step-135>`,
@@ -276,7 +276,7 @@ The steps fall into groups, as the index rows describe them:
   tungsten fills.
 * **Ammonia outside deposition.** As a nitriding option at
   {ref}`LINOX <step-010>` and {ref}`LVGOX <step-047>`, and as a possible
-  {term}`ash` gas at {ref}`PRIS <step-054>`, {ref}`PDIS <step-084>` and
+  ash gas at {ref}`PRIS <step-054>`, {ref}`PDIS <step-084>` and
   {ref}`NSDIS <step-087>`, where SkyWater lists NH3 on the Iridia
   asher.[^skw-01]
 
@@ -337,7 +337,7 @@ not public.
   {ref}`materials index <materials-open-questions>`); Denison et al. show
   the permittivity fluorine buys.[^denison-1996]
 * **Tungsten nucleation.** The WDEP pages read a silane or diborane
-  nucleation followed by hydrogen reduction, and we read SkyWater's "PNL option" as the {term}`pulsed nucleation layer` that
+  nucleation followed by hydrogen reduction, and we read SkyWater's "PNL option" as the pulsed nucleation layer that
   Novellus patented, formed "by alternatively providing to that surface,
   reducing gases and tungsten containing gases".[^skw-01][^pat-pnl-novellus]
   Silicon reduction of WF₆ is self-limiting,[^mcconica-1986] and the TiN
@@ -435,7 +435,7 @@ not public.
 * Which precursors, grades and suppliers SkyWater uses, and whether its
   furnace nitride uses dichlorosilane, are not stated; "DH3" is not
   explained.[^skw-01][^sec-01][^sec-02]
-* Whether SKY130's {term}`inter-metal dielectrics <inter-metal dielectric>` are fluorinated, and so
+* Whether SKY130's inter-metal dielectrics are fluorinated, and so
   whether SiF₄ is used, is not public.[^skw-01]
 * Whether the tungsten nucleation uses silane or diborane is not
   stated.[^skw-01]

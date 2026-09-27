@@ -1,7 +1,7 @@
 (machine-vertical-furnace-lpcvd)=
 # Vertical batch furnace: LPCVD
 
-A vertical {term}`LPCVD` furnace is a hot-wall, low-pressure chemical vapour
+A vertical LPCVD furnace is a hot-wall, low-pressure chemical vapour
 deposition reactor built on the same vertical batch platform as an
 oxidation furnace. It deposits the conformal thermal films of
 the front end — silicon nitride, amorphous and polycrystalline silicon,
@@ -75,7 +75,7 @@ VCF-615S LP-TEOS furnace is similar:[^pat-lpcvd-sony]
 * "A multi-zone heating element";
 * "a vacuum pump coupled to the deposition chamber through an exhaust port
   … proximate the bottom";
-* {term}`TEOS` vapour "injected into the bottom zone
+* TEOS vapour "injected into the bottom zone
   of the chamber".
 
 Expertech's VTR uses "a double-walled
@@ -140,12 +140,12 @@ increase and the thickness uniformity to degrade".[^adams-1979]
   aspects".[^harbeke-1984]
 * **Deposited oxides.** TEOS oxide at "700°–750°C" with thickness
   uniformity "better than ±1% over a deposition zone capable of holding
-  100 wafers" and conformal {term}`step coverage`;[^adams-1979] silane-based oxide
+  100 wafers" and conformal step coverage;[^adams-1979] silane-based oxide
   and dichlorosilane-based oxide are the other furnace
   chemistries.[^aviza-avp]
 * **Stacks.** A furnace that can oxidise and deposit can build an
   oxide–nitride–oxide stack in one load. The gases Cypress uses for its
-  {term}`oxynitride` layers are in the collapsed note below this list, from a
+  oxynitride layers are in the collapsed note below this list, from a
   patent that may still be in force. Aviza's 300 mm RVP-300 offered
   "sequential processing for nitrided oxides or composite oxide-nitride
   stacks".[^aviza-vert]
@@ -355,7 +355,7 @@ pressures and thicknesses are not public.
   dichlorosilane nitride at the temperatures above would add diffusion.
 
   The {ref}`LINIT <step-104>` page, later still and over TiN local
-  interconnect, prefers {term}`PECVD` and keeps BTBAS as the batch alternative.
+  interconnect, prefers PECVD and keeps BTBAS as the batch alternative.
   Aviza's own figures put BTBAS at "570 degrees C or above" against
   "above 630 degrees C" for dichlorosilane.[^aviza-satin-2004]
 * **An amorphous gate film.** The {ref}`SAGD <step-048>` page describes
@@ -364,8 +364,8 @@ pressures and thicknesses are not public.
   crystalline";[^skw-01] amorphous deposition gives a smoother film that
   recrystallises in later anneals.[^kinsbron-1983][^harbeke-1984]
 * **The ONO stack across two classes.** The {ref}`ONO <step-040>` page
-  combines oxidation of the {term}`tunnel oxide` with LPCVD of the trapping
-  nitride and possibly the {term}`blocking oxide`; the SkyWater entry "LPCVD
+  combines oxidation of the tunnel oxide with LPCVD of the trapping
+  nitride and possibly the blocking oxide; the SkyWater entry "LPCVD
   oxide/nitride/oxide" is the only list entry named after such a
   stack.[^skw-01]
 * **Batch or single-wafer dielectrics.** For the gate nitride and oxide
@@ -386,7 +386,7 @@ pressures and thicknesses are not public.
   of SKY130. {ref}`category-etch` — the etches that pattern the furnace nitrides and
   the gate silicon.
 * **Machines.** {ref}`machine-vertical-furnace-oxidation` — the furnace platform, the
-  Aviza history and the {term}`ONO` oxidations. {ref}`machine-vertical-furnace-anneal` — the same furnace group used
+  Aviza history and the ONO oxidations. {ref}`machine-vertical-furnace-anneal` — the same furnace group used
   for anneals and the alloy. {ref}`machine-pecvd` — the single-wafer plasma alternative for the gate
   nitride, oxide cap, spacer oxide and local-interconnect nitride cap.
 * **Materials.** {ref}`material-hardware-consumables` — furnace ware, traps and

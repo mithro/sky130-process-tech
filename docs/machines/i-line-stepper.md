@@ -4,7 +4,7 @@
 An i-line exposure tool is the projection printer a fab uses for the
 mask levels that do not need deep-ultraviolet resolution: implant
 blocks, relaxed etch masks, capacitor plates, the thick upper metal and
-the pad opening. It images a {term}`reticle` onto resist-coated wafers with the
+the pad opening. It images a reticle onto resist-coated wafers with the
 365 nm line of a mercury lamp, either a whole field at a time (a
 {term}`stepper`) or through a scanned slit (a step-and-scan system, or
 scanner). In a 200 mm, 130 nm-era fab it shares the line with
@@ -24,7 +24,7 @@ levels, and the two must overlay each other.
 | SKY130 steps | 24 steps, plus 3 where the class is an alternative; see {ref}`SKY130 steps assigned to this class <machine-i-line-stepper-steps>` |
 
 :::{seealso}
-The optics, resists and {term}`overlay` of lithography in general are on the
+The optics, resists and overlay of lithography in general are on the
 {ref}`category page <category-lithography>`.
 :::
 
@@ -67,7 +67,7 @@ software for each layer.[^asml-pas5500-275d]
 
 The lens reduces the reticle four or five times onto the wafer.
 Its numerical aperture is variable, so that each layer can trade
-resolution against depth of focus: ASML's i-line steppers run at {term}`NA`
+resolution against depth of focus: ASML's i-line steppers run at NA
 0.48–0.60, Canon's FPA-3000i5+ at 0.45–0.63, and ASML's /450F scanner at
 0.48–0.65.[^asml-pas5500-275d][^canon-fpa3000i5plus-1998][^asml-pas5500-450f]
 At a wavelength of 365 nm and NA 0.6, λ/NA is about 610 nm. The
@@ -243,7 +243,7 @@ scanner as the tool or one of two options (identical to the
 How the step pages grade the SkyWater tools for each step ("Machines
 likely used at SkyWater"), as collected on the machines index:
 
-* **"ASML I-line stepper", "ASML I-line scanner"** — *inference:* {ref}`DNM <step-007>`, {ref}`LVTNM <step-014>`, {ref}`NWM <step-017>`, {ref}`HVTPM <step-022>`, {ref}`PWBM <step-026>`, {ref}`PWDEM <step-030>`, {ref}`TUNM <step-035>`, {ref}`ONOM <step-041>`, {ref}`LVOM <step-044>`, {ref}`RPM <step-049>`, {ref}`RRPM <step-052>`, {ref}`URPM <step-055>`, {ref}`NTM <step-064>`, {ref}`HVNTM <step-068>`, {ref}`LDNTM <step-071>`, {ref}`PSDM <step-081>`, {ref}`NSDM <step-085>`, {ref}`CAPM <step-137>`, {ref}`CAP2M <step-152>`, {ref}`MM5 <step-162>`, {ref}`NSM <step-165>`, {ref}`PDM <step-168>`; *not public which class (i-line or {term}`DUV`):* {ref}`MM3 <step-139>`, {ref}`MM4 <step-154>`; *listed, not assigned:* {ref}`FOM <step-004>`, {ref}`VIM2 <step-129>`, {ref}`VIM4 <step-159>`
+* **"ASML I-line stepper", "ASML I-line scanner"** — *inference:* {ref}`DNM <step-007>`, {ref}`LVTNM <step-014>`, {ref}`NWM <step-017>`, {ref}`HVTPM <step-022>`, {ref}`PWBM <step-026>`, {ref}`PWDEM <step-030>`, {ref}`TUNM <step-035>`, {ref}`ONOM <step-041>`, {ref}`LVOM <step-044>`, {ref}`RPM <step-049>`, {ref}`RRPM <step-052>`, {ref}`URPM <step-055>`, {ref}`NTM <step-064>`, {ref}`HVNTM <step-068>`, {ref}`LDNTM <step-071>`, {ref}`PSDM <step-081>`, {ref}`NSDM <step-085>`, {ref}`CAPM <step-137>`, {ref}`CAP2M <step-152>`, {ref}`MM5 <step-162>`, {ref}`NSM <step-165>`, {ref}`PDM <step-168>`; *not public which class (i-line or DUV):* {ref}`MM3 <step-139>`, {ref}`MM4 <step-154>`; *listed, not assigned:* {ref}`FOM <step-004>`, {ref}`VIM2 <step-129>`, {ref}`VIM4 <step-159>`
 
 The inferences rest on the design rules, not on any SkyWater statement.
 In Table 2 of the PDK's *Criteria & Assumptions*, the smallest minimum
@@ -283,7 +283,7 @@ the fab's lamp supply, reticle handling or tool environment.
   interferometer stability".[^asml-pas5500-100d]
 * **Track and metrology.** The tool is linked in line to a
   {ref}`coat/develop track <machine-coat-develop-track>`, and overlay and
-  {term}`CD` are measured after develop
+  CD are measured after develop
   ({ref}`machine-cd-sem-overlay-metrology`).
 
 ## Process-integration notes for SKY130
@@ -337,7 +337,7 @@ implants.[^pdk-03]
   from {ref}`CAPM <step-137>` to {ref}`MM4 <step-154>` are printed over
   polished oxide and tungsten-plug levels (our reading;
   {ref}`category-cmp`). Prasad et al. qualified
-  alignment on i-line steppers over tungsten {term}`CMP`, where marks are hard
+  alignment on i-line steppers over tungsten CMP, where marks are hard
   to read.[^prasad-2001]
 
   {ref}`MM5 <step-162>` is printed over via 4 and
@@ -382,7 +382,7 @@ implants.[^pdk-03]
   drain-extended P-well masks, assigned to this class; {ref}`mask-fom`
   for the field-oxide mask, for which it is the alternative.
 * {ref}`mask-capm` and {ref}`mask-cap2m` — per-mask pages for the two
-  {term}`MiM capacitor` masks, both assigned to this class.
+  MiM capacitor masks, both assigned to this class.
 * {ref}`mask-ntm`, {ref}`mask-hvntm`, {ref}`mask-ldntm`,
   {ref}`mask-psdm` and {ref}`mask-nsdm` — per-mask pages for the N-tip,
   high-voltage N-tip, lightly doped N-tip, P+ and N+ implant masks,
@@ -393,7 +393,7 @@ implants.[^pdk-03]
   this one and KrF.
 * {ref}`mask-tunm`, {ref}`mask-onom`, {ref}`mask-lvom`, {ref}`mask-rpm`,
   {ref}`mask-rrpm` and {ref}`mask-urpm` — per-mask pages for the tunnel,
-  {term}`ONO`, low-voltage oxide and three poly-resistor masks, assigned to this
+  ONO, low-voltage oxide and three poly-resistor masks, assigned to this
   class, with KrF as the alternative for the three resistor masks.
 * {ref}`mask-mm5`, {ref}`mask-nsm` and {ref}`mask-pdm` — per-mask pages
   for the metal-5, nitride seal and pad masks, all assigned to this class.

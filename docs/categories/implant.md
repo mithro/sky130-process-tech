@@ -135,7 +135,7 @@ Faraday cups, corrected for the fraction of the scan that lies on the
 wafer; secondary electrons and neutralised ions are the main error
 sources. Positive charge delivered to a wafer whose surface is covered
 by insulating resist can rupture gate oxides, so implanters flood the
-wafer with low-energy electrons from a {term}`plasma flood gun`. Heavy resist
+wafer with low-energy electrons from a plasma flood gun. Heavy resist
 outgassing at high dose alters the beam neutralisation and is limited
 by hard-baking the resist. Dose and energy are verified on bare monitor
 wafers by {term}`four-point probe` {term}`sheet resistance` after an

@@ -98,7 +98,7 @@ with the via-2 numbers:
 * **Thickness control.** The {ref}`CMPM2 <step-127>` polish is stopped
   by removal amount and varies with {term}`pattern density` and across the
   wafer — the variation Boning et al. and Chang et al. characterised
-  for {term}`ILD` {term}`CMP`.[^boning-1994][^chang-1995]
+  for {term}`ILD` CMP.[^boning-1994][^chang-1995]
 
   Polishing to a thickness
   *below* the target and adding a cap of well-controlled thickness
@@ -106,7 +106,7 @@ with the via-2 numbers:
   which in turn tightens the over-etch {ref}`VIM2E <step-130>` needs
   to reach every metal-2 cap without punching through it
   ({ref}`overview-metal-cap`).
-* **Sealing the polished surface.** Oxide CMP leaves micro-scratches
+* **Sealing the polished surface.** Oxide {term}`CMP` leaves micro-scratches
   and embedded slurry particles — Devriendt et al. relate them to
   the {term}`post-CMP clean`[^devriendt-1998] — and a hydrated, hydroxyl-rich
   surface layer.[^moon-2016]

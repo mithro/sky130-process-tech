@@ -33,7 +33,7 @@ etching can produce very anisotropic etch profiles".[^wiki-rie]
 What
 makes a machine a *silicon and polysilicon* etcher is the combination
 of a dense, low-pressure plasma, an independently set ion energy, a
-halogen gas set that forms volatile silicon halides, and the {term}`endpoint`
+halogen gas set that forms volatile silicon halides, and the endpoint
 and chamber control needed to stop on a thin gate oxide. In the 200 mm,
 130 nm era a silicon and polysilicon etcher was usually a high-density
 reactor — most often inductively coupled — with a separately biased
@@ -53,7 +53,7 @@ between plasma and RIE modes".[^allwin-rainbow-4400]
 
 High-density
 etchers separate the two functions. Lam's transformer-coupled plasma
-({term}`TCP`) source is a planar coil outside the chamber in which "Radiofrequency
+(TCP) source is a planar coil outside the chamber in which "Radiofrequency
 resonant current is induced", producing "a planar magnetic field within
 the exclosure" and "a planar region of ionic and radical
 species".[^pat-tcp-lam] In Stanford's TCP 9400, "A high density
@@ -79,7 +79,7 @@ Lieberman and Lichtenberg treat the sources in depth.[^lieberman-2005]
 ### Gate and trench chemistry
 
 Chlorine atoms are "the likely active species" in chlorine-based
-polysilicon etching, and {term}`anisotropy` comes from "enhanced chemical
+polysilicon etching, and anisotropy comes from "enhanced chemical
 reaction between Cl and Si on surfaces which are ion (or electron)
 bombarded", as Mogab and Levinstein proposed in 1980.[^mogab-1980] The
 high-density recipes of the 1990s add HBr and O₂.
@@ -87,7 +87,7 @@ high-density recipes of the 1990s add HBr and O₂.
 In a helicon source,
 Bell and Joubert found that the passivation layer on the polysilicon
 sidewalls "is a chlorine rich silicon oxide film" whether the mask was
-resist or oxide.[^bell-1997] With an oxide {term}`hard mask` they found "A thin
+resist or oxide.[^bell-1997] With an oxide hard mask they found "A thin
 oxide film … on the sides" of trenches, partly sputtered from the
 source's quartz tube.[^bell-1996]
 
@@ -120,7 +120,7 @@ doped".[^ogryzlo-1990] For gates below 0.1 µm on oxides thinner than
 
 A gate etch is not timed: the main etch runs to an endpoint, the recipe
 switches to a gentler, more selective step before the oxide is exposed,
-and a timed {term}`over-etch` clears residues. Applied Materials' "Predictive
+and a timed over-etch clears residues. Applied Materials' "Predictive
 Endpoint" on the DPS Plus enables "a precisely controlled, automated
 'soft-landing' approach that signals the etch process to switch to a
 high selectivity overetch prior to contacting the gate oxide".[^amat-dps-plus-1999] It was
@@ -139,7 +139,7 @@ spectroscopy".[^hsu-2004]
 
 Joubert and Bell showed why the landing matters: with
 a resist mask, trenching in the main etch "is transferred into the gate
-oxide before the overetch starts".[^joubert-1997] The polysilicon/oxide {term}`selectivity`
+oxide before the overetch starts".[^joubert-1997] The polysilicon/oxide selectivity
 "can be improved by a factor of at least three by using an oxide hard
 mask in a carbon free chamber".[^joubert-1997]
 
@@ -158,8 +158,8 @@ and the Versys Silicon chamber "enables in situ waferless auto
 cleans".[^lam-2300-2000]
 
 Across the wafer and between features, rates
-depend on how much silicon is exposed, the {term}`loading effect` Mogab
-analysed,[^mogab-1977] and on {term}`aspect ratio` and {term}`pattern density`, which
+depend on how much silicon is exposed, the loading effect Mogab
+analysed,[^mogab-1977] and on aspect ratio and pattern density, which
 Gottscho, Jurgensen and Vitkavage separate into aspect-ratio-dependent
 etching and microloading.[^gottscho-1992]
 
@@ -277,7 +277,7 @@ pages, which is why steps outside this class appear:
 
 The inferences rest on the listed capability: "gate" and "trench" appear
 only on the DPS II entry, "poly/nitride" only on the 9400 entry, and the
-4400 entry names no application.[^skw-01] The {term}`ONO` etch
+4400 entry names no application.[^skw-01] The ONO etch
 ({ref}`ONOME <step-042>`) is also one of the two options of the
 {ref}`dielectric and nitride etcher class <machine-plasma-etcher-dielectric>`.
 
@@ -321,7 +321,7 @@ page.
   cleans are specified.[^cunge-2005][^lam-2300-2000]
 * **Monitor wafers.** The {ref}`STIE <step-006>` page controls trench
   depth "by rate calibration on monitor wafers", and the gate and trench
-  pages measure {term}`CD` and profile on product wafers afterwards.
+  pages measure CD and profile on product wafers afterwards.
 
 ## Process-integration notes for SKY130
 
@@ -342,7 +342,7 @@ SKY130 conditions of their own. SKY130's etch recipes are not public.
   gate oxide survives; the selectivity of the HBr/O₂ over-etch and the
   landing step set the margin.[^desvoivres-2000][^joubert-1997]
 * **Doped and undoped polysilicon.** The PDK describes the gate poly as
-  "N+ doped gate poly" and says of its P− {term}`poly resistors <poly resistor>` that "a
+  "N+ doped gate poly" and says of its P− poly resistors that "a
   separate implant is used to set the sheet resistance".[^pdk-07]
 
   The
@@ -355,7 +355,7 @@ SKY130 conditions of their own. SKY130's etch recipes are not public.
   {ref}`P1ME <step-062>` page sets its endpoint and over-etch
   accordingly.
 * **ARC and stack opens.** The {ref}`TUNARCE <step-036>` page opens an
-  organic {term}`ARC` in an O₂/HBr-type plasma on this class of tool, where
+  organic ARC in an O₂/HBr-type plasma on this class of tool, where
   wall condition shifts the rate and bias;[^xu-2001] the
   {ref}`ONOME <step-042>` page offers this class or a dielectric etcher
   for the oxide–nitride–oxide stack.

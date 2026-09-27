@@ -145,9 +145,9 @@ nitride alone.
   Becker et al. characterise the film and
   its conformality,[^becker-1987] and Adams and Capio the reduced-
   pressure silane–oxygen alternative at roughly 400–450 °C.[^adams-1979]
-  {term}`LPCVD` {term}`TEOS` is the most conformal of the three and the usual choice
+  {term}`LPCVD` TEOS is the most conformal of the three and the usual choice
   for a spacer or {term}`liner`, but it spends minutes at a temperature where
-  the arsenic tips and boron halos diffuse — a real cost after
+  the arsenic tips and boron {term}`halos <halo>` diffuse — a real cost after
   {ref}`TIPRTAD <step-075>`.
 * **PECVD TEOS oxide.** TEOS with O₂ in a single-wafer chamber at
   250–400 °C (typical industry values, category
@@ -172,7 +172,7 @@ nitride alone.
 ## Machines typically used
 
 * **{ref}`PECVD system <machine-pecvd>`** (Applied Materials Producer/Centura DxZ, Novellus
-  Concept Two/Sequel) with TEOS or silane oxide.
+  Concept Two/Sequel) with {term}`TEOS` or silane oxide.
 * **{ref}`Vertical LPCVD furnace <machine-vertical-furnace-lpcvd>`** (Aviza/SVG, TEL, ASM, Kokusai) with
   TEOS or SiH₄/O₂ for the batch alternative.
 * **{ref}`Spectroscopic ellipsometer <machine-film-thickness-metrology>`**.

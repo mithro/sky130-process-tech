@@ -5,7 +5,7 @@ Lithography materials are what a mask step consumes besides light and
 time: the photoresist that records the pattern, the anti-reflective
 coating and adhesion promoter under it, the developer that dissolves the
 exposed resist, the solvents that clean the wafer edge and back, the
-{term}`reticle` that carries the pattern, and the lamps and laser gas of the
+reticle that carries the pattern, and the lamps and laser gas of the
 exposure tools. A mask step typically uses most of them (industry
 practice), and the step pages read each of SKY130's 36 mask steps as
 doing so.
@@ -72,7 +72,7 @@ chemistry.[^dammel-1993]
 
 ### KrF chemically amplified resists
 
-Production resists for {term}`DUV` "require the use of chemical amplification
+Production resists for DUV "require the use of chemical amplification
 to increase the sensitivity to the exposure energy", which "is done in
 order to combat the larger absorption at shorter wavelengths": "acids
 released by the exposure radiation diffuse during the post-exposure
@@ -257,7 +257,7 @@ chemistry or wavelength to a supplier, and they changed between the
 2021 and 2023 filings.[^sec-01][^sec-02] That TMAH is the developer, and
 that the resists are DNQ/novolac and chemically amplified families, is
 industry practice for the exposure tools SkyWater lists, not a SkyWater
-statement; anti-reflective coatings, {term}`HMDS`, edge-bead solvents and
+statement; anti-reflective coatings, HMDS, edge-bead solvents and
 pellicles appear in no SkyWater source cited here. The PDK thicknesses
 are design assumptions, not process specifications.[^pdk-03]
 
@@ -293,7 +293,7 @@ step list calls the remaining step, {ref}`TUNARCE <step-036>`, a
 "Tunnel mask ARC etch" and does not explain it;[^steps-sheet] its step
 page reads it as the etch that opens an anti-reflective coating under
 the {ref}`TUNM <step-035>` resist. Which
-mask steps name i-line or KrF resist, a {term}`BARC`, HMDS, or laser gas or
+mask steps name i-line or KrF resist, a BARC, HMDS, or laser gas or
 lamps follows each step page's reading, as recorded in the index rows.
 
 ## Supply, handling, safety and facilities
@@ -332,7 +332,7 @@ These notes connect the class to the step pages; they add no SKY130
 conditions of their own.
 
 * **Two resist families.** The step pages read the critical levels
-  (active, poly, {term}`nitride cut`, local-interconnect contact and line,
+  (active, poly, nitride cut, local-interconnect contact and line,
   contact, metals 1–4 and vias 1–4) as KrF levels with chemically
   amplified resist, and the implant blocks, relaxed etch masks and thick
   top levels as i-line levels with DNQ/novolac resist, as the index rows
@@ -361,7 +361,7 @@ conditions of their own.
   levels.
 * **An anti-reflective coating that is etched.** The step list does not
   explain {ref}`TUNARCE <step-036>` beyond its name;[^steps-sheet] its
-  step page reads it as opening an {term}`ARC` under the tunnel-window resist
+  step page reads it as opening an ARC under the tunnel-window resist
   before the implants and wet etch that resist serves.
 * **Reticle types.** The masks page reads the three plates whose type
   the step list records as attenuated phase-shift masks for vias 2 and 3

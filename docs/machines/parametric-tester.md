@@ -2,8 +2,8 @@
 # Parametric tester and prober
 
 At the end of the flow the finished wafer is measured electrically. A
-wafer prober loads it, aligns it under a {term}`probe card` whose needles land on
-the pads of test structures in the {term}`scribe lines <scribe line>` or drop-in sites. A
+wafer prober loads it, aligns it under a probe card whose needles land on
+the pads of test structures in the scribe lines or drop-in sites. A
 parametric tester — source-measure units, a capacitance meter and a
 switching matrix under test-plan software — measures transistors,
 resistors, capacitors and chains site by site.
@@ -20,7 +20,7 @@ resistors, capacitors and chains site by site.
 | SKY130 steps | 1 step, with an electrical monitor named at 21 more; see {ref}`SKY130 steps assigned to this class <machine-parametric-tester-steps>` |
 
 :::{seealso}
-Test structures, {term}`sheet resistance` and transistor parameters are on the
+Test structures, sheet resistance and transistor parameters are on the
 {ref}`test category page <category-test>`.
 :::
 
@@ -49,7 +49,7 @@ computed from simple d-c electrical measurements made on bridge and van
 der Pauw shaped test structures".[^buehler-1978] Proctor, Linholm and
 Mazer described four- and six-terminal structures for contact
 resistance.[^proctor-1983] Sayah and Buehler's comb, serpentine and
-cross-bridge structure monitors shorts and {term}`step coverage` and was "tested
+cross-bridge structure monitors shorts and step coverage and was "tested
 using a computer-controlled parametric test system".[^sayah-1988]
 
 Lukaszek, Grambow and Yarbrough built a test chip on "systematic
@@ -200,7 +200,7 @@ caveats that apply to every listed tool are under
 {ref}`HPETEST <step-171>` page grades the 4062UX strong as "the only
 parametric tester named" and its use for `HPETEST` an inference; the
 prober behind it, and whether the reliability-lab probers or the manual
-station take part in {term}`e-test`, are not public.
+station take part in e-test, are not public.
 
 (machine-parametric-tester-steps)=
 ### SKY130 steps assigned to this class

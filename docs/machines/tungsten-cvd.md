@@ -1,7 +1,7 @@
 (machine-tungsten-cvd)=
 # Tungsten CVD
 
-A tungsten {term}`CVD` system is the cold-wall reactor a fab uses to fill
+A tungsten CVD system is the cold-wall reactor a fab uses to fill
 contact and via holes with tungsten. The wafer sits on a heated pedestal
 while tungsten hexafluoride is reduced first by silane, to nucleate a
 thin layer on the liner, and then by hydrogen, to grow a blanket film
@@ -77,7 +77,7 @@ coldwall reactors are very important".[^kleijn-1991]
 Tungsten does not start growing evenly on every surface. McConica and
 Cooper found that on oxide "The observed nucleation is autocatalytic and
 initiated by an intermediate diffusing from areas of tungsten
-deposition".[^mcconica-1988] In a plug fill a {term}`nucleation layer` is grown
+deposition".[^mcconica-1988] In a plug fill a nucleation layer is grown
 first, by silane reduction, before the hydrogen fill (category
 page). Hegde et al. compared nucleation layers
 "approximately 1000 Å thick" grown on "the TiN/Ti glue layer stack" at
@@ -100,7 +100,7 @@ gas to improve the reflectivity of the surface".[^pat-wcvd-amat]
 
 ### Pulsed nucleation
 
-Novellus's {term}`pulsed nucleation layer` ({term}`PNL`) replaces the continuous
+Novellus's pulsed nucleation layer ({term}`PNL`) replaces the continuous
 silane–WF₆ nucleation with alternating doses: "A tungsten nucleation film
 is formed on a surface of a semiconductor substrate by alternatively
 providing to that surface, reducing gases and tungsten containing gases.
@@ -217,8 +217,8 @@ nucleation layer of Novellus's patent, which does not itself use the
 abbreviation.[^pat-pnl-novellus]
 
 Elsewhere the page
-lists a special module "W plug dual damascene", {term}`CMP` of "tungsten" and
-"high selectivity tungsten", "WN" among the {term}`PVD` films, and "W/WN" as an
+lists a special module "W plug dual damascene", CMP of "tungsten" and
+"high selectivity tungsten", "WN" among the PVD films, and "W/WN" as an
 application of the AMAT DPSII etcher.[^skw-01] It gives no model,
 temperature or nucleation chemistry.
 
@@ -264,7 +264,7 @@ likely used at SkyWater"), as collected on the machines index:
 * **"Lam/Novellus PECVD Tungsten"** — *inference:* {ref}`WDEP <step-099>`, {ref}`WDEP2 <step-110>`, {ref}`WDEP3 <step-121>`, {ref}`WDEP4 <step-132>`, {ref}`WDEP5 <step-147>`
 * **The special module as well** — "W plug dual damascene": *strong for
   the capability:* {ref}`WDEP <step-099>`; the full row, which also
-  covers the nitrided-oxide and {term}`silicide` modules, is on the machines
+  covers the nitrided-oxide and silicide modules, is on the machines
   index.
 
 Every page grades the tool strong for vendor, process and the PNL
@@ -350,7 +350,7 @@ thicknesses are not public.
   and the metal stacks that land on the plugs. {ref}`machine-plasma-etcher-metal` — the aluminium etch that stops on
   the plug tops.
 * **Materials.** {ref}`material-hardware-consumables` — chamber parts and exhaust
-  abatement. {ref}`material-precursors` — silane, dichlorosilane, {term}`TEOS`, BTBAS,
+  abatement. {ref}`material-precursors` — silane, dichlorosilane, TEOS, BTBAS,
   ammonia, SiF₄, ozone and WF₆. {ref}`material-process-gases` — nitrogen, oxygen, hydrogen, argon,
   helium and the oxidation additives, their grades and SkyWater's listed
   gases. {ref}`material-etch-gases` — fluorocarbon, fluoride, chlorine and
