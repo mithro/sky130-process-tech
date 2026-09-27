@@ -25,7 +25,7 @@ for p in pages:
     t = p.read_text().split("<!-- footnotes -->")[0].split("\n## References")[0]
     for u in re.split(r"\n\s*\n|\n(?=\s*(?:[*+-]|\d+\.) )", t):
         c = " ".join(u.split())
-        for s in re.split(r"(?<=[.!?])(?<![Pp]p\.)(?<![Vv]ol\.)(?<!Proc\.)(?<!ch\.)(?<![Nn]o\.)(?<!Fig\.)\s+(?=[A-Z0-9`*])", c):
+        for s in re.split(r"(?<=[.!?])(?<!\b[Pp]p\.)(?<!\b[Vv]ol\.)(?<!\bProc\.)(?<!\bch\.)(?<!\b[Nn]o\.)(?<!\bFig\.)\s+(?=[A-Z0-9`*])", c):
             # a colon or dash followed by >=3 semicolon/comma separated clauses, or ordinal markers
             if re.search(r"\b(first|one)\b.*\b(second|another)\b.*\b(third|finally|last)\b", s, flags=re.I) or re.search(r"\((a|i|1)\).*\((b|ii|2)\).*\((c|iii|3)\)", s) or (s.count(";") >= 2 and len(s.split()) >= 45) or re.search(r"[:—] [^.;]+,[^.;]+,[^.;]+,[^.;]+,[^.;]+(,| and | or )", s):
                 inl[p.name] += 1; exi.append((p.name, s[:100]))

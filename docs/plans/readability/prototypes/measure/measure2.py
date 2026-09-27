@@ -39,7 +39,7 @@ for p in pages:
     for u in units:
         c = clean(" ".join(u.split()))
         if not c or c.startswith(":::") or c.startswith("#"): continue
-        for s in re.split(r"(?:(?<=[.!?])|(?<=[.!?][\"”)]))(?<![Pp]p\.)(?<![Vv]ol\.)(?<!Proc\.)(?<!ch\.)(?<![Nn]o\.)(?<!Fig\.)\s+(?=[A-Z0-9`*\[“\"(])", c):
+        for s in re.split(r"(?:(?<=[.!?])|(?<=[.!?][\"”)]))(?<!\b[Pp]p\.)(?<!\b[Vv]ol\.)(?<!\bProc\.)(?<!\bch\.)(?<!\b[Nn]o\.)(?<!\bFig\.)\s+(?=[A-Z0-9`*\[“\"(])", c):
             w = len(s.split())
             if w < 3: continue
             sent_len.append(w)

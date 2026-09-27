@@ -52,7 +52,7 @@ sent = Counter()
 for p in pages:
     s = sections(p.read_text())
     txt = clean(" ".join(" ".join(v for k, v in s.items() if k not in ("References", "TOP")).split()))
-    for x in set(re.split(r"(?<=[.!?])(?<![Pp]p\.)(?<![Vv]ol\.)(?<!Proc\.)(?<!ch\.)(?<![Nn]o\.)(?<!Fig\.)\s+(?=[A-Z0-9`*])", txt)):
+    for x in set(re.split(r"(?<=[.!?])(?<!\b[Pp]p\.)(?<!\b[Vv]ol\.)(?<!\bProc\.)(?<!\bch\.)(?<!\b[Nn]o\.)(?<!\bFig\.)\s+(?=[A-Z0-9`*])", txt)):
         if len(x.split()) >= 8: sent[x] += 1
 print("sentences repeated verbatim on >=10 pages:", sum(1 for v in sent.values() if v >= 10))
 for x, n in sent.most_common(12): print("  ", n, x[:150])

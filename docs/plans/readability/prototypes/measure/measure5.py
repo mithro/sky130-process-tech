@@ -29,7 +29,7 @@ from measure import blocks, clean, words  # noqa: E402  (sibling prototype, see 
 ROOT = next(d for d in Path(__file__).resolve().parents if (d / "docs/steps").is_dir())  # repo root, wherever the script sits
 
 # a sentence may open with a digit ("0.1 µm …", review rd-steps-135-153 D3); reference abbreviations guarded
-_SENT_SPLIT_RE = re.compile(r'(?:(?<=[.!?])|(?<=[.!?]["”)]))(?<![Pp]p\.)(?<![Vv]ol\.)(?<!Proc\.)(?<!ch\.)(?<![Nn]o\.)(?<!Fig\.)\s+(?=[A-Z0-9`*\[“"(])')
+_SENT_SPLIT_RE = re.compile(r'(?:(?<=[.!?])|(?<=[.!?]["”)]))(?<!\b[Pp]p\.)(?<!\b[Vv]ol\.)(?<!\bProc\.)(?<!\bch\.)(?<!\b[Nn]o\.)(?<!\bFig\.)\s+(?=[A-Z0-9`*\[“"(])')
 
 
 def sentences(block_text: str) -> list[str]:
