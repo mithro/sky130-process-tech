@@ -852,30 +852,27 @@ positives above; every WORDS LOST word is named in its page entry.
 
 ## Content problems for the owner (not fixed; text kept verbatim)
 
-1. **155 lead vs body** (figure notes, s9b): the lead says a chlorine plasma removes "first whatever
-   remains of the CAPILD2 dielectric outside the capacitor plates"; the Why and How sections say
-   chlorine makes little progress on it and a fluorine-containing breakthrough removes it. Kept
-   verbatim in both places.
-2. **Dielectric left on the metal-4 landings** (s9b): on the stop-on-dielectric reading of
-   CAPME/CAP2ME the dielectric stays on every metal-4 shape under the MM4 resist; 155 says the etch
-   removes it "outside the capacitor plates" without saying it stays on the lines, and 160 gives the
-   via-4 floor as the metal-4 cap (and the plate) without saying so. Same gap as batch 10 content
-   problem 2 and batch 11 content problem 1.
-3. **155 arithmetic** (s9b): "consistent with 0.72–0.80 µm of Al–Cu at 3.4–3.8 µΩ·cm" — 3.8 µΩ·cm at
-   47 mΩ/sq gives 0.81 µm (3.8e-6 Ω·cm ÷ 0.047 Ω = 8.09e-5 cm); 3.4 gives 0.72. Should read
-   0.72–0.81 µm. Unchanged.
-4. **Cypress nitride range** (s11): 167 (How step 4 "0.7–0.9 µm" and Open questions "0.7–0.9 µm"),
-   168 (Step category "the 7000–9000 Å nitride"), 169 (public-record paragraph "7000–9000 Å of
-   nitride") and 170 (post-figure passage "7000–9000 Å of nitride") quote the Cypress reports as
-   7000–9000 Å, but the S8TNV-5R report gives "7000 +/- 2000A", i.e. 0.5–0.9 µm; 169's Open questions
-   ("0.7 ± 0.2 µm") and 167's own table quote it correctly. Unchanged.
-5. **Arithmetic re-checked, all correct otherwise:** 154 k₁ 0.85 and 0.49, via-4 pad 0.8 + 2 × 0.19 =
-   1.18 µm; 156 d = ε₀·4.0/68.33 aF/µm² = 0.518 µm, 5.3711 − 4.0211 = 1.35 = 0.845 + 0.505, 0.505/0.8 =
-   0.63; 157 0.505 − (0.10–0.15) = 0.355–0.405 µm; 159 k₁ 1.3 and 2.3, 16 × area, 3 410/16 = 213 mΩ,
-   380/213 = 1.8, 3 410/380 ≈ 9; 161 28.5 mΩ/sq × 1.2 µm = 3.4 µΩ·cm, × 2 µm = 5.7, 28.5/47 = 61 %,
-   1.26/0.845 = 1.49; 162 k₁ 2.6 and 1.3; 163 1.26/1.6 = 0.79; 164 5.3711 + 0.3777 = 11.8834 − 6.1346 =
-   5.7488; 165 k₁ 4.9; 166 2 × (3.6 + 5.2) mm × 5 µm = 0.088 mm² of 18.72 mm² = 0.47 %; 167 0.4223/0.54
-   = 78 %; 168 k₁ 2.1, (65.4 − 60)/2 = 2.7 µm; 169 0.54 + 0.09 = 0.63 µm.
+In the reviewer's words (review `rd-steps-154-171`, section D), the nitride range first as the review
+asks:
+
+1. **Cypress nitride range, 7000 ± 2000 Å read as "7000–9000 Å" or "0.7–0.9 µm"** (167 How step 4
+   and Open questions, 168, 169, 170): unchanged. 169's Open questions ("0.7 ± 0.2 µm") and 167's
+   new table quote the report correctly, so the pages now disagree with themselves more visibly.
+   Recommend the owner fix this first.
+2. **155 lead vs body:** chlorine removes the CAPILD2 remnant (lead) vs a fluorine breakthrough
+   (Why/How). Text unchanged. Owner decision; the figure notes already record it.
+3. **Dielectric left on the metal-4 landings (155, 160):** unchanged. It is the same open item as
+   batch 10 problem 2 and batch 11 problem 1.
+4. **155 arithmetic:** "0.72–0.80 µm" should be 0.72–0.81 µm, and the writer's arithmetic is right.
+   Unchanged, as §2.14 requires.
+5. **Arithmetic re-checked:** I agree with every value the writer lists (see A). (Writer's list: 154
+   k₁ 0.85 and 0.49, via-4 pad 0.8 + 2 × 0.19 = 1.18 µm; 156 d = ε₀·4.0/68.33 aF/µm² = 0.518 µm,
+   5.3711 − 4.0211 = 1.35 = 0.845 + 0.505, 0.505/0.8 = 0.63; 157 0.505 − (0.10–0.15) = 0.355–0.405 µm;
+   159 k₁ 1.3 and 2.3, 16 × area, 3 410/16 = 213 mΩ, 380/213 = 1.8, 3 410/380 ≈ 9; 161 28.5 mΩ/sq ×
+   1.2 µm = 3.4 µΩ·cm, × 2 µm = 5.7, 28.5/47 = 61 %, 1.26/0.845 = 1.49; 162 k₁ 2.6 and 1.3; 163
+   1.26/1.6 = 0.79; 164 5.3711 + 0.3777 = 11.8834 − 6.1346 = 5.7488; 165 k₁ 4.9; 166 0.088 mm² of
+   18.72 mm² = 0.47 %; 167 0.4223/0.54 = 78 %; 168 k₁ 2.1, (65.4 − 60)/2 = 2.7 µm; 169 0.54 + 0.09 =
+   0.63 µm.)
 
 ## Review fix round (review `rd-steps-154-171`: 0 High, 2 Medium, 11 Low)
 
@@ -911,7 +908,8 @@ positives above; every WORDS LOST word is named in its page entry.
   (ruling D5).
 * **L5 (169):** the two consecutive parenthetical sentences are one again, in the base's words and
   punctuation: "(Inference from … top metal;[^cyp-qtp-123907] the whole of that evidence is set out
-  under overview-metal-cap.)" — a hedge parenthetical sentence of about 46 words directly after the
+  under overview-metal-cap.)" — a hedge parenthetical sentence of 52 words by the batch script (over
+  the 45-word cap, as the reviewer's fix wording makes it) directly after the
   reading it qualifies (R-SENTENCE step 7).
 * **L8 (159):** the parenthetical "(The rules also allow a 0.800 µm square via 3 inside `areaid.mt`,
   via3.1a.[^pdk-periph])" moves, unchanged, to close its paragraph after "(our arithmetic).", so it no
@@ -921,3 +919,11 @@ positives above; every WORDS LOST word is named in its page entry.
 * **L9 (165):** the glance box's keepout line gains "with exemptions (see the rule table)", so it no
   longer overstates nsm.3. **L10 (165):** not changed — the reviewer judges the caption, the base's
   own sentence, acceptable and the move not required.
+* **Guide rulings D1–D6** applied to `docs/plans/readability-guide.md` in their own commit (§1
+  parenthetical row and R-SENTENCE step 7: glosses inside list lead-ins/items; R-TABLE step 8: a
+  table's conclusion may keep "So"; R-SENTENCE step 5: the single closing sentence; §7 4b′: the
+  DUPLICATED check on main; R-RELATED step 1: unlabelled links; R-PARA step 4: the 30-word lead cap
+  only with sub-bullets).
+* **Checks after the round**, with main's `tools/check_preserved.py` and `tools/check_inforce.py`
+  copied in (not committed): see the batch gates above; the new LOST `number_order` line on 159 (L8)
+  and the declared DUPLICATED closing sentence on 171 are the only changes to the preservation record.
