@@ -15,7 +15,7 @@ and spins the wafer dry.
 | Chemistries | Dilute HF;[^hattori-1998] HF/HNO₃ for silicon;[^oinoue-2018] an "H2O:H2O2:H2SO4:HF mixture" for backside cleaning;[^broussous-2005] DSP+, a "dilute sulfuric-peroxide-HF mixture" for post-etch residues;[^lee-2012-dsp] solvents.[^sez-polymer-1999] |
 | Throughput | The 223 "can process 80 or more wafers per hour and use up to three chemistries";[^sez-223-pr] the four-chamber 8200 up to "200 wafers per hour".[^sez-8200-2001] |
 | 200 mm era | SEZ's 223, "a robot that transports 200mm wafers from four cassettes to two identical process chambers",[^sez-223-moov] and its four-chamber 4200 and 8200;[^sez-polymer-1999][^sez-8200-2001] the Da Vinci, first sold in 2004,[^sez-2005] for "200- and 300-mm wafers".[^sez-davinci-2008] |
-| SkyWater-listed tool | SEZ223 and Davinci under "Single Wafer";[^skw-01] a caption naming "a SEZ etcher tool"[^skw-07] |
+| SkyWater-listed tool | "Single Wafer": "SEZ223, Davinci, HF, DSP+HF, titration controlled";[^skw-01] a caption naming "a SEZ etcher tool"[^skw-07] |
 | SKY130 steps | 4 steps, plus 14 where it runs a clean; see {ref}`SKY130 steps assigned to this class <machine-single-wafer-spin-processor-steps>` |
 
 :::{seealso}
@@ -168,7 +168,7 @@ rinse.[^sez-polymer-1999]
 
 SEZ introduced its Spin-Processor 223 "for high throughput cleaning and film removal applications", including "backside, bevel/edge and frontside exclusion zone copper decontamination" and "frontside film removal applications".[^sez-223-pr]
 
-**SEZ,** with headquarters in Villach, Austria.[^sez-8200-2001] In December 2007
+**SEZ.** SEZ had its headquarters in Villach, Austria.[^sez-8200-2001] In December 2007
 SEZ's board signed an agreement for a Lam Research tender offer, after
 which SEZ was to become "a new division within Lam with capabilities focused around single-wafer
 cleaning technology"; SEZ then had "an installed base of over 1,200
