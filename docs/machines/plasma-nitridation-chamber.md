@@ -9,7 +9,7 @@ wafer to the temperatures a thermal nitridation needs.
 | | Plasma nitridation chamber |
 |---|---|
 | What it does | Incorporates nitrogen into the surface of an ultra-thin gate oxide "to prevent boron penetration and reduce leakage current", in Applied Materials' description of its DPN chamber.[^amat-dpn-2001] |
-| Plasma source | A remote He–N₂ plasma;[^hattangady-1995] "a helicon plasma source";[^kraft-1997] inductive coupling in Applied Materials' DPN;[^pat-pna-amat] later, a microwave slot plane antenna (SPA) plasma source.[^pat-spa-tel] |
+| Plasma source | A remote He–N₂ plasma;[^hattangady-1995] "a helicon plasma source";[^kraft-1997] inductive coupling in Applied Materials' DPN;[^pat-pna-amat] later, a microwave "slot plane antenna (SPA) plasma source".[^pat-spa-tel] |
 | Pressure, power and time | "about 5-20 mTorr", "200-800 Watt" and "pulse at about 5-15 kHz" for DPN;[^pat-pna-amat] "around 4 mTorr" and "around 1-60 seconds" in a Texas Instruments high-density plasma process.[^pat-rpn-ti] |
 | Nitrogen profile | "approximately 15 at. % nitrogen into the top 0.5 nm" of an oxide "in 10 s";[^kraft-1997] nitrogen "confined to the immediate vicinity of the surface".[^hattangady-1995] |
 | Wafer temperature | Remote plasma nitridation "at low temperatures, 23 and 300 °C";[^hattangady-1995] 300 °C in a later remote-plasma study.[^niimi-2002] |
