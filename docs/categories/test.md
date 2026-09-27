@@ -28,7 +28,7 @@ In the general description, "wafer testing is a step performed during
 semiconductor device fabrication after back end of line (BEOL) and
 before IC packaging"; this reference, whose phase table ends the back
 end with the final alloy and test, files {ref}`HPETEST <step-171>`
-itself under BEOL. Wafer testing comes in two kinds:[^wiki-test]
+itself under {term}`BEOL`. Wafer testing comes in two kinds:[^wiki-test]
 
 * **Wafer parametric tests** — performed
   at "a few locations on each wafer" to verify that fabrication succeeded.
@@ -94,7 +94,7 @@ they include:[^raw-data-testtile-pads]
 * 36 finger-capacitor ("VPP") modules;
 * 28 poly-resistor modules (24 of them labelled 300 Ω/sq or 2 kΩ/sq;
   many as "Mismatch" pairs);
-* 7 MiM capacitor modules;
+* 7 {term}`MiM capacitor` modules;
 * 9 diode, 6 bipolar-transistor and 6 ring-oscillator modules;
 * licon and mcon contact strings, via chains from via 1 to via 4,
   comb/serpentine and line-integrity structures; and
@@ -185,7 +185,7 @@ device.
 * **Wafer probers**: Electroglas 4090 and 4085X, TEL P-8 and P-12, Tokyo
   Seimitsu UF-series, with temperature-controlled chucks.[^wiki-ate]
 * **Probe cards**: cantilever needle cards laid out to the PCM pad
-  ring.[^wiki-probecard] The open test tile that Google, NIST and the
+  ring.[^wiki-probecard] The open {term}`test tile` that Google, NIST and the
   University of Michigan placed on MPW-5 is documented with a pad-grid
   drawing marked "40 µm" pads and "60 µm" and "80 µm" dimensions,
   beside a photograph of a needle "Probe Card".[^raw-data-testtile-open]

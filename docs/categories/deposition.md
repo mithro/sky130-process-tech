@@ -133,7 +133,7 @@ from the corners of a gap, which would otherwise close first, so gaps of
 aspect ratio around 3:1 fill without voids in a single step. The
 deposition-to-sputter ratio is the key recipe knob, and the bias makes
 the process hot (wafer temperature is controlled by helium backside
-cooling on an electrostatic chuck). {term}`HDP-CVD` oxide is the usual STI fill
+cooling on an {term}`electrostatic chuck`). {term}`HDP-CVD` oxide is the usual STI fill
 at this node and is the likely process behind {ref}`FILOX <step-011>`;
 in many aluminium processes it also fills the gaps between metal lines
 before a capping oxide and {term}`CMP`.[^txt-01][^txt-09]
@@ -151,10 +151,10 @@ aluminium BEOL are:
 
 * **Aluminium–copper**, typically Al with 0.5–1 wt.% Cu, sputtered at
   150–400 °C. The copper segregates to grain boundaries and greatly
-  improves electromigration lifetime relative to pure
+  improves {term}`electromigration` lifetime relative to pure
   aluminium.[^wiki-em][^txt-02]
 * **Titanium** as an adhesion/contact layer and **titanium nitride** by
-  reactive sputtering of Ti in Ar/N₂.
+  {term}`reactive sputtering` of Ti in Ar/N₂.
 
   It was on Al stripes over TiN
   that Blech measured the threshold current density below which no
@@ -163,7 +163,7 @@ aluminium BEOL are:
   coating for lithography and as a diffusion barrier.[^wiki-tin]
 * **Titanium–tungsten** (Ti:W, "typically composed of 10 wt% of titanium
   and the balance of tungsten"),[^pat-tiw-hitachi] a barrier and
-  anti-reflective cap used in some aluminium stacks and as a capacitor
+  {term}`anti-reflective cap` used in some aluminium stacks and as a capacitor
   electrode.
 
   Whether SKY130's aluminium levels are capped with Ti:W or
@@ -227,7 +227,7 @@ must hit.
   injection) delivery and a vacuum pump train — ASM A400 ("LPCVD
   processes like doped silicon and silicon nitride films"),[^asm-a400]
   TEL Alpha-8, Aviza/Thermco.
-* **{ref}`PECVD <machine-pecvd>`**: single-wafer multi-station or multi-chamber cluster tools —
+* **{ref}`PECVD <machine-pecvd>`**: single-wafer multi-station or multi-chamber {term}`cluster tools <cluster tool>` —
   Novellus Concept One/Concept Two Sequel (Novellus's dielectric line
   comprised "Concept One, Concept One Maxus, Concept Two Sequel, Concept
   Two Dual Sequel, Concept Two Sequel-S"),[^novellus-history] Applied
