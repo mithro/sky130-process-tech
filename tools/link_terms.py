@@ -571,7 +571,15 @@ def first_uses(
     seen_terms: set[str] = set(preseen or ())
     skip_terms = page_skip or set()
     starts = paragraph_starts(body)
+    # Links already in a paragraph (by hand, or by an earlier run of this
+    # script) count toward its cap. Without this a second run would add
+    # the links the first run deferred, so the script would not be
+    # idempotent (found in the final pass on main, 2026-09-27: seven
+    # links on a re-run).
     para_count: dict[int, int] = {}
+    for m in EXISTING_TERM_ROLE_RE.finditer(body):
+        para = paragraph_of(starts, m.start())
+        para_count[para] = para_count.get(para, 0) + 1
     for m in pattern.finditer(body):
         start, end = m.start(), m.end()
         if any(excluded[start:end]):
@@ -1074,6 +1082,26 @@ def selftest() -> int:
     twice, applied2 = apply_links(once, pattern, v2c, page_skip=skip)
     if once != twice or applied1 or applied2:
         fail(f"page_skip is not idempotent: {once!r} -> {twice!r}")
+
+    # 34b. Idempotence under the paragraph cap: a second run over the
+    # first run's output adds nothing (existing links count toward the
+    # cap), and a paragraph already holding three links gets no fourth.
+    text = (
+        "One CMP two CVD three PVD four ARC in one crowded paragraph.\n\n"
+        "A second paragraph mentions nothing else.\n"
+    )
+    pattern, v2c = build_pattern(["CMP", "CVD", "PVD", "ARC"])
+    body, _ = split_body_and_defs(text)
+    once, applied1 = apply_links(body, pattern, v2c)
+    twice, applied2 = apply_links(once, pattern, v2c, preexisting_terms(once, ["CMP", "CVD", "PVD", "ARC"]))
+    if len(applied1) != 3 or applied2 or once != twice:
+        fail(f"paragraph cap is not idempotent: {applied1} then {applied2}")
+    out = linked_of(
+        "A {term}`CMP` and {term}`CVD` and {term}`PVD` paragraph with ARC.\n",
+        ["CMP", "CVD", "PVD", "ARC"],
+    )
+    if out:
+        fail(f"existing links did not count toward the paragraph cap: {out}")
 
     # 35. --report prints the term and a context window without writing
     # the file (process_file's own contract: report implies no write).
