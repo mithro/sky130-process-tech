@@ -12,9 +12,9 @@ type it cuts the thin organic and dielectric films that sit on top of them.
 | Plasma source | Inductive: a planar coil above a dielectric window; the TCP 9400 "has two independent 13.56 MHz RF power supplies which deliver high and low power to the upper and lower electrodes, respectively";[^snf-9400] inductive coupling "can produce ion densities in excess of 10¹² cm⁻³ even at submillitorr pressures".[^hopwood-1992] Older parallel-plate tools switch "between plasma and RIE modes".[^allwin-rainbow-4400] |
 | Chemistry | HBr, Cl₂ and O₂ for silicon,[^bell-1997] with "A C2F6 process for the breakthrough of polysilicon native oxide prior to the main etch" or a CF₄ equivalent.[^allwin-rainbow-4400] |
 | Wafer handling | Single wafer, loaded from a cassette ("Single wafer etch with auto-loading from a cassette"[^snf-9400]) onto a chuck; cluster platforms carry several chambers — Lam's 2300 platform "handles four process modules".[^lam-2300-2000] |
-| Endpoint | Optical emission or interferometry; Applied's Predictive Endpoint signals "a high selectivity overetch prior to contacting the gate oxide".[^amat-dps-plus-1999] |
+| Endpoint | Optical emission or interferometry; Applied's "Predictive Endpoint" signals "a high selectivity overetch prior to contacting the gate oxide".[^amat-dps-plus-1999] |
 | 200 mm era | Applied Materials' Silicon Etch DPS Centura (1996 in the company's 1997 annual report,[^amat-1997] 1997 in its 1999 press release[^amat-dps-plus-1999]) and DPS Plus (1999);[^amat-dps-plus-1999] Lam's TCP 9400 family[^snf-9400] and its 2300 Versys Silicon, launched in 2000 "for both 200- and 300-mm wafers".[^lam-2300-2000] |
-| SkyWater-listed tool | Under "Poly/Silicon Etch": AMAT DPSII, Lam 9400 TCP and Lam 4400;[^skw-01] see *What SkyWater lists* |
+| SkyWater-listed tool | Under "Poly/Silicon Etch": "AMAT DPSII, HBR, Cl2, NF3, CF4, CHF3, O2" ("gate, trench, W/WN"), "Lam 9400 TCP, poly/nitride, HBr, CF4, SF6, O2", "Lam 4400, HBr, Cl2, C2F6, CF4, SF6, O2"[^skw-01] |
 | SKY130 steps | 4 steps; see {ref}`SKY130 steps assigned to this class <machine-plasma-etcher-silicon-steps>` |
 
 :::{seealso}
@@ -188,7 +188,7 @@ performance for thin gate oxides" on the DPS Plus.[^amat-dps-plus-1999]
 | Applied Materials | Precision 5000 | — | silicon etch from 1988[^amat-1997] |
 | Applied Materials | MxP chambers | from 1993 | "for metal, dielectric and silicon etching"[^amat-1997] |
 | Applied Materials | Silicon Etch DPS Centura | — | the 1997 annual report dates it to 1996 and says it "targeted 0.35-micron and below device designs";[^amat-1997] Applied's 1999 press release gives 1997 and reports "More than 350 silicon etch DPS chambers" installed[^amat-dps-plus-1999] |
-| Applied Materials | DPS Plus[^amat-dps-plus-1999] | — | introduced by that press release, on the "Etch Centura II" platform |
+| Applied Materials | DPS Plus[^amat-dps-plus-1999] | — | introduced by Applied's 1999 press release, on the "Etch Centura II" platform |
 | Applied Materials | Silicon Etch DPS 300 | 2000 | announced on the Centura 300 platform, "derived from Applied Materials' production-proven Centura 200mm design"[^amat-300-etch-2000] |
 | Lam Research | Rainbow 44XX | — | parallel-plate etchers for 6-inch or 8-inch wafers, with applications including "Anisotropic Doped Poly Etch: Cl2/HBr Main Etch and Cl2/HBr/O2 Overetch" and a three-step nitride spacer etch[^allwin-rainbow-4400] |
 | Lam Research | TCP 9400 family | — | "originally used for gate etching with high selectivity to thin gate oxides"[^snf-9400] |
@@ -227,7 +227,7 @@ Under "Etch", SkyWater's *Facilities & Capabilities* page has a
 
 | Entry as listed | What it names | Status |
 |---|---|---|
-| "AMAT DPSII, HBR, Cl2, NF3, CF4, CHF3, O2" | the only one of the three that names applications — gate, trench and tungsten or tungsten nitride — and the only one with NF₃ and CHF₃[^skw-01] | — |
+| "AMAT DPSII, HBR, Cl2, NF3, CF4, CHF3, O2" – "gate, trench, W/WN" | the only one of the three that names applications — gate, trench and tungsten or tungsten nitride — and the only one with NF₃ and CHF₃[^skw-01] | — |
 | "Lam 9400 TCP, poly/nitride, HBr, CF4, SF6, O2" | polysilicon and nitride; no Cl₂[^skw-01] | — |
 | "Lam 4400, HBr, Cl2, C2F6, CF4, SF6, O2" | no application[^skw-01] | we read "Lam 4400" as a Rainbow 4400, the Lam 44XX parallel-plate family a reseller describes;[^allwin-rainbow-4400] an inference from the model number |
 :::
