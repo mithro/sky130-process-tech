@@ -196,6 +196,72 @@ had none in the base; the skw-01 of the new SkyWater cell is the cell's own.
 
 Content problems for the owner: none found.
 
+### 3. `docs/machines/plasma-etcher-silicon.md` — done
+
+Rules applied: R-INTRO, R-MODELS, R-ENTRIES, R-QUICKFACTS, R-PARA, R-SENTENCE, R-RELATED,
+R-CAPTION.
+
+* **R-INTRO.** 131 → 47 words. The first sentence (46 words) split after "the polysilicon gates"
+  with "it cuts" added for the second half (R-SENTENCE step 7). "In the 200 mm, 130 nm era it was
+  usually a high-density reactor …" moved into the first H2's second paragraph, subject restored
+  ("a silicon and polysilicon etcher"). Pointer → `{seealso}`. Deleted template sentence: "This
+  page describes the class in general, lists representative 200 mm-era models, and then says what
+  SkyWater has published about its own tools of this class and which SKY130 steps this reference
+  assigns to it."
+* **R-MODELS.** 8 rows. Year cells: MxP "from 1993"; Silicon Etch DPS 300 2000 ("In 2000 Applied
+  announced a Silicon Etch DPS 300"); 2300 Versys Silicon 2000 ("of 2000"). `—` for Precision 5000
+  ("silicon etch from 1988" kept in Published figures), Silicon Etch DPS Centura (the page gives two
+  dates from two sources, 1996 from the 1997 annual report and 1997 from the 1999 press release;
+  both stay in Published figures with their sources), DPS Plus (the page says only that the 1999
+  release "introduces" it; the row reads "introduced by that press release", the release being
+  named in the row above), Rainbow 44XX, TCP 9400 family. Remarks (three): the DPS II reading
+  ("We read … an inference from the name"), the two quick-facts sentences moved here (below), and
+  **Other vendors.**
+* **R-ENTRIES.** The "Read term by term" sentence → a 3-row table. Status: `—` for the DPS II and
+  9400 rows (SkyWater's own words, read without a hedge); the 4400 row carries the page's own
+  "we read "Lam 4400" as a Rainbow 4400 … an inference from the model number". The two sentences
+  about the list as a whole stay as prose under it.
+* **R-QUICKFACTS.** Cells over cap 7 → 5.
+  * What it does: "Stanford's TCP 9400 is "for selective etching of silicon and polysilicon"." moved
+    verbatim under the models table. 26 words by measure5, one quotation (18 of the words).
+  * Chemistry: the reseller gas-line sentence moved verbatim under the models table; its marker
+    repeated on the C₂F₆ clause it also covered. 26 words, one quotation.
+  * Endpoint: the Hsu quotation moved verbatim to `### Endpoint, soft landing and over-etch`, after
+    Hsu's model; "Predictive Endpoint" unquoted in the cell (DEDUPLICATED; the quotation stays in
+    the body).
+  * SkyWater-listed tool: the three entries (in the blockquote) → their tool names; "gate, trench,
+    W/WN" DEDUPLICATED.
+  * Left: Plasma source (56 words, three quotations, 13.56 and 10¹² in one number-order unit),
+    Wafer handling (29 words, two quotations found only here), 200 mm era (41 words, dates).
+* **R-PARA / R-SENTENCE.** Every long H3 body split at source seams; sentences split at semicolons
+  (Bell 1997/1996, the DPS dome, the TCP/Stanford sentence, the gate and strip bullets), at ", and
+  is turned" ("The layer is turned …"), ", and was by 1999" ("It was by 1999 …"), and ", and the
+  polysilicon/oxide selectivity" (Joubert, marker repeated). Four consumables and integration items
+  over 60 words → lead + indented continuation.
+* **R-RELATED**, **R-CAPTION** as page 1.
+
+Caps (measure5): paragraphs > 100 8 → 0; list items > 60 6 → 0; sentences > 45 15 → 2 (the Tuda
+sentence, 50 words of which 17 inside its quotation, and a false flag: measure5 fuses "…main
+etch." with the next sentence, guide problem 1); table cells > 25 7 → 7 (five quick-facts cells,
+two models cells whose length is their quotations).
+
+Preservation. DEDUPLICATED: quotes "Predictive Endpoint", "gate, trench, W/WN". ADDED quotes:
+"Poly/Silicon Etch" (the entries-table caption). ADDED markers, each a repeat on a split or a row:
+`allwin-rainbow-4400` (Chemistry cell), `amat-1997` ×2 (the Precision 5000 and MxP rows),
+`amat-dps-plus-1999` ×2 (the "It was by 1999" split; the DPS Centura row), `joubert-1997`,
+`skw-01` ×2 (entries rows), `vallier-2003`, `wiki-rie`. **LOST number_order ('2000', '300', '300',
+'200')**: the DPS 300 row puts the model's "300" before its Year 2000 (the page: "In 2000 Applied
+announced a Silicon Etch DPS 300 on the Centura 300 platform, … 200mm"); same four digits, the
+Year column interposed, read by hand. REGROUPED: the models bullets → rows, the entries sentence →
+rows. Template losses: `200`, `about`, `SKY130`. Strict words: template sentence; "for the DPS
+Centura" (the row is that model); "introduces" → "introduced"; "term by term", "entry", "names",
+"DPS II" (the entries sentence, now the table); "gate, trench, W/WN" (quick facts). Marker
+coverage: 17 flags, all read — model cells whose row's figures carry the marker, table headers,
+the "If so" split (the base markers covered the doping clause only), the TUNARCE clause (base
+marker before the semicolon).
+
+Content problems for the owner: none found.
+
 ## Guide problems
 
 1. **`measure5.py` fuses a sentence ending in "…ch."** Its abbreviation guard `(?<!ch\.)` (meant

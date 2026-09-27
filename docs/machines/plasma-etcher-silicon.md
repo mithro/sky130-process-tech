@@ -3,39 +3,42 @@
 
 A silicon and polysilicon plasma etcher is the single-wafer dry-etch
 tool a fab uses to cut vertical features into silicon: the shallow
-isolation trenches and the polysilicon gates, and, in the same chamber
-type, the thin organic and dielectric films that sit on top of them.
-In the 200 mm, 130 nm era it was usually a high-density reactor —
-most often inductively coupled — with a separately biased wafer chuck,
-running halogen chemistries that etch silicon fast while stopping on a
-few nanometres of oxide. This page describes the class in general,
-lists representative 200 mm-era models, and then says what SkyWater
-has published about its own tools of this class and which SKY130 steps
-this reference assigns to it. The physics and chemistry of plasma
-etching are on the {ref}`category page <category-etch>`.
+isolation trenches and the polysilicon gates. In the same chamber
+type it cuts the thin organic and dielectric films that sit on top of them.
 
 | | Plasma etcher: silicon and polysilicon |
 |---|---|
-| What it does | Anisotropic etching of silicon and polysilicon in HBr/Cl₂/O₂ plasmas, with the O₂ flow "tuned to obtain anisotropic etching profiles … and maximizing the polysilicon/gate oxide selectivity";[^bell-1997] Stanford's TCP 9400 is "for selective etching of silicon and polysilicon".[^snf-9400] |
+| What it does | Anisotropic etching of silicon and polysilicon in HBr/Cl₂/O₂ plasmas, with the O₂ flow "tuned to obtain anisotropic etching profiles … and maximizing the polysilicon/gate oxide selectivity".[^bell-1997] |
 | Plasma source | Inductive: a planar coil above a dielectric window; the TCP 9400 "has two independent 13.56 MHz RF power supplies which deliver high and low power to the upper and lower electrodes, respectively";[^snf-9400] inductive coupling "can produce ion densities in excess of 10¹² cm⁻³ even at submillitorr pressures".[^hopwood-1992] Older parallel-plate tools switch "between plasma and RIE modes".[^allwin-rainbow-4400] |
-| Chemistry | HBr, Cl₂ and O₂ for silicon,[^bell-1997] with "A C2F6 process for the breakthrough of polysilicon native oxide prior to the main etch" or a CF₄ equivalent; a reseller lists "CL2 200sccm,HBr 200sccm,SF6 200sccm,N2 200sccm,He 500sccm,O2 50sccm,CF4 200sccm" as typical gas lines of a Rainbow 44XX.[^allwin-rainbow-4400] |
+| Chemistry | HBr, Cl₂ and O₂ for silicon,[^bell-1997] with "A C2F6 process for the breakthrough of polysilicon native oxide prior to the main etch" or a CF₄ equivalent.[^allwin-rainbow-4400] |
 | Wafer handling | Single wafer, loaded from a cassette ("Single wafer etch with auto-loading from a cassette"[^snf-9400]) onto a chuck; cluster platforms carry several chambers — Lam's 2300 platform "handles four process modules".[^lam-2300-2000] |
-| Endpoint | Optical emission or interferometry; interferometry "provided additional margin for protecting the thin gate dielectric as opposed to optical emission spectroscopy";[^hsu-2004] Applied's "Predictive Endpoint" signals "a high selectivity overetch prior to contacting the gate oxide".[^amat-dps-plus-1999] |
+| Endpoint | Optical emission or interferometry; Applied's Predictive Endpoint signals "a high selectivity overetch prior to contacting the gate oxide".[^amat-dps-plus-1999] |
 | 200 mm era | Applied Materials' Silicon Etch DPS Centura (1996 in the company's 1997 annual report,[^amat-1997] 1997 in its 1999 press release[^amat-dps-plus-1999]) and DPS Plus (1999);[^amat-dps-plus-1999] Lam's TCP 9400 family[^snf-9400] and its 2300 Versys Silicon, launched in 2000 "for both 200- and 300-mm wafers".[^lam-2300-2000] |
-| SkyWater-listed tool | Under "Poly/Silicon Etch": "AMAT DPSII, HBR, Cl2, NF3, CF4, CHF3, O2" ("gate, trench, W/WN"), "Lam 9400 TCP, poly/nitride, HBr, CF4, SF6, O2", "Lam 4400, HBr, Cl2, C2F6, CF4, SF6, O2"[^skw-01] |
+| SkyWater-listed tool | Under "Poly/Silicon Etch": AMAT DPSII, Lam 9400 TCP and Lam 4400;[^skw-01] see *What SkyWater lists* |
 | SKY130 steps | 4 steps; see {ref}`SKY130 steps assigned to this class <machine-plasma-etcher-silicon-steps>` |
+
+:::{seealso}
+The physics and chemistry of plasma
+etching are on the {ref}`category page <category-etch>`.
+:::
 
 ## What the machine class is and how it works
 
 A plasma etcher holds the wafer on an RF-driven electrode in a
-low-pressure gas; electrons charge that electrode to "a large negative
+low-pressure gas.[^wiki-rie] Electrons charge that electrode to "a large negative
 voltage … typically around a few hundred volts", and positive ions
 accelerate across the sheath onto the wafer, so that "reactive-ion
-etching can produce very anisotropic etch profiles".[^wiki-rie] What
+etching can produce very anisotropic etch profiles".[^wiki-rie]
+
+What
 makes a machine a *silicon and polysilicon* etcher is the combination
 of a dense, low-pressure plasma, an independently set ion energy, a
 halogen gas set that forms volatile silicon halides, and the endpoint
-and chamber control needed to stop on a thin gate oxide. Donnelly and
+and chamber control needed to stop on a thin gate oxide. In the 200 mm,
+130 nm era a silicon and polysilicon etcher was usually a high-density
+reactor — most often inductively coupled — with a separately biased
+wafer chuck, running halogen chemistries that etch silicon fast while
+stopping on a few nanometres of oxide. Donnelly and
 Kornblit review how reactor design evolved to meet these
 demands.[^donnelly-2013]
 
@@ -46,23 +49,29 @@ plasma density and ion energy. Lam's Rainbow 44XX, a
 single-wafer tool of that type, has "top or/and bottom powered
 electrode plate, programmable electrode spacing", with RF match
 networks "at the upper and lower electrodes for programmable switching
-between plasma and RIE modes".[^allwin-rainbow-4400] High-density
+between plasma and RIE modes".[^allwin-rainbow-4400]
+
+High-density
 etchers separate the two functions. Lam's transformer-coupled plasma
 (TCP) source is a planar coil outside the chamber in which "Radiofrequency
 resonant current is induced", producing "a planar magnetic field within
 the exclosure" and "a planar region of ionic and radical
-species";[^pat-tcp-lam] in Stanford's TCP 9400, "A high density
+species".[^pat-tcp-lam] In Stanford's TCP 9400, "A high density
 discharge is generated by the higher-power RF supply by inductive
 coupling of a planar source coil to the gas in the chamber", while the
-lower-power supply biases the wafer electrode.[^snf-9400] Applied
-Materials' decoupled plasma source (DPS) has a dome over the chamber;[^amat-dps-plus-1999] a patent
+lower-power supply biases the wafer electrode.[^snf-9400]
+
+Applied
+Materials' decoupled plasma source (DPS) has a dome over the chamber.[^amat-dps-plus-1999] A patent
 by Yin et al. describes an "RF coil having plural coil sections" and a
 lid with "an outer insulating annulus and an inner conducting disk
 portion" to reduce capacitive coupling and the sputtering of chamber
 interior surfaces it causes.[^pat-dps-amat] Wikipedia summarises the hybrid:
 "the ICP is employed as a high density source of ions which increases
 the etch rate, whereas a separate RF bias is applied to the substrate …
-to achieve more anisotropic etch profiles".[^wiki-rie] Hopwood's review
+to achieve more anisotropic etch profiles".[^wiki-rie]
+
+Hopwood's review
 gives the operating window of such inductive sources, RF at 0.5–28 MHz
 and ion densities above 10¹² cm⁻³ below a millitorr.[^hopwood-1992]
 Lieberman and Lichtenberg treat the sources in depth.[^lieberman-2005]
@@ -73,15 +82,19 @@ Chlorine atoms are "the likely active species" in chlorine-based
 polysilicon etching, and anisotropy comes from "enhanced chemical
 reaction between Cl and Si on surfaces which are ion (or electron)
 bombarded", as Mogab and Levinstein proposed in 1980.[^mogab-1980] The
-high-density recipes of the 1990s add HBr and O₂. In a helicon source,
+high-density recipes of the 1990s add HBr and O₂.
+
+In a helicon source,
 Bell and Joubert found that the passivation layer on the polysilicon
 sidewalls "is a chlorine rich silicon oxide film" whether the mask was
-resist or oxide;[^bell-1997] with an oxide hard mask they found "A thin
+resist or oxide.[^bell-1997] With an oxide hard mask they found "A thin
 oxide film … on the sides" of trenches, partly sputtered from the
-source's quartz tube.[^bell-1996] Vallier et al., working "in a
+source's quartz tube.[^bell-1996]
+
+Vallier et al., working "in a
 commercial 200 mm high density plasma etcher", showed that the sidewall
 layer can be "either SiOx-like or fluorocarbon rich" depending on the
-O₂ and CF₄ in the main etch, and is turned into SiOₓ during "the
+O₂ and CF₄ in the main etch.[^vallier-2003] The layer is turned into SiOₓ during "the
 subsequent fluorine free soft-landing step".[^vallier-2003] The ions
 that drive the etch are not only halogen ions: in "an industrial
 inductively coupled plasma used for 200-mm-diam silicon wafer
@@ -93,7 +106,9 @@ Ootera found that as HBr in Cl₂/HBr rises from 0 to 100 %, the linewidth
 shift of 0.18 µm gates "first decreased linearly, passed through a
 minimum, and then increased considerably at above ∼80%", the tapering at
 high HBr coming from etch inhibitors deposited on the
-sidewalls.[^tuda-2001] Doping changes the rate: Mogab and Levinstein
+sidewalls.[^tuda-2001]
+
+Doping changes the rate: Mogab and Levinstein
 measured n-type to undoped polysilicon etch-rate ratios "as large as
 15:1" in C₂F₆–Cl₂,[^mogab-1980] and Ogryzlo et al. found that "increasing
 Ne increases the Si-Cl reaction rate even when silicon is lightly
@@ -108,17 +123,23 @@ switches to a gentler, more selective step before the oxide is exposed,
 and a timed over-etch clears residues. Applied Materials' "Predictive
 Endpoint" on the DPS Plus enables "a precisely controlled, automated
 'soft-landing' approach that signals the etch process to switch to a
-high selectivity overetch prior to contacting the gate oxide", and was
+high selectivity overetch prior to contacting the gate oxide".[^amat-dps-plus-1999] It was
 by 1999 "being used for 'etch to depth' applications in more than 80
-Silicon Etch DPS process chambers".[^amat-dps-plus-1999] Lam offered
+Silicon Etch DPS process chambers".[^amat-dps-plus-1999]
+
+Lam offered
 "interferometric endpoint detection" on the 2300 Versys Silicon for
 "very thin gate dielectrics in gate etch and for depth monitoring in
 shallow trench isolation".[^lam-2300-2000] Hsu modelled the
 interferometric signal for a hard-mask gate etch and found that
 underlying field oxide "could be a dominant factor to shift the IEP
-curve".[^hsu-2004] Joubert and Bell showed why the landing matters: with
+curve".[^hsu-2004] Interferometry "provided additional margin for
+protecting the thin gate dielectric as opposed to optical emission
+spectroscopy".[^hsu-2004]
+
+Joubert and Bell showed why the landing matters: with
 a resist mask, trenching in the main etch "is transferred into the gate
-oxide before the overetch starts", and the polysilicon/oxide selectivity
+oxide before the overetch starts".[^joubert-1997] The polysilicon/oxide selectivity
 "can be improved by a factor of at least three by using an oxide hard
 mask in a carbon free chamber".[^joubert-1997]
 
@@ -134,7 +155,9 @@ of reactive free radicals with chamber wall condition".[^xu-2001] Hence
 the vendors' attention to cleans: the DPS Plus "eliminates
 productivity-limiting dry cleans for most applications",[^amat-dps-plus-1999]
 and the Versys Silicon chamber "enables in situ waferless auto
-cleans".[^lam-2300-2000] Across the wafer and between features, rates
+cleans".[^lam-2300-2000]
+
+Across the wafer and between features, rates
 depend on how much silicon is exposed, the loading effect Mogab
 analysed,[^mogab-1977] and on aspect ratio and pattern density, which
 Gottscho, Jurgensen and Vitkavage separate into aspect-ratio-dependent
@@ -149,39 +172,41 @@ electrons of oblique incidence", and that the damaging current
 to 6 nm.[^hashimoto-1994] Noguchi et al. found that, for oxides of
 2.2–6.0 nm, "down to 3.5 nm, oxide reliability degrades with
 decreasing oxide thickness", thinner oxides being more
-resistant.[^noguchi-1997] Ion bombardment also leaves damaged silicon
+resistant.[^noguchi-1997]
+
+Ion bombardment also leaves damaged silicon
 at the bottom of an etched feature; Oehrlein reviews the
 effects.[^oehrlein-1989] Applied Materials advertised "damage-free
 performance for thin gate oxides" on the DPS Plus.[^amat-dps-plus-1999]
 
 ## Representative 200 mm-era models
 
-* **Applied Materials.** Silicon etch on the Precision 5000 from 1988,
-  MxP chambers "for metal, dielectric and silicon etching" from 1993,
-  and the Silicon Etch DPS Centura, which the 1997 annual report dates to
-  1996 and says "targeted 0.35-micron and below device
-  designs".[^amat-1997] Applied's
-  1999 press release gives 1997 for the DPS Centura, reports "More than
-  350 silicon etch DPS chambers" installed, and introduces the DPS Plus on
-  the "Etch Centura II" platform.[^amat-dps-plus-1999] In 2000 Applied
-  announced a Silicon Etch DPS 300 on the Centura 300 platform, "derived
-  from Applied Materials' production-proven Centura 200mm
-  design".[^amat-300-etch-2000] We read SkyWater's "AMAT DPSII" as a
-  later generation of the same DPS source, an inference from the name;
-  no public Applied document describing the DPS II was retrieved for
-  this page.
-* **Lam Research.** The Rainbow 44XX parallel-plate etchers for 6-inch
-  or 8-inch wafers, with applications including "Anisotropic Doped Poly
-  Etch: Cl2/HBr Main Etch and Cl2/HBr/O2 Overetch" and a three-step
-  nitride spacer etch;[^allwin-rainbow-4400] the TCP 9400 family,
-  "originally used for gate etching with high selectivity to thin gate
-  oxides";[^snf-9400] and the 2300 Versys Silicon of 2000, offering
-  "advanced gate BARC, resist trim, hardmask open, and STI in the same
-  chamber".[^lam-2300-2000]
-* **Other vendors.** The step pages also name Tokyo Electron DRM/Unity
-  and Hitachi microwave ECR etchers ({ref}`STIE <step-006>`,
-  {ref}`P1ME <step-062>`); no vendor description of those models was
-  retrieved for this page.
+:::{table} Representative silicon and polysilicon plasma etchers (figures as each source gives them)
+
+| Vendor | Model | Year | Published figures |
+|---|---|---:|---|
+| Applied Materials | Precision 5000 | — | silicon etch from 1988[^amat-1997] |
+| Applied Materials | MxP chambers | from 1993 | "for metal, dielectric and silicon etching"[^amat-1997] |
+| Applied Materials | Silicon Etch DPS Centura | — | the 1997 annual report dates it to 1996 and says it "targeted 0.35-micron and below device designs";[^amat-1997] Applied's 1999 press release gives 1997 and reports "More than 350 silicon etch DPS chambers" installed[^amat-dps-plus-1999] |
+| Applied Materials | DPS Plus[^amat-dps-plus-1999] | — | introduced by that press release, on the "Etch Centura II" platform |
+| Applied Materials | Silicon Etch DPS 300 | 2000 | announced on the Centura 300 platform, "derived from Applied Materials' production-proven Centura 200mm design"[^amat-300-etch-2000] |
+| Lam Research | Rainbow 44XX | — | parallel-plate etchers for 6-inch or 8-inch wafers, with applications including "Anisotropic Doped Poly Etch: Cl2/HBr Main Etch and Cl2/HBr/O2 Overetch" and a three-step nitride spacer etch[^allwin-rainbow-4400] |
+| Lam Research | TCP 9400 family | — | "originally used for gate etching with high selectivity to thin gate oxides"[^snf-9400] |
+| Lam Research | 2300 Versys Silicon | 2000 | offering "advanced gate BARC, resist trim, hardmask open, and STI in the same chamber"[^lam-2300-2000] |
+:::
+
+We read SkyWater's "AMAT DPSII" as a
+later generation of the same DPS source, an inference from the name;
+no public Applied document describing the DPS II was retrieved for
+this page.
+
+Stanford's TCP 9400 is "for selective etching of silicon and polysilicon".[^snf-9400]
+A reseller lists "CL2 200sccm,HBr 200sccm,SF6 200sccm,N2 200sccm,He 500sccm,O2 50sccm,CF4 200sccm" as typical gas lines of a Rainbow 44XX.[^allwin-rainbow-4400]
+
+**Other vendors.** The step pages also name Tokyo Electron DRM/Unity
+and Hitachi microwave ECR etchers ({ref}`STIE <step-006>`,
+{ref}`P1ME <step-062>`); no vendor description of those models was
+retrieved for this page.
 
 ## At SkyWater
 
@@ -198,15 +223,17 @@ Under "Etch", SkyWater's *Facilities & Capabilities* page has a
 >
 > "Lam 4400, HBr, Cl2, C2F6, CF4, SF6, O2"
 
-Read term by term: the DPS II entry is the only one of the three that
-names applications — gate, trench and tungsten or tungsten nitride — and
-the only one with NF₃ and CHF₃; the 9400 entry names polysilicon and
-nitride and has no Cl₂; the 4400 entry names no application.[^skw-01]
+:::{table} How this reference reads the three "Poly/Silicon Etch" entries
+
+| Entry as listed | What it names | Status |
+|---|---|---|
+| "AMAT DPSII, HBR, Cl2, NF3, CF4, CHF3, O2" | the only one of the three that names applications — gate, trench and tungsten or tungsten nitride — and the only one with NF₃ and CHF₃[^skw-01] | — |
+| "Lam 9400 TCP, poly/nitride, HBr, CF4, SF6, O2" | polysilicon and nitride; no Cl₂[^skw-01] | — |
+| "Lam 4400, HBr, Cl2, C2F6, CF4, SF6, O2" | no application[^skw-01] | we read "Lam 4400" as a Rainbow 4400, the Lam 44XX parallel-plate family a reseller describes;[^allwin-rainbow-4400] an inference from the model number |
+:::
+
 No step page assigns a tungsten or tungsten nitride etch to the DPS II.
-SkyWater gives no model suffix, chamber count or platform. We read "Lam
-4400" as a Rainbow 4400, the Lam 44XX parallel-plate family a reseller
-describes;[^allwin-rainbow-4400] that is an inference from the model
-number.
+SkyWater gives no model suffix, chamber count or platform.
 
 ### Strength of the evidence
 
@@ -269,15 +296,17 @@ page.
 
 * **Process gases.** HBr, Cl₂ and O₂ for silicon; CF₄, SF₆, NF₃, CHF₃
   or C₂F₆ for breakthrough, hard-mask open and cleaning — the gases
-  SkyWater lists on its three entries.[^skw-01] HBr "is highly corrosive
-  and, if inhaled, can cause lung damage";[^wiki-hbr] NF₃ is broken down
+  SkyWater lists on its three entries.[^skw-01]
+
+  HBr "is highly corrosive
+  and, if inhaled, can cause lung damage".[^wiki-hbr] NF₃ is broken down
   in a plasma to fluorine radicals that "attack polysilicon, silicon
   nitride and silicon oxide", and "is also widely used to clean PECVD
   chambers".[^wiki-nf3]
 * **Helium and chuck.** Helium is a gas line on the TCP 9400 and on the
   44XX reseller configuration,[^snf-9400][^allwin-rainbow-4400] and the
   etch category page lists it for backside cooling
-  ({ref}`category-etch`); the DPS Plus
+  ({ref}`category-etch`). The DPS Plus
   offered "A dual cooling zone ceramic electrostatic chuck" that
   "virtually eliminates consumable parts inside the
   chamber".[^amat-dps-plus-1999]
@@ -285,7 +314,9 @@ page.
   rings are eroded and coated by the plasma; Bell and Joubert traced
   sidewall oxide to sputtering of "the quartz tube of the helicon
   source",[^bell-1996] and carbon from resist or chamber parts lowers
-  poly/oxide selectivity.[^joubert-1997] The chamber-wall coating
+  poly/oxide selectivity.[^joubert-1997]
+
+  The chamber-wall coating
   sets process drift, which is why wet-clean intervals and waferless
   cleans are specified.[^cunge-2005][^lam-2300-2000]
 * **Monitor wafers.** The {ref}`STIE <step-006>` page controls trench
@@ -299,7 +330,9 @@ SKY130 conditions of their own. SKY130's etch recipes are not public.
 
 * **Trench and gate on one gas set.** SkyWater lists "gate" and "trench"
   on the DPS II entry,[^skw-01] and both the {ref}`STIE <step-006>` and
-  {ref}`P1ME <step-062>` pages describe an HBr/Cl₂/O₂ main etch. The
+  {ref}`P1ME <step-062>` pages describe an HBr/Cl₂/O₂ main etch.
+
+  The
   trench etch is timed, because there is no interface to land on; the
   gate etch runs to an endpoint and lands on the gate oxide, as the
   vendors' endpoint features describe.[^amat-dps-plus-1999][^lam-2300-2000]
@@ -310,13 +343,15 @@ SKY130 conditions of their own. SKY130's etch recipes are not public.
   landing step set the margin.[^desvoivres-2000][^joubert-1997]
 * **Doped and undoped polysilicon.** The PDK describes the gate poly as
   "N+ doped gate poly" and says of its P− poly resistors that "a
-  separate implant is used to set the sheet resistance".[^pdk-07] The
+  separate implant is used to set the sheet resistance".[^pdk-07]
+
+  The
   {ref}`P1I <step-050>`, {ref}`PRI <step-053>` and
   {ref}`UPRI <step-056>` pages read these as implants into the unetched
   gate film, from their place in the step list ahead of
-  {ref}`P1ME <step-062>`; if so, regions of the same film reach the etch
+  {ref}`P1ME <step-062>`. If so, regions of the same film reach the etch
   with different doping, and doping changes the etch rate in
-  chlorine;[^mogab-1980][^ogryzlo-1990] the
+  chlorine.[^mogab-1980][^ogryzlo-1990] The
   {ref}`P1ME <step-062>` page sets its endpoint and over-etch
   accordingly.
 * **ARC and stack opens.** The {ref}`TUNARCE <step-036>` page opens an
@@ -332,31 +367,27 @@ SKY130 conditions of their own. SKY130's etch recipes are not public.
   followed by a resist strip in a
   {ref}`downstream plasma asher <machine-downstream-plasma-asher>` and a
   clean on a {ref}`wet bench <machine-wet-bench>`, which remove the
-  sidewall polymer and residue;[^thung-2016] the
+  sidewall polymer and residue.[^thung-2016] The
   {ref}`TUNARCE <step-036>` open keeps its resist for the
   {ref}`PTSI <step-037>` and {ref}`DEPI <step-038>` implants and the
   {ref}`TUNME <step-039>` wet etch.
 
 ## Related pages
 
-* {ref}`category-etch` — plasma and wet etching physics and the 27
+* **Category.** {ref}`category-etch` — plasma and wet etching physics and the 27
   etch steps of SKY130.
-* {ref}`machine-plasma-etcher-dielectric` and
+* **Machines.** {ref}`machine-plasma-etcher-dielectric` and
   {ref}`machine-plasma-etcher-metal` — the other two plasma-etcher
   classes; the dielectric etch pages weigh the three etchers listed
-  here.
-* {ref}`machine-downstream-plasma-asher` and {ref}`machine-wet-bench` —
+  here. {ref}`machine-downstream-plasma-asher` and {ref}`machine-wet-bench` —
   the strip and clean after most of these etches.
-* {ref}`machines-index` — all machine classes, SkyWater's listed tools
-  and the step assignments.
-* {ref}`materials-index` — etch gases and chamber materials.
-* {ref}`material-hardware-consumables` — chamber parts and exhaust
-  abatement.
-* {ref}`material-etch-gases` — fluorocarbon, fluoride, chlorine and
-  bromine etch and chamber-clean gases.
-* {ref}`material-process-gases` — nitrogen, oxygen, hydrogen, argon,
+* **Materials.** {ref}`material-hardware-consumables` — chamber parts and exhaust
+  abatement. {ref}`material-etch-gases` — fluorocarbon, fluoride, chlorine and
+  bromine etch and chamber-clean gases. {ref}`material-process-gases` — nitrogen, oxygen, hydrogen, argon,
   helium and the oxidation additives, their grades and SkyWater's listed
   gases.
+* **Indexes.** {ref}`machines-index` — all machine classes, SkyWater's listed tools
+  and the step assignments. {ref}`materials-index` — etch gases and chamber materials.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
 ### Related patents, papers and filings
