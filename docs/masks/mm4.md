@@ -3,7 +3,7 @@
 
 The metal-4 mask is the {term}`reticle` that draws SKY130's fourth
 aluminium wiring level, the bottom plates of the second
-{term}`MiM capacitor` and, on the PDK's fuse note, the {term}`metal fuses <metal fuse>`. On the
+{term}`MiM capacitor` and, on the PDK's fuse note, the metal fuses. On the
 {ref}`MM4 <step-154>` page's reading, the resist printed through it at
 step 154 stays wherever `met4` is drawn, and the {ref}`MM4E <step-155>`
 etch removes the capacitor dielectric and the metal stack everywhere else.
@@ -53,7 +53,7 @@ Fourth level of metal interconnects;", and the PDK's Table F4 shows metal
 The mask's smallest island is 0.240 µm² (m4.4a), with probe
 pads of exactly 1.42 µm × 1.42 µm exempted from the area rule
 m4.4.[^pdk-periph] The PDK's extraction table gives metal 4, like metal
-3, a {term}`sheet resistance` of 47 in a column headed "Resistivity
+3, a sheet resistance of 47 in a column headed "Resistivity
 (mohms/sq)",[^pdk-08] and the stack diagram draws `metal4` 0.845 µm
 thick.[^pdk-04] A via-4 landing therefore needs a metal-4 pad at least
 1.18 µm wide, four times the minimum line (the
@@ -182,7 +182,7 @@ purpose, rule x.9's "serifs" have no `cmm4` layer to sit on.
 
 The rule
 set's first entry, flagged RC, flags a 700 × 700 window "covered by cmm4
-waffleDrop" when the metal {term}`pattern density` of the same window is below a
+waffleDrop" when the metal pattern density of the same window is below a
 limit that falls from 70 % for a fully covered window to 30 % for one
 30–40 % covered.[^pdk-periph] Rule m4.pd.1 sets a minimum
 "MM4_oxide_Pattern_density" of 0.7, checked in 700 µm regions stepped by
@@ -286,7 +286,7 @@ is the heading of the run's columns in the tab
 ### Exposure class
 
 The {ref}`MM4 <step-154>` page gives
-{math}`k_1 = 0.30 \times 0.70 / 0.248 \approx 0.85` on a KrF lens of {term}`NA`
+{math}`k_1 = 0.30 \times 0.70 / 0.248 \approx 0.85` on a KrF lens of NA
 0.70 and about 0.49 on an i-line lens of NA 0.6, finds either class
 plausible and leaves the choice open, quoting ASML's statement that older
 systems "migrate to the lithography of choice for less critical
@@ -302,7 +302,7 @@ Wong et al. found that the mask error factor "is unity
 for large features, but increases rapidly when the critical dimension
 (CD) is less than 0.5 (lambda) /NA for line-space
 patterns".[^wong-1998] That threshold is about 0.18 µm at 248 nm and NA
-0.7 but about 0.30 µm at 365 nm and NA 0.6 (our arithmetic), so plate {term}`CD`
+0.7 but about 0.30 µm at 365 nm and NA 0.6 (our arithmetic), so plate CD
 errors on dense metal-4 lines would print at their own size on a KrF tool
 and begin to be magnified on an i-line tool (inference). The 0.800 µm
 fuses are well above either threshold.
@@ -359,7 +359,7 @@ pages' reading of it.
 Metal 4 must enclose each via 3 by 0.065 µm (m4.3) and each
 via 4 by 0.190 µm (via4.4).[^pdk-periph] The enclosure of the `cap2m` plates has no
 published value, and the fuse rules keep a fuse centre 3.300 µm from
-fuse metal, metal 1, {term}`local interconnect` and metal 2 (mf.4, mf.6, mf.7,
+fuse metal, metal 1, local interconnect and metal 2 (mf.4, mf.6, mf.7,
 mf.19).[^pdk-periph] The {ref}`MM4 <step-154>` page reads the alignment
 tree — to via-3 targets under the metal, to the `cap2m` plates, or
 both — as deciding which enclosure carries the larger error, and leaves
@@ -370,7 +370,7 @@ it open.
 On the step pages' readings the resist pattern is
 transferred by {ref}`MM4E <step-155>`, which first breaks through the
 capacitor dielectric outside the plates and then etches the metal stack
-in a chlorine chemistry, stopping on the via-3 {term}`cap oxide` and plug tops,
+in a chlorine chemistry, stopping on the via-3 cap oxide and plug tops,
 on the {ref}`metal plasma etcher <machine-plasma-etcher-metal>` class. On the step pages' readings
 passivation, resist strip and clean are treated as part of that step.
 
@@ -486,7 +486,7 @@ arithmetic from m4.1 and m4.2), with 0.800 µm fuse links among them.
 * **Machines.** {ref}`machine-i-line-stepper` and {ref}`machine-duv-krf-stepper` — the
   two exposure classes the step page leaves open.
   {ref}`machine-plasma-etcher-metal` — the etch class that transfers the
-  pattern. {ref}`machine-cd-sem-overlay-metrology` — line CD and {term}`overlay`
+  pattern. {ref}`machine-cd-sem-overlay-metrology` — line CD and overlay
   measurement.
 * **Materials.** {ref}`material-lithography-materials` — resists, anti-reflective
   coatings, developer and reticles.

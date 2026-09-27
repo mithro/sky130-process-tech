@@ -74,7 +74,7 @@ It marks the `NTM` column `C` ("CREATED") in 43 of its 80 device rows:[^pdk-06]
   varactors
 * the four SONOS rows
 * the p-diffusion, HV n- and p-diffusion
-  and p+ {term}`poly resistors <poly resistor>`
+  and p+ poly resistors
 * every 110 Å row except the five UHV 5/20 V
   drain-extended rows
 * twelve diode rows
@@ -92,7 +92,7 @@ receive it are the ones left out. The table does not say what the created
 shapes do, and it does not explain why the UHV rows are left out as
 well.
 
-Gardner, Hause and Fulford patented separate {term}`LDD` and source/drain
+Gardner, Hause and Fulford patented separate LDD and source/drain
 implant steps for different transistors on one chip,[^pat-multi-ldd-amd]
 the arrangement of which the three tip masks are one instance.
 
@@ -120,7 +120,7 @@ the checks) and `ldntm`, so only `hvi` is common to the two lists. The
 masks index marks the pairing as an inference. Rule x.9 allows "Shapes on
 maskAdd or maskDrop layers ("serifs")" in the core only, and x.15a
 confines "Drawn compatible, mask, and waffle-drop layers" to test
-modules, {term}`seal ring` and frame, with an exception that names only
+modules, seal ring and frame, with an exception that names only
 "FOM/P1M/Metal waffle drop" (flag P).[^pdk-periph] The PDK's periphery
 rules have no `ntm` or `cntm` rule set.[^pdk-periph]
 
@@ -247,7 +247,7 @@ layers",[^asml-30] and infers an i-line level. The
 {ref}`i-line stepper <machine-i-line-stepper>` page lists it there.
 
 Table 2 of [*Criteria & Assumptions*](<https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html>) gives the mask's own figures, 0.84
-and 0.7 (`NTMCD`, `NTMCDSP`).[^pdk-03] At the {term}`NA` 0.48 low end of
+and 0.7 (`NTMCD`, `NTMCDSP`).[^pdk-03] At the NA 0.48 low end of
 ASML's PAS 5500/275D[^asml-pas5500-275d] the 0.7 µm space has
 {math}`k_1 = 0.7 \times 0.48 / 0.365 \approx 0.92` (our arithmetic).
 SkyWater lists "ASML I-line stepper" and "ASML I-line scanner" among its
@@ -259,7 +259,7 @@ Wong et al. found that the mask error factor "is unity
 for large features, but increases rapidly when the critical dimension
 (CD) is less than 0.5 (lambda) /NA for line-space patterns".[^wong-1998]
 At 365 nm and NA 0.48 that threshold is about 0.38 µm (our arithmetic),
-about half the `NTM` minimum, so a {term}`CD` error on the plate would be
+about half the `NTM` minimum, so a CD error on the plate would be
 expected to print at its own size (inference). The demands of this mask
 fall on its placement and on its resist edges, not its CD.
 
@@ -282,7 +282,7 @@ implant,[^lukaszek-1996] and Horsky resist outgassing in high-energy and
 high-current implanters.[^horsky-1998]
 Ross et al. stabilised i-line implant resists with a flood electron beam,
 reducing shrinkage and CD variation and eliminating
-{term}`popping`.[^ross-1996] SkyWater's resist, its thickness and any hardening
+popping.[^ross-1996] SkyWater's resist, its thickness and any hardening
 are not public. The consumables are on the
 {ref}`lithography materials <material-lithography-materials>` page.
 
@@ -304,7 +304,7 @@ gives about 0.04 µm (our arithmetic).
 Chen et al. studied ion-beam
 shadowing in submicrometre LATID MOSFETs (title),[^chen-1995]
 and Yoneda and Niwayama traced a drain-current asymmetry in 130 nm
-MOSFETs to extension-implant {term}`shadowing` from an implanter angle
+MOSFETs to extension-implant shadowing from an implanter angle
 error.[^yoneda-2002] Ions also scatter out of a resist edge, "altering
 the threshold voltage of those devices", in the words of Hook et al.,
 who model a thick well resist.[^hook-2003]
@@ -316,7 +316,7 @@ the poly pattern (an inference; the alignment tree is not public) and
 the shadowing allowances as setting how far a resist edge must stand
 from a gate. They are distances the data must keep, and on our reading
 the plate's placement error adds to them. ASML specifies "≤ 40 nm"
-single-machine {term}`overlay` for the /275D {term}`stepper`[^asml-pas5500-275d] (our
+single-machine overlay for the /275D stepper[^asml-pas5500-275d] (our
 comparison; how SkyWater budgets the margin is not public).
 
 ### Pattern transfer

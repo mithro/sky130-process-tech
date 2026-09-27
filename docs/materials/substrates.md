@@ -46,7 +46,7 @@ shaping of the wafer from ingot to polished surface.[^kao-2021]
 
 ### Prime wafers
 
-Nearly all CMOS wafers are Czochralski ({term}`CZ`) silicon; Zulehner reviewed
+Nearly all CMOS wafers are Czochralski (CZ) silicon; Zulehner reviewed
 the growth from the wafer maker's side[^zulehner-1983] and Shimura's
 monograph covers the crystal, its oxygen and its
 defects.[^shimura-1989] The 200 mm wafer, introduced in 1992, is
@@ -79,7 +79,7 @@ control these point defects.[^falster-2000]
 ### Epitaxial and other substrates
 
 The alternative to a polished wafer for logic was a lightly doped
-{term}`epitaxial layer` on a heavily doped substrate; SEMI M62 specifies
+epitaxial layer on a heavily doped substrate; SEMI M62 specifies
 epitaxial wafers.[^semi-m62] The 2001 ITRS contrasts "lower cost Cz
 polished wafers" with "more costly epitaxial wafers" and adds that the
 latch-up advantage of epi "may no longer be as critical due to the
@@ -92,9 +92,9 @@ of around 30 ohm-cm on polished wafers".[^gw-products]
 
 A fab runs far more wafers than it sells. Monitor wafers go through a
 step beside or instead of product to give a measurement the patterned
-product cannot: film thickness on a blanket film, {term}`sheet resistance` of an
+product cannot: film thickness on a blanket film, sheet resistance of an
 implant into bare silicon, particles added by a tool, an etch rate or a
-{term}`selectivity`. GlobalWafers states that "Although monitor wafers are
+selectivity. GlobalWafers states that "Although monitor wafers are
 substantially the same as prime polished wafers with respect to
 cleanliness, and in some cases flatness, other specifications are
 generally less rigorous".[^gw-products]
@@ -241,13 +241,13 @@ sections describe them:
   polish steps, for thickness, sheet resistance, particles, rates and
   selectivities; the implant pages add thermal-wave dose and tilt
   control ({ref}`ASTI <step-065>`, {ref}`BHI <step-066>`,
-  {ref}`HVASTI <step-069>`), and the two {term}`alloy anneals <alloy anneal>` name MOS
+  {ref}`HVASTI <step-069>`), and the two alloy anneals name MOS
   capacitors on their monitors ({ref}`ALLY1 <step-096>`,
   {ref}`ALLY <step-170>`).
 * **Calibration and reference wafers** — thermocouple wafers for the
   rapid thermal steps ({ref}`RTAI <step-034>`,
   {ref}`TIPRTAD <step-075>`, {ref}`RTAD <step-088>`,
-  {ref}`RTAD2 <step-092>`, {ref}`CSIL <step-098>`); {term}`CD-SEM` and {term}`overlay`
+  {ref}`RTAD2 <step-092>`, {ref}`CSIL <step-098>`); CD-SEM and overlay
   reference wafers at {ref}`P1M <step-061>`; and reference wafers for
   tester correlation at {ref}`HPETEST <step-171>`.
 
@@ -281,7 +281,7 @@ practice or supplier and standards statements.
   tracking and sorting cut the cost.[^popovich-1997][^ozelkan-2006][^faruqi-2008]
 
   Reclaim can be external or in-house: Dong et al. describe Micron's
-  in-house process, whose {term}`CMP` and wet steps met "the global reclaim
+  in-house process, whose CMP and wet steps met "the global reclaim
   specifications".[^dong-2024] SEMI M38 warns buyers to "exercise caution
   when sourcing materials with unknown thermal histories, unknown bulk
   contamination, or unknown deposits".[^semi-m38]
@@ -305,7 +305,7 @@ are not public.
   this list), and leaves open whether the original S8 wafer was
   epitaxial.
 
-  The step pages rely on {term}`STI`, {term}`retrograde wells <retrograde well>` and the optional
+  The step pages rely on STI, retrograde wells and the optional
   deep N-well for latch-up control, the combination the ITRS says reduces
   the need for epi.[^itrs-01]
 * **Substrate doping.** No resistivity is published. The SMAT page gives
@@ -331,9 +331,9 @@ are not public.
   Watanabe et al. report for a DRAM fab, 1.5 to 0.5 monitor wafers per
   wafer start,[^watanabe-1999] test wafers can be a large share of
   silicon bought (our comparison; SkyWater's ratio is not public).
-* **Product wafers as their own monitors.** The {term}`e-test` at
+* **Product wafers as their own monitors.** The e-test at
   {ref}`HPETEST <step-171>` measures structures on product wafers; the
-  public SKY130 {term}`test tile` "consists of a grid of probe
+  public SKY130 test tile "consists of a grid of probe
   points",[^raw-data-testtile-prop] and it and monitor wafers answer
   different questions (the step page's reading).
 

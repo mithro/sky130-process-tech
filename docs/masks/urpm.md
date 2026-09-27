@@ -29,7 +29,7 @@ page; every mask is indexed on the {ref}`masks index <masks-index>`.
 ## What the mask defines
 
 On the {ref}`URPM <step-055>` page's reading, the light p-type implant
-{ref}`UPRI <step-056>` sets the resistors' {term}`sheet resistance` through the windows,
+{ref}`UPRI <step-056>` sets the resistors' sheet resistance through the windows,
 and the resist is stripped at {ref}`UPRIS <step-057>`, after which the
 poly doping of the process is complete. Like {ref}`RRPM <mask-rrpm>`, `URPM`
 has no entry in the PDK's mask table and no mask-level layer, and the
@@ -58,7 +58,7 @@ resistors".[^pdk-10][^pdk-02][^ann-15]
 The step list calls step 55 "Ultra-high resistor poly mask" and does not
 explain it;[^steps-sheet] the {ref}`URPM <step-055>` page's reading rests
 on the PDK's separate implant and on the drawn layer. It infers that the
-{term}`reticle` is generated from `urpm` in the window tone, and that the `urpm`
+reticle is generated from `urpm` in the window tone, and that the `urpm`
 bodies were covered at {ref}`RPM <step-049>` and not opened at
 {ref}`RRPM <step-052>`, so that {ref}`UPRI <step-056>` is the only implant
 they receive. It gives the alternative — one reticle for both resistor
@@ -73,7 +73,7 @@ increasing "rapidly as the doping concentration was increased", and
 proposed a grain-boundary trapping model for it.[^seto-1975]
 
 Brederlow et al. found the low-frequency noise of
-integrated {term}`poly resistors <poly resistor>` "much higher than predicted" by common
+integrated poly resistors "much higher than predicted" by common
 simulation models and examined its dependence on doping and deposition
 technique,[^brederlow-2001] and Tsang et al. traced resistance variation
 across banks of high-value poly resistors.[^tsang-2014]
@@ -90,7 +90,7 @@ The PDK's own tables do not name the mask:
 * Table 2 of
   *Criteria & Assumptions* has no row for it[^pdk-03]
 
-The {term}`test tile`'s pad
+The test tile's pad
 documentation names the mask. Among its "2K ohm/sq" poly resistor
 structures it marks four — "W = 0.69, L = 0.345, sq = 0.5", "W= 0.33,
 l = 0.33, sq = 1" and a mismatch pair of each size — "(may not work for
@@ -228,7 +228,7 @@ it there. SkyWater lists "ASML I-line stepper" and "ASML
 I-line scanner" among its tools but assigns no layer to them.[^skw-01]
 
 At that geometry Wong et al.'s mask error factor, which "is unity for
-large features",[^wong-1998] would leave plate {term}`CD` errors at about their
+large features",[^wong-1998] would leave plate CD errors at about their
 own size on the wafer (inference). The step page notes that a mis-sized
 window shows up directly as resistor value and matching error.
 
@@ -248,7 +248,7 @@ SkyWater's resist is not public; the consumables are on the
 The {ref}`URPM <step-055>` page infers alignment to the
 trench marks of {ref}`FOM <step-004>`, like the other two resistor masks,
 and notes that since the body is later cut from the poly by
-{ref}`P1M <step-061>` the window must enclose the drawn body with {term}`overlay`
+{ref}`P1M <step-061>` the window must enclose the drawn body with overlay
 margin on every side. The rules give that margin for `rpm` as 0.200 µm
 (rpm.3), and the Error Messages page's urpm.3 message repeats it for
 `rpm`;[^pdk-periph][^pdk-errors] no enclosure is published for `urpm`
@@ -257,9 +257,9 @@ itself.
 Hook et al. found that ions scattered out of the edge of an
 implant resist are implanted in the silicon near the mask
 edge.[^hook-2003] The {ref}`URPM <step-055>` page lists the study for
-{term}`straggle` at resist edges. ASML specifies "≤ 40 nm"
+straggle at resist edges. ASML specifies "≤ 40 nm"
 single-machine overlay for the PAS 5500/275D
-{term}`stepper`[^asml-pas5500-275d] (our comparison; SkyWater's budget is not
+stepper[^asml-pas5500-275d] (our comparison; SkyWater's budget is not
 public).
 
 ### Pattern transfer
@@ -277,7 +277,7 @@ clean before the gate cap.
 Wright et al. describe rf-sputtered films of
 the Cr–Si–B–SiO₂/Al₂O₃ system that reach 20 kΩ/sq with a temperature
 coefficient below 200 ppm/°C, an alternative to poly for high-value
-resistors,[^wright-2010] and Chen et al. treat the {term}`voltage coefficient`
+resistors,[^wright-2010] and Chen et al. treat the voltage coefficient
 of poly resistors in a high-voltage CMOS technology.[^chen-2000]
 
 (mask-urpm-steps)=

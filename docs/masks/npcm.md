@@ -1,7 +1,7 @@
 (mask-npcm)=
 # NPCM — Nitride Poly Cut
 
-The nitride {term}`poly cut` mask is the {term}`reticle` that decides where
+The nitride poly cut mask is the {term}`reticle` that decides where
 SKY130's capped polysilicon can later be contacted. On the
 {ref}`NPCM <step-078>` page's reading, the resist printed through it at
 step 78 is opened wherever `npc` is drawn, over the poly heads that
@@ -63,13 +63,13 @@ The PDK's mask generation table,
 Table F2b, has an `NPC` column and marks it `C` ("CREATED") in one of its
 80 device rows, the "p+ poly resistor".[^pdk-06] It marks `-`, "Layer not created
 for the device", in 45 rows, including every transistor row and the n+
-{term}`poly resistor`, and `+`, "Layer allowed to overlap", in 34.[^pdk-06] On our
+poly resistor, and `+`, "Layer allowed to overlap", in 34.[^pdk-06] On our
 reading of the table the openings over poly contacts are drawn by the
 designer, and only the precision resistors receive created ones, which
 fits rpm.5; the table does not explain its marks.
 
 The {ref}`NPCM <step-078>` and {ref}`NPCME <step-079>` pages set the
-cut beside the titanium-nitride {term}`local interconnect` of Tang et al., a TiN
+cut beside the titanium-nitride local interconnect of Tang et al., a TiN
 layer formed during self-aligned silicidation and patterned to join gates
 and junctions.[^tang-1985][^tang-1987] The abstracts do not describe a
 nitride cap over poly, and the papers' full text was not checked. The
@@ -211,9 +211,9 @@ the reticle set is the heading of the run's columns in the tab
 
 The {ref}`NPCM <step-078>` page puts the 0.27 µm
 opening at {math}`k_1 = 0.27 \times 0.6 / 0.365 \approx 0.44` on an
-i-line {term}`stepper` of {term}`NA` 0.6 and at about 0.65 on a 248 nm tool. It cites ITRS
+i-line stepper of NA 0.6 and at about 0.65 on a 248 nm tool. It cites ITRS
 2001's exposure options for the 130 nm node, which the roadmap gives for
-critical layers,[^itrs-03] and infers a {term}`DUV` level "driven by its 0.09 µm
+critical layers,[^itrs-03] and infers a DUV level "driven by its 0.09 µm
 placement tolerance to poly rather than by its CD". The
 {ref}`KrF stepper <machine-duv-krf-stepper>` page lists it there with an
 {ref}`i-line <machine-i-line-stepper>` alternative.
@@ -236,7 +236,7 @@ than light-field lines.[^wong-1998]
 For the 0.27 µm openings the
 line-space threshold is about 0.18 µm to 0.21 µm at 248 nm and NA 0.7 to
 0.6, but about 0.30 µm at 365 nm and NA 0.6 (our arithmetic). The contact threshold is
-about 0.27 µm to 0.31 µm at 248 nm (our arithmetic). So a plate {term}`CD` error
+about 0.27 µm to 0.31 µm at 248 nm (our arithmetic). So a plate CD error
 would print at about its own size on a KrF tool for long cuts and begin
 to be magnified for small square cuts or on an i-line tool (inference).
 How tightly SkyWater specifies the plate is not public.
@@ -277,7 +277,7 @@ minimum at the slotted resistor contacts (npc.5, rpm.5).[^pdk-periph] The
 notes that a cut 0.09 µm out of place over a poly line would expose the
 gate edge to the nitride etch.
 
-ASML gives the /750E an {term}`overlay` of "less than
+ASML gives the /750E an overlay of "less than
 30 nm";[^asml-750e] van Haren et al. show how alignment-mark placement on
 the reticle limits layer-to-layer overlay,[^van-haren-2019] and Starikov
 analysed the accuracy of the overlay measurements on which such margins
@@ -296,10 +296,10 @@ The `NPCME` page names:
 
 * a fluorine chemistry tuned for nitride over silicon,
   of the kind Kastenmeier, Matsuo and Oehrlein studied[^kastenmeier-1999]
-* an {term}`endpoint` on CN emission, since "a strong peak at 387 nm indicates that
+* an endpoint on CN emission, since "a strong peak at 387 nm indicates that
   CN is present in the plasma, usually indicating that nitride is being
   etched"[^pat-cn-tel]
-* {term}`loading effects <loading effect>` in small, sparse windows of the
+* loading effects in small, sparse windows of the
   kind Gottscho, Jurgensen and Vitkavage analysed[^gottscho-1992]
 
 On our

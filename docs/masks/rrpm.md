@@ -56,7 +56,7 @@ conversion).[^pdk-08]
 
 Since `RPM` keeps the gate implant out of the
 bodies, the p-type resistor implant must reach exactly those bodies. The
-step page infers a second {term}`reticle` of the opposite tone on the same
+step page infers a second reticle of the opposite tone on the same
 drawn layer, `rpm`, derived from `rpm` alone or from `rpm` less `urpm`
 depending on whether the 2000 Ω/sq bodies receive this implant as well
 as their own. It says that a reverse-tone mask is itself an inference.
@@ -94,10 +94,10 @@ does not say what a route is or why those structures would fail. The
 {ref}`RRPM <step-052>` page extracts from the published measurements of
 the marked structures 0.49–0.54 kΩ at 0.69 µm and half a square and
 0.97 kΩ at 0.33 µm and one square, inside the limits of the PDK's
-{term}`e-test` table for the nearest listed sizes.[^raw-data-passives][^pdk-07] It notes that the files do
+e-test table for the nearest listed sizes.[^raw-data-passives][^pdk-07] It notes that the files do
 not say which route the measured wafer
 followed.[^raw-data-passives] O'Dwyer and Kennedy compared the
-matching of different {term}`poly resistor` films in one CMOS
+matching of different poly resistor films in one CMOS
 process.[^odwyer-2009]
 
 ## Drawn layers and derivation
@@ -198,7 +198,7 @@ tool as the option. The {ref}`i-line stepper <machine-i-line-stepper>`
 page lists it there. SkyWater lists "ASML I-line stepper" and "ASML
 I-line scanner" among its tools but assigns no layer to them.[^skw-01]
 At that geometry Wong et al.'s mask error factor, which "is unity for
-large features",[^wong-1998] would leave plate {term}`CD` errors at about their
+large features",[^wong-1998] would leave plate CD errors at about their
 own size on the wafer (inference).
 
 ### Resist and tone
@@ -229,7 +229,7 @@ and the resist is removed at {ref}`PRIS <step-054>` on the
 {ref}`downstream plasma asher <machine-downstream-plasma-asher>` and
 {ref}`wet bench <machine-wet-bench>` classes.
 
-The {term}`sheet resistance` the
+The sheet resistance the
 implant sets is a steep function of dose on the step pages' reading.
 Seto found the carrier concentration of boron-implanted poly "very small
 at doping levels below 5×10¹⁷/cm³" and increasing "rapidly as the doping
@@ -241,12 +241,12 @@ the grain boundaries.[^mandurah-1981]
 
 The {ref}`RRPM <step-052>` page infers that
 `RPM` and `RRPM` both align to the trench marks of {ref}`FOM <step-004>`,
-so that their mutual {term}`overlay` is the sum of two registrations: a gap
+so that their mutual overlay is the sum of two registrations: a gap
 between the `RPM` island and the `RRPM` window would leave a strip of
 undoped poly, and an overlap a strip doped both n⁺ and p. It reads the
 0.200 µm enclosure of the resistor by `rpm` (rpm.3) as the margin that
 keeps either strip off the body, and cites Hook et al. for the lateral
-{term}`straggle` that blurs a resist-edge boundary.[^hook-2003][^pdk-periph]
+straggle that blurs a resist-edge boundary.[^hook-2003][^pdk-periph]
 
 The
 two dopings behave differently: Chuang et al. found negative
@@ -254,7 +254,7 @@ temperature coefficients of the bulk sheet resistance in n⁺ and positive
 ones in p⁺ poly resistors,[^chuang-2003] so a mixed strip would not
 share the body's behaviour (our reading). ASML specifies "≤ 40 nm"
 single-machine overlay for the PAS 5500/275D
-{term}`stepper`[^asml-pas5500-275d] (our comparison; SkyWater's budget is not
+stepper[^asml-pas5500-275d] (our comparison; SkyWater's budget is not
 public).
 
 (mask-rrpm-steps)=

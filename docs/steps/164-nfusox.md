@@ -92,7 +92,7 @@ Cypress reports.[^pdk-04][^cyp-qtp-123907])
 ## Step category
 
 `NFUSOX` is a {ref}`Thin-film deposition <category-deposition>` step
-of the *{term}`PECVD` oxide* class, like the {term}`cap oxides <cap oxide>`
+of the *{term}`PECVD` oxide* class, like the cap oxides
 {ref}`NCAPOX3 <step-117>` to {ref}`NCAPOX6 <step-158>`.
 
 Two things set
@@ -163,7 +163,7 @@ reasons for the oxide in SKY130 specifically are inferred.
   inference for this flow).
 
 Without this oxide, on our reading, the nitride would be deposited
-directly on the aluminium and on the cap oxide, and the pad etch would
+directly on the aluminium and on the {term}`cap oxide`, and the pad etch would
 have no intermediate layer between nitride and metal.
 
 ## How it is typically performed

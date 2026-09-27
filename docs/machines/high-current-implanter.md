@@ -294,12 +294,12 @@ not public.
   concluded that "0 degrees tilt should be used for both n⁻ (LDD) and n⁺
   (source/drain) implants".[^krieger-1989] On a spinning disc, however,
   the angle varies across the wafer and near 0° that variation changes
-  {term}`channelling`,[^jones-1996] which both step pages note. Yoneda and
+  channelling,[^jones-1996] which both step pages note. Yoneda and
   Niwayama measured drain-current asymmetry at 130 nm from this error
   even with tilt and twist set to 0°.[^yoneda-2002]
 * **Tilted tips on a high-current tool.** The PDK records a 7° "Angle
   for tip implant",[^pdk-03] and the {ref}`ASTI <step-065>` page works
-  out the {term}`shadowing` of such a beam by the gate stack. Whether SKY130's
+  out the shadowing of such a beam by the gate stack. Whether SKY130's
   tip runs on the "Hi dose" GSD or on the 8250 depends on a dose that is
   not public.[^skw-01]
 * **Charging.** The source/drain, tip and gate implants run through

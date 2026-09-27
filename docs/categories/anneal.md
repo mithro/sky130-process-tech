@@ -162,7 +162,7 @@ terminology for the charges involved is given in his 1980
 paper).[^deal-1980][^txt-01] It must be the last hot step because
 subsequent plasma exposure would undo the passivation, and its
 temperature is capped by the aluminium metallisation (Al–Si eutectic at
-577 °C,[^txt-02] and {term}`hillock` growth well below that).
+577 °C,[^txt-02] and hillock growth well below that).
 
 ## Typical equipment
 

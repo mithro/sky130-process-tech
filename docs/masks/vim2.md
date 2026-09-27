@@ -121,7 +121,7 @@ from `via2` to the plate.
 
 With no add or drop purpose, rule x.9's
 "serifs" have no `cviam2` layer to sit on, and rule x.15a confines mask
-layers to test modules, {term}`seal ring` and frame, with the exception that
+layers to test modules, seal ring and frame, with the exception that
 "FOM/P1M/Metal waffle drop are allowed inside the die" (flag P, periphery
 only).[^pdk-periph] A design inside the die therefore draws `via2` (our
 reading of x.9 and x.15a).
@@ -253,7 +253,7 @@ chosen.
 ### Exposure class
 
 The {ref}`VIM2 <step-129>` page gives
-{math}`k_1 = 0.20 \times 0.70 / 0.248 \approx 0.56` on a KrF lens of {term}`NA`
+{math}`k_1 = 0.20 \times 0.70 / 0.248 \approx 0.56` on a KrF lens of NA
 0.70 and about 0.35 on an i-line lens of NA 0.63, and infers a 248 nm
 level from the hole size and from the mask type the sheet records. The
 {ref}`KrF stepper <machine-duv-krf-stepper>` page lists it there, and the
@@ -273,7 +273,7 @@ Wong et al. found the mask error factor rising "rapidly
 when the critical dimension (CD) is less than […] 0.75 (lambda) /NA for
 contacts", and attenuated phase-shift masks behaving like chrome-on-glass
 masks.[^wong-1998] At 248 nm and NA 0.7 that threshold is about 0.27 µm
-(our arithmetic), above the 0.200 µm via, so plate {term}`CD` errors would print
+(our arithmetic), above the 0.200 µm via, so plate CD errors would print
 magnified (inference).
 
 Kim et al. found the factor rising near the
@@ -332,13 +332,13 @@ registration that matters".
 ### Pattern transfer
 
 On the step pages' readings the holes are etched
-at {ref}`VIM2E <step-130>` through the {term}`cap oxide` and the
+at {ref}`VIM2E <step-130>` through the cap oxide and the
 {ref}`NILD4 <step-126>` oxide, on the
 {ref}`dielectric plasma etcher <machine-plasma-etcher-dielectric>` class,
 down to the refractory cap of the metal-2 lines
 ({ref}`overview-metal-cap`), and the resist is stripped
 within that step. Le, Banerjee and McPherson found that via size strongly
-affects the {term}`electromigration` failure-time spread of tungsten-plug vias
+affects the electromigration failure-time spread of tungsten-plug vias
 for one direction of electron flow with a TiN-capped metallisation, and
 not for the other,[^le-1996] one reason the printed size matters (our
 reading).
@@ -440,7 +440,7 @@ neither. For the plate the decisive figures are one 0.200 µm square on a
   and etch categories.
 * **Machines.** {ref}`machine-duv-krf-stepper` — the exposure class the step page
   assigns. {ref}`machine-plasma-etcher-dielectric` — the etch class that transfers
-  the pattern. {ref}`machine-cd-sem-overlay-metrology` — hole CD and {term}`overlay`
+  the pattern. {ref}`machine-cd-sem-overlay-metrology` — hole CD and overlay
   measurement.
 * **Materials.** {ref}`material-lithography-materials` — resists, anti-reflective
   coatings, developer and reticles.
@@ -528,7 +528,7 @@ neither. For the plate the decisive figures are one 0.200 µm square on a
   less certain, and the fields `F`, `A43` and `APRX` are not read. The tab
   does not say to which variant or runs the type applies.[^steps-sheet]
 * The plate's maker, shifter film, transmission, tone and CD
-  specification, any {term}`OPC`, the resist and the exposure tool are not
+  specification, any OPC, the resist and the exposure tool are not
   public; the KrF reading rests on the 0.200 µm rule and the mask type.
 * The PDK does not explain why the capm rules and Table C3 name via 2,
   which the step pages read as via 3 in this flow.[^pdk-periph][^pdk-06]

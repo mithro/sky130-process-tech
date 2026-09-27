@@ -190,7 +190,7 @@ says which parts are typical and which are our inference for SKY130.
    slides this is the `cviam` mask, and the bypass uses the same lower
    via.[^reram-ug] That the lower via is a tungsten plug like the base
    via 1 is our inference from its identical height and mask name. A
-   25 nm stack needs a flat, clean surface: {term}`plug recess` and oxide
+   25 nm stack needs a flat, clean surface: plug recess and oxide
    erosion that the base process tolerates under a 0.36 µm metal film
    are a much larger fraction of an electrode 10 nm thick (inference
    from the tech-file numbers).
@@ -465,7 +465,7 @@ the tier needs:[^skw-01]
 * **Lithography** — "ASML DUV stepper" and "ASML DUV scanner"; the
   assignment of `r1c`/`r1v` to them is an inference from the 0.14 µm
   space.
-* **Dielectrics, tungsten and CMP** — Lam/Novellus/AMAT {term}`PECVD` and HDP,
+* **Dielectrics, tungsten and CMP** — Lam/Novellus/AMAT PECVD and HDP,
   "Lam/Novellus PECVD Tungsten – plug fill", "AMAT Mirra CMP" for oxide
   and tungsten. Strength: strong for existence.
 * **Special modules** — the list also includes "Carbon nanotube
@@ -489,7 +489,7 @@ the tier needs:[^skw-01]
   alternative,[^beckmann-2016] with the TSMC patent's chemistries in the
   collapsed note below this list.
 * **Dielectrics** — silicon oxide and silicon nitride for encapsulation
-  and the upper {term}`ILD` (typical; the same note); **TiN, tungsten
+  and the upper ILD (typical; the same note); **TiN, tungsten
   and WF₆** for the upper vias, as in the base via 1 (inference).
 * **Reticles** for `r1c` and `r1v`.
 
@@ -667,7 +667,7 @@ Status and expiry are estimates from public records and are not legal advice.
 * The electrode materials, their deposition method, and whether a cap
   or oxygen-exchange layer lies next to the oxide are not public; the
   tech-file slide shows three layers of 0.010, 0.005 and 0.010 µm.
-* Whether the HfO₂-based layer is deposited by ALD or {term}`PVD`, and whether
+* Whether the HfO₂-based layer is deposited by ALD or PVD, and whether
   the tech-file thicknesses (and the oxide's dielectric constant of 10)
   are physical values or values for extraction and routing, is not
   stated.
@@ -690,7 +690,7 @@ Status and expiry are estimates from public records and are not legal advice.
 * How the module relates to the Weebit ReRAM offered in S130, to the
   multi-tier RRAM of the DARPA monolithic-3D work, and to the "multiple
   points" in the BEOL that SkyWater's background page mentions.
-* What {term}`thermal budget` the cell tolerates after its deposition, and
+* What thermal budget the cell tolerates after its deposition, and
   whether forming is done on-chip or at wafer test.
 
 <!-- footnotes -->

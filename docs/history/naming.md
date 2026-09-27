@@ -8,7 +8,7 @@ what they say apart from what we infer.
 ## The pattern
 
 In our reading, a code is a family letter, a generation digit and suffixes: **R** + **5** + **2FFD-3** for
-a fast 0.25 µm SRAM process, **S** + **4** + **AD-5** for the 0.35 µm {term}`SONOS` process. The table lists the
+a fast 0.25 µm SRAM process, **S** + **4** + **AD-5** for the 0.35 µm SONOS process. The table lists the
 codes by their first digit, with the design rules the reports print and the names Cypress used in its
 annual reports:
 

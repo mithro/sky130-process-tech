@@ -61,13 +61,13 @@ The PDK's mask generation table, Table F2b, marks the `FOM` column:[^pdk-06]
   the isolated P-well resistor, every transistor and varactor, the diodes
   with a diffused junction, the bipolar transistors and the ESD
   transistors
-* `+`, "Layer allowed to overlap", in 15 rows: the {term}`LI`
+* `+`, "Layer allowed to overlap", in 15 rows: the LI
   resistor, the MiM and VPP capacitors, the three inductors and eight
   diodes formed between wells, deep N-well and substrate
 
 The
 four rows marked `-`, "Layer not created for the device", are the n+
-and p+ {term}`poly resistors <poly resistor>` and the two {term}`metal fuses <metal fuse>`.[^pdk-06] No other column
+and p+ poly resistors and the two metal fuses.[^pdk-06] No other column
 of the table has as many `C` marks; on the table's evidence almost every
 device of the process has active area on this plate (our grouping and
 reading of the table).
@@ -75,7 +75,7 @@ reading of the table).
 The mask also carries shapes that belong to no device. Table C3 of the
 *Layers Reference* defines `fom_waffles` as "fom.mk with dimensions (um
 x um): 0.5 x 0.5, 1.5 x 1.5, 2.5 x 2.5 and 4.08 x 4.08".[^pdk-06] Rule x.15a,
-which confines mask and waffle-drop layers to test modules, {term}`seal ring`
+which confines mask and waffle-drop layers to test modules, seal ring
 and frame, makes an exception: "FOM/P1M/Metal waffle drop are allowed
 inside the die" (flag P).[^pdk-periph] The
 {ref}`FOM <step-004>` page reads the "waffles" as dummy active squares
@@ -203,7 +203,7 @@ the renders site calls the run's reticle set
 ### Exposure class
 
 The {ref}`FOM <step-004>` page puts the 0.150 µm
-active line at {math}`k_1 \approx 0.25` on an i-line lens of {term}`NA` 0.6 and
+active line at {math}`k_1 \approx 0.25` on an i-line lens of NA 0.6 and
 at about 0.4 on a KrF lens of NA 0.6–0.7, and infers a 248 nm level,
 with i-line as the fallback "if the layer were relaxed". The
 {ref}`KrF stepper <machine-duv-krf-stepper>` page lists it there and
@@ -222,7 +222,7 @@ dark-field spaces are more sensitive than light-field lines.[^wong-1998]
 
 At 248 nm that threshold is about 207 nm at NA 0.6 and 177 nm at NA 0.7
 (our arithmetic). The 0.150 µm active line lies below it and the 0.270
-µm trench space above it, so on the KrF reading a {term}`CD` error on the plate
+µm trench space above it, so on the KrF reading a CD error on the plate
 would print enlarged on the narrowest active lines and about one to one
 on the trenches (inference).
 
@@ -260,7 +260,7 @@ window over which the plate's active density, fill included, is checked
 (inference; the table does not say how the check is run). Stine et al.
 characterised and modelled such pattern-dependent CMP
 variation.[^stine-1998] Gan et al. modelled the polish of a reverse-tone
-etchback STI flow, predicting {term}`dishing` and nitride erosion from pattern
+etchback STI flow, predicting dishing and nitride erosion from pattern
 density and step height.[^gan-2001] A TSMC patent places dummy
 structures for CMP planarity while limiting the capacitance they
 add.[^pat-dummy-tsmc]
@@ -274,7 +274,7 @@ sized to avoid waffle shift between runs".[^pdk-06]
 
 The step page reads a chemically amplified KrF
 resist over an organic bottom anti-reflective coating or an inorganic
-{term}`anti-reflective cap` on the nitride, and leaves the choice and the
+anti-reflective cap on the nitride, and leaves the choice and the
 reticle tone open; neither is published. The consumables are on
 the {ref}`lithography materials <material-lithography-materials>` page.
 
@@ -286,7 +286,7 @@ levels register to; the step page leaves a separate zero-mark step open.
 The implant masks that follow align to the trenches on their step pages'
 readings ({ref}`LVTNM <step-014>`, {ref}`NWM <step-017>`), and the poly
 mask to the same marks ({ref}`mask-p1m`). Edmark and Ausschnitt
-calibrated {term}`stepper` {term}`overlay` by aligning to a latent image,[^edmark-1985]
+calibrated stepper overlay by aligning to a latent image,[^edmark-1985]
 and van Haren et al. show how the placement accuracy of wafer alignment
 marks limits layer-to-layer overlay.[^van-haren-2019]
 

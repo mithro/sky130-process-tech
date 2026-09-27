@@ -54,7 +54,7 @@ wording discussed below.[^pdk-summary] The mask carries:[^pdk-periph]
   dummy fill
 
 The mask's smallest island is 0.240 µm² (m3.6).[^pdk-periph] The
-PDK's extraction table gives metal 3 a {term}`sheet resistance` of 47 in a
+PDK's extraction table gives metal 3 a sheet resistance of 47 in a
 column headed "Resistivity (mohms/sq)", against 125 for metals 1 and
 2,[^pdk-08] and the stack diagram draws `met3` 0.845 µm thick against
 0.36 µm for metals 1 and 2.[^pdk-04]
@@ -128,7 +128,7 @@ the {ref}`masks index <masks-index>`, and the PDK publishes no operation
 from `met3` to the plate.
 
 Rule x.15a confines "Drawn compatible, mask,
-and waffle-drop layers" to test modules, {term}`seal ring` and frame, "Exception:
+and waffle-drop layers" to test modules, seal ring and frame, "Exception:
 FOM/P1M/Metal waffle drop are allowed inside the die" (flag P, periphery
 only),[^pdk-periph] so a die may carry `cmm3` waffle-drop shapes as well
 as `met3` (our reading). With no add or drop purpose, rule x.9's "serifs"
@@ -136,7 +136,7 @@ have no `cmm3` layer to sit on.
 
 The rule set's first entry, flagged RC,
 flags a 700 × 700 window "covered by cmm3 waffleDrop" when the metal
-{term}`pattern density` of the same window is below a limit that falls from 70 %
+pattern density of the same window is below a limit that falls from 70 %
 for a fully covered window to 30 % for one 30–40 % covered.[^pdk-periph] Rule
 m3.pd.1 sets a minimum "MM3_oxide_Pattern_density" of 0.7, checked in
 700 µm regions stepped by 70 (m3.pd.2a, m3.pd.2b, flag A).[^pdk-periph]
@@ -247,7 +247,7 @@ rows.[^steps-sheet]
 ### Exposure class
 
 The {ref}`MM3 <step-139>` page gives
-{math}`k_1 = 0.30 \times 0.70 / 0.248 \approx 0.85` on a KrF lens of {term}`NA`
+{math}`k_1 = 0.30 \times 0.70 / 0.248 \approx 0.85` on a KrF lens of NA
 0.70 and {math}`k_1 = 0.30 \times 0.60 / 0.365 \approx 0.49` on an i-line
 lens of NA 0.6, finds either class plausible and leaves the choice open,
 quoting ASML's statement that older systems "migrate to the lithography
@@ -266,7 +266,7 @@ Wong et al. found that the mask error factor "is unity
 for large features, but increases rapidly when the critical dimension
 (CD) is less than 0.5 (lambda) /NA for line-space
 patterns".[^wong-1998] That threshold is about 0.18 µm at 248 nm and NA
-0.7 but about 0.30 µm at 365 nm and NA 0.6 (our arithmetic), so plate {term}`CD`
+0.7 but about 0.30 µm at 365 nm and NA 0.6 (our arithmetic), so plate CD
 errors on dense metal-3 lines would print at their own size on a KrF tool
 and begin to be magnified on an i-line tool (inference).
 
@@ -334,7 +334,7 @@ and leaves it open.
 On the step pages' readings the resist pattern is
 transferred by {ref}`MM3E <step-140>`, which first breaks through the
 capacitor dielectric outside the plates and then etches the metal stack
-in a chlorine chemistry, stopping on the via-2 {term}`cap oxide` and plug tops,
+in a chlorine chemistry, stopping on the via-2 cap oxide and plug tops,
 on the {ref}`metal plasma etcher <machine-plasma-etcher-metal>` class. On the step pages' readings
 passivation, resist strip and clean are treated as part of that step.
 
@@ -453,7 +453,7 @@ For the plate the decisive figures are 0.300 µm lines on a
 * **Machines.** {ref}`machine-i-line-stepper` and {ref}`machine-duv-krf-stepper` — the
   two exposure classes the step page leaves open.
   {ref}`machine-plasma-etcher-metal` — the etch class that transfers the
-  pattern. {ref}`machine-cd-sem-overlay-metrology` — line CD and {term}`overlay`
+  pattern. {ref}`machine-cd-sem-overlay-metrology` — line CD and overlay
   measurement.
 * **Materials.** {ref}`material-lithography-materials` — resists, anti-reflective
   coatings, developer and reticles.

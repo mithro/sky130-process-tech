@@ -99,7 +99,7 @@ step pages' readings that is set by {ref}`LVTPI <step-020>` through the
 N-well resist. Kao and Chandrakasan describe dual-threshold techniques
 that keep low-threshold speed while cutting stand-by
 leakage,[^kao-2000] and Kizilyalli et al. show that in an n+-poly
-{term}`buried-channel PMOS` the threshold and minimum gate length cannot be
+buried-channel PMOS the threshold and minimum gate length cannot be
 scaled independently because of punch-through[^kizilyalli-1995] — the
 kind of trade a second PMOS threshold offers designers a way around (our
 reading).
@@ -117,7 +117,7 @@ plate.
 
 Rule x.9 allows "Shapes on maskAdd or maskDrop layers
 ("serifs")" in the core only, and x.15a confines mask layers to test
-modules, {term}`seal ring` and frame, with an exception that names only
+modules, seal ring and frame, with an exception that names only
 "FOM/P1M/Metal waffle drop" (flag P).[^pdk-periph] Table C3 of the
 [*Layers Reference*](<https://skywater-pdk.readthedocs.io/en/main/rules/layers.html>) defines `LVnwell` as "nwell NOT hvi" and
 `Var_channel` as "poly AND tap AND (nwell NOT hvi) NOT
@@ -267,7 +267,7 @@ sheet's; the reticle set is the heading of the run's columns in the tab
 ### Exposure class
 
 The {ref}`HVTPM <step-022>` page puts the 0.38 µm
-width and space at {math}`k_1 \approx 0.62` on an i-line lens of {term}`NA` 0.6
+width and space at {math}`k_1 \approx 0.62` on an i-line lens of NA 0.6
 and infers an i-line level. The
 {ref}`i-line stepper <machine-i-line-stepper>` page lists it there.
 SkyWater lists "ASML I-line stepper" and "ASML I-line scanner" among its
@@ -282,7 +282,7 @@ for large features, but increases rapidly when the critical dimension
 (CD) is less than 0.5 (lambda) /NA for line-space patterns".[^wong-1998]
 At 365 nm that threshold is about 0.38 µm at NA 0.48 and 0.30 µm at
 NA 0.60 (our arithmetic), so the smallest features lie at or just above
-it and a plate {term}`CD` error would print at about its own size (inference).
+it and a plate CD error would print at about its own size (inference).
 
 ### Resist and tone
 
@@ -295,7 +295,7 @@ SRIM computes.[^ziegler-2010]
 
 Ross et al. stabilised i-line implant
 resists with a flood electron beam, reducing shrinkage and CD variation
-and eliminating {term}`popping`.[^ross-1996] The {ref}`PCHIS <step-025>` page
+and eliminating popping.[^ross-1996] The {ref}`PCHIS <step-025>` page
 notes that a BF₂ implant leaves fluorine in the resist crust. SkyWater's
 resist and any hardening are not public; the consumables are on the
 {ref}`lithography materials <material-lithography-materials>` page.
@@ -315,9 +315,9 @@ margins against the active and gate patterns (inference).
 
 The {ref}`HVTPM <step-022>` page reads the mask as aligned
 to the trench pattern and names the 0.180 µm enclosure of a PMOS by
-`hvtp` (hvtp.3) and spacing from other PMOS (hvtp.4) as its {term}`overlay`
+`hvtp` (hvtp.3) and spacing from other PMOS (hvtp.4) as its overlay
 budget against the active pattern.[^pdk-periph] ASML specifies "≤ 40 nm"
-single-machine overlay for the /275D {term}`stepper`[^asml-pas5500-275d] (our
+single-machine overlay for the /275D stepper[^asml-pas5500-275d] (our
 comparison; how SkyWater budgets the margin is not public).
 
 ### Pattern transfer

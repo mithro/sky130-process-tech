@@ -4,7 +4,7 @@
 A metal plasma etcher is the single-wafer dry-etch tool a fab uses to
 pattern its aluminium interconnect: the titanium, aluminium–copper and
 refractory-metal stacks of each metal level, and thin conductor films
-such as a titanium nitride {term}`local interconnect` or a capacitor top plate.
+such as a titanium nitride local interconnect or a capacitor top plate.
 
 | | Plasma etcher: metal |
 |---|---|
@@ -42,7 +42,7 @@ What makes a machine a *metal* etcher is therefore a chlorine-tolerant
 chamber and gas system, sidewall-passivation control, a sequence that
 breaks through oxide and refractory layers above and below the
 aluminium, and integrated corrosion control. Poulsen's early review
-already reported aluminium plasma etching and {term}`endpoint`
+already reported aluminium plasma etching and endpoint
 detection,[^poulsen-1977] and Donnelly and Kornblit trace the later
 development.[^donnelly-2013]
 
@@ -110,12 +110,12 @@ For TiW, Liu and Kuo found "Both F and
 Cl are effective etchants", the rate depending on "both the plasma phase
 etchant concentration and the ion bombardment energy", with a peak near
 100 mTorr.[^liu-2007-tiw] Titanium nitride can be etched in a
-"fluorine-deficient plasma" selective to titanium {term}`silicide`, as a Texas
+"fluorine-deficient plasma" selective to titanium silicide, as a Texas
 Instruments patent describes.[^pat-tin-etch-ti]
 
 Where a conductor film
-sits on a thin dielectric, as a {term}`MiM capacitor` top plate of any material
-does, the {term}`over-etch` must stop quickly. A later Texas Instruments patent
+sits on a thin dielectric, as a MiM capacitor top plate of any material
+does, the over-etch must stop quickly. A later Texas Instruments patent
 that may still be in force gives such an etch and the dielectric loss it
 allows, in the collapsed note below.
 
@@ -323,7 +323,7 @@ SKY130 conditions of their own. SKY130's etch recipes are not public.
   conductor layer on top of the dielectric".[^pdk-07] This reference
   reads it as TiW (inference, set out on the {ref}`CAPTIW1 <step-136>`
   page: TiW caps the aluminium stacks of the 2013 Cypress
-  report[^cyp-qtp-113005] and is on SkyWater's {term}`PVD` and metal-etch
+  report[^cyp-qtp-113005] and is on SkyWater's PVD and metal-etch
   lists[^skw-01]), and the same
   evidence would equally allow TiN. SkyWater's two entries name Al, TiN
   and TiW.[^skw-01]
@@ -331,7 +331,7 @@ SKY130 conditions of their own. SKY130's etch recipes are not public.
   over-etch lands on oxide and on the tops of the tungsten plugs
   (SkyWater lists "Lam/Novellus PECVD Tungsten – plug fill"[^skw-01];
   {ref}`tungsten CVD page <machine-tungsten-cvd>`),
-  with {term}`selectivity` to the plugs ({ref}`MM1E <step-114>`). Chlorine etched
+  with selectivity to the plugs ({ref}`MM1E <step-114>`). Chlorine etched
   tungsten at no more than 90 nm/min in Fischl and Hess's
   conditions.[^fischl-1987]
 
@@ -347,7 +347,7 @@ SKY130 conditions of their own. SKY130's etch recipes are not public.
 * **Corrosion between etch and clean.** Every aluminium level goes from
   the etcher through a strip and a solvent clean; the step pages name
   SkyWater's ashers and its "EKS265, EKC270 solvents" tool, and the
-  {term}`queue time` and drying after the clean decide whether lines
+  queue time and drying after the clean decide whether lines
   corrode.[^skw-01][^wai-2017]
 * **Antenna charging.** The metal etches separate lines connected to
   gates; the SKY130 antenna rules exist for this reason

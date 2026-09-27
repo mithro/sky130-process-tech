@@ -30,7 +30,7 @@ planarisation are on the {ref}`etch <category-etch>` and
 
 Some questions about a structure cannot be answered from above. Other
 questions concern the surface itself — the step height left by a polish,
-the {term}`dishing` of a wide field, the recess of a tungsten plug.
+the dishing of a wide field, the recess of a tungsten plug.
 A stylus profiler or an atomic force microscope (AFM) answers them by
 drawing a fine tip across the wafer. Cross-sections are destructive and
 slow, and are usually run on monitor or sacrificial wafers; profilers
@@ -95,7 +95,7 @@ FEI's Quanta 200 3D DualBeam, described on a 2006 capture, offered
 and etching, analysis and TEM sample preparation".[^fei-dualbeam-2006]
 
 Nikawa's review of FIB failure analysis
-shows cross-sections of an {term}`electromigration` open, a pinhole in the oxide
+shows cross-sections of an electromigration open, a pinhole in the oxide
 between metal and substrate, and an open caused by process anomalies, and
 lists "microscopic cross sectioning for secondary electron miscroscopy
 observation" among the preparation methods.[^nikawa-1991] ITRS 2001 adds
@@ -116,7 +116,7 @@ production profilers on a 1997 capture included the P-22, with "stylus
 forces as low as 0.05 mg on critical surfaces", and the HRP-200, which combined "a
 Tencor stylus profiler with the high-resolution analysis and imaging
 capabilities of an Atomic Force Microscope (AFM)".[^tencor-profiling-1997]
-Tencor launched the HRP-200 for metal {term}`CMP`, measuring "tungsten plug recess
+Tencor launched the HRP-200 for metal CMP, measuring "tungsten plug recess
 …, pattern-induced erosion, dishing of metal features and scratching of
 inter-layer dielectric (ILD) films", and stated that its existing
 profilers "continue to be appropriate for oxide CMP
@@ -152,7 +152,7 @@ insensitive to the conductivity of the material scanned", but that
 too slender".[^itrs-2001-met]
 
 International SEMATECH and NIST developed a CD-AFM "reference
-measurement system" as "a traceable metrology reference" for {term}`CD-SEM`
+measurement system" as "a traceable metrology reference" for CD-SEM
 benchmarking.[^dixson-2002]
 
 ### What the measurements show
@@ -163,7 +163,7 @@ sensitive, increasing from ∼0 nm at a field width of 5 μm and below to
 200 nm at 4 mm".[^yu-1992] Stine et al. designed test masks and
 measurement methods to model polishing against layout, and found "pattern
 density is a strongly dominant factor".[^stine-1998] Cross-sections, in
-turn, show voids in {term}`gap fill` and plugs, etch profiles and liner coverage
+turn, show voids in gap fill and plugs, etch profiles and liner coverage
 at the bottom of contacts (industry practice), which is what the
 deposition and etch step pages name them for.
 
@@ -286,7 +286,7 @@ SKY130 conditions of their own. SKY130's trench depths, profile angles,
 dishing and step-height limits are not public.
 
 * **Isolation.** {ref}`STIE <step-006>` names cross-section SEM with a
-  CD-SEM for trench depth and {term}`CD`, and the liner and fill pages
+  CD-SEM for trench depth and CD, and the liner and fill pages
   ({ref}`LINOX <step-010>`, {ref}`FILOX <step-011>`) a cross-section for
   the liner and the fill.
 
@@ -315,7 +315,7 @@ dishing and step-height limits are not public.
   name a stylus profiler beside an optical thickness mapper; the later
   oxide polishes name thickness metrology only
   ({ref}`machine-film-thickness-metrology`). Stine et al. show how such
-  polishes vary with {term}`pattern density`.[^stine-1998]
+  polishes vary with pattern density.[^stine-1998]
 * **Defects in section.** A FIB that reads inspection particle maps can
   cut through a defect found by {ref}`machine-defect-inspection`, as the
   FIB 800 was designed to.[^fei-fib800-1999]
@@ -328,9 +328,9 @@ dishing and step-height limits are not public.
 
 ## Related pages
 
-* **Category.** {ref}`category-etch` — etch profiles, {term}`endpoint` and
+* **Category.** {ref}`category-etch` — etch profiles, endpoint and
   metrology. {ref}`category-cmp` — dishing, erosion and step height.
-  {ref}`category-deposition` — gap fill, {term}`step coverage` and plugs.
+  {ref}`category-deposition` — gap fill, step coverage and plugs.
 * **Machines.** {ref}`machine-cd-sem-overlay-metrology` — top-down CD
   measurement. {ref}`machine-defect-inspection` — the defects a FIB
   section is cut through. {ref}`machine-film-thickness-metrology` — the

@@ -74,7 +74,7 @@ The PDK's mask generation table, Table F2b, marks the `HVNTM` column `C`
 
 The table marks
 `-`, "Layer not created for the device", in 68 rows, among them every
-1.8 V row, the {term}`SONOS` and flash pass-gate rows, the 5/10.5 V and 16 V
+1.8 V row, the SONOS and flash pass-gate rows, the 5/10.5 V and 16 V
 PMOS and the five UHV 5/20 V drain-extended rows.[^pdk-06] On our reading
 the created shapes follow the n-type devices on thick oxide up to the
 16 V class, and the table does not say why the UHV NMOS rows are left
@@ -85,7 +85,7 @@ The step page reads the implant as a large-angle-tilt implanted drain
 ({term}`LATID`) from the 40° angle. Hori demonstrated the quarter-micron
 LATID transistor for 3.3 V operation and gave the full account of the
 technology.[^hori-1989-latid][^hori-1992] Rafí and Campabadal compared
-the hot-carrier degradation of {term}`LDD` and LATID NMOS.[^rafi-2001] The
+the hot-carrier degradation of LDD and LATID NMOS.[^rafi-2001] The
 lightly doped drain[^ogura-1980] and Takeda et al.'s drain structures
 for minimising hot-carrier generation[^takeda-1982] are the older
 answers to the degradation Hu et al. modelled.[^hu-1985-hci]
@@ -126,7 +126,7 @@ computation (our reading). The {ref}`HVNTM <step-068>` page reads the
 reticle as the union of what the designer draws and a computed layer.
 
 Rule x.15a confines mask layers to
-test modules, {term}`seal ring` and frame, with an exception that names only
+test modules, seal ring and frame, with an exception that names only
 "FOM/P1M/Metal waffle drop" (flag P),[^pdk-periph] so a design inside the
 die draws `hvntm` (our reading of x.15a).
 
@@ -259,7 +259,7 @@ the reticle set is the heading of the run's columns in the tab
 ### Exposure class
 
 The {ref}`HVNTM <step-068>` page puts the 0.700 µm
-width and space at {math}`k_1 \approx 1.2` on an i-line lens of {term}`NA` 0.6,
+width and space at {math}`k_1 \approx 1.2` on an i-line lens of NA 0.6,
 quotes ASML's statement that older exposure tools "migrate to the
 lithography of choice for less critical layers",[^asml-30] and infers an
 i-line level. The {ref}`i-line stepper <machine-i-line-stepper>` page
@@ -275,7 +275,7 @@ Wong et al. found that the mask error factor "is unity
 for large features, but increases rapidly when the critical dimension
 (CD) is less than 0.5 (lambda) /NA for line-space patterns".[^wong-1998]
 At 365 nm and NA 0.48 that threshold is about 0.38 µm (our arithmetic),
-about half the `HVNTM` minimum, so a {term}`CD` error on the plate would be
+about half the `HVNTM` minimum, so a CD error on the plate would be
 expected to print at its own size (inference).
 
 Table 8 of [*Criteria &
@@ -294,7 +294,7 @@ Table 4 gives a "Photoresist thickness for HV Tip Implants" of 0.3
 
 The step
 page reads the thin film as ample for an LDD-type arsenic implant of tens
-of keV, whose {term}`projected range` in resist-like materials is a few tens of
+of keV, whose projected range in resist-like materials is a few tens of
 nanometres, and points to pinholes as the risk a 0.3 µm film carries. The
 ion range that sets the margin is what SRIM computes.[^ziegler-2010]
 SkyWater's resist and any hardening are not public; the consumables are
@@ -331,12 +331,12 @@ thresholds, as Hook et al. found for a thick well resist.[^hook-2003]
 ### Overlay and alignment
 
 The {ref}`HVNTM <step-068>` page reads the mask as aligned
-to poly (inference) and the 0.232 µm {term}`shadowing` allowance and 0.1 µm
+to poly (inference) and the 0.232 µm shadowing allowance and 0.1 µm
 minimum opening as fixing how far a resist edge must stand from a gate.
 The 0.185 µm rules against n+ diffusion outside `hvi` and against p+
 diffusion (hvntm.4, hvntm.5) set the edges relative to the active
-pattern.[^pdk-periph] ASML specifies "≤ 40 nm" single-machine {term}`overlay` for
-the /275D {term}`stepper`[^asml-pas5500-275d] (our comparison; how SkyWater
+pattern.[^pdk-periph] ASML specifies "≤ 40 nm" single-machine overlay for
+the /275D stepper[^asml-pas5500-275d] (our comparison; how SkyWater
 budgets the margin is not public).
 
 ### Pattern transfer
@@ -365,7 +365,7 @@ Steps:
 
 * {ref}`HVNTM <step-068>` — coats, exposes and develops the thin resist.
 * {ref}`HVASTI <step-069>` — the 40° arsenic implant through the resist
-  windows; this reference describes no {term}`halo` for it.
+  windows; this reference describes no halo for it.
 * {ref}`HVASTIS <step-070>` — strips the thin implanted resist and cleans
   the wafer.
 

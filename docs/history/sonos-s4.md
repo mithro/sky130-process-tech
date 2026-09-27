@@ -1,7 +1,7 @@
 (history-sonos-s4)=
 # S4AD-5: Cypress's SONOS process before S8
 
-S8 is a 0.13 µm process with {term}`SONOS` non-volatile memory. Before it came a 0.35 µm SONOS process that the
+S8 is a 0.13 µm process with SONOS non-volatile memory. Before it came a 0.35 µm SONOS process that the
 qualification reports call S4AD-5 and the press calls S4, the earliest SONOS process in the reports. It
 made PSoC 1 mixed-signal arrays and a line of clock chips. This page collects what the public sources
 say about it.
@@ -140,7 +140,7 @@ Cypress patented its SONOS dielectrics in the early 2000s. The patent records sh
 * **The ONO dielectric.** A method for the SONOS dielectric layer, with a 2001 priority date.[^pat-us6818558]
 * **A deuterated interface.** A SONOS structure with a deuterated oxide–silicon interface, filed in
   2002.[^pat-us6677213]
-* **The ONO stack.** A method for the {term}`ONO` dielectric of SONOS-type devices, filed in 2002.[^pat-us6969689]
+* **The ONO stack.** A method for the ONO dielectric of SONOS-type devices, filed in 2002.[^pat-us6969689]
 
 :::{dropdown} A SONOS cell patent of status shown as unknown (US 6,172,907; estimated expiry no later than 2020-10-22) — open to read
 Cypress's SONOS memory-cell patent, filed on 1999-10-22, is the earliest Cypress SONOS cell patent

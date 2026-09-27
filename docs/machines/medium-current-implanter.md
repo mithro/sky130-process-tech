@@ -3,7 +3,7 @@
 
 A medium-current implanter is the beam-line ion implanter a fab uses for
 light and moderate doses that must be placed precisely: threshold and
-channel implants, punch-through and depletion implants, {term}`halos <halo>`, and the
+channel implants, punch-through and depletion implants, halos, and the
 tilted tips of the higher-voltage transistors. It implants one wafer at
 a time, which lets it hold a large, accurately known tilt and twist.
 
@@ -19,7 +19,7 @@ a time, which lets it hold a large, accurately known tilt and twist.
 | SKY130 steps | 20 steps, plus 1 where the class is an alternative; see {ref}`SKY130 steps assigned to this class <machine-medium-current-implanter-steps>` |
 
 :::{seealso}
-The physics of implantation (ranges, {term}`channelling`, damage) is on the
+The physics of implantation (ranges, channelling, damage) is on the
 {ref}`category page <category-implant>`.
 :::
 
@@ -236,7 +236,7 @@ tool:[^skw-01]
 Read term by term: the species are ¹¹B⁺, BF₂⁺ and As⁺, with no
 phosphorus; the dose range is 10¹¹–10¹⁴ cm⁻²; the tilt range is 0–60°.
 
-We read "ESC chuck" as an {term}`electrostatic chuck`, which Harlan and Petry
+We read "ESC chuck" as an electrostatic chuck, which Harlan and Petry
 describe on the 8250,[^harlan-1998] and "E shower" as an electron shower
 for charge control, a term the charging literature
 uses;[^current-1996-iit] SkyWater does not expand either abbreviation.
@@ -381,7 +381,7 @@ not public.
   The
   {ref}`HVASTI <step-069>` page reads the implant as split into rotations
   so that source and drain are symmetric,[^pat-quad-tsmc] with the
-  resist and neighbouring gates {term}`shadowing` the beam.[^chen-1995] The
+  resist and neighbouring gates shadowing the beam.[^chen-1995] The
   {ref}`BHI <step-066>` and {ref}`LDBHI <step-073>` halo pages describe
   the same geometry.
 

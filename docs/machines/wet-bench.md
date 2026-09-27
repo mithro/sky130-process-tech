@@ -32,7 +32,7 @@ is isotropic and can be very selective, and it cleans without the
 damage of a plasma. Kern's review of 1990 records that wafer-cleaning
 chemistry "has remained essentially unchanged in the past 25 years and
 is based on hot alkaline and acidic hydrogen peroxide solutions", while
-the equipment changed around it.[^kern-1990] Kern traces the {term}`RCA clean`'s implementation "from simple immersion to centrifugal spraying, megasonic techniques, and enclosed system processing".[^kern-1990]
+the equipment changed around it.[^kern-1990] Kern traces the RCA clean's implementation "from simple immersion to centrifugal spraying, megasonic techniques, and enclosed system processing".[^kern-1990]
 
 A wet bench is a line of tanks — sulphuric–peroxide, the RCA
 cleans, dilute HF and buffered oxide etch, hot phosphoric acid —
@@ -192,7 +192,7 @@ and under "Pre-cleaning", in the "Furnaces/Diffusion/Pre-Clean" group of
 Read term by term:[^skw-01]
 
 * the Akrion bench is the only entry with sulphuric
-  acid, phosphoric acid and {term}`BOE`;
+  acid, phosphoric acid and BOE;
 * the DNS bench and the FSI Mercury are the
   only entries with SC-2;
 * the Batch Rotational tool is a solvent tool with
@@ -262,7 +262,7 @@ parameters are described on the
 {ref}`ultrapure water <material-ultrapure-water>` page.
 
 * **Acids, bases and oxidisers.** Sulphuric acid and hydrogen peroxide
-  for {term}`SPM`; ammonia, hydrochloric acid and peroxide for SC-1 and
+  for SPM; ammonia, hydrochloric acid and peroxide for SC-1 and
   SC-2;[^wiki-rca][^wiki-piranha] 49 % HF, NH₄F for
   BOE;[^wiki-boe][^wiki-hf] and phosphoric acid for the nitride
   bath.[^wiki-h3po4][^vgh-1967] SkyWater lists sulphuric, SC1, SC2, HF,
@@ -286,7 +286,7 @@ not public.
 
 * **The nitride strip.** {ref}`NS19 <step-013>` removes the isolation
   nitride in hot phosphoric acid, where water content sets the
-  nitride-to-oxide {term}`selectivity`;[^vgh-1967][^liu-2007] the page assigns
+  nitride-to-oxide selectivity;[^vgh-1967][^liu-2007] the page assigns
   it to the Akrion bench as the only phosphoric tank SkyWater
   lists.[^skw-01]
 * **Wet oxide etches over thin films.** {ref}`TUNME <step-039>` removes
@@ -306,9 +306,9 @@ not public.
   tools because SC-2, which removes metallic contamination, is listed
   only for them.[^skw-01][^wiki-rca] The DNS entry's "dilute HF-last with
   IPA dry" is the option the {ref}`GOXETCH <step-046>`
-  page matches to its {term}`HF-last` pre-gate clean.[^skw-01]
+  page matches to its HF-last pre-gate clean.[^skw-01]
 * **Cleans after implant strips.** The implant-strip pages follow the
-  {term}`ash` with SPM and SC-1 on the Akrion bench to remove the residue that
+  ash with SPM and SC-1 on the Akrion bench to remove the residue that
   ashing leaves;[^skw-01] Fujimura et al. found that residue to be
   mainly "oxide of the implanted species".[^fujimura-1989]
 * **Solvent cleans over metal.** After the local-interconnect, metal,

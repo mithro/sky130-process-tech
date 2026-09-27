@@ -5,7 +5,7 @@ An anneal furnace is the batch furnace run without an oxidant or a
 precursor: the wafers are heated in nitrogen, argon or a
 hydrogen-bearing gas to repair, densify, diffuse or passivate, rather
 than to grow or deposit a film. In a 130 nm flow its main task is the
-hydrogen alloy — a long, low-temperature soak in {term}`forming gas` that
+hydrogen alloy — a long, low-temperature soak in forming gas that
 passivates the silicon–oxide interface.
 
 | | Vertical batch furnace: anneal and alloy |
@@ -66,7 +66,7 @@ annealed and cooled also sets its interface-state density: oxides
 exhibit large interface state densities as oxidized", which a later
 hydrogen anneal reduces.[^razouk-1979]
 
-For implant anneals the furnace competes with the lamp-heated {term}`RTA`. The
+For implant anneals the furnace competes with the lamp-heated RTA. The
 diffusion that makes a furnace unattractive for shallow junctions has a
 mechanism: implanted boron and phosphorus "exhibit transient enhanced
 diffusion (TED) during annealing which arises from the excess
@@ -82,7 +82,7 @@ an RTA (Rapid Thermal Anneal) apparatus".[^pat-well-hynix]
 
 ### The hydrogen alloy
 
-The {term}`alloy anneal` passes hydrogen through the finished or nearly finished
+The alloy anneal passes hydrogen through the finished or nearly finished
 dielectric stack to the Si/SiO₂ interface, where it terminates silicon
 dangling bonds (P_b centres) and lowers the interface-trap density. Reed
 and Plummer measured the kinetics with rapid thermal processing and
@@ -291,8 +291,8 @@ ambients are not public.
   alloy" is the only hydrogen-bearing anneal on SkyWater's list; the
   Heatpulse lists "NH3, Ar, N2, O2".[^skw-01]
 * **Densifying the trench fill.** The {ref}`FILOX <step-011>` page offers
-  a furnace or {term}`RTP` densification of the HDP oxide as optional; an argon
-  anneal after {term}`gap fill` is one published choice.[^ohashi-2007] SkyWater
+  a furnace or RTP densification of the HDP oxide as optional; an argon
+  anneal after gap fill is one published choice.[^ohashi-2007] SkyWater
   lists argon and nitrogen anneals to 1150 °C.[^skw-01]
 * **A furnace well anneal is the weak option.** The
   {ref}`RTAI <step-034>` page reads the pre-gate anneal as an RTA, from

@@ -40,7 +40,7 @@ Nitrogen can be put into an oxide thermally. Ito, Nozaki and Ishikawa
 showed that oxide "can be converted directly to silicon nitride or
 oxynitride at the surface" by heating in ammonia, with graded films "At
 temperatures above 900°C".[^ito-1980] Rapid thermal processing in N₂O gives
-an {term}`oxynitride` with "nitrogen pileup at the Si/SiO₂ interface" and
+an oxynitride with "nitrogen pileup at the Si/SiO₂ interface" and
 "excellent diffusion barrier properties" against boron.[^hwang-1991]
 
 A
@@ -230,7 +230,7 @@ oxide ("Machines likely used at SkyWater"), as collected on the machines
 index:
 
 * **Special modules "Nitrided gate oxide", "Ti and Co Silicide", "W plug
-  dual damascene"** — *inference for use in SKY130 (nitrided oxide):* {ref}`LVGOX <step-047>`, {ref}`IOX45 <step-063>`; *strong for the capability ({term}`silicide`, {term}`W plug`):* {ref}`CSIL <step-098>`, {ref}`WDEP <step-099>`
+  dual damascene"** — *inference for use in SKY130 (nitrided oxide):* {ref}`LVGOX <step-047>`, {ref}`IOX45 <step-063>`; *strong for the capability (silicide, W plug):* {ref}`CSIL <step-098>`, {ref}`WDEP <step-099>`
 * **"Ag Heatpulse 8808 …"** — *weak:* {ref}`LVGOX <step-047>`,
   {ref}`IOX45 <step-063>` (the LVGOX page names its NH₃ line as the one
   public hint); see {ref}`machine-rapid-thermal-processor`.
@@ -258,7 +258,7 @@ class needs is summarised from the public process descriptions.
   with a controlled oxygen partial pressure, for the anneal that
   follows.[^pat-dpn-anneal-chartered][^pat-pna-amat]
 * **Nitrogen metrology.** Nitrogen dose and profile by XPS and SIMS in
-  development;[^hattangady-1995][^kapila-1999] {term}`boron penetration` through a
+  development;[^hattangady-1995][^kapila-1999] boron penetration through a
   DPN oxide measured by backside SIMS.[^yeo-2003]
 
 ## Process-integration notes for SKY130
@@ -296,14 +296,14 @@ and how, is not public.
   post-nitridation anneal in a controlled oxygen and nitrogen
   ambient.[^pat-dpn-anneal-chartered][^pat-pna-amat] SkyWater's Heatpulse
   lists O₂ and N₂,[^skw-01] so the anneal half of such a sequence would fit
-  the listed {term}`RTA` (inference); the plasma half has no listed tool.
+  the listed RTA (inference); the plasma half has no listed tool.
 * **The 5 V oxide.** The class is aimed at ultra-thin oxides;[^amat-dpn-2001]
   no step page proposes plasma nitridation for the thick
   {ref}`GOX100 <step-043>` oxide.
 
 ## Related pages
 
-* **Category.** {ref}`category-oxidation` — nitrided oxides and {term}`ONO` stacks in context.
+* **Category.** {ref}`category-oxidation` — nitrided oxides and ONO stacks in context.
   {ref}`category-implant` — the p⁺ gate doping whose boron the nitrogen
   is meant to stop.
 * **Machines.** {ref}`machine-vertical-furnace-oxidation` — the furnace in which the
@@ -311,7 +311,7 @@ and how, is not public.
   and the post-nitridation anneal.
 * **Materials.** {ref}`material-process-gases` — nitrogen, oxygen, hydrogen, argon,
   helium and the oxidation additives, their grades and SkyWater's listed
-  gases. {ref}`material-precursors` — silane, dichlorosilane, {term}`TEOS`, BTBAS,
+  gases. {ref}`material-precursors` — silane, dichlorosilane, TEOS, BTBAS,
   ammonia, SiF₄, ozone and WF₆.
 * **Indexes.** {ref}`machines-index` — all machine classes, SkyWater's listed tools
   and the step assignments.

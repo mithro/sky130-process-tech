@@ -101,7 +101,7 @@ lift off the particles"; their results suggested an SC-1 mixing ratio
 of "0.05:1:5" (NH₄OH, H₂O₂, H₂O),[^itano-1993] far less ammonia
 than the 1:1:5 of Wikipedia's recipe (our comparison).[^wiki-rca]
 
-{term}`SPM`, piranha, is sulphuric acid with peroxide; it
+SPM, piranha, is sulphuric acid with peroxide; it
 "is used frequently in the microelectronics industry, e.g. to clean
 photoresist or organic material residue from silicon
 wafers".[^wiki-piranha]
@@ -116,7 +116,7 @@ the presence of organic or reactive compounds".[^wiki-h2o2]
 ### Hot phosphoric acid and nitric–hydrofluoric mixtures
 
 Silicon nitride is stripped in hot phosphoric acid, where water content
-sets the {term}`selectivity`: van Gelder and Hauser found that "An increase in
+sets the selectivity: van Gelder and Hauser found that "An increase in
 water content increases the etch rate of silicon nitride and decreases
 the etch rate of silicon dioxide", and used "Refluxed boiling phosphoric
 acid at 180°C", in which nitride etched at 100 Å/min against 0–25 Å/min
@@ -139,7 +139,7 @@ temperature. Hattori et al. built a single-wafer spin clean "while
 alternately supplying ozonized water and dilute HF for only 10 s each
 onto a rotating silicon wafer", which "can efficiently remove both
 particulate and metallic contaminants as well as organic
-contaminants".[^hattori-1998] Gas-phase ozone, used with {term}`TEOS` in
+contaminants".[^hattori-1998] Gas-phase ozone, used with TEOS in
 deposition, is indexed as a precursor, not here.
 
 ### Solvents: isopropanol and post-etch residue removers
@@ -215,8 +215,8 @@ and under "Pre-cleaning":[^skw-01]
 > "dilute HF-last with IPA dry"
 > "FSI Mercury industry standard HF/SC1/SC2 rotational"
 
-The {term}`CMP` entry adds "IPA clean".[^skw-01] Read term by term, the page
-names sulphuric acid, SC-1, SC-2, phosphoric acid, {term}`BOE`, HF (including a
+The CMP entry adds "IPA clean".[^skw-01] Read term by term, the page
+names sulphuric acid, SC-1, SC-2, phosphoric acid, BOE, HF (including a
 dilute HF-last clean), isopropanol and two solvents; it does not expand
 "DSP+HF" or say what "titration controlled" measures, and it names no
 nitric acid, ozone or hydrogen peroxide. We read "Sulfuric" as the
@@ -295,7 +295,7 @@ The steps fall into groups, as the index rows describe them:
 
 * **Acid and peroxide cleans and wet etches** in the front end — the
   pre-furnace cleans, the nitride strip at {ref}`NS19 <step-013>`, the
-  tunnel-window and gate-oxide etches, the {term}`backside film removal` at
+  tunnel-window and gate-oxide etches, the backside film removal at
   {ref}`BFR <step-060>`, and the SPM and SC-1 cleans after the implant
   strips and after the trench, poly, spacer and nitride-cut etches.
 * **Solvent cleans** after the contact, via, local-interconnect,
@@ -394,7 +394,7 @@ its alternatives for the pad oxide.[^pat-04]
 * **Category.** {ref}`category-strip` — wet strip and clean chemistry,
   the nitride strip and solvent cleans. {ref}`category-etch` — wet
   etching of oxide, nitride and silicon. {ref}`category-cmp` — slurries
-  and {term}`post-CMP cleans <post-CMP clean>`.
+  and post-CMP cleans.
 * **Machines.** {ref}`machine-wet-bench` and
   {ref}`machine-single-wafer-spin-processor` — the tools that use these
   chemicals.

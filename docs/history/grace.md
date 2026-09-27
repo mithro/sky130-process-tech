@@ -80,7 +80,7 @@ with Grace to give Cypress priority for its foundry capacity (our translation).[
 | 2010 | R95LD-3R, the 0.09 µm SRAM, "Product Transfer from CMI to GSMC" | single source[^qtp-091206] |
 | 2020 | S4AD-5 again: "HHGrace Fab3" added as a wafer fab for PSoC 1 parts | single source[^pcn-201901] |
 
-The S4 and 0.35 µm {term}`SONOS` work is on {ref}`history-sonos-s4`.
+The S4 and 0.35 µm SONOS work is on {ref}`history-sonos-s4`.
 
 **S8 is not in the 10-Ks.** Cypress's annual reports from 2010 to 2015 list the processes transferred to
 Grace, and none of them names S8 or a 0.13 µm SONOS process (Cypress's reports).[^ar-fy2010][^ar-fy2012][^ar-fy2015]

@@ -260,7 +260,7 @@ announced aligning "our internal Cypress Minnesota process, Titanium
 Tungsten (TiW) based metal stack, with the industry-wide Best Known Method
 Titanium Nitride (TiN) based metal stack", with a qualified stack of
 "150A Ti/250A TiN/3200A Al 0.5% Cu/90A Ti/500A TiN".[^cyp-pin145273][^cyp-qtp-123907]
-Edwards's PDK lecture names the {term}`local interconnect` "Titanium Nitride
+Edwards's PDK lecture names the local interconnect "Titanium Nitride
 (TiN)".[^ann-16]
 
 ### Strength of the evidence
@@ -378,7 +378,7 @@ sputtering recipes are not public.
 
   SkyWater lists
   "Collimated Ti", "Imp TiN" and "ESC TiN" as separate entries, which the
-  pages read as separate chambers.[^skw-01] The nitrogen content of {term}`IMP`
+  pages read as separate chambers.[^skw-01] The nitrogen content of IMP
   TiN at the bottom of a hole depends on the deposition
   mode.[^mao-2004]
 * **TiW or TiN stack.** The step pages describe the Ti/Al–Cu/TiW stack of
@@ -404,7 +404,7 @@ sputtering recipes are not public.
   that it consumes more Al–Cu target per wafer than any other level (its
   arithmetic from the thicknesses).
 * **Copper in the wiring.** The copper that the alloy targets carry is
-  there for {term}`electromigration` lifetime;[^ames-1970][^wiki-em] the
+  there for electromigration lifetime;[^ames-1970][^wiki-em] the
   resulting aluminium–copper lines must then be protected from corrosion
   after the chlorine-based metal etches, as the
   {ref}`metal etcher page <machine-plasma-etcher-metal>` describes.
