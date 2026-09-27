@@ -63,7 +63,7 @@ silica Hoshino et al. examined.[^hoshino-2001]
 Krishnan, Nalaskowski and Cook review the slurry chemistries and
 mechanisms.[^rev-02]
 
-For the STI polish, the slurry must stop on nitride:
+For the {term}`STI` polish, the slurry must stop on nitride:
 America and Babu showed that nitride removal "occurs through tribological
 wear-induced conversion of the nitride to an oxide" and can be
 suppressed by additives, proline in particular, with ceria
@@ -106,7 +106,7 @@ conditioners with uneven diamonds "exhibited high drop in pad cut rate
 and wafer removal rate", with diamonds "missing or sheared off" on some
 tested conditioners.[^kakireddy-2010]
 
-Pads for in-situ optical endpoint
+Pads for in-situ optical {term}`endpoint`
 carry a transparent window.[^pat-cmp-window] In the carrier head, an
 Applied Materials patent explains why a non-uniform load gives
 non-uniform removal and describes a flexible membrane with a retaining
@@ -312,9 +312,9 @@ not public.
   public.
 * **Two tungsten processes.** SkyWater lists "tungsten" and "high
   selectivity tungsten";[^skw-01] the five tungsten step pages do not say
-  which runs where. A slurry with higher selectivity to oxide would
+  which runs where. A slurry with higher {term}`selectivity` to oxide would
   reduce oxide erosion in dense plug arrays (the category page's
-  failure-mode table), at the risk of plug recess (our reading).
+  failure-mode table), at the risk of {term}`plug recess` (our reading).
 * **Fixed-removal oxide polishes.** The inter-metal polishes stop on no
   layer ({ref}`category-cmp`), so their final thickness depends on pad and
   conditioner state as well as time; pad cut rate and removal rate drift
