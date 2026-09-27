@@ -14,7 +14,7 @@ such as a titanium nitride local interconnect or a capacitor top plate.
 | Post-etch treatment | Integrated strip and passivation chambers, such as Applied's strip chamber "based on its 200mm ASP technology".[^amat-300-etch-2000] |
 | Throughput | "45 wafers per hour (WPH) compared to 35 WPH for the competition" claimed for the TCP 9600PTX;[^lam-9600ptx-1999] "more than 50 wafers per hour" for Applied's Metal Etch DPS Plus.[^amat-metal-dps-plus-1999] |
 | 200 mm era | Applied's Metal Etch DPS Centura (1996) and its second-generation chamber (July 1997);[^amat-1997] Lam's TCP 9600, used for "sub 0.5 μm aluminum etching in a 200 mm LAM TCP 9600 Etch Chamber" by 1994,[^christie-1994] its PTX and DFM versions,[^lam-9600ptx-1999][^lam-9600dfm-2001] and the 2300 Versys Metal of 2000.[^lam-2300-2000] |
-| SkyWater-listed tool | Under "Metal Etch": Lam 9600 and Lam 2300 Versys;[^skw-01] see *What SkyWater lists* |
+| SkyWater-listed tool | Under "Metal Etch": "Lam 9600, Al, TiW, TiN, Pt", "Lam 2300 Versys, Al, TiW, TiN, Nb, Pt"[^skw-01] |
 | SKY130 steps | 8 steps; see {ref}`SKY130 steps assigned to this class <machine-plasma-etcher-metal-steps>` |
 
 :::{seealso}
