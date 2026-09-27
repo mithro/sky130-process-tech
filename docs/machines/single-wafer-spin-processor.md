@@ -2,31 +2,28 @@
 # Single-wafer spin processor
 
 A single-wafer spin processor is the wet tool a fab uses when a batch
-bath is too blunt: it holds one wafer on a rotating chuck inside a
+bath is too blunt. It holds one wafer on a rotating chuck inside a
 closed chamber, dispenses an etchant or cleaning chemical onto the
 spinning surface, spins the liquid off into a collecting ring, rinses
-and spins the wafer dry. Because a gas cushion between chuck and wafer
-can keep the liquid off the side facing the chuck, the chemistry can be
-kept to one side, which makes the class the natural tool for removing films from the back of a wafer
-as well as for short HF etches and for cleans after etch or polish.
-This page describes the class in general, lists representative
-200 mm-era models, and then says what SkyWater has published about its
-own tools of this class and which SKY130 steps this reference assigns
-to it. Wet etch and clean chemistry is on the
-{ref}`etch <category-etch>` and {ref}`strip <category-strip>` category
-pages; batch wet tools are on the {ref}`wet bench page
-<machine-wet-bench>`.
+and spins the wafer dry.
 
 | | Single-wafer spin processor |
 |---|---|
-| What it does | Wet etching, film removal and cleaning of one wafer at a time. SEZ introduced its Spin-Processor 223 "for high throughput cleaning and film removal applications", including "backside, bevel/edge and frontside exclusion zone copper decontamination" and "frontside film removal applications".[^sez-223-pr] |
+| What it does | Wet etching, film removal and cleaning of one wafer at a time |
 | Wafer holding | A support with an annular nozzle "chargeable with compressed gas for the formation of a gas cushion between the support (1) and the silicon wafer (11), the gas exiting between the wafer (11) and the support (1) preventing passage of treatment fluid onto the underside of the wafer".[^pat-spin-sez] |
 | Dispense and spin-off | "the remover is dispensed from above and across the rotating wafer by a moving dispense arm" and "immediately spun off into the process chamber where it can be re-circulated"; a multi-stack chamber separates "several chemical and rinse levels".[^sez-polymer-1999] |
 | Chemistries | Dilute HF;[^hattori-1998] HF/HNO₃ for silicon;[^oinoue-2018] an "H2O:H2O2:H2SO4:HF mixture" for backside cleaning;[^broussous-2005] DSP+, a "dilute sulfuric-peroxide-HF mixture" for post-etch residues;[^lee-2012-dsp] solvents.[^sez-polymer-1999] |
 | Throughput | The 223 "can process 80 or more wafers per hour and use up to three chemistries";[^sez-223-pr] the four-chamber 8200 up to "200 wafers per hour".[^sez-8200-2001] |
 | 200 mm era | SEZ's 223, "a robot that transports 200mm wafers from four cassettes to two identical process chambers",[^sez-223-moov] and its four-chamber 4200 and 8200;[^sez-polymer-1999][^sez-8200-2001] the Da Vinci, first sold in 2004,[^sez-2005] for "200- and 300-mm wafers".[^sez-davinci-2008] |
-| SkyWater-listed tool | "Single Wafer": "SEZ223, Davinci, HF, DSP+HF, titration controlled";[^skw-01] a caption naming "a SEZ etcher tool"[^skw-07] |
+| SkyWater-listed tool | SEZ223 and Davinci under "Single Wafer";[^skw-01] a caption naming "a SEZ etcher tool"[^skw-07] |
 | SKY130 steps | 4 steps, plus 14 where it runs a clean; see {ref}`SKY130 steps assigned to this class <machine-single-wafer-spin-processor-steps>` |
+
+:::{seealso}
+Wet etch and clean chemistry is on the
+{ref}`etch <category-etch>` and {ref}`strip <category-strip>` category
+pages; batch wet tools are on the {ref}`wet bench page
+<machine-wet-bench>`.
+:::
 
 ## What the machine class is and how it works
 
@@ -38,26 +35,41 @@ spun off the wafer surface and the wafers are not touched during
 transport".[^sez-8200-2001] Gaulhofer et al. of SEZ and EKC contrasted
 static immersion tanks, which offer "no mechanical velocity", and spray
 batch processors with the spin processor's "rapid exchange of the
-chemical on the surface".[^sez-polymer-1999] What makes a machine a
-production spin processor is the engineering around that: a chuck that
-holds the wafer without contaminating the side not being treated,
-dispense and collection that keep several chemicals apart, rinsing and
-drying in the same chamber, and chemical supply held at a known
-concentration.
+chemical on the surface".[^sez-polymer-1999]
+
+What makes a machine a
+production spin processor is the engineering around that:
+
+* a chuck that
+  holds the wafer without contaminating the side not being treated;
+* dispense and collection that keep several chemicals apart;
+* rinsing and
+  drying in the same chamber;
+* chemical supply held at a known
+  concentration.
+
+Because a gas cushion between chuck and wafer
+can keep the liquid off the side facing the chuck, the chemistry can be
+kept to one side. This makes the class the natural tool for removing films from the back of a wafer
+as well as for short HF etches and for cleans after etch or polish.
 
 ### Chuck and one-sided processing
 
 An SEZ patent of 1988 describes the chuck. The wafer rests on "a gas
 cushion" formed by compressed gas from an annular nozzle, and "the gas
 exiting between the wafer (11) and the support (1)" keeps the treatment
-fluid off the underside; the support sits inside "an annular tank"
+fluid off the underside.[^pat-spin-sez] The support sits inside "an annular tank"
 with "at least two annular ducts", and is lifted, lowered and rotated so
-that each fluid runs into its own duct.[^pat-spin-sez] The description
+that each fluid runs into its own duct.[^pat-spin-sez]
+
+The description
 states the aim as treating wafers "without having to protect the other
 side of the slice-shaped articles, which is not to be treated, by means
-of special measures from attack by the treatment fluid", and explains
+of special measures from attack by the treatment fluid".[^pat-spin-sez] It explains
 that the gas leaving the nozzle blows fluid away from the rim so that it
-"cannot pass onto the underside".[^pat-spin-sez] An SEZ application note
+"cannot pass onto the underside".[^pat-spin-sez]
+
+An SEZ application note
 draws the practical consequence: the chemical spin etcher "requires no
 protection for the device surface" and can remove "multilayer films
 including oxide films, poly-Si and nitride films through one
@@ -69,14 +81,18 @@ available on the market".[^sez-8200-2001]
 
 Chemical reaches the wafer from nozzles or a moving arm and leaves it by
 centrifugal force. On a rotating disk an initially uniform liquid layer
-stays uniform and irregular layers level out.[^emslie-1958] In the SEZ tool Gaulhofer et
-al. describe, the stacked chamber keeps chemical and rinse levels apart,
-and "A short high-speed spin-off step of the chemical before water rinse
+stays uniform and irregular layers level out.[^emslie-1958]
+
+In the SEZ tool Gaulhofer et
+al. describe, the stacked chamber keeps chemical and rinse levels apart.
+"A short high-speed spin-off step of the chemical before water rinse
 removes excess chemical from the wafer surface, thus improving the
 effectiveness of the DI water rinse and acts as a temporary stop for the
-remover". Their post-etch residue cleans on 200 mm wafers ran for "10 to
+remover".
+
+Gaulhofer et al.'s post-etch residue cleans on 200 mm wafers ran for "10 to
 120 seconds" at "400 to 800 rpm", with a remover flow of "0.8 to 2.0
-liter/minute"; for a 30-second process they estimated "only 0.75 liter
+liter/minute".[^sez-polymer-1999] For a 30-second process they estimated "only 0.75 liter
 of chemical and 0.5 liter of DI-water" per wafer, with the chemical
 "re-circulated, filtered and re-used".[^sez-polymer-1999]
 
@@ -86,13 +102,16 @@ An etch on a spinning wafer need not be uniform across it. For silicon in HF/HNO
 followed by dissolution,[^schwartz-1976] Oinoue et al. found that in a
 single-spin process "Si etch rate distributions largely differ with
 different HF/HNO3 concentrations", while oxide etch-rate distributions
-stay similar, and traced the difference to consumption of HF or HNO₃
-across the wafer.[^oinoue-2018] Short cycles become practical: Hattori
+stay similar.[^oinoue-2018] They traced the difference to consumption of HF or HNO₃
+across the wafer.[^oinoue-2018]
+
+Short cycles become practical: Hattori
 et al. cleaned wafers by "alternately supplying ozonized water and dilute
 HF for only 10 s each onto a rotating silicon wafer through jet
-nozzles",[^hattori-1998] and later removed particulate and metallic
+nozzles".[^hattori-1998] They later removed particulate and metallic
 contamination "in 20 s" with an ultra-dilute HF and nitrogen spray,
 with silicon and oxide losses "below 0.003 and 0.03 nm".[^hattori-2007]
+
 Nitride also etches in HF, by a mechanism that explains the "etch
 selectivity between these two materials", nitride and oxide.[^knotter-2001] Dilute HF can
 be monitored in line: Kikuyama et al. showed that conductivity "can be used to monitor the etching rate
@@ -105,13 +124,17 @@ Published cleans of the class use solvents and acids. For residues after
 a metal etch, SEZ and EKC used room-temperature semi-aqueous removers on
 an SEZ spin processor, on "oxide/titanium/TiN/AlCu metal stack etched by
 a LAM TCP9600 etcher", with cleaning times from 10 to 120 seconds and
-blanket etch rates below 5 Å/min for AlCu.[^sez-polymer-1999] For
+blanket etch rates below 5 Å/min for AlCu.[^sez-polymer-1999]
+
+For
 post-etch residues around metals, dilute sulphuric–peroxide with HF (DSP+) "is
 currently used for the removal of post etch residues on device surface,
 to replace the conventional SPM cleaning".[^lee-2012-dsp] A monitoring
 system described by Fraunhofer IMM gives one DSP composition, "3.7 wt%
 hydrogen peroxide (H2O2) and 8.5 wt% sulfuric acid (H2SO4) dissolved in
-water", and names "150 ppm or 300 ppm" HF for DSP+.[^fraunhofer-dsp] On
+water", and names "150 ppm or 300 ppm" HF for DSP+.[^fraunhofer-dsp]
+
+On
 the backside, Broussous et al. used an SEZ spin processor and "an
 H2O:H2O2:H2SO4:HF mixture" to remove metals "by etching a few angstroms
 of the wafer backside, whatever its coating".[^broussous-2005] An SEZ
@@ -132,29 +155,27 @@ rinse.[^sez-polymer-1999]
 
 ## Representative 200 mm-era models
 
-* **SEZ,** with headquarters in Villach, Austria.[^sez-8200-2001] The
-  Spin-Processor 223, introduced in 1999 with "dual processing chambers
-  and a small footprint design";[^sez-223-pr] a used-equipment listing
-  describes the 200 mm tool, with options including "Film Removal End
-  Point Detection" and applications from "Backside Film Removal" to
-  "Oxide Etching" and "Post-CMP-Cleaning".[^sez-223-moov] The four-chamber
-  4200, and the 8200 of 2001, "based on the company's Spin-Processor
-  4200, with an incorporated double sided cleaning
-  system".[^sez-8200-2001] The Da Vinci family, "Having sold the first
-  Da Vinci tool in Q2 04";[^sez-2005] SEZ later described it as a
-  platform for "back-end-of-line (BEOL) polymer cleaning and backside
-  etch and clean" on "200- and 300-mm wafers", "Originally developed to
-  address 90-nm technology nodes".[^sez-davinci-2008] In December 2007
-  SEZ's board signed an agreement for a Lam Research tender offer, after
-  which SEZ was to become "a new division within Lam with capabilities focused around single-wafer
-  cleaning technology"; SEZ then had "an installed base of over 1,200
-  tools".[^sez-lam-2007]
-* **SCREEN (formerly Dainippon Screen).** The SP-2100 spin processor of
-  2020, "able to process wafer sizes of up to 200 mm (8")" and equipped
-  optionally for metal etching, is a current model of the
-  class.[^screen-sp2100]
-* **Other vendors.** The {ref}`BFR <step-060>` page also names SCP/Akrion
-  spin tools; no vendor description of them was retrieved for this page.
+:::{table} Representative single-wafer spin processors (figures as each source gives them)
+
+| Vendor | Model | Year | Published figures |
+|---|---|---:|---|
+| SEZ | Spin-Processor 223 | 1999 | with "dual processing chambers and a small footprint design";[^sez-223-pr] a used-equipment listing describes the 200 mm tool, with options including "Film Removal End Point Detection" and applications from "Backside Film Removal" to "Oxide Etching" and "Post-CMP-Cleaning"[^sez-223-moov] |
+| SEZ | 4200 | — | four-chamber[^sez-8200-2001] |
+| SEZ | 8200 | 2001 | "based on the company's Spin-Processor 4200, with an incorporated double sided cleaning system"[^sez-8200-2001] |
+| SEZ | Da Vinci family | — | "Having sold the first Da Vinci tool in Q2 04";[^sez-2005] SEZ later described it as a platform for "back-end-of-line (BEOL) polymer cleaning and backside etch and clean" on "200- and 300-mm wafers", "Originally developed to address 90-nm technology nodes"[^sez-davinci-2008] |
+| SCREEN (formerly Dainippon Screen) | SP-2100 spin processor | 2020 | "able to process wafer sizes of up to 200 mm (8")" and equipped optionally for metal etching; a current model of the class[^screen-sp2100] |
+:::
+
+SEZ introduced its Spin-Processor 223 "for high throughput cleaning and film removal applications", including "backside, bevel/edge and frontside exclusion zone copper decontamination" and "frontside film removal applications".[^sez-223-pr]
+
+**SEZ,** with headquarters in Villach, Austria.[^sez-8200-2001] In December 2007
+SEZ's board signed an agreement for a Lam Research tender offer, after
+which SEZ was to become "a new division within Lam with capabilities focused around single-wafer
+cleaning technology"; SEZ then had "an installed base of over 1,200
+tools".[^sez-lam-2007]
+
+**Other vendors.** The {ref}`BFR <step-060>` page also names SCP/Akrion
+spin tools; no vendor description of them was retrieved for this page.
 
 ## At SkyWater
 
@@ -167,14 +188,18 @@ Capabilities* page lists:[^skw-01]
 > "Single Wafer"
 > – "SEZ223, Davinci, HF, DSP+HF, titration controlled"
 
-Read term by term: we read "SEZ223" as SEZ's Spin-Processor
-223;[^sez-223-pr] "Davinci" matches SEZ's Da Vinci
-family,[^sez-davinci-2008] though the entry names no vendor for it;
-"HF" names the etchant without a concentration; "DSP+HF"
-we read as dilute sulphuric–peroxide with HF, the mixture published as
-DSP+;[^lee-2012-dsp][^fraunhofer-dsp] and "titration controlled" we read
-as chemical concentration held by titration, which the page does not
-explain.[^skw-01] The entry does not say how many tools there are,
+:::{table} How this reference reads the "Single Wafer" entry
+
+| Entry as listed | What it names | Status |
+|---|---|---|
+| "SEZ223" | SEZ's Spin-Processor 223[^sez-223-pr] | we read |
+| "Davinci" | matches SEZ's Da Vinci family,[^sez-davinci-2008] though the entry names no vendor for it | — |
+| "HF" | the etchant, without a concentration | — |
+| "DSP+HF" | dilute sulphuric–peroxide with HF, the mixture published as DSP+[^lee-2012-dsp][^fraunhofer-dsp] | we read |
+| "titration controlled" | chemical concentration held by titration, which the page does not explain[^skw-01] | we read |
+:::
+
+The entry does not say how many tools there are,
 whether HF and DSP+HF run on both, what wafer size the Da Vinci takes,
 or whether either tool has a backside or brush module. SkyWater's
 maintenance-technician profile adds a caption in which a technician
@@ -281,29 +306,37 @@ public.
 
 * **Backside film removal.** On the {ref}`BFR <step-060>` page's
   reading, the step strips the furnace films from the back of the wafer
-  before the gate mask. The page reads
+  before the gate mask.
+
+  The page reads
   the tool as SEZ 223 (inference) and describes a chuck that touches
   only the edge or floats the wafer on a nitrogen cushion, with the front
-  protected by gas flow and geometry; the SEZ patent's gas cushion keeps
+  protected by gas flow and geometry. The SEZ patent's gas cushion keeps
   the treatment fluid off the side facing the support.[^pat-spin-sez]
 * **HF etches over thin oxides.** {ref}`TUNME <step-039>`,
   {ref}`GOXETCH <step-046>` and {ref}`SACETCH <step-095>` offer a
   single-wafer wet tool as one option beside the batch benches; both SEZ
   "HF" and the benches' HF are listed, so the listing does not choose
-  between them.[^skw-01] Very dilute HF on a spin tool can clean with
+  between them.[^skw-01]
+
+  Very dilute HF on a spin tool can clean with
   oxide loss below 0.03 nm;[^hattori-2007] an etch that must clear an
   oxide uses a stronger mix or a longer time (industry practice).
 * **Cleans after contact and via etches.** The contact and via etch
   pages ({ref}`CTME <step-108>`, {ref}`VIME <step-119>`,
   {ref}`VIM2E <step-130>`, {ref}`VIM3E <step-145>`) name a wet bench or
-  single-wafer clean for post-etch residue. DSP+ was published as a
+  single-wafer clean for post-etch residue.
+
+  DSP+ was published as a
   replacement for SPM on post-etch residues,[^lee-2012-dsp] and SEZ's
   residue work used an aluminium stack etched on a Lam TCP 9600, a model
   SkyWater also lists;[^sez-polymer-1999][^skw-01] neither source
   concerns SKY130.
 * **Post-CMP clean.** Nine of the CMP pages list SEZ/Lam Da Vinci among
   post-CMP brush scrubbers, and all name the SEZ tools as SkyWater's
-  candidate. The SEZ 223 listing names "Post-CMP-Cleaning" as an
+  candidate.
+
+  The SEZ 223 listing names "Post-CMP-Cleaning" as an
   application,[^sez-223-moov] and SEZ's note describes backside
   wet-etch cleaning after CMP;[^kinoshita-sez] neither mentions a brush,
   so whether SkyWater's tools scrub the front side is an open question
@@ -318,25 +351,19 @@ public.
 
 ## Related pages
 
-* {ref}`category-etch` — wet etching and the single-wafer spin etcher
-  for backside film removal.
-* {ref}`category-strip` — wet strip and clean chemistry.
-* {ref}`machine-wet-bench` — the batch benches and spray processors that
-  share the HF and clean steps.
-* {ref}`machine-post-cmp-cleaner` — the post-CMP clean that the CMP pages
+* **Category.** {ref}`category-etch` — wet etching and the single-wafer spin etcher
+  for backside film removal. {ref}`category-strip` — wet strip and clean chemistry.
+* **Machines.** {ref}`machine-wet-bench` — the batch benches and spray processors that
+  share the HF and clean steps. {ref}`machine-post-cmp-cleaner` — the post-CMP clean that the CMP pages
   assign to this class's listed tools.
-* {ref}`machines-index` — all machine classes, SkyWater's listed tools
-  and the step assignments.
-* {ref}`materials-index` — HF, sulphuric acid, peroxide and solvents.
-* {ref}`material-wet-chemicals` — the acids, peroxide cleans and solvents,
-  their grades and SkyWater's listed chemistries.
-* {ref}`material-ultrapure-water` — rinse water, its standards and
-  quality.
-* {ref}`material-hardware-consumables` — chamber parts and waste
-  treatment, including BFR's chuck and nozzle consumables.
-* {ref}`material-process-gases` — nitrogen, oxygen, hydrogen, argon,
+* **Materials.** {ref}`material-wet-chemicals` — the acids, peroxide cleans and solvents,
+  their grades and SkyWater's listed chemistries. {ref}`material-ultrapure-water` — rinse water, its standards and
+  quality. {ref}`material-hardware-consumables` — chamber parts and waste
+  treatment, including BFR's chuck and nozzle consumables. {ref}`material-process-gases` — nitrogen, oxygen, hydrogen, argon,
   helium and the oxidation additives, their grades and SkyWater's listed
   gases.
+* **Indexes.** {ref}`machines-index` — all machine classes, SkyWater's listed tools
+  and the step assignments. {ref}`materials-index` — HF, sulphuric acid, peroxide and solvents.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
 ### Related patents, papers and filings

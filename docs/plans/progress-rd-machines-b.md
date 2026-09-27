@@ -504,6 +504,56 @@ belonged to Perloff's finding), the Related-pages bullet (no markers in the base
 
 Content problems for the owner: none found.
 
+### 9. `docs/machines/single-wafer-spin-processor.md` — done
+
+Rules applied: R-INTRO, R-MODELS, R-ENTRIES, R-QUICKFACTS, R-PARA, R-SENTENCE, R-LIST, R-RELATED,
+R-CAPTION.
+
+* **R-INTRO.** 168 → 54 words: the first sentence, split at its colon ("It holds one wafer …").
+  The second sentence ("Because a gas cushion … after etch or polish.", 56 words) moved to the
+  end of the first H2's lead and split at ", which makes" → "This makes the class …" (R-SENTENCE
+  step 7). Pointer → `{seealso}`. Deleted template sentence: "This page describes the class in
+  general, lists representative 200 mm-era models, and then says what SkyWater has published about
+  its own tools of this class and which SKY130 steps this reference assigns to it."
+* **R-MODELS.** Three bullets → 5 rows + three remarks (the SEZ 223 sentence moved from the quick
+  facts; **SEZ,** Villach and the 2007 Lam tender; **Other vendors.**). Year cells: Spin-Processor
+  223 1999 ("introduced in 1999", unquoted), 8200 2001 ("the 8200 of 2001"), SP-2100 2020 ("of
+  2020"). `—` for the 4200 and for the Da Vinci family (its date is inside the quotation "Having
+  sold the first Da Vinci tool in Q2 04", not cut).
+* **R-ENTRIES.** The "Read term by term" sentence → 5 rows. Status "we read" (the page's words) on
+  "SEZ223", "DSP+HF" and "titration controlled"; `—` on "Davinci" (the page: "matches") and "HF".
+  The rest of the paragraph stays as prose.
+* **R-QUICKFACTS.** Cells over cap 7 → 6 by count. What it does: "SEZ introduced its
+  Spin-Processor 223 "for high throughput …" …" moved verbatim under the models table; the cell
+  keeps its first sentence (which had no marker of its own). SkyWater-listed tool: the entry's
+  quotation DEDUPLICATED (blockquote), 3 → 2 quotations. Left: Wafer holding (one 43-word patent
+  quotation, longer than the body's excerpts), Dispense and spin-off (three quotations only here,
+  with no subject to stand as a body sentence), Chemistries, Throughput, 200 mm era (quotations and
+  figures only here).
+* **R-PARA / R-SENTENCE / R-LIST.** "What makes a machine a production spin processor …:" → four
+  items. H3 bodies split at source seams; sentences split at semicolons (the SEZ patent, the
+  Gaulhofer figures) and at ", and explains" ("It explains …"), ", and traced" ("They traced …"),
+  ", and later removed" ("They later removed …"). "Their post-etch residue cleans" (new paragraph)
+  → "Gaulhofer et al.'s …". Four integration items → lead + continuation.
+* **R-RELATED**, **R-CAPTION** as page 1.
+
+Caps (measure5): paragraphs > 100 7 → 0; list items > 60 5 → 0; sentences > 45 12 → 2 (the
+untouched grading bullet; a Related-pages false flag, reviewer checklist item 12); table cells >
+25 4 → 5 (three quick-facts cells; the 223 and Da Vinci rows, whose length is their quotations).
+
+Preservation. DEDUPLICATED: number 200 (template sentence); quote "SEZ223, Davinci, HF, DSP+HF,
+titration controlled". ADDED quote: "Single Wafer" (the entries-table caption). ADDED markers:
+`oinoue-2018`, `pat-spin-sez` ×2, `sez-polymer-1999` (splits), `sez-8200-2001` (the 4200 and 8200
+rows of one sentence). **number_order**: the SEZ bullet's digits read in the same order through the
+rows, except that the SCREEN row now stands between the Da Vinci row and the SEZ remark (2007,
+1,200) — reported REGROUPED by the tool, checked by hand. Template losses: `about`, `SKY130`.
+Strict words: template sentence; "introduced" (Year cell); "their" (noun restored); "read", "term"
+(entries table); the quick-facts entry. Marker coverage: 9 flags, all read — model cells, table
+headers, entry rows whose Status column carries the hedge, the BFR split (the base marker belonged
+to the patent clause).
+
+Content problems for the owner: none found.
+
 ## Guide problems
 
 1. **`measure5.py` fuses a sentence ending in "…ch."** Its abbreviation guard `(?<!ch\.)` (meant
