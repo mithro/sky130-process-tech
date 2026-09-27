@@ -21,7 +21,7 @@ on {ref}`history-naming`.
 | 90 nm | R9T-3R, R9Q-3R, C9FD-3R, R95LD-3R | Fab 4 | moved to Fab 4 in 2002 |
 
 The sections below give each row's sources. Which code belongs to which generation is our reading of
-the design rules the reports print (see {ref}`history-naming`). The SONOS process S4AD-5 has its own page,
+the design rules the reports print (see {ref}`history-naming`). The {term}`SONOS` process S4AD-5 has its own page,
 {ref}`history-sonos-s4`.
 
 (history-tech-early)=
@@ -29,7 +29,7 @@ the design rules the reports print (see {ref}`history-naming`). The SONOS proces
 
 Cypress's 1988 data book describes its first process: "a 1.2 micron "N" well technology with double layer
 poly, and a single layer metal", with lightly doped source and drain extensions. The same book says a
-0.8 µm process was in production, and lists "multi-layer metal interconnections", silicides and plasma
+0.8 µm process was in production, and lists "multi-layer metal interconnections", {term}`silicides <silicide>` and plasma
 etching as recent innovations (single source).[^databook-1988] The Gale company history dates the first product, a
 1.2 µm CMOS memory, to early 1984.[^fu-cypress]
 
@@ -47,7 +47,7 @@ technology" for fast EPROMs, with bipolar sense amplifiers, and reports a 12 ns 
 
 **P20.** The one 0.8 µm process in the qualification reports is P20, at Fab 2, for the CY7C344 and
 CY7C346 MAX EPLDs: two metal layers and 195 Å of gate oxide (Cypress's reports).[^qtp-091216][^qtp-093332]
-Its history lists a military qualification "with ONO" without saying what the ONO was for. The history
+Its history lists a military qualification "with ONO" without saying what the {term}`ONO` was for. The history
 rows are undated; the QTP number, 93321, suggests 1993 (our reading).[^qtp-091216]
 No report found covers the 1.2 µm process.
 
@@ -96,7 +96,7 @@ fabrication of ICs having 0.5-micron feature geometry". The 1996 report says it 
 1996 10-Q speaks of ramping its 0.5 µm process "to full commercial production".[^eet-1997-sram035][^tenq-1996q3]
 
 **R32.** The qualification reports call the 0.5 µm SRAM process R32 (one metal layer) and R32D (two metal
-layers, with local interconnect), both with 145 Å of gate oxide and both at Fab 4 (Cypress's
+layers, with {term}`local interconnect`), both with 145 Å of gate oxide and both at Fab 4 (Cypress's
 reports).[^qtp-097132][^qtp-098021] That R32 is RAM3 is our reading of the matching name and design rule;
 no report says so.
 
@@ -193,7 +193,7 @@ disagree on R7's node.[^pin-152804][^qtp-011908]
 0.15 µm CMOS technology "with single poly, and buried channel PMOS" (single source).[^kitonaki-2006]
 
 **Metal.** The R7 stacks put 150 Å of titanium under the aluminium and 300 Å of TiW on top, with 1000 Å of
-TEOS and 9000 Å of nitride as passivation. S8 keeps the titanium, aluminium and TiW sandwich, with 100 Å of
+{term}`TEOS` and 9000 Å of nitride as passivation. S8 keeps the titanium, aluminium and TiW sandwich, with 100 Å of
 titanium on its first two metals, but the 2008 S8 report prints a nitride-only passivation of
 7000 ± 2000 Å (Cypress's reports).[^qtp-011908][^qtp-113005]
 
@@ -212,7 +212,7 @@ reports):[^qtp-024110][^qtp-043004][^qtp-053301]
 * **R8LD-1.8**, also printed RAM8NLD-1.8: "New Technology R8LD-1.8V" in March 2003, two metal layers, 26 Å
   of gate oxide, low-power SRAMs.
 * **C8**, a logic process: "New C8Q-3R Technology" in January 2005, and L8C-3R is a "Technology Derivative
-  of the C8 Technology".[^qtp-053301] Both have four metal layers and a dual gate oxide of 32 Å and 55 Å, for clock
+  of the C8 Technology".[^qtp-053301] Both have four metal layers and a {term}`dual gate oxide` of 32 Å and 55 Å, for clock
   and PLL parts. Two reports name different first rows for C8Q-3R, QTP 033805 (USB parts) and QTP 042106
   (a DDR2 PLL), both of January 2005; the reports disagree.[^qtp-071005][^qtp-042106]
 
@@ -252,7 +252,7 @@ The qualification reports do not say how devices are isolated, with one exceptio
 B55SGT, the SiGe process, prints "Bipolar Isolation" as "STI" (single source).[^qtp-051101] Papers and
 patents fill part of the gap. A patent shows what Cypress worked on, not what a production process used.
 
-* **LOCOS.** A Cypress patent filed in 1987 is a LOCOS process "for minimizing bird's beak" (single
+* **LOCOS.** A Cypress patent filed in 1987 is a {term}`LOCOS` process "for minimizing bird's beak" (single
   source).[^pat-us4764248]
 * **LOCOS in production.** The 1994 EPROM paper uses poly-buffered LOCOS at 0.65 µm, and a 1999 paper
   describes LOCOS "in 0.25 µm static random access memory (SRAM) technology" (Cypress's
