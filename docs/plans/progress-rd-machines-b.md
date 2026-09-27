@@ -126,6 +126,76 @@ number), repeated markers above.
 
 Content problems for the owner: none found.
 
+### 2. `docs/machines/plasma-etcher-metal.md` — done
+
+Rules applied: R-INTRO, R-MODELS, R-QUICKFACTS, R-PARA, R-SENTENCE, R-LIST, R-RELATED, R-CAPTION.
+Skipped R-ENTRIES: the "Read term by term" paragraph glosses the materials across both entries
+("both entries name …, and the 2300 entry adds niobium; neither names …"), not entry by entry; a
+per-entry table would have to quote parts of each entry separately. It was split instead. The
+three in-force notes are untouched, and each still follows its own paragraph.
+
+* **R-INTRO.** 132 → 43 words: the "what it is" sentence. "It etches in chlorine chemistries …
+  vacuum clean." moved to open the first H2, subject restored ("It" → "A metal plasma etcher").
+  Pointer sentence → `{seealso}`. Deleted template sentence: "This page describes the class in
+  general, lists representative 200 mm-era models, and then says what SkyWater has published about
+  its own tools of this class and which SKY130 steps this reference assigns to it."
+* **R-MODELS.** Three bullets → an 11-row table (Lam, then Applied, in the page's order) plus
+  **Other vendors.** under it. Year cells: 2300 Versys Metal 2000 (the quick facts' "the 2300
+  Versys Metal of 2000"); MxP "from 1993"; Metal Etch DPS Centura 1996; second-generation DPS metal
+  chamber July 1997; Metal Etch DPS Plus Centura 1999; Metal Etch DPS 300 2000 — each a year the
+  page writes directly after the model's name. `—` for TCP 9600 ("by 1994" is when it was used, kept
+  in Published figures), TCP 9600SE ("with a microwave stripper option (1998)"), TCP 9600PTX
+  ("… demonstrated (1999)"), TCP 9600DFM ("… applications" (2001)): in those three the page's year
+  follows a clause about an option, a qualification or an application, so it stays with that clause
+  in Published figures. Precision 5000 `—` ("metal etch from 1989–1990").
+* **R-QUICKFACTS.** Cells over cap 7 → 4.
+  * What it does: the Lam 9600SE quotation ("meets all requirements …") moved verbatim, as its own
+    sentence with its marker, under the models table; the cell keeps its first clause (which had no
+    marker of its own).
+  * Plasma source: "Earlier parallel-plate tools etched aluminium in "BCl3/CL2 plasmas"." moved
+    verbatim to `### Plasma source and chamber`, after the TCP/DPS sentence. Two quotations remain
+    (TCP, DPS), neither in the body: left at 22 words.
+  * Chemistry: the BCl₃ quotation (DEDUPLICATED) and "N₂ additions give a tapered profile in a TCP
+    etcher" (body: Allen and Rickard, `### Aluminium chemistry …`) deleted.
+  * Post-etch treatment: the Christie quotation (DEDUPLICATED) and "the microwave stripper Lam
+    offered for the TCP 9600SE[^lam-9600se-stripper-1998]" (body: `### Corrosion control …`, "Lam's
+    microwave stripper for the TCP 9600SE …"[^lam-9600se-stripper-1998]) deleted; value first.
+  * SkyWater-listed tool: the two entries (DEDUPLICATED, blockquote) → "Lam 9600 and Lam 2300
+    Versys", plus a pointer.
+  * Left over cap: Throughput (29 words, two quotations: moving either breaks the cell's number
+    order 45, 35, 9600, 50), 200 mm era (45 words, dates and a quotation found only here, in one
+    number-order unit).
+* **R-PARA / R-SENTENCE / R-LIST.** Five H3 bodies split at source seams. Split: Chen ("…, and
+  that" → "They found that", marker repeated); the AT&T / Allen sentence at ", and"; the MiM
+  pointer sentence at its semicolon (wording kept). "Three kinds of metal etch" (167 words, one
+  104-word sentence) → "The class covers:" and three plain items, the "— though a 2014 report …
+  —" dash material after the list as "A 2014 report, though, records …" (R-SENTENCE step 7), and the
+  PDK/TiW sentences split at their semicolon. "Stopping on tungsten plugs …" (94 words, one sentence)
+  → lead of two sentences and a continuation (the in-force pointer wording unchanged).
+* **R-RELATED**, **R-CAPTION**: as page 1.
+
+Caps (measure5): paragraphs > 100 6 → 0; list items > 60 3 → 0; sentences > 45 11 → 3; table
+cells > 25 6 → 3. Left: the Christie sentence (48 words, 30 of them inside three quotations), a
+false 56-word flag (measure5 fuses "…as silicon etch." with the next sentence; guide problem 1),
+and the grading bullet under `### SKY130 steps assigned`, untouched by rule. Cells: Throughput, 200
+mm era, and the 9600DFM row (27 words, three quotations).
+
+Preservation. DEDUPLICATED: markers `wiki-bcl3`, `allen-1994`, `christie-1994`; number 200; quotes
+the BCl₃ and Christie quotations and both SkyWater entries. **LOST marker `lam-9600se-stripper-1998`
+×1 and number `9600` ×1**: the Post-etch cell's copy of "the microwave stripper Lam offered for the
+TCP 9600SE[^lam-9600se-stripper-1998]" was deleted as a copy of the body sentence named above; the
+tool cannot reclassify it because the What-it-does sentence, carrying the same marker and "9600",
+moved into the body in the same edit (body count +1, quick facts −2). Net count checked by hand: the
+body now has both the remark and the Corrosion sentence. ADDED markers: `amat-1997` ×3 (one per
+Applied row of the 1989–1997 clause), `chen-1989` (the Chen split). REGROUPED: the two model bullets
+→ rows (same digits, same order); the "Three kinds" item → list + paragraph. Template losses:
+`about`, `SKY130`. Strict words: every lost content word is from the template sentence or the
+deleted quick-facts clauses listed above. Marker coverage: 13 flags, all read — list items keep
+their own markers; the "The class covers:" lead-in had none; the MiM and capacitor pointer clauses
+had none in the base; the skw-01 of the new SkyWater cell is the cell's own.
+
+Content problems for the owner: none found.
+
 ## Guide problems
 
 1. **`measure5.py` fuses a sentence ending in "…ch."** Its abbreviation guard `(?<!ch\.)` (meant

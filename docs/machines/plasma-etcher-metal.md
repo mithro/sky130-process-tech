@@ -5,28 +5,30 @@ A metal plasma etcher is the single-wafer dry-etch tool a fab uses to
 pattern its aluminium interconnect: the titanium, aluminium–copper and
 refractory-metal stacks of each metal level, and thin conductor films
 such as a titanium nitride local interconnect or a capacitor top plate.
-It etches in chlorine chemistries, controls the profile with a
-sidewall film, and — because chlorine left on an aluminium line
-corrodes it — is usually built as a cluster with passivation and resist
-strip chambers so that the wafer leaves the vacuum clean. This page
-describes the class in general, lists representative 200 mm-era
-models, and then says what SkyWater has published about its own tools
-of this class and which SKY130 steps this reference assigns to it. The
-physics and chemistry of plasma etching are on the
-{ref}`category page <category-etch>`.
 
 | | Plasma etcher: metal |
 |---|---|
-| What it does | Anisotropic etching of aluminium alloys and the Ti, TiN and TiW layers around them in chlorine plasmas; Lam's TCP 9600SE "meets all requirements for aluminum and tungsten interconnect etch processing for sub-0.25-micron designs".[^lam-9600se-stripper-1998] |
-| Plasma source | High-density inductive with separate wafer bias: Lam's "patented high-density Transformer Coupled Plasma etch technology"[^lam-9600se-stripper-1998] and Applied Materials' "DPS (decoupled plasma source) technology".[^amat-metal-dps-plus-1999] Earlier parallel-plate tools etched aluminium in "BCl3/CL2 plasmas".[^chen-1989] |
-| Chemistry | Cl₂ with BCl₃; the aluminium etch rate "is primarlly dependent upon the Cl2 concentration", with additives for anisotropy;[^chen-1989] BCl₃ "etches metal oxides by formation of a volatile BOClx and MxOyClz compounds";[^wiki-bcl3] N₂ additions give a tapered profile in a TCP etcher.[^allen-1994] |
-| Post-etch treatment | "Unlike other films, metal etching requires post etch treatment to prevent the onset of corrosion";[^christie-1994] integrated strip and passivation chambers, such as the microwave stripper Lam offered for the TCP 9600SE[^lam-9600se-stripper-1998] and Applied's strip chamber "based on its 200mm ASP technology".[^amat-300-etch-2000] |
+| What it does | Anisotropic etching of aluminium alloys and the Ti, TiN and TiW layers around them in chlorine plasmas |
+| Plasma source | High-density inductive with separate wafer bias: Lam's "patented high-density Transformer Coupled Plasma etch technology"[^lam-9600se-stripper-1998] and Applied Materials' "DPS (decoupled plasma source) technology".[^amat-metal-dps-plus-1999] |
+| Chemistry | Cl₂ with BCl₃; the aluminium etch rate "is primarlly dependent upon the Cl2 concentration", with additives for anisotropy.[^chen-1989] |
+| Post-etch treatment | Integrated strip and passivation chambers, such as Applied's strip chamber "based on its 200mm ASP technology".[^amat-300-etch-2000] |
 | Throughput | "45 wafers per hour (WPH) compared to 35 WPH for the competition" claimed for the TCP 9600PTX;[^lam-9600ptx-1999] "more than 50 wafers per hour" for Applied's Metal Etch DPS Plus.[^amat-metal-dps-plus-1999] |
 | 200 mm era | Applied's Metal Etch DPS Centura (1996) and its second-generation chamber (July 1997);[^amat-1997] Lam's TCP 9600, used for "sub 0.5 μm aluminum etching in a 200 mm LAM TCP 9600 Etch Chamber" by 1994,[^christie-1994] its PTX and DFM versions,[^lam-9600ptx-1999][^lam-9600dfm-2001] and the 2300 Versys Metal of 2000.[^lam-2300-2000] |
-| SkyWater-listed tool | Under "Metal Etch": "Lam 9600, Al, TiW, TiN, Pt", "Lam 2300 Versys, Al, TiW, TiN, Nb, Pt"[^skw-01] |
+| SkyWater-listed tool | Under "Metal Etch": Lam 9600 and Lam 2300 Versys;[^skw-01] see *What SkyWater lists* |
 | SKY130 steps | 8 steps; see {ref}`SKY130 steps assigned to this class <machine-plasma-etcher-metal-steps>` |
 
+:::{seealso}
+The
+physics and chemistry of plasma etching are on the
+{ref}`category page <category-etch>`.
+:::
+
 ## What the machine class is and how it works
+
+A metal plasma etcher etches in chlorine chemistries, controls the profile with a
+sidewall film, and — because chlorine left on an aluminium line
+corrodes it — is usually built as a cluster with passivation and resist
+strip chambers so that the wafer leaves the vacuum clean.
 
 Aluminium etches spontaneously in chlorine,[^cooperberg-2002] so a metal etcher does not
 need ions to make the reaction happen; it needs them to make it
@@ -35,6 +37,7 @@ wafer. Schaible, Metzger and Anderson described the principle in 1978:
 halogen ion species "react with the metal to form volatile or easily
 sputtered compounds", the reactive species "greatly enhances the etch
 rate, while the electric field maintains the directionality".[^schaible-1978]
+
 What makes a machine a *metal* etcher is therefore a chlorine-tolerant
 chamber and gas system, sidewall-passivation control, a sequence that
 breaks through oxide and refractory layers above and below the
@@ -50,12 +53,17 @@ sources as silicon etch. Lam's TCP 9600 family is built on a planar
 coil outside the chamber that induces "a planar region of ionic and
 radical species" above the wafer,[^pat-tcp-lam][^lam-9600se-stripper-1998]
 and Applied's Metal Etch DPS on a multi-section coil with an isolated
-lid.[^pat-dps-amat][^amat-metal-dps-plus-1999] Christie et al.
+lid.[^pat-dps-amat][^amat-metal-dps-plus-1999] Earlier parallel-plate
+tools etched aluminium in "BCl3/CL2 plasmas".[^chen-1989]
+
+Christie et al.
 optimised "Chemistries, powers, and pressures" in a 200 mm TCP 9600
 chamber for "higher selectivities (<5:1) to photoresist, less RIE lag
 (<15%), and more uniform profiles across a wafer", together with
 "better particle control and the extended life of etch tool
-hardware".[^christie-1994] Chamber materials are chosen against
+hardware".[^christie-1994]
+
+Chamber materials are chosen against
 corrosion: Applied's 300 mm DPS chamber uses "200mm-proven chamber materials and
 surface coatings" that "minimizes corrosion and
 defects".[^amat-300-etch-2000] Cooperberg, Vahedi and Gottscho related
@@ -67,21 +75,25 @@ profile.[^cooperberg-2002]
 
 Chen, DeOrnellas and Burke found in a parallel-plate etcher that the
 aluminium etch rate "is primarlly dependent upon the Cl2 concentration
-and is only slightly dependent upon the rf power", and that "Several
+and is only slightly dependent upon the rf power".[^chen-1989] They found that "Several
 additives are used to achieve the high resolution and anisotropic
 pattern required for aluminum alloys".[^chen-1989] BCl₃ is the usual
 partner of Cl₂: it "etches metal oxides by formation of a volatile
 BOClx and MxOyClz compounds",[^wiki-bcl3] and so clears the native
-oxide on the aluminium. Bell, Anderson and Light measured Al/SiO₂ and
-Al/photoresist etch-rate ratios of 13:1 and 2.5:1 for anisotropic
+oxide on the aluminium.
+
+Bell, Anderson and Light measured
+Al/SiO₂ and Al/photoresist etch-rate ratios of 13:1 and 2.5:1 for anisotropic
 etching "in a conventional mixture of BCl3/Cl2".[^bell-1988] Because
 the reaction is spontaneous, the profile is set by what deposits on
 the sidewalls. Cooperberg et al. model the "Competition between etching
 and deposition on feature sidewalls" with a carbon-bearing depositor
-(CClₓ).[^cooperberg-2002] Carbon and nitrogen additions tilt
+(CClₓ).[^cooperberg-2002]
+
+Carbon and nitrogen additions tilt
 the balance toward taper: an AT&T patent uses "trifluoromethane and
 chlorine in controlled amounts to create a tapered metal layer
-profile",[^pat-taper-att] and Allen and Rickard achieved a tapered
+profile".[^pat-taper-att] Allen and Rickard achieved a tapered
 profile "in a transformer coupled plasma etcher using only additions of
 N2", with a polymer "easily removed with the remaining
 photoresist".[^allen-1994] Hess reviews the underlying plasma chemistry
@@ -92,14 +104,18 @@ of aluminium and its alloys.[^hess-1982]
 An aluminium stack is capped and underlaid with refractory films that
 the etcher must also clear. Tungsten etches slowly in chlorine: Fischl and Hess measured tungsten rates "from below 10 nm/min
 to 90 nm/min" in Cl₂ and Cl₂/BCl₃, with "Small additions of BCl₃"
-raising the rates.[^fischl-1987] For TiW, Liu and Kuo found "Both F and
+raising the rates.[^fischl-1987]
+
+For TiW, Liu and Kuo found "Both F and
 Cl are effective etchants", the rate depending on "both the plasma phase
 etchant concentration and the ion bombardment energy", with a peak near
 100 mTorr.[^liu-2007-tiw] Titanium nitride can be etched in a
 "fluorine-deficient plasma" selective to titanium silicide, as a Texas
-Instruments patent describes.[^pat-tin-etch-ti] Where a conductor film
+Instruments patent describes.[^pat-tin-etch-ti]
+
+Where a conductor film
 sits on a thin dielectric, as a MiM capacitor top plate of any material
-does, the over-etch must stop quickly; a later Texas Instruments patent
+does, the over-etch must stop quickly. A later Texas Instruments patent
 that may still be in force gives such an etch and the dielectric loss it
 allows, in the collapsed note below.
 
@@ -115,7 +131,9 @@ Chlorine left on the wafer after etch reacts with moisture and corrodes
 aluminium–copper lines. Christie et al. put it plainly: "Unlike other
 films, metal etching requires post etch treatment to prevent the onset
 of corrosion".[^christie-1994] Metal etch platforms therefore carry
-their own strip and passivation chambers. Lam's microwave stripper for
+their own strip and passivation chambers.
+
+Lam's microwave stripper for
 the TCP 9600SE has a "down-stream plasma source" that eliminates "the
 potential for charge-induced damage of thin gate oxides", and Lam
 reported "no corrosion during 48-hour wet box tests".[^lam-9600se-stripper-1998]
@@ -124,6 +142,7 @@ chamber, based on its 200mm ASP technology that rapidly removes
 photoresist and performs a passivation process that extends post-etch
 corrosion resistance".[^amat-300-etch-2000] Lam's 2300 Versys Metal
 "handles aluminum etch and integrated resist removal".[^lam-2300-2000]
+
 Corrosion can still follow the wet clean: Wai and Ling found that
 corrosion "only happened … after wet polymer clean", traced it to
 moisture left after the clean, and prevented it by lengthening the IPA
@@ -143,26 +162,28 @@ local sidewall etching (notching)".[^hwang-1997]
 
 ## Representative 200 mm-era models
 
-* **Lam Research.** The TCP 9600, used for sub-0.5 µm 200 mm aluminium
-  etch development by 1994;[^christie-1994] the TCP 9600SE with a microwave stripper
-  option (1998);[^lam-9600se-stripper-1998] the TCP 9600PTX, "qualified at
-  multiple customer sites for 0.18 micron aluminum etch" with "0.13
-  micron capability" demonstrated (1999);[^lam-9600ptx-1999] the TCP
-  9600DFM "high-density metal etch system" for "sub-150 nm applications"
-  (2001), a user of which reported tripling "MTBC to more than 300 RF
-  hours" after moving from the PTX;[^lam-9600dfm-2001] and the 2300
-  Versys Metal (2000), on a platform for "both 200- and 300-mm wafers",
-  whose chamber allows "easy conversion to a silicon etch
-  chamber".[^lam-2300-2000]
-* **Applied Materials.** Metal etch on the Precision 5000 from
-  1989–1990, MxP chambers from 1993, the Metal Etch DPS Centura (1996)
-  and a second-generation DPS metal chamber (July 1997);[^amat-1997] the
-  Metal Etch DPS Plus Centura (1999), when Applied counted "more than 200
-  Metal Etch DPS Centura systems installed";[^amat-metal-dps-plus-1999]
-  and the Metal Etch DPS 300 (2000).[^amat-300-etch-2000]
-* **Other vendors.** The step pages also name Tokyo Electron Unity metal
-  etchers ({ref}`MM1E <step-114>`); no vendor description was retrieved
-  for this page.
+:::{table} Representative metal plasma etchers (figures as each source gives them)
+
+| Vendor | Model | Year | Published figures |
+|---|---|---:|---|
+| Lam Research | TCP 9600 | — | used for sub-0.5 µm 200 mm aluminium etch development by 1994[^christie-1994] |
+| Lam Research | TCP 9600SE | — | with a microwave stripper option (1998)[^lam-9600se-stripper-1998] |
+| Lam Research | TCP 9600PTX | — | "qualified at multiple customer sites for 0.18 micron aluminum etch" with "0.13 micron capability" demonstrated (1999)[^lam-9600ptx-1999] |
+| Lam Research | TCP 9600DFM | — | "high-density metal etch system" for "sub-150 nm applications" (2001), a user of which reported tripling "MTBC to more than 300 RF hours" after moving from the PTX[^lam-9600dfm-2001] |
+| Lam Research | 2300 Versys Metal | 2000 | on a platform for "both 200- and 300-mm wafers", whose chamber allows "easy conversion to a silicon etch chamber"[^lam-2300-2000] |
+| Applied Materials | Precision 5000 | — | metal etch from 1989–1990[^amat-1997] |
+| Applied Materials | MxP chambers[^amat-1997] | from 1993 | — |
+| Applied Materials | Metal Etch DPS Centura[^amat-1997] | 1996 | — |
+| Applied Materials | second-generation DPS metal chamber[^amat-1997] | July 1997 | — |
+| Applied Materials | Metal Etch DPS Plus Centura | 1999 | when Applied counted "more than 200 Metal Etch DPS Centura systems installed"[^amat-metal-dps-plus-1999] |
+| Applied Materials | Metal Etch DPS 300[^amat-300-etch-2000] | 2000 | — |
+:::
+
+Lam's TCP 9600SE "meets all requirements for aluminum and tungsten interconnect etch processing for sub-0.25-micron designs".[^lam-9600se-stripper-1998]
+
+**Other vendors.** The step pages also name Tokyo Electron Unity metal
+etchers ({ref}`MM1E <step-114>`); no vendor description was retrieved
+for this page.
 
 ## At SkyWater
 
@@ -179,9 +200,11 @@ Read term by term, both entries name aluminium, TiW, TiN and platinum,
 and the 2300 entry adds niobium; neither names gases, titanium or
 tungsten.[^skw-01] We read "Lam 9600" as Lam's TCP 9600 family, an
 inference from the model number; SkyWater gives no model suffix (SE,
-PTX or DFM) and does not say whether the 2300 Versys runs 200 mm wafers;
+PTX or DFM) and does not say whether the 2300 Versys runs 200 mm wafers.
 Lam launched the 2300 series for "both 200- and 300-mm
-wafers".[^lam-2300-2000] No SKY130 step page uses platinum or
+wafers".[^lam-2300-2000]
+
+No SKY130 step page uses platinum or
 niobium; the capabilities page also lists "Nb damascene" among its special modules.[^skw-01] These are
 the only listed etchers that name TiN.[^skw-01]
 
@@ -276,20 +299,28 @@ fluorine.[^pat-mim-ti-etch]
 These notes connect the machine class to the step pages; they add no
 SKY130 conditions of their own. SKY130's etch recipes are not public.
 
-* **Three kinds of metal etch.** The class covers the local
-  interconnect ({ref}`LI1ME <step-103>`), titanium nitride in Edwards's
-  PDK lecture;[^ann-16] the five metal levels ({ref}`MM1E <step-114>`
-  to {ref}`MM5E <step-163>`),[^pdk-10] "5 layers of aluminum metal" in
-  the same lecture,[^ann-16] which a 2013 Cypress qualification
-  report describes, for metals 1 to 3 of an S8 sibling at this fab, as
-  Ti/Al–Cu/TiW stacks[^cyp-qtp-113005] — though a 2014 report records a
+* **Three kinds of metal etch.** The class covers:
+
+  * the local
+    interconnect ({ref}`LI1ME <step-103>`), titanium nitride in Edwards's
+    PDK lecture;[^ann-16]
+  * the five metal levels ({ref}`MM1E <step-114>`
+    to {ref}`MM5E <step-163>`),[^pdk-10] "5 layers of aluminum metal" in
+    the same lecture,[^ann-16] which a 2013 Cypress qualification
+    report describes, for metals 1 to 3 of an S8 sibling at this fab, as
+    Ti/Al–Cu/TiW stacks;[^cyp-qtp-113005]
+  * the two capacitor top plates ({ref}`CAPME <step-138>`,
+    {ref}`CAP2ME <step-153>`).
+
+  A 2014 report, though, records a
   qualified change
   of the fab's 130 nm stacks away from TiW "excluding top metal
   layers",[^cyp-qtp-123907] so which cap each level carries, and
   therefore whether the cap breakthrough needs fluorine, is not public
-  ({ref}`overview-metal-cap`) — and the two capacitor top plates ({ref}`CAPME <step-138>`,
-  {ref}`CAP2ME <step-153>`). The PDK calls the top plate only "a thin
-  conductor layer on top of the dielectric";[^pdk-07] this reference
+  ({ref}`overview-metal-cap`).
+
+  The PDK calls the top plate only "a thin
+  conductor layer on top of the dielectric".[^pdk-07] This reference
   reads it as TiW (inference, set out on the {ref}`CAPTIW1 <step-136>`
   page: TiW caps the aluminium stacks of the 2013 Cypress
   report[^cyp-qtp-113005] and is on SkyWater's PVD and metal-etch
@@ -300,9 +331,11 @@ SKY130 conditions of their own. SKY130's etch recipes are not public.
   over-etch lands on oxide and on the tops of the tungsten plugs
   (SkyWater lists "Lam/Novellus PECVD Tungsten – plug fill"[^skw-01];
   {ref}`tungsten CVD page <machine-tungsten-cvd>`),
-  with selectivity to the plugs ({ref}`MM1E <step-114>`); chlorine etched
+  with selectivity to the plugs ({ref}`MM1E <step-114>`). Chlorine etched
   tungsten at no more than 90 nm/min in Fischl and Hess's
-  conditions;[^fischl-1987] the capacitor
+  conditions.[^fischl-1987]
+
+  The capacitor
   top-plate etches, whatever the plate material, land on the thin MiM
   dielectric, where the step pages cite a patent that may still be in
   force for how little of it such an etch may remove (collapsed note
@@ -328,23 +361,19 @@ MiM dielectric.[^pat-mim-ti-etch]
 
 ## Related pages
 
-* {ref}`category-etch` — plasma and wet etching physics and the 27
-  etch steps of SKY130.
-* {ref}`machine-plasma-etcher-silicon` — the silicon etchers, one of
-  which the {ref}`LI1ME <step-103>` page offers as a medium option.
-* {ref}`machines-index` — all machine classes, SkyWater's listed tools
-  and the step assignments.
-* {ref}`category-deposition` — the TiN, aluminium and refractory films
+* **Category.** {ref}`category-etch` — plasma and wet etching physics and the 27
+  etch steps of SKY130. {ref}`category-deposition` — the TiN, aluminium and refractory films
   these etches pattern, and the capacitor top-plate film (TiW on this
   reference's reading, {ref}`CAPTIW1 <step-136>`).
-* {ref}`materials-index` — etch gases and chamber materials.
-* {ref}`material-hardware-consumables` — chamber parts and exhaust
-  abatement.
-* {ref}`material-etch-gases` — fluorocarbon, fluoride, chlorine and
-  bromine etch and chamber-clean gases.
-* {ref}`material-process-gases` — nitrogen, oxygen, hydrogen, argon,
+* **Machines.** {ref}`machine-plasma-etcher-silicon` — the silicon etchers, one of
+  which the {ref}`LI1ME <step-103>` page offers as a medium option.
+* **Materials.** {ref}`material-hardware-consumables` — chamber parts and exhaust
+  abatement. {ref}`material-etch-gases` — fluorocarbon, fluoride, chlorine and
+  bromine etch and chamber-clean gases. {ref}`material-process-gases` — nitrogen, oxygen, hydrogen, argon,
   helium and the oxidation additives, their grades and SkyWater's listed
   gases.
+* **Indexes.** {ref}`machines-index` — all machine classes, SkyWater's listed tools
+  and the step assignments. {ref}`materials-index` — etch gases and chamber materials.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
 ### Related patents, papers and filings
