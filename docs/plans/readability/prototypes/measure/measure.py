@@ -12,6 +12,9 @@ def clean(t):
     # a free-standing dash (em, en, or the `--`/`---` MyST turns into one) is punctuation, not a word
     # (review rd-steps-118-134 D3)
     t = re.sub(r"(?<!\S)(?:[—–]|-{2,3})(?!\S)", " ", t)
+    # a quotation or a code span counts as one word (guide §1; review rd-machines-b D2)
+    t = re.sub(r"“[^”\n]{1,800}”|\"[^\"\n]{1,800}\"", " QUOTE ", t)
+    t = re.sub(r"`[^`\n]+`", " CODE ", t)
     return t
 def words(t): return len(clean(t).split())
 

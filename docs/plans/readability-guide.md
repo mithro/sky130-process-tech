@@ -49,9 +49,10 @@ One table. It applies to every page type unless a page-type section in §4 narro
 
 Word counts ignore footnote markers and role wrappers, because that is what the measurement scripts do
 (`docs/plans/readability/prototypes/measure/measure.py`, function `clean`). A number, a code span or a
-quotation counts as one word. An em dash is not a word (`measure.py` over-counts by one per dash, so
-a page measured with it is within the cap); the sentence cap is words between full stops (review
-rd-steps-118-134 D3).
+quotation counts as one word. An em dash is not a word; the sentence cap is words between full stops
+(review rd-steps-118-134 D3). Since 2026-09-27 `measure.py`'s `clean` counts this way too: a free-standing
+dash is dropped and a quotation or code span becomes one token (review rd-machines-b D2), so the scripts'
+counts and §1's counts agree.
 
 ## 2. Never
 
