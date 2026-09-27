@@ -47,6 +47,11 @@ One table. It applies to every page type unless a page-type section in §4 narro
 | Figure caption | what is shown · the page's hedges · the citation · "Not to scale" | — | — | D §3 |
 | Figure alt text | 60–450 characters, no citations | 450 | — | D §3 |
 
+Count a quotation as one word for the sentence, cell and paragraph caps. If a sentence is over 60
+words by `measure5.py` (every word counted) and has a split point outside its quotations (a colon or
+semicolon before a quotation, ", and" between two quoted clauses), split there. If it has none, leave
+it whole and list it (review rd-machines-b D2).
+
 Word counts ignore footnote markers and role wrappers, because that is what the measurement scripts do
 (`docs/plans/readability/prototypes/measure/measure.py`, function `clean`). A number, a code span or a
 quotation counts as one word. An em dash is not a word; the sentence cap is words between full stops
@@ -488,11 +493,16 @@ sentence "This page describes the class in general, lists …".
    describes the template, carries no fact and no marker. If it carries a marker, keep it.
 4. A category page with no intro gets a ≤ 60-word intro assembled from sentences already on the page
    (first paragraph of "What this class of step does"), with their markers.
+5. Text cut to meet the 70-word cap moves, unchanged, to the start of the first H2. The only
+   change allowed is replacing a leading pronoun with the class name (review rd-machines-b D3).
 
-**Example** — `docs/machines/wet-bench.md:4-16`: 12 lines of intro ending in "This page describes the
-class in general, lists representative 200 mm-era models, and then says what SkyWater has published about
-its own tools of this class and which SKY130 steps use them." Keep lines 4–11 (what a wet bench is and
-what it runs); drop the template sentence; move nothing else.
+**Example** — `docs/machines/wet-bench.md:4-16`: a 150-word intro that ends in the template
+sentence and a pointer sentence. Keep the sentences that say what a wet bench and a spray
+processor are and what they run, up to 70 words. Move the rest ("a line of tanks —
+sulphuric–peroxide, … — through which a robot carries cassettes …"), wording and markers
+unchanged, to open `## What the machine class is and how it works`. Where it began "It", the
+class name becomes the subject. Drop the template sentence. Move the pointer ("The chemistry of
+wet cleaning and etching is on the strip and etch category pages.") into `{seealso}`.
 
 **Do not touch.** Any sentence with a footnote marker, a number or a quotation.
 
@@ -1059,6 +1069,8 @@ rule applies (42 of 42 class pages today).
 
 **Applies when** a paragraph glosses the entries of a quoted list in turn, one after another, usually
 separated by semicolons; often signalled by the words "term by term" or "The mask-type record".
+Two or more quoted entries glossed one by one. A gloss of a single entry, or one clause across
+several entries, stays prose (review rd-machines-b D-extra 2).
 
 **Do.**
 1. One row per quoted entry: `Entry as listed | What it names | Status`.
@@ -1097,7 +1109,9 @@ with the markers in the cells and the concluding sentence left as prose.
    and only then shorten the cell. Deleting a quick-facts copy of text that stays in the body gives
    `LOST quotes`/`numbers`/`markers` (`check_preserved.py`'s exact multiset does not know the words
    survive elsewhere). List each one in the progress file with the body `file:line` that keeps it.
-   The reviewer checks it.
+   The reviewer checks it. A cell whose over-cap words are a hedge, an identifier or two or more
+   numbers of one unit is left as it is and listed, unless the tool reclassifies the loss (review
+   rd-machines-b D4).
 3. Keep every row label. Keep the row order.
 4. **Mask pages:** do not touch the cells the checker compares with the index — `Mask step`,
    `PDK mask (`masks.csv`)`, `Mask-level layer (`gds_layers.csv`)`, `Drawn layer (`gds_layers.csv`)`,
@@ -1122,7 +1136,9 @@ their marker, in the body (`docs/machines/duv-krf-stepper.md:70-71`); a quick-fa
 paraphrase a quotation this way only when the exact words survive elsewhere on the page.
 
 **Do not touch.** Row labels; any cell listed in step 4; numbers; a quotation mark, unless the exact
-words it quotes stay verbatim elsewhere on the page (see the example above).
+words it quotes stay verbatim elsewhere on the page (see the example above) — and only when the cell
+paraphrases them. A string shown word for word keeps its quotation marks. A SkyWater entry string
+always keeps them (review rd-machines-b D-extra 1).
 
 **Find.** `measure_b.py --list` key `tablecell>40w` (97 cells on 42 pages).
 
@@ -2336,6 +2352,14 @@ printed `DEDUPLICATED` line: it names the string the tool confirmed is still in 
 unchanged. Paste that line into the progress file. If a loss is not reclassified this way even
 with the flag, treat it as a real loss and go find the missing text — do not reach for
 `--allow-added` instead.
+
+*Coordinator tool task (review rd-machines-b D4, D5):* extend `--allow-deduplicated`, under the same
+three conditions, to `hedges` and `identifiers` (by string) and to `number_order` (a summary unit
+whose ordered digit tuple is a contiguous subsequence of an unchanged body unit), printing each as
+`DEDUPLICATED (<category>)` with the body line; change condition (b) from "body count unchanged" to
+"new body count ≥ base body count", reclassifying at most (summary decrease − body increase)
+occurrences and printing both counts; and either exclude the intro from the summary region or
+label its lines `DEDUPLICATED (intro)`, so that intro text is not reported as a quick-facts copy.
 
 **4b. The `words` line.** Every run also prints `WORDS LOST: ...` / `WORDS ADDED: ...` for the
 page's ordinary prose (outside `{dropdown}` bodies, `{figure}` fences, generated blocks and
