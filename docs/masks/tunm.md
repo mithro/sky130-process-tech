@@ -36,7 +36,7 @@ more steps:
 * the two channel implants
   {ref}`PTSI <step-037>` and {ref}`DEPI <step-038>`
 * the oxide etch
-  {ref}`TUNME <step-039>` that clears the silicon for the tunnel oxide
+  {ref}`TUNME <step-039>` that clears the silicon for the {term}`tunnel oxide`
 
 The mask's public record is lopsided: the process-steps sheet records a plate
 for it on all eight MPW runs, while the public renders of those runs'
@@ -121,7 +121,7 @@ no operation that turns `tunm` into the plate.
 
 Rule x.15a confines
 "Drawn compatible, mask, and waffle-drop layers" to test modules, the
-seal ring and the frame, with the exception "FOM/P1M/Metal waffle drop
+{term}`seal ring` and the frame, with the exception "FOM/P1M/Metal waffle drop
 are allowed inside the die" (flag P).[^pdk-periph] So a design inside
 the die draws `tunm`, not `ctunm` (our reading of x.15a).
 
@@ -226,7 +226,7 @@ the renders site calls the run's reticle set
 
 The {ref}`TUNM <step-035>` page puts the 0.410 µm
 minimum feature at {math}`k_1 \approx 0.67` at the i-line with an
-illustrative NA of 0.6 and infers an i-line level. The
+illustrative {term}`NA` of 0.6 and infers an i-line level. The
 {ref}`i-line stepper <machine-i-line-stepper>` page lists it there.
 SkyWater lists "ASML I-line stepper" and "ASML I-line scanner" among its
 tools but assigns no layer to them.[^skw-01]
@@ -263,18 +263,18 @@ above unity (inference).
 ### Resist and tone
 
 On the step pages' reading the resist sits on an organic
-anti-reflective coating — the separate ARC etch at
+anti-reflective coating — the separate {term}`ARC` etch at
 {ref}`TUNARCE <step-036>` is the step page's evidence — and is about
 1 µm thick, the PDK's generic "Photoresist thickness" being
 1.14 µm.[^pdk-03] It has to survive a plasma ARC etch, two implants and
 a wet oxide etch before it is removed, and the {ref}`TUNM <step-035>`
 page includes a hard bake "to harden the resist for the implants".
 
-Baker and Capsuto studied CD
+Baker and Capsuto studied {term}`CD`
 control with an anti-reflective coating on an i-line 0.35 µm
 device,[^baker-1996] and Ross et al. stabilised i-line implant resists
 with a flood electron beam, reducing shrinkage and CD variation and
-eliminating popping.[^ross-1996] SkyWater's resist, ARC and bake are not
+eliminating {term}`popping`.[^ross-1996] SkyWater's resist, ARC and bake are not
 public; the consumables are on the
 {ref}`lithography materials <material-lithography-materials>` page.
 
@@ -284,7 +284,7 @@ The {ref}`TUNM <step-035>` page reads the mask as aligned to
 the trench pattern of {ref}`FOM <step-004>`, and the
 {ref}`ONOM <step-041>` page reads the next mask as aligned to this one,
 since the ONO island must enclose the window. ASML specifies "≤ 40 nm"
-single-machine overlay for the /275D stepper[^asml-pas5500-275d] against
+single-machine {term}`overlay` for the /275D {term}`stepper`[^asml-pas5500-275d] against
 the 0.095 µm of tunm.3 and tunm.4 (our comparison; SkyWater's overlay
 budget is not public). van Haren et al. show how alignment-mark
 placement accuracy limits layer-to-layer overlay.[^van-haren-2019]

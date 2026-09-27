@@ -48,7 +48,7 @@ The rules place the layer:[^pdk-periph]
   spacing 4.000 µm (nsm.2)
 * an `NSM_keepout`, which Table C3 of the
   *Layers Reference* defines as "nsm.dg OR nsm.mk",[^pdk-06] must be 1.000 µm from
-  diffusion, tap, poly, local interconnect, metals 1 to 5 and their mask
+  diffusion, tap, poly, {term}`local interconnect`, metals 1 to 5 and their mask
   layers, with cells named "nikon\*" and the "diff ring inside
   areaid.sl" exempted (nsm.3)
 * the same device and wiring layers must
@@ -73,7 +73,7 @@ rings.[^caravel-sealring]
 
 From the rules and that layout the page reads `NSM`
 as a continuous ring-shaped opening along the die edge, in a band whose
-only drawn device layer is the seal ring's diffusion (inferences on those
+only drawn device layer is the {term}`seal ring`'s diffusion (inferences on those
 pages). It reads the purpose of
 the opening as a path for the passivation nitride to seal the edge of
 the dielectric stack (inferences on those pages).
@@ -82,7 +82,7 @@ The {ref}`NSME <step-166>` page describes a deep
 etch towards the seal ring's silicon and a stop on the local-interconnect
 nitride as two readings, and leaves the depth open (inferences on those
 pages). The step pages compare the construction with a Siemens and IBM
-patent on crack stops in the dicing channel and a Zeevo seal-ring patent
+patent on {term}`crack stops <crack stop>` in the dicing channel and a Zeevo seal-ring patent
 that shows a moisture path through a passivation
 oxide.[^pat-crackstop-ibm][^pat-sealring-zeevo]
 
@@ -260,7 +260,7 @@ sheet's; the reticle set is the heading of the run's columns in the tab
 
 The {ref}`NSM <step-165>` page gives
 {math}`k_1 = 3 \times 0.6 / 0.365 \approx 4.9` on an i-line tool with an
-assumed NA of 0.6, "far above any resolution limit", and infers an i-line
+assumed {term}`NA` of 0.6, "far above any resolution limit", and infers an i-line
 exposure, quoting ASML's statement that older systems "migrate to the
 lithography of choice for less critical layers".[^asml-30] The
 {ref}`i-line stepper <machine-i-line-stepper>` page lists it there.
@@ -273,7 +273,7 @@ Wong et al. found that the mask error factor "is unity for
 large features, but increases rapidly when the critical dimension (CD) is
 less than 0.5 (lambda) /NA for line-space patterns".[^wong-1998] At
 365 nm and NA 0.6 that is about 0.30 µm (our arithmetic), a tenth of the
-3 µm ring, so plate CD errors would print at their own size (inference).
+3 µm ring, so plate {term}`CD` errors would print at their own size (inference).
 
 At 4× a 3 µm ring is 12 µm wide on the plate (our arithmetic), a feature
 within reach of the laser writers and wet-etched chrome that the CAPM
@@ -317,7 +317,7 @@ unknown depth on the
 {ref}`dielectric plasma etcher <machine-plasma-etcher-dielectric>` class,
 with the resist strip and clean treated as part of that step. The open
 area is small, which the NSME page reads as making optical-emission
-endpoint weak; Wodecki describes endpoint detection on low-open-area
+{term}`endpoint` weak; Wodecki describes endpoint detection on low-open-area
 dielectric etches.[^wodecki-1999]
 
 (mask-nsm-steps)=

@@ -46,7 +46,7 @@ and poly through "Licon1 AND Npc", and metal 1 reaches `li1` through
 * lines that wire devices together inside a cell
 * pads that cover the
   contacts below ({ref}`mask-licm1`) and receive the contacts above
-* LI resistor bodies, at least 0.290 µm wide (li.7)
+* {term}`LI` resistor bodies, at least 0.290 µm wide (li.7)
 
 In the
 TiN local-interconnect process of Tang et al., "the 0.1-µm-thick TiN
@@ -58,7 +58,7 @@ The PDK's mask generation table, Table F2b, marks the `LI1M` column `C`
 ("CREATED") in three of its 80 device rows: the LI resistor and the two
 VPP capacitor rows ("VPP" and "VPP (with met3 shield)").[^pdk-06] It marks `+`, "Layer
 allowed to overlap", in 75, and `-`, "Layer not created for the device",
-only for the two metal fuses.[^pdk-06]
+only for the two {term}`metal fuses <metal fuse>`.[^pdk-06]
 
 The narrowest `li` rules belong to
 one of those devices: li.1a and li.3a allow 0.140 µm width and space
@@ -88,7 +88,7 @@ publishes no operation from `li1` to the plate.
 Rule x.9 reads "Shapes on
 maskAdd or maskDrop layers ("serifs") are allowed in core only", with the
 exemptions it lists.[^pdk-periph] Rule x.15a confines "Drawn compatible, mask, and
-waffle-drop layers" to test modules, seal ring and frame, with the
+waffle-drop layers" to test modules, {term}`seal ring` and frame, with the
 exception that "FOM/P1M/Metal waffle drop are allowed inside the die"
 (flag P, periphery only).[^pdk-periph] A design inside the die therefore
 draws `li1` (our reading of x.9 and x.15a).
@@ -101,7 +101,7 @@ not expand it.
 
 Two criteria tie the plate to a correction of the drawn data. Table 7 of
 *Criteria & Assumptions*, "Other criteria and parameters", has a row
-"LI1CD add/drop" with 0.01 in its CD column and 0.04 in its space
+"LI1CD add/drop" with 0.01 in its {term}`CD` column and 0.04 in its space
 column, and no variable name, and a row "Li1 proximity correction" with
 0.25 in its space column (`LI1PROXSpace`).[^pdk-03] The
 {ref}`LI1M <step-102>` page reads the second as public evidence that the
@@ -187,7 +187,7 @@ set is the heading of the run's columns in the tab
 ### Exposure class
 
 The {ref}`LI1M <step-102>` page puts 0.17 µm lines
-and spaces at {math}`k_1 \approx 0.28` on an i-line tool of NA 0.6,
+and spaces at {math}`k_1 \approx 0.28` on an i-line tool of {term}`NA` 0.6,
 which it excludes, and at {math}`k_1 \approx 0.41–0.48` on a KrF lens of
 NA 0.6–0.7, "workable for lines with OPC and, for the 0.14 µm cells,
 off-axis illumination", and infers a 248 nm level. The
@@ -248,20 +248,20 @@ licon on one of two adjacent sides (li.5).[^pdk-periph]
 
 On the step pages' readings the resist is
 coated on TiN. Sturtevant et al.
-examined DUV resists on substrates including titanium nitride and found a
+examined {term}`DUV` resists on substrates including titanium nitride and found a
 "substrate contamination" effect "which results in distorted photoresist
 profiles at the substrate/resist interface", with organic
 anti-reflective films acting "as effective barrier layers in some
 cases".[^sturtevant-1994]
 
-He et al. developed a silicon oxynitride ARC
+He et al. developed a silicon {term}`oxynitride` ARC
 that "can not only function as an ARC layer, but also serve as a
 hardmask".[^he-1998] Sekiguchi et al. found the effect of underlayer
 reflection on the isolated–dense CD bias significant for a negative
 resist and small for a positive one.[^sekiguchi-1998]
 
 The step page reads a chemically
-amplified positive KrF resist over an organic or inorganic ARC; with the
+amplified positive KrF resist over an organic or inorganic {term}`ARC`; with the
 resist left where `li1` is drawn, the plate would be clear-field:
 opaque lines in a clear field (inference). Neither the resist nor the
 tone is published. The consumables are on the
@@ -280,7 +280,7 @@ mcon overlap onto LI for reproducible contact resistance" of 0.12
 
 On the step pages' readings the resist pattern is
 transferred by {ref}`LI1ME <step-103>`, a chlorine-based etch of the
-0.1 µm TiN that stops on the cap oxide and on any plug top the overlay
+0.1 µm TiN that stops on the {term}`cap oxide` and on any plug top the {term}`overlay`
 leaves uncovered, on the
 {ref}`metal plasma etcher <machine-plasma-etcher-metal>` class. On the step pages' readings the
 resist is stripped and the wafer cleaned before the nitride cap.

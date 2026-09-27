@@ -112,7 +112,7 @@ rests on the names and descriptions, as on the
 `via3` to the plate, nor what the `cviam3` drawing purpose is for.
 
 Rule
-x.15a confines mask layers to test modules, seal ring and frame, and its
+x.15a confines mask layers to test modules, {term}`seal ring` and frame, and its
 exception names only "FOM/P1M/Metal waffle drop" (flag P, periphery
 only).[^pdk-periph] So a design inside the die draws `via3` (our reading
 of x.15a, which does not say what applies in the core). One row of rule
@@ -240,7 +240,7 @@ anything about SkyWater's plates.
 ### Exposure class
 
 The {ref}`VIM3 <step-144>` page gives
-{math}`k_1 = 0.20 \times 0.70 / 0.248 \approx 0.56` on a KrF lens of NA
+{math}`k_1 = 0.20 \times 0.70 / 0.248 \approx 0.56` on a KrF lens of {term}`NA`
 0.70 and about 0.35 on an i-line lens of NA 0.63, too low for production
 contact holes. It infers a 248 nm level, as at via 2, from the hole size
 and from the mask type the sheet records. The
@@ -256,7 +256,7 @@ node.[^itrs-03]
 Wong et al. found the mask error factor
 rising "rapidly when the critical dimension (CD) is less than […] 0.75
 (lambda) /NA for contacts".[^wong-1998] At 248 nm and NA 0.7 that is about
-0.27 µm (our arithmetic), above the 0.200 µm via, so plate CD errors would
+0.27 µm (our arithmetic), above the 0.200 µm via, so plate {term}`CD` errors would
 print magnified (inference). Kim et al. found the factor rising near
 the resolution limit and smaller on attenuated masks than on binary ones,
 because of the attenuated plates' positive bias.[^kim-1999]
@@ -321,7 +321,7 @@ the resist is stripped within that step.
 A Freescale patent describes a
 via etch that stops on MiM plates and interconnect
 together.[^pat-mim-freescale] Le, Banerjee and McPherson found that via
-size strongly affects the electromigration failure-time spread of
+size strongly affects the {term}`electromigration` failure-time spread of
 tungsten-plug vias for one direction of electron flow with a TiN-capped
 metallisation, and not for the other.[^le-1996]
 
@@ -417,7 +417,7 @@ For the plate the decisive figures are one 0.200 µm square on a
   and etch categories.
 * **Machines.** {ref}`machine-duv-krf-stepper` — the exposure class the step page
   assigns. {ref}`machine-plasma-etcher-dielectric` — the etch class that transfers
-  the pattern. {ref}`machine-cd-sem-overlay-metrology` — hole CD and overlay
+  the pattern. {ref}`machine-cd-sem-overlay-metrology` — hole CD and {term}`overlay`
   measurement.
 * **Materials.** {ref}`material-lithography-materials` — resists, anti-reflective
   coatings, developer and reticles.
@@ -509,7 +509,7 @@ For the plate the decisive figures are one 0.200 µm square on a
   and the fields `F`, `A43` and `APRX` are not read. The unit and meaning
   of the "e-beam spot size" 0.02, and why only `VIM3` has one, are not
   stated.[^steps-sheet]
-* The plate's maker, shifter film, tone and CD specification, any OPC,
+* The plate's maker, shifter film, tone and CD specification, any {term}`OPC`,
   the resist and the exposure tool are not public; the KrF reading rests
   on the 0.200 µm rule and the mask type.
 * The `capm` rules that govern vias on the plates name via 2 and have no

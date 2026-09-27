@@ -1,7 +1,7 @@
 (mask-pwbm)=
 # PWBM — P-Well Block Mask
 
-The P-well block mask is the {term}`reticle` that, on the step pages'
+The P-well {term}`block mask` is the {term}`reticle` that, on the step pages'
 reading, keeps SKY130's P-well implant out of the places that must not
 receive it. On the step pages' reading, the resist printed through it at {ref}`PWBM <step-026>`
 remains over the N-wells and over the special 20 V regions drawn as
@@ -197,7 +197,7 @@ is the heading of the run's columns in the tab
 The {ref}`PWBM <step-026>` page notes that the
 `pwbm` rules carry no minimum width and takes the N-well outlines as the
 plate's tightest features — 0.840 µm width and 1.270 µm space, with
-{math}`k_1 \approx 1.4` at NA 0.6 — and infers an i-line level. The
+{math}`k_1 \approx 1.4` at {term}`NA` 0.6 — and infers an i-line level. The
 {ref}`i-line stepper <machine-i-line-stepper>` page lists it there.
 SkyWater lists "ASML I-line stepper" and "ASML I-line scanner" among its
 tools but assigns no layer to them.[^skw-01]
@@ -244,7 +244,7 @@ the NMOS threshold. Sheu et al. model the effect.[^sheu-2006]
 
 The {ref}`PWBM <step-026>` page reads `PWBM` and
 {ref}`NWM <step-017>` as registering to the same trench marks, so that
-their mutual overlay sets the N-well/P-well junction, which Table 3b
+their mutual {term}`overlay` sets the N-well/P-well junction, which Table 3b
 places 0.034 µm from the drawn edge ("N-w/P-w junction (from drawn
 edge)").[^pdk-03] Rubin, Morris and Jasper describe how retrograde-well
 implant control sets the narrow n+/p+ isolation.[^rubin-2002] If the
