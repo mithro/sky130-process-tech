@@ -906,3 +906,6 @@ positives above; every WORDS LOST word is named in its page entry.
   topography,[^pdk-04] over highly reflective aluminium, a transparent nitride-over-oxide stack of the
   order of 0.6–1 µm. (The PDK's 0.09 µm TOPOX …)". Zero words; the `number_order` LOST line now reads
   1.26 µm first, same digits.
+* **L1 (164):** the fuse-mask link loses its `Mask:` label (it is a step link, not this step's mask)
+  and returns to its base wording, unlabelled, after `Same category:` and before `Category page:`
+  (ruling D5).
