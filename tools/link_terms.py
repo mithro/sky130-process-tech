@@ -170,6 +170,12 @@ SKIP_TERMS = {
     "punch-through": "1 of 10 occurrences is an etch-chemistry sense "
         "('a fluorine-rich punch-through'), not the glossary's source/"
         "drain leakage sense; found in this branch's own 100-link sample",
+    # Final pass on main (2026-09-27, rd-terms), reading all 29 proposed
+    # first uses: 5 are the sidewall spacer of a MiM capacitor stack
+    # (steps 136, 138, 141, 153) or of the ReRAM stack (overview), not
+    # the glossary's gate-edge spacer; no narrow context separates them.
+    "spacer": "5/29 wrong in the final-pass report: MiM-plate and ReRAM "
+        "stack sidewall spacers, not the glossary's gate-edge sense",
 }
 
 # M1 (review, fix items 2-3): terms that are usually right but have a
@@ -182,7 +188,12 @@ SKIP_TERMS = {
 CONTEXT_SKIP: dict[str, list[tuple[str, re.Pattern]]] = {
     # "ICP-MS" (a mass-spectrometry technique) is not the glossary's ICP
     # plasma source.
-    "ICP": [("after", re.compile(r"^-MS\b"))],
+    "ICP": [
+        ("after", re.compile(r"^-MS\b")),
+        # "wet chemistry, ICP or SIMS": ICP spectrometry as a chemical
+        # analysis beside SIMS, not the plasma source (final pass).
+        ("after", re.compile(r"^\s+(?:or|and)\s+SIMS\b")),
+    ],
     # A vendor's product line ("Brewer Science DUV-series") is a name, not
     # the glossary's exposure-wavelength sense.
     "DUV": [("after", re.compile(r"^-[Ss]eries\b"))],
@@ -192,8 +203,20 @@ CONTEXT_SKIP: dict[str, list[tuple[str, re.Pattern]]] = {
     # number" guard, `\b\d{3,5}\b` within one token of the match).
     "TCP": [
         ("before", re.compile(r"\d{3,5}\s*$")),
-        ("after", re.compile(r"^\s*\(?\d{3,5}\b")),
+        # A letter suffix on the model number ("TCP 9600SE") is still the
+        # model name (final pass, 2026-09-27).
+        ("after", re.compile(r"^\s*\(?\d{3,5}(?:[A-Z]{1,3})?\b")),
     ],
+    # Final pass on main (2026-09-27): tool and list-entry names, not the
+    # generic technology. "Applied Materials Mirra CMP" (a polisher
+    # model), SkyWater's "AMAT PVD Metal" platform entry, and its
+    # '"C2" / Producer PECVD TEOS' entry.
+    "CMP": [("before", re.compile(r"\bMirra\s*$"))],
+    "PVD": [("after", re.compile(r"^\s+Metal\b"))],
+    "PECVD": [("before", re.compile(r"\bProducer\s*$"))],
+    "TEOS": [("before", re.compile(r"\bProducer\s+PECVD\s*$"))],
+    # "0.5 λ/NA": NA as a symbol inside a written formula (final pass).
+    "NA": [("before", re.compile(r"/\s*$"))],
     # "overlay" as a verb ("must overlay each other", "overlays a level")
     # is not the glossary's registration-error noun. Per review M1 item 3,
     # the simplest safe rule is to keep only the forms that read as a noun
@@ -207,15 +230,25 @@ CONTEXT_SKIP: dict[str, list[tuple[str, re.Pattern]]] = {
 }
 
 
+# Guards that apply to every term (final pass, 2026-09-27): a span that a
+# page marks as the wording of a cited work's title -- "Chen et al.
+# studied ion-beam shadowing in submicrometre LATID MOSFETs (title)" --
+# is a title, which R-TERM never links.
+GLOBAL_CONTEXT_SKIP: list[tuple[str, re.Pattern]] = [
+    ("after", re.compile(r"^[^.;]{0,60}\(title\)")),
+]
+
+
 def context_rejected(body: str, start: int, end: int, canonical: str) -> bool:
-    """True if a CONTEXT_SKIP rule for ``canonical`` matches the text
-    immediately before/after this specific occurrence."""
-    for side, rx in CONTEXT_SKIP.get(canonical, ()):
+    """True if a CONTEXT_SKIP rule for ``canonical`` (or a
+    GLOBAL_CONTEXT_SKIP rule) matches the text immediately before/after
+    this specific occurrence."""
+    for side, rx in [*CONTEXT_SKIP.get(canonical, ()), *GLOBAL_CONTEXT_SKIP]:
         if side == "before":
             if rx.search(body[max(0, start - 20) : start]):
                 return True
         else:
-            if rx.match(body[end : end + 20]):
+            if rx.match(body[end : end + 80]):
                 return True
     return False
 
@@ -692,8 +725,8 @@ def selftest() -> int:
         fail(f"acronym false match on ordinary word: {out}")
 
     # 5. Sentence-initial capitalisation of a regular (non-acronym) term.
-    out = linked_of("Spacer width sets the tip overlap.\n", ["spacer"])
-    if out != [("spacer", "Spacer")]:
+    out = linked_of("Silicide lowers the contact resistance.\n", ["silicide"])
+    if out != [("silicide", "Silicide")]:
         fail(f"sentence-initial match failed: {out}")
 
     # 6. Plural, explicit form.
@@ -958,6 +991,30 @@ def selftest() -> int:
     out = linked_of("The chamber is a TCP high-density source.\n", ["TCP"])
     if out != [("TCP", "TCP")]:
         fail(f"plain TCP use was wrongly rejected: {out}")
+    # 31a. Final pass (2026-09-27): a model number with a letter suffix,
+    # tool/list-entry names, a formula symbol, analytical ICP, a cited
+    # title, and the skipped term "spacer".
+    cases = [
+        ("Lam's stripper for the TCP 9600SE is downstream.\n", ["TCP"], []),
+        ("The tool is an Applied Materials Mirra CMP system.\n", ["CMP"], []),
+        ("Oxide CMP leaves scratches.\n", ["CMP"], [("CMP", "CMP")]),
+        ("The tool is AMAT PVD Metal with a degas.\n", ["PVD"], []),
+        ("A PVD chamber sputters it.\n", ["PVD"], [("PVD", "PVD")]),
+        ('Tool: "C2" / Producer PECVD TEOS here.\n', ["PECVD", "TEOS"], []),
+        ("A PECVD TEOS oxide is used.\n", ["PECVD", "TEOS"],
+         [("PECVD", "PECVD"), ("TEOS", "TEOS")]),
+        ("The threshold is 0.5 λ/NA for lines.\n", ["NA"], []),
+        ("A lens of NA 0.6 is used.\n", ["NA"], [("NA", "NA")]),
+        ("Calibrate by wet chemistry, ICP or SIMS.\n", ["ICP"], []),
+        ("Chen et al. studied ion-beam shadowing in LATID MOSFETs (title),[^c] "
+         "and more.\n", ["shadowing", "LATID"], []),
+        ("The gate spacer offsets the implant.\n", ["spacer"], []),
+    ]
+    for text, terms_, want in cases:
+        out = linked_of(text, terms_)
+        if out != want:
+            fail(f"final-pass guard on {text!r}: got {out}, want {want}")
+
     # 31b. An occurrence inside a hyphenated compound is not a first use:
     # the hyphen is a word character at both bounds (final pass, 2026-09-27).
     out = linked_of("The chamber is a TCP-type source; a TCP coil drives it.\n", ["TCP"])
