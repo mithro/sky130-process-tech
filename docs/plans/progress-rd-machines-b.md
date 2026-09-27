@@ -692,6 +692,48 @@ is …" carries no source in the base either), and hedge words that stay inside 
 
 Content problems for the owner: none found.
 
+### 13. `docs/machines/vertical-furnace-lpcvd.md` — done
+
+Rules applied: R-INTRO, R-MODELS, R-ENTRIES, R-QUICKFACTS, R-PARA, R-SENTENCE, R-LIST, R-RELATED,
+R-CAPTION. The two in-force notes are untouched; the first follows the quick-facts table (whose
+Pressure row points to it), so the `{seealso}` goes after that note.
+
+* **R-INTRO.** 139 → 50 words. The first sentence (51 words) split at its colon: the definition
+  stays; the hardware list moved to open the first H2 as "The furnace has a quartz tube …"
+  (subject and verb added at the split, R-SENTENCE step 7). "It deposits the conformal thermal
+  films …" stays. Pointer → `{seealso}`. Deleted template sentence: "This page describes the class
+  in general, lists representative 200 mm-era models, and then says what SkyWater has published
+  about its own furnaces and which SKY130 steps this reference assigns to the class."
+* **R-MODELS.** Four bullets → 8 rows; the single-wafer remark stays. All Year cells `—` ("in
+  2004" dates a process introduced on the RVP-500, kept in Published figures).
+* **R-ENTRIES.** "Read term by term: …" → 5 rows, one per quoted entry, in the page's order, each
+  gloss word for word; Status `—` (the page gives no hedge). The "DH3" sentences stay as prose.
+* **R-QUICKFACTS.** Cells over cap 7 → 5. What it does: the Wikipedia clause ("LPCVD "dominates …",
+  and "Reduced pressures …"") moved verbatim to the first H2's second paragraph. SkyWater-listed
+  tool: the five entry quotations (now in the blockquote and the entries table) → their process
+  names, plus a pointer. Left: Pressure (it carries the pointer to the in-force note; not touched),
+  Films and temperatures, By-products, Wafer handling, 200 mm era (quotations and figures only
+  here).
+* **R-PARA / R-SENTENCE / R-LIST.** The Kokusai and Sony tube descriptions and the step-grade
+  sentence ("The grades rest on the listed processes: …") became lead-ins and lists, each single
+  marker on its lead-in. Splits at semicolons (Kamins, the ammonium-chloride trap, the precursors
+  item, two integration items) and at ", and in TEOS oxide" and ", and Aviza's 300 mm RVP-300"
+  (the in-force pointer sentence keeps its words). Items over 60 → lead + continuation.
+* **R-RELATED**, **R-CAPTION** as page 1.
+
+Caps (measure5): paragraphs > 100 5 → 0; list items > 60 3 → 0; sentences > 45 15 → 3 (Becker 49
+and the TSMC patent 53, over only by their quotations; the untouched grading bullet); table cells >
+25 5 → 4 (quick facts).
+
+Preservation. DEDUPLICATED: number 200 (template sentence). The entries table's quotations replace
+the quick-facts cell's copies one for one, so no quotation is lost or added. ADDED marker:
+`pat-nh4cl-vlsi` (split). REGROUPED: the models bullets → rows; the grade sentence → list. Template
+losses: `about`, `SKY130`. Strict words: the template sentence; "Read term by term" (the table).
+Marker coverage: 33 flags, all read — list items (markers on the lead-ins, R-LIST step 1),
+model and entry cells, and split halves whose own clause carries no source in the base.
+
+Content problems for the owner: none found.
+
 ## Guide problems
 
 1. **`measure5.py` fuses a sentence ending in "…ch."** Its abbreviation guard `(?<!ch\.)` (meant

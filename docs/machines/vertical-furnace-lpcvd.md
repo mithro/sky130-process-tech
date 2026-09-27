@@ -3,28 +3,19 @@
 
 A vertical LPCVD furnace is a hot-wall, low-pressure chemical vapour
 deposition reactor built on the same vertical batch platform as an
-oxidation furnace: a quartz tube inside a multi-zone heater, a boat of
-horizontal wafers raised in from below, and a vacuum pump and gas panel
-instead of an oxidant supply. It deposits the conformal thermal films of
+oxidation furnace. It deposits the conformal thermal films of
 the front end — silicon nitride, amorphous and polycrystalline silicon,
-and deposited oxides — on a hundred or more wafers at once. This page
-describes the class in general, lists representative 200 mm-era models,
-and then says what SkyWater has published about its own furnaces and
-which SKY130 steps this reference assigns to the class. The deposition
-physics (growth regimes, conformality, the LPCVD film chemistries) is
-on the {ref}`category page <category-deposition>`; the furnace hardware
-shared with oxidation is described on the
-{ref}`oxidation furnace page <machine-vertical-furnace-oxidation>`.
+and deposited oxides — on a hundred or more wafers at once.
 
 | | Vertical batch furnace: LPCVD |
 |---|---|
-| What it does | Deposits films from gases at reduced pressure on a batch of wafers in a hot-wall tube; LPCVD "dominates for multi-wafer furnace tube tools", and "Reduced pressures tend to reduce unwanted gas-phase reactions and improve film uniformity across the wafer".[^wiki-cvd] |
+| What it does | Deposits films from gases at reduced pressure on a batch of wafers in a hot-wall tube |
 | Pressure | "several hundred m Torr" for a dichlorosilane nitride in a vertical furnace;[^pat-nh4cl-tsmc] a Cypress ONO-stack patent that may still be in force gives a range of its own (collapsed note under this table); below 1 Torr for TEOS oxide.[^becker-1987] |
 | Films and temperatures | Nitride from dichlorosilane and ammonia at about 750–800 °C;[^pat-nh4cl-tsmc] nitride from BTBAS and ammonia "at 550-600°C in a 200 mm vertical batch furnace system";[^gumpher-2004] silicon films "polycrystalline … above 600°C" and amorphous below;[^kamins-1980] TEOS oxide at 650–800 °C.[^becker-1987] |
 | By-products | Ammonium chloride from the dichlorosilane–ammonia reaction, "gaseous … typically about 700° C." but "a solid condensate at temperatures below about 125° C."[^pat-nh4cl-vlsi] |
 | Wafer handling | Batch: "150 product, test, and filler wafers" in a typical VTR LPCVD load;[^expertech-vtr] "a batch of up to 150" on TEL's ALPHA-8SE i;[^tel-telindy] a boat "supported by a boat elevator and boat pedestal" inside an inner sleeve.[^pat-lpcvd-sony] |
 | 200 mm era | TEL's Alpha-8 "diffusion and LP-CVD furnaces"[^tel-alpha8se] and the VCF-615S LP-TEOS furnace;[^pat-lpcvd-sony] Aviza's AVP-8000 for "silicon nitride (stoichiometric and low stress), TEOS, SiH4 and DCS-based SiO2, doped (P, As, B) and un-doped polysilicon";[^aviza-avp] ASM's A400 for "doped silicon and silicon nitride films".[^asm-a400] |
-| SkyWater-listed tool | "LPCVD nitride, with NH3 and also DH3", "LPCVD polysilicon (undoped), both amorphous and crystalline", "LPCVD silane oxide", "LPCVD oxide/nitride/oxide", "LPCVD BTBAS low temp nitride" (Aviza)[^skw-01] |
+| SkyWater-listed tool | Five LPCVD processes (Aviza): nitride, polysilicon, silane oxide, oxide/nitride/oxide, BTBAS low-temperature nitride;[^skw-01] see *What SkyWater lists* |
 | SKY130 steps | 6 steps, plus 2 where the class is an alternative; see {ref}`SKY130 steps assigned to this class <machine-vertical-furnace-lpcvd-steps>` |
 
 :::{dropdown} From a patent shown as in force (US 8,093,128; estimated expiry 2028-10-22) — open to read
@@ -32,15 +23,29 @@ The *Pressure* row above: "5-500 mTorr" for the oxynitride layers of a
 Cypress ONO stack "in a batch furnace".[^pat-03]
 :::
 
+:::{seealso}
+The deposition
+physics (growth regimes, conformality, the LPCVD film chemistries) is
+on the {ref}`category page <category-deposition>`; the furnace hardware
+shared with oxidation is described on the
+{ref}`oxidation furnace page <machine-vertical-furnace-oxidation>`.
+:::
+
 ## What the machine class is and how it works
 
-In an LPCVD furnace the wafers, the boat and the tube wall are all at
+The furnace has a quartz tube inside a multi-zone heater, a boat of
+horizontal wafers raised in from below, and a vacuum pump and gas panel
+instead of an oxidant supply. In an LPCVD furnace the wafers, the boat and the tube wall are all at
 the deposition temperature, and the film grows wherever the reactant
-gases reach a hot surface. At a few hundred millitorr the gases diffuse
+gases reach a hot surface.
+
+At a few hundred millitorr the gases diffuse
 quickly between closely stacked wafers, so the deposition is limited by
 the surface reaction rather than by gas transport, which is what makes a
 batch of wafers only millimetres apart coat uniformly and conformally
-(category page).[^txt-01] Roenigk and Jensen's model of a hot-wall
+(category page).[^txt-01] LPCVD "dominates for multi-wafer furnace tube tools", and "Reduced pressures tend to reduce unwanted gas-phase reactions and improve film uniformity across the wafer".[^wiki-cvd]
+
+Roenigk and Jensen's model of a hot-wall
 nitride reactor shows the limits of that picture: "in‐wafer film
 thickness nonuniformities may be explained by the effect of
 diffusion‐limited film growth from highly reactive gas‐phase
@@ -50,17 +55,30 @@ dichlorosilane".[^roenigk-1987]
 ### Tube, gas injection and exhaust
 
 An LPCVD tube is usually double. A Kokusai patent describes the
-conventional arrangement: "an outer tube with a closed upper end", "An
-inner tube … with upper and lower opened ends" inside it, a reactive gas
-introduced at the flange, and an exhaust nozzle that "communicates with a
-gap defined between the outer tube … and inner tube", so that the gas
-rises through the boat inside the inner tube and descends between the
-tubes to the pump.[^pat-lpcvd-kokusai] Sony's description of TEL's
-VCF-615S LP-TEOS furnace is similar: "a bell-shaped chamber wall into
-which is disposed an inner sleeve", "A multi-zone heating element",
-"a vacuum pump coupled to the deposition chamber through an exhaust port
-… proximate the bottom", and TEOS vapour "injected into the bottom zone
-of the chamber".[^pat-lpcvd-sony] Expertech's VTR uses "a double-walled
+conventional arrangement:[^pat-lpcvd-kokusai]
+
+* "an outer tube with a closed upper end";
+* "An
+  inner tube … with upper and lower opened ends" inside it;
+* a reactive gas
+  introduced at the flange;
+* an exhaust nozzle that "communicates with a
+  gap defined between the outer tube … and inner tube", so that the gas
+  rises through the boat inside the inner tube and descends between the
+  tubes to the pump.
+
+Sony's description of TEL's
+VCF-615S LP-TEOS furnace is similar:[^pat-lpcvd-sony]
+
+* "a bell-shaped chamber wall into
+  which is disposed an inner sleeve";
+* "A multi-zone heating element";
+* "a vacuum pump coupled to the deposition chamber through an exhaust port
+  … proximate the bottom";
+* TEOS vapour "injected into the bottom zone
+  of the chamber".
+
+Expertech's VTR uses "a double-walled
 process tube to eliminate film particle formation near the loading door
 for advanced particle control in LPCVD films".[^expertech-vtr]
 
@@ -78,14 +96,18 @@ injectors[^pat-lpcvd-nec] and boat covers. Kokusai's boat cover
 splits the gas into "branched streams, one flowing through the inside of
 the boat cover and the other flowing in past the boat cover, whereby the
 film deposited on the wafer is improved in uniformity and
-homogeneity".[^pat-lpcvd-kokusai] Wafer spacing trades capacity against
+homogeneity".[^pat-lpcvd-kokusai]
+
+Wafer spacing trades capacity against
 uniformity: Becker et al. found "oxide thickness variations of <±5%" for
 TEOS "for suitable process conditions (PD ≤500 mTorr, wafer spacing
 ≥4.7 mm, TD <730 °C …)" and "uniformities of ±2%" on 150 mm wafers "if
-the wafer spacing is increased to 10 mm".[^becker-1987] Adding a dopant
+the wafer spacing is increased to 10 mm".[^becker-1987]
+
+Adding a dopant
 gas can upset the balance: phosphine caused "a factor of 25 decay in film
 growth rates" in doped poly, with "growth‐rate variations of a factor of
-two within a wafer commonly observed",[^meyerson-1984] and in TEOS oxide
+two within a wafer commonly observed".[^meyerson-1984] In TEOS oxide
 "The addition of phosphorus compounds causes the deposition rate to
 increase and the thickness uniformity to degrade".[^adams-1979]
 
@@ -95,7 +117,9 @@ increase and the thickness uniformity to degrade".[^adams-1979]
   nitride; the reaction produces HCl and, with excess ammonia, ammonium
   chloride (below).[^wiki-sin][^pat-nh4cl-tsmc] LPCVD nitride "contains up
   to 8% hydrogen" and "experiences strong tensile stress, which may crack
-  films thicker than 200 nm".[^wiki-sin] Temple-Boyer et al. show, for
+  films thicker than 200 nm".[^wiki-sin]
+
+  Temple-Boyer et al. show, for
   silane–ammonia LPCVD nitride, how stress and composition follow
   temperature, pressure and gas ratio.[^temple-boyer-1998]
 * **Low-temperature nitride from BTBAS.** Bis(tertiary-butylamino)silane
@@ -103,12 +127,14 @@ increase and the thickness uniformity to degrade".[^adams-1979]
   550-600°C in a 200 mm vertical batch furnace system" at "4-30 Å/min"
   with thickness variation "below 2% 1-sigma", and found "Substantial
   carbon and hydrogen incorporation" relative to dichlorosilane
-  nitride.[^gumpher-2004] Aviza, in 2004, put the dichlorosilane process
+  nitride.[^gumpher-2004]
+
+  Aviza, in 2004, put the dichlorosilane process
   "above 630 degrees C" and BTBAS "at 570 degrees C or above".[^aviza-satin-2004]
 * **Amorphous and polycrystalline silicon from silane.** Kamins found
   that "polycrystalline films are formed above 600°C and are more stable
-  than the amorphous films deposited at lower temperatures";[^kamins-1980]
-  films whose surfaces are amorphous are "much smoother",[^kinsbron-1983]
+  than the amorphous films deposited at lower temperatures".[^kamins-1980]
+  Films whose surfaces are amorphous are "much smoother",[^kinsbron-1983]
   and films "deposited in the amorphous phase and subsequently
   crystallized at 900°–1000°C" are "superior in all investigated material
   aspects".[^harbeke-1984]
@@ -118,9 +144,9 @@ increase and the thickness uniformity to degrade".[^adams-1979]
   and dichlorosilane-based oxide are the other furnace
   chemistries.[^aviza-avp]
 * **Stacks.** A furnace that can oxidise and deposit can build an
-  oxide–nitride–oxide stack in one load; the gases Cypress uses for its
+  oxide–nitride–oxide stack in one load. The gases Cypress uses for its
   oxynitride layers are in the collapsed note below this list, from a
-  patent that may still be in force, and Aviza's 300 mm RVP-300 offered
+  patent that may still be in force. Aviza's 300 mm RVP-300 offered
   "sequential processing for nitrided oxides or composite oxide-nitride
   stacks".[^aviza-vert]
 
@@ -136,13 +162,16 @@ wafer. Dichlorosilane nitride is the difficult case. Ammonium chloride
 "condenses as a solid in the exhaust pipes and within the exhaust pump",
 and the condensate "can back-flow into the processing chamber under
 certain circumstances, which can contaminate the chamber and any wafer
-within the chamber"; VLSI Technology's trap heats its walls to about
+within the chamber".[^pat-nh4cl-vlsi] VLSI Technology's trap heats its walls to about
 140 °C and collects the salt on a water-cooled surface.[^pat-nh4cl-vlsi]
+
 A TSMC patent describes the same salt "in the form of a fine powder" that
 "can easily deposit on any cold surface in the furnace or in the ducting
 system", powder that "may be syphoned back into the furnace during a
 deposition process if the pressure in the furnace is not carefully
-controlled".[^pat-nh4cl-tsmc] Film also builds up on the tube, boat and
+controlled".[^pat-nh4cl-tsmc]
+
+Film also builds up on the tube, boat and
 injectors. Expertech's double-walled tube is meant "to eliminate film
 particle formation near the loading door", and its VTR offers "Easier and
 faster process tube maintenance through a mechanized tube removal
@@ -150,22 +179,19 @@ system".[^expertech-vtr]
 
 ## Representative 200 mm-era models
 
-* **SVG Thermco, later Aviza Technology.** The VTR, which offers
-  "within-wafer and wafer-to-wafer uniformity in atmospheric and LPCVD
-  processes";[^expertech-vtr] the AVP-8000, whose applications include
-  nitride, TEOS and silane- and DCS-based oxides, and doped and undoped
-  polysilicon;[^aviza-avp] and the RVP-500, on which Aviza introduced a
-  nitride process "at approximately 500 degrees C" in
-  2004.[^aviza-satin-2004]
-* **Tokyo Electron.** The Alpha-8 series of "diffusion and LP-CVD
-  furnaces";[^tel-alpha8se] the ALPHA-8SE i successor runs "chemical vapor
-  deposition (CVD) of Si (Poly, a-Si), SiN, and SiO₂ films";[^tel-telindy]
-  the VCF-615S LP-TEOS furnace appears in a Sony patent.[^pat-lpcvd-sony]
-* **ASM International.** The A400, with "low pressure chemical vapor
-  deposition (LPCVD) processes like doped silicon and silicon nitride
-  films".[^asm-a400][^asm-vf]
-* **Kokusai Electric.** Vertical furnaces with the inner-and-outer-tube
-  and boat-cover arrangement of its patents.[^pat-lpcvd-kokusai]
+:::{table} Representative vertical LPCVD furnaces (figures as each source gives them)
+
+| Vendor | Model | Year | Published figures |
+|---|---|---:|---|
+| SVG Thermco, later Aviza Technology | VTR | — | offers "within-wafer and wafer-to-wafer uniformity in atmospheric and LPCVD processes"[^expertech-vtr] |
+| SVG Thermco, later Aviza Technology | AVP-8000 | — | applications include nitride, TEOS and silane- and DCS-based oxides, and doped and undoped polysilicon[^aviza-avp] |
+| SVG Thermco, later Aviza Technology | RVP-500 | — | Aviza introduced on it a nitride process "at approximately 500 degrees C" in 2004[^aviza-satin-2004] |
+| Tokyo Electron | Alpha-8 series | — | "diffusion and LP-CVD furnaces"[^tel-alpha8se] |
+| Tokyo Electron | ALPHA-8SE i | — | its successor, runs "chemical vapor deposition (CVD) of Si (Poly, a-Si), SiN, and SiO₂ films"[^tel-telindy] |
+| Tokyo Electron | VCF-615S LP-TEOS furnace | — | appears in a Sony patent[^pat-lpcvd-sony] |
+| ASM International | A400 | — | with "low pressure chemical vapor deposition (LPCVD) processes like doped silicon and silicon nitride films"[^asm-a400][^asm-vf] |
+| Kokusai Electric | vertical furnaces | — | with the inner-and-outer-tube and boat-cover arrangement of its patents[^pat-lpcvd-kokusai] |
+:::
 
 Single-wafer alternatives existed for some films: Teasdale et al.
 describe "a single wafer rapid thermal processing (RTP) module for
@@ -191,9 +217,18 @@ processes:[^skw-01]
 >
 > "LPCVD BTBAS low temp nitride"
 
-Read term by term: a nitride process using ammonia, a silicon process
-that can be run amorphous or crystalline and is undoped, an oxide from
-silane, a combined ONO process and a low-temperature BTBAS nitride. The
+:::{table} How this reference reads the five LPCVD entries
+
+| Entry as listed | What it names | Status |
+|---|---|---|
+| "LPCVD nitride, with NH3 and also DH3" | a nitride process using ammonia | — |
+| "LPCVD polysilicon (undoped), both amorphous and crystalline" | a silicon process that can be run amorphous or crystalline and is undoped | — |
+| "LPCVD silane oxide" | an oxide from silane | — |
+| "LPCVD oxide/nitride/oxide" | a combined ONO process | — |
+| "LPCVD BTBAS low temp nitride" | a low-temperature BTBAS nitride | — |
+:::
+
+The
 page does not expand "DH3"; the step pages describe dichlorosilane
 nitride but do not read "DH3" as dichlorosilane, and neither does this
 page. No TEOS furnace oxide and no in-situ doped silicon are
@@ -256,15 +291,21 @@ likely used at SkyWater"), as collected on the machines index:
 
 The furnace row covers all three furnace classes, because SkyWater
 lists its furnaces as one group; the LPCVD steps are those in the
-paragraph above. The grades rest on the listed processes: "LPCVD
-nitride" for {ref}`ISONIT <step-003>` (strong) and
-{ref}`GATENIT <step-058>` (inference), "LPCVD oxide/nitride/oxide" for
-{ref}`ONO <step-040>` (inference), "LPCVD polysilicon (undoped), both
-amorphous and crystalline" for {ref}`SAGD <step-048>` (inference), "LPCVD
-BTBAS low temp nitride" for {ref}`SPNIT <step-076>` (inference) and
-{ref}`LINIT <step-104>` (weak), and "LPCVD silane oxide" for
-{ref}`POC <step-059>` and {ref}`SPOX <step-080>` (strong for existence,
-as the batch alternative).[^skw-01]
+paragraph above. The grades rest on the listed processes:[^skw-01]
+
+* "LPCVD
+  nitride" for {ref}`ISONIT <step-003>` (strong) and
+  {ref}`GATENIT <step-058>` (inference);
+* "LPCVD oxide/nitride/oxide" for
+  {ref}`ONO <step-040>` (inference);
+* "LPCVD polysilicon (undoped), both
+  amorphous and crystalline" for {ref}`SAGD <step-048>` (inference);
+* "LPCVD
+  BTBAS low temp nitride" for {ref}`SPNIT <step-076>` (inference) and
+  {ref}`LINIT <step-104>` (weak);
+* "LPCVD silane oxide" for
+  {ref}`POC <step-059>` and {ref}`SPOX <step-080>` (strong for existence,
+  as the batch alternative).
 
 ## Consumables and facilities
 
@@ -281,11 +322,13 @@ page.
 
 * **Precursors.** Dichlorosilane and ammonia for nitride; BTBAS, a
   liquid delivered as vapour, with ammonia for low-temperature
-  nitride;[^gumpher-2004] silane for silicon and silane
+  nitride.[^gumpher-2004] Silane for silicon and silane
   oxide;[^kamins-1980] N₂O for oxide and oxynitride layers (the Cypress
   patent naming it may still be in force: see the collapsed notes
   above); TEOS
-  for TEOS oxide where it is used.[^becker-1987] SkyWater names ammonia,
+  for TEOS oxide where it is used.[^becker-1987]
+
+  SkyWater names ammonia,
   BTBAS and silane in its process lines.[^skw-01]
 * **Vacuum and exhaust.** Dry pumps, heated exhaust lines and traps for
   ammonium chloride, which condenses "at temperatures below about 125°
@@ -309,8 +352,9 @@ pressures and thicknesses are not public.
 * **Thermal budget decides the nitride chemistry.** The
   {ref}`SPNIT <step-076>` page reads the spacer nitride as a candidate for
   the listed BTBAS process because it follows the tip implants, and a
-  dichlorosilane nitride at the temperatures above would add diffusion;
-  the {ref}`LINIT <step-104>` page, later still and over TiN local
+  dichlorosilane nitride at the temperatures above would add diffusion.
+
+  The {ref}`LINIT <step-104>` page, later still and over TiN local
   interconnect, prefers PECVD and keeps BTBAS as the batch alternative.
   Aviza's own figures put BTBAS at "570 degrees C or above" against
   "above 630 degrees C" for dichlorosilane.[^aviza-satin-2004]
@@ -327,7 +371,7 @@ pressures and thicknesses are not public.
 * **Batch or single-wafer dielectrics.** For the gate nitride and oxide
   cap ({ref}`GATENIT <step-058>`, {ref}`POC <step-059>`) the step pages
   give LPCVD and PECVD as equal options and say which is used is not
-  public; for the spacer oxide and the local-interconnect nitride cap
+  public. For the spacer oxide and the local-interconnect nitride cap
   ({ref}`SPOX <step-080>`, {ref}`LINIT <step-104>`) the furnace is the
   alternative. The deciding factors the pages give are thermal budget and
   conformality.
@@ -338,26 +382,20 @@ pressures and thicknesses are not public.
 
 ## Related pages
 
-* {ref}`category-deposition` — LPCVD chemistry and the deposition steps
-  of SKY130.
-* {ref}`machine-vertical-furnace-oxidation` — the furnace platform, the
-  Aviza history and the ONO oxidations.
-* {ref}`machine-vertical-furnace-anneal` — the same furnace group used
-  for anneals and the alloy.
-* {ref}`machine-pecvd` — the single-wafer plasma alternative for the gate
-  nitride, oxide cap, spacer oxide and local-interconnect nitride cap.
-* {ref}`machines-index` — all machine classes, SkyWater's listed tools
-  and the step assignments.
-* {ref}`materials-index` — the precursor gases and their hazards.
-* {ref}`category-etch` — the etches that pattern the furnace nitrides and
+* **Category.** {ref}`category-deposition` — LPCVD chemistry and the deposition steps
+  of SKY130. {ref}`category-etch` — the etches that pattern the furnace nitrides and
   the gate silicon.
-* {ref}`material-hardware-consumables` — furnace ware, traps and
-  abatement.
-* {ref}`material-precursors` — silane, dichlorosilane, TEOS, BTBAS,
-  ammonia, SiF₄, ozone and WF₆.
-* {ref}`material-process-gases` — nitrogen, oxygen, hydrogen, argon,
+* **Machines.** {ref}`machine-vertical-furnace-oxidation` — the furnace platform, the
+  Aviza history and the ONO oxidations. {ref}`machine-vertical-furnace-anneal` — the same furnace group used
+  for anneals and the alloy. {ref}`machine-pecvd` — the single-wafer plasma alternative for the gate
+  nitride, oxide cap, spacer oxide and local-interconnect nitride cap.
+* **Materials.** {ref}`material-hardware-consumables` — furnace ware, traps and
+  abatement. {ref}`material-precursors` — silane, dichlorosilane, TEOS, BTBAS,
+  ammonia, SiF₄, ozone and WF₆. {ref}`material-process-gases` — nitrogen, oxygen, hydrogen, argon,
   helium and the oxidation additives, their grades and SkyWater's listed
   gases.
+* **Indexes.** {ref}`machines-index` — all machine classes, SkyWater's listed tools
+  and the step assignments. {ref}`materials-index` — the precursor gases and their hazards.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
 ### Related patents, papers and filings
