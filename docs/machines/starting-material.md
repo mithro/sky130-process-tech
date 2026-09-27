@@ -1,26 +1,20 @@
 (machine-starting-material)=
 # Starting material: incoming inspection, marking and sorting
 
-A fab does not grow or polish its own silicon. Crystal pulling, slicing,
-lapping and polishing happen at the wafer vendor, and the wafers arrive
-in sealed cassettes made to a written specification. What the fab
-itself runs on them before the first process step is a small group of
-machines: a laser surface scanner that counts particles and measures
-haze on the bare wafer, a laser marker that writes an identifier into
-the silicon, and a sorter that reads the identifiers and puts the wafers
-into lots. This page describes that group in general, lists
-representative 200 mm-era models, and then says what SkyWater has
-published about its own tools of this class and which SKY130 step this
-reference assigns to it. The wafer itself — diameter, doping,
-orientation, oxygen and the vendor's equipment — is on the
-{ref}`category page <category-substrate>`; the clean that follows is on
-the {ref}`wet bench page <machine-wet-bench>`; the same class of scanner on
-monitor and product wafers at later steps are on the
-{ref}`defect and particle inspection page <machine-defect-inspection>`.
+A fab does not grow or polish its own silicon. What the fab
+itself runs on the wafers before the first process step is a small group of
+machines:
+
+* a laser surface scanner that counts particles and measures
+  haze on the bare wafer;
+* a laser marker that writes an identifier into
+  the silicon;
+* a sorter that reads the identifiers and puts the wafers
+  into lots.
 
 | | Starting material: incoming inspection, marking and sorting |
 |---|---|
-| What it does | Checks, identifies and sorts incoming polished wafers. KLA calls its Surfscan SP1 scanners the "Industry standard for wafer qualification – wafer manufacturer OQC and wafer fab IQC";[^kla-sp1-2021] SEMI M12 marking "links the properties of the wafer stored in an appropriate database system to each individual wafer for purposes of tracking and control during wafer and device manufacture".[^semi-m12] |
+| What it does | Checks, identifies and sorts incoming polished wafers. |
 | Surface inspection | Laser light scattering: "Oblique Illumination provides best sensitivity for particle detection on smooth surfaces", "Normal Illumination is ideal for detecting mechanical scratches", and "Haze maps graphically represent full wafer surface conditions / quality".[^kla-sp1-2021] |
 | Marking | A laser pulse melts the silicon in a dot;[^pat-lasermark-wacker] a GSI Group patent that may still be in force names the two kinds of mark in use and its own soft mark — see the collapsed note under this table. A current 200 mm marker places marks "within a 25 mm band around the wafer's circumference", with dot depths of "2.4 μm - 5 μm".[^thinklaser-sigmaclean] |
 | Sorting | A sorter reads each wafer's identifier and moves it to its slot;[^pat-sorter-infineon] a current 200 mm model can "split, merge, compress, or create custom wafer mixes by sorting wafers based on their IDs", with an ID reader "for OCR, barcode, or data matrix recognition".[^whs-t4] |
@@ -35,12 +29,24 @@ use, and GSI's soft Supersoftmark® is "generally characterized as 'debris
 free'".[^pat-softmark-gsi]
 :::
 
+:::{seealso}
+The wafer itself — diameter, doping,
+orientation, oxygen and the vendor's equipment — is on the
+{ref}`category page <category-substrate>`. The clean that follows is on
+the {ref}`wet bench page <machine-wet-bench>`. The same class of scanner on
+monitor and product wafers at later steps are on the
+{ref}`defect and particle inspection page <machine-defect-inspection>`.
+:::
+
 ## What the machine class is and how it works
 
-The wafers a fab buys are made to SEMI M1, which covers polished
+Crystal pulling, slicing,
+lapping and polishing happen at the wafer vendor, and the wafers arrive
+in sealed cassettes made to a written specification. The wafers a fab buys are made to SEMI M1, which covers polished
 single-crystal silicon wafers,[^semi-m1] and the wafer maker has already
 inspected them before shipment: the same scanner family serves the
 vendor's outgoing and the fab's incoming quality control.[^kla-sp1-2021]
+
 The fab's own tools therefore do three things before the wafers enter
 the process flow: they confirm that the surface is clean and undamaged,
 they give each wafer an identity that lasts through the flow, and
@@ -55,14 +61,18 @@ An unpatterned-wafer scanner sweeps a focused laser across the wafer
 and collects the light scattered from it. A particle, a pit or a
 scratch scatters light into the collectors as a discrete event; the
 microroughness of the whole surface gives a continuous background, the
-haze. Scanners are calibrated with polystyrene latex spheres of known
-size, which do not scatter like real contaminants: Liu, Chae and Bae
+haze.
+
+Scanners are calibrated with polystyrene latex spheres of known
+size, which do not scatter like real contaminants.[^liu-1993] Liu, Chae and Bae
 found that "Because of the high refractive index of silicon, the wafer
 surface scanner detects Si particles to a considerably smaller size than
 PSL", so that "Si particles as small as 0.1 μm have been detected by the
 Surfscan 4000 with 90% counting efficiency even though the nominal
 lower limit of the instrument is 0.3 μm based on PSL
-calibration".[^liu-1993] A SEMATECH task force reported that "Silicon
+calibration".[^liu-1993]
+
+A SEMATECH task force reported that "Silicon
 particles are consistently sized incorrectly when the laser surface
 scanner is calibrated using standardized procedures utilizing PSL
 spheres", and that "Distinguishing false counts caused by surface
@@ -74,11 +84,13 @@ number nor is it an intrinsic surface property", which is why Scheer
 etched a physical haze standard into silicon.[^scheer-1996]
 
 Current scanners of the class separate these signals with more than one
-illumination. KLA's SP1 brochure lists oblique illumination for
+illumination. KLA calls its Surfscan SP1 scanners the "Industry standard for wafer qualification – wafer manufacturer OQC and wafer fab IQC".[^kla-sp1-2021] KLA's SP1 brochure lists oblique illumination for
 particles on smooth surfaces, normal illumination for "mechanical
 scratches for equipment monitoring or slip lines for epitaxial
 processes", brightfield differential interference contrast for "defects
-with surface height changes", and haze maps.[^kla-sp1-2021] The
+with surface height changes", and haze maps.[^kla-sp1-2021]
+
+The
 SP1 DLS, as KLA-Tencor described it in 2002, had a backside inspection
 module for "non-destructive inspection of the backsides of patterned
 (product) wafers, as well as the front and backsides of unpatterned
@@ -89,16 +101,20 @@ wafers".[^kla-sp1dls-2002]
 Not every light-point defect on a new wafer is a particle. Ryuta et al.
 showed that SC-1 cleaning forms "a new type of singularity" on the
 surface that is "perceived by laser particle counters as small particles
-on wafers", corresponding to "small shallow pits caused by the etching
+on wafers".[^ryuta-1990] They correspond to "small shallow pits caused by the etching
 effect of the SC1 cleaning solution", presumed to originate in "some
 kind of defect in the melt-grown crystals".[^ryuta-1990] These
 crystal-originated particles, or COPs, matter for the gate oxide:
-Ishii et al. found that they "consist of single pits and pair pits" and
-that "when the gate oxide thickness was around 10 nm, in the active
-region pair pits caused gate oxide failure, while single pits did
-not",[^ishii-1996] and Miyazaki et al. that "the presence of COP was the
-main cause of GOI failure", the original defect being "an octahedral
-void".[^miyazaki-1997] A light-point count on a wafer that has seen SC-1
+
+* Ishii et al. found that they "consist of single pits and pair pits" and
+  that "when the gate oxide thickness was around 10 nm, in the active
+  region pair pits caused gate oxide failure, while single pits did
+  not";[^ishii-1996]
+* Miyazaki et al. found that "the presence of COP was the
+  main cause of GOI failure", the original defect being "an octahedral
+  void".[^miyazaki-1997]
+
+A light-point count on a wafer that has seen SC-1
 therefore reflects the crystal as well as the particles on it (our
 reading; {term}`gate oxide integrity`).
 
@@ -109,7 +125,9 @@ laser. A Wacker Siltronic patent of 1985 describes "contrast rich,
 permanent and slag-free characterizations" made by irradiating "a
 surface segment corresponding to 1.5 to 6.5 times the surface area of
 the desired surface pattern" so that the silicon melts and partially
-vaporises "only in the center thereof".[^pat-lasermark-wacker] Marking
+vaporises "only in the center thereof".[^pat-lasermark-wacker]
+
+Marking
 can also damage the crystal: Christ and Maurantonio found
 that "Laser marking not followed by etching is seen to cause
 dislocations and slip patterns in the vicinity of the mark after an
@@ -139,7 +157,7 @@ with a much lower thermal conductivity.[^khoong-2010]
 
 What is written is standardised. SEMI M12 defines "the geometric and
 spatial limits of the alphanumeric code, specifically for serial
-identification of flatted and notched silicon wafers";[^semi-m12] SEMI
+identification of flatted and notched silicon wafers".[^semi-m12] SEMI M12 marking "links the properties of the wafer stored in an appropriate database system to each individual wafer for purposes of tracking and control during wafer and device manufacture".[^semi-m12] SEMI
 M13 adds a code with "information on the origin, approximate
 resistivity, dopant species, and crystal growth orientation in addition
 to a wafer identification number", and "does not address the marking
@@ -152,7 +170,9 @@ notch, and a reader for the mark. An Infineon patent describes the
 logic: wafers in random slots are removed one by one, "The information
 carrier of the first wafer is read by a reading device to determine the
 position of the first wafer in the sequence", and the wafer is moved to
-the slot that corresponds to its position.[^pat-sorter-infineon] A
+the slot that corresponds to its position.[^pat-sorter-infineon]
+
+A
 current 200 mm sorter has "two ergonomic tilt-stage load ports, a linear
 robot, and an optical wafer notch/flat aligner", "supports automatic
 sorting in 25-slot cassettes", reaches "up to 650 wafers per hour", and
@@ -171,30 +191,27 @@ gauges appears in any SkyWater source retrieved for this page.
 
 ## Representative 200 mm-era models
 
-* **Tencor / KLA-Tencor Surfscan.** The Surfscan 4000, whose sizing and
-  counting Liu, Chae and Bae evaluated in 1993;[^liu-1993] the
-  Surfscan SP1 TBI and SP1 DLS, the latter "Delivers enhanced
-  sensitivity in 200 mm/300 mm wafer process qualification" and "enables
-  tool-qualification and tool monitoring in 0.13 µm design rules and
-  below".[^kla-sp1dls-2002] KLA has since restarted production of the
-  SP1 TBI Pro and SP1 DLS Pro for 150–300 mm wafers, quoting sensitivity
-  "down to 60nm on the SP1 TBI and 50nm on the SP1 DLS on prime bare
-  silicon".[^kla-sp1-2021]
-* **Lumonics / GSI Lumonics WaferMark.** GSI's own account of the
-  WaferMark line and of which system produces its soft marks is in a
-  patent that may still be in force, in the collapsed note below this
-  list. A used-equipment
-  listing offers a "GSI LUMONICS WaferMark SuperClean", "Laser marking
-  system, 8"", of 1995 vintage.[^cae-wafermark-superclean] Thinklaser
-  USA now describes the SigmaClean as a "debris-free soft marking"
-  system for "100 mm to 200 mm wafers", "fully compliant with SEMI
-  standards for wafer marking: T7, M12 and M13", with a 1053 nm
-  diode-pumped Nd:YLF laser and "240 wph".[^thinklaser-sigmaclean]
-* **Sorters.** No 200 mm-era sorter description was retrieved for this
-  page; the WHS-T4 above is a current model of the class.[^whs-t4]
-* **At the wafer vendor.** The pullers, saws and polishers, and the
-  vendors of the period, are on the {ref}`category page
-  <category-substrate>`.
+:::{table} Representative incoming-inspection scanners and laser markers (figures as each source gives them)
+
+| Vendor | Model | Year | Published figures |
+|---|---|---:|---|
+| Tencor / KLA-Tencor | Surfscan 4000 | — | whose sizing and counting Liu, Chae and Bae evaluated in 1993[^liu-1993] |
+| Tencor / KLA-Tencor | Surfscan SP1 TBI and SP1 DLS | — | the latter "Delivers enhanced sensitivity in 200 mm/300 mm wafer process qualification" and "enables tool-qualification and tool monitoring in 0.13 µm design rules and below"[^kla-sp1dls-2002] |
+| KLA | SP1 TBI Pro and SP1 DLS Pro | — | production since restarted, for 150–300 mm wafers, quoting sensitivity "down to 60nm on the SP1 TBI and 50nm on the SP1 DLS on prime bare silicon"[^kla-sp1-2021] |
+| Lumonics / GSI Lumonics | WaferMark SuperClean | — | a used-equipment listing offers a "GSI LUMONICS WaferMark SuperClean", "Laser marking system, 8"", of 1995 vintage[^cae-wafermark-superclean] |
+| Thinklaser USA | SigmaClean | — | now described as a "debris-free soft marking" system for "100 mm to 200 mm wafers", "fully compliant with SEMI standards for wafer marking: T7, M12 and M13", with a 1053 nm diode-pumped Nd:YLF laser and "240 wph"[^thinklaser-sigmaclean] |
+:::
+
+**Sorters.** No 200 mm-era sorter description was retrieved for this
+page; the WHS-T4 above is a current model of the class.[^whs-t4]
+
+**At the wafer vendor.** The pullers, saws and polishers, and the
+vendors of the period, are on the {ref}`category page
+<category-substrate>`.
+
+**Lumonics / GSI Lumonics WaferMark.** GSI's own account of the
+WaferMark line and of which system produces its soft marks is in a
+patent that may still be in force, in the collapsed note below.
 
 :::{dropdown} From a patent shown as in force (US 7,705,268; estimated expiry 2026-12-17) — open to read
 GSI describes its WaferMark system as "believed to be the first
@@ -217,7 +234,9 @@ Read term by term: a scribe, which we read as a wafer laser marker, from
 Lumonics. "Superclean" matches the model name of the "GSI LUMONICS
 WaferMark SuperClean" in a used-equipment listing,[^cae-wafermark-superclean]
 so we read the entry as a WaferMark SuperClean; SkyWater gives no model
-number, wafer size, laser or mark type. The page lists no laser surface
+number, wafer size, laser or mark type.
+
+The page lists no laser surface
 scanner, flatness or resistivity gauge, or wafer sorter; under "Sort"
 it lists "Camtek Falcon (outgoing QA)", which we read as inspection of
 finished rather than incoming wafers.[^skw-01] Under "Other Services" it lists "High
@@ -240,10 +259,12 @@ wafers from other qualified suppliers".[^cyp-06]
 On the strength scale of the {ref}`machines index <machines-index>`
 the Lumonics listing is **strong**: it is a SkyWater
 statement.[^skw-01] The model is our reading of the name. The page does
-not say where in any flow the scribe is used; its place at the head of
+not say where in any flow the scribe is used. Its place at the head of
 the furnace and pre-clean group is a layout, not a statement, and the
 {ref}`SMAT <step-001>` page grades the entry "strong" while noting that
-the page "does not say which step uses it". The SP1 reading rests on a
+the page "does not say which step uses it".
+
+The SP1 reading rests on a
 job posting and is **medium**;[^job-06] the S-1 supplier list is
 **strong** for the wafer vendors but names no tool.[^sec-01] The
 caveats that apply to every listed tool are under
@@ -323,16 +344,18 @@ limits and marking scheme are not public.
 * **Where the mark is written.** SEMI M12 and M13 are both written for
   marking "performed by silicon manufacturers",[^semi-m12][^semi-m13]
   and SkyWater lists a
-  marker of its own;[^skw-01] whether SKY130 wafers arrive marked, are
-  marked at Bloomington, or both, is not public. A mark made before the
+  marker of its own.[^skw-01] Whether SKY130 wafers arrive marked, are
+  marked at Bloomington, or both, is not public.
+
+  A mark made before the
   first oxidation must not seed slip ({ref}`BOX <step-002>`, the first
   furnace step on this reference's reading), the failure Christ and Maurantonio saw after oxidation
-  of unetched marks;[^christ-1983] whether the soft mark of the listed
+  of unetched marks.[^christ-1983] Whether the soft mark of the listed
   marker helps here is answered by a patent that may still be in force,
   in the collapsed note below this list.
 * **Incoming counts and the gate oxides.** COPs are a main cause of
   gate-oxide failure, and pair pits caused failures in oxides of about
-  10 nm,[^ishii-1996][^miyazaki-1997] so the incoming
+  10 nm.[^ishii-1996][^miyazaki-1997] So the incoming
   scan bears on the thick and thin gate oxides of
   {ref}`GOX100 <step-043>` and {ref}`LVGOX <step-047>` (our reading; no
   SKY130 COP limit is public).
@@ -353,18 +376,16 @@ A soft mark avoids the slag of a hard mark.[^pat-softmark-gsi]
 
 ## Related pages
 
-* {ref}`category-substrate` — the wafer specification, crystal growth
-  and the vendor's equipment.
-* {ref}`SMAT <step-001>` — the step this class serves.
-* {ref}`machine-wet-bench` — the pre-furnace clean that follows receipt.
-* {ref}`machine-defect-inspection` — unpatterned and patterned inspection
+* **Steps.** {ref}`SMAT <step-001>` — the step this class serves.
+* **Category.** {ref}`category-substrate` — the wafer specification, crystal growth
+  and the vendor's equipment. {ref}`category-test` — in-line defect inspection and electrical test.
+* **Machines.** {ref}`machine-wet-bench` — the pre-furnace clean that follows receipt.
+  {ref}`machine-defect-inspection` — unpatterned and patterned inspection
   at later steps, with the same class of scanner.
-* {ref}`category-test` — in-line defect inspection and electrical test.
-* {ref}`machines-index` — all machine classes, SkyWater's listed tools
-  and the step assignments.
-* {ref}`materials-index` — wafers and cleaning chemicals.
-* {ref}`material-substrates` — prime, test, monitor and reclaimed
+* **Materials.** {ref}`material-substrates` — prime, test, monitor and reclaimed
   wafers and their standards.
+* **Indexes.** {ref}`machines-index` — all machine classes, SkyWater's listed tools
+  and the step assignments. {ref}`materials-index` — wafers and cleaning chemicals.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
 ### Related patents, papers and filings

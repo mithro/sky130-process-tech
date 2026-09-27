@@ -554,6 +554,56 @@ to the patent clause).
 
 Content problems for the owner: none found.
 
+### 10. `docs/machines/starting-material.md` — done
+
+Rules applied: R-INTRO, R-MODELS, R-QUICKFACTS, R-PARA, R-SENTENCE, R-LIST, R-RELATED, R-CAPTION.
+Skipped R-ENTRIES (one entry, "Scribe: Lumonics Superclean", glossed in two clauses). The three
+in-force notes are untouched; each still follows the text it belongs to (the first follows the
+quick-facts table, so the `{seealso}` goes after that note, not between table and note).
+
+* **R-INTRO.** 170 → 68 words: "A fab does not grow or polish its own silicon." and the sentence
+  naming the three machines, as a lead-in and three items ("on them" → "on the wafers", its noun
+  restored because the sentence it pointed back to moved). "Crystal pulling, slicing, lapping and
+  polishing … written specification." moved to open the first H2. The pointer sentence (three
+  pointers) → `{seealso}`, split at its semicolons. Deleted template sentence: "This page describes
+  that group in general, lists representative 200 mm-era models, and then says what SkyWater has
+  published about its own tools of this class and which SKY130 step this reference assigns to it."
+* **R-MODELS.** Two bullets → 5 rows + three remarks (**Sorters.**, **At the wafer vendor.**, and
+  **Lumonics / GSI Lumonics WaferMark.**, the in-force pointer, which stays directly above its
+  note; its "below this list" became "below", R-DROPDOWN step 3). All Year cells `—`: "evaluated in
+  1993" is a study date, "of 1995 vintage" a manufacture date (review H1), and no other row has a
+  model year. Vendors as the page attributes them: "Tencor / KLA-Tencor" (the page's group head),
+  "KLA" for the restarted Pro models, "Thinklaser USA" for the SigmaClean.
+* **R-QUICKFACTS.** Cells over cap 6 → 5. What it does: the KLA "Industry standard for wafer
+  qualification …" sentence moved verbatim into `### Laser surface scanners`, and the SEMI M12
+  "links the properties …" sentence into the SEMI paragraph of `### Laser marking`, each with its
+  marker. Left: Surface inspection and Sorting (quotations only here), Marking (it carries the
+  pointer the first in-force note answers: "see the collapsed note under this table"; not
+  touched), Standards and 200 mm era (quotations and figures only here).
+* **R-PARA / R-SENTENCE / R-LIST.** Long H3 bodies split at source seams. The COP studies (Ishii,
+  Miyazaki) → lead-in and two plain items ("and Miyazaki et al. that" → "Miyazaki et al. found
+  that"). Splits: the PSL sentence at its colon (Liu's marker repeated on the first half), Ryuta at
+  ", corresponding to" ("They correspond to …"), the SEMI M12/M13 semicolon, the strength
+  semicolon, the integration items at their semicolons, and ", so the incoming scan" ("So the
+  incoming scan …", R-PARA step 2). The in-force pointer sentences outside the notes keep their
+  wording.
+* **R-RELATED** with a **Steps.** label for the SMAT link; **R-CAPTION** as page 1.
+
+Caps (measure5): paragraphs > 100 8 → 0; list items > 60 4 → 1 (the untouched grading bullet);
+sentences > 45 17 → 8 (Liu 64, SEMATECH 47, Wacker 46, Christ 56, Infineon 52, the sorter 46 — each
+over only by the words inside its quotations; a 62-word sentence inside an in-force note, which
+measure5 counts and this pass may not edit; the Open-questions model-list bullet, 48, unchanged);
+table cells > 25 6 → 7 (five quick-facts cells, the KLA Pro and SigmaClean rows).
+
+Preservation. DEDUPLICATED: number 200 (template sentence). ADDED markers: `liu-1993`,
+`ryuta-1990` (splits). REGROUPED: the models bullets → rows, same digits in the same order. Template
+losses: `about`, `SKY130`. Strict words: the template sentence ("group", "describes"); "list" (the
+pointer); "corresponding" ("They correspond"); one "Surfscan" (the bullet head, now the rows'
+model names). Marker coverage: 15 flags, all read — the intro list (no markers in the base),
+model cells, the integration halves that carry their own "not public" or "(our reading)".
+
+Content problems for the owner: none found.
+
 ## Guide problems
 
 1. **`measure5.py` fuses a sentence ending in "…ch."** Its abbreviation guard `(?<!ch\.)` (meant
