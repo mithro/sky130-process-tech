@@ -7,7 +7,7 @@ C₂F₆, C₄F₈, SF₆, NF₃) for oxide, nitride, silicon and refractory fil
 and for cleaning deposition chambers; chlorine and boron trichloride for
 aluminium and titanium films; hydrogen bromide for silicon; and small
 additions of hydrofluorocarbons, carbon monoxide or methane that tune
-selectivity and sidewall passivation. Many are toxic or corrosive, and
+{term}`selectivity` and sidewall passivation. Many are toxic or corrosive, and
 the fluorinated ones include some of the most potent greenhouse gases in
 industrial use, so their emissions are regulated and abated. This page
 describes the class in general, lists representative gases and their
@@ -269,7 +269,7 @@ The steps fall into groups, as the index rows describe them:
 * **Front-end etches.** HBr, Cl₂ and O₂ with CF₄ breakthrough for the
   trench and gate ({ref}`STIE <step-006>`, {ref}`P1ME <step-062>`).
 
-  CF₄, CHF₃ and SF₆ for the nitride, ONO and spacer etches
+  CF₄, CHF₃ and SF₆ for the nitride, {term}`ONO` and spacer etches
   ({ref}`STINITE <step-005>`, {ref}`ONOME <step-042>`,
   {ref}`SPE <step-077>`, {ref}`NPCME <step-079>`), with CH₃F or CH₂F₂ as
   a possible selectivity additive at {ref}`SPE <step-077>`; HBr at
@@ -285,7 +285,7 @@ The steps fall into groups, as the index rows describe them:
   etches {ref}`CAPME <step-138>` and {ref}`CAP2ME <step-153>` name HBr and
   CH₂F₂ among their options; the pad etch page {ref}`PDME <step-169>`
   reads CF₄, CHF₃ and SF₆.
-* **Chamber cleans.** NF₃ at the HDP, PECVD and tungsten CVD steps and at
+* **Chamber cleans.** NF₃ at the HDP, {term}`PECVD` and tungsten {term}`CVD` steps and at
   several etches, and as a tube-clean option at
   {ref}`ISONIT <step-003>`.
 * **CF₄ named and left out.** The implant-strip pages, from
@@ -356,7 +356,7 @@ safety data and regulatory context.
 ## Process-integration notes for SKY130
 
 These notes connect the class to the step pages; they add no SKY130
-conditions of their own. SKY130's etch gases, flows and endpoints are not
+conditions of their own. SKY130's etch gases, flows and {term}`endpoints <endpoint>` are not
 public.
 
 * **Named gases on unnamed tools.** SkyWater's gas lists belong to the

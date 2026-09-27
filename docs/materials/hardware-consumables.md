@@ -2,11 +2,11 @@
 # Hardware consumables and abatement
 
 Every process tool wears out parts of itself. A furnace consumes its
-quartz or silicon-carbide tubes, boats and baffles; a plasma etcher, CVD
+quartz or silicon-carbide tubes, boats and baffles; a plasma etcher, {term}`CVD`
 chamber or sputtering chamber consumes the rings, liners, domes,
 showerheads, shields and chuck surfaces that the plasma or the film
 attacks; a rapid thermal processor consumes lamps and quartz windows;
-and an electrical tester consumes probe cards and their needles. Behind
+and an electrical tester consumes {term}`probe cards <probe card>` and their needles. Behind
 the tools, the exhaust and waste of the processes pass through traps,
 scrubbers and abatement systems that are themselves maintained and
 replaced. On the step pages' readings, 92 of SKY130's 171 steps name
@@ -61,7 +61,7 @@ The design of the ware is process-critical:
 * A Tokyo Electron furnace stands the boat on "thin heat insulation
   plates" above the furnace throat.[^pat-vf-insulation-tel]
 * A Kokusai patent adds a boat cover inside the inner and outer tubes of
-  an LPCVD furnace so that the film "is improved in uniformity and
+  an {term}`LPCVD` furnace so that the film "is improved in uniformity and
   homogeneity".[^pat-lpcvd-kokusai]
 
 Sodium diffuses through quartz: Eisele and
@@ -97,7 +97,7 @@ Parts shed contamination:
 * Ito et al. found AlF₃ particles from the "coating material Al2O3 on
   the etching chamber wall" and suppressed them by dehydrating the
   chamber parts.[^ito-2008]
-* An Applied Materials HDP-CVD patent attributes sodium to the quartz
+* An Applied Materials {term}`HDP-CVD` patent attributes sodium to the quartz
   dome and alumina nozzles and deposits a seasoning film after each
   clean to hold it back.[^pat-seasoning-amat]
 
@@ -110,13 +110,13 @@ the cost of consumables", with a customer reporting a mean time between
 cleans of "more than 300 RF hours".[^lam-9600dfm-2001]
 
 In sputtering
-chambers, collimators capture off-normal metal[^rossnagel-1991] and IMP
+chambers, collimators capture off-normal metal[^rossnagel-1991] and {term}`IMP`
 coils are pasted with target material;[^pat-imp-coil-amat] shields and
 kits are changed with the targets ({ref}`material-sputter-targets`).
 
 ### Rapid thermal processing parts
 
-A lamp-heated RTP chamber consumes its light source and its window. The
+A lamp-heated {term}`RTP` chamber consumes its light source and its window. The
 Heatpulse 8800/8808 page describes "Tungsten halogen lamps and cold
 process-chamber walls which allow fast wafer heating and cooling rates",
 with lamps "arranged in 2 banks of 14 lamps each".[^ag-8800] The same
@@ -145,7 +145,7 @@ combustion, electric heating or plasma:
 * Fiala et al. modelled point-of-use plasma abatement between the
   turbomolecular and backing pumps.[^fiala-1999]
 * Hu et al. studied NF₃ decomposition in point-of-use "wet-thermal-wet
-  abatement" of PECVD chamber cleaning.[^hu-2018]
+  abatement" of {term}`PECVD` chamber cleaning.[^hu-2018]
 * Mangyou et al. reported an atmospheric plasma system treating "up to
   80 L/min of CF4 exhaust with 95% of DRE".[^mangyou-2005]
 
@@ -207,7 +207,7 @@ catalogues, not the parts SkyWater buys.
 SkyWater's *Facilities & Capabilities* page names tools, not their
 parts.[^skw-01] The entries that bear on this class are "Furnaces are all
 made by Aviza"; "Ag Heatpulse 8808 NH3, Ar, N2, O2, up to 1200C" under
-"RTA"; the etchers, deposition tools and PVD chambers described on the
+"RTA"; the etchers, deposition tools and {term}`PVD` chambers described on the
 machine pages; and, under "Wafer Sort/Test":
 
 > "Parametric Test" · "HP 4062UX" · "– DC, capacitance, pulse generator,
@@ -312,7 +312,7 @@ required* sections describe them:
   fluorine pad and seal-ring etches, the arsenic implant and several
   implant strips, the
   oxide polishes and the backside acid etch.
-* **Probe cards** — the e-test at {ref}`HPETEST <step-171>`.
+* **Probe cards** — the {term}`e-test` at {ref}`HPETEST <step-171>`.
 
 ## Supply, handling, safety and facilities
 
@@ -352,12 +352,12 @@ cards are not public.
   dichlorosilane and ammonia, whose ammonium chloride
   loads exhaust lines, pumps and traps;[^pat-nh4cl-vlsi][^pat-nh4cl-tsmc]
   the ISONIT page lists an HCl-tolerant exhaust and tube cleaning, and the
-  ONO page quartz ware periodically cleaned of nitride.
+  {term}`ONO` page quartz ware periodically cleaned of nitride.
 * **Chamber walls and gate CD.** On its page's reading, the gate etch at
   {ref}`P1ME <step-062>` runs in HBr/Cl₂/O₂, a chemistry in which wall
   coatings change with oxygen addition;[^cunge-2005] the step page names
   chamber consumables
-  and monitor wafers together, since chamber state and CD drift are
+  and monitor wafers together, since chamber state and {term}`CD` drift are
   controlled together (our reading).
 * **Metal etches and chlorine.** The metal etches from
   {ref}`MM1E <step-114>` to {ref}`MM5E <step-163>` name chlorine abatement
@@ -371,7 +371,7 @@ cards are not public.
   thermocouple or pyrometer calibration; lamp and window condition and
   wafer emissivity affect the temperature the recipe
   achieves.[^chen-2002-rtp][^ag-8800]
-* **Probing the e-test structures.** The public SKY130 test tile
+* **Probing the e-test structures.** The public SKY130 {term}`test tile`
   "consists of a grid of probe points",[^raw-data-testtile-prop] and the
   replacement open test tile, a Google, NIST and University of Michigan
   OpenFASoC design, documents its own test interface with an image whose

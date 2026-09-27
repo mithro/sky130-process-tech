@@ -15,7 +15,7 @@ page; nitrogen, argon and oxygen belong to the
 here only in their role as anneal ambients.
 On the step pages' readings,
 SKY130 uses forming gas in the two {term}`alloy anneals <alloy anneal>`
-and in the ash of thirty resist strips. This page describes the class in
+and in the {term}`ash` of thirty resist strips. This page describes the class in
 general, lists representative mixtures, and then says what SkyWater has
 published about its anneal and ash ambients and which SKY130 steps name
 forming gas. The anneal physics is on the
@@ -48,7 +48,7 @@ section describes the gases.
 
 Nitrogen is the default inert ambient and purge gas; argon is used where
 nitrogen itself would react (industry practice). Ohashi, Kubota and Nakajima used an argon
-anneal to suppress gate-oxide thinning at the STI edge.[^ohashi-2007]
+anneal to suppress gate-oxide thinning at the {term}`STI` edge.[^ohashi-2007]
 The ambient in which an oxide is cooled matters: Razouk and Deal found
 large interface-state densities in oxides cooled in nitrogen or argon,
 which a low-temperature hydrogen anneal reduces.[^razouk-1979] Deal's
@@ -186,7 +186,7 @@ whether hydrogen mixtures are bought premixed or blended on site.
 
 ### Strength of the evidence
 
-The furnace, RTA and asher entries are SkyWater statements and rank as
+The furnace, {term}`RTA` and asher entries are SkyWater statements and rank as
 **strong** evidence that hydrogen and forming-gas alloys, argon and
 nitrogen anneals, and hydrogen–nitrogen ash chemistries exist at the fab,
 on the scale of the {ref}`machines index <machines-reading-evidence>`.[^skw-01]

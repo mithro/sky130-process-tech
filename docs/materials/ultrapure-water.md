@@ -152,7 +152,7 @@ The "CO2 injected DI" entry is a SkyWater statement and ranks as
 **strong** evidence that carbonated DI water is used on one solvent tool,
 on the scale of the {ref}`machines index <machines-reading-evidence>`;
 it says nothing of the rest of the fab's water.[^skw-01] That SkyWater
-makes and uses ultrapure water on its wet, lithography and CMP tools is
+makes and uses ultrapure water on its wet, lithography and {term}`CMP` tools is
 industry practice for any fab of the class, not a SkyWater statement,
 and no public source gives SkyWater's water specification, system or
 consumption.
@@ -183,12 +183,12 @@ sections describe them:
 * **Wet cleans, etches and strips** — the pre-furnace clean at
   {ref}`SMAT <step-001>`, the implant strips, the nitride strip at
   {ref}`NS19 <step-013>`, the tunnel-window and gate-oxide etches, the
-  backside film removal at {ref}`BFR <step-060>` and the post-etch cleans
+  {term}`backside film removal` at {ref}`BFR <step-060>` and the post-etch cleans
   of the back end.
 * **Mask steps** — the resist coat, develop and rinse of the mask steps,
   where the pages name DI water with the developer and rinse solvents.
 * **Polishes** — the twelve CMP steps, where all the pages name DI water
-  for the polish and post-CMP clean and four say "in quantity" or "in
+  for the polish and {term}`post-CMP clean` and four say "in quantity" or "in
   large volumes".
 
 Most furnace, implant, deposition, anneal and test steps name no water;
@@ -255,7 +255,7 @@ conditions of their own. SKY130's water specification is not public.
 * **Slurry must not dry.** The CMP pages name DI water for the polish and
   the brush clean, four of them in quantity or in large volumes, which keep the wafer wet until the
   slurry is removed ({ref}`material-cmp-consumables`).[^pat-scrubber-ontrak]
-* **Water in the baths.** The RCA cleans, SPM and dilute HF of the wet
+* **Water in the baths.** The {term}`RCA cleans <RCA clean>`, {term}`SPM` and dilute HF of the wet
   chemicals class are made up with DI water to their working
   concentrations ({ref}`material-wet-chemicals`).[^wiki-rca]
 
