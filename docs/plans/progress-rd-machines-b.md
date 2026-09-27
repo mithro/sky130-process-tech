@@ -836,15 +836,15 @@ the branch tip; intro and quick-facts counts from `tmp/tools/caps.py` (same `cle
 |---|---:|---:|
 | Paragraphs > 100 words | 103 | 0 |
 | List items > 60 words (outside References) | 51 | 3 |
-| Sentences > 45 words | 193 | 40 |
+| Sentences > 45 words | 193 | 39 |
 | Table cells > 25 words | 84 | 85 |
 | Intros > 70 words | 15 | 0 |
 | Quick-facts cells > 20 words or > 1 quotation | 101 | 86 |
 
 * **List items left (3):** the grading bullets under `### SKY130 steps assigned` on
   post-cmp-cleaner, starting-material and wet-bench, which this phase leaves unchanged.
-* **Sentences left (40):** counting each quotation as one word, as §1 says, 33 of them are within
-  45 words. The other 7 are four grading bullets or generated runs (post-cmp-cleaner,
+* **Sentences left (39):** counting each quotation as one word, as §1 says, 33 of them are within
+  45 words. The other 6 are four grading bullets or generated runs (post-cmp-cleaner,
   wet-bench ×2, and the generated wet-bench run), two measure5 artefacts (a sentence ending
   "…etch."/"…torch." fused with the next on plasma-etcher-metal and vertical-furnace-anneal, guide
   problem 1; a Related-pages bullet on single-wafer-spin-processor, reviewer checklist item 12),
