@@ -1,7 +1,7 @@
 (machine-hdp-cvd)=
 # HDP-CVD
 
-A high-density-plasma CVD system is the single-wafer oxide deposition
+A high-density-plasma {term}`CVD` system is the single-wafer oxide deposition
 tool a fab uses to fill narrow gaps: the isolation trenches of the front
 end, the spaces between capped gates and the spaces between metal lines.
 An inductively coupled source makes a dense, low-pressure plasma of
@@ -29,11 +29,11 @@ the {ref}`PECVD page <machine-pecvd>`.
 ## What the machine class is and how it works
 
 The oxide is sputtered off the corners of
-a gap while it grows, and the gap fills from the bottom before its mouth
+a gap while it grows, and the {term}`gap fills <gap fill>` from the bottom before its mouth
 can close.
 
 A film that grows fastest at the upper corners of a gap closes the gap
-over a void (category page). HDP-CVD changes two things. The source makes a much denser plasma at much lower
+over a void (category page). {term}`HDP-CVD` changes two things. The source makes a much denser plasma at much lower
 pressure, so that deposition precursors and ions arrive more
 directionally; and the wafer is biased, so that ions sputter the film as
 it grows.
@@ -91,9 +91,9 @@ flake or particle counts in the chamber".[^pat-hdp-reactor-amat]
 ### Deposition, sputtering and the gap
 
 The balance between deposition and sputtering is the central recipe
-parameter. Before HDP, gap-fill processes alternated PECVD deposition
+parameter. Before HDP, gap-fill processes alternated {term}`PECVD` deposition
 and argon sputter etching in separate steps.[^pat-hdp-novellus] Schwartz and Johns found that, as the gap
-aspect ratio rose, such cycles left a fast-etching region in the gap and
+{term}`aspect ratio` rose, such cycles left a fast-etching region in the gap and
 then "physical voids".[^schwartz-1992]
 
 **Aspect-ratio limits.** The Novellus–IBM patent
@@ -130,9 +130,9 @@ Novellus's 300 mm SPEED pairs its source with a "bi-polar electrostatic
 chuck" for "superior ion uniformity and temperature
 control".[^novellus-hdp-2001] The wafer
 temperature a recipe reaches depends on the film: Applied's Ultima offered
-"high-temperature USG" for STI and "low-temperature USG" for IMD and
+"high-temperature USG" for {term}`STI` and "low-temperature USG" for {term}`IMD` and
 passivation,[^amat-hdp-sti-2002][^amat-hdp-imd-2002] and Hsiao et al.
-deposited HDP PSG "at a temperature ⩽550°C".[^hsiao-2005]
+deposited HDP {term}`PSG` "at a temperature ⩽550°C".[^hsiao-2005]
 
 ### Doped and fluorinated films
 
@@ -223,7 +223,7 @@ performance or reliability".[^chen-2002-psg]
   the CVD planarizing flow layer is deposited in the Flowfill(TM)
   module".[^trikon-10k-1996] The report
   sets it against HDP gap fill as an alternative for
-  inter-metal dielectrics;[^trikon-10k-1996] it is therefore not an
+  {term}`inter-metal dielectrics <inter-metal dielectric>`;[^trikon-10k-1996] it is therefore not an
   HDP-CVD system.
 
 ## At SkyWater
@@ -300,7 +300,7 @@ likely used at SkyWater"), as collected on the machines index:
 * **"Lam/Novellus High Density Plasma (HDP) doped and phos doped with sputter etch"** — *strong (two SkyWater statements):* {ref}`FILOX <step-011>`; *inference:* {ref}`PSG <step-089>`, {ref}`NILD2 <step-105>`, {ref}`NILD3 <step-115>`, {ref}`NILD4 <step-126>`, {ref}`NILD5 <step-141>`, {ref}`NILD6 <step-156>`
 * **The PECVD entries instead** — "PECVD TEOS, C2 and Producer":
   *medium (as the whole film):* {ref}`NILD2 <step-105>`; *medium (as the
-  liner or overburden):* {ref}`NILD3 <step-115>`,
+  liner or {term}`overburden`):* {ref}`NILD3 <step-115>`,
   {ref}`NILD4 <step-126>`, {ref}`NILD5 <step-141>`,
   {ref}`NILD6 <step-156>`; *weak:* {ref}`PSG <step-089>`. "PECVD silane
   oxide/nitride/oxynitride, C1", "PECVD nitride C1": *weak:*
@@ -351,7 +351,7 @@ page.
 * **Chamber parts.** Quartz or ceramic domes and alumina gas nozzles,
   which the seasoning patent names as sources of sodium;[^pat-seasoning-amat]
   the dome's heater and cold plates.[^pat-hdp-reactor-amat]
-* **Chuck and cooling.** An electrostatic chuck with helium backside
+* **Chuck and cooling.** An {term}`electrostatic chuck` with helium backside
   cooling,[^pat-hdp-reactor-amat] and the turbomolecular pumping that
   holds millitorr pressures at high gas flows.[^pat-hdp-reactor-amat]
 * **Monitor wafers.** Blanket wafers for {ref}`thickness <machine-film-thickness-metrology>`,
@@ -373,15 +373,15 @@ thicknesses are not public.
 
   The film is then
   polished to the nitride ({ref}`CMPNIT <step-012>`), and the FILOX page
-  names a furnace or RTP densification as optional.
+  names a furnace or {term}`RTP` densification as optional.
 * **Glass over the gates.** The {ref}`PSG <step-089>` page describes a
   gap between spacer-clad gates whose aspect ratio is well above 2 : 1
   and reads the
   pre-metal glass as HDP PSG; HDP PSG over finished transistors carries
   "the plasma damage concern",[^chen-2002-psg] and its phosphorus
-  activation depends on the later thermal budget.[^hsiao-2005]
+  activation depends on the later {term}`thermal budget`.[^hsiao-2005]
 * **Oxide between metal lines.** The inter-level oxide pages derive gaps
-  of about 1:1 over local interconnect ({ref}`NILD2 <step-105>`) and
+  of about 1:1 over {term}`local interconnect` ({ref}`NILD2 <step-105>`) and
   about 2.6:1 and 2.8:1 between metal lines
   ({ref}`NILD3 <step-115>`, {ref}`NILD6 <step-156>`) from the PDK
   geometry, all below the listed 5:1.[^skw-01]
@@ -399,7 +399,7 @@ thicknesses are not public.
 * **Charging over metal.** Each inter-level oxide is deposited over
   lines connected to gates; the step pages cite the charging studies
   above,[^hwang-1998][^roche-1996] and the SKY130 antenna rules address
-  plasma charging ({ref}`category-etch`).
+  {term}`plasma charging` ({ref}`category-etch`).
 
 ## Related pages
 
@@ -410,7 +410,7 @@ thicknesses are not public.
   share the inter-level oxide steps.
 * **Materials.** {ref}`material-hardware-consumables` — chamber parts
   and exhaust abatement. {ref}`material-precursors` — silane,
-  dichlorosilane, TEOS, BTBAS, ammonia, SiF₄, ozone and WF₆.
+  dichlorosilane, {term}`TEOS`, BTBAS, ammonia, SiF₄, ozone and WF₆.
   {ref}`material-dopant-sources` — dopant gases, solid sources,
   sub-atmospheric packages and ion-source parts.
   {ref}`material-etch-gases` — fluorocarbon, fluoride, chlorine and

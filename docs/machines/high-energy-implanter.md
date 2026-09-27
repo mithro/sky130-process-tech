@@ -2,7 +2,7 @@
 # High-energy ion implanter
 
 A high-energy implanter is the beam-line ion implanter a fab uses to
-place dopant deep in the silicon: retrograde wells, deep N-wells and
+place dopant deep in the silicon: {term}`retrograde wells <retrograde well>`, deep N-wells and
 buried layers, at energies from a few hundred keV to several MeV. It
 adds a second accelerator — a radio-frequency linear accelerator or a
 DC tandem — to the chain of an ordinary implanter, and in the 200 mm
@@ -316,7 +316,7 @@ not public.
 
   Similarly, "low angle quad implants for retrograde wells eliminate
   shadowing effects while delivering superior process robustness as
-  compared to 0° well implants".[^rubin-2002] Lateral straggle from the
+  compared to 0° well implants".[^rubin-2002] Lateral {term}`straggle` from the
   resist edge also shifts the threshold voltage of devices near a well
   edge.[^hook-2003] SKY130's well tilt is not public; the SkyWater entry
   lists "tilt/twist" without a range.[^skw-01]

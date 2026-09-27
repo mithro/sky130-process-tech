@@ -153,7 +153,7 @@ with a laser scanning device", and interpret the changes of stress in
 aluminium films over thermal cycles.[^flinn-1987] The curvature is
 converted to stress with the relation named after Stoney, whose 1909
 paper dealt with the tension of electrodeposited metal films (industry
-practice).[^stoney-1909] Hu reviews why the numbers matter: CVD silicon
+practice).[^stoney-1909] Hu reviews why the numbers matter: {term}`CVD` silicon
 nitride, silicon dioxide and polysilicon "exhibit intrinsic stresses",
 and "Large localized stresses are induced in the silicon substrate near
 the edges and corners of such structural elements".[^hu-1991]
@@ -230,8 +230,8 @@ in other tool groups:[^skw-01]
 > "PECVD silane oxide/nitride/oxynitride, C1" ("low temp, range of R.I.
 > options"); "PECVD nitride C1" ("high R.I., low temp options")
 
-The first is a line of the CMP entry, the second a line of the "Photo
-Metrology" group, and the third two PECVD entries of the "Film
+The first is a line of the {term}`CMP` entry, the second a line of the "Photo
+Metrology" group, and the third two {term}`PECVD` entries of the "Film
 Deposition" group.[^skw-01]
 
 :::{table} How this reference reads two terms in the entries above
@@ -317,7 +317,7 @@ targets, limits and sampling plans are not public.
 
 * **Gate and tunnel oxides.** The gate-oxide pages
   ({ref}`GOX100 <step-043>`, {ref}`LVGOX <step-047>`,
-  {ref}`IOX45 <step-063>`) and the ONO page ({ref}`ONO <step-040>`) name
+  {ref}`IOX45 <step-063>`) and the {term}`ONO` page ({ref}`ONO <step-040>`) name
   a spectroscopic ellipsometer beside C–V test structures. For thin oxides
   Chandler-Horowitz lists the factors that must be controlled to hold
   the precision the roadmap asks for,[^chandler-horowitz-2003] and
@@ -345,7 +345,7 @@ targets, limits and sampling plans are not public.
 * **Metal films.** The liner, TiN, TiW and Ti/Al–Cu stack pages
   ({ref}`overview-metal-cap` sets out which cap the metal stacks carry)
   and the first tungsten fill ({ref}`WDEP <step-099>`) name XRF, a
-  four-point probe and a stress gauge.
+  {term}`four-point probe` and a stress gauge.
 
   The later tungsten-fill pages
   ({ref}`WDEP2 <step-110>`, {ref}`WDEP3 <step-121>`,
@@ -356,13 +356,13 @@ targets, limits and sampling plans are not public.
   {ref}`CAPILD2 <step-150>` name a spectroscopic ellipsometer for
   thickness and index, and the capacitor etch pages
   ({ref}`CAPME <step-138>`, {ref}`CAP2ME <step-153>`) an ellipsometer; the
-  capacitance itself is measured at e-test.
+  capacitance itself is measured at {term}`e-test`.
 
 ## Related pages
 
 * **Category.** {ref}`category-deposition` and {ref}`category-oxidation`
   — the films measured. {ref}`category-cmp` — the polishes, their
-  endpoint and their metrology. {ref}`category-test` — in-line metrology
+  {term}`endpoint` and their metrology. {ref}`category-test` — in-line metrology
   and the electrical monitors at the end of the flow.
 * **Machines.** {ref}`machine-defect-inspection` — the particle scans
   run on the same monitor wafers.

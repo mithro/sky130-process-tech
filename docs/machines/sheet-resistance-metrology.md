@@ -23,9 +23,9 @@ Implant dose control in general is on the
 
 ## What the machine class is and how it works
 
-A four-point probe
+A {term}`four-point probe`
 presses a row of needles onto a doped layer or a metal film and measures
-its sheet resistance, from which dose, activation, junction or film
+its {term}`sheet resistance`, from which dose, activation, junction or film
 thickness can be followed. A thermal-wave (modulated-reflectance) monitor
 heats a spot with a modulated laser and reads the change of reflectance,
 which depends on the implant damage and so on the dose, without contact
@@ -165,7 +165,7 @@ names a sheet-resistance or thermal-wave tool.
 On the strength scale of the {ref}`machines index <machines-index>` there
 is **no evidence** of any particular sheet-resistance or dose monitor at
 SkyWater: no SkyWater page, filing, posting or profile names one. That a
-fab running the listed implanters, furnaces and PVD tools monitors sheet
+fab running the listed implanters, furnaces and {term}`PVD` tools monitors sheet
 resistance is industry practice, not a SkyWater statement. The caveats
 that apply to every listed tool are under
 {ref}`Reading the SkyWater evidence <machines-reading-evidence>`; the
@@ -224,7 +224,7 @@ and test wafers are described on the
 These notes connect the machine class to the step pages; they add no
 SKY130 conditions of their own. SKY130's implant doses, monitor recipes and
 sheet-resistance limits for in-line monitors are not public; the PDK's
-e-test sheet resistances are quoted on the {ref}`HPETEST <step-171>` page.
+{term}`e-test` sheet resistances are quoted on the {ref}`HPETEST <step-171>` page.
 
 * **Threshold, channel, tip and halo implants.** The pages for these
   implants ({ref}`LVTNI <step-015>`, {ref}`LVTPI <step-020>`,
@@ -254,7 +254,7 @@ e-test sheet resistances are quoted on the {ref}`HPETEST <step-171>` page.
   ({ref}`RTAI <step-034>`, {ref}`TIPRTAD <step-075>`,
   {ref}`RTAD <step-088>`) name a four-point probe with thermocouple wafers
   for calibration, {ref}`RTAD2 <step-092>` a four-point probe beside
-  dielectric monitors, and the silicide page
+  dielectric monitors, and the {term}`silicide` page
   ({ref}`CSIL <step-098>`) a four-point probe for silicide monitors.
 * **Metal films.** The liner, tungsten, TiN and Ti/Al–Cu pages name a
   four-point probe beside XRF and stress gauges
@@ -267,7 +267,7 @@ e-test sheet resistances are quoted on the {ref}`HPETEST <step-171>` page.
   The
   sheet resistances the PDK tabulates (for example N⁺ diffusion, local
   interconnect and metal 3) are, on this reference's reading, measured on
-  test structures of the finished wafer. The public test tile described on the
+  test structures of the finished wafer. The public {term}`test tile` described on the
   {ref}`HPETEST <step-171>` page carries van der Pauw and four-terminal
   structures, the two kinds Perloff et al. found interchangeable for
   uniformity measurements.[^perloff-1977]
@@ -276,7 +276,7 @@ e-test sheet resistances are quoted on the {ref}`HPETEST <step-171>` page.
 
 * **Category.** {ref}`category-implant` — dose control and the implant steps.
   {ref}`category-anneal` — activation and silicide anneals.
-  {ref}`category-test` — sheet resistance, van der Pauw structures and
+  {ref}`category-test` — sheet resistance, {term}`van der Pauw structures <van der Pauw structure>` and
   e-test.
 * **Machines.** {ref}`machine-medium-current-implanter`,
   {ref}`machine-high-current-implanter` and

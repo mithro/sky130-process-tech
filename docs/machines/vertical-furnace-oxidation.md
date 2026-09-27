@@ -103,7 +103,7 @@ reaction tube at "approx. 750° C."[^pat-loadlock-kokusai]
 
 The
 industry-generic recipe on the {ref}`LVGOX <step-047>` page covers the
-other half of the same concern: it limits the queue time between the
+other half of the same concern: it limits the {term}`queue time` between the
 pre-gate clean and the furnace.
 
 ### Dry, wet and chlorinated oxidation
@@ -144,7 +144,7 @@ increases the rate of oxidation".[^wiki-thox]
 
 ### Thin oxides, temperature and the post-oxidation anneal
 
-Gate and tunnel oxides of a few nanometres grow in the regime where
+Gate and {term}`tunnel oxides <tunnel oxide>` of a few nanometres grow in the regime where
 "SiO₂ growth in dry oxygen in the thin regime (<500Å) is faster than the
 classic description" and the enhancement "is found to decay
 exponentially with thickness".[^massoud-1985] A furnace recipe for such
@@ -334,7 +334,7 @@ SKY130 conditions of their own. SKY130's oxidation temperatures, times
 and thicknesses are not public.
 
 * **One class, many oxides.** The six steps span a pad oxide, a trench
-  liner, the tunnel and blocking oxides of a SONOS stack, a thick and a
+  liner, the tunnel and {term}`blocking oxides <blocking oxide>` of a {term}`SONOS` stack, a thick and a
   thin gate oxide and a post-etch oxidation.
 
   In a batch fab they share a
@@ -495,7 +495,7 @@ Status and expiry are estimates from public records and are not legal advice.
 * What "Atmospheric selective oxidation" denotes, and whether any SKY130
   step uses it, is not stated.
 * Whether SKY130's gate and tunnel oxides are grown in a furnace or in the
-  single-wafer RTP tool is not public; the step pages grade the furnace as
+  single-wafer {term}`RTP` tool is not public; the step pages grade the furnace as
   the inference and the Heatpulse as weak.
 * The model list above is incomplete: it covers the SVG/Aviza, Tokyo
   Electron, ASM and Kokusai furnaces for which a public description was

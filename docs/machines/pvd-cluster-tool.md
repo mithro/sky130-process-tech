@@ -1,7 +1,7 @@
 (machine-pvd-cluster-tool)=
 # PVD (sputtering) cluster tool
 
-A PVD cluster tool is the vacuum platform a fab uses to sputter the
+A {term}`PVD` {term}`cluster tool` is the vacuum platform a fab uses to sputter the
 metal films of the back end: titanium and titanium nitride liners, the
 aluminium–copper alloy of the wiring, and refractory caps such as
 titanium–tungsten.
@@ -38,7 +38,7 @@ tool is therefore the platform as much as the chambers:
 * a vacuum good
   enough that titanium and aluminium do not oxidise between chambers;
 * a
-  degas and sputter pre-clean before the first film;
+  {term}`degas` and sputter pre-clean before the first film;
 * chambers that put
   enough metal at the bottom of contacts and vias;
 * targets, shields
@@ -49,7 +49,7 @@ pre-clean and one chamber per target — sit around robots in a vacuum
 that the wafer never leaves between films, so that a stack of three
 films is deposited without an oxide forming between them. Within the
 class the chambers differ in how they deliver metal into holes: plain
-magnetron sputtering, collimated sputtering or ionised metal plasma
+magnetron sputtering, {term}`collimated sputtering` or ionised metal plasma
 ({term}`IMP`).
 
 ### Magnetron sputtering
@@ -340,7 +340,7 @@ likely used at SkyWater"), as collected on the machines index:
 
 Every assignment is an inference from the listed chamber types. The
 step pages match "Imp TiN" to the contact and via liners because of the
-holes' aspect ratios, "ESC TiN" to the planar local-interconnect film,
+holes' {term}`aspect ratios <aspect ratio>`, "ESC TiN" to the planar local-interconnect film,
 and "TiW" and the aluminium entries to the metal stacks and the capacitor
 plates.[^skw-01] They grade the vendor and films strong.[^skw-01] Whether the
 contact titanium is collimated or ionised is not public; SkyWater's list
@@ -444,7 +444,7 @@ its film thicknesses are not public.
   of SKY130.
 * **Machines.** {ref}`machine-tungsten-cvd` — the tungsten fill that follows each
   liner. {ref}`machine-plasma-etcher-metal` — the etchers that pattern the
-  local interconnect, the stacks and the capacitor plates.
+  {term}`local interconnect`, the stacks and the capacitor plates.
 * **Materials.** {ref}`material-sputter-targets` — target materials, purity, bonding
   and suppliers. {ref}`material-hardware-consumables` — chamber parts and exhaust
   abatement. {ref}`material-process-gases` — nitrogen, oxygen, hydrogen, argon,
