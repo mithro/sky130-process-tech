@@ -215,7 +215,7 @@ sheet's; the reticle set is the heading of the run's columns in the tab
   ({ref}`masks-mpw-reticle-sets`).
 * **Mask type.** The sheet's "Sheet4" tab gives no type for
   `CAP2M`.[^steps-sheet] The {ref}`CAP2M <step-152>` page reads the plate
-  as a binary chrome-on-glass mask without OPC; that is not on public
+  as a binary chrome-on-glass mask without {term}`OPC`; that is not on public
   record.
 * **MPW-4.** The sheet's MPW-4 plate is from the set `5CS8018AC`; the
   renders are from the original set `5CS8010AC`
@@ -227,7 +227,7 @@ sheet's; the reticle set is the heading of the run's columns in the tab
 
 The {ref}`CAP2M <step-152>` page gives
 {math}`k_1 = 0.84 \times 0.6 / 0.365 \approx 1.4` for the `capm` space on
-an i-line lens of NA 0.6, with the geometry assumed equal to `capm`'s, and
+an i-line lens of {term}`NA` 0.6, with the geometry assumed equal to `capm`'s, and
 infers an i-line level, quoting ASML's statement that older systems
 "migrate to the lithography of choice for less critical
 layers".[^asml-30] The {ref}`i-line stepper <machine-i-line-stepper>` page
@@ -240,7 +240,7 @@ Wong et al. found that the mask error
 factor "is unity for large features, but increases rapidly when the
 critical dimension (CD) is less than 0.5 (lambda) /NA for line-space
 patterns".[^wong-1998] At 365 nm and NA 0.6 that is about 0.30 µm (our
-arithmetic), far below the assumed 0.84 µm space, so plate CD errors
+arithmetic), far below the assumed 0.84 µm space, so plate {term}`CD` errors
 would print at their own size (inference).
 
 Plates of this size are well
@@ -472,7 +472,7 @@ width.[^raw-data-testtile-pads]
   "normally optional features" SKY130 includes "as standard".[^steps-sheet][^pdk-10] Whether every die or lot uses the
   second capacitor is not public, and the renders do not say what the
   single `cap2m` shape common to most dies is.[^steps-sheet][^pdk-10][^mask-renders]
-* The *Device Details* table lists the MiM2 top-plate sheet resistance
+* The *Device Details* table lists the MiM2 top-plate {term}`sheet resistance`
   under the first capacitor's name, `RSCAPM`; the PDK does not say whether
   that is a misprint.[^pdk-07]
 * The plate's type, tone and CD specification, the resist, the exposure

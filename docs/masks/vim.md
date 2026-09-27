@@ -63,7 +63,7 @@ pages' readings take the etched hole, not this resist, as their shape.
 
 In the sky130B variant, on the reading of the
 {ref}`overview-sky130b-reram` page, SkyWater's mask-layer slide keeps
-`cviam` for the lower vias of a via 1 split by the ReRAM tier and adds
+`cviam` for the lower vias of a via 1 split by the {term}`ReRAM` tier and adds
 `r1c`, the cell, and `r1v`, the upper vias, above it. On the reading of the
 {ref}`overview-sky130b-reram` page, both via masks come
 from the one drawn `via` layer. The
@@ -84,7 +84,7 @@ those names and descriptions, as on the
 
 With no add or drop purpose, rule x.9's "serifs" have
 no `cviam` layer to sit on, and rule x.15a confines mask layers to test
-modules, seal ring and frame, with the exception that "FOM/P1M/Metal
+modules, {term}`seal ring` and frame, with the exception that "FOM/P1M/Metal
 waffle drop are allowed inside the die" (flag P, periphery
 only).[^pdk-periph] A design inside the die therefore draws `via` (our
 reading of x.9 and x.15a).
@@ -94,7 +94,7 @@ must be on a grid of mm" with the value 0.001, against 0.005 for "all
 layers except those mentioned in 1a" (x.1b).[^pdk-periph] Reading the
 unit as µm, a 1 nm wafer grid is a 4 nm grid on a 4× plate (our
 arithmetic). Samuels, Maurer and Farrell examined "how fine a grid size
-is needed in the manufacture of the mask" once OPC is
+is needed in the manufacture of the mask" once {term}`OPC` is
 applied.[^samuels-1995] The PDK does not say why the via data need the
 finer grid.
 
@@ -191,7 +191,7 @@ sheet's; the reticle set is the heading of the run's columns in the tab
 ### Exposure class
 
 The {ref}`VIM <step-118>` page gives
-{math}`k_1 = 0.15 \times 0.70 / 0.248 \approx 0.42` on a KrF lens of NA
+{math}`k_1 = 0.15 \times 0.70 / 0.248 \approx 0.42` on a KrF lens of {term}`NA`
 0.70 and 0.48 at NA 0.80, and infers a 248 nm level from the rule and
 from ITRS 2001. ITRS 2001 lists "248 nm + PSM" and "193 nm" as the exposure
 options for the 130 nm node and says that "only 248 nm lithography has a
@@ -208,7 +208,7 @@ critical layers.[^itrs-03]
 Wong et al. found the mask error factor rising "rapidly
 when the critical dimension (CD) is less than […] 0.75 (lambda) /NA for
 contacts".[^wong-1998] At 248 nm and NA 0.7 that is about 0.27 µm (our
-arithmetic), about 1.8 times the 0.150 µm via, so plate CD errors would
+arithmetic), about 1.8 times the 0.150 µm via, so plate {term}`CD` errors would
 print magnified (inference).
 
 Kim et al. found the factor rising near the
@@ -250,7 +250,7 @@ Toyoshima et al. showed the opposite route, shrinking KrF resist holes
 chemically after develop.[^toyoshima-1998]
 
 Le, Banerjee and McPherson
-found that via size strongly affects the electromigration failure-time
+found that via size strongly affects the {term}`electromigration` failure-time
 spread of tungsten-plug vias for one direction of electron flow with a
 TiN-capped metallisation, and not for the other,[^le-1996] one reason
 the printed size matters.
@@ -279,7 +279,7 @@ matters".
 ### Pattern transfer
 
 On the step pages' readings the holes are etched at
-{ref}`VIME <step-119>` through the cap oxide and inter-metal oxide, 0.27
+{ref}`VIME <step-119>` through the {term}`cap oxide` and inter-metal oxide, 0.27
 µm in the PDK's stack diagram,[^pdk-04] on the
 {ref}`dielectric plasma etcher <machine-plasma-etcher-dielectric>` class,
 down to the refractory cap of the metal-1 lines
@@ -382,7 +382,7 @@ arithmetic from via.1a and via.2), the smallest hole in the flow.
   and etch categories.
 * **Machines.** {ref}`machine-duv-krf-stepper` — the exposure class the step page
   assigns. {ref}`machine-plasma-etcher-dielectric` — the etch class that transfers
-  the pattern. {ref}`machine-cd-sem-overlay-metrology` — hole CD and overlay
+  the pattern. {ref}`machine-cd-sem-overlay-metrology` — hole CD and {term}`overlay`
   measurement.
 * **Materials.** {ref}`material-lithography-materials` — resists, anti-reflective
   coatings, developer and reticles.

@@ -30,7 +30,7 @@ the step page; every mask is indexed on the
 
 On the {ref}`NWM <step-017>` page's reading, the future N-wells are
 the body of every PMOS, the ring that closes each deep-N-well tub and the
-drift regions of the drain-extended NMOS. On the {ref}`NWM <step-017>` page's reading, three implants pass
+{term}`drift regions <drift region>` of the drain-extended NMOS. On the {ref}`NWM <step-017>` page's reading, three implants pass
 through the same openings, the MeV well pair {ref}`NWI <step-018>` and
 {ref}`NWI2 <step-019>` and the P-channel threshold implant
 {ref}`LVTPI <step-020>`, before the strip at {ref}`LVTPIS <step-021>`.
@@ -86,7 +86,7 @@ drain-extended NMOS rows,[^pdk-06] which fits the drain-extension use
 the step page describes (our reading of the table).
 
 Rung, Dell'Oca and
-Walker introduced the retrograde well — a deep implant with a brief
+Walker introduced the {term}`retrograde well` — a deep implant with a brief
 anneal, which allowed a much shallower well and closer n- and p-channel
 spacing — in 1981,[^rung-1981] and Martin and Chen optimised a
 high-energy implanted N-well for 1 µm CMOS.[^martin-1986]
@@ -100,7 +100,7 @@ purpose `mask` at 21:0 ("Nwell mask"), and no `drawing`, `mask add`,
 `mask drop` or `waffle drop` purpose; the drawn layer is `nwell` at
 64:20, "N-well region".[^pdk-06] The PDK publishes no operation from
 `nwell` to the plate, and rule x.15a confines mask layers to test
-modules, seal ring and frame, with an exception that names only
+modules, {term}`seal ring` and frame, with an exception that names only
 "FOM/P1M/Metal waffle drop" (flag P).[^pdk-periph] So a design inside
 the die draws `nwell` (our reading of x.15a).
 
@@ -217,8 +217,8 @@ the reticle set is the heading of the run's columns in the tab
 ### Exposure class
 
 The {ref}`NWM <step-017>` page puts the 0.84 µm
-minimum width at {math}`k_1 \approx 1.4` on an i-line lens of NA 0.6,
-notes that chemically amplified DUV resists are seldom made as thick as
+minimum width at {math}`k_1 \approx 1.4` on an i-line lens of {term}`NA` 0.6,
+notes that chemically amplified {term}`DUV` resists are seldom made as thick as
 this level needs, and infers an i-line level. The
 {ref}`i-line stepper <machine-i-line-stepper>` page lists it there.
 SkyWater lists "ASML I-line stepper" and "ASML I-line scanner" among its
@@ -232,7 +232,7 @@ Wong et al. found that the mask error factor "is unity
 for large features, but increases rapidly when the critical dimension
 (CD) is less than 0.5 (lambda) /NA for line-space patterns".[^wong-1998]
 At 365 nm and NA 0.48 that threshold is about 0.38 µm (our arithmetic),
-under half the `NWM` minimum, so a CD error on the plate would be
+under half the `NWM` minimum, so a {term}`CD` error on the plate would be
 expected to print at its own size (inference). The demands of this mask
 fall on its resist and its placement.
 
@@ -254,7 +254,7 @@ thickness is what SRIM computes.[^ziegler-2010] Thick resist under MeV
 ions outgasses — Lee et al. measured the effect and the dose shift it
 causes[^lee-1996] — and Ross et al. stabilised i-line implant resists
 with a flood electron beam, reducing shrinkage and CD variation and
-eliminating popping.[^ross-1996] Tsukamoto et al. review high-energy
+eliminating {term}`popping`.[^ross-1996] Tsukamoto et al. review high-energy
 implantation for ULSI, including masking.[^tsukamoto-1991]
 
 SkyWater's
@@ -288,8 +288,8 @@ The placement
 rules against active are 0.180 µm of `nwell` around p+ diffusion
 (difftap.8) and n+ tap (difftap.10) and 0.340 µm from n+ diffusion
 (difftap.9).[^pdk-periph]
-ASML specifies the "≤ 40 nm" single-machine overlay
-for the /275D stepper[^asml-pas5500-275d] (our
+ASML specifies the "≤ 40 nm" single-machine {term}`overlay`
+for the /275D {term}`stepper`[^asml-pas5500-275d] (our
 comparison; the rules must also absorb the lateral spread of the MeV
 implants, which is not published). Rubin, Morris and Jasper describe
 how retrograde-well implant control sets the narrow n+/p+

@@ -52,7 +52,7 @@ shows metal 1 joined to `li1` by "Mcon" and to metal 2 by
 The mask's
 smallest drawn island is 0.083 µm² (m1.6) and its smallest hole
 0.140 µm² (m1.7).[^pdk-periph] The PDK's extraction table gives metal 1
-a sheet resistance of 125 in a column headed "Resistivity
+a {term}`sheet resistance` of 125 in a column headed "Resistivity
 (mohms/sq)",[^pdk-08] so the printed line width is directly a resistance
 (the {ref}`MM1 <step-113>` page's reading).
 
@@ -81,7 +81,7 @@ the {ref}`masks index <masks-index>`, and the PDK publishes no operation
 from `met1` to the plate.
 
 Rule x.15a confines "Drawn compatible, mask,
-and waffle-drop layers" to test modules, seal ring and frame, "Exception:
+and waffle-drop layers" to test modules, {term}`seal ring` and frame, "Exception:
 FOM/P1M/Metal waffle drop are allowed inside the die" (flag P, periphery
 only),[^pdk-periph] so a die may carry `cmm1` waffle-drop shapes as well
 as `met1` (our reading). With no add or drop purpose, rule x.9's
@@ -106,7 +106,7 @@ grid on a 4× plate (our arithmetic).
 ITRS 2001 defines its "Mask design
 grid" as "Wafer design grid times the mask magnification" and lists 8 nm
 for 2001 and 4 nm for 2003.[^itrs-03] Samuels, Maurer and Farrell
-examined how fine a correction OPC can realistically give and "how fine a
+examined how fine a correction {term}`OPC` can realistically give and "how fine a
 grid size is needed in the manufacture of the mask".[^samuels-1995] That
 the finer grid serves a correction is our reading, not the PDK's.
 
@@ -197,7 +197,7 @@ sheet's; the reticle set is the heading of the run's columns in the tab
 ### Exposure class
 
 The {ref}`MM1 <step-113>` page gives
-{math}`k_1 = 0.14 \times 0.70 / 0.248 \approx 0.40` on a KrF lens of NA
+{math}`k_1 = 0.14 \times 0.70 / 0.248 \approx 0.40` on a KrF lens of {term}`NA`
 0.70, at the "0.4 for production" boundary, and 0.45 at NA 0.80, and
 infers a 248 nm level from the rules and from ITRS 2001.[^itrs-03] ITRS 2001 lists
 "248 nm + PSM" and "193 nm" as the exposure options for the 130 nm node
@@ -214,7 +214,7 @@ ones included, with sub-resolution assist features and optimised
 illumination.[^word-2002] Shiraishi et al.'s illumination technique,
 which the step page cites for off-axis illumination, gave 0.35 µm lines
 and spaces 2.5 times the depth of focus of conventional illumination in
-simulation, and resolved 0.275 µm on an i-line stepper in
+simulation, and resolved 0.275 µm on an i-line {term}`stepper` in
 experiment.[^shiraishi-1992]
 
 ### Mask errors
@@ -225,7 +225,7 @@ for large features, but increases rapidly when the critical dimension
 "The MEF of a 0.35 (lambda) /NA isolated line is 1.6 whereas that of a
 dense line of the same dimension is 4.3".[^wong-1998] At 248 nm and NA
 0.7 the threshold is about 0.18 µm and 0.14 µm is about 0.40 λ/NA (our
-arithmetic), so plate CD errors on dense metal-1 lines would print
+arithmetic), so plate {term}`CD` errors on dense metal-1 lines would print
 magnified (inference).
 
 Cheng and Neureuther, at 193 nm,

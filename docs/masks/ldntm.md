@@ -53,7 +53,7 @@ page reads the lighter tip as serving a transistor whose junctions sit at
 several volts during programme, erase and inhibit, where a heavily doped,
 abrupt tip would raise the field at the gate edge. The lightly doped
 drain of Ogura et al. is the classical answer to that
-field,[^ogura-1980] and a Micron patent masks a second, lighter LDD onto
+field,[^ogura-1980] and a Micron patent masks a second, lighter {term}`LDD` onto
 selected transistors to cut junction leakage.[^pat-ldd-micron]
 
 White,
@@ -86,7 +86,7 @@ step pages' readings the tunnel window is opened at
 {ref}`P1M <mask-p1m>` pattern. On the step pages' readings the source and drain are implanted later
 through {ref}`NSDM <step-085>`. Codella and Ogura's halo, which the
 {ref}`LDBHI <step-073>` implant provides for these transistors, is the
-same pairing of tip and pocket as in the logic flow.[^codella-1985]
+same pairing of tip and {term}`pocket` as in the logic flow.[^codella-1985]
 
 ## Drawn layers and derivation
 
@@ -100,7 +100,7 @@ publishes no operation from the drawn layer to the plate.
 
 Rule x.15a
 confines "Drawn compatible, mask, and waffle-drop layers" to test
-modules, seal ring and frame, with an exception that names only
+modules, {term}`seal ring` and frame, with an exception that names only
 "FOM/P1M/Metal waffle drop" (flag P),[^pdk-periph] so a design draws
 `ldntm` (our reading of x.15a). The periphery rules have no `ldntm` rule
 set, as the {ref}`LDNTM <step-071>` page notes.[^pdk-periph]
@@ -221,7 +221,7 @@ statement that older exposure tools "migrate to the lithography of
 choice for less critical layers",[^asml-30] and infers an i-line level.
 The {ref}`i-line stepper <machine-i-line-stepper>` page lists it there.
 Table 2 gives 0.7 for both `LDNTMCD` and `LDNTMCDSP`,[^pdk-03] and at the
-NA 0.48 low end of ASML's PAS 5500/275D[^asml-pas5500-275d] a 0.7 µm
+{term}`NA` 0.48 low end of ASML's PAS 5500/275D[^asml-pas5500-275d] a 0.7 µm
 feature has {math}`k_1 = 0.7 \times 0.48 / 0.365 \approx 0.92` (our
 arithmetic). SkyWater lists "ASML I-line stepper" and "ASML I-line
 scanner" among its tools but assigns no layer to them.[^skw-01]
@@ -232,7 +232,7 @@ Wong et al. found that the mask error factor "is unity
 for large features, but increases rapidly when the critical dimension
 (CD) is less than 0.5 (lambda) /NA for line-space patterns".[^wong-1998]
 At 365 nm and NA 0.48 that threshold is about 0.38 µm (our arithmetic),
-about half the `LDNTM` minimum, so a CD error on the plate would be
+about half the `LDNTM` minimum, so a {term}`CD` error on the plate would be
 expected to print at its own size (inference).
 
 ### Resist and tone
@@ -250,13 +250,13 @@ the halo as tens of keV, both stopped with a
 wide margin. The ion range in resist that sets the margin is what SRIM
 computes.[^ziegler-2010] Ross et al. stabilised i-line implant resists
 with a flood electron beam, reducing shrinkage and CD variation and
-eliminating popping.[^ross-1996] SkyWater's resist, its thickness and any
+eliminating {term}`popping`.[^ross-1996] SkyWater's resist, its thickness and any
 hardening are not public; the consumables are on the
 {ref}`lithography materials <material-lithography-materials>` page.
 
 ### Resist edges and shadowing
 
-The PDK publishes shadowing allowances
+The PDK publishes {term}`shadowing` allowances
 for `NTM` (0.16) and `HVNTM` (0.232) but none for `LDNTM`, and a single
 "Angle for tip implant" of 7° that the step page takes to apply to this
 tip as well (inference).[^pdk-03] The step page reads the array
@@ -275,8 +275,8 @@ The {ref}`LDNTM <step-071>` page reads the mask as aligned
 to poly. The `ldntm.c4` check's 0.125 enclosure of an n-type transistor
 and `ldntm.c6`'s 0.18 spacing to p-type diffusion[^pdk-errors] are the
 published distances that the plate's placement must respect (our
-reading). ASML specifies "≤ 40 nm" single-machine overlay for the /275D
-stepper[^asml-pas5500-275d] (our comparison; how SkyWater budgets the
+reading). ASML specifies "≤ 40 nm" single-machine {term}`overlay` for the /275D
+{term}`stepper`[^asml-pas5500-275d] (our comparison; how SkyWater budgets the
 margin is not public).
 
 ### Pattern transfer
