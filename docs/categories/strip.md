@@ -138,7 +138,7 @@ drying for batch cassettes, or IPA-vapour (Marangoni) drying, which
 draws the water off the wafer without leaving water marks. The state
 in which the surface is left — hydrophilic chemical oxide or
 hydrophobic H-terminated silicon — must match what the next step
-expects. Gate oxidation wants an HF-last surface with a re-grown
+expects. Gate oxidation wants an {term}`HF-last` surface with a re-grown
 chemical oxide of controlled thickness, while resist coating wants a
 hydrophobic surface obtained with {term}`HMDS` ({ref}`category-lithography`).
 The ITRS 2001 front-end chapter treats surface preparation, particles
