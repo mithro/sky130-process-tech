@@ -376,7 +376,7 @@ A soft mark avoids the slag of a hard mark.[^pat-softmark-gsi]
 
 ## Related pages
 
-* **Steps.** {ref}`SMAT <step-001>` — the step this class serves.
+* {ref}`SMAT <step-001>` — the step this class serves.
 * **Category.** {ref}`category-substrate` — the wafer specification, crystal growth
   and the vendor's equipment. {ref}`category-test` — in-line defect inspection and electrical test.
 * **Machines.** {ref}`machine-wet-bench` — the pre-furnace clean that follows receipt.
