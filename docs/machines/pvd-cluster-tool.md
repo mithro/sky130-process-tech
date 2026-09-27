@@ -14,7 +14,7 @@ titanium–tungsten.
 | Films | Aluminium alloys, titanium, and nitrides by reactive sputtering with "a reactive gas introduced into the sputtering chamber such as oxygen or nitrogen";[^wiki-sputter] Ti/TiN liners[^amat-ism-2000] and aluminium "over tungsten plugs"[^amat-al-slab-2002] on Applied's platforms; SkyWater also lists TiW.[^skw-01] |
 | Bottom coverage | "only 20% coverage" for unbiased aluminium in Skelly and Gruenke's vias;[^skelly-1986] "(>40% at 5:1)" for Applied's Vectra IMP with wafer bias.[^amat-ism-2000] |
 | 200 mm era | Applied's Endura (April 1990), Endura HP (1993) and VHP (1994), and Ti/TiN liner options from December 1996;[^amat-1997] Novellus's INOVA, from its purchase of "the Thin Film Systems business of Varian Associates".[^novellus-pvd-1998] |
-| SkyWater-listed tool | "AMAT PVD Metal": Sputter etch, degas; Aluminum both pure and Cu doped; TiW; {term}`ESC` TiN; Imp TiN; Collimated Ti; WN; Cobalt; Niobium; SiO2[^skw-01] |
+| SkyWater-listed tool | "AMAT PVD Metal": "Sputter etch, degas", "Aluminum both pure and Cu doped", "TiW", "{term}`ESC` TiN", "Imp TiN", "Collimated Ti", "WN", "Cobalt", "Niobium", "SiO2"[^skw-01] |
 | SKY130 steps | 13 steps; see {ref}`SKY130 steps assigned to this class <machine-pvd-cluster-tool-steps>` |
 
 :::{seealso}
@@ -24,7 +24,7 @@ The film physics is summarised on the
 
 ## What the machine class is and how it works
 
-"Sputtering is used extensively in the semiconductor industry to deposit thin films of various materials in integrated circuit processing".[^wiki-sputter]
+In Wikipedia's words: "Sputtering is used extensively in the semiconductor industry to deposit thin films of various materials in integrated circuit processing".[^wiki-sputter]
 In a sputtering chamber argon ions from a plasma strike a metal target
 and knock atoms out of it; the atoms cross the chamber and condense on
 the wafer. The flux leaves the target in all directions, and the film
