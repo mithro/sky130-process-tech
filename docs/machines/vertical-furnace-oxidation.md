@@ -13,7 +13,7 @@ oxides, gate oxides and the thin oxides of a memory stack.
 | Loading ambient | Load locks "purge the wafers with nitrogen before oxidation to limit the growth of native oxide";[^wiki-thox] a Kokusai load lock holds its oxygen concentration "within the range of 1-100 ppm".[^pat-loadlock-kokusai] |
 | Wafer handling | Batch: wafers held "horizontally, above and below each other" and loaded "from below";[^wiki-thox] "150 product, test, and filler wafers" per load on the VTR,[^expertech-vtr] "a batch of up to 150" on TEL's ALPHA-8SE i,[^tel-telindy] "up to 200 wafer batches" on Aviza's AVP-8000.[^aviza-avp] |
 | 200 mm era | TEL's Alpha-8 series of "diffusion and LP-CVD furnaces" for "sub-0.18 micron design rules";[^tel-alpha8se] Aviza's AVP/RVP, "smallest footprint systems for 150/200mm wafer processing";[^aviza-vert] the SVG-designed VTR, with "over 1000 VTR systems currently in production use";[^expertech-vtr] ASM's A400, with "more than 1000 reactors shipped".[^asm-a400] |
-| SkyWater-listed tool | "Furnaces are all made by Aviza": wet oxidation to 1150C, dry oxidation to 1150C;[^skw-01] see *What SkyWater lists* |
+| SkyWater-listed tool | "Furnaces are all made by Aviza": "wet oxidation to 1150C", "dry oxidation to 1150C"[^skw-01] |
 | SKY130 steps | 6 steps; see {ref}`SKY130 steps assigned to this class <machine-vertical-furnace-oxidation-steps>` |
 
 :::{seealso}
