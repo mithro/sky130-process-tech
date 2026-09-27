@@ -108,3 +108,8 @@ and 164 opened at desktop and 400 px (every affected page lost at most one link)
   already in the base (e.g. "cap oxide POC" on step 080) are left as they are.
 * Some paragraphs are long bulleted lists without blank lines, so the paragraph cap treats the
   whole list as one paragraph; with hand links counted, such lists get few new links.
+* Commit note: `dda859bd` ("docs/steps regenerated") also committed main's text for materials,
+  categories, overview and history, because `git checkout a03f0de9 -- <dirs>` had staged it; the
+  next four commits put back the tool's output (identical to `f4516de3` for those directories).
+  The branch tip was checked after that: tree clean, changed-lines proof 0 failures, counts as in
+  the table above. The checkers and build ran on that same working tree.
