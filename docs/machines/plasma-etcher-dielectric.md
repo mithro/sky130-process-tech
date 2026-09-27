@@ -6,25 +6,23 @@ to cut holes and windows through silicon dioxide and silicon nitride:
 contacts and vias, spacer and hard-mask etches, and the seal-ring and
 pad openings at the top of the stack. It runs fluorocarbon chemistries
 in which a thin polymer film on every surface decides what etches and
-what does not, and in the 200 mm, 130 nm era it was most often a
-capacitively coupled reactor — magnetically enhanced or dual-frequency
-— rather than the inductive sources of silicon and metal etch. This
-page describes the class in general, lists representative 200 mm-era
-models, and then says what SkyWater has published about tools of this
-class (nothing among its production etchers) and which SKY130 steps
-this reference assigns to it. The physics and chemistry of plasma
-etching are on the {ref}`category page <category-etch>`.
+what does not.
 
 | | Plasma etcher: dielectric and nitride |
 |---|---|
-| What it does | Anisotropic etching of SiO₂ and Si₃N₄ in fluorocarbon plasmas, selective to the layer underneath; selective etching of "a SiO2 layer over a Si or Si3N4 underlayer" is "a process of vital importance to modern integrated circuit fabrication technology".[^schaepkens-1999] |
-| Plasma source | Capacitive: Lam's Exelan uses "Dual Frequency Confined (DFC) technology";[^lam-exelan] Applied's MxP+ is a "MERIE chamber";[^regis-1997] Lam's Rainbow 45XX is a parallel-plate "plasma/RIE" etcher "mainly for Oxide Etch".[^allwin-rainbow-4500] High-density dielectric etchers were also sold, such as Applied's IPS Centura.[^amat-1997] |
-| Chemistry | CF₄, CHF₃ or C₂F₆[^perry-2001] with Ar and O₂; the Rainbow 45XX runs "A contact oxide etch process with high selectivity to polysilicon (Ar/CF4/CHF3)";[^allwin-rainbow-4500] CH₃F/O₂ for nitride over-etch stopping on oxide.[^regis-1997] |
+| What it does | Anisotropic etching of SiO₂ and Si₃N₄ in fluorocarbon plasmas, selective to the layer underneath;[^schaepkens-1999] see *Fluorocarbon films and selectivity* |
+| Plasma source | Capacitive: Applied's MxP+ is a "MERIE chamber";[^regis-1997] Lam's Rainbow 45XX is a parallel-plate "plasma/RIE" etcher "mainly for Oxide Etch".[^allwin-rainbow-4500] |
+| Chemistry | CF₄, CHF₃ or C₂F₆[^perry-2001] with Ar and O₂; CH₃F/O₂ for nitride over-etch stopping on oxide.[^regis-1997] |
 | Selectivity | Set by a steady-state fluorocarbon film: under 1.5 nm on oxide, about 1–4 nm on nitride and about 2–7 nm on silicon in Schaepkens et al.'s inductive plasmas;[^schaepkens-1999] SiO₂-to-Si selectivity of about 15 in CHF₃ against about 5 in CF₄ in Oehrlein et al.'s ECR study.[^oehrlein-1994b] |
 | Endpoint | Optical emission; for nitride "a strong peak at 387 nm indicates that CN is present in the plasma";[^pat-endpoint-tel] contact layers need detection of films with "low exposure area (less than 3%)".[^wodecki-1999] |
 | 200 mm era | Applied's MxP chambers from 1993, the eMxP+ (mid-1997) and IPS Centura (April 1997);[^amat-1997] Lam's Rainbow 4520[^wodecki-1999] and the "200 mm Alliance-based Exelan High Performance" of 2001.[^lam-exelan] |
-| SkyWater-listed tool | None among the production etchers; the contact, via and nitride-seal etch pages weigh the three "Poly/Silicon Etch" tools instead, and a lab "Oxford PlasmaLab RIE deprocessing" tool is listed under "Physical Analysis"[^skw-01] |
+| SkyWater-listed tool | None among the production etchers; the step pages weigh the three "Poly/Silicon Etch" tools instead;[^skw-01] see *What SkyWater lists* |
 | SKY130 steps | 12 steps, plus 1 where the class is an alternative; see {ref}`SKY130 steps assigned to this class <machine-plasma-etcher-dielectric-steps>` |
+
+:::{seealso}
+The physics and chemistry of plasma
+etching are on the {ref}`category page <category-etch>`.
+:::
 
 ## What the machine class is and how it works
 
@@ -33,11 +31,16 @@ In a fluorocarbon plasma, oxide etches only where energetic ions strike
 that the ions must also clear.
 Oehrlein et al. found an rf "threshold voltage for etching" of 55 V
 for CHF₃ and 35 V for CF₄ at 1 mTorr, below which fluorocarbon film
-deposition suppresses the etch.[^oehrlein-1994b] What makes a machine a
+deposition suppresses the etch.[^oehrlein-1994b]
+
+What makes a machine a
 *dielectric* etcher is therefore a source that delivers a high ion
 energy with a controlled fluorocarbon radical supply, stable wall
 conditions, and endpoint detection sensitive enough for small open
-areas. Donnelly and Kornblit review the field and its
+areas. In the 200 mm, 130 nm era a dielectric etcher was most often a
+capacitively coupled reactor — magnetically enhanced or dual-frequency
+— rather than the inductive sources of silicon and metal etch.
+Donnelly and Kornblit review the field and its
 reactors.[^donnelly-2013]
 
 ### Capacitive, magnetically enhanced and dual-frequency sources
@@ -45,14 +48,17 @@ reactors.[^donnelly-2013]
 The oldest single-wafer dielectric etchers are parallel-plate reactors.
 Lam's Rainbow family has "top or/and bottom powered electrode plate,
 programmable electrode spacing" and switches "between plasma and RIE
-modes"; the 45XX series "is mainly for Oxide Etch", with recipes for
+modes".[^allwin-rainbow-4500] The 45XX series "is mainly for Oxide Etch", with recipes for
 contacts, oxide spacers, etch-back planarisation and "A front-end
 nitride etch with high selectivity to polysilicon".[^allwin-rainbow-4500]
+The Rainbow 45XX runs "A contact oxide etch process with high
+selectivity to polysilicon (Ar/CF4/CHF3)".[^allwin-rainbow-4500]
+
 Applied Materials raised the plasma density of a capacitive reactor
-with a magnetic field: its patent, filed in 1988, describes "A magnetic field
+with a magnetic field.[^pat-merie-amat] Its patent, filed in 1988, describes "A magnetic field
 enhanced single wafer plasma etch reactor" with "an
 electrically-controlled stepped magnetic field for providing high rate
-uniform etching at high pressures", a cooled cathode with a
+uniform etching at high pressures".[^pat-merie-amat] It describes a cooled cathode with a
 "thermal conductivity-enhancing gas" between wafer and electrode, and
 "in-situ self-cleaning capability".[^pat-merie-amat] Regis et al.
 developed a nitride spacer etch "in the Dielectric Etch MxP+ MERIE
@@ -63,7 +69,9 @@ capacitive geometry. Lam describes the Exelan family's "Dual Frequency
 Confined (DFC) technology", in which "Confining the plasma … enables
 damage-free processing, allows Clean Mode operation without chamber
 wall contamination, and retains a consistent RF path inside the
-chamber".[^lam-exelan] High-density sources were used for dielectrics too:
+chamber".[^lam-exelan]
+
+High-density sources were used for dielectrics too:
 Applied launched the Dielectric Etch IPS Centura in April 1997 as its
 "most advanced, high-density plasma system for etching dielectric
 films".[^amat-1997] Perry et al. mapped such a regime in an inductive
@@ -72,20 +80,25 @@ C₂F₆ plasma, with ion energies of 50–160 eV, oxide etch rates of
 
 ### Fluorocarbon films and selectivity
 
-Selectivity in dielectric etching comes from the fluorocarbon film on
+Selective etching of "a SiO2 layer over a Si or Si3N4 underlayer" is
+"a process of vital importance to modern integrated circuit fabrication
+technology".[^schaepkens-1999] Selectivity in dielectric etching comes from the fluorocarbon film on
 the surface. Standaert et al. observed "relatively thick (2–7 nm)
 fluorocarbon layers" on silicon during steady-state etching and
 modelled the etch as fluorine diffusing through the
-layer.[^standaert-1998] Schaepkens et al. extended this to nitride:
-oxide carries "a thin fluorocarbon film (<1.5 nm)", silicon about
+layer.[^standaert-1998]
+
+Schaepkens et al. extended this to nitride.[^schaepkens-1999]
+Oxide carries "a thin fluorocarbon film (<1.5 nm)", silicon about
 2–7 nm and nitride "intermediate between the oxide and silicon cases",
 about 1–4 nm, and "the substrate etch rate is inversely proportional to
-the thickness of this fluorocarbon film"; the differences are "related
+the thickness of this fluorocarbon film".[^schaepkens-1999] The differences are "related
 to a substrate-specific ability to consume carbon".[^schaepkens-1999]
+
 In an ECR source, Oehrlein et al. found the silicon etch rate "much
 lower in CHF₃ than in CF₄", giving SiO₂-to-Si selectivity of about 15
 against 5, because the film on silicon was about 5.5 nm thick in CHF₃
-and 2.5 nm in CF₄,[^oehrlein-1994b] and showed that the deposition in
+and 2.5 nm in CF₄.[^oehrlein-1994b] Oehrlein et al. showed that the deposition in
 high-density discharges "is primarily due to bombardment with low
 energy ions".[^oehrlein-1994]
 
@@ -97,29 +110,39 @@ silicon, then "A second, CH₃F/O₂ based process step … for overetch past
 the endpoint to stop on oxide with minimal oxide loss (<50 Å)".[^regis-1997]
 Goss and Thornburg describe the spacer etch as needing "high
 selectivity … with a small isotropic component and no plasma
-damage".[^goss-1997] Where CH₃F/O₂ spacer etches stop on silicon, Blanc
+damage".[^goss-1997]
+
+Where CH₃F/O₂ spacer etches stop on silicon, Blanc
 et al. attribute the high nitride-to-silicon selectivity to "a SiOxFy
 passivation layer" and find that the oxidised layer behind the "silicon
-recess" "is driven by the ion energy".[^blanc-2013] Downstream
-(chemical) etching gives selectivity without ions: adding N₂ to CF₄/O₂
-"increases the Si₃N₄ etch rate by a factor of 7, but leaves the SiO₂
-etch rate unchanged",[^kastenmeier-1996] O₂ injection into NF₃
-enhances the nitride rate,[^kastenmeier-1998] and a remote O₂/N₂
-discharge with a little NF₃ reached nitride etch-rate ratios "to
-polycrystalline silicon and SiO₂ … approximately 100 and 70".[^kastenmeier-1999]
+recess" "is driven by the ion energy".[^blanc-2013]
+
+Downstream
+(chemical) etching gives selectivity without ions:
+
+* adding N₂ to CF₄/O₂
+  "increases the Si₃N₄ etch rate by a factor of 7, but leaves the SiO₂
+  etch rate unchanged";[^kastenmeier-1996]
+* O₂ injection into NF₃
+  enhances the nitride rate;[^kastenmeier-1998]
+* a remote O₂/N₂
+  discharge with a little NF₃ reached nitride etch-rate ratios "to
+  polycrystalline silicon and SiO₂ … approximately 100 and 70".[^kastenmeier-1999]
 
 ### High-aspect-ratio holes
 
 Contact and via holes etch more slowly as they deepen. Coburn and
 Winters argued that "the conductance can be expected to limit the flow
-of the reactive species to the bottom of the feature",[^coburn-1989]
-and Gottscho, Jurgensen and Vitkavage distinguish this
+of the reactive species to the bottom of the feature".[^coburn-1989]
+Gottscho, Jurgensen and Vitkavage distinguish this
 "aspect ratio dependent etching (ARDE)" from microloading, narrowing its
 causes to ion transport, neutral transport and surface
 charging.[^gottscho-1992] The opposite can happen: in an inductive
 reactor at 6–20 mTorr, Doemling et al. found "inverse RIE lag … i.e.,
 the etch rates increase as the width of the microstructures
-decrease".[^doemling-1996] Oehrlein et al. measured a depth loss of
+decrease".[^doemling-1996]
+
+Oehrlein et al. measured a depth loss of
 about 10 % as 2.5 µm-deep contact holes narrowed from 1.3 to
 0.6 µm.[^oehrlein-1994b] The same resist patterns shade the bottom of
 a hole from electrons, which Hashimoto showed charges and damages
@@ -130,9 +153,9 @@ gate oxides beneath.[^hashimoto-1994]
 Nitride clears with a CN emission signal: in a Tokyo Electron and
 National Semiconductor patent, "a strong peak at 387 nm indicates that
 CN is present in the plasma, usually indicating that nitride is being
-etched", and a double endpoint stops the etch at both interfaces of a
+etched".[^pat-endpoint-tel] In the patent, a double endpoint stops the etch at both interfaces of a
 TEOS/nitride/TEOS spacer.[^pat-endpoint-tel] Contact and via layers
-expose so little of the wafer that the emission change is small;
+expose so little of the wafer that the emission change is small.[^wodecki-1999]
 Wodecki reports an add-on endpoint system on "a Lam Research
 Corporation 200 mm Rainbow 4520 dielectric etch system" that "reliably
 detected etch endpoints of low exposure area (less than 3%) dielectric
@@ -140,27 +163,29 @@ films".[^wodecki-1999]
 
 ## Representative 200 mm-era models
 
-* **Applied Materials.** Dielectric etch on the Precision 5000 from
-  1989–1990, the "HDP Dielectric Etch Centura" of 1993, MxP chambers
-  from 1993, the eMxP+ in mid-1997 and the Dielectric Etch IPS Centura
-  in April 1997;[^amat-1997] the 300 mm "Dielectric Etch eMax 300 and
-  Dielectric Etch IPS 300" followed in 2000, for "critical self-aligned
-  contacts and bi-level contacts, small-geometry via, spacer and
-  hardmask etches".[^amat-300-etch-2000] A magnetic-field-enhanced
-  single-wafer reactor is the subject of an Applied patent granted in
-  1989.[^pat-merie-amat]
-* **Lam Research.** The Rainbow 45XX parallel-plate oxide
-  etchers[^allwin-rainbow-4500] including the 200 mm Rainbow
-  4520;[^wodecki-1999] the Exelan, whose High Performance version of
-  2001 is "200 mm Alliance-based" and "targets sub-130 nm
-  geometries";[^lam-exelan] and the 2300 Exelan of 2000, which "brings
-  the benefits of the dual frequency confined plasma technology into
-  300 mm" for "copper damascene, low k, spacer, contact, via, and in situ
-  hardmask open".[^lam-2300-2000]
-* **Other vendors.** The step pages also name Tokyo Electron DRM and
-  Unity dielectric etchers ({ref}`CTME <step-108>`,
-  {ref}`NSME <step-166>`); no vendor description of those models was
-  retrieved for this page.
+:::{table} Representative dielectric plasma etchers (figures as each source gives them)
+
+| Vendor | Model | Year | Published figures |
+|---|---|---:|---|
+| Applied Materials | Precision 5000[^amat-1997] | — | dielectric etch from 1989–1990 |
+| Applied Materials | "HDP Dielectric Etch Centura"[^amat-1997] | 1993 | — |
+| Applied Materials | MxP chambers[^amat-1997] | from 1993 | — |
+| Applied Materials | eMxP+[^amat-1997] | mid-1997 | — |
+| Applied Materials | Dielectric Etch IPS Centura[^amat-1997] | April 1997 | — |
+| Applied Materials | 300 mm "Dielectric Etch eMax 300 and Dielectric Etch IPS 300" | 2000 | for "critical self-aligned contacts and bi-level contacts, small-geometry via, spacer and hardmask etches"[^amat-300-etch-2000] |
+| Lam Research | Rainbow 45XX | — | parallel-plate oxide etchers[^allwin-rainbow-4500] including the 200 mm Rainbow 4520[^wodecki-1999] |
+| Lam Research | Exelan High Performance | 2001 | "200 mm Alliance-based" and "targets sub-130 nm geometries"[^lam-exelan] |
+| Lam Research | 2300 Exelan | 2000 | "brings the benefits of the dual frequency confined plasma technology into 300 mm" for "copper damascene, low k, spacer, contact, via, and in situ hardmask open"[^lam-2300-2000] |
+:::
+
+A magnetic-field-enhanced
+single-wafer reactor is the subject of an Applied patent granted in
+1989.[^pat-merie-amat]
+
+**Other vendors.** The step pages also name Tokyo Electron DRM and
+Unity dielectric etchers ({ref}`CTME <step-108>`,
+{ref}`NSME <step-166>`); no vendor description of those models was
+retrieved for this page.
 
 ## At SkyWater
 
@@ -170,9 +195,9 @@ SkyWater's *Facilities & Capabilities* page lists its production plasma
 etchers under "Metal Etch" and "Poly/Silicon Etch" only; it names no
 dielectric etcher.[^skw-01] Its "Poly/Silicon Etch" entries, quoted in
 full on the {ref}`silicon and polysilicon etcher page
-<machine-plasma-etcher-silicon>`, carry fluorine gases — "AMAT DPSII,
+<machine-plasma-etcher-silicon>`, carry fluorine gases: "AMAT DPSII,
 HBR, Cl2, NF3, CF4, CHF3, O2", "Lam 9400 TCP, poly/nitride, HBr, CF4,
-SF6, O2" and "Lam 4400, HBr, Cl2, C2F6, CF4, SF6, O2" — and the 9400
+SF6, O2" and "Lam 4400, HBr, Cl2, C2F6, CF4, SF6, O2".[^skw-01] The 9400
 entry names nitride.[^skw-01] Separately, under "Physical Analysis",
 the page lists "Oxford PlasmaLab RIE deprocessing", which we read as a
 failure-analysis tool rather than a production etcher.[^skw-01]
@@ -184,7 +209,9 @@ there is **no listing** for this class. The three poly/silicon etchers
 are strong as SkyWater statements,[^skw-01] but their use for a
 dielectric step is this reference's inference, graded on each step
 page; the caveats that apply to every listed tool are under
-{ref}`Reading the SkyWater evidence <machines-reading-evidence>`. The
+{ref}`Reading the SkyWater evidence <machines-reading-evidence>`.
+
+The
 list's silence does not show that no dielectric etcher exists: the S-1
 counts "at least 522 well-maintained fab and sort tools" in
 Bloomington,[^sec-01] far more than the capabilities page names.
@@ -231,7 +258,7 @@ etchers:
 
 The grades split the class in two. On the nitride etches and the pad
 etch the 9400 is inferred, because its entry is the only one that names
-nitride, and the DPS II is medium for its CF₄ and CHF₃; on the oxide
+nitride, and the DPS II is medium for its CF₄ and CHF₃.[^skw-01] On the oxide
 contact, via and seal-ring etches all three are weak, since none is
 listed for oxide.[^skw-01] The {ref}`PDME <step-169>` page also names
 the two metal etchers as a weak option for removing a TiW cap.
@@ -250,9 +277,11 @@ abatement are described on the
 page.
 
 * **Fluorocarbon gases.** CF₄, CHF₃ and C₂F₆, with Ar, O₂ and,
-  for nitride over-etch, CH₃F;[^regis-1997][^allwin-rainbow-4500] CHF₃
+  for nitride over-etch, CH₃F.[^regis-1997][^allwin-rainbow-4500] CHF₃
   "is used in the semiconductor industry in plasma etching of silicon
-  oxide and silicon nitride".[^wiki-chf3] Perfluorocarbons are potent
+  oxide and silicon nitride".[^wiki-chf3]
+
+  Perfluorocarbons are potent
   greenhouse gases: C₂F₆ has "a global warming potential (GWP) of 9200",
   a figure Wikipedia's [*Hexafluoroethane*](<https://en.wikipedia.org/wiki/Hexafluoroethane>) article gives without naming an
   IPCC assessment;[^wiki-c2f6] the table of fifth-assessment values in
@@ -281,7 +310,9 @@ SKY130 conditions of their own. SKY130's etch recipes are not public.
   the nitride of {ref}`ONOME <step-042>`), on polysilicon
   ({ref}`NPCME <step-079>`, which clears the nitride–oxide cap from the
   poly) or on silicon ({ref}`STINITE <step-005>`, which clears the
-  nitride and the pad oxide ahead of the trench etch); the oxide etches
+  nitride and the pad oxide ahead of the trench etch).
+
+  The oxide etches
   stop on a conductor or on nitride ({ref}`LICM1E <step-094>`,
   {ref}`CTME <step-108>`, the four via etches, {ref}`NSME <step-166>`).
   The nitride etches rely on a CH₃F/O₂ over-etch or a fluorine-lean
@@ -312,22 +343,18 @@ SKY130 conditions of their own. SKY130's etch recipes are not public.
 
 ## Related pages
 
-* {ref}`category-etch` — plasma and wet etching physics and the 27
-  etch steps of SKY130.
-* {ref}`machine-plasma-etcher-silicon` — the three listed poly/silicon
-  etchers that the step pages weigh for dielectric steps.
-* {ref}`machines-index` — all machine classes, SkyWater's listed tools
-  and the step assignments.
-* {ref}`materials-index` — fluorocarbon gases and chamber materials.
-* {ref}`category-deposition` — the oxide and nitride films these etches
+* **Category.** {ref}`category-etch` — plasma and wet etching physics and the 27
+  etch steps of SKY130. {ref}`category-deposition` — the oxide and nitride films these etches
   pattern.
-* {ref}`material-hardware-consumables` — chamber parts and exhaust
-  abatement.
-* {ref}`material-etch-gases` — fluorocarbon, fluoride, chlorine and
-  bromine etch and chamber-clean gases.
-* {ref}`material-process-gases` — nitrogen, oxygen, hydrogen, argon,
+* **Machines.** {ref}`machine-plasma-etcher-silicon` — the three listed poly/silicon
+  etchers that the step pages weigh for dielectric steps.
+* **Materials.** {ref}`material-hardware-consumables` — chamber parts and exhaust
+  abatement. {ref}`material-etch-gases` — fluorocarbon, fluoride, chlorine and
+  bromine etch and chamber-clean gases. {ref}`material-process-gases` — nitrogen, oxygen, hydrogen, argon,
   helium and the oxidation additives, their grades and SkyWater's listed
   gases.
+* **Indexes.** {ref}`machines-index` — all machine classes, SkyWater's listed tools
+  and the step assignments. {ref}`materials-index` — fluorocarbon gases and chamber materials.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
 ### Related patents, papers and filings
