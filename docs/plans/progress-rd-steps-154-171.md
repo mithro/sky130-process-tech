@@ -918,3 +918,6 @@ positives above; every WORDS LOST word is named in its page entry.
   longer interrupts the area argument. `number_order` LOST line ('4', '0.200', '3', '1', '1',
   '0.800', '3', '1', '4', '213', '380', '4', '1.8') re-paired by hand: same digits, the 0.800 µm
   aside now after the 213 mΩ / 380 mΩ / 1.8 sentence.
+* **L9 (165):** the glance box's keepout line gains "with exemptions (see the rule table)", so it no
+  longer overstates nsm.3. **L10 (165):** not changed — the reviewer judges the caption, the base's
+  own sentence, acceptable and the move not required.
