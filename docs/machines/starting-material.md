@@ -483,7 +483,7 @@ Status and expiry are estimates from public records and are not legal advice.
   job posting.[^skw-01][^job-06]
 * The incoming limits for particles, haze and COPs on the SKY130 wafer
   are not public.
-* The model list above is incomplete: it covers the Tencor/KLA-Tencor
+* The model list above is incomplete. It covers the Tencor/KLA-Tencor
   scanners, the GSI Lumonics markers and one current sorter for which a
   public description was found, not the ADE, Hitachi, Topcon and other
   inspection tools, the other laser markers or the 200 mm-era sorters

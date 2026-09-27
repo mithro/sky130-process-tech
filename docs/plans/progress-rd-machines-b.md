@@ -826,6 +826,52 @@ force", "by inference").
 
 Content problems for the owner: none found.
 
+## Batch measurement (15 pages, §1 caps)
+
+`measure5.py` from its tracked location over the fifteen pages, base `main` at `79de86aa` against
+the branch tip; intro and quick-facts counts from `tmp/tools/caps.py` (same `clean`/`words` as
+`measure.py`).
+
+| §1 cap | Before | After |
+|---|---:|---:|
+| Paragraphs > 100 words | 103 | 0 |
+| List items > 60 words (outside References) | 51 | 3 |
+| Sentences > 45 words | 193 | 40 |
+| Table cells > 25 words | 84 | 85 |
+| Intros > 70 words | 15 | 0 |
+| Quick-facts cells > 20 words or > 1 quotation | 101 | 86 |
+
+* **List items left (3):** the grading bullets under `### SKY130 steps assigned` on
+  post-cmp-cleaner, starting-material and wet-bench, which this phase leaves unchanged.
+* **Sentences left (40):** counting each quotation as one word, as §1 says, 33 of them are within
+  45 words. The other 7 are four grading bullets or generated runs (post-cmp-cleaner,
+  wet-bench ×2, and the generated wet-bench run), two measure5 artefacts (a sentence ending
+  "…etch."/"…torch." fused with the next on plasma-etcher-metal and vertical-furnace-anneal, guide
+  problem 1; a Related-pages bullet on single-wafer-spin-processor, reviewer checklist item 12),
+  and a 62-word sentence inside an in-force note on starting-material, which measure5 counts and
+  this pass may not edit. The sheet-resistance "nearest entries" sentence (57 by measure5, 45 by
+  §1) is left whole on purpose (page 8).
+* **Table cells (85):** the new models and entries tables add cells whose length is their
+  quotations; the quick-facts cells over 25 are the numeric and quotation-only cells listed per
+  page. No cell was shortened by dropping a hedge, a number or a quotation.
+* **Quick facts (101 → 86):** see guide problems 4 and 5 for why most figure-heavy cells stay.
+
+## Final checks (branch tip)
+
+All pass: `check_steps` (171/0), `check_refs` (264/0), `check_machines` (30/0),
+`check_materials` (12/0), `check_masks` (36/0), `check_papers`, `check_patents`,
+`check_filings`, `check_inforce` (296 pages, 0 problems); `gen_papers`, `gen_patents`,
+`gen_filings`, `gen_index_links`, `gen_step_tables` `--check` (0 differ);
+`sphinx-build -W -E` into a fresh directory, exit 0. `check_preserved.py --allow-regrouped
+--allow-deduplicated` over the fifteen pages reports only the losses named in each page's entry
+(the template sentence's `about`/`SKY130`/`200`, and the four named cases on plasma-etcher-metal,
+plasma-etcher-silicon, plasma-nitridation-chamber and pvd-cluster-tool). No `{dropdown}` body
+changed on any page. No line of page content starts with a stray `>`.
+
+## State
+
+All fifteen pages done, one commit each; nothing left in this batch.
+
 ## Guide problems
 
 1. **`measure5.py` fuses a sentence ending in "…ch."** Its abbreviation guard `(?<!ch\.)` (meant
