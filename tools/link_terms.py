@@ -239,6 +239,26 @@ GLOBAL_CONTEXT_SKIP: list[tuple[str, re.Pattern]] = [
 ]
 
 
+# Adjacency guard (review of the final pass, 2026-09-27): a term link
+# that touches another link with only whitespace between them ("{ref}`NCAPOX3
+# <step-117>` cap oxide") renders as two blue spans that read as one link.
+# Such an occurrence is deferred, like a hyphenated compound, so the term's
+# next free-standing use gets the link instead.
+ADJ_BEFORE_RE = re.compile(
+    r"(?:\{(?:ref|term|doc|math)\}`[^`\n]*`|\]\([^()\s]*\))\s*$"
+)
+ADJ_AFTER_RE = re.compile(r"^\s*(?:\{(?:ref|term|doc|math)\}`|\[[^\]\n]*\]\()")
+
+
+def adjacent_to_link(body: str, start: int, end: int) -> bool:
+    """True if only whitespace separates this span from a role or a
+    markdown link on either side."""
+    return bool(
+        ADJ_BEFORE_RE.search(body[max(0, start - 300) : start])
+        or ADJ_AFTER_RE.match(body[end : end + 300])
+    )
+
+
 def context_rejected(body: str, start: int, end: int, canonical: str) -> bool:
     """True if a CONTEXT_SKIP rule for ``canonical`` (or a
     GLOBAL_CONTEXT_SKIP rule) matches the text immediately before/after
@@ -592,6 +612,8 @@ def first_uses(
         if canonical in seen_terms or canonical in skip_terms:
             continue
         if context_rejected(body, start, end, canonical):
+            continue
+        if adjacent_to_link(body, start, end):
             continue
         para = paragraph_of(starts, start)
         if para_count.get(para, 0) >= max_per_paragraph:
@@ -1022,6 +1044,29 @@ def selftest() -> int:
         out = linked_of(text, terms_)
         if out != want:
             fail(f"final-pass guard on {text!r}: got {out}, want {want}")
+
+    # 31c. Adjacency guard: a term touching a role or a markdown link
+    # (whitespace only between) is deferred to its next free-standing use.
+    cases = [
+        ("On the {ref}`NCAPOX3 <step-117>` cap oxide. Later the cap oxide seals it.\n",
+         [("cap oxide", "cap oxide")], "Later the {term}`cap oxide`"),
+        ("An LPCVD {term}`TEOS` film. LPCVD is hot.\n",
+         [("LPCVD", "LPCVD")], "{term}`LPCVD` is"),
+        ("The CMP [page](https://x.org/a) says so. Oxide CMP follows.\n",
+         [("CMP", "CMP")], "Oxide {term}`CMP`"),
+        ("See [the page](https://x.org/a) CMP here; oxide CMP later.\n",
+         [("CMP", "CMP")], "oxide {term}`CMP`"),
+        ("The CMP {doc}`x` step.\n", [], None),
+        ("The {math}`k_1` CMP value.\n", [], None),
+    ]
+    for text, want, where in cases:
+        terms_ = ["cap oxide", "LPCVD", "CMP", "TEOS"]
+        out = linked_of(text, terms_)
+        body_, _ = split_body_and_defs(text)
+        pat_, v2c_ = build_pattern(terms_)
+        new_, _ = apply_links(body_, pat_, v2c_, preexisting_terms(text, terms_))
+        if out != want or (where and where not in new_):
+            fail(f"adjacency guard on {text!r}: got {out} / {new_!r}")
 
     # 31b. An occurrence inside a hyphenated compound is not a first use:
     # the hyphen is a word character at both bounds (final pass, 2026-09-27).
