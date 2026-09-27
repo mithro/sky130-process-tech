@@ -89,7 +89,7 @@ Status: landing page (cards, module table, hidden toctrees), references index ta
 inventory anchors + entry order + hover-card link, and the overview (guided-tour order, module H3s, prose
 rules) merged 2026-09-25 after Opus reviews. The first-use `{term}` links were taken OUT of the branch: the
 tool `tools/link_terms.py` (skip list, context guards, 3 per paragraph, opt-out marker, `--report`) runs once
-on `main` as the final pass after the content batches merge.
+on `main` as the final pass after the content batches merge. Done 2026-09-27: 1 031 first-use links on 210 pages (steps 432, masks 282, machines 201, materials 81, categories 16, history 14, overview 5), applied from `topic/rd-terms` after an Opus review (0 wrong-sense links in 178 sampled; one Medium, same-run adjacent pairs, fixed as a tool rule and re-applied); every changed line differs only by the inserted role, a second run adds nothing. **W3 complete.**
 
 Landing page cards and module table (C6); overview reorder, H3 per module, "On this page" (C7); glossary by
 letter, Phase cell terms, first-use `{term}` links (C9); inventory anchors and sentence order (C10);

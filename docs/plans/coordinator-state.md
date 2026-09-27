@@ -39,11 +39,11 @@ Owner rule since 2026-09-25: at most FOUR sub-agents running at any time. Everyt
 queue below; a stopped agent is restarted by giving a fresh agent the same task text plus "read the
 progress file docs/plans/progress-<name>.md and continue from where it stops".
 
-Running (2026-09-27): rd-terms (the final link_terms pass), one agent at a time. W2 complete (all 171 step pages), W1c complete (every step page has a figure), W3 complete (30 machine, 12 material, 36 mask, 10 category pages and the indexes). After the terms pass: report D's remaining figure families if quota allows; tool follow-up from review rd-machines-b D4/D5 (`--allow-deduplicated` to cover hedges, identifiers and number_order; body count ≥; intro text not labelled quick facts)
+Nothing running (2026-09-27 evening): the term-link pass merged; W1c, W2 and W3 complete. Weekly quota at 99 points, so work pauses until the reset on 2026-10-01 10:00 UTC. Resume order after the reset: (1) report D's remaining figure families (machine block-chains, mask derivation chains, category sketches, B2, E2, E3 — see `progress-rd-figures-s11.md`), one Opus writer per family with an Opus review; (2) tool follow-up from review rd-machines-b D4/D5 (`--allow-deduplicated` to cover hedges, identifiers and number_order; body count ≥; intro text not labelled quick facts); (3) the owner's content problems collected under "Content problems for the owner" in every `progress-rd-*.md` (content edits, owner decisions)
 
 | Branch / worktree | Task | Model | State |
 |---|---|---|---|
-| `topic/rd-terms` | Final first-use glossary-link pass over every content page (`tools/link_terms.py`), reviewed by sampling | Opus | applied (1 034 links on 210 pages, tip f1610403); Opus review running |
+| — | nothing running: the readability phase's planned batches are all merged; paused for the weekly quota reset (2026-10-01 10:00 UTC) | — | — |
 
 Quota: on 2026-09-27 the owner chose to continue past the 75-point share at ONE agent at a time (one
 Opus writer batch, then its review, then the next) until the reset on 2026-10-01 10:00 UTC. Resume order after the reset (one Opus writer per batch, Opus review, four agents at most):
