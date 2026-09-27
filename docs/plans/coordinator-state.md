@@ -43,7 +43,7 @@ Running (2026-09-27): rd-terms (the final link_terms pass), one agent at a time.
 
 | Branch / worktree | Task | Model | State |
 |---|---|---|---|
-| `topic/rd-terms` | Final first-use glossary-link pass over every content page (`tools/link_terms.py`), reviewed by sampling | Opus | running |
+| `topic/rd-terms` | Final first-use glossary-link pass over every content page (`tools/link_terms.py`), reviewed by sampling | Opus | applied (1 034 links on 210 pages, tip f1610403); Opus review running |
 
 Quota: on 2026-09-27 the owner chose to continue past the 75-point share at ONE agent at a time (one
 Opus writer batch, then its review, then the next) until the reset on 2026-10-01 10:00 UTC. Resume order after the reset (one Opus writer per batch, Opus review, four agents at most):
