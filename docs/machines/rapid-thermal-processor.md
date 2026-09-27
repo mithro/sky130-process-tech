@@ -6,13 +6,7 @@ lamps, taking it to anneal or oxidation temperature in seconds, holding
 it there for seconds to minutes and cooling it again, in a controlled
 gas ambient. A 130 nm fab uses it wherever a furnace's long thermal
 cycle would move dopants too far: implant activation, silicide
-formation, and thin oxides and nitridations. This page describes the
-class in general, lists representative 200 mm-era models, and then says
-what SkyWater has published about its own tool of this class and which
-SKY130 steps this reference assigns to it. The anneal physics
-(activation, transient enhanced diffusion, silicidation) is on the
-{ref}`anneal category page <category-anneal>`, and rapid thermal
-oxidation on the {ref}`oxidation category page <category-oxidation>`.
+formation, and thin oxides and nitridations.
 
 | | Rapid thermal processor |
 |---|---|
@@ -26,6 +20,13 @@ oxidation on the {ref}`oxidation category page <category-oxidation>`.
 | SkyWater-listed tool | "Ag Heatpulse 8808 NH3, Ar, N2, O2, up to 1200C"[^skw-01] |
 | SKY130 steps | 7 steps, plus 6 where the class is an alternative; see {ref}`SKY130 steps assigned to this class <machine-rapid-thermal-processor-steps>` |
 
+:::{seealso}
+The anneal physics
+(activation, transient enhanced diffusion, silicidation) is on the
+{ref}`anneal category page <category-anneal>`, and rapid thermal
+oxidation on the {ref}`oxidation category page <category-oxidation>`.
+:::
+
 ## What the machine class is and how it works
 
 Short-time annealing began with arc lamps, resistance heaters, lasers
@@ -33,7 +34,9 @@ and electron beams; Sedgwick classified the regimes by duration and
 noted that in the "isothermal" regime of seconds "the dopant can be
 activated, and amorphous silicon regrown epitaxially with little dopant
 diffusion".[^sedgwick-1983] The production RTP tool settled on
-tungsten-halogen lamps. Roozeboom and Parekh's 1990 review covers "the
+tungsten-halogen lamps.
+
+Roozeboom and Parekh's 1990 review covers "the
 basic system characteristics, the fundamental physics involved, and the
 techniques for temperature measurement and control", and summarises "the
 options currently available for 15 RTP equipment
@@ -49,18 +52,26 @@ Heatpulse, the wafer sits in a quartz isolation tube between two lamp
 banks: "Lamps arranged in 2 banks of 14 lamps each, 1 bank above and the
 other below the process chamber", with the "upper and lower lamps … at
 right angles to each other for optimization of temperature control" and
-"10-zone lamp control"; "To provide cold-wall processing, water is
+"10-zone lamp control".[^ag-8800]
+
+"To provide cold-wall processing, water is
 circulated through the process-chamber walls. The quartz isolation tube
 is cooled with nitrogen or compressed air."[^ag-8800] Plasma-Therm, which
 now supplies the line, describes "two arrays of tungsten lamps" and rapid
 cooling "through a cold-wall type heat exchanger".[^plasmatherm-ag]
 
-In Applied Materials' design, patented by Gronet and Gibbons, "lamps are
-disposed in a plurality of light pipes arranged to illuminate and supply
-heat to a substrate", "The light pipes are positioned so that the
-illumination patterns overlap", and "A liquid cooled window cooperates
-with the light pipes to transmit energy to a wafer disposed in an
-evacuated chamber".[^pat-rtp-amat] The patent contrasts this with the
+In Applied Materials' design, patented by Gronet and Gibbons:[^pat-rtp-amat]
+
+* "lamps are
+  disposed in a plurality of light pipes arranged to illuminate and supply
+  heat to a substrate";
+* "The light pipes are positioned so that the
+  illumination patterns overlap";
+* "A liquid cooled window cooperates
+  with the light pipes to transmit energy to a wafer disposed in an
+  evacuated chamber".
+
+The patent contrasts this with the
 "prior art flood type rapid thermal heating apparatus", which "does not
 provide adequate spatial control of temperature", and supports the wafer
 at its edge on a support that is magnetically rotated.[^pat-rtp-amat] An
@@ -77,11 +88,14 @@ wafer's thermal radiation, and the reading depends on the wafer's
 emissivity: "a variation in the wafer's surface emissivity can result in
 an error in the inferred temperature", and during deposition "the
 emissivity is a function of the film type and thickness".[^sorrell-1993]
+
 Chen et al. measured the corrections needed for lightpipe radiation
 thermometers on a 200 mm wafer in the NIST RTP test bed, using "test
 wafers instrumented with thin-film thermocouples".[^chen-2002-rtp] Patterns
 on the wafer matter too: Hebb and Jensen found that "pattern effects are
-an important consideration for rapid thermal processes".[^hebb-1996] The
+an important consideration for rapid thermal processes".[^hebb-1996]
+
+The
 Heatpulse offers "Pyrometer or thermocouple sensing (with DTC option)"
 and specifies its "ERP temperature accuracy" "when calibrated against an
 instrumented thermocouple wafer (ITC)".[^ag-8800] In Applied Materials'
@@ -97,7 +111,9 @@ and Massoud describe how "radiative losses from the edge of silicon
 wafers which are heated by uniform irradiation create a radial
 temperature gradient" that "induces a stress distribution which is
 compressive at the center and tensile towards the edge", largest along
-"the slip directions on slip planes".[^deaton-1991] Gronet and Gibbons give
+"the slip directions on slip planes".[^deaton-1991]
+
+Gronet and Gibbons give
 the scale: "at 1150° C. the center to edge temperature difference on a
 four inch silicon wafer of approximately 5° C. can induce dislocation
 formation and slip".[^pat-rtp-amat] Multi-zone control is the answer;
@@ -112,7 +128,7 @@ wafer breakage due to thermal shock".[^wiki-rtp]
 Because each wafer is heated alone in a small chamber, the ambient can be
 switched between steps, and its purity is critical for metals. Plasma-Therm
 explains that "During metal RTD steps, any oxygen present in the chamber
-may oxidize the metal", and offers for the Heatpulse "a nitrogen (N₂)
+may oxidize the metal".[^plasmatherm-ag] It offers for the Heatpulse "a nitrogen (N₂)
 curtain, which reduces the introduction of contaminants and oxygen into the
 processing chamber" and "an in-situ oxygen monitor" that detects "oxygen
 levels as low as 10 parts per million (PPM)".[^plasmatherm-ag]
@@ -132,8 +148,10 @@ levels as low as 10 parts per million (PPM)".[^plasmatherm-ag]
   grew 40–130 Å oxides "in a controlled oxygen ambient with the heating
   provided by tungsten-halogen lamps" at 1150 °C in 5–30 s, with
   "characteristics equal to or better than furnace grown
-  oxides";[^nulman-1985] Hori et al. prepared "reoxidized nitrided oxide
-  films" entirely by rapid thermal processing;[^hori-1989] Hwang et al.
+  oxides".[^nulman-1985]
+
+  Hori et al. prepared "reoxidized nitrided oxide
+  films" entirely by rapid thermal processing.[^hori-1989] Hwang et al.
   showed that oxynitrides grown by RTP in N₂O "show excellent diffusion
   barrier properties" to boron.[^hwang-1991] In 1997 Applied Materials
   added a nitric oxide process that "incorporates nitrogen into the gate
@@ -147,25 +165,32 @@ levels as low as 10 parts per million (PPM)".[^plasmatherm-ag]
 
 ## Representative 200 mm-era models
 
-* **AG Associates, then STEAG, Mattson and Metron.** The Heatpulse 4100,
-  8108 and 8800 families, whose reseller documentation gives the
-  specifications quoted on this page.[^ag-8800][^ag-8108] In 2002 Mattson
-  Technology sold "the AG Associates rapid thermal processing (RTP) product
-  line, which Mattson obtained through its acquisition last year of the
-  semiconductor division of STEAG Electronic Systems AG", to Metron
-  Technology, which took "exclusive ownership of the 4000 and 8000 series
-  RTP product line"; Mattson kept its "2000 and 3000 series RTP
-  products".[^mattson-metron-2002] Plasma-Therm now offers "the AG Heatpulse
-  8800/8108 RTP line (formerly of OEM Group)".[^plasmatherm-ag]
-* **Applied Materials.** The RTP Centura, with which the company "entered
-  the fast-growing RTP market in 1995", and the RTP XE Centura, "its first
-  major system enhancement", launched in 1997.[^amat-1997] The lamp and
-  light-pipe design is the Gronet and Gibbons patent.[^pat-rtp-amat] Its
-  April 1997 RTP patent suit named AST Elektronik (spelled "AST
-  Electronik" in the report) and AG Associates.[^amat-1997]
-* **Others.** Roozeboom and Parekh's review lists fifteen manufacturers of
-  1990,[^roozeboom-1990] and the {ref}`anneal category page
-  <category-anneal>` names the Kokusai and TEL tools of the 130 nm era.
+:::{table} Representative rapid thermal processors (figures as each source gives them)
+
+| Vendor | Model | Year | Published figures |
+|---|---|---:|---|
+| AG Associates, then STEAG, Mattson and Metron | Heatpulse 4100, 8108 and 8800 families | — | the reseller documentation gives the specifications quoted on this page[^ag-8800][^ag-8108] |
+| Applied Materials | RTP Centura | — | with it the company "entered the fast-growing RTP market in 1995"[^amat-1997] |
+| Applied Materials | RTP XE Centura | 1997 | "its first major system enhancement"[^amat-1997] |
+:::
+
+In 2002 Mattson
+Technology sold "the AG Associates rapid thermal processing (RTP) product
+line, which Mattson obtained through its acquisition last year of the
+semiconductor division of STEAG Electronic Systems AG", to Metron
+Technology, which took "exclusive ownership of the 4000 and 8000 series
+RTP product line".[^mattson-metron-2002] Mattson kept its "2000 and 3000 series RTP
+products".[^mattson-metron-2002] Plasma-Therm now offers "the AG Heatpulse
+8800/8108 RTP line (formerly of OEM Group)".[^plasmatherm-ag]
+
+Applied's lamp and
+light-pipe design is the Gronet and Gibbons patent.[^pat-rtp-amat] Applied's
+April 1997 RTP patent suit named AST Elektronik (spelled "AST
+Electronik" in the report) and AG Associates.[^amat-1997]
+
+**Others.** Roozeboom and Parekh's review lists fifteen manufacturers of
+1990,[^roozeboom-1990] and the {ref}`anneal category page
+<category-anneal>` names the Kokusai and TEL tools of the 130 nm era.
 
 ## At SkyWater
 
@@ -191,11 +216,13 @@ tool.[^skw-01]
 On the strength scale of the {ref}`machines index <machines-index>` this
 listing is **strong**: it is a SkyWater statement.[^skw-01] The caveats
 that apply to every listed tool are under
-{ref}`Reading the SkyWater evidence <machines-reading-evidence>`. For
+{ref}`Reading the SkyWater evidence <machines-reading-evidence>`.
+
+For
 this class the listing is specific about the model family but the
 specifications behind it are not SkyWater's: the ramp rates, uniformity
 and throughput quoted for the 8800 come from a reseller, whose web page
-repeats the 8108 figures of its own PDF,[^ag-8800][^ag-8108] and none of
+repeats the 8108 figures of its own PDF.[^ag-8800][^ag-8108] None of
 them describes SkyWater's configuration. It is also the only rapid thermal
 tool listed, so every RTA step page assigns its anneal to it by
 elimination, as an inference.
@@ -249,7 +276,7 @@ likely used at SkyWater"), as collected on the machines index:
 
 The inferences for the anneals rest on the Heatpulse being the only RTA
 on the list, with the inert ambients and temperature an activation
-anneal needs; the weak grades for the oxidations reflect that nothing
+anneal needs.[^skw-01] The weak grades for the oxidations reflect that nothing
 public says whether those oxides are grown in a furnace or in the RTP
 chamber, and for the alloys that the entry lists no hydrogen.[^skw-01]
 The {ref}`LVGOX <step-047>` and {ref}`IOX45 <step-063>` pages give the
@@ -297,6 +324,7 @@ not public.
   ({ref}`RTAI <step-034>`), the tip anneal ({ref}`TIPRTAD <step-075>`) and
   the two source/drain anneals ({ref}`RTAD <step-088>`,
   {ref}`RTAD2 <step-092>`) are assigned to the Heatpulse as inferences.
+
   Each later anneal adds to the diffusion of every earlier implant, which
   is why they are short;[^stolk-1997] the Heatpulse's "1 – 600 seconds per
   step" and programmable ramps cover soak anneals of that
@@ -310,7 +338,9 @@ not public.
 * **Ammonia and the nitrided oxide.** The NH₃ line is the only
   nitriding gas on the Heatpulse entry, and the {ref}`LVGOX <step-047>`
   page calls it "the one public hint" of how the "Nitrided gate oxide"
-  module might be run. Heating an oxide in ammonia converts its surface
+  module might be run.
+
+  Heating an oxide in ammonia converts its surface
   "directly to silicon nitride or oxynitride", with graded films "At
   temperatures above 900°C",[^ito-1980] and rapid reoxidation of a nitrided
   oxide improves its charge trapping "by the reducing of hydrogen
@@ -329,25 +359,21 @@ not public.
 
 ## Related pages
 
-* {ref}`category-anneal` — activation, TED, silicidation and the seven
-  thermal steps of SKY130.
-* {ref}`category-oxidation` — rapid thermal oxidation and ISSG against
-  the furnace.
-* {ref}`machine-vertical-furnace-oxidation` and
-  {ref}`machine-vertical-furnace-anneal` — the batch alternatives.
-* {ref}`machine-plasma-nitridation-chamber` — the plasma route to a
-  nitrided gate oxide.
-* {ref}`machines-index` — all machine classes, SkyWater's listed tools
-  and the step assignments.
-* {ref}`category-test` — the sheet-resistance and electrical monitors of
+* **Category.** {ref}`category-anneal` — activation, TED, silicidation and the seven
+  thermal steps of SKY130. {ref}`category-oxidation` — rapid thermal oxidation and ISSG against
+  the furnace. {ref}`category-test` — the sheet-resistance and electrical monitors of
   the anneals.
-* {ref}`material-hardware-consumables` — lamps, quartz and other RTP
-  parts.
-* {ref}`material-process-gases` — nitrogen, oxygen, hydrogen, argon,
+* **Machines.** {ref}`machine-vertical-furnace-oxidation` and
+  {ref}`machine-vertical-furnace-anneal` — the batch alternatives.
+  {ref}`machine-plasma-nitridation-chamber` — the plasma route to a
+  nitrided gate oxide.
+* **Materials.** {ref}`material-hardware-consumables` — lamps, quartz and other RTP
+  parts. {ref}`material-process-gases` — nitrogen, oxygen, hydrogen, argon,
   helium and the oxidation additives, their grades and SkyWater's listed
-  gases.
-* {ref}`material-precursors` — silane, dichlorosilane, TEOS, BTBAS,
+  gases. {ref}`material-precursors` — silane, dichlorosilane, TEOS, BTBAS,
   ammonia, SiF₄, ozone and WF₆.
+* **Indexes.** {ref}`machines-index` — all machine classes, SkyWater's listed tools
+  and the step assignments.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
 ### Related patents, papers and filings

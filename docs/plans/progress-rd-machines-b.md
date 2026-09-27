@@ -421,6 +421,47 @@ hedge ("not public", "(inference)") or a cited source.
 
 Content problems for the owner: none found.
 
+### 7. `docs/machines/rapid-thermal-processor.md` — done
+
+Rules applied: R-INTRO, R-MODELS, R-PARA, R-SENTENCE, R-LIST, R-RELATED, R-CAPTION. Skipped
+R-ENTRIES: the page quotes one entry and glosses its parts; a table would put new quotation marks
+around parts of SkyWater's single quotation. Skipped R-QUICKFACTS on every cell (below).
+
+* **R-INTRO.** 123 → 65 words: the two "what it is" sentences kept; the pointer sentence →
+  `{seealso}`. Deleted template sentence: "This page describes the class in general, lists
+  representative 200 mm-era models, and then says what SkyWater has published about its own tool
+  of this class and which SKY130 steps this reference assigns to it."
+* **R-MODELS.** Three rows + three remarks (the 2002 sale and Plasma-Therm; the Gronet and Gibbons
+  patent and the April 1997 suit, "The lamp …" and "Its …" given their noun, "Applied's"; **Others.**).
+  Year cells: RTP XE Centura 1997 ("launched in 1997"). RTP Centura `—`: its year is inside the
+  quotation "entered the fast-growing RTP market in 1995", which is not cut. AG row `—` (families).
+* **R-QUICKFACTS.** Not applied: all seven over-cap cells are runs of quotations and figures that
+  appear only in the quick facts, or are longer or shorter than the body's copies (Uniformity's
+  Gronet quotation is also in the body, but deleting it drops "approximately" and breaks the cell's
+  number order 3, 8, 1150, 8800, 5, 8108, 1150, 5).
+* **R-PARA / R-SENTENCE / R-LIST.** H3 bodies split at source seams. The Gronet and Gibbons
+  sentence (three quoted features) → lead-in and three items, marker on the lead-in. Splits at
+  '; "To provide cold-wall …' (a quotation-only sentence), ", and offers" ("It offers …"), the
+  Mattson semicolon, ", and none of them", the grade-prose semicolon. "Rapid thermal oxidation and
+  nitridation" (99 words) and two integration items → lead + continuation.
+* **R-RELATED**, **R-CAPTION** as page 1.
+
+Caps (measure5): paragraphs > 100 7 → 0; list items > 60 4 → 0; sentences > 45 8 → 3 (the
+Heatpulse lamp sentence 58, Deaton 48, the Mattson sale 47 — each over only by the words inside its
+quotations); table cells > 25 7 → 7 (the quick facts, untouched).
+
+Preservation. DEDUPLICATED: number 200 (quick facts' "200 mm era" row label is not touched; the
+template sentence's "200 mm-era"). ADDED markers, each a repeat on a split: `ag-8800`,
+`amat-1997` (the RTP XE row), `mattson-metron-2002`, `plasmatherm-ag`, `skw-01`. REGROUPED: the
+models bullets → rows and remarks. **LOST number_order** none; the AG bullet's digits (4100, 8108,
+8800 | 2002, 4000, 8000, 2000, 3000 | 8800, 8108) are read in the same order across the AG row and
+the first remark, with the two Applied rows between them (checked by hand). Template losses:
+`about`, `SKY130`. Strict words: the template sentence; "launched" (the Year column). Marker
+coverage: 10 flags, all read — the list items (marker on lead-in), model cells, "None of them
+describes …" (the base markers sat before that clause).
+
+Content problems for the owner: none found.
+
 ## Guide problems
 
 1. **`measure5.py` fuses a sentence ending in "…ch."** Its abbreviation guard `(?<!ch\.)` (meant
