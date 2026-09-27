@@ -113,3 +113,15 @@ and 164 opened at desktop and 400 px (every affected page lost at most one link)
   next four commits put back the tool's output (identical to `f4516de3` for those directories).
   The branch tip was checked after that: tree clean, changed-lines proof 0 failures, counts as in
   the table above. The checkers and build ran on that same working tree.
+
+## Review fix round (review `rd-terms`, approve with fixes: 1 Medium, 3 Low)
+
+* M1: the adjacency guard now also sees the links accepted in the same run (`first_uses` defers a
+  candidate that only whitespace separates from the span just linked); self-test on both sides, and
+  the old "PECVD TEOS" case now expects one link. Pages restored from a03f0de9 and the tool re-applied
+  by the coordinator: 1 031 links on 210 pages (steps 432 on 119, machines 201 on 29, masks 282 on 36,
+  materials 81 on 12, categories 16 on 7, overview 5 on 1, history 14 on 6); a second run adds 0; the
+  changed-lines proof reports 1 003 changed lines, 1 031 roles added, 0 failing lines; 0 new adjacent
+  pairs (the 22 role-then-term pairs on the tree all exist in the base).
+* L3: the earlier note that adjacency was "fixed for script-added links" was wrong for same-run
+  pairs; superseded by the above.
