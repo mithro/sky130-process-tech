@@ -600,6 +600,11 @@ def first_uses(
     for m in EXISTING_TERM_ROLE_RE.finditer(body):
         para = paragraph_of(starts, m.start())
         para_count[para] = para_count.get(para, 0) + 1
+    # The adjacency guard also has to see the links THIS run has just
+    # accepted, not only those already on the page: "ASML DUV stepper"
+    # with both terms new would otherwise render as one link (review
+    # rd-terms M1, 13 pairs in the final pass).
+    last_end = -1
     for m in pattern.finditer(body):
         start, end = m.start(), m.end()
         if any(excluded[start:end]):
@@ -615,11 +620,14 @@ def first_uses(
             continue
         if adjacent_to_link(body, start, end):
             continue
+        if last_end >= 0 and body[last_end:start].strip() == "":
+            continue  # only whitespace since the span this run just linked
         para = paragraph_of(starts, start)
         if para_count.get(para, 0) >= max_per_paragraph:
             continue
         seen_terms.add(canonical)
         para_count[para] = para_count.get(para, 0) + 1
+        last_end = end
         yield start, end, matched, canonical
 
 
@@ -1031,8 +1039,10 @@ def selftest() -> int:
         ("The tool is AMAT PVD Metal with a degas.\n", ["PVD"], []),
         ("A PVD chamber sputters it.\n", ["PVD"], [("PVD", "PVD")]),
         ('Tool: "C2" / Producer PECVD TEOS here.\n', ["PECVD", "TEOS"], []),
+        # "PECVD TEOS" side by side: only the first is linked here (review
+        # rd-terms M1); TEOS gets its next free-standing use, if any.
         ("A PECVD TEOS oxide is used.\n", ["PECVD", "TEOS"],
-         [("PECVD", "PECVD"), ("TEOS", "TEOS")]),
+         [("PECVD", "PECVD")]),
         ("The threshold is 0.5 λ/NA for lines.\n", ["NA"], []),
         ("A lens of NA 0.6 is used.\n", ["NA"], [("NA", "NA")]),
         ("Calibrate by wet chemistry, ICP or SIMS.\n", ["ICP"], []),
@@ -1058,6 +1068,11 @@ def selftest() -> int:
          [("CMP", "CMP")], "oxide {term}`CMP`"),
         ("The CMP {doc}`x` step.\n", [], None),
         ("The {math}`k_1` CMP value.\n", [], None),
+        # M1 (review rd-terms): two terms linked in the SAME run must not
+        # sit side by side either -- the second is deferred to its next use.
+        ("An LPCVD TEOS film; the TEOS is thick.\n",
+         [("LPCVD", "LPCVD"), ("TEOS", "TEOS")], "the {term}`TEOS` is"),
+        ("An LPCVD TEOS film.\n", [("LPCVD", "LPCVD")], "{term}`LPCVD` TEOS"),
     ]
     for text, want, where in cases:
         terms_ = ["cap oxide", "LPCVD", "CMP", "TEOS"]
