@@ -30,7 +30,7 @@ One table. It applies to every page type unless a page-type section in §4 narro
 | List item lead sentence, when the item has sub-bullets | ≤ 30 words | 30 | same | A F1 |
 | Sentence | ≤ 30 words | **45 words** | words between full stops, markers removed | A F8 (30/45) vs B (35/45) → **30/45** |
 | Em-dash pairs or parentheticals per sentence | 0–1 | 1 | count of ` — ` pairs and `(…)` | A F8 |
-| Parenthetical length | ≤ 11 words | 11; ≥ 12 words becomes its own sentence. A parenthetical that holds only attributions (author names, a short noun phrase naming the work) and footnote markers is exempt from the parenthetical cap. Keep it inline; do not make it a sentence of its own. | words inside `(…)` | A F8; review rd-steps-089-097 D4 |
+| Parenthetical length | ≤ 11 words | 11; ≥ 12 words becomes its own sentence. A parenthetical that holds only attributions (author names, a short noun phrase naming the work) and footnote markers is exempt from the parenthetical cap. Keep it inline; do not make it a sentence of its own. A gloss of 12 words or more inside a list lead-in or a list item may stay inline when moving it after its sentence would put list items between the gloss and the word it explains; list it in the progress file (review rd-steps-154-171 D1). | words inside `(…)` | A F8; review rd-steps-089-097 D4 |
 | Step-page lead (the text between `## What this step is` and the generated `{figure}` block, or the first `###` if the page has no figure) | ≤ 2 paragraphs, ≤ 120 words | 120 | `measure.py` section stats | A F2; review rd-steps-089-097 D3 |
 | First sentence of a step page | ≤ 25 words | 25 | — | A F11 |
 | Class-page intro (machine, material, mask, category), before the quick-facts table | ≤ 70 words | 70 | — | B15 |
@@ -235,7 +235,8 @@ Its keys are the triggers used below: `para>100w`, `para>150w`, `para>=3semicolo
    label.
 4. A list item over 60 words keeps a lead sentence of ≤ 30 words; the rest becomes sub-bullets (one fact
    and one marker each) or an indented continuation paragraph — indented by two spaces, with a blank
-   line before it.
+   line before it. The 30-word lead cap applies only when the item has sub-bullets (§1); an item with
+   continuation paragraphs only is held to the 45-word sentence cap (review rd-steps-154-171 D6).
 5. Reword only as far as the split requires: a pronoun may need its noun back ("it" → "the oxide").
    Nothing else.
 6. If the block is mostly numbers, stop and apply **R-TABLE** instead; if it is mostly arithmetic,
@@ -304,6 +305,10 @@ of 12 words or more, or a semicolon joining two separately cited facts.
    that states it or carries its own hedge ("we infer", "on our reading"). If another half is an
    uncited, unhedged claim of this reference, repeat the hedge on it. The hedge's wording alone does
    not tie it to a clause (review rd-steps-135-153 D1).
+   When one whole-sentence hedge would appear three or more times in one paragraph, prefer a
+   single closing sentence with the marker — "These are our extractions from the published
+   measurements.[^x]" — which step 7 allows as an added subject and verb; under a list or a
+   table, R-TABLE step 5's single hedge sentence applies (review rd-steps-154-171 D3).
 6. Never split inside a quotation: split before it or after it, including at a full stop the
    quotation itself contains; never add or remove a quotation mark or change its case. A sentence
    whose only split points lie inside a quotation stays whole and is listed in the progress file.
@@ -319,7 +324,10 @@ of 12 words or more, or a semicolon joining two separately cited facts.
    inside it. At a ', though' split, the second sentence keeps 'though' after its first phrase
    ('In US 7,078,310, though, the shared electrode is …'); never open a sentence on 'Though' and
    never substitute 'However'. If the base's single marker covered both clauses, repeat it on both
-   and declare it (review rd-steps-141-149 D2, D3).
+   and declare it (review rd-steps-141-149 D2, D3). A gloss of 12 words or more inside a list
+   lead-in or a list item may stay inline when moving it after its sentence would put list items
+   between the gloss and the word it explains; list it in the progress file (review rd-steps-154-171
+   D1).
 
 **Example** — `docs/steps/066-bhi.md:16`.
 
@@ -771,7 +779,8 @@ pages) is an unordered run of sentence-bullets.
    `Same category:` (steps of the same kind elsewhere in the flow) · `Mask:` (mask page,
    previous/next mask) · `Evidence:` (e.g. a die-shot) · `Category page:`. Keep every gloss and
    link. Never split one bullet's links over two labels unless the bullet already names two
-   relationships.
+   relationships. A link that fits no label stays an unlabelled bullet, placed after the labelled
+   ones and before `Category page:` (review rd-steps-154-171 D5).
 2. Class pages: group under bold labels — Steps (mask pages: the mask step and the steps that transfer,
    strip or depend on its pattern) · Category · Machines · Materials · Masks · Indexes — and keep each
    gloss to ≤ 12 words. Six or more mask links with one shared gloss become a single line.
@@ -858,7 +867,9 @@ identifiers in one block.
    that covers one row goes in a final `Basis` column.
 6. Quoted values stay quoted, inside the cell. A value the page does not give is `—`.
 7. Numbers, step numbers and years are right-aligned (`---:`); everything else left; never centred.
-8. The sentence that draws the conclusion stays as prose after the table.
+8. The sentence that draws the conclusion stays as prose after the table. The conclusion sentence
+   under a table may keep the base's opening connective ('So', 'Thus') because it concludes the
+   table (review rd-steps-154-171 D2).
 9. A row whose only source is a patent shown as in force is **never built into a table**: no edit is
    made inside an in-force note in a readability pass, not even turning its prose into a table (§2.5,
    §2.6). List the row's content and the note it belongs to in the progress file for the owner instead.
@@ -2344,7 +2355,9 @@ of eight or more words occurs more often than in the base outside the glance box
 declared repeat (review rd-steps-118-134 D5). Since 2026-09-27 `check_preserved.py` fails on both
 (`DUPLICATED line` / `DUPLICATED sentence`), counted outside tables, fences and footnote definitions and
 only where the base page had fewer copies; a declared repeat that trips it is put in the progress file
-with the printout.
+with the printout. Since the same date list items are units of their own and a base repeat split alike
+in both copies is excused (review rd-steps-154-171 D4; the tool's commits `c1b27951`, `6a97b9ed`,
+`49db071c`).
 
 **4c. Two informational WARN lines**, printed once per page (not part of the before/after diff):
 a `WARN glance number/marker ... does not recur in the body below` means an "At a glance" bullet
