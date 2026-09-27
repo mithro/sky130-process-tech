@@ -148,7 +148,7 @@ time".[^amat-mesa-1999]
 | Applied Materials | Mesa cleaner of the Mirra Mesa | — | configurable with "a single-wafer immersion megasonic module, two double-sided brush scrubber stations and a spin rinse dryer"[^amat-mesa-1999] |
 | IPEC-Planar / SpeedFam-IPEC | AvantGaard 676 | — | with "Integrated post CMP spray box cleaning"[^ipec-676-1997] |
 | IPEC-Planar / SpeedFam-IPEC | Auriga C | — | its integrated cleaner's "Two dual side PVA brush boxes remove particulates using common chemistries", with a "Rinse Ring design" and a spin rinse dryer that "supports optional megasonic cleaner"[^speedfam-ipec-2001] |
-| Strasbaugh | 6DS-SP polisher, cleaning stations | — | where "A de-ionized water spray flushes the wafer surface while a cleaning disk buffs the residual slurry and particles off the wafer", and an option for "Double-sided, post-CMP scrubber integration"[^strasbaugh-6ds-1999] |
+| Strasbaugh | 6DS-SP | — | cleaning stations on the polisher, where "A de-ionized water spray flushes the wafer surface while a cleaning disk buffs the residual slurry and particles off the wafer", and an option for "Double-sided, post-CMP scrubber integration"[^strasbaugh-6ds-1999] |
 | SCREEN (formerly Dainippon Screen) | spin scrubbers | — | "Method in which wafers are physically cleaned using soft brushes and DI water"[^screen-ss3200] |
 | SCREEN (formerly Dainippon Screen) | SS-3200 | 2024 | for 200 mm; a current model[^screen-ss3200] |
 :::
