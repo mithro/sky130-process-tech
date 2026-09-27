@@ -3,18 +3,7 @@
 
 A vertical oxidation furnace is the batch tool a fab uses to grow
 thermal oxide on a hundred or more wafers at once: pad and liner
-oxides, gate oxides and the thin oxides of a memory stack. The wafers
-lie horizontally in a quartz boat that is raised into a vertical quartz
-tube inside a resistance heater, and the tube is filled with dry oxygen,
-steam or an inert gas according to the recipe. This page describes the
-class in general, lists representative 200 mm-era models, and then says
-what SkyWater has published about its own furnaces and which SKY130
-steps this reference assigns to the class. The oxidation physics
-(Deal–Grove kinetics, the thin-oxide regime, oxide charges) is on the
-{ref}`category page <category-oxidation>`; the same furnace platform
-used for deposition and for anneals has pages of its own
-({ref}`machine-vertical-furnace-lpcvd`,
-{ref}`machine-vertical-furnace-anneal`).
+oxides, gate oxides and the thin oxides of a memory stack.
 
 | | Vertical batch furnace: oxidation |
 |---|---|
@@ -24,21 +13,34 @@ used for deposition and for anneals has pages of its own
 | Loading ambient | Load locks "purge the wafers with nitrogen before oxidation to limit the growth of native oxide";[^wiki-thox] a Kokusai load lock holds its oxygen concentration "within the range of 1-100 ppm".[^pat-loadlock-kokusai] |
 | Wafer handling | Batch: wafers held "horizontally, above and below each other" and loaded "from below";[^wiki-thox] "150 product, test, and filler wafers" per load on the VTR,[^expertech-vtr] "a batch of up to 150" on TEL's ALPHA-8SE i,[^tel-telindy] "up to 200 wafer batches" on Aviza's AVP-8000.[^aviza-avp] |
 | 200 mm era | TEL's Alpha-8 series of "diffusion and LP-CVD furnaces" for "sub-0.18 micron design rules";[^tel-alpha8se] Aviza's AVP/RVP, "smallest footprint systems for 150/200mm wafer processing";[^aviza-vert] the SVG-designed VTR, with "over 1000 VTR systems currently in production use";[^expertech-vtr] ASM's A400, with "more than 1000 reactors shipped".[^asm-a400] |
-| SkyWater-listed tool | "Furnaces are all made by Aviza": "wet oxidation to 1150C", "dry oxidation to 1150C"[^skw-01] |
+| SkyWater-listed tool | "Furnaces are all made by Aviza": wet oxidation to 1150C, dry oxidation to 1150C;[^skw-01] see *What SkyWater lists* |
 | SKY130 steps | 6 steps; see {ref}`SKY130 steps assigned to this class <machine-vertical-furnace-oxidation-steps>` |
+
+:::{seealso}
+The oxidation physics
+(Deal–Grove kinetics, the thin-oxide regime, oxide charges) is on the
+{ref}`category page <category-oxidation>`; the same furnace platform
+used for deposition and for anneals has pages of its own
+({ref}`machine-vertical-furnace-lpcvd`,
+{ref}`machine-vertical-furnace-anneal`).
+:::
 
 ## What the machine class is and how it works
 
-A furnace oxidation is simple in principle: silicon, oxidant and heat.
+The wafers
+lie horizontally in a quartz boat that is raised into a vertical quartz
+tube inside a resistance heater, and the tube is filled with dry oxygen,
+steam or an inert gas according to the recipe. A furnace oxidation is simple in principle: silicon, oxidant and heat.
 The machine exists to deliver those three uniformly to every wafer in a
 batch of more than a hundred, without particles, metals or an
 uncontrolled native oxide, and to do it identically run after run.
+
 Wikipedia summarises why the industry moved from horizontal to vertical
 tubes: in a horizontal furnace "convection currents inside the tube"
 make the top of each upright wafer oxidise thicker than the bottom,
 while a vertical furnace holds the wafers flat with the gas "flowing
-from top to bottom, significantly damping any thermal convections";
-vertical furnaces "use enclosed cabinets with air filtration systems to
+from top to bottom, significantly damping any thermal convections".[^wiki-thox]
+Vertical furnaces "use enclosed cabinets with air filtration systems to
 prevent dust from reaching the wafers", and "also allow the use of load
 locks".[^wiki-thox]
 
@@ -49,21 +51,30 @@ inside a cylindrical resistance heater with several independently
 controlled zones. Below it is the loading area. The boat, a quartz or
 silicon-carbide rack with slots for the wafers, stands on a pedestal on
 a cap that seals the bottom of the tube; an elevator lifts boat and cap
-into the tube. Tokyo Electron's patents of the period describe the
+into the tube.
+
+Tokyo Electron's patents of the period describe the
 arrangement: a substrate holder "mounted on the top of a cap for opening
 and closing the bottom opening (furnace throat)" through a heat
 insulation structure, so that the wafers sit in "the uniform heat region
 in the furnace".[^pat-vf-insulation-tel] The same patent describes the
-cycle: the boat is loaded, the tube is evacuated and "an inert gas,
-e.g., nitrogen (N₂) gas, is introduced into the process tube … to purge
-the interior", the wafers are heated "quickly to a prescribed processing
-temperature", and the process gas is admitted.[^pat-vf-insulation-tel]
+cycle:[^pat-vf-insulation-tel]
+
+1. the boat is loaded;
+2. the tube is evacuated and "an inert gas,
+   e.g., nitrogen (N₂) gas, is introduced into the process tube … to purge
+   the interior";
+3. the wafers are heated "quickly to a prescribed processing
+   temperature";
+4. the process gas is admitted.
 
 The boat is more than a rack. Where a wafer rests on a few small
 supports its weight concentrates stress there, and "a surface defect
-called a slip generated when the wafer is heat treated" can result;
+called a slip generated when the wafer is heat treated" can result.[^pat-boat-tel]
 TEL's boat carries each wafer on an annular projection of a ring so that
-the load "is dispersed over the entire projection".[^pat-boat-tel] Production
+the load "is dispersed over the entire projection".[^pat-boat-tel]
+
+Production
 furnaces add throughput features around the tube: Expertech's VTR, the
 design "originated by Silicon Valley Group (SVG)", has "a unique
 dual-boat design" in which "one boat is in process while the other loads
@@ -79,14 +90,18 @@ coexistence of oxygen and water or moisture is required" for that
 growth.[^morita-1990] If the boat then enters a hot tube through room
 air, a further uncontrolled oxide grows during loading, underneath the
 oxide the recipe intends. Furnaces of the 1990s therefore enclosed the
-loading area. TEL's transfer chamber below the furnace circulates
+loading area.
+
+TEL's transfer chamber below the furnace circulates
 filtered gas, and "it is possible that the transfer chamber 3 is in the
 form of a load-lock chamber, and the gas streams are nitrogen gas
-streams";[^pat-vf-transfer-tel] a Kokusai
+streams".[^pat-vf-transfer-tel] A Kokusai
 design replaces the load-lock atmosphere with inert gas "with oxygen
 concentration less than 1 ppm" and can instead meter oxygen back in to
 grow a native oxide of "1-2 atomic layers" before the wafers enter a
-reaction tube at "approx. 750° C."[^pat-loadlock-kokusai] The
+reaction tube at "approx. 750° C."[^pat-loadlock-kokusai]
+
+The
 industry-generic recipe on the {ref}`LVGOX <step-047>` page covers the
 other half of the same concern: it limits the queue time between the
 pre-gate clean and the furnace.
@@ -107,10 +122,12 @@ The hydrogen is burnt outside the tube. A 1991 patent explains why. In
 the earlier "Pyrogenic Internal Torch" the "H₂ ignition in the O₂
 environment as well as the torch are inside the process tube", and the
 flame disturbs the "+/-0.5° C. temperature stabilization" that "One
-typically tight specification for oxide thickness uniformity requires";
-moreover "reduced 'thermal budgets' for circuits and operation of
+typically tight specification for oxide thickness uniformity requires".
+Moreover "reduced 'thermal budgets' for circuits and operation of
 chambers at less than safe-ignition temperatures for hydrogen have
-increased demand for H₂ combustion outside the process chamber". The
+increased demand for H₂ combustion outside the process chamber".
+
+The
 patent's external torch "provides pure steam for semiconductor
 processing" and is designed to be "free from the possibility of unwanted
 explosion due to incomplete hydrogen gas consumption".[^pat-torch-drimer] A later torch from the same inventors
@@ -119,7 +136,9 @@ is used "both to produce steam and to perform wet or dry dichlorethylene
 from "an external gas burner" into the top of the process tube and,
 "Until the flame of hydrogen burnt in the external gas burner becomes
 stable", admits a dilute gas such as N₂ "so as to suppress the initial
-oxidation".[^pat-torch-yamaha] Chlorine is added because "chlorine can
+oxidation".[^pat-torch-yamaha]
+
+Chlorine is added because "chlorine can
 immobilize sodium by forming sodium chloride"; "Its presence also
 increases the rate of oxidation".[^wiki-thox]
 
@@ -128,7 +147,7 @@ increases the rate of oxidation".[^wiki-thox]
 Gate and tunnel oxides of a few nanometres grow in the regime where
 "SiO₂ growth in dry oxygen in the thin regime (<500Å) is faster than the
 classic description" and the enhancement "is found to decay
-exponentially with thickness";[^massoud-1985] a furnace recipe for such
+exponentially with thickness".[^massoud-1985] A furnace recipe for such
 an oxide is therefore calibrated on the tool, and its thickness depends
 on the whole temperature history of the load, ramp and cool-down as well
 as the soak. Multi-zone heater control, fast ramping and repeatable
@@ -148,33 +167,24 @@ therefore finished much later by the hydrogen alloy
 
 ## Representative 200 mm-era models
 
-* **SVG Thermco, later Aviza Technology.** The VTR vertical thermal
-  reactor, "originated by Silicon Valley Group (SVG)" and now supported
-  by Expertech, with "over 1000 VTR systems currently in production use
-  worldwide";[^expertech-vtr] the AVP-8000, "a vertical batch furnace
-  with a flexible platform for diffusion, oxidation, and LPCVD
-  processes" for "150-200mm wafers", listed by dealers under the Aviza,
-  SVG and Thermco names;[^aviza-avp] and the AVP/RVP, which Aviza called
-  its "third-generation vertical diffusion furnaces".[^aviza-vert] Aviza
-  Technology was "Established in October 2003" and traced "its roots back
-  to 1962 to the establishment of Thermco, an Orange, California-based
-  supplier of heater element assemblies".[^aviza-company]
-* **Tokyo Electron.** The Alpha-8 series, "diffusion and LP-CVD
-  furnaces" whose Alpha-8SE generation was aimed at devices "that require
-  sub-0.18 micron design rules";[^tel-alpha8se] its ALPHA-8SE i
-  successor, "Released in 2018", processes "150/200mm wafers in a batch
-  of up to 150" for "oxidation/annealing" and CVD, and TEL notes that
-  "more than two decades have passed since the release of
-  ALPHA-8SE".[^tel-telindy]
-* **ASM International.** The A400, whose "original A400™ vertical
-  furnace system has a proven track record of more than 1000 reactors
-  shipped" and "over 25 years of maturity", with processes including
-  "wet oxidation and anneal processes"; the A400 DUO of 2019 continues it
-  for "wafer sizes of 200mm and smaller".[^asm-a400][^asm-vf]
-* **Kokusai Electric.** A vertical furnace maker whose patents of the
-  period cover load-lock oxygen control[^pat-loadlock-kokusai] and the
-  tube and boat hardware described on the
-  {ref}`LPCVD page <machine-vertical-furnace-lpcvd>`.
+:::{table} Representative vertical oxidation furnaces (figures as each source gives them)
+
+| Vendor | Model | Year | Published figures |
+|---|---|---:|---|
+| SVG Thermco, later Aviza Technology | VTR vertical thermal reactor | — | "originated by Silicon Valley Group (SVG)" and now supported by Expertech, with "over 1000 VTR systems currently in production use worldwide"[^expertech-vtr] |
+| SVG Thermco, later Aviza Technology | AVP-8000 | — | "a vertical batch furnace with a flexible platform for diffusion, oxidation, and LPCVD processes" for "150-200mm wafers", listed by dealers under the Aviza, SVG and Thermco names[^aviza-avp] |
+| SVG Thermco, later Aviza Technology | AVP/RVP | — | which Aviza called its "third-generation vertical diffusion furnaces"[^aviza-vert] |
+| Tokyo Electron | Alpha-8 series | — | "diffusion and LP-CVD furnaces" whose Alpha-8SE generation was aimed at devices "that require sub-0.18 micron design rules"[^tel-alpha8se] |
+| Tokyo Electron | ALPHA-8SE i | — | its successor, "Released in 2018", processes "150/200mm wafers in a batch of up to 150" for "oxidation/annealing" and CVD, and TEL notes that "more than two decades have passed since the release of ALPHA-8SE"[^tel-telindy] |
+| ASM International | A400 | — | whose "original A400™ vertical furnace system has a proven track record of more than 1000 reactors shipped" and "over 25 years of maturity", with processes including "wet oxidation and anneal processes"[^asm-a400][^asm-vf] |
+| ASM International | A400 DUO | 2019 | continues it for "wafer sizes of 200mm and smaller"[^asm-a400][^asm-vf] |
+| Kokusai Electric | — | — | a vertical furnace maker whose patents of the period cover load-lock oxygen control[^pat-loadlock-kokusai] and the tube and boat hardware described on the {ref}`LPCVD page <machine-vertical-furnace-lpcvd>` |
+:::
+
+Aviza
+Technology was "Established in October 2003" and traced "its roots back
+to 1962 to the establishment of Thermco, an Orange, California-based
+supplier of heater element assemblies".[^aviza-company]
 
 The {ref}`category page <category-oxidation>` lists the same vendors
 and the rapid thermal oxidation tools that compete with them.
@@ -199,7 +209,9 @@ oxidation".[^skw-01] Read term by term: both oxidants are available up to
 reactor.[^expertech-vtr] The entry names the vendor only: no model, no
 number of tubes, no batch size, and no statement that the furnaces are
 vertical; the step pages' reading of them as vertical rests on the
-vendor's 200 mm product line.[^aviza-avp][^aviza-vert] "Atmospheric
+vendor's 200 mm product line.[^aviza-avp][^aviza-vert]
+
+"Atmospheric
 selective oxidation" is not expanded, and no step page assigns it to a
 SKY130 step. The same group lists the pre-furnace clean benches, "DNS
 wet bench industry standard HF/SC1/SC2" and "FSI Mercury industry
@@ -209,7 +221,7 @@ name for their pre-cleans ({ref}`category-strip`).
 Aviza Technology was established in October 2003,[^aviza-company] and a
 year later it sold the manufacturing rights, intellectual property and
 inventory of its "'Thermco' Horizontal Furnace (HTR) product line" to
-Tetreon Technologies; the release describes those furnaces as
+Tetreon Technologies.[^tetreon-htr-2004] The release describes those furnaces as
 "originally marketed under the 'Thermco' name and later produced by
 Silicon Valley Group and ASML", with "an estimated installed base of
 over 8,000 processing tubes".[^tetreon-htr-2004] "Made by Aviza"
@@ -223,8 +235,10 @@ On the strength scale of the {ref}`machines index <machines-index>` the
 listing is **strong** for the vendor and for the wet and dry oxidation
 capability: it is a SkyWater statement.[^skw-01] The caveats that apply
 to every listed tool are under
-{ref}`Reading the SkyWater evidence <machines-reading-evidence>`. For
-this class the weak points are the model and configuration: that the
+{ref}`Reading the SkyWater evidence <machines-reading-evidence>`.
+
+For
+this class the weak points are the model and configuration. That the
 oxidation tubes are vertical AVP/RVP-class furnaces is inferred from the
 vendor's product line, which Aviza's own 2005 page describes in one
 short paragraph[^aviza-vert] and a used-equipment listing in slightly
@@ -321,7 +335,9 @@ and thicknesses are not public.
 
 * **One class, many oxides.** The six steps span a pad oxide, a trench
   liner, the tunnel and blocking oxides of a SONOS stack, a thick and a
-  thin gate oxide and a post-etch oxidation. In a batch fab they share a
+  thin gate oxide and a post-etch oxidation.
+
+  In a batch fab they share a
   small fleet of tubes; which tube runs which recipe, and whether gate
   oxides have dedicated tubes, is not public.
 * **Gate oxides in the thin regime.** The {ref}`GOX100 <step-043>` and
@@ -332,8 +348,8 @@ and thicknesses are not public.
   budget.[^pat-loadlock-kokusai]
 * **The ONO stack in one furnace.** The {ref}`ONO <step-040>` page cites
   a Cypress patent that may still be in force on whether the stack is
-  formed in one tool — the passage is in the collapsed note below this
-  list — and SkyWater lists "LPCVD oxide/nitride/oxide" among its
+  formed in one tool. The passage is in the collapsed note below this
+  list. SkyWater lists "LPCVD oxide/nitride/oxide" among its
   furnace processes.[^skw-01] The page therefore spans this class and
   the {ref}`LPCVD class <machine-vertical-furnace-lpcvd>`.
 * **Furnace or rapid thermal oxidation.** Five of the six pages offer
@@ -341,9 +357,11 @@ and thicknesses are not public.
   {ref}`LVGOX <step-047>` and {ref}`IOX45 <step-063>` and as the
   alternative for {ref}`LINOX <step-010>`, {ref}`ONO <step-040>` and
   {ref}`GOX100 <step-043>` — and grade the SkyWater Heatpulse for it as
-  weak.[^skw-01] In-situ steam generation,
+  weak.[^skw-01]
+
+  In-situ steam generation,
   the single-wafer counterpart of wet oxidation, reacts hydrogen and
-  oxygen in the chamber (category page);[^txt-09][^yu-1999] the Heatpulse
+  oxygen in the chamber (category page).[^txt-09][^yu-1999] The Heatpulse
   entry lists "NH3, Ar, N2, O2" and no
   hydrogen,[^skw-01] so a steam-based single-wafer oxide at SkyWater is
   not supported by the public list (inference).
@@ -368,23 +386,19 @@ operations".[^pat-03]
 
 ## Related pages
 
-* {ref}`category-oxidation` — oxidation kinetics, oxide quality and the
-  six oxidation steps of SKY130.
-* {ref}`machine-vertical-furnace-lpcvd` and
+* **Category.** {ref}`category-oxidation` — oxidation kinetics, oxide quality and the
+  six oxidation steps of SKY130. {ref}`category-strip` — the pre-furnace cleans on the listed benches.
+* **Machines.** {ref}`machine-vertical-furnace-lpcvd` and
   {ref}`machine-vertical-furnace-anneal` — the same Aviza furnace group
-  used for deposition, anneals and the alloy.
-* {ref}`machine-rapid-thermal-processor` — the single-wafer alternative
-  and the Heatpulse entry.
-* {ref}`machine-plasma-nitridation-chamber` — nitridation of the thin
+  used for deposition, anneals and the alloy. {ref}`machine-rapid-thermal-processor` — the single-wafer alternative
+  and the Heatpulse entry. {ref}`machine-plasma-nitridation-chamber` — nitridation of the thin
   gate oxide.
-* {ref}`machines-index` — all machine classes, SkyWater's listed tools
-  and the step assignments.
-* {ref}`category-strip` — the pre-furnace cleans on the listed benches.
-* {ref}`material-hardware-consumables` — furnace ware, traps and
-  abatement.
-* {ref}`material-process-gases` — nitrogen, oxygen, hydrogen, argon,
+* **Materials.** {ref}`material-hardware-consumables` — furnace ware, traps and
+  abatement. {ref}`material-process-gases` — nitrogen, oxygen, hydrogen, argon,
   helium and the oxidation additives, their grades and SkyWater's listed
   gases.
+* **Indexes.** {ref}`machines-index` — all machine classes, SkyWater's listed tools
+  and the step assignments.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
 ### Related patents, papers and filings

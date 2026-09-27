@@ -734,6 +734,49 @@ model and entry cells, and split halves whose own clause carries no source in th
 
 Content problems for the owner: none found.
 
+### 14. `docs/machines/vertical-furnace-oxidation.md` — done
+
+Rules applied: R-INTRO, R-MODELS, R-QUICKFACTS, R-PARA, R-SENTENCE, R-LIST, R-RELATED, R-CAPTION.
+Skipped R-ENTRIES (two entries glossed in one clause: "both oxidants are available up to 1150 °C").
+The in-force note is untouched and still follows its list.
+
+* **R-INTRO.** 139 → 37 words: the first sentence. "The wafers lie horizontally in a quartz
+  boat … according to the recipe." moved unchanged to open the first H2. Pointer → `{seealso}`.
+  Deleted template sentence: "This page describes the class in general, lists representative
+  200 mm-era models, and then says what SkyWater has published about its own furnaces and which
+  SKY130 steps this reference assigns to the class."
+* **R-MODELS.** Four bullets → 8 rows + the Aviza history remark and the category-page remark.
+  Year cells: A400 DUO 2019 ("the A400 DUO of 2019"). `—` elsewhere: the ALPHA-8SE i's date is
+  inside the quotation "Released in 2018" (not cut); the Kokusai row names no model (Model `—`,
+  the page's words in Published figures). ASM's two end markers repeated on both of its rows (one
+  sentence covered both).
+* **R-QUICKFACTS.** Cells over cap 7 → 6 by count; SkyWater-listed tool 3 → 1 quotation (the two
+  process lines DEDUPLICATED as quotations, their words and "1150C" kept). Left: What it does (27,
+  one quotation), Temperature (21, one), Ambients, Loading ambient, Wafer handling, 200 mm era —
+  quotations and figures only here, several in one number-order unit.
+* **R-PARA / R-SENTENCE / R-LIST.** The TEL furnace cycle → a numbered list (a sequence, R-LIST step
+  6), its marker on the lead-in. Splits at semicolons (Wikipedia's vertical-furnace sentence, the
+  TEL boat, the TEL/Kokusai load locks, "; moreover" → ". Moreover", the thin-oxide regime, the
+  Tetreon release, two integration items), at the strength colon, and the ONO bullet's dash pair
+  (its in-force pointer, "The passage is in the collapsed note below this list.", keeps its words).
+* **R-RELATED**, **R-CAPTION** as page 1.
+
+Caps (measure5): paragraphs > 100 8 → 0; list items > 60 3 → 0; sentences > 45 16 → 5 (Wikipedia's
+horizontal/vertical sentence 53, Tokyo Electron 46, the dry/wet trade-off 46, the steam-torch
+bullet 49 — each over only by its quotations; the untouched grading bullet); table cells > 25 5 →
+8 (five quick-facts cells; the AVP-8000, ALPHA-8SE i and A400 rows, whose length is their
+quotations).
+
+Preservation. DEDUPLICATED: number 200 (template sentence); quotes "wet oxidation to 1150C", "dry
+oxidation to 1150C". ADDED markers: `asm-a400`, `asm-vf` (the A400 DUO row), `pat-boat-tel`,
+`tetreon-htr-2004`, `wiki-thox` (splits). REGROUPED: the models bullets → rows; the furnace cycle
+→ list. Template losses: `about`, `SKY130`. Strict words: the template sentence only. Marker
+coverage: 15 flags, all read — the numbered list (marker on its lead-in), model cells, halves
+whose base marker sat on the other clause, and the ONO pointer sentences (no marker in the base
+before "and SkyWater lists").
+
+Content problems for the owner: none found.
+
 ## Guide problems
 
 1. **`measure5.py` fuses a sentence ending in "…ch."** Its abbreviation guard `(?<!ch\.)` (meant
