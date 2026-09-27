@@ -5,22 +5,12 @@ A tungsten CVD system is the cold-wall reactor a fab uses to fill
 contact and via holes with tungsten. The wafer sits on a heated pedestal
 while tungsten hexafluoride is reduced first by silane, to nucleate a
 thin layer on the liner, and then by hydrogen, to grow a blanket film
-that closes every hole from its walls inward; the film on the field is
-polished away afterwards, leaving the plugs. The main tools of the
-200 mm era were single-wafer chambers on a cluster platform and
-multi-station chambers that pass each wafer under several pedestals in
-turn. This page
-describes the class in general, lists representative 200 mm-era models,
-and then says what SkyWater has published about its own tool of this
-class and which SKY130 steps this reference assigns to it. The tungsten
-chemistry is summarised on the {ref}`category page
-<category-deposition>`; the liner deposited before each fill is
-described on the category page and the step pages.
+that closes every hole from its walls inward.
 
 | | Tungsten CVD |
 |---|---|
-| What it does | Deposits blanket tungsten for plugs: "WF6 is commonly used by the semiconductor industry to form tungsten films, through the process of chemical vapor deposition";[^wiki-wf6] Novellus sold "blanket tungsten deposition for plug fill and low-stress composite interconnects".[^novellus-wcvd-1998] |
-| Chemistry | WF₆ + 3H₂ → W + 6HF;[^wiki-wf6] hydrogen and silicon reduction of WF₆ studied "within a pressure range of 0.1–5 torr and a temperature range of 250°–500°C";[^rev-03] hydrogen reduction "one‐half order in hydrogen, zero order in tungsten hexafluoride".[^mcconica-1986] |
+| What it does | Deposits blanket tungsten for plugs: "WF6 is commonly used by the semiconductor industry to form tungsten films, through the process of chemical vapor deposition".[^wiki-wf6] |
+| Chemistry | WF₆ + 3H₂ → W + 6HF;[^wiki-wf6] hydrogen and silicon reduction of WF₆ studied "within a pressure range of 0.1–5 torr and a temperature range of 250°–500°C".[^rev-03] |
 | Pressure and temperature | "from about 20 to 760 Torr to improve the deposition rate" in an Applied Materials patent;[^pat-wcvd-amat] "80 torr and 475°C" on an Applied P5000 WCVD;[^riley-1991] "300 Torr" for Applied's Sprint;[^amat-ism-2000] pulsed nucleation at "approximately 250 and 475° C.".[^pat-pnl-novellus] |
 | Nucleation | Novellus's pulsed nucleation "alternatively" provides "reducing gases and tungsten containing gases", each cycle giving "one or more monolayers";[^pat-pnl-novellus] conventional nucleation layers "approximately 1000 Å thick" on "the TiN/Ti glue layer stack" in Hegde et al.'s study.[^hegde-1997] |
 | Wafer handling | Multi-station: the Concept One-W had "six-wafer chambers, where five were used for deposition and one for loading";[^novellus-history] the Dual Altus "a total of 10 stations".[^novellus-wcvd-1998] Single-wafer: the Precision 5000 WCVD of 1989[^amat-1997] and the WxZ Centura.[^amat-ism-2000] |
@@ -28,14 +18,23 @@ described on the category page and the step pages.
 | SkyWater-listed tool | "Lam/Novellus PECVD Tungsten" ("plug fill", "{term}`PNL` option for high aspect ratio (up to 10:1)")[^skw-01] |
 | SKY130 steps | 5 steps; see {ref}`SKY130 steps assigned to this class <machine-tungsten-cvd-steps>` |
 
+:::{seealso}
+The tungsten
+chemistry is summarised on the {ref}`category page
+<category-deposition>`; the liner deposited before each fill is
+described on the category page and the step pages.
+:::
+
 ## What the machine class is and how it works
 
 Tungsten plugs are grown, not sputtered. Kaanta et al.'s wiring
 technology of 1987 used "CVD-tungsten (W) and planarization", with
 "Vertical W studs" that "maximize density by reducing contact/via ground
-rules",[^kaanta-1987] and the scheme — a blanket fill followed by removal
+rules".[^kaanta-1987] The scheme — a blanket fill followed by removal
 from the field — became the standard contact and via process of the
-aluminium generations (category page). A tungsten CVD reactor is
+aluminium generations (category page).
+
+A tungsten CVD reactor is
 typically a cold-wall chamber with a resistively heated pedestal, a showerhead for
 WF₆, H₂, SiH₄, argon and nitrogen, and a way of keeping tungsten off the
 wafer's edge and back. What makes a machine a production tungsten tool is
@@ -43,21 +42,31 @@ nucleation that starts reliably on the liner, a bulk fill that closes
 holes without voids at an acceptable rate, control of edge and backside
 deposition, and a chamber clean.
 
+The film on the field is
+polished away afterwards, leaving the plugs. The main tools of the
+200 mm era were single-wafer chambers on a cluster platform and
+multi-station chambers that pass each wafer under several pedestals in
+turn.
+
 ### Chemistry and kinetics
 
 Wikipedia gives the bulk reaction as WF₆ + 3H₂ → W + 6HF and notes that
 "The decomposition is usually facilitated by mixing WF6 with hydrogen,
 silane, germane, diborane, phosphine, and related hydrogen-containing
-gases"; the by-product is a problem, since "HF vapor is very aggressive
+gases".[^wiki-wf6] The by-product is a problem, since "HF vapor is very aggressive
 and etches away most materials", and "the deposited tungsten shows poor
-adhesion to the silicon dioxide".[^wiki-wf6] Broadbent and Ramiller
+adhesion to the silicon dioxide".[^wiki-wf6]
+
+Broadbent and Ramiller
 found the hydrogen reduction limited by the dissociation of adsorbed
 hydrogen, with an activation energy of 0.71 eV, and a self-limiting
 deposit from the reaction of WF₆ with silicon.[^rev-03] McConica and
 Krishnamani measured the rate law in a single-wafer reactor —
 "one‐half order in hydrogen, zero order in tungsten hexafluoride" — and
 found that during hydrogen reduction "selectivity was lost in less than
-600s at temperatures above 653 K (380°C)".[^mcconica-1986] Because the
+600s at temperatures above 653 K (380°C)".[^mcconica-1986]
+
+Because the
 reaction is fast, transport matters: Kleijn et al. showed that "large
 concentration gradients may be present in CVD reactors, even at low
 reactant conversion rates", and that "thermal diffusion phenomena in
@@ -73,15 +82,19 @@ first, by silane reduction, before the hydrogen fill (category
 page). Hegde et al. compared nucleation layers
 "approximately 1000 Å thick" grown on "the TiN/Ti glue layer stack" at
 two gas-flow ratios, and found one "far smoother and less porous" and "a
-better diffusion barrier".[^hegde-1997] The liner and nucleation together
+better diffusion barrier".[^hegde-1997]
+
+The liner and nucleation together
 must keep WF₆ from the silicon: Saito et al. traced open contacts to a
 "chemical reaction on the interface through a previously deposited,
 porous, glue layer of sputtered tungsten during high-pressure blanket
 tungsten CVD processing", suppressed by a hydrogen anneal and "a
 low-pressure hydrogen reduction CVD tungsten nucleation
-step".[^saito-1993] Additions to the gas change the growth after
+step".[^saito-1993]
+
+Additions to the gas change the growth after
 nucleation: nitrogen "induces an incubation time, delaying the onset of
-deposition of the main film by up to 5 seconds",[^petri-1998] and an
+deposition of the main film by up to 5 seconds".[^petri-1998] An
 Applied Materials patent deposits tungsten "in the presence of nitrogen
 gas to improve the reflectivity of the surface".[^pat-wcvd-amat]
 
@@ -93,14 +106,18 @@ is formed on a surface of a semiconductor substrate by alternatively
 providing to that surface, reducing gases and tungsten containing gases.
 Each cycle of the method provides for one or more monolayers of the
 tungsten film. The film is conformal and has improved step coverage, even
-for a high aspect ratio contact hole."[^pat-pnl-novellus] The patent heats
-the wafer to between "approximately 250 and 475° C.", names silane and
-diborane among the reducing and soak gases, and states that the process
+for a high aspect ratio contact hole."[^pat-pnl-novellus]
+
+The patent heats
+the wafer to between "approximately 250 and 475° C." and names silane and
+diborane among the reducing and soak gases.[^pat-pnl-novellus] It states that the process
 "may be carried out in a Novellus Altus CVD chamber, the Concept 2 Altus
 chamber, the Concept 3 Altus processing chamber, or any of a variety of
-other commercially available CVD tools", and in one arrangement runs
+other commercially available CVD tools".[^pat-pnl-novellus] In one arrangement it runs
 the pulsed steps at the first stations of a multi-station chamber and
-the hydrogen-reduction fill at the last.[^pat-pnl-novellus] A related
+the hydrogen-reduction fill at the last.[^pat-pnl-novellus]
+
+A related
 pulsed CVD nucleation layer reported by Kim et al. showed "much lower root mean square (rms)
 roughness (0.87 nm) and better conformality at the contact holes with an
 aspect ratio of 14" than conventional CVD.[^kim-2004]
@@ -109,17 +126,21 @@ aspect ratio of 14" than conventional CVD.[^kim-2004]
 
 Novellus built its tungsten tools around multi-station chambers. Its
 1990 Concept One-W "combined batch and
-wafer-at-a-time processing", and "A previous problem of tungsten deposit
+wafer-at-a-time processing".[^novellus-history] "A previous problem of tungsten deposit
 backslides was also solved with a combination of vacuum-clamping and
 gas-exclusion techniques".[^novellus-history] Novellus later listed the
 features as "high-pressure nucleation, resistive heating, vacuum wafer
 clamping and full-coverage deposition, using patented wafer backside
-exclusion technology".[^novellus-wcvd-1998] Its backside-protection patent
+exclusion technology".[^novellus-wcvd-1998]
+
+Novellus's backside-protection patent
 describes the station: "a gas dispersion head disposed over a platen", a
 vacuum chuck, a platen heater, and backside gas at "a level greater than
 the CVD chamber pressure", so that it "vents from beneath the edge of the
 wafer on the platen and prevents the process gas from contacting the
-wafer backside".[^pat-backside-novellus] A later Novellus patent separates
+wafer backside".[^pat-backside-novellus]
+
+A later Novellus patent separates
 incompatible steps between stations of one chamber, with "an indexing
 plate" to move the wafers, so that "while one process, such as a silane
 initiation is performed at one station, other stations may
@@ -132,10 +153,12 @@ of 1989 was "a new system for depositing blanket tungsten (W)
 film".[^amat-1997] Riley and Clark ran an "integrated deposition and
 etchback process" on a P5000 WCVD, depositing tungsten "at 80 torr and
 475°C" and etching back in a magnetron chamber on the same
-system.[^riley-1991] By 2000 the WxZ Centura was, in Applied's words,
+system.[^riley-1991]
+
+By 2000 the WxZ Centura was, in Applied's words,
 "the industry's leading tungsten chemical vapor deposition (WCVD) tool
 for plug fill and interconnects", with "both full coverage and edge
-exclusion CMP- and etchback-compatible processes"; the Sprint "operates
+exclusion CMP- and etchback-compatible processes".[^amat-ism-2000] The Sprint "operates
 at 300 Torr" at ">60 wph", with "a new wafer heater with a ceramic ring"
 and "two in situ clean options — RF and microwave", retrofittable "to
 most existing WxZ Centura systems".[^amat-ism-2000]
@@ -153,24 +176,24 @@ behaviour whose cause "is not clear".[^shioya-1987]
 
 ## Representative 200 mm-era models
 
-* **Applied Materials.** The Precision 5000 WCVD (1989), with CVD
-  tungsten silicide from 1991, and metal CVD chambers "now being shipped
-  on the Centura and Endura platforms" by 1997;[^amat-1997] the WxZ
-  Centura, offered with a remote microwave clean, and the Sprint
-  Centura, "extendible to 0.13µm generation devices and
-  beyond".[^amat-ism-2000]
-* **Novellus Systems.** The Concept One-W, introduced in September 1990
-  and certified by Sematech in 1993, and the Concept Two Altus of 1993,
-  which "combined the modular architecture of the Concept Two and the
-  tungsten CVD process chamber".[^novellus-history] Novellus described
-  the Altus as "Integrating the Concept One tungsten process chamber on
-  the modular Concept Two platform", with "uniform deposition to 194mm",
-  and the Dual Altus as "two Concept One process chambers for a total of
-  10 stations";[^novellus-wcvd-1998] the 300 mm Concept Three Altus
-  followed.[^novellus-wcvd-2002]
-* **Other vendors.** The step pages also name Genus, ULVAC and Tokyo
-  Electron tungsten CVD systems ({ref}`WDEP2 <step-110>`); no vendor
-  description of them was retrieved for this page.
+:::{table} Representative tungsten CVD systems (figures as each source gives them)
+
+| Vendor | Model | Year | Published figures |
+|---|---|---:|---|
+| Applied Materials | Precision 5000 WCVD | 1989 | with CVD tungsten silicide from 1991, and metal CVD chambers "now being shipped on the Centura and Endura platforms" by 1997[^amat-1997] |
+| Applied Materials | WxZ Centura | — | offered with a remote microwave clean[^amat-ism-2000] |
+| Applied Materials | Sprint Centura | — | "extendible to 0.13µm generation devices and beyond"[^amat-ism-2000] |
+| Novellus Systems | Concept One-W | September 1990 | certified by Sematech in 1993[^novellus-history] |
+| Novellus Systems | Concept Two Altus | 1993 | "combined the modular architecture of the Concept Two and the tungsten CVD process chamber";[^novellus-history] Novellus described the Altus as "Integrating the Concept One tungsten process chamber on the modular Concept Two platform", with "uniform deposition to 194mm"[^novellus-wcvd-1998] |
+| Novellus Systems | Dual Altus | — | "two Concept One process chambers for a total of 10 stations"[^novellus-wcvd-1998] |
+| Novellus Systems | 300 mm Concept Three Altus | — | followed[^novellus-wcvd-2002] |
+:::
+
+Novellus sold "blanket tungsten deposition for plug fill and low-stress composite interconnects".[^novellus-wcvd-1998]
+
+**Other vendors.** The step pages also name Genus, ULVAC and Tokyo
+Electron tungsten CVD systems ({ref}`WDEP2 <step-110>`); no vendor
+description of them was retrieved for this page.
 
 ## At SkyWater
 
@@ -187,11 +210,13 @@ lists one tungsten entry with two sub-entries:[^skw-01]
 
 Read term by term: a tungsten deposition tool from Lam or Novellus, used
 for plug fill, with a pulsed-nucleation option rated to a 10:1 aspect
-ratio. The page does not explain "PECVD"; the step pages read the word as
+ratio. The page does not explain "PECVD". The step pages read the word as
 a label for the tungsten CVD tool rather than as evidence of a
 plasma-driven deposition (inference), and we read "PNL" as the pulsed
 nucleation layer of Novellus's patent, which does not itself use the
-abbreviation.[^pat-pnl-novellus] Elsewhere the page
+abbreviation.[^pat-pnl-novellus]
+
+Elsewhere the page
 lists a special module "W plug dual damascene", CMP of "tungsten" and
 "high selectivity tungsten", "WN" among the PVD films, and "W/WN" as an
 application of the AMAT DPSII etcher.[^skw-01] It gives no model,
@@ -287,12 +312,14 @@ SKY130 conditions of their own. SKY130's tungsten recipes and
 thicknesses are not public.
 
 * **A liner first.** On the step pages' reading, every fill lands on
-  titanium nitride deposited in the PVD tool before it ({ref}`TI/TIN1 <step-097>`, followed by the
-  {ref}`CSIL <step-098>` anneal, and {ref}`TIN2 <step-109>` to
-  {ref}`TIN5 <step-146>` immediately before each via fill), because WF₆ and its
+  titanium nitride deposited in the PVD tool before it. This is because WF₆ and its
   HF attack silicon, titanium and oxide and tungsten adheres poorly to
   oxide (category page;[^wiki-wf6] the {ref}`WDEP <step-099>` page
-  describes the barrier role). Saito et al.'s failure through a porous
+  describes the barrier role).
+
+  ({ref}`TI/TIN1 <step-097>`, followed by the
+  {ref}`CSIL <step-098>` anneal, and {ref}`TIN2 <step-109>` to
+  {ref}`TIN5 <step-146>` immediately before each via fill.) Saito et al.'s failure through a porous
   glue layer shows what the liner prevents.[^saito-1993]
 * **Holes from 6:1 down to about 2:1.** The {ref}`WDEP4 <step-132>` page
   puts the local-interconnect contact of {ref}`WDEP <step-099>` at about
@@ -317,26 +344,20 @@ thicknesses are not public.
 
 ## Related pages
 
-* {ref}`category-deposition` — CVD tungsten chemistry and the deposition
-  steps of SKY130.
-* {ref}`machine-pvd-cluster-tool` — the liner deposition before each fill
-  and the metal stacks that land on the plugs.
-* {ref}`machine-plasma-etcher-metal` — the aluminium etch that stops on
+* **Category.** {ref}`category-deposition` — CVD tungsten chemistry and the deposition
+  steps of SKY130. {ref}`category-cmp` — the tungsten polishes that follow each fill.
+* **Machines.** {ref}`machine-pvd-cluster-tool` — the liner deposition before each fill
+  and the metal stacks that land on the plugs. {ref}`machine-plasma-etcher-metal` — the aluminium etch that stops on
   the plug tops.
-* {ref}`category-cmp` — the tungsten polishes that follow each fill.
-* {ref}`machines-index` — all machine classes, SkyWater's listed tools
-  and the step assignments.
-* {ref}`materials-index` — tungsten hexafluoride, silane and the clean
-  gases.
-* {ref}`material-hardware-consumables` — chamber parts and exhaust
-  abatement.
-* {ref}`material-precursors` — silane, dichlorosilane, TEOS, BTBAS,
-  ammonia, SiF₄, ozone and WF₆.
-* {ref}`material-process-gases` — nitrogen, oxygen, hydrogen, argon,
+* **Materials.** {ref}`material-hardware-consumables` — chamber parts and exhaust
+  abatement. {ref}`material-precursors` — silane, dichlorosilane, TEOS, BTBAS,
+  ammonia, SiF₄, ozone and WF₆. {ref}`material-process-gases` — nitrogen, oxygen, hydrogen, argon,
   helium and the oxidation additives, their grades and SkyWater's listed
-  gases.
-* {ref}`material-etch-gases` — fluorocarbon, fluoride, chlorine and
+  gases. {ref}`material-etch-gases` — fluorocarbon, fluoride, chlorine and
   bromine etch and chamber-clean gases.
+* **Indexes.** {ref}`machines-index` — all machine classes, SkyWater's listed tools
+  and the step assignments. {ref}`materials-index` — tungsten hexafluoride, silane and the clean
+  gases.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
 ### Related patents, papers and filings

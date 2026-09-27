@@ -604,6 +604,56 @@ model cells, the integration halves that carry their own "not public" or "(our r
 
 Content problems for the owner: none found.
 
+### 11. `docs/machines/tungsten-cvd.md` — done
+
+Rules applied: R-INTRO, R-MODELS, R-QUICKFACTS, R-PARA, R-SENTENCE, R-RELATED, R-CAPTION. Skipped
+R-ENTRIES: the "Read term by term" gloss is one sentence over the entry and its two sub-entries,
+with the reading of "PECVD" and "PNL" as prose; a table would add quotation marks around parts
+of the entries.
+
+* **R-INTRO.** 159 → 59 words: the first sentence and the process sentence up to "from its walls
+  inward" (split at its semicolon). "The film on the field is polished away afterwards, leaving the
+  plugs." and "The main tools of the 200 mm era …" moved to a paragraph at the end of the first H2's
+  lead. Pointer → `{seealso}`. Deleted template sentence: "This page describes the class in
+  general, lists representative 200 mm-era models, and then says what SkyWater has published about
+  its own tool of this class and which SKY130 steps this reference assigns to it."
+* **R-MODELS.** Two bullets → 7 rows + two remarks (the Novellus sentence moved from the quick
+  facts; **Other vendors.**). Year cells: Precision 5000 WCVD 1989 (the page's "(1989)" after the
+  name, and "of 1989" in the body), Concept One-W "September 1990" ("introduced in September
+  1990"), Concept Two Altus 1993 ("of 1993"). `—` elsewhere; "certified by Sematech in 1993", "by
+  1997" stay in Published figures.
+* **R-QUICKFACTS.** Cells over cap 6 → 6 by count; What it does 36 → 24 words (the Novellus
+  sentence moved under the models table) and Chemistry 38 → 27 (the McConica rate-law quotation,
+  DEDUPLICATED; body `### Chemistry and kinetics`), one quotation each. Left: Pressure and
+  temperature, Nucleation (its "approximately 1000 Å thick" is in the body, but deleting it drops the
+  hedge "approximately" and a number from the cell's order), Wafer handling, SkyWater-listed tool
+  (the sub-entries are quoted in the blockquote with their dashes, so not the same strings).
+* **R-PARA / R-SENTENCE.** H3 bodies split at source seams; splits at semicolons (Wikipedia's
+  by-product sentence; the WxZ/Sprint sentence), at ", and the scheme" (Kaanta), ', and "A previous
+  problem …"' (a quotation-only sentence), ", and an Applied Materials patent", and the 82-word PNL
+  patent sentence into three ("It states …", "In one arrangement it runs …"). "Its
+  backside-protection patent" (new paragraph) → "Novellus's …". "A liner first": ", because" →
+  ". This is because …"; its 20-word parenthetical of step links stands as its own parenthetical
+  sentence after it (R-SENTENCE step 7), before the Saito sentence.
+* **R-RELATED**, **R-CAPTION** as page 1.
+
+Caps (measure5): paragraphs > 100 8 → 0; list items > 60 2 → 0; sentences > 45 13 → 3 (Saito 54,
+the backside patent 56, the multi-station patent 53 — each over only by the words in its
+quotations); table cells > 25 5 → 5 (four quick-facts cells, the Concept Two Altus row).
+
+Preservation. DEDUPLICATED: marker `mcconica-1986`; the rate-law quotation. **LOST number `200` ×1**:
+the template sentence's "200 mm-era"; the tool cannot reclassify it because the moved intro
+sentence ("The main tools of the 200 mm era …") added a 200 to the body. ADDED markers, each a
+repeat on a split or a row: `amat-ism-2000` ×2, `novellus-history` ×2, `novellus-wcvd-1998`,
+`pat-pnl-novellus` ×2, `wiki-wf6`. REGROUPED: the models bullets → rows, same digits in the same
+order. Template losses: `about`, `SKY130`. Strict words: template sentence; "introduced" (Year
+cell); the rate-law quotation's words (quick facts). Marker coverage: 11 flags, all read — model
+cells, split halves whose base marker sat on the other clause ("The scheme …", "The page does not
+explain "PECVD".", the liner halves), and "approximately"/"may", which stay in their own
+quotations.
+
+Content problems for the owner: none found.
+
 ## Guide problems
 
 1. **`measure5.py` fuses a sentence ending in "…ch."** Its abbreviation guard `(?<!ch\.)` (meant
