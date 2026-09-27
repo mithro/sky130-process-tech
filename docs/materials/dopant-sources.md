@@ -69,11 +69,11 @@ highly toxic respiratory poison, and is immediately dangerous to life or
 health at 50 ppm".[^wiki-ph3] It serves the phosphorus implants and,
 diluted, is a usual phosphorus source for {term}`HDP-CVD`
 phosphosilicate glass (industry practice); Hsiao et al. studied the
-thermal behaviour of HDP PSG made from unnamed "phosphorous-related
+thermal behaviour of HDP {term}`PSG` made from unnamed "phosphorous-related
 precursors".[^hsiao-2005]
 
 For
-atmospheric TEOS–ozone deposition, Fujino et al. used "organic doping
+atmospheric {term}`TEOS`–ozone deposition, Fujino et al. used "organic doping
 sources, trimethylphosphate for PSG films".[^fujino-1991] Solid phosphorus in a
 vaporiser oven is the alternative to the gas ({ref}`category-implant`); the ATMI patent notes
 that "Switching from As to P on an implanter with solid sources can take
@@ -282,7 +282,7 @@ Steps:
 These are the 25 steps the step pages read as implants, and the doped
 glass at {ref}`PSG <step-089>`. On the step pages' readings:
 
-* **Boron trifluoride** — serves the p-well, threshold, halo,
+* **Boron trifluoride** — serves the p-well, threshold, {term}`halo`,
   punch-through, resistor and P+ source/drain implants.
 * **Phosphine** — serves the deep N-well, N-well and poly implants and
   the PSG.

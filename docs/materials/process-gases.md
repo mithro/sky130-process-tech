@@ -103,7 +103,7 @@ nitrogen".[^wiki-argon]
 
 Helium is used for its high thermal
 conductivity and inertness: as the backside gas between a wafer and an
-{term}`electrostatic chuck`, and as a carrier and diluent in CVD.
+{term}`electrostatic chuck`, and as a carrier and diluent in {term}`CVD`.
 Goodman describes how "Electrostatic chucks (ESCs) are used in the
 semiconductor industry to clamp wafers to a pedestal and combined with
 back side gas (BSG) cooling to control temperature during processing",
@@ -142,13 +142,13 @@ oxygen".[^wiki-n2o] Hwang et al. grew "high quality ultrathin (∼60 Å)
 gate dielectrics using N2O (nitrous oxide) gas" by rapid thermal
 oxidation, and found "a nitrogen-rich layer at the Si/SiO2
 interface";[^hwang-1990] their later model explained the resistance of
-such films to boron penetration.[^hwang-1991]
+such films to {term}`boron penetration`.[^hwang-1991]
 
 In a furnace, Tobin et al.
 showed that "for a 950 °C oxynitridation process, N2O decomposes into N2,
 O2, and NO before reaching the wafer load", and that the nitrogen
 concentration follows the NO concentration.[^tobin-1994] Okada et al.
-then grew gate oxynitride in NO directly and found that "Much lower
+then grew gate {term}`oxynitride` in NO directly and found that "Much lower
 thermal budget is required for an NO process than for an N/sub 2/O
 process".[^okada-1994] Kuehne et al. applied NO to rapid thermal
 nitridation of thin gate oxides.[^kuehne-1997]
@@ -208,7 +208,7 @@ not what SkyWater buys; the purity of SKY130's gases is not public.
 ### What SkyWater's filings and pages list
 
 SkyWater's *Facilities & Capabilities* page names process gases on its
-furnace, RTA and asher entries. Under "Furnaces/Diffusion/Pre-Clean"
+furnace, {term}`RTA` and asher entries. Under "Furnaces/Diffusion/Pre-Clean"
 and "RTA":[^skw-01]
 
 > "Furnaces are all made by Aviza" · "wet oxidation to 1150C" · "dry
@@ -233,7 +233,7 @@ Read term by term, the page names nitrogen, oxygen, argon and hydrogen,
 and implies steam for "wet oxidation"; it names no helium, no chlorine
 source, no N₂O or NO and no water vapour, and it lists "Nitrided gate
 oxide" among its special modules without a gas.[^skw-01] It gives no
-gases for its PVD, CVD or metal-etch tools, where the step pages read
+gases for its {term}`PVD`, CVD or metal-etch tools, where the step pages read
 argon, nitrogen, helium and oxygen as typical.
 
 SkyWater's registration statement of 2021 and its annual report for
@@ -300,7 +300,7 @@ supply.
 This page covers the rows of the {ref}`materials index <materials-table>`
 listed below by key; the steps are those whose *Resources required* section
 names one of them (the union of the rows' *Steps* cells). Forming gas,
-which the step pages name for ashes and alloys, belongs to the anneal
+which the step pages name for {term}`ashes <ash>` and alloys, belongs to the anneal
 ambients row; ammonia belongs to the {ref}`precursors
 <material-precursors>` page, and the argon, xenon or hydrogen support
 gases of the implanters to the ion-source row of the
@@ -330,12 +330,12 @@ The steps fall into groups, as the index rows describe them:
 
 * **Nitrogen almost everywhere.** 142 steps name nitrogen, for purging,
   venting and drying, for reactive TiN sputtering, and as an ash or
-  diluent gas; the 29 that do not are twelve CMP steps, ten implants, two
+  diluent gas; the 29 that do not are twelve {term}`CMP` steps, ten implants, two
   mask steps, four HDP depositions and the electrical test.
 * **Oxidations and anneals.** Oxygen at {ref}`BOX <step-002>`,
   {ref}`LINOX <step-010>`, {ref}`ONO <step-040>`,
   {ref}`GOX100 <step-043>`, {ref}`LVGOX <step-047>` and
-  {ref}`IOX45 <step-063>`, with hydrogen (steam or radical oxidation),
+  {ref}`IOX45 <step-063>`, with hydrogen (steam or {term}`radical oxidation`),
   the chlorine additions or N₂O or NO at various of them (see the rows).
 
   Argon and nitrogen as the likely RTA ambients
@@ -414,7 +414,7 @@ not public.
 * **N₂O in the dielectrics.** The cap-oxide pages
   ({ref}`NCAPOX <step-091>` to {ref}`NCAPOX6 <step-158>`,
   {ref}`NFUSOX <step-164>`), {ref}`POC <step-059>` and
-  {ref}`SPOX <step-080>` name silane and N₂O as the alternative to TEOS
+  {ref}`SPOX <step-080>` name silane and N₂O as the alternative to {term}`TEOS`
   and oxygen, and the capacitor dielectric pages
   ({ref}`CAPILD <step-135>`, {ref}`CAPILD2 <step-150>`) name N₂O with
   silane and ammonia for oxynitride. SkyWater's "PECVD silane
