@@ -64,7 +64,7 @@ and wafer,
 \frac{dh}{dt} = k_p\,P\,v ,
 ```
 
-where {math}`k_p`, the Preston coefficient, absorbs the properties of
+where {math}`k_p`, the {term}`Preston coefficient`, absorbs the properties of
 pad, slurry and film. It holds well for oxide polishing over the range
 of a few psi and tens of metres per minute used in production (typical
 industry values).[^zantye-2004] Deviations from it (a non-zero
@@ -102,9 +102,9 @@ disc.
 
 A pad is compliant on the scale of the wafer but stiff on the scale of a
 feature, so it removes high features first: this is what makes CMP
-planarise rather than merely thin. The planarisation length is of the
+planarise rather than merely thin. The {term}`planarisation length` is of the
 order of a few millimetres, and within it the removal rate of a feature
-depends on the local pattern density — dense regions of raised oxide
+depends on the local {term}`pattern density` — dense regions of raised oxide
 polish more slowly than sparse ones.[^steigerwald-1997] The same
 compliance causes the two classic defects of a stop-layer or metal
 polish:
@@ -195,7 +195,7 @@ values.[^steigerwald-1997][^zantye-2004]
 * **Conditioners**: diamond-grit discs; **carrier films** and retaining
   rings; **brushes** (PVA) for the cleaner.
 * **{ref}`Chemicals <material-cmp-consumables>`**: KOH, NH₄OH, dilute HF, citric acid, hydrogen peroxide
-  for slurry make-up and post-CMP clean; ultrapure water in quantity.
+  for slurry make-up and {term}`post-CMP clean`; ultrapure water in quantity.
 
 ## Steps in this category
 
