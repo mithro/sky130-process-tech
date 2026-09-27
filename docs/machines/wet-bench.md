@@ -153,7 +153,7 @@ related solvent N-methyl-2-pyrrolidone.[^wiki-nmp]
 | Vendor | Model | Year | Published figures |
 |---|---|---:|---|
 | Akrion | GAMA automated wet station | — | "suitable for various cleaning, etching, and stripping applications",[^akrion-gama-series] installed as a "GAMA wet processor B" at a research centre[^akrion-gama] |
-| Akrion | E200 modular linear wet bench | — | — |
+| Akrion | E200 modular linear wet bench[^sst-akrion-scp-2007] | — | — |
 | SCREEN (formerly Dainippon Screen, DNS) | WS-620C | — | for 150 mm[^screen-ws820] |
 | SCREEN (formerly Dainippon Screen, DNS) | WS-820C and WS-820L | — | for 200 mm wafers, with an optional "low-pressure drying unit … to reduce watermarks"[^screen-ws820] |
 | FSI International / Tokyo Electron | MERCURY batch spray cleaning system | — | "Supporting 75mm – 200mm wafers" and "only recently retired as the industry moved towards 300mm and single-wafer cleaning" when TEL returned it to production in 2018; TEL handed the line to another supplier in 2024[^tel-mercury-2018] |
