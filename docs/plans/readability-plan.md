@@ -76,7 +76,7 @@ Status: the three index pages (machines cards + two-column lookup, materials per
 "Find a mask" table, methodology moved below the lookups, captions) merged 2026-09-25 after review and a
 fix round. The twelve material pages merged 2026-09-26 after review, fix round, verification and a one-row
 round (specification tables now `Material | Source | What the source says`). Machine pages 1–15 (cd-sem … pecvd) merged 2026-09-26 after review, fix round, verification and a
-final round (Year cells hold only the model's year; `:widths:` is inert). Mask pages 1–18 (cap2m … npcm) merged 2026-09-26: Opus writer, 0 High / 4 Medium on first review, one
+final round (Year cells hold only the model's year; `:widths:` is inert). Machine pages 16–30 (plasma-etcher-dielectric … wet-bench) merged 2026-09-27: Opus writer, 0 High / 4 Medium (quick-facts cells that dropped quotation marks or a scope; a parenthetical cut from its clause; one sentence over the cap), one round; batch A's reject grounds did not recur (every Year cell the model's own year). **W3 machine pages complete (30 of 30).** Mask pages 1–18 (cap2m … npcm) merged 2026-09-26: Opus writer, 0 High / 4 Medium on first review, one
 small round. The ten category pages merged 2026-09-26 (Sonnet writer; review, fix round, verification, final round —
 nine lost markers and a false rewording caught in review). Machines 16–30 to do; masks 19–36 in progress.
 
