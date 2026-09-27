@@ -310,6 +310,62 @@ three lists (marker on the lead-in), the repeats above, model cells.
 
 Content problems for the owner: none found.
 
+### 5. `docs/machines/post-cmp-cleaner.md` — done
+
+Rules applied: R-INTRO, R-MODELS, R-ENTRIES, R-QUICKFACTS, R-PARA, R-SENTENCE, R-RELATED,
+R-CAPTION.
+
+* **R-INTRO.** 153 → 59 words. The 59-word first sentence split at its colon ("It scrubs both
+  faces …"). "In the 200 mm era it was first a separate double-sided scrubber … dry." moved to the
+  end of the first H2's second paragraph, subject restored ("a post-CMP cleaner"). The two pointer
+  sentences → `{seealso}`. Deleted template sentence: "This page describes the class in general,
+  lists representative 200 mm-era models, and then says what SkyWater has published about tools
+  that could serve this purpose and which SKY130 steps this reference assigns to the class." (Its
+  "tools that could serve this purpose" is said in full under What SkyWater lists: "lists no brush
+  scrubber … Two groups of entries touch the post-CMP clean".)
+* **R-MODELS.** Six bullets → 8 rows + **Other vendors.** Year cells: SS-3200 2024 ("the SS-3200
+  for 200 mm, launched in 2024"; "launched" is the Year column's meaning, "a current model" kept).
+  Everything else `—`: Synergy Integra keeps the quotation "Introduced in 1997" verbatim in
+  Published figures (a quotation is not cut to fill a cell; the merged `pecvd.md` does the same);
+  "installed by 1999", "1,000th … in 2001" are counts and statements, kept in Published figures.
+  "whose integrated cleaner's" → "its integrated cleaner's". SCREEN's single end marker repeated
+  on its first row.
+* **R-ENTRIES.** The "Read term by term" sentence → 3 rows. Status: "our reading of the words
+  only" on "ammonia clean" and "IPA clean" (the page's hedge, which covered both glosses, repeated —
+  ADDED hedge `our reading` ×1); "not stated" on "Track" (the page: "what "Track" denotes … are not
+  stated"). The rest of that sentence stays as prose ("Which films either clean follows …").
+* **R-QUICKFACTS.** Cells over cap 7 → 6 by count. Brush scrubbing: the spin-station clause
+  (quotation DEDUPLICATED; body: `### Backside, drying and integration`) deleted, 4 → 3 quotations.
+  Chemistries: "TMAH has been studied for post-tungsten-CMP cleaning.[^jolley-1998]" deleted
+  (body: `### Chemistry after oxide and tungsten polishes`, Jolley; marker DEDUPLICATED).
+  SkyWater-listed tool: "Track ammonia clean", "IPA clean" DEDUPLICATED, pointer added. Left: What
+  it does (one 36-word quotation, only here), Megasonics (two quotations with 1, 0.8, 1.0 in one
+  number-order unit), Integration (22 words; "dry in/dry out" is quoted in the body only inside a
+  longer quotation), 200 mm era (23 words, no quotation, names only).
+* **R-PARA / R-SENTENCE.** H3 bodies split at source seams; sentences split at semicolons (OnTrak
+  wet track; the category-page/Mesa sentence; Ge et al.; the lithography bullet) and at ", and
+  Applied's Mirra Mesa" (Lam/Applied). Three integration items → lead + continuation; the tungsten
+  continuation opens "The outlines of the tungsten polishes" (for "those of"), and the oxide half
+  repeats "(industry practice)", which closed the whole base sentence.
+* **R-RELATED**, **R-CAPTION** as page 1.
+
+Caps (measure5): paragraphs > 100 6 → 0; list items > 60 4 → 1; sentences > 45 12 → 1 (both the
+untouched grading bullet under `### SKY130 steps assigned`); table cells > 25 4 → 6 (three
+quick-facts cells, and the Synergy Integra, Auriga C and Strasbaugh rows, whose length is their
+quotations).
+
+Preservation. DEDUPLICATED: marker `jolley-1998`; quotes "without contacting the wafer surfaces",
+"Track ammonia clean", "IPA clean". ADDED markers: `ge-2006` (semicolon split),
+`pat-scrubber-ontrak` (OnTrak wet-track split), `screen-ss3200` (SCREEN rows). ADDED hedge: `our
+reading` (above). REGROUPED: the models bullets → rows, same digits in the same order. Template
+losses: `200`, `about`, `SKY130`. Strict words: the template sentence; "launched" (SS-3200 row);
+the three quick-facts deletions; "Read term by term … "Track" denotes" (entries table); "studied",
+"TMAH" (Chemistries cell). Marker coverage: 15 flags, all read — model cells, table headers, the
+strength split (no marker on "there is no listing of this class", an index statement), the
+lithography bullet's first clause (the base marker belonged to the SEZ note clause).
+
+Content problems for the owner: none found.
+
 ## Guide problems
 
 1. **`measure5.py` fuses a sentence ending in "…ch."** Its abbreviation guard `(?<!ch\.)` (meant

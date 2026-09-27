@@ -3,29 +3,27 @@
 
 A post-CMP cleaner is the machine that takes a wafer from the polisher
 while it is still wet and removes the slurry, polishing debris and metal
-contamination the polish leaves behind: it scrubs both faces with soft
+contamination the polish leaves behind. It scrubs both faces with soft
 rotating brushes in a dilute chemical, often adds a megasonic bath or a
-dilute-HF step, rinses the wafer and spins it dry. In the 200 mm era it
-was first a separate double-sided scrubber loaded from a wet cassette
-and later a module built into the polisher, so that wafers entered and
-left the combined tool dry. This page describes the class in general,
-lists representative 200 mm-era models, and then says what SkyWater has
-published about tools that could serve this purpose and which SKY130
-steps this reference assigns to the class. The chemistry of the
-{term}`post-CMP clean` is summarised on the {ref}`CMP category page
-<category-cmp>`; the polisher is on the {ref}`CMP polisher page
-<machine-cmp-polisher>`.
+dilute-HF step, rinses the wafer and spins it dry.
 
 | | Post-CMP cleaner |
 |---|---|
 | What it does | Removes slurry and metal contamination after a polish before it dries: "If the slurry is not thereafter completely removed, or if it is allowed to dry, so many defects will occur in the individual circuit dice that the whole wafer may have to be scrapped".[^pat-scrubber-ontrak] |
-| Brush scrubbing | "A conventional double-sided scrubber system has two brush stations", a spin station that rinses and dries "without contacting the wafer surfaces", and brushes "constantly flushed with deionized water";[^pat-scrubber-ontrak] "Nylon or PVA may be used" for the brushes.[^pat-scrubber-ontrak] |
+| Brush scrubbing | "A conventional double-sided scrubber system has two brush stations" and brushes "constantly flushed with deionized water";[^pat-scrubber-ontrak] "Nylon or PVA may be used" for the brushes.[^pat-scrubber-ontrak] |
 | Megasonics | Sound "in the neighborhood of 1 MHz" in a cleaning fluid;[^pat-megasonic-rca] "0.8 to 1.0 MHz" megasonic cleaning removes particles more efficiently in SC-1 than in DI water.[^busnaina-1995] |
-| Chemistries | Dilute NH₄OH, dilute HF or other chemistries in the brush and megasonic modules ({ref}`category-cmp`); the Mirra Mesa supported "HF in the brush modules and heated RCA chemistries in the megasonic module";[^amat-mesa-1999] TMAH has been studied for post-tungsten-CMP cleaning.[^jolley-1998] |
+| Chemistries | Dilute NH₄OH, dilute HF or other chemistries in the brush and megasonic modules ({ref}`category-cmp`); the Mirra Mesa supported "HF in the brush modules and heated RCA chemistries in the megasonic module".[^amat-mesa-1999] |
 | Integration | Standalone scrubbers with a wet input indexer that keeps wafers "submersed in processing solution";[^pat-scrubber-ontrak] integrated "dry in/dry out" cleaners on the polisher.[^lam-integra-1999][^amat-mesa-1999] |
 | 200 mm era | OnTrak DSS-200 and DSS-150 double-sided scrubbers;[^pat-scrubber-ontrak] Lam's Synergy Integra, introduced in 1997;[^lam-integra-1999] Applied's Mesa cleaner on the Mirra Mesa (1999);[^amat-mesa-1999] SpeedFam-IPEC's Auriga cleaners.[^speedfam-ipec-2001] |
-| SkyWater-listed tool | No brush scrubber named; the CMP pages point to "SEZ223, Davinci", and the Mirra entry lists "Track ammonia clean" and "IPA clean"[^skw-01] |
+| SkyWater-listed tool | No brush scrubber named; the CMP pages point to "SEZ223, Davinci";[^skw-01] see *What SkyWater lists* |
 | SKY130 steps | 12 steps; see {ref}`SKY130 steps assigned to this class <machine-post-cmp-cleaner-steps>` |
+
+:::{seealso}
+The chemistry of the
+{term}`post-CMP clean` is summarised on the {ref}`CMP category page
+<category-cmp>`; the polisher is on the {ref}`CMP polisher page
+<machine-cmp-polisher>`.
+:::
 
 ## What the machine class is and how it works
 
@@ -37,22 +35,29 @@ removing contaminants after CMP".[^zhang-raghavan-1999] The cleaner's
 task is to remove them before they bond: in Busnaina et al.'s work,
 strong particle adhesion "is shown to be caused by chemical reactions
 (after initial hydrogen bonding) that take place in the presence of
-moisture and long aging time".[^busnaina-2002] What makes a machine a post-CMP
+moisture and long aging time".[^busnaina-2002]
+
+What makes a machine a post-CMP
 cleaner is keeping the wafer wet from the polisher to the first brush,
 scrubbing both faces without scratching, supplying the right chemistry
 at each station, and returning a dry wafer (industry
-practice).[^pat-scrubber-ontrak]
+practice).[^pat-scrubber-ontrak] In the 200 mm era a post-CMP cleaner
+was first a separate double-sided scrubber loaded from a wet cassette
+and later a module built into the polisher, so that wafers entered and
+left the combined tool dry.
 
 ### Double-sided brush scrubbing
 
 A double-sided scrubber passes the wafer between pairs of rotating
 brushes. In OnTrak's patent the wafers are moved "along a wet track" by
-spray nozzles, each brush station has "two top and two bottom spray
-nozzles" and a scrubbing-solution nozzle, and the brushes "have hollow
+spray nozzles; each brush station has "two top and two bottom spray
+nozzles" and a scrubbing-solution nozzle.[^pat-scrubber-ontrak] The brushes "have hollow
 cores and are supplied with a flow of deionized water during operation
 for continuous rinsing of the brush bristles", which "prevents particle
 build-up on the brushes" and keeps the water "flowing thereby preventing
-bacteria growth".[^pat-scrubber-ontrak] How the brush removes a particle
+bacteria growth".[^pat-scrubber-ontrak]
+
+How the brush removes a particle
 has been studied closely. Zhang, Busnaina and Ahmadi concluded that "The
 lift force in the hydrodynamic boundary layer is too small to lift
 particles off the surface and particles most likely roll off the
@@ -61,7 +66,9 @@ asperities".[^zhang-busnaina-1999] Busnaina et al. found that "contact
 between the particle and the brush is essential to the removal of
 submicron particles", and that "high removal efficiency (low number of
 defects) is possible with a high brush pressure and a short cleaning
-time".[^busnaina-2002] For nanometre-sized slurry particles, Xu et al.
+time".[^busnaina-2002]
+
+For nanometre-sized slurry particles, Xu et al.
 concluded that "nanosized particles cannot be lifted directly by a
 brush", that "rolling should be the main particle-removal mechanism",
 and that the brush and wafer run "in a hydrodynamic lubrication
@@ -77,6 +84,7 @@ liquid. RCA's patent describes a cleaning fluid in which "a transducer
 oscillates at a frequency in the range of between about 0.2 and 5 MHz",
 propagating "a beam of ultrasonic energy in a direction substantially
 parallel to the surfaces of the articles to be cleaned".[^pat-megasonic-rca]
+
 Busnaina, Kashkoush and Gale measured removal at 862 kHz; "The removal
 efficiency is known to be higher in SC1 than in DI water", in both it is
 "a function of irradiation time and particle size", and increased power
@@ -91,18 +99,20 @@ regions".[^amat-mesa-1999]
 
 The chemistry follows the polish. The {ref}`category page
 <category-cmp>` gives dilute NH₄OH for oxide and dilute HF or citric
-acid for tungsten; Applied's Mesa cleaner supported "a variety of
+acid for tungsten. Applied's Mesa cleaner supported "a variety of
 industry standard chemistries including HF in the brush modules and
 heated RCA chemistries in the megasonic module",[^amat-mesa-1999] and
 SpeedFam-IPEC's dual-station box cleaner "extends the pH range for HF
 etching and advanced cleaning".[^speedfam-ipec-2001] Jolley studied
 tetramethylammonium hydroxide as a post-tungsten-CMP cleaning
 mixture,[^jolley-1998] and Devriendt et al. related oxide-CMP defects to
-the cleaning strategy.[^devriendt-1998] In sub-130 nm logic products with copper
+the cleaning strategy.[^devriendt-1998]
+
+In sub-130 nm logic products with copper
 interconnect, Ge et al. traced a metal-1 bridging yield loss to organic particles from a
 tungsten contact polish and found that "Brush 2 with HF spraying and
 closed mechanical scrubbing directly induced the organic surface
-particles"; opening that brush and optimising the megasonic tank and
+particles".[^ge-2006] Opening that brush and optimising the megasonic tank and
 the first brush reduced the defects.[^ge-2006] For scratches that have
 filled with tungsten, Ollendorf et al. added a plasma etch after the
 polish.[^ollendorf-2004]
@@ -116,49 +126,37 @@ megasonic cleaning", and proposes etching the backside film on a
 single-wafer chemical spin etcher instead ({ref}`machine-single-wafer-spin-processor`).[^kinoshita-sez]
 The last station rinses and dries: OnTrak's scrubber used "A spin
 station" that rinses and dries both sides "without contacting the wafer
-surfaces".[^pat-scrubber-ontrak] Because slurry must not dry, the
+surfaces".[^pat-scrubber-ontrak]
+
+Because slurry must not dry, the
 cleaner moved onto the polisher. Lam's Synergy Integra combined "the
 polisher and cleaner onto a single platform", "eliminating the damage
-that can occur if polishing slurry dries on a wafer",[^lam-integra-1999]
-and Applied's Mirra Mesa grips wafers "at the edge" and submerges them
+that can occur if polishing slurry dries on a wafer".[^lam-integra-1999]
+Applied's Mirra Mesa grips wafers "at the edge" and submerges them
 "vertically into the modules where they are cleaned on front and back
 sides", with each module requiring "only 30 seconds of process
 time".[^amat-mesa-1999]
 
 ## Representative 200 mm-era models
 
-* **OnTrak Systems / Lam Research.** The DSS-200 and DSS-150
-  double-sided scrubbers, used "for processes as diverse as bare silicon
-  cleaning by silicon material suppliers to post chemical-mechanical
-  planarization (CMP) for inter-metal dielectric planarization
-  cleaning";[^pat-scrubber-ontrak] the Synergy Integra, "Introduced in
-  1997", integrated "with six of the leading dry in/dry out CMP system
-  suppliers", with more than 750 integrated and standalone OnTrak
-  cleaners installed by 1999;[^lam-integra-1999] Lam reported its
-  1,000th post-CMP clean system in 2001 and wrote that "All Synergy
-  Integra post-CMP clean systems use Double-Sided Scrubbing and Chemical
-  Mechanical Cleaning (CMC™) technologies for single-step
-  processing".[^lam-clean-1000-2001]
-* **Applied Materials.** The Mesa cleaner of the Mirra Mesa, configurable
-  with "a single-wafer immersion megasonic module, two double-sided brush
-  scrubber stations and a spin rinse dryer".[^amat-mesa-1999]
-* **IPEC-Planar / SpeedFam-IPEC.** The AvantGaard 676 with "Integrated
-  post CMP spray box cleaning";[^ipec-676-1997] the Auriga C, whose
-  integrated cleaner's "Two dual side PVA brush boxes remove particulates using common chemistries",
-  with a "Rinse Ring design" and a spin rinse dryer that "supports
-  optional megasonic cleaner".[^speedfam-ipec-2001]
-* **Strasbaugh.** Cleaning stations on the 6DS-SP polisher, where "A
-  de-ionized water spray flushes the wafer surface while a cleaning disk
-  buffs the residual slurry and particles off the wafer", and an option
-  for "Double-sided, post-CMP scrubber integration".[^strasbaugh-6ds-1999]
-* **SCREEN (formerly Dainippon Screen).** Spin scrubbers, "Method in which
-  wafers are physically cleaned using soft brushes and DI water"; the
-  SS-3200 for 200 mm, launched in 2024, is a current
-  model.[^screen-ss3200]
-* **Other vendors.** The step pages also name SEZ/Lam Da Vinci among
-  post-CMP brush scrubbers; the SEZ sources retrieved for this page
-  describe single-wafer spin processing and backside wet etching and do
-  not mention a brush ({ref}`machine-single-wafer-spin-processor`).[^sez-davinci-2008][^kinoshita-sez]
+:::{table} Representative post-CMP cleaners (figures as each source gives them)
+
+| Vendor | Model | Year | Published figures |
+|---|---|---:|---|
+| OnTrak Systems / Lam Research | DSS-200 and DSS-150 | — | double-sided scrubbers, used "for processes as diverse as bare silicon cleaning by silicon material suppliers to post chemical-mechanical planarization (CMP) for inter-metal dielectric planarization cleaning"[^pat-scrubber-ontrak] |
+| OnTrak Systems / Lam Research | Synergy Integra | — | "Introduced in 1997", integrated "with six of the leading dry in/dry out CMP system suppliers", with more than 750 integrated and standalone OnTrak cleaners installed by 1999;[^lam-integra-1999] Lam reported its 1,000th post-CMP clean system in 2001 and wrote that "All Synergy Integra post-CMP clean systems use Double-Sided Scrubbing and Chemical Mechanical Cleaning (CMC™) technologies for single-step processing"[^lam-clean-1000-2001] |
+| Applied Materials | Mesa cleaner of the Mirra Mesa | — | configurable with "a single-wafer immersion megasonic module, two double-sided brush scrubber stations and a spin rinse dryer"[^amat-mesa-1999] |
+| IPEC-Planar / SpeedFam-IPEC | AvantGaard 676 | — | with "Integrated post CMP spray box cleaning"[^ipec-676-1997] |
+| IPEC-Planar / SpeedFam-IPEC | Auriga C | — | its integrated cleaner's "Two dual side PVA brush boxes remove particulates using common chemistries", with a "Rinse Ring design" and a spin rinse dryer that "supports optional megasonic cleaner"[^speedfam-ipec-2001] |
+| Strasbaugh | 6DS-SP polisher, cleaning stations | — | where "A de-ionized water spray flushes the wafer surface while a cleaning disk buffs the residual slurry and particles off the wafer", and an option for "Double-sided, post-CMP scrubber integration"[^strasbaugh-6ds-1999] |
+| SCREEN (formerly Dainippon Screen) | spin scrubbers | — | "Method in which wafers are physically cleaned using soft brushes and DI water"[^screen-ss3200] |
+| SCREEN (formerly Dainippon Screen) | SS-3200 | 2024 | for 200 mm; a current model[^screen-ss3200] |
+:::
+
+**Other vendors.** The step pages also name SEZ/Lam Da Vinci among
+post-CMP brush scrubbers; the SEZ sources retrieved for this page
+describe single-wafer spin processing and backside wet etching and do
+not mention a brush ({ref}`machine-single-wafer-spin-processor`).[^sez-davinci-2008][^kinoshita-sez]
 
 ## At SkyWater
 
@@ -175,9 +173,16 @@ DSP+HF, titration controlled", described on the
 {ref}`single-wafer spin processor page
 <machine-single-wafer-spin-processor>`.[^skw-01]
 
-Read term by term: "ammonia clean" names an ammonia chemistry and "IPA
-clean" an isopropyl-alcohol step (our reading of the words only); what
-"Track" denotes, which films either clean follows, and whether either is
+:::{table} How this reference reads the two undashed CMP entries
+
+| Entry as listed | What it names | Status |
+|---|---|---|
+| "ammonia clean" | an ammonia chemistry | our reading of the words only |
+| "IPA clean" | an isopropyl-alcohol step | our reading of the words only |
+| "Track" | — | not stated |
+:::
+
+Which films either clean follows, and whether either is
 a module of an integrated cleaner on the polisher, are not stated. The page does not say
 that the Mirra is a Mirra Mesa. A used-equipment listing gives
 "Post-CMP-Cleaning" among the applications of the SEZ 223,[^sez-223-moov]
@@ -187,10 +192,12 @@ CMP.[^skw-01]
 ### Strength of the evidence
 
 On the strength scale of the {ref}`machines index <machines-index>`
-there is no listing of this class: the entries above are **strong** for
+there is no listing of this class. The entries above are **strong** for
 the existence of the "Track ammonia clean" and "IPA clean" entries and
 of the SEZ tools, but none is a SkyWater statement that a given tool
-performs the post-CMP clean.[^skw-01] The CMP pages name the SEZ entry for the
+performs the post-CMP clean.[^skw-01]
+
+The CMP pages name the SEZ entry for the
 clean ({ref}`CMPNIT <step-012>` grades it "strong for existence") and
 record the missing brush scrubber as an open question. The caveats that apply to every listed tool are under
 {ref}`Reading the SkyWater evidence <machines-reading-evidence>`.
@@ -276,7 +283,9 @@ chemistries are not public.
 * **Oxide and tungsten cleans differ.** The outlines of the oxide polishes
   ({ref}`CMPNIT <step-012>`, {ref}`CMPP <step-090>`, {ref}`CMPL <step-106>`,
   {ref}`CMPM <step-116>` to {ref}`CMPM4 <step-157>`) scrub in dilute
-  NH₄OH; those of the tungsten polishes offer an alternative to dilute
+  NH₄OH (industry practice).
+
+  The outlines of the tungsten polishes offer an alternative to dilute
   NH₄OH — citric acid on {ref}`WCMPLI <step-100>`, a TMAH-based chemistry
   on {ref}`WCMP2 <step-111>` to {ref}`WCMP5 <step-148>`, where Jolley
   studied TMAH as a post-tungsten-CMP clean (industry
@@ -286,31 +295,30 @@ chemistries are not public.
 * **What SkyWater's list allows.** With no brush scrubber listed, the CMP
   pages name the SEZ single-wafer tools; the SEZ 223 is offered secondhand
   for "Post-CMP-Cleaning",[^sez-223-moov] and SEZ's own note describes
-  backside wet etching after CMP.[^kinoshita-sez] Whether SkyWater's
+  backside wet etching after CMP.[^kinoshita-sez]
+
+  Whether SkyWater's
   post-CMP clean is a brush module of an integrated Mirra Mesa-type
   cleaner, the listed "Track ammonia clean" and "IPA clean", the SEZ
   tools, or an unlisted scrubber is not public (open question).
 * **Before the next lithography and deposition.** A polish is followed by
   a liner or cap deposition or a mask (on the step pages' readings,
   {ref}`WCMPLI <step-100>` is followed by the TiN local interconnect and
-  {ref}`CMPM <step-116>` by the cap oxide); particles left on the back after CMP can defocus the next
+  {ref}`CMPM <step-116>` by the cap oxide). Particles left on the back after CMP can defocus the next
   exposure on a vacuum chuck.[^kinoshita-sez]
 
 ## Related pages
 
-* {ref}`category-cmp` — the post-CMP clean and its chemistry.
-* {ref}`machine-cmp-polisher` — the polisher that feeds the cleaner.
-* {ref}`machine-single-wafer-spin-processor` — the listed single-wafer
-  tools the CMP pages name for the clean.
-* {ref}`machine-wet-bench` — batch cleans and megasonic tanks elsewhere in
+* **Category.** {ref}`category-cmp` — the post-CMP clean and its chemistry.
+* **Machines.** {ref}`machine-cmp-polisher` — the polisher that feeds the cleaner.
+  {ref}`machine-single-wafer-spin-processor` — the listed single-wafer
+  tools the CMP pages name for the clean. {ref}`machine-wet-bench` — batch cleans and megasonic tanks elsewhere in
   the flow.
-* {ref}`machines-index` — all machine classes, SkyWater's listed tools
-  and the step assignments.
-* {ref}`materials-index` — cleaning chemicals and ultrapure water.
-* {ref}`material-cmp-consumables` — slurries, pads, brushes and
-  post-CMP clean chemistry.
-* {ref}`material-ultrapure-water` — rinse water, its standards and
+* **Materials.** {ref}`material-cmp-consumables` — slurries, pads, brushes and
+  post-CMP clean chemistry. {ref}`material-ultrapure-water` — rinse water, its standards and
   quality.
+* **Indexes.** {ref}`machines-index` — all machine classes, SkyWater's listed tools
+  and the step assignments. {ref}`materials-index` — cleaning chemicals and ultrapure water.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
 ### Related patents, papers and filings
