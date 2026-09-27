@@ -262,6 +262,54 @@ marker before the semicolon).
 
 Content problems for the owner: none found.
 
+### 4. `docs/machines/plasma-nitridation-chamber.md` — done
+
+Rules applied: R-INTRO, R-MODELS, R-QUICKFACTS, R-PARA, R-SENTENCE, R-LIST, R-RELATED,
+R-CAPTION. No "term by term" passage (What SkyWater lists quotes one module, then prose).
+
+* **R-INTRO.** 130 → 40 words: the first sentence. The next two sentences ("The nitrogen blocks
+  boron …[^pat-rpn-ti][^hattangady-1998] … transconductance.[^lek-2002] The class arrived as a
+  production tool around the 130 nm node.[^amat-dpn-2001]") moved unchanged to open the first H2,
+  before its first H3 (52 words). Pointer → `{seealso}`. Deleted template sentence: "This page
+  describes the class in general, lists representative models, and then says what SkyWater has
+  published and which SKY130 step this reference associates with the class."
+* **R-MODELS.** 3 rows. All Year cells `—`: the DPN chamber's only date on the page body is the
+  copy date of the announcement ("Light Reading's copy is dated 2001-11-28", kept in Published
+  figures); the Texas Instruments row is process work (Model `—`, the page's words in Published
+  figures); the Trias SPA date is a patent filing date ("filed in 2005", kept). Caption says
+  "chambers and process work" because of the TI row. The remark paragraph stays.
+* **R-QUICKFACTS.** Cells over cap 6 → 6 by count, but What it does (2 → 1 quotation: "130nm and
+  below device designs", DEDUPLICATED) and Plasma source (3 → 1 quotation: "slot plane antenna
+  (SPA) plasma source", DEDUPLICATED, words kept; "Decoupled Plasma Nitridation (DPN)" → "DPN",
+  the expansion is in `### High-density and decoupled plasma nitridation`) now each hold one
+  quotation. Left: Pressure, power and time (five quoted figures), Nitrogen profile (three; "in 10
+  s" and "confined …" are only here), Wafer handling (its quotation differs from the body's copy by
+  "can be easily integrated"), 200 mm era (two quotations and 130/2001 in one number-order unit).
+* **R-PARA / R-SENTENCE / R-LIST.** Three one-sentence enumerations became lists: the Texas
+  Instruments patent's three drawbacks, Niimi et al.'s three findings, and the TI group's three
+  attractions; in each the single end marker moved to the lead-in before the colon (R-LIST step 1,
+  R-TABLE step 3). Splits at semicolons (Ito/Hwang, Hattangady 1995, anneal bullet), at ";
+  "The nitrogen ion energy …"" (the quotation now opens its own sentence, marker repeated), at
+  ", naming" ("It names …"), "run at" ("The process is run at …") and ", and names" ("The patent
+  names …"), and ", and put the limit" ("They put the limit …"). Two integration items → lead +
+  continuation.
+* **R-RELATED**, **R-CAPTION** as page 1.
+
+Caps (measure5): paragraphs > 100 6 → 0; list items > 60 2 → 0; sentences > 45 13 → 3 (Kraft
+55, TI patent 47, Applied patent 46 — each over only by the words inside its quotations); table
+cells > 25 5 → 5 (four quick-facts cells, the DPN row's two quotations).
+
+Preservation. DEDUPLICATED: the two quotations above. **LOST number `130` ×1**: the What-it-does
+cell's copy of "130nm and below device designs" (DEDUPLICATED as a quotation); the number is not
+reclassified because the moved intro sentence ("around the 130 nm node") added a 130 to the body in
+the same edit. ADDED markers, each a repeat on a split: `chen-2002-rpn`, `hattangady-1995`,
+`kraft-1997`, `lek-2002` (the "Where the nitrogen goes" lead, whose clause the base marker
+covered), `pat-pna-amat` ×2, `pat-spa-tel`. Template loss: `SKY130`. Strict words: the template
+sentence; "Decoupled" (cell), "naming" → "It names". Marker coverage: 16 flags, all read — the
+three lists (marker on the lead-in), the repeats above, model cells.
+
+Content problems for the owner: none found.
+
 ## Guide problems
 
 1. **`measure5.py` fuses a sentence ending in "…ch."** Its abbreviation guard `(?<!ch\.)` (meant

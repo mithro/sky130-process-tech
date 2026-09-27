@@ -4,22 +4,12 @@
 A plasma nitridation chamber exposes a finished thin gate oxide, for
 seconds, to a low-pressure nitrogen plasma, so that nitrogen is
 incorporated near the top surface of the oxide without heating the
-wafer to the temperatures a thermal nitridation needs. The nitrogen
-blocks boron from a p⁺ polysilicon gate and lowers gate leakage; kept
-near the top surface, it can avoid the mobility loss that nitrogen at the
-silicon interface causes,[^pat-rpn-ti][^hattangady-1998] although a heavy
-plasma nitridation can itself cost transconductance.[^lek-2002] The
-class arrived as a production tool around the 130 nm
-node.[^amat-dpn-2001] This page describes the class in general, lists
-representative models, and then says what SkyWater has published and
-which SKY130 step this reference associates with the class. Nitrided
-oxides in general are on the {ref}`oxidation category page
-<category-oxidation>`.
+wafer to the temperatures a thermal nitridation needs.
 
 | | Plasma nitridation chamber |
 |---|---|
-| What it does | Incorporates nitrogen into the surface of an ultra-thin gate oxide "to prevent boron penetration and reduce leakage current", in Applied Materials' description of its DPN chamber for "130nm and below device designs".[^amat-dpn-2001] |
-| Plasma source | A remote He–N₂ plasma;[^hattangady-1995] "a helicon plasma source";[^kraft-1997] inductive coupling in Applied Materials' Decoupled Plasma Nitridation (DPN);[^pat-pna-amat] later, a microwave "slot plane antenna (SPA) plasma source".[^pat-spa-tel] |
+| What it does | Incorporates nitrogen into the surface of an ultra-thin gate oxide "to prevent boron penetration and reduce leakage current", in Applied Materials' description of its DPN chamber.[^amat-dpn-2001] |
+| Plasma source | A remote He–N₂ plasma;[^hattangady-1995] "a helicon plasma source";[^kraft-1997] inductive coupling in Applied Materials' DPN;[^pat-pna-amat] later, a microwave slot plane antenna (SPA) plasma source.[^pat-spa-tel] |
 | Pressure, power and time | "about 5-20 mTorr", "200-800 Watt" and "pulse at about 5-15 kHz" for DPN;[^pat-pna-amat] "around 4 mTorr" and "around 1-60 seconds" in a Texas Instruments high-density plasma process.[^pat-rpn-ti] |
 | Nitrogen profile | "approximately 15 at. % nitrogen into the top 0.5 nm" of an oxide "in 10 s";[^kraft-1997] nitrogen "confined to the immediate vicinity of the surface".[^hattangady-1995] |
 | Wafer temperature | Remote plasma nitridation "at low temperatures, 23 and 300 °C";[^hattangady-1995] 300 °C in a later remote-plasma study.[^niimi-2002] |
@@ -28,24 +18,46 @@ oxides in general are on the {ref}`oxidation category page
 | SkyWater-listed tool | None named; SkyWater lists "Nitrided gate oxide" as a special module without a tool[^skw-01] |
 | SKY130 steps | No step as the process tool, 1 where the class is an alternative; see {ref}`SKY130 steps assigned to this class <machine-plasma-nitridation-chamber-steps>` |
 
+:::{seealso}
+Nitrided
+oxides in general are on the {ref}`oxidation category page
+<category-oxidation>`.
+:::
+
 ## What the machine class is and how it works
+
+The nitrogen
+blocks boron from a p⁺ polysilicon gate and lowers gate leakage; kept
+near the top surface, it can avoid the mobility loss that nitrogen at the
+silicon interface causes,[^pat-rpn-ti][^hattangady-1998] although a heavy
+plasma nitridation can itself cost transconductance.[^lek-2002] The
+class arrived as a production tool around the 130 nm
+node.[^amat-dpn-2001]
 
 ### Why plasma rather than heat
 
 Nitrogen can be put into an oxide thermally. Ito, Nozaki and Ishikawa
 showed that oxide "can be converted directly to silicon nitride or
 oxynitride at the surface" by heating in ammonia, with graded films "At
-temperatures above 900°C";[^ito-1980] rapid thermal processing in N₂O gives
+temperatures above 900°C".[^ito-1980] Rapid thermal processing in N₂O gives
 an oxynitride with "nitrogen pileup at the Si/SiO₂ interface" and
-"excellent diffusion barrier properties" against boron.[^hwang-1991] A
+"excellent diffusion barrier properties" against boron.[^hwang-1991]
+
+A
 Texas Instruments patent sets out the drawbacks that plasma nitridation
-was meant to remove: with ammonia, "in order to get the ammonia to
-penetrate the gate oxide, temperatures in excess of 1000° C. are
-required", once the reaction has begun "it is difficult to control the
-concentration of the nitrogen", and "Excessive nitrogen near the
-interface between the semiconductor substrate and the gate oxide can
-adversely affect the threshold voltage and degrade the channel
-mobility".[^pat-rpn-ti] Ammonia also brings hydrogen, which Hori et al.
+was meant to remove:[^pat-rpn-ti]
+
+* with ammonia, "in order to get the ammonia to
+  penetrate the gate oxide, temperatures in excess of 1000° C. are
+  required";
+* once the reaction has begun "it is difficult to control the
+  concentration of the nitrogen";
+* "Excessive nitrogen near the
+  interface between the semiconductor substrate and the gate oxide can
+  adversely affect the threshold voltage and degrade the channel
+  mobility".
+
+Ammonia also brings hydrogen, which Hori et al.
 removed by rapid reoxidation to improve charge trapping.[^hori-1989] A
 plasma supplies reactive nitrogen at the surface at low wafer temperature,
 and the ion energy, flux and exposure time set how deep it goes.
@@ -57,22 +69,32 @@ neutral excited species and a reduced ion flux reach the oxide.
 Hattangady, Niimi and Lucovsky incorporated nitrogen "selectively at the
 top surface of a conventional thermal gate oxide by nitridation with a
 remote He–N₂ plasma", with the concentration set "by a combination of
-substrate temperature and duration of plasma exposure"; a subsequent
+substrate temperature and duration of plasma exposure".[^hattangady-1995] A subsequent
 "Rapid thermal annealing (RTA) of the nitrided oxide at 900 °C in N₂ and
-N₂O does not change the N content".[^hattangady-1995] Niimi et al. later
-separated the mechanisms: at 0.1 Torr an upstream He/N₂ plasma
-"incorporates nitrogen at the top surface", at 0.3 Torr "a lower
-concentration of nitrogen distributed throughout the film is obtained",
-and "N₂⁺ species are primarily responsible for top surface nitridation at
-0.1 Torr".[^niimi-2002]
+N₂O does not change the N content".[^hattangady-1995]
 
-Texas Instruments' group listed the attractions for production: "the
-ability to start with a relatively thicker oxide where thickness targeting
-and process control is easier", "an essentially self-limiting process
-leading to 'built-in' uniformity of that of starting oxide", and
-nitrided oxides that "do not show the typical mobility and transconductance
-degradation observed (particularly in PMOS devices) with thermally grown
-oxynitride and nitride films".[^hattangady-1998] Kapila et al. modelled the
+Niimi et al. later
+separated the mechanisms:[^niimi-2002]
+
+* at 0.1 Torr an upstream He/N₂ plasma
+  "incorporates nitrogen at the top surface";
+* at 0.3 Torr "a lower
+  concentration of nitrogen distributed throughout the film is obtained";
+* "N₂⁺ species are primarily responsible for top surface nitridation at
+  0.1 Torr".
+
+Texas Instruments' group listed the attractions for production:[^hattangady-1998]
+
+* "the
+  ability to start with a relatively thicker oxide where thickness targeting
+  and process control is easier";
+* "an essentially self-limiting process
+  leading to 'built-in' uniformity of that of starting oxide";
+* nitrided oxides that "do not show the typical mobility and transconductance
+  degradation observed (particularly in PMOS devices) with thermally grown
+  oxynitride and nitride films".
+
+Kapila et al. modelled the
 process to maximise "the nitrogen concentration at the top surface and the
 total integrated nitrogen dose (for prevention of boron penetration)" while
 "minimizing nitrogen concentration at the bottom interface".[^kapila-1999]
@@ -84,8 +106,10 @@ Kraft et al. used "a high density nitrogen plasma generated with a helicon
 plasma source" to put "approximately 15 at. % nitrogen into the top 0.5 nm"
 of an oxide "in 10 s with a high flux of low energy ions … accelerated in
 the plasma sheath towards … an electrically floating silicon dioxide
-surface"; "The nitrogen ion energy, ion current density, and exposure time
-determine the nitrogen range and dose".[^kraft-1997] The related Texas
+surface".[^kraft-1997] "The nitrogen ion energy, ion current density, and exposure time
+determine the nitrogen range and dose".[^kraft-1997]
+
+The related Texas
 Instruments patent names the candidate sources — "a helicon source, a
 helical-resonator source, electron-cyclotron resonance source, or an
 inductively coupled source" — and nitrogen sources "N₂, NH₃, NO, N₂O, or
@@ -96,11 +120,14 @@ Applied Materials' Decoupled Plasma Nitridation became the production form
 of the class. An Applied Materials patent describes it as "a technology
 using inductive coupling to generate nitrogen plasma and incorporate a high
 level of nitrogen into an oxide film", in which the oxide "is bombarded with
-nitrogen ions which break the SiO₂ film forming a silicon oxynitride film",
-run at "about 5-20 mTorr or 10-20 mTorr, with a plasma power of 200-800
+nitrogen ions which break the SiO₂ film forming a silicon oxynitride film".[^pat-pna-amat]
+
+The process is run at "about 5-20 mTorr or 10-20 mTorr, with a plasma power of 200-800
 Watt", with "a pulse radio frequency plasma process at about 10-20 MHz and
-pulse at about 5-15 kHz", and names the "DPN Centura™" as a suitable
-chamber.[^pat-pna-amat] The modulation of the source power shapes the
+pulse at about 5-15 kHz".[^pat-pna-amat] The patent names the "DPN Centura™" as a suitable
+chamber.[^pat-pna-amat]
+
+The modulation of the source power shapes the
 plasma's electron temperature: a further Applied Materials patent uses a
 "smooth-varying modulated RF power source to reduce electron temperature
 spike", and reports that "channel mobility and gate leakage current results
@@ -115,7 +142,9 @@ performance, and replaces it with an anneal "in a 1:4 oxygen-nitrogen
 mixture (1,050° C. at about 10 torr)".[^pat-dpn-anneal-chartered] Applied
 Materials later proposed two steps, the first in "an inert ambient with a
 first partial pressure of oxygen" and the second with a greater oxygen
-partial pressure.[^pat-pna-amat] A 1050 °C, 10-torr anneal is a
+partial pressure.[^pat-pna-amat]
+
+A 1050 °C, 10-torr anneal is a
 single-wafer rapid thermal condition (inference;
 {ref}`machine-rapid-thermal-processor`), and Applied Materials presented
 DPN as a chamber to be integrated "on a single cluster tool platform with
@@ -127,7 +156,7 @@ A later form uses a microwave plasma of very low electron temperature. A
 Tokyo Electron and IBM patent describes a "slot plane antenna (SPA) plasma
 source" whose plasma "is characterized by low electron temperature (less
 than about 1.5 eV) and high plasma density (e.g., >about 1×10¹²/cm³), that
-enables damage-free processing of gate stacks", naming "a TRIAS™ SPA
+enables damage-free processing of gate stacks".[^pat-spa-tel] It names "a TRIAS™ SPA
 processing system".[^pat-spa-tel] Tokyo Electron describes its Trias SPA
 series as generating "high-density, low-electron temperature plasma to
 enable, low-damage, low-temperature" processing, and its current successor
@@ -135,18 +164,14 @@ as a 300 mm system.[^tel-triase]
 
 ## Representative 200 mm-era models
 
-* **Applied Materials.** The DPN chamber, introduced for "130nm and below
-  device designs", with "over a dozen DPN chambers in use for production,
-  as well as in 100nm-generation gate development" at the time of the
-  announcement (Light Reading's copy is dated 2001-11-28);[^amat-dpn-2001]
-  sold as the DPN Centura.[^pat-pna-amat]
-* **Texas Instruments (process development).** The helicon and remote
-  plasma nitridation work of Hattangady, Kraft and co-workers, which
-  describes processes rather than a commercial tool.[^kraft-1997][^hattangady-1998][^pat-rpn-ti]
-* **Tokyo Electron.** The Trias SPA series, whose slot-plane-antenna plasma
-  is described for nitrided gate dielectrics in a patent filed in
-  2005;[^pat-spa-tel][^tel-triase] this is a later, 300 mm-oriented
-  tool.
+:::{table} Representative plasma nitridation chambers and process work (figures as each source gives them)
+
+| Vendor | Model | Year | Published figures |
+|---|---|---:|---|
+| Applied Materials | DPN chamber | — | introduced for "130nm and below device designs", with "over a dozen DPN chambers in use for production, as well as in 100nm-generation gate development" at the time of the announcement (Light Reading's copy is dated 2001-11-28);[^amat-dpn-2001] sold as the DPN Centura[^pat-pna-amat] |
+| Texas Instruments (process development) | — | — | the helicon and remote plasma nitridation work of Hattangady, Kraft and co-workers, which describes processes rather than a commercial tool[^kraft-1997][^hattangady-1998][^pat-rpn-ti] |
+| Tokyo Electron | Trias SPA series | — | its slot-plane-antenna plasma is described for nitrided gate dielectrics in a patent filed in 2005;[^pat-spa-tel][^tel-triase] a later, 300 mm-oriented tool |
+:::
 
 Plasma nitridation arrived near the end of the 200 mm era, and the device
 papers cited on this page name the process (DPN, RPN) rather than a
@@ -249,7 +274,9 @@ and how, is not public.
   special module. Only the ammonia route uses a gas SkyWater lists on a
   thermal tool.[^skw-01]
 * **Where the nitrogen goes.** Plasma nitridation places nitrogen at the
-  top of the oxide, where it blocks boron from the p⁺ gate: Lek et al.
+  top of the oxide, where it blocks boron from the p⁺ gate.[^lek-2002]
+
+  Lek et al.
   attribute DPN's success in "blocking boron penetration" to "its
   capability in incorporating a high level of nitrogen to near the top
   interface", but also measured "a degradation in transconductance" and
@@ -259,13 +286,15 @@ and how, is not public.
 * **A limit on oxide thickness.** Chen et al. observed "the radical-induced
   re-oxidation effect … as the base-oxide thickness less than 20 Å", found
   that remote plasma nitridation still reduced equivalent oxide thickness
-  for base oxides "thicker than 17 Å", and put the limit at "14 Å
-  EOT".[^chen-2002-rpn] The {ref}`LVGOX <step-047>` page gives about 4 nm
+  for base oxides "thicker than 17 Å".[^chen-2002-rpn] They put the limit at "14 Å
+  EOT".[^chen-2002-rpn]
+
+  The {ref}`LVGOX <step-047>` page gives about 4 nm
   as the industry-typical thickness of such a thin oxide, above that
   range.
 * **An anneal after nitridation.** A plasma-nitrided oxide needs a
   post-nitridation anneal in a controlled oxygen and nitrogen
-  ambient;[^pat-dpn-anneal-chartered][^pat-pna-amat] SkyWater's Heatpulse
+  ambient.[^pat-dpn-anneal-chartered][^pat-pna-amat] SkyWater's Heatpulse
   lists O₂ and N₂,[^skw-01] so the anneal half of such a sequence would fit
   the listed RTA (inference); the plasma half has no listed tool.
 * **The 5 V oxide.** The class is aimed at ultra-thin oxides;[^amat-dpn-2001]
@@ -274,20 +303,18 @@ and how, is not public.
 
 ## Related pages
 
-* {ref}`category-oxidation` — nitrided oxides and ONO stacks in context.
-* {ref}`machine-vertical-furnace-oxidation` — the furnace in which the
-  base oxide would be grown.
-* {ref}`machine-rapid-thermal-processor` — the Heatpulse, its NH₃ line
-  and the post-nitridation anneal.
-* {ref}`machines-index` — all machine classes, SkyWater's listed tools
-  and the step assignments.
-* {ref}`category-implant` — the p⁺ gate doping whose boron the nitrogen
+* **Category.** {ref}`category-oxidation` — nitrided oxides and ONO stacks in context.
+  {ref}`category-implant` — the p⁺ gate doping whose boron the nitrogen
   is meant to stop.
-* {ref}`material-process-gases` — nitrogen, oxygen, hydrogen, argon,
+* **Machines.** {ref}`machine-vertical-furnace-oxidation` — the furnace in which the
+  base oxide would be grown. {ref}`machine-rapid-thermal-processor` — the Heatpulse, its NH₃ line
+  and the post-nitridation anneal.
+* **Materials.** {ref}`material-process-gases` — nitrogen, oxygen, hydrogen, argon,
   helium and the oxidation additives, their grades and SkyWater's listed
-  gases.
-* {ref}`material-precursors` — silane, dichlorosilane, TEOS, BTBAS,
+  gases. {ref}`material-precursors` — silane, dichlorosilane, TEOS, BTBAS,
   ammonia, SiF₄, ozone and WF₆.
+* **Indexes.** {ref}`machines-index` — all machine classes, SkyWater's listed tools
+  and the step assignments.
 
 <!-- index-links:begin (generated by tools/gen_index_links.py; do not edit) -->
 ### Related patents, papers and filings
